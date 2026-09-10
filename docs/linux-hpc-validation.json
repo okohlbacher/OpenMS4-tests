@@ -1,0 +1,1493 @@
+{
+  "schema_version": 1,
+  "status": "passed_with_existing_skips",
+  "source_parent": "afeceb45805f6aeeb349a4902b136fbd705a461b",
+  "initial_source_parent": "5d1e2391167dbb16c8ea6cd1001393bf5609e296",
+  "packages": {
+    "core": {
+      "path": "packages/core",
+      "repository": "https://github.com/okohlbacher/OpenMS4-core",
+      "source_revision": "6bfc0e4711105f4eda2fea86812a83af7c7e791f"
+    },
+    "cli": {
+      "path": "packages/cli",
+      "repository": "https://github.com/okohlbacher/OpenMS4-cli",
+      "source_revision": "a46c1c641d3053fd4b59ba9e5bd787e230dfed35"
+    },
+    "test-data": {
+      "path": "packages/test-data",
+      "repository": "https://github.com/okohlbacher/OpenMS4-test-data",
+      "source_revision": "cb160915b57200e2f145b49a2ec0b82f8fd67aaf"
+    },
+    "topp": {
+      "path": "packages/topp",
+      "repository": "https://github.com/okohlbacher/OpenMS4-topp",
+      "source_revision": "56162b0bea519049c55d943f01b687e24d238927"
+    },
+    "openswath": {
+      "path": "packages/openswath",
+      "repository": "https://github.com/okohlbacher/OpenMS4-openswath",
+      "source_revision": "e9d835f198ac47b130013fec419ce6d8e95e6b1f"
+    },
+    "flash": {
+      "path": "packages/flash",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flash",
+      "source_revision": "e6ebbb38686791df8ddfdbabe8f93b6e2c8e96fb"
+    },
+    "desktop": {
+      "path": "packages/desktop",
+      "repository": "https://github.com/okohlbacher/OpenMS4-desktop",
+      "source_revision": "536c21cca70a7a969f03e300fbfe09b5e18a2397"
+    },
+    "pyopenms": {
+      "path": "packages/pyopenms",
+      "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms",
+      "source_revision": "e7e8d5a04fe76d4793521982e88df64759e1ff7a"
+    },
+    "flashapp": {
+      "path": "packages/flashapp",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
+      "source_revision": "b845126dc6ff17675cccd5cafea6870c4b3db805",
+      "frozen_dependencies": true
+    },
+    "nuxl": {
+      "path": "packages/nuxl",
+      "repository": "https://github.com/okohlbacher/OpenMS4-nuxl",
+      "source_revision": "f0c71c2559db909c4d0850bac78a451b6941010b"
+    },
+    "prose": {
+      "path": "packages/prose",
+      "repository": "https://github.com/okohlbacher/OpenMS4-prose",
+      "source_revision": "60e3464e52c2008b7b1e2bb3be4bef1364345385"
+    },
+    "nase": {
+      "path": "packages/nase",
+      "repository": "https://github.com/okohlbacher/OpenMS4-nase",
+      "source_revision": "2afcafccdf49fef2dd97487e3b547ce47201d343"
+    },
+    "comet": {
+      "path": "packages/comet",
+      "repository": "https://github.com/okohlbacher/OpenMS4-comet",
+      "source_revision": "7361ac781b720b3d251c9106946639512889bc21"
+    },
+    "mascot": {
+      "path": "packages/mascot",
+      "repository": "https://github.com/okohlbacher/OpenMS4-mascot",
+      "source_revision": "33043c03cb63eca8053de503912dcc46daf5805f"
+    },
+    "database-suitability": {
+      "path": "packages/database-suitability",
+      "repository": "https://github.com/okohlbacher/OpenMS4-database-suitability",
+      "source_revision": "6f577182ea9a659242d1b2b735195c402cc50fef"
+    },
+    "proteomics-lfq": {
+      "path": "packages/proteomics-lfq",
+      "repository": "https://github.com/okohlbacher/OpenMS4-proteomics-lfq",
+      "source_revision": "85c0e99c1286b2f98c6cfaf2b675db219052e570"
+    },
+    "parquet-diff": {
+      "path": "packages/parquet-diff",
+      "repository": "https://github.com/okohlbacher/OpenMS4-parquet-diff",
+      "source_revision": "a7c93ff4150eeb5818b5d50f8a90ded33c8a74e7"
+    }
+  },
+  "host": "dax",
+  "scratch_root": "/scratch/kohlbach/openms4-5d1e239-20260910",
+  "profile": {
+    "build_type": "Debug",
+    "class_testing_enabled": true,
+    "cxx_compiler_id": "GNU",
+    "cxx_compiler_version": "14.4.0",
+    "cxx_standard": 23,
+    "dependencies": {
+      "arrow": {
+        "target": "Arrow::arrow_shared",
+        "version": "23.0.1"
+      },
+      "boost": {
+        "linkage": "shared",
+        "version": "1.89.0"
+      },
+      "curl": {
+        "version": "8.18.0"
+      },
+      "eigen": {
+        "version": "5.0.1"
+      },
+      "openmp": {
+        "version": "4.5"
+      },
+      "parquet": {
+        "target": "Parquet::parquet_shared",
+        "version": "23.0.1"
+      }
+    },
+    "features": {
+      "hdf5": false,
+      "onnx": false,
+      "openmp": true,
+      "openswath": true,
+      "opentims": false,
+      "tdl": false,
+      "thermo_raw": false,
+      "wnetalign": false
+    },
+    "libstdcxx_cxx11_abi": 1,
+    "msvc_runtime_library": null,
+    "schema_version": 1,
+    "shared_libs": true,
+    "source_dirty": false,
+    "source_revision": "6bfc0e4711105f4eda2fea86812a83af7c7e791f",
+    "standard_library": "libstdc++",
+    "stl_debug": false,
+    "system_name": "Linux",
+    "system_processor": "x86_64",
+    "version": "4.0.0"
+  },
+  "parallelism": {
+    "logical_cpus": 384,
+    "compiler_budget": 320,
+    "product_workers": 4,
+    "compiler_jobs_per_product": 80,
+    "compiler_jobs_per_downstream": 160,
+    "core_ctest_jobs": 128,
+    "console_ctest_jobs": 128,
+    "default_omp_threads": 1,
+    "flash_class_omp_threads": 16
+  },
+  "components": {
+    "core": {
+      "build": {
+        "label": "core-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/core",
+          "--parallel",
+          "320"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058631.2499037,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/core-build-1789058631249904509.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 51.996
+      },
+      "native_tests": {
+        "label": "core-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/core",
+          "--parallel",
+          "128",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/core-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058683.2465262,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/core-tests-1789058683246526576.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 49.472
+      },
+      "counts": {
+        "registered": 700,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 700,
+        "skipped_names": []
+      }
+    },
+    "cli": {
+      "build": {
+        "label": "cli-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/cli",
+          "--parallel",
+          "320"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058738.4174647,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/cli-build-1789058738417465865.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 7.05
+      },
+      "native_tests": {
+        "label": "cli-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/cli",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/cli-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058745.4678695,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/cli-tests-1789058745467870064.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 0.362
+      },
+      "counts": {
+        "registered": 9,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 9,
+        "skipped_names": []
+      }
+    },
+    "topp": {
+      "build": {
+        "label": "topp-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/topp",
+          "--parallel",
+          "80"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058748.9437613,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/topp-build-1789058748943762223.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 13.85
+      },
+      "native_tests": {
+        "label": "topp-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/topp",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/topp-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058762.793774,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/topp-tests-1789058762793775303.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 1.131
+      },
+      "counts": {
+        "registered": 242,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 242,
+        "skipped_names": []
+      }
+    },
+    "openswath": {
+      "build": {
+        "label": "openswath-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/openswath",
+          "--parallel",
+          "80"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058767.1989107,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/openswath-build-1789058767198911864.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 9.448
+      },
+      "native_tests": {
+        "label": "openswath-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/openswath",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/openswath-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058776.6476855,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/openswath-tests-1789058776647686946.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 0.277
+      },
+      "counts": {
+        "registered": 38,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 38,
+        "skipped_names": []
+      }
+    },
+    "prose": {
+      "build": {
+        "label": "prose-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/prose",
+          "--parallel",
+          "80"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058748.990571,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/prose-build-1789058748990571521.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 13.519
+      },
+      "native_tests": {
+        "label": "prose-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/prose",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/prose-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058762.5107346,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/prose-tests-1789058762510735315.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 49.89
+      },
+      "counts": {
+        "registered": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 3,
+        "skipped_names": []
+      }
+    },
+    "nuxl": {
+      "build": {
+        "label": "nuxl-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/nuxl",
+          "--parallel",
+          "80"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058748.7188013,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/nuxl-build-1789058748718802076.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 14.73
+      },
+      "native_tests": {
+        "label": "nuxl-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/nuxl",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/nuxl-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058763.4490387,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/nuxl-tests-1789058763449039804.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 1.201
+      },
+      "counts": {
+        "registered": 13,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 13,
+        "skipped_names": []
+      }
+    },
+    "nase": {
+      "build": {
+        "label": "nase-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/nase",
+          "--parallel",
+          "80"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058767.5204828,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/nase-build-1789058767520484046.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 11.878
+      },
+      "native_tests": {
+        "label": "nase-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/nase",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/nase-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058779.3993492,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/nase-tests-1789058779399350466.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 0.164
+      },
+      "counts": {
+        "registered": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 2,
+        "skipped_names": []
+      }
+    },
+    "comet": {
+      "build": {
+        "label": "comet-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/comet",
+          "--parallel",
+          "80"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058779.7733645,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/comet-build-1789058779773365829.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 6.0
+      },
+      "native_tests": {
+        "label": "comet-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/comet",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/comet-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058785.7735827,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/comet-tests-1789058785773583851.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 0.345
+      },
+      "counts": {
+        "registered": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 3,
+        "skipped_names": []
+      }
+    },
+    "mascot": {
+      "build": {
+        "label": "mascot-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/mascot",
+          "--parallel",
+          "80"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058782.3909523,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/mascot-build-1789058782390953876.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 4.421
+      },
+      "native_tests": {
+        "label": "mascot-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/mascot",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/mascot-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058786.8128762,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/mascot-tests-1789058786812877567.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 1.776
+      },
+      "counts": {
+        "registered": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 4,
+        "skipped_names": []
+      }
+    },
+    "database-suitability": {
+      "build": {
+        "label": "database-suitability-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/database-suitability",
+          "--parallel",
+          "80"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058789.0003896,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/database-suitability-build-1789058789000390797.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 9.597
+      },
+      "native_tests": {
+        "label": "database-suitability-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/database-suitability",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/database-suitability-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058798.5977447,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/database-suitability-tests-1789058798597745806.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 1.215
+      },
+      "counts": {
+        "registered": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 4,
+        "skipped_names": []
+      }
+    },
+    "proteomics-lfq": {
+      "build": {
+        "label": "proteomics-lfq-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/proteomics-lfq",
+          "--parallel",
+          "80"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058791.3719132,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/proteomics-lfq-build-1789058791371914319.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 11.903
+      },
+      "native_tests": {
+        "label": "proteomics-lfq-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/proteomics-lfq",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/proteomics-lfq-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058803.275837,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/proteomics-lfq-tests-1789058803275838380.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 0.143
+      },
+      "counts": {
+        "registered": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 3,
+        "skipped_names": []
+      }
+    },
+    "parquet-diff": {
+      "build": {
+        "label": "parquet-diff-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/parquet-diff",
+          "--parallel",
+          "80"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058791.7380567,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/parquet-diff-build-1789058791738057914.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 5.113
+      },
+      "native_tests": {
+        "label": "parquet-diff-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/parquet-diff",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/parquet-diff-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058796.8512826,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/parquet-diff-tests-1789058796851284229.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 0.126
+      },
+      "counts": {
+        "registered": 3,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 3,
+        "skipped_names": []
+      }
+    },
+    "flash": {
+      "build": {
+        "label": "flash-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/flash",
+          "--parallel",
+          "80"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058749.1643918,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/flash-build-1789058749164392767.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 11.424
+      },
+      "native_tests": {
+        "label": "flash-tests-short",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/flash",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/flash-tests-short.xml",
+          "-E",
+          "^FLASHDeconvAlgorithm_test$"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058760.5887067,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/flash-tests-short-1789058760588707376.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 28.215
+      },
+      "counts": {
+        "registered": 8,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 8,
+        "skipped_names": []
+      },
+      "long_test": {
+        "label": "flash-tests-long",
+        "status": "passed",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/flash/FLASHDeconvAlgorithm_test"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910/flash-long-fixed",
+        "expected_revisions": {
+          "core": "6bfc0e4711105f4eda2fea86812a83af7c7e791f",
+          "flash": "e6ebbb38686791df8ddfdbabe8f93b6e2c8e96fb"
+        },
+        "environment": {
+          "LD_LIBRARY_PATH": "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib",
+          "TMPDIR": "/scratch/kohlbach/openms4-5d1e239-20260910/tmp",
+          "OPENMS_TMPDIR": "/scratch/kohlbach/openms4-5d1e239-20260910/tmp",
+          "OMP_NUM_THREADS": "16",
+          "OPENMS_DISABLE_UPDATE_CHECK": "ON"
+        },
+        "unset_environment": [
+          "OPENMS_DATA_PATH",
+          "LD_PRELOAD",
+          "OPENMS_CONTRIB_LIBS",
+          "PYTHONPATH"
+        ],
+        "timeout_seconds": 1500,
+        "wait_timeout_seconds": 5400,
+        "watcher_started_unix": 1789058598.5381596,
+        "build_record": {
+          "label": "flash-build",
+          "command": [
+            "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+            "--build",
+            "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/flash",
+            "--parallel",
+            "80"
+          ],
+          "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+          "started_unix": 1789058749.1643918,
+          "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/flash-build-1789058749164392767.log",
+          "status": "passed",
+          "exit_code": 0,
+          "elapsed_seconds": 11.424
+        },
+        "actual_revisions": {
+          "core": "6bfc0e4711105f4eda2fea86812a83af7c7e791f",
+          "flash": "e6ebbb38686791df8ddfdbabe8f93b6e2c8e96fb"
+        },
+        "linkage": "\tlinux-vdso.so.1 (0x00007ffff5f5b000)\n\tlibOpenMS_FLASH.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/flash/libOpenMS_FLASH.so.1 (0x00007443b2c00000)\n\tlibOpenMS.so => /scratch/kohlbach/openms4-5d1e239-20260910/sdk-fixed/lib/libOpenMS.so (0x00007443b0000000)\n\tlibOpenSwathAlgo.so => /scratch/kohlbach/openms4-5d1e239-20260910/sdk-fixed/lib/libOpenSwathAlgo.so (0x00007443b3172000)\n\tlibcurl.so.4 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libcurl.so.4 (0x00007443b308c000)\n\tlibboost_regex.so.1.89.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libboost_regex.so.1.89.0 (0x00007443b3041000)\n\tlibparquet.so.2300 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libparquet.so.2300 (0x00007443afc00000)\n\tlibarrow.so.2300 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libarrow.so.2300 (0x00007443aea00000)\n\tlibgomp.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libgomp.so.1 (0x00007443b2fe6000)\n\tlibstdc++.so.6 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libstdc++.so.6 (0x00007443ae600000)\n\tlibm.so.6 => /lib/x86_64-linux-gnu/libm.so.6 (0x00007443b2b17000)\n\tlibgcc_s.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libgcc_s.so.1 (0x00007443b2ae9000)\n\tlibc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007443ae200000)\n\tlibxerces-c-3.3.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libxerces-c-3.3.so (0x00007443ade00000)\n\tlibbz2.so.1.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libbz2.so.1.0 (0x00007443b2fc6000)\n\tlibboost_date_time.so.1.89.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libboost_date_time.so.1.89.0 (0x00007443b2fbf000)\n\tlibboost_iostreams.so.1.89.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libboost_iostreams.so.1.89.0 (0x00007443b2ad1000)\n\tlibsvm.so.4 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libsvm.so.4 (0x00007443b2abc000)\n\tlibz.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libz.so.1 (0x00007443b2aa1000)\n\tlibzip.so.5 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libzip.so.5 (0x00007443affde000)\n\tlibarrow_compute.so.2300 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libarrow_compute.so.2300 (0x00007443ad000000)\n\tlibarrow_dataset.so.2300 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libarrow_dataset.so.2300 (0x00007443ae48c000)\n\tlibxml2.so.16 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libxml2.so.16 (0x00007443afabd000)\n\tlibCbc.so.3 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libCbc.so.3 (0x00007443ae8e6000)\n\tlibCgl.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libCgl.so.1 (0x00007443adcec000)\n\tlibClp.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libClp.so.1 (0x00007443ace37000)\n\tlibCoinUtils.so.3 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libCoinUtils.so.3 (0x00007443accfb000)\n\tlibOsi.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libOsi.so.1 (0x00007443ae435000)\n\tlibOsiClp.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libOsiClp.so.1 (0x00007443ae1ab000)\n\tlibboost_random.so.1.89.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libboost_random.so.1.89.0 (0x00007443affd4000)\n\tlibarrow_acero.so.2300 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libarrow_acero.so.2300 (0x00007443acb98000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007443b325f000)\n\tlibnghttp2.so.14 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libnghttp2.so.14 (0x00007443ae8ba000)\n\tlibssh2.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libssh2.so.1 (0x00007443acb4a000)\n\tlibssl.so.3 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libssl.so.3 (0x00007443aca4a000)\n\tlibcrypto.so.3 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libcrypto.so.3 (0x00007443ac400000)\n\tlibgssapi_krb5.so.2 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libgssapi_krb5.so.2 (0x00007443ac3ad000)\n\tlibzstd.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libzstd.so.1 (0x00007443ac294000)\n\tlibpthread.so.0 => /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007443affcf000)\n\tlibrt.so.1 => /lib/x86_64-linux-gnu/librt.so.1 (0x00007443affca000)\n\tlibicudata.so.75 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libicudata.so.75 (0x00007443aa400000)\n\tlibicui18n.so.75 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libicui18n.so.75 (0x00007443aa000000)\n\tlibicuuc.so.75 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libicuuc.so.75 (0x00007443a9c00000)\n\tlibthrift.so.0.22.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libthrift.so.0.22.0 (0x00007443ac1e6000)\n\tlibazure-storage-files-datalake.so.12.14.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libazure-storage-files-datalake.so.12.14.0 (0x00007443a9f3b000)\n\tlibazure-storage-blobs.so.12.16.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libazure-storage-blobs.so.12.16.0 (0x00007443a9a75000)\n\tlibazure-identity.so.1.13.3 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libazure-identity.so.1.13.3 (0x00007443a9e92000)\n\tlibazure-core.so.1.16.2 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libazure-core.so.1.16.2 (0x00007443ac171000)\n\tlibgoogle_cloud_cpp_storage.so.2 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libgoogle_cloud_cpp_storage.so.2 (0x00007443a9600000)\n\tlibgoogle_cloud_cpp_common.so.2 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libgoogle_cloud_cpp_common.so.2 (0x00007443a99ec000)\n\tlibaws-cpp-sdk-identity-management.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-cpp-sdk-identity-management.so (0x00007443aca20000)\n\tlibaws-cpp-sdk-s3.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-cpp-sdk-s3.so (0x00007443a9200000)\n\tlibaws-cpp-sdk-core.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-cpp-sdk-core.so (0x00007443a9045000)\n\tlibaws-crt-cpp.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-crt-cpp.so (0x00007443a9942000)\n\tlibdl.so.2 => /lib/x86_64-linux-gnu/libdl.so.2 (0x00007443affc3000)\n\tliborc.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./liborc.so (0x00007443a8e72000)\n\tlibopentelemetry_exporter_otlp_http_log.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libopentelemetry_exporter_otlp_http_log.so (0x00007443affaf000)\n\tlibopentelemetry_exporter_ostream_logs.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libopentelemetry_exporter_ostream_logs.so (0x00007443afab2000)\n\tlibopentelemetry_exporter_ostream_span.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libopentelemetry_exporter_ostream_span.so (0x00007443ae420000)\n\tlibopentelemetry_exporter_otlp_http.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libopentelemetry_exporter_otlp_http.so (0x00007443ac15f000)\n\tlibopentelemetry_otlp_recordable.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libopentelemetry_otlp_recordable.so (0x00007443aa3d6000)\n\tlibopentelemetry_trace.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libopentelemetry_trace.so (0x00007443aa3a1000)\n\tlibopentelemetry_logs.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libopentelemetry_logs.so (0x00007443a9e5c000)\n\tlibopentelemetry_resources.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libopentelemetry_resources.so (0x00007443aa38f000)\n\tlibopentelemetry_exporter_otlp_http_client.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libopentelemetry_exporter_otlp_http_client.so (0x00007443a9e3b000)\n\tlibopentelemetry_proto.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libopentelemetry_proto.so (0x00007443a98ec000)\n\tlibprotobuf.so.33.5.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libprotobuf.so.33.5.0 (0x00007443a8a00000)\n\tlibabsl_status.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libabsl_status.so.2601.0.0 (0x00007443afaa6000)\n\tlibabsl_time.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libabsl_time.so.2601.0.0 (0x00007443a9e24000)\n\tlibabsl_time_zone.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libabsl_time_zone.so.2601.0.0 (0x00007443a98cc000)\n\tlibglog.so.2 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libglog.so.2 (0x00007443a95a8000)\n\tlibbrotlienc.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libbrotlienc.so.1 (0x00007443a94ec000)\n\tlibbrotlidec.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libbrotlidec.so.1 (0x00007443ae19c000)\n\tliblz4.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./liblz4.so.1 (0x00007443a989d000)\n\tlibsnappy.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libsnappy.so.1 (0x00007443a988d000)\n\tlibnsl.so.3 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libnsl.so.3 (0x00007443ae419000)\n\tliblzma.so.5 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./liblzma.so.5 (0x00007443a94bb000)\n\tlibre2.so.11 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libre2.so.11 (0x00007443a8df5000)\n\tlibutf8proc.so.3 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libutf8proc.so.3 (0x00007443a8d9c000)\n\tlibiconv.so.2 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libiconv.so.2 (0x00007443a88ed000)\n\tlibClpSolver.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libClpSolver.so.1 (0x00007443a887b000)\n\tliblapack.so.3 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./liblapack.so.3 (0x00007443a6210000)\n\tlibkrb5.so.3 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libkrb5.so.3 (0x00007443a613a000)\n\tlibk5crypto.so.3 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libk5crypto.so.3 (0x00007443a94a3000)\n\tlibcom_err.so.3 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libcom_err.so.3 (0x00007443adce6000)\n\tlibkrb5support.so.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libkrb5support.so.0 (0x00007443a987f000)\n\tlibkeyutils.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libkeyutils.so.1 (0x00007443ac158000)\n\tlibresolv.so.2 => /lib/x86_64-linux-gnu/libresolv.so.2 (0x00007443a9491000)\n\tlibazure-storage-common.so.12.13.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libazure-storage-common.so.12.13.0 (0x00007443a8d50000)\n\tlibgoogle_cloud_cpp_rest_internal.so.2 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libgoogle_cloud_cpp_rest_internal.so.2 (0x00007443a601e000)\n\tlibcrc32c.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libcrc32c.so.1 (0x00007443ac152000)\n\tlibabsl_crc32c.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_crc32c.so.2601.0.0 (0x00007443aa389000)\n\tlibabsl_str_format_internal.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_str_format_internal.so.2601.0.0 (0x00007443a5ffd000)\n\tlibabsl_strings.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_strings.so.2601.0.0 (0x00007443a5fd4000)\n\tlibabsl_strings_internal.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_strings_internal.so.2601.0.0 (0x00007443a9e1e000)\n\tlibaws-cpp-sdk-cognito-identity.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-cpp-sdk-cognito-identity.so (0x00007443a5f6d000)\n\tlibaws-cpp-sdk-sts.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-cpp-sdk-sts.so (0x00007443a5f2c000)\n\tlibaws-c-common.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-c-common.so.1 (0x00007443a5ee4000)\n\tlibaws-c-event-stream.so.1.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-c-event-stream.so.1.0.0 (0x00007443a5ec9000)\n\tlibaws-c-mqtt.so.1.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-c-mqtt.so.1.0.0 (0x00007443a5e66000)\n\tlibaws-c-s3.so.0unstable => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-c-s3.so.0unstable (0x00007443a5e20000)\n\tlibaws-c-auth.so.1.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-c-auth.so.1.0.0 (0x00007443a5ddd000)\n\tlibaws-c-http.so.1.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-c-http.so.1.0.0 (0x00007443a5d73000)\n\tlibaws-c-io.so.1.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-c-io.so.1.0.0 (0x00007443a5d20000)\n\tlibaws-c-cal.so.1.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-c-cal.so.1.0.0 (0x00007443a5d07000)\n\tlibaws-c-sdkutils.so.1.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-c-sdkutils.so.1.0.0 (0x00007443a5cec000)\n\tlibaws-checksums.so.1.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-checksums.so.1.0.0 (0x00007443a5cca000)\n\tlibopentelemetry_common.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libopentelemetry_common.so (0x00007443a8d42000)\n\tlibopentelemetry_metrics.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libopentelemetry_metrics.so (0x00007443a5c15000)\n\tlibopentelemetry_http_client_curl.so => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libopentelemetry_http_client_curl.so (0x00007443a5be7000)\n\tlibabsl_die_if_null.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_die_if_null.so.2601.0.0 (0x00007443a9e19000)\n\tlibabsl_statusor.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_statusor.so.2601.0.0 (0x00007443a8d3c000)\n\tlibutf8_validity.so.33.5.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libutf8_validity.so.33.5.0 (0x00007443a5be2000)\n\tlibabsl_log_internal_check_op.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_log_internal_check_op.so.2601.0.0 (0x00007443a5bd9000)\n\tlibabsl_log_internal_conditions.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_log_internal_conditions.so.2601.0.0 (0x00007443a5bd4000)\n\tlibabsl_log_internal_message.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_log_internal_message.so.2601.0.0 (0x00007443a5bc6000)\n\tlibabsl_log_internal_nullguard.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_log_internal_nullguard.so.2601.0.0 (0x00007443a5bc1000)\n\tlibabsl_raw_hash_set.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_raw_hash_set.so.2601.0.0 (0x00007443a5bb8000)\n\tlibabsl_cord.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_cord.so.2601.0.0 (0x00007443a5b94000)\n\tlibabsl_cordz_info.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_cordz_info.so.2601.0.0 (0x00007443a5b8d000)\n\tlibabsl_cord_internal.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_cord_internal.so.2601.0.0 (0x00007443a5b78000)\n\tlibabsl_synchronization.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_synchronization.so.2601.0.0 (0x00007443a5b66000)\n\tlibabsl_hash.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_hash.so.2601.0.0 (0x00007443a5b61000)\n\tlibabsl_spinlock_wait.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_spinlock_wait.so.2601.0.0 (0x00007443a5b5c000)\n\tlibabsl_throw_delegate.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_throw_delegate.so.2601.0.0 (0x00007443a5b55000)\n\tlibabsl_leak_check.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_leak_check.so.2601.0.0 (0x00007443a5b50000)\n\tlibabsl_strerror.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_strerror.so.2601.0.0 (0x00007443a5b4b000)\n\tlibabsl_raw_logging_internal.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libabsl_raw_logging_internal.so.2601.0.0 (0x00007443a5b46000)\n\tlibgflags.so.2.3 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libgflags.so.2.3 (0x00007443a5b1a000)\n\tlibbrotlicommon.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libbrotlicommon.so.1 (0x00007443a5af7000)\n\tlibgfortran.so.5 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././libgfortran.so.5 (0x00007443a5600000)\n\tlibabsl_crc_internal.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_crc_internal.so.2601.0.0 (0x00007443a5af0000)\n\tlibabsl_int128.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_int128.so.2601.0.0 (0x00007443a5ae9000)\n\tlibaws-c-compression.so.1.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libaws-c-compression.so.1.0.0 (0x00007443a5ae4000)\n\tlibs2n.so.1 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./libs2n.so.1 (0x00007443a5967000)\n\tlibabsl_base.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_base.so.2601.0.0 (0x00007443a55fa000)\n\tlibabsl_examine_stack.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_examine_stack.so.2601.0.0 (0x00007443a5962000)\n\tlibabsl_log_internal_format.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_log_internal_format.so.2601.0.0 (0x00007443a55f4000)\n\tlibabsl_log_internal_structured_proto.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_log_internal_structured_proto.so.2601.0.0 (0x00007443a55ef000)\n\tlibabsl_log_internal_log_sink_set.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_log_internal_log_sink_set.so.2601.0.0 (0x00007443a55e9000)\n\tlibabsl_log_internal_globals.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_log_internal_globals.so.2601.0.0 (0x00007443a55e2000)\n\tlibabsl_log_globals.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_log_globals.so.2601.0.0 (0x00007443a55dc000)\n\tlibabsl_log_internal_proto.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_log_internal_proto.so.2601.0.0 (0x00007443a55d7000)\n\tlibabsl_hashtablez_sampler.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_hashtablez_sampler.so.2601.0.0 (0x00007443a55d1000)\n\tlibabsl_crc_cord_state.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_crc_cord_state.so.2601.0.0 (0x00007443a55c8000)\n\tlibabsl_cordz_functions.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_cordz_functions.so.2601.0.0 (0x00007443a55c1000)\n\tlibabsl_cordz_handle.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_cordz_handle.so.2601.0.0 (0x00007443a55bb000)\n\tlibabsl_stacktrace.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_stacktrace.so.2601.0.0 (0x00007443a55b5000)\n\tlibabsl_kernel_timeout_internal.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_kernel_timeout_internal.so.2601.0.0 (0x00007443a55af000)\n\tlibabsl_tracing_internal.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_tracing_internal.so.2601.0.0 (0x00007443a55aa000)\n\tlibabsl_malloc_internal.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_malloc_internal.so.2601.0.0 (0x00007443a55a1000)\n\tlibabsl_city.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libabsl_city.so.2601.0.0 (0x00007443a559c000)\n\tlibquadmath.so.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././libquadmath.so.0 (0x00007443a5553000)\n\tlibabsl_symbolize.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././././libabsl_symbolize.so.2601.0.0 (0x00007443a554b000)\n\tlibabsl_log_sink.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././././libabsl_log_sink.so.2601.0.0 (0x00007443a5544000)\n\tlibabsl_exponential_biased.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././././libabsl_exponential_biased.so.2601.0.0 (0x00007443a553f000)\n\tlibabsl_borrowed_fixup_buffer.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././././libabsl_borrowed_fixup_buffer.so.2601.0.0 (0x00007443a5522000)\n\tlibabsl_debugging_internal.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././././libabsl_debugging_internal.so.2601.0.0 (0x00007443a551c000)\n\tlibabsl_demangle_internal.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././././libabsl_demangle_internal.so.2601.0.0 (0x00007443a5508000)\n\tlibabsl_demangle_rust.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././././././libabsl_demangle_rust.so.2601.0.0 (0x00007443a5500000)\n\tlibabsl_decode_rust_punycode.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/./././././././libabsl_decode_rust_punycode.so.2601.0.0 (0x00007443a54fb000)\n\tlibabsl_utf8_for_code_point.so.2601.0.0 => /scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/././././././././libabsl_utf8_for_code_point.so.2601.0.0 (0x00007443a54f6000)\n",
+        "started_unix": 1789058768.592126,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/flash-tests-long-1789058768592114256.log",
+        "host": "dax",
+        "cpu_affinity": 384,
+        "load_average_before": [
+          50.375,
+          39.92138671875,
+          28.61767578125
+        ],
+        "exit_code": 0,
+        "elapsed_seconds": 508.561,
+        "timed_out": false,
+        "passed_marker": true,
+        "finished_unix": 1789059277.1536405,
+        "load_average_after": [
+          16.52587890625,
+          21.20263671875,
+          24.63916015625
+        ]
+      },
+      "long_counts": {
+        "registered": 1,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 1,
+        "skipped_names": []
+      },
+      "unique_checks": 9
+    },
+    "desktop": {
+      "build": {
+        "label": "desktop-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/desktop",
+          "--parallel",
+          "160"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058816.9318411,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/desktop-build-1789058816931841833.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 33.276
+      },
+      "native_tests": {
+        "label": "desktop-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/desktop",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/desktop-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058850.2079873,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/desktop-tests-1789058850207987859.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 1.771
+      },
+      "counts": {
+        "registered": 10,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 10,
+        "skipped_names": []
+      }
+    },
+    "pyopenms": {
+      "build": {
+        "label": "pyopenms-build",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+          "--build",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/pyopenms",
+          "--parallel",
+          "160"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058814.7724187,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/pyopenms-build-1789058814772419759.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 52.305
+      },
+      "native_tests": {
+        "label": "pyopenms-tests",
+        "command": [
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+          "--test-dir",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/pyopenms",
+          "--parallel",
+          "32",
+          "--no-tests=error",
+          "--output-on-failure",
+          "--output-junit",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/pyopenms-tests.xml"
+        ],
+        "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "started_unix": 1789058867.0777922,
+        "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/pyopenms-tests-1789058867077792585.log",
+        "status": "passed",
+        "exit_code": 0,
+        "elapsed_seconds": 27.686
+      },
+      "counts": {
+        "registered": 4,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 4,
+        "skipped_names": []
+      }
+    }
+  },
+  "installed_console": {
+    "command": {
+      "label": "regressions-tests",
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/build-fixed/regressions",
+        "--parallel",
+        "128",
+        "--output-on-failure",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/regressions-tests.xml"
+      ],
+      "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910",
+      "started_unix": 1789058820.6659272,
+      "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/regressions-tests-1789058820665928349.log",
+      "status": "passed",
+      "exit_code": 0,
+      "elapsed_seconds": 166.855
+    },
+    "counts": {
+      "registered": 2041,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 5,
+      "passed": 2036,
+      "skipped_names": [
+        "TOPP_MSGFPlusAdapter_missing",
+        "TOPP_SageAdapter_missing",
+        "TOPP_CometAdapter_missing",
+        "TOPP_CometAdapter_failing",
+        "TOPP_MSFraggerAdapter_missing"
+      ]
+    }
+  },
+  "core_acceptance": {
+    "status": "passed",
+    "host": "dax",
+    "parent_source_revision": "afeceb45805f6aeeb349a4902b136fbd705a461b",
+    "core_source_revision": "6bfc0e4711105f4eda2fea86812a83af7c7e791f",
+    "core_source_dirty": false,
+    "profile": {
+      "build_type": "Debug",
+      "class_testing_enabled": true,
+      "cxx_compiler_id": "GNU",
+      "cxx_compiler_version": "14.4.0",
+      "cxx_standard": 23,
+      "dependencies": {
+        "arrow": {
+          "target": "Arrow::arrow_shared",
+          "version": "23.0.1"
+        },
+        "boost": {
+          "linkage": "shared",
+          "version": "1.89.0"
+        },
+        "curl": {
+          "version": "8.18.0"
+        },
+        "eigen": {
+          "version": "5.0.1"
+        },
+        "openmp": {
+          "version": "4.5"
+        },
+        "parquet": {
+          "target": "Parquet::parquet_shared",
+          "version": "23.0.1"
+        }
+      },
+      "features": {
+        "hdf5": false,
+        "onnx": false,
+        "openmp": true,
+        "openswath": true,
+        "opentims": false,
+        "tdl": false,
+        "thermo_raw": false,
+        "wnetalign": false
+      },
+      "libstdcxx_cxx11_abi": 1,
+      "msvc_runtime_library": null,
+      "schema_version": 1,
+      "shared_libs": true,
+      "source_dirty": false,
+      "source_revision": "6bfc0e4711105f4eda2fea86812a83af7c7e791f",
+      "standard_library": "libstdc++",
+      "stl_debug": false,
+      "system_name": "Linux",
+      "system_processor": "x86_64",
+      "version": "4.0.0"
+    },
+    "native_suite": {
+      "source_xml": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/core-tests.xml",
+      "attributes": {
+        "name": "(empty)",
+        "tests": "700",
+        "failures": "0",
+        "disabled": "0",
+        "skipped": "0",
+        "hostname": "",
+        "time": "49",
+        "timestamp": "2026-09-10T18:44:43"
+      },
+      "testcase_count": 700,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "regression_sections": {
+      "pipecho": {
+        "testcase": {
+          "name": "PipEchoAlgorithm_realistic_test",
+          "classname": "PipEchoAlgorithm_realistic_test",
+          "time": "48.0437",
+          "status": "run"
+        },
+        "full_10000_features_observed": true,
+        "internally_skipped": false
+      },
+      "peakgroup_fractional_residuals": {
+        "testcase": {
+          "name": "PeakGroup_test",
+          "classname": "PeakGroup_test",
+          "time": "0.178102",
+          "status": "run"
+        },
+        "section": "[EXTRA] fractional isotope residuals distinguish signal peaks from noise",
+        "passed": true
+      },
+      "full_native_output": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/core-acceptance-core-tests-full.log"
+    },
+    "acceptance": {
+      "original": [
+        {
+          "name": "sdk_runtime_identity",
+          "seconds": 0.07
+        },
+        {
+          "name": "sdk_eigen",
+          "seconds": 0.08
+        },
+        {
+          "name": "sdk_invalid_data_override",
+          "seconds": 0.08
+        },
+        {
+          "name": "sdk_library_relative_data",
+          "seconds": 0.08
+        },
+        {
+          "name": "sdk_test_support",
+          "seconds": 0.08
+        },
+        {
+          "name": "sdk_explicit_data_override",
+          "seconds": 0.08
+        },
+        {
+          "name": "sdk_arrow",
+          "seconds": 0.08
+        },
+        {
+          "name": "sdk_api",
+          "seconds": 0.51
+        }
+      ],
+      "relocated": [
+        {
+          "name": "sdk_runtime_identity",
+          "seconds": 0.07
+        },
+        {
+          "name": "sdk_explicit_data_override",
+          "seconds": 0.07
+        },
+        {
+          "name": "sdk_invalid_data_override",
+          "seconds": 0.07
+        },
+        {
+          "name": "sdk_test_support",
+          "seconds": 0.07
+        },
+        {
+          "name": "sdk_eigen",
+          "seconds": 0.08
+        },
+        {
+          "name": "sdk_library_relative_data",
+          "seconds": 0.08
+        },
+        {
+          "name": "sdk_arrow",
+          "seconds": 0.09
+        },
+        {
+          "name": "sdk_api",
+          "seconds": 0.52
+        }
+      ]
+    },
+    "wrong_revision_rejection": {
+      "returncode": 1,
+      "expected_revision": "0000000000000000000000000000000000000000",
+      "intended_diagnostic_verified": true
+    },
+    "timings_seconds": {
+      "native_build": 51.996,
+      "native_700_tests": 49.472,
+      "upstream_install": 1.206,
+      "isolated_install": 1.267,
+      "acceptance_driver": 19.917,
+      "original_tests": 0.524,
+      "relocated_tests": 0.533,
+      "wrong_revision_configure": 2.611,
+      "wait_for_upstream": 20.004,
+      "pipecho": 48.0437
+    },
+    "scope": "Installed Core only, task-local dependencies remain available; relocation validated with the SDK consumer assertions, without source/dependency access denial. This is not a self-contained runtime bundle test or an instrumented coverage measurement.",
+    "evidence_archive": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/hpc-build-execution/core-acceptance-fixed-evidence.tar.gz",
+    "evidence_sha256": "435117a5f092e0e04c70545d42e56cf7a9432a1f340fe08ed1900aa5a51a4191",
+    "driver": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/hpc-build-execution/core-acceptance-fixed-run.py"
+  },
+  "downstream_acceptance": {
+    "parent_revision": "afeceb45805f6aeeb349a4902b136fbd705a461b",
+    "expected_revisions": {
+      "parent": "afeceb45805f6aeeb349a4902b136fbd705a461b",
+      "core": "6bfc0e4711105f4eda2fea86812a83af7c7e791f",
+      "desktop": "536c21cca70a7a969f03e300fbfe09b5e18a2397",
+      "pyopenms": "e7e8d5a04fe76d4793521982e88df64759e1ff7a",
+      "prose": "60e3464e52c2008b7b1e2bb3be4bef1364345385",
+      "flash": "e6ebbb38686791df8ddfdbabe8f93b6e2c8e96fb"
+    },
+    "driver_sha256": "ecb1bd9c6faf30689c769056a60f6553df74d94b7c289a8e634ae86c1bb6de9f",
+    "installed_desktop": {
+      "desktop": {
+        "testcase": 9,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0
+      }
+    },
+    "installed_python": {
+      "python_provenance": {
+        "testcase": 3,
+        "failure": 0,
+        "error": 0,
+        "skipped": 0
+      }
+    },
+    "python_native_totals": {
+      "passed": 5749,
+      "skipped": 92,
+      "xfailed": 10,
+      "xpassed": 7,
+      "failed": 0,
+      "error": 0,
+      "errors": 0
+    },
+    "python_native_groups": [
+      {
+        "test": "pyopenms_integration_tests",
+        "summary": "========================= 1 passed, 1 warning in 1.75s =========================",
+        "counts": {
+          "passed": 1
+        }
+      },
+      {
+        "test": "pyopenms_docstring_tests",
+        "summary": "================ 2703 passed, 2 skipped, 751 warnings in 7.66s =================",
+        "counts": {
+          "passed": 2703,
+          "skipped": 2
+        }
+      },
+      {
+        "test": "pyopenms_unittests",
+        "summary": "==== 2965 passed, 90 skipped, 10 xfailed, 7 xpassed, 75 warnings in 27.07s =====",
+        "counts": {
+          "passed": 2965,
+          "skipped": 90,
+          "xfailed": 10,
+          "xpassed": 7
+        }
+      },
+      {
+        "test": "pyopenms_feature_tests",
+        "summary": "======================== 80 passed, 1 warning in 27.44s ========================",
+        "counts": {
+          "passed": 80
+        }
+      }
+    ],
+    "loaded_libraries_sha256": {
+      "/scratch/kohlbach/openms4-5d1e239-20260910/sdk-fixed/lib/libOpenMS.so": "11241a8898de4cdd4837889fb1f93904b48203e1eb1d76b69e66b4903b85a029",
+      "/scratch/kohlbach/openms4-5d1e239-20260910/sdk-fixed/lib/libOpenMS_FLASH.so.1.0.0": "3ac0c8bc0c5cc9817a37168442a9c296ebda984795fcd6816b36a6f80436cbc0",
+      "/scratch/kohlbach/openms4-5d1e239-20260910/sdk-fixed/lib/libOpenMS_ProSE.so.1.0.0": "78e6f64392120dfe6cf4905e422059b10c6bc44352171b427d6de05662d7a945"
+    },
+    "limits": "Provider source IDs are installed build metadata; paths/hashes identify actual loaded files, not independent source attestation."
+  },
+  "source_contracts": {
+    "label": "source-validation",
+    "command": [
+      "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/python",
+      "/scratch/kohlbach/openms4-5d1e239-20260910/source-fixed/tools/validate_source.py"
+    ],
+    "cwd": "/scratch/kohlbach/openms4-5d1e239-20260910/source-fixed",
+    "started_unix": 1789058624.8098435,
+    "log": "/scratch/kohlbach/openms4-5d1e239-20260910/evidence-fixed/source-validation-1789058624809844110.log",
+    "status": "passed",
+    "exit_code": 0,
+    "elapsed_seconds": 103.22
+  },
+  "initial_flash_diagnosis": {
+    "status": "isolated causal diagnosis and regression verification complete; published-graph rebuild remains root task",
+    "linux_node": "dax",
+    "before_core": "ea35651d2fa4700a59beae1f3d1b733fb7bdaa9c",
+    "before_flash": "46b55161f8b1a2e6f08c6d77039bebbcbc22c2ac",
+    "fixture_sha256": "bd01aab06a6a4e0caefa65fc73326fc3a376811ac78988ceed0fc55f8d14037a",
+    "root_cause": "Unqualified abs(double) resolves to integer ::abs under the GCC build, truncating sub-Dalton residuals to zero. Explicit std::abs in three FLASH isotope checks and two Core peak-recruitment checks restores the unchanged scientific reference.",
+    "overload_proof": "flash-trace-stdabs-linux.txt records abs-half=0",
+    "unchanged_options": "flash-linux.ini equals saved tool-split-build/flash/FLASHDeconv.ini byte-for-byte",
+    "linux_before": {
+      "features": 0,
+      "spectrum_mass_rows": 8,
+      "monoisotopic_masses": [
+        "3598.616324",
+        "3598.816249"
+      ],
+      "charges": [
+        "3"
+      ]
+    },
+    "combined_fix_probe": {
+      "features": 1,
+      "monoisotopic_mass": "8994.536888",
+      "min_charge": "8",
+      "max_charge": "8",
+      "strict_reference_comparison": "passed",
+      "scientific_columns": 18,
+      "reference_or_tolerance_changes": false,
+      "mechanism": "Isolated FLASH shared library includes patched PeakGroup.cpp to interpose the two unchanged-Core methods; normal package rebuild is separate validation."
+    },
+    "fresh_macos_reference_comparison": "passed; new output directory prevents stale-file reuse",
+    "quantification_regression": {
+      "before_exit": 1,
+      "after_exit": 0,
+      "precursor_separation_Da": 0.25,
+      "expected_reporter_intensities": [
+        100,
+        300
+      ],
+      "before_reporter_intensities": [
+        400,
+        400
+      ],
+      "after_reporter_intensities": [
+        100,
+        300
+      ]
+    },
+    "separate_unapplied_finding": "SpectralDeconvolution.cpp hdiff subtracts unsigned Size from int then converts a huge double to int for negative offsets. An isolated signed-subtraction fix did not resolve this failure, so it was not mixed into the validated abs patch.",
+    "evidence": [
+      "flash-diagnose-two-threads.log",
+      "flash-diagnose-comparison.log",
+      "flash-portability-trace.log",
+      "flash-portability-stdabs.log",
+      "flash-portability-combined-stdabs.log",
+      "flash-quantification-before.log",
+      "flash-quantification-after.log",
+      "flash-combined-features.tsv",
+      "flash-macos-fresh/replay.log"
+    ],
+    "final_native_validation": "Passed in the separately rebuilt committed package graph; see components.flash."
+  },
+  "persistent_artifacts": {
+    "source_revision": "afeceb45805f6aeeb349a4902b136fbd705a461b",
+    "destination": "/ceph/ibmi/abi/oliver/AI/OpenMS4-tests/afeceb45805f6aeeb349a4902b136fbd705a461b-dax-20260910",
+    "status": "passed",
+    "started_unix": 1789058909.0018756,
+    "archives": [
+      {
+        "path": "/ceph/ibmi/abi/oliver/AI/OpenMS4-tests/afeceb45805f6aeeb349a4902b136fbd705a461b-dax-20260910/sdk-fixed.tar.zst",
+        "bytes": 620845845,
+        "sha256": "9d91bb8ea407118390f466378a705ec18817436216a3d7231fd65ae2f6cdc1e4",
+        "command": [
+          "tar",
+          "--use-compress-program",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/zstd -T16 -3",
+          "-cf",
+          "/ceph/ibmi/abi/oliver/AI/OpenMS4-tests/afeceb45805f6aeeb349a4902b136fbd705a461b-dax-20260910/sdk-fixed.tar.zst",
+          "-C",
+          "/scratch/kohlbach/openms4-5d1e239-20260910",
+          "sdk-fixed"
+        ],
+        "elapsed_seconds": 2.036
+      },
+      {
+        "path": "/ceph/ibmi/abi/oliver/AI/OpenMS4-tests/afeceb45805f6aeeb349a4902b136fbd705a461b-dax-20260910/deps.tar.zst",
+        "bytes": 901499861,
+        "sha256": "d7a05842fe5a409afd52d0b8c2758e3b75410ebc574ab83a43200975f3d09011",
+        "command": [
+          "tar",
+          "--use-compress-program",
+          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/zstd -T16 -3",
+          "-cf",
+          "/ceph/ibmi/abi/oliver/AI/OpenMS4-tests/afeceb45805f6aeeb349a4902b136fbd705a461b-dax-20260910/deps.tar.zst",
+          "-C",
+          "/scratch/kohlbach/openms4-5d1e239-20260910",
+          "deps"
+        ],
+        "elapsed_seconds": 3.574
+      }
+    ],
+    "finished_unix": 1789058914.6134741,
+    "evidence_archive": {
+      "path": "/ceph/ibmi/abi/oliver/AI/OpenMS4-tests/afeceb45805f6aeeb349a4902b136fbd705a461b-dax-20260910/evidence-complete.tar.zst",
+      "sha256": "56adf1373283cc8dcc139652779684dc932753ba2715f1888dfb685fc5558a5b",
+      "bytes": 2214748,
+      "elapsed_seconds": 0.042,
+      "command": [
+        "tar",
+        "--use-compress-program",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/zstd -T8 -3",
+        "-cf",
+        "/ceph/ibmi/abi/oliver/AI/OpenMS4-tests/afeceb45805f6aeeb349a4902b136fbd705a461b-dax-20260910/evidence-complete.tar.zst",
+        "-C",
+        "/scratch/kohlbach/openms4-5d1e239-20260910",
+        "build-fixed.py",
+        "build.py",
+        "checkout-fixed.json",
+        "checkout-fixed.sh",
+        "checkout.json",
+        "continue.sh",
+        "core-acceptance-detached.log",
+        "core-acceptance-driver.log",
+        "core-acceptance-fixed-detached.log",
+        "core-acceptance-fixed-run.py",
+        "core-acceptance-fixed/01.log",
+        "core-acceptance-fixed/02.log",
+        "core-acceptance-fixed/03.log",
+        "core-acceptance-fixed/04.log",
+        "core-acceptance-fixed/05.log",
+        "core-acceptance-fixed/06.log",
+        "core-acceptance-fixed/07.log",
+        "core-acceptance-fixed/results.json",
+        "core-acceptance-install.log",
+        "core-acceptance-original-consumer-LastTest.log",
+        "core-acceptance-pipecho-detached.log",
+        "core-acceptance-pipecho.json",
+        "core-acceptance-pipecho.log",
+        "core-acceptance-pipecho.py",
+        "core-acceptance-pipecho.xml",
+        "core-acceptance-relocated-consumer-LastTest.log",
+        "core-acceptance-run.py",
+        "core-acceptance-status.json",
+        "core-acceptance/01.log",
+        "core-acceptance/02.log",
+        "core-acceptance/03.log",
+        "core-acceptance/04.log",
+        "core-acceptance/05.log",
+        "core-acceptance/06.log",
+        "core-acceptance/07.log",
+        "core-acceptance/results.json",
+        "downstream-acceptance",
+        "downstream-acceptance-desktop-driver.log",
+        "downstream-acceptance-fixed",
+        "downstream-acceptance-fixed.py",
+        "downstream-acceptance-python-driver.log",
+        "downstream-acceptance.py",
+        "evidence",
+        "evidence-fixed",
+        "finish-desktop-environment.sh",
+        "finish-environment.sh",
+        "flash-baseline-detached.log",
+        "flash-baseline-resume-detached.log",
+        "flash-baseline-resume.py",
+        "flash-baseline-run.py",
+        "flash-baseline/evidence",
+        "flash-baseline/status.json",
+        "flash-diagnose",
+        "flash-diagnose.sh",
+        "flash-long-fixed-driver.log",
+        "flash-long-fixed.py",
+        "make-report.py",
+        "peakgroup-fractional-probe.cpp",
+        "prepare-environment.sh",
+        "preserve-artifacts.py",
+        "preserve-evidence.py",
+        "regressions-fixed.py",
+        "regressions.py",
+        "run-fixed.sh",
+        "start-fixed.sh"
+      ],
+      "contents": [
+        "build-fixed.py",
+        "build.py",
+        "checkout-fixed.json",
+        "checkout-fixed.sh",
+        "checkout.json",
+        "continue.sh",
+        "core-acceptance-detached.log",
+        "core-acceptance-driver.log",
+        "core-acceptance-fixed-detached.log",
+        "core-acceptance-fixed-run.py",
+        "core-acceptance-fixed/01.log",
+        "core-acceptance-fixed/02.log",
+        "core-acceptance-fixed/03.log",
+        "core-acceptance-fixed/04.log",
+        "core-acceptance-fixed/05.log",
+        "core-acceptance-fixed/06.log",
+        "core-acceptance-fixed/07.log",
+        "core-acceptance-fixed/results.json",
+        "core-acceptance-install.log",
+        "core-acceptance-original-consumer-LastTest.log",
+        "core-acceptance-pipecho-detached.log",
+        "core-acceptance-pipecho.json",
+        "core-acceptance-pipecho.log",
+        "core-acceptance-pipecho.py",
+        "core-acceptance-pipecho.xml",
+        "core-acceptance-relocated-consumer-LastTest.log",
+        "core-acceptance-run.py",
+        "core-acceptance-status.json",
+        "core-acceptance/01.log",
+        "core-acceptance/02.log",
+        "core-acceptance/03.log",
+        "core-acceptance/04.log",
+        "core-acceptance/05.log",
+        "core-acceptance/06.log",
+        "core-acceptance/07.log",
+        "core-acceptance/results.json",
+        "downstream-acceptance",
+        "downstream-acceptance-desktop-driver.log",
+        "downstream-acceptance-fixed",
+        "downstream-acceptance-fixed.py",
+        "downstream-acceptance-python-driver.log",
+        "downstream-acceptance.py",
+        "evidence",
+        "evidence-fixed",
+        "finish-desktop-environment.sh",
+        "finish-environment.sh",
+        "flash-baseline-detached.log",
+        "flash-baseline-resume-detached.log",
+        "flash-baseline-resume.py",
+        "flash-baseline-run.py",
+        "flash-baseline/evidence",
+        "flash-baseline/status.json",
+        "flash-diagnose",
+        "flash-diagnose.sh",
+        "flash-long-fixed-driver.log",
+        "flash-long-fixed.py",
+        "make-report.py",
+        "peakgroup-fractional-probe.cpp",
+        "prepare-environment.sh",
+        "preserve-artifacts.py",
+        "preserve-evidence.py",
+        "regressions-fixed.py",
+        "regressions.py",
+        "run-fixed.sh",
+        "start-fixed.sh"
+      ],
+      "status": "passed"
+    }
+  }
+}
