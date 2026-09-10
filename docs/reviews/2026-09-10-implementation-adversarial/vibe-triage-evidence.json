@@ -1,0 +1,121 @@
+{
+  "reviewed_parent_commit": "7fb0147c341912b36f13f2ce05ef53a192b8dfff",
+  "recorded_at": "2026-09-10T07:35:17.923975+00:00",
+  "method": "Read-only source and existing test/documentation inspection; no native tests executed for this triage.",
+  "files": [
+    {
+      "path": "docs/core-native-validation.md",
+      "sha256": "4fe70b2af19492d2dd2946d75df7f9a8dde996aedbffbf6b1f05fa51101c5e55"
+    },
+    {
+      "path": "docs/refactoring-plan.md",
+      "sha256": "1ecb38fe7af777029fc04350312549c3dafa647110a6d6012a9ab5844b6c8659"
+    },
+    {
+      "path": "packages/cli/CMakeLists.txt",
+      "sha256": "e914419c40cdff4d0f11bbee2a1d5fddf409e0d9c23871e9518590fc58d5b80e"
+    },
+    {
+      "path": "packages/cli/source/APPLICATIONS/ToolHandler.cpp",
+      "sha256": "bce05eaafa1b740a168b5f18de7bdb1ea8134369bcab0b747c6e26cd35f95951"
+    },
+    {
+      "path": "packages/cli/tests/source/ToolManifest_test.cpp",
+      "sha256": "160ae364dbb08c32d60151e950c1865a9a1dd51e037e2117e5658bc551192ac6"
+    },
+    {
+      "path": "packages/core/CMakeLists.txt",
+      "sha256": "bb9014476c98620e618a8a320d18d953aff5cd857cf88eab90167d8cfbe17077"
+    },
+    {
+      "path": "packages/core/README.md",
+      "sha256": "0b4547003c4b04523f730c0e34ac632260296049e68d2a2257fde5a0dae893f8"
+    },
+    {
+      "path": "packages/core/cmake/OpenMSConfig.cmake.in",
+      "sha256": "15bf26062e8eb7add69f2212f42c5c7cd4d52e9f5880181799718cad8c17a0f8"
+    },
+    {
+      "path": "packages/core/src/openms/include/OpenMS/SYSTEM/File.h",
+      "sha256": "73ce60394b438590fe171eddf50df06cc6335896437b7215a42f1eebc66defc0"
+    },
+    {
+      "path": "packages/core/tests/installed_sdk_acceptance/CMakeLists.txt",
+      "sha256": "f4126dec95b4236be20ad3bf7f381a1d105d8e8ecc73c001d433edf7ee9eae6d"
+    },
+    {
+      "path": "packages/core/tests/installed_sdk_acceptance/data.cpp",
+      "sha256": "5d077cc1e2f18428f752e08199d914fae658ce6b9e5b4c45562de2e79b66b1ee"
+    },
+    {
+      "path": "packages/core/tests/installed_sdk_acceptance/run_acceptance.py",
+      "sha256": "9b8a907f76141c7040bc10c9bbaffdebf5ee06622c73f25230548c1bda5d2c0c"
+    },
+    {
+      "path": "packages/core/tests/sdk_contract/test_sdk_contract.py",
+      "sha256": "eb4a321f3487647d1335370502c96776ee7405a768ed8c5d5d3ec1c473db4a40"
+    },
+    {
+      "path": "packages/desktop/CMakeLists.txt",
+      "sha256": "3ab295965982195e9d434c4a9edf4c185fa2a8ee5724c45164cec6236d08e1e1"
+    },
+    {
+      "path": "packages/desktop/README.md",
+      "sha256": "fca83bdfa869bc24d08e2ef995e32588e93c68d0e74324b9b87144c17c85bceb"
+    },
+    {
+      "path": "packages/desktop/cmake/DesktopDependencies.cmake",
+      "sha256": "eb0b784c5d062e3e3cbf2418321a5afbbad4d9e818d57ea77db144ad12012954"
+    },
+    {
+      "path": "packages/desktop/dependencies.lock.json",
+      "sha256": "b3458549b901d8fe01f9563eebbd805a59de8d605016c339a6296bb79d5b8a5d"
+    },
+    {
+      "path": "packages/desktop/gui/CMakeLists.txt",
+      "sha256": "040bf260c0924e738843391f645fcd04b7a2aba3db5e6beb9f403a94af4970ee"
+    },
+    {
+      "path": "packages/flashapp/Dockerfile",
+      "sha256": "16ef4e6fe93ff651150697bb036e7abd46c889ce7766adc6239c7ba65a2125cc"
+    },
+    {
+      "path": "packages/flashapp/experimental/verify_artifacts.py",
+      "sha256": "4e8862cfbcc8ec5d10283d0aac5058aadea51aeb99a7eb0de2d0ca3cb47f2b44"
+    },
+    {
+      "path": "packages/pyopenms/dependencies.lock.json",
+      "sha256": "e424e1f54185e1deeef2094c34ea80acd515b1ab47523ac2d7431f0355451a24"
+    },
+    {
+      "path": "packages/test-data/CMakeLists.txt",
+      "sha256": "8ebdfd4f5618ea001b4fbfccc1164fed636f6b11a7786d96a7ac6b7703adc771"
+    },
+    {
+      "path": "packages/topp/CMakeLists.txt",
+      "sha256": "3c2e84abc3ad3352a7118e32c8036a2bf0ab1d0e9aad7c214e322afacb6edead"
+    },
+    {
+      "path": "packages/topp/executables.cmake",
+      "sha256": "a9d95c406bfec991a5b17cdd8399145c485776b43747e204fa83c09604bfc4ce"
+    },
+    {
+      "path": "tests/test_package_pins.py",
+      "sha256": "9c64c890857adc93655d9c6819a82a3bbb26b06682c8c1c6cb0b5e8b895dd8d0"
+    },
+    {
+      "path": "tests/test_split.py",
+      "sha256": "4f1fa64796d5b98270f4b718fbe8e41a18f4e6123d7f71e3eab1fa99fd6c98ed"
+    },
+    {
+      "path": "tools/validate_source.py",
+      "sha256": "dfc5caff960d5df0f8acc36d45c3c853d5857c4341db1ca892f9b6533a3f25e9"
+    },
+    {
+      "path": "tools/verify_artifacts.py",
+      "sha256": "4e8862cfbcc8ec5d10283d0aac5058aadea51aeb99a7eb0de2d0ca3cb47f2b44"
+    }
+  ],
+  "triage_sha256": "125fd31995ae427693c424d00fdab5565d9fe8eba466b8834d60e611a421cdcc",
+  "review_sha256": "7c1fce2cbe9fd4e9246a13dcdd270c1ee8585caa2f0dd4c5e6f59d967663cfda"
+}

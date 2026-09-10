@@ -2,6 +2,8 @@
 
 **Passed on macOS arm64 Debug: standalone Core compilation, 709/709 scientific CTests, and installed SDK acceptance before and after relocation.** The final SDK embeds Core commit `21b295c9ad889b402db1e3a20f13e8d08330b61b`; its library hashes and build identity are recorded in [core-sdk-manifest.json](core-sdk-manifest.json).
 
+**Subsequent audit clarification, 10 September 2026:** the runtime revision API returns a short Git revision; full configured source identity was not compared with the loaded binary by these acceptance tests. The manifest's `class_testing_hooks` field records class-test enablement through an unused macro, not implemented hook code. These terminology corrections leave the recorded compilation, test results and artifact hashes intact. See [A03 and A14 in the implementation audit](reviews/2026-09-10-implementation-adversarial/review.md) for the evidence and follow-up gates.
+
 ## Scope and configuration
 
 The source is [packages/core](../packages/core), backed by [OpenMS4-core](https://github.com/okohlbacher/OpenMS4-core). It builds the scientific Core library, OpenSwathAlgo, development TestSupport and their tests. No Qt GUI, TOPP executable, CLI package or Python binding sources are compiled.

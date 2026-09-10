@@ -1,0 +1,22 @@
+{
+  "checks": {
+    "curated_artifact_hashes_before_publication": 43,
+    "json_documents_parsed": 19,
+    "local_markdown_links_resolved": 79,
+    "clean_unchanged_package_revisions": 9,
+    "verbatim_cli_report_hashes": 3,
+    "installed_ponytail_skill_hashes": 6,
+    "diff_whitespace": "Passed for authored files; preserved leaks-featuremap-arrow-final.log contains native test stdout trailing spaces intentionally retained for log-hash integrity.",
+    "credential_pattern_scan": "no matching credentials found in curated files",
+    "controlled_defect_probes": "5 reproduced by reproduce_findings.py",
+    "missing_metadata_configure_probe": "reproduced by reproduce_manifest_category.py"
+  },
+  "native_compilation_this_audit": false,
+  "native_test": "Existing FeatureMapArrowIO_test passed; leak-check result INCONCLUSIVE, as recorded separately",
+  "scope": "Review documentation and controlled probes only; no implementation fixes applied",
+  "remote_verified": {
+    "repository": "okohlbacher/OpenMS4-tests",
+    "is_private": true,
+    "branch": "codex/package-split"
+  }
+}

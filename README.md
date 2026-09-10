@@ -4,6 +4,8 @@ A private, source-complete decomposition of OpenMS develop at `ca32296038839459d
 
 Read [the synthesized refactoring plan](docs/refactoring-plan.md), [the package diagram](docs/package-architecture.svg), and [validation results](docs/validation.md). The plan incorporates actual command-line reviews from Claude Fable 5.1, Kimi and Vibe; verbatim reviews and invocation metadata are in [docs/reviews](docs/reviews/).
 
+The subsequent [implementation audit](docs/reviews/2026-09-10-implementation-adversarial/review.md) cross-checks fresh Claude, Kimi and Vibe reviews against the extracted packages. Its [next refactoring plan](docs/reviews/2026-09-10-implementation-adversarial/refactoring-plan.md) prioritizes data preservation, installed-product loading, artifact identity and meaningful tests. The [Ponytail audit](docs/reviews/2026-09-10-implementation-adversarial/ponytail-audit.md) identifies 2,286 measured lines of obsolete code as deletion candidates. These are proposed changes, not implemented fixes.
+
 | Submodule | Responsibility |
 | --- | --- |
 | [core](https://github.com/okohlbacher/OpenMS4-core) | OpenMS 4.0.0 scientific SDK, OpenSwathAlgo, versioned runtime data, core tests and optional TestSupport |

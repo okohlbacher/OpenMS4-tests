@@ -1,0 +1,53 @@
+{
+  "parent": {
+    "commit": "7fb0147c341912b36f13f2ce05ef53a192b8dfff",
+    "clean": true
+  },
+  "packages": {
+    "core": {
+      "commit": "21b295c9ad889b402db1e3a20f13e8d08330b61b",
+      "clean": true,
+      "repository": "https://github.com/okohlbacher/OpenMS4-core"
+    },
+    "cli": {
+      "commit": "a93fa142c0e51eec616e16cb91d41fa743a42ed3",
+      "clean": true,
+      "repository": "https://github.com/okohlbacher/OpenMS4-cli"
+    },
+    "test-data": {
+      "commit": "a030e39ab7ef4ee8df73ea9aa83c550169919f6f",
+      "clean": true,
+      "repository": "https://github.com/okohlbacher/OpenMS4-test-data"
+    },
+    "topp": {
+      "commit": "3e1af1e14c80f0d98cef18b50519d3badb3cf96e",
+      "clean": true,
+      "repository": "https://github.com/okohlbacher/OpenMS4-topp"
+    },
+    "openswath": {
+      "commit": "d10d9d13b8749eedcdf7765a2d7f73841f696267",
+      "clean": true,
+      "repository": "https://github.com/okohlbacher/OpenMS4-openswath"
+    },
+    "flash": {
+      "commit": "8125964c7c4559519c418d0fe077bbeed98c418f",
+      "clean": true,
+      "repository": "https://github.com/okohlbacher/OpenMS4-flash"
+    },
+    "desktop": {
+      "commit": "af65c9cd393fb548323fbbb45f6a4bc14433b3a4",
+      "clean": true,
+      "repository": "https://github.com/okohlbacher/OpenMS4-desktop"
+    },
+    "pyopenms": {
+      "commit": "b4de01e1477ddea99121230bfe619c160ec47ff4",
+      "clean": true,
+      "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms"
+    },
+    "flashapp": {
+      "commit": "f367bd3b57d5eb0f18c3161e8bb0a1b7ed396c18",
+      "clean": true,
+      "repository": "https://github.com/okohlbacher/OpenMS4-flashapp"
+    }
+  }
+}
