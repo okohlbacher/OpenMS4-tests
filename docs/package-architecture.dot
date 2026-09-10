@@ -1,0 +1,37 @@
+digraph Packages {
+  graph [rankdir=TB, bgcolor="#F7F9FC", pad="0.35", nodesep="0.35", ranksep="0.65", fontname="Helvetica", label="OpenMS 4 — independent packages, pinned dependencies\nPrivate experiment • source implementation complete • native acceptance pending", labelloc=t, fontsize=24];
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=14, margin="0.18,0.13", color="#45769B", fillcolor="#E8F2FC", fontcolor="#183347"];
+  edge [color="#536B83", arrowsize=0.7, penwidth=1.4, fontname="Helvetica", fontsize=11];
+  app [label="FLASHApp\nOwn source + container\nVerified runtime / wheel inputs", fillcolor="#DCF0E4", color="#56856A"];
+  py [label="pyOpenMS\nBindings · addons · wheels"];
+  topp [label="TOPP\n131 tools\nFuzzyDiff retained"];
+  swath [label="OpenSWATH tools\n19 executables\nOpenSwathBase"];
+  flash [label="FLASH tools\nFLASHDeconv"];
+  subgraph cluster_desktop {
+    label="Desktop — one repository initially"; fontname="Helvetica"; fontsize=15; color="#79A089"; style="rounded";
+    viewers [label="Viewers\nTOPPView · ImageCreator\nINIFileEditor", fillcolor="#DCF0E4", color="#56856A"];
+    workflows [label="Workflows\nTOPPAS · ExecutePipeline", fillcolor="#DCF0E4", color="#56856A"];
+    gui [label="GUI SDK\nWidgets + shared application code", fillcolor="#DCF0E4", color="#56856A"];
+    {rank=same; viewers; workflows;}
+    viewers -> gui; workflows -> gui;
+  }
+  cli [label="CLI SDK\nTOPPBase · ToolHandler\nProduct manifests + executable discovery", fillcolor="#D6E7FA", penwidth=2];
+  core [label="CORE SDK — 4.0.0 experimental\nScientific library · OpenSwathAlgo · Arrow interface\nFLASH / SWATH algorithms · ConsoleUtils · ParamTags\nVersioned data + optional development TestSupport", fillcolor="#BCD8F0", color="#24668B", penwidth=2.4, fontsize=16];
+  fixtures [label="Test data\nFull TOPP numerical suite\nVersioned fixtures", fillcolor="#FFF1D5", color="#AF8A43"];
+  native [label="Native dependencies\nC++23 · compiler / runtime identity\nExact Arrow / Parquet build", fillcolor="#ECECF2", color="#858595"];
+  qt [label="Qt", fillcolor="#ECECF2", color="#858595"];
+  {rank=same; py; topp; swath; flash;}
+  app -> py [style=dashed]; app -> flash [style=dashed];
+  py -> core;
+  topp -> cli; swath -> cli; flash -> cli;
+  cli -> core; gui -> cli; gui -> core; gui -> qt;
+  topp -> core [style=invis];
+  fixtures -> core [style=dashed, label="class fixture metadata"];
+  fixtures -> topp [style=dashed, constraint=false];
+  py -> fixtures [style=dashed, label="tests", constraint=false];
+  viewers -> topp [style=dashed, label="optional tools", constraint=false];
+  workflows -> swath [style=dashed, constraint=false];
+  core -> native;
+  note [shape=plain, fillcolor="#F7F9FC", fontcolor="#536B83", fontsize=12, label="Each colored product box belongs to a private subrepository; desktop groups three build entry points.\nArrows: consumer → dependency. Dashed: runtime / test use.\nSource commits are locked. Binary hashes and compatibility require real builds.\nFLASHApp also needs a separate FLASHTnT artifact, absent from this OpenMS baseline."];
+  native -> note [style=invis];
+}

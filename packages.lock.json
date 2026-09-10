@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "repository": "https://github.com/OpenMS/OpenMS",
+    "branch": "develop",
+    "commit": "ca32296038839459d8c9b075b759e285913d6294"
+  },
+  "packages": {
+    "core": {
+      "path": "packages/core",
+      "repository": "https://github.com/okohlbacher/OpenMS4-core",
+      "source_revision": "7c029e8cdba6abab503708ecdd56f6ab55e38ce4"
+    },
+    "cli": {
+      "path": "packages/cli",
+      "repository": "https://github.com/okohlbacher/OpenMS4-cli",
+      "source_revision": "4d8ccd5d795ecea9041c91ab2b5d9647e23383ac"
+    },
+    "test-data": {
+      "path": "packages/test-data",
+      "repository": "https://github.com/okohlbacher/OpenMS4-test-data",
+      "source_revision": "e1ccfcb4ef91ba756c58135e6c92db656822616d"
+    },
+    "topp": {
+      "path": "packages/topp",
+      "repository": "https://github.com/okohlbacher/OpenMS4-topp",
+      "source_revision": "eadd786d26b1ff5211744a87ff588d5a8b529d98"
+    },
+    "openswath": {
+      "path": "packages/openswath",
+      "repository": "https://github.com/okohlbacher/OpenMS4-openswath",
+      "source_revision": "897a2731f8bf43d3f83041f63f54ce9282f5cd14"
+    },
+    "flash": {
+      "path": "packages/flash",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flash",
+      "source_revision": "ccb84cdd4e6ed76f99c5389f13fff4c62a9787ff"
+    },
+    "desktop": {
+      "path": "packages/desktop",
+      "repository": "https://github.com/okohlbacher/OpenMS4-desktop",
+      "source_revision": "b9e1d9be44f4a49a00884cda9eee5848663e3833"
+    },
+    "pyopenms": {
+      "path": "packages/pyopenms",
+      "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms",
+      "source_revision": "5e42ac130a3b2912d9e496de1c8edbf49934393d"
+    },
+    "flashapp": {
+      "path": "packages/flashapp",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
+      "source_revision": "d3aa5e9e0af53cff60946adb51bce613b1bb6977"
+    }
+  }
+}
