@@ -1,5 +1,7 @@
 # OpenMS 4 package experiment
 
+The [current SDK integration report](docs/split-sdk-validation.md) records the simplified Core build, platform CI and the freshly tested package graph. Use the [installed-SDK build instructions](docs/build-split-packages.md) to reproduce the consumer build and tests.
+
 The [tool backend extraction plan](docs/tool-backend-refactoring.md) describes the current 17-package layout and retained Core format support. The [build and test report](docs/tool-backend-validation.md) records the implemented boundaries and native validation. ProSE and FLASH provide optional installed backend SDKs for Python; FLASHApp now follows the same SDK graph; its external FLASHTnT dependency remains a separate deployment gate.
 
 A source-complete decomposition of OpenMS develop at `ca32296038839459d8c9b075b759e285913d6294`. The original OpenMS 3.6 history remains on `develop`; this experimental branch replaces the shared source build with pinned package submodules.
