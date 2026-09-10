@@ -21,7 +21,8 @@ The runner checks clean source revisions, copies Core into its own installation,
 builds CLI and fixture packages before their consumers, and builds the ProSE and
 FLASH providers before full pyOpenMS. It runs every registered package CTest and
 the installed console numerical regression suite. Tests use the SDK's build
-configuration. Compilation jobs are shared across the requested workers; choose
+configuration and recorded MSVC runtime. Windows Python tests explicitly register
+the dependency DLL directory, as required by Python 3.8 and newer. Compilation jobs are shared across the requested workers; choose
 counts appropriate for available memory and other users on a shared machine.
 Command logs, runtimes, JUnit reports and exact package pins are in `results/`.
 The original Core installation is unchanged. Third-party libraries remain in the

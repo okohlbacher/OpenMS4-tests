@@ -78,7 +78,7 @@ def main():
               f'-DCMAKE_PREFIX_PATH={sdk};{dependency_prefix}', '-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON']
     if sys.platform == 'win32':
         common += ['-G', 'Visual Studio 17 2022', '-A', 'x64',
-                   '-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreadedDLL']
+                   f'-DCMAKE_MSVC_RUNTIME_LIBRARY={info["msvc_runtime_library"]}']
     else:
         common += ['-G', 'Ninja']
     install_lock = threading.Lock()
@@ -109,7 +109,9 @@ def main():
         elif name == 'pyopenms':
             options += ['-DPYOPENMS_BUILD_TESTING=ON', '-DPYOPENMS_GENERATE_STUBS=ON',
                         f'-DPython_EXECUTABLE={sys.executable}']
-            if sys.platform != 'win32':
+            if sys.platform == 'win32':
+                options += [f'-DPYOPENMS_DLL_PATH={dependency_prefix / "bin"}']
+            else:
                 origin = '@loader_path' if sys.platform == 'darwin' else '$ORIGIN'
                 options += [f'-DCMAKE_INSTALL_RPATH={origin}/../lib']
         run(name + '-configure', [cmake, '-S', str(source), '-B', str(build), *common, *options])
