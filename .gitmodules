@@ -29,3 +29,27 @@
 [submodule "packages/flashapp"]
 	path = packages/flashapp
 	url = https://github.com/okohlbacher/OpenMS4-flashapp.git
+[submodule "packages/nuxl"]
+	path = packages/nuxl
+	url = https://github.com/okohlbacher/OpenMS4-nuxl.git
+[submodule "packages/prose"]
+	path = packages/prose
+	url = https://github.com/okohlbacher/OpenMS4-prose.git
+[submodule "packages/nase"]
+	path = packages/nase
+	url = https://github.com/okohlbacher/OpenMS4-nase.git
+[submodule "packages/comet"]
+	path = packages/comet
+	url = https://github.com/okohlbacher/OpenMS4-comet.git
+[submodule "packages/mascot"]
+	path = packages/mascot
+	url = https://github.com/okohlbacher/OpenMS4-mascot.git
+[submodule "packages/database-suitability"]
+	path = packages/database-suitability
+	url = https://github.com/okohlbacher/OpenMS4-database-suitability.git
+[submodule "packages/proteomics-lfq"]
+	path = packages/proteomics-lfq
+	url = https://github.com/okohlbacher/OpenMS4-proteomics-lfq.git
+[submodule "packages/parquet-diff"]
+	path = packages/parquet-diff
+	url = https://github.com/okohlbacher/OpenMS4-parquet-diff.git

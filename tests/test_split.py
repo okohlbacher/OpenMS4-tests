@@ -16,7 +16,7 @@ class SourceOwnership(unittest.TestCase):
     def test_all_tool_sources_owned_once(self):
         inventory = json.loads((ROOT/'docs/baseline-inventory.json').read_text())
         names = []
-        for package in ('topp', 'openswath', 'flash'):
+        for package in sorted(p.name for p in PACKAGES.iterdir() if (p/'tools.json').is_file()):
             entries = json.loads((PACKAGES/package/'tools.json').read_text())['tools']
             for entry in entries:
                 name = entry['name']; names.append(name)
@@ -46,12 +46,24 @@ class SourceOwnership(unittest.TestCase):
             digest = hashlib.sha1(f'blob {len(data)}\0'.encode()+data).hexdigest()
             self.assertEqual(digest, entry['git_object'], path)
 
+    def test_file_format_support_stays_in_core(self):
+        inventory = json.loads((ROOT/'docs/baseline-inventory.json').read_text())
+        moved_non_codecs = {'MascotRemoteQuery', 'ParquetTableComparator'}
+        for entry in inventory['tracked_files']:
+            path = Path(entry['path'])
+            if str(path).startswith(('src/openms/include/OpenMS/FORMAT/', 'src/openms/source/FORMAT/')) and path.suffix in {'.h', '.cpp'} and path.stem not in moved_non_codecs:
+                self.assertTrue((PACKAGES/'core'/path).is_file(), path)
+        for header in ('QC/MQEvidenceExporter.h', 'QC/MQMsmsExporter.h',
+                       'QC/MQExporterHelper.h', 'ANALYSIS/NUXL/NuXLReport.h',
+                       'ANALYSIS/ID/CometModification.h', 'CHEMISTRY/ModifiedNASequenceGenerator.h'):
+            self.assertTrue((PACKAGES/'core/src/openms/include/OpenMS'/header).is_file(), header)
+
     def test_core_fixtures_do_not_escape_to_tools(self):
         for source in (PACKAGES/'core/src/tests/class_tests/openms/source').glob('*.cpp'):
             self.assertNotIn('../../../topp/', source.read_text(), source)
 
     def test_no_unpinned_core_source_fallbacks(self):
-        for package in ('cli','flash','openswath','topp','pyopenms'):
+        for package in sorted(p.name for p in PACKAGES.iterdir() if (p/'cmake/OpenMS4Dependencies.cmake').is_file() and p.name not in {'test-data', 'desktop'}):
             cmake = (PACKAGES/package/'CMakeLists.txt').read_text()
             self.assertIn('openms4_find_core(', cmake)
             self.assertNotRegex(cmake,r'add_subdirectory\([^\n]*openms(?:\)|/)')

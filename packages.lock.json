@@ -9,47 +9,88 @@
     "core": {
       "path": "packages/core",
       "repository": "https://github.com/okohlbacher/OpenMS4-core",
-      "source_revision": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85"
+      "source_revision": "ea35651d2fa4700a59beae1f3d1b733fb7bdaa9c"
     },
     "cli": {
       "path": "packages/cli",
       "repository": "https://github.com/okohlbacher/OpenMS4-cli",
-      "source_revision": "51db6bbbdeba53abc57d23c664de37f9c285372e"
+      "source_revision": "72749eadb3b5b169630374816890902ec4e4551c"
     },
     "test-data": {
       "path": "packages/test-data",
       "repository": "https://github.com/okohlbacher/OpenMS4-test-data",
-      "source_revision": "c3e52c917bc2a04e27720f5c7d8189c0f4f522da"
+      "source_revision": "ea8679468c0373eebca8e5b449b6557d6e0771dc"
     },
     "topp": {
       "path": "packages/topp",
       "repository": "https://github.com/okohlbacher/OpenMS4-topp",
-      "source_revision": "582535805581f2bdf4f3871d6802a0b45a3abe36"
+      "source_revision": "6cc523ff2858a179ff99cad5e9fdbc5bc7941c95"
     },
     "openswath": {
       "path": "packages/openswath",
       "repository": "https://github.com/okohlbacher/OpenMS4-openswath",
-      "source_revision": "c7901a79cc27463968ec335b6d04894b05b98339"
+      "source_revision": "847d5ca1e11a0b5ec9c44af962b4fac39dd4b6ed"
     },
     "flash": {
       "path": "packages/flash",
       "repository": "https://github.com/okohlbacher/OpenMS4-flash",
-      "source_revision": "a6ee68f8589e3dd7eb8cb10b0ea7f3b790e72a4c"
+      "source_revision": "46b55161f8b1a2e6f08c6d77039bebbcbc22c2ac"
     },
     "desktop": {
       "path": "packages/desktop",
       "repository": "https://github.com/okohlbacher/OpenMS4-desktop",
-      "source_revision": "b39230036c53f74b537c3683520f3ba2ef1ba963"
+      "source_revision": "47879d1145df57c24725799ccb344e5c8131d4f9"
     },
     "pyopenms": {
       "path": "packages/pyopenms",
       "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms",
-      "source_revision": "14d950a460636b9a8fa255b7ac657926fec403de"
+      "source_revision": "c90b6dfb4f3bcf8c6f3ca7806e34997705a52957"
     },
     "flashapp": {
       "path": "packages/flashapp",
       "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
-      "source_revision": "b845126dc6ff17675cccd5cafea6870c4b3db805"
+      "source_revision": "b845126dc6ff17675cccd5cafea6870c4b3db805",
+      "frozen_dependencies": true
+    },
+    "nuxl": {
+      "path": "packages/nuxl",
+      "repository": "https://github.com/okohlbacher/OpenMS4-nuxl",
+      "source_revision": "49f61ea201519317d0b7d6e438a0ee4a4340c1f3"
+    },
+    "prose": {
+      "path": "packages/prose",
+      "repository": "https://github.com/okohlbacher/OpenMS4-prose",
+      "source_revision": "7e31b55f91dc93c081fc52c1b2c77d294b1dc3e2"
+    },
+    "nase": {
+      "path": "packages/nase",
+      "repository": "https://github.com/okohlbacher/OpenMS4-nase",
+      "source_revision": "3bc6d9c578b4a58960c8e9b142749ea45e6a220b"
+    },
+    "comet": {
+      "path": "packages/comet",
+      "repository": "https://github.com/okohlbacher/OpenMS4-comet",
+      "source_revision": "5dddeb4011254a1201b701e200cdc904fe1311d6"
+    },
+    "mascot": {
+      "path": "packages/mascot",
+      "repository": "https://github.com/okohlbacher/OpenMS4-mascot",
+      "source_revision": "4a0aeb76ccc3b41714b8cd8f64e13c4b243c73c6"
+    },
+    "database-suitability": {
+      "path": "packages/database-suitability",
+      "repository": "https://github.com/okohlbacher/OpenMS4-database-suitability",
+      "source_revision": "36e961fcc54b49ee4d303f22f6fe4ab9e73a951c"
+    },
+    "proteomics-lfq": {
+      "path": "packages/proteomics-lfq",
+      "repository": "https://github.com/okohlbacher/OpenMS4-proteomics-lfq",
+      "source_revision": "3babb170d0a22a264bd0e365c890727d90a6e4c7"
+    },
+    "parquet-diff": {
+      "path": "packages/parquet-diff",
+      "repository": "https://github.com/okohlbacher/OpenMS4-parquet-diff",
+      "source_revision": "c46936d5c94fabf1d6345ad2285b9d103cd97937"
     }
   }
 }
