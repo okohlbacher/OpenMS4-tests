@@ -1,0 +1,24 @@
+stty: stdin isn't a terminal
+
+DatabaseFilter -- Filters a protein database (FASTA format) based on identified proteins
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_DatabaseFilter.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  DatabaseFilter <options>
+
+Options (mandatory options marked with '*'):
+  -in <file>*        Input FASTA file, containing a protein database. (valid formats: 'fasta')
+  -id <file>*        Input file containing identified peptides and proteins. (valid formats: 'idXML', 'mzid')
+  -method <choice>   Switch between white-/blacklisting of protein IDs (default: 'whitelist') (valid: 'whitelist', 'blacklist')
+  -out <file>*       Output FASTA file where the reduced database will be written to. (valid formats: 'fasta')
+                     
+Common TOPP options:
+  -ini <file>        Use the given TOPP INI file
+  -threads <n>       Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>  Writes the default configuration file
+  --help             Shows options
+  --helphelp         Shows all options (including advanced)
+

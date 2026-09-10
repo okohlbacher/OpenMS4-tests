@@ -17,7 +17,7 @@ class PackagePins(unittest.TestCase):
             self.assertEqual(index[:2],['160000',head],name)
     def test_consumers_pin_the_selected_dependency_commits(self):
         packages=json.loads((ROOT/'packages.lock.json').read_text())['packages']
-        names={'OpenMS':'core','OpenMSCLI':'cli','OpenMSTestData':'test-data','pyopenms':'pyopenms','OpenMSFLASH':'flash'}
+        names={'OpenMS':'core','OpenMSCLI':'cli','OpenMSTestData':'test-data','pyopenms':'pyopenms','OpenMSFLASH':'flash','OpenMSTOPP':'topp'}
         for name in packages:
             path=ROOT/packages[name]['path']/'dependencies.lock.json'
             if not path.exists():

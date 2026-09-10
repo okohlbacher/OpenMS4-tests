@@ -1,0 +1,226 @@
+Checking .
+test_changed_lock_is_checked_by_an_existing_build (test_consumer_configure.ConsumerConfigure.test_changed_lock_is_checked_by_an_existing_build) ... ok
+test_changed_tool_metadata_regenerates_manifest (test_consumer_configure.ConsumerConfigure.test_changed_tool_metadata_regenerates_manifest) ... ok
+test_clean_sdk_policy_rejects_missing_invalid_and_dirty_metadata (test_consumer_configure.ConsumerConfigure.test_clean_sdk_policy_rejects_missing_invalid_and_dirty_metadata) ... ok
+test_cli_configuration (test_consumer_configure.ConsumerConfigure.test_cli_configuration) ... ok
+test_compiler_free_data_discovery_enforces_clean_metadata (test_consumer_configure.ConsumerConfigure.test_compiler_free_data_discovery_enforces_clean_metadata) ... ok
+test_duplicate_metadata_is_rejected (test_consumer_configure.ConsumerConfigure.test_duplicate_metadata_is_rejected) ... ok
+test_flash_configuration (test_consumer_configure.ConsumerConfigure.test_flash_configuration) ... ok
+test_generated_helpers_match_canonical_source (test_consumer_configure.ConsumerConfigure.test_generated_helpers_match_canonical_source) ... ok
+test_install_rpath_keeps_relative_library_lookup (test_consumer_configure.ConsumerConfigure.test_install_rpath_keeps_relative_library_lookup) ... ok
+test_missing_metadata_is_rejected (test_consumer_configure.ConsumerConfigure.test_missing_metadata_is_rejected) ... ok
+test_short_pin_is_rejected (test_consumer_configure.ConsumerConfigure.test_short_pin_is_rejected) ... ok
+test_swath_configuration (test_consumer_configure.ConsumerConfigure.test_swath_configuration) ... ok
+test_topp_configuration_and_manifest_paths (test_consumer_configure.ConsumerConfigure.test_topp_configuration_and_manifest_paths) ... ok
+test_wrong_core_pin_is_rejected (test_consumer_configure.ConsumerConfigure.test_wrong_core_pin_is_rejected) ... ok
+test_archives_require_normalized_explicit_dirty_assertions (test_consumer_configure.ConsumerSourceIdentity.test_archives_require_normalized_explicit_dirty_assertions) ... ok
+test_native_target_rejects_untracked_inputs_before_compilation (test_consumer_configure.ConsumerSourceIdentity.test_native_target_rejects_untracked_inputs_before_compilation) ... ok
+test_consumers_pin_the_selected_dependency_commits (test_package_pins.PackagePins.test_consumers_pin_the_selected_dependency_commits) ... ok
+test_every_submodule_matches_parent_lock (test_package_pins.PackagePins.test_every_submodule_matches_parent_lock) ... ok
+test_command_line_requires_receipt_before_any_work (test_runtime_receipt.InstallReceiptTests.test_command_line_requires_receipt_before_any_work) ... ok
+test_dirty_source_and_version (test_runtime_receipt.InstallReceiptTests.test_dirty_source_and_version) ... ok
+test_duplicate_file_ownership (test_runtime_receipt.InstallReceiptTests.test_duplicate_file_ownership) ... ok
+test_exact_installed_bytes_and_source_match (test_runtime_receipt.InstallReceiptTests.test_exact_installed_bytes_and_source_match) ... ok
+test_link_cannot_escape_sdk (test_runtime_receipt.InstallReceiptTests.test_link_cannot_escape_sdk) ... ok
+test_missing_receipt (test_runtime_receipt.InstallReceiptTests.test_missing_receipt) ... ok
+test_missing_runtime_file (test_runtime_receipt.InstallReceiptTests.test_missing_runtime_file) ... ok
+test_path_traversal (test_runtime_receipt.InstallReceiptTests.test_path_traversal) ... ok
+test_replaced_installed_binary (test_runtime_receipt.InstallReceiptTests.test_replaced_installed_binary) ... ok
+test_stale_binary_cannot_receive_new_clean_source_pin (test_runtime_receipt.InstallReceiptTests.test_stale_binary_cannot_receive_new_clean_source_pin) ... ok
+test_symlink_target_is_part_of_receipt (test_runtime_receipt.InstallReceiptTests.test_symlink_target_is_part_of_receipt) ... ok
+test_wrong_hash (test_runtime_receipt.InstallReceiptTests.test_wrong_hash) ... ok
+test_wrong_schema_prefix_or_package (test_runtime_receipt.InstallReceiptTests.test_wrong_schema_prefix_or_package) ... ok
+test_all_tool_sources_owned_once (test_split.SourceOwnership.test_all_tool_sources_owned_once) ... ok
+test_core_fixtures_do_not_escape_to_tools (test_split.SourceOwnership.test_core_fixtures_do_not_escape_to_tools) ... ok
+test_no_unpinned_core_source_fallbacks (test_split.SourceOwnership.test_no_unpinned_core_source_fallbacks) ... ok
+test_science_has_no_cli_headers (test_split.SourceOwnership.test_science_has_no_cli_headers) ... ok
+test_textually_included_tool_helpers_are_present (test_split.SourceOwnership.test_textually_included_tool_helpers_are_present) ... ok
+test_vendored_bytes_unchanged (test_split.SourceOwnership.test_vendored_bytes_unchanged) ... ok
+test_archive_link_directory_chain_is_rejected_before_writes (app_artifact_tests.ArtifactValidation.test_archive_link_directory_chain_is_rejected_before_writes) ... ok
+test_archive_traversal_links_and_special_files_before_extraction (app_artifact_tests.ArtifactValidation.test_archive_traversal_links_and_special_files_before_extraction) ... ok
+test_duplicate_wrong_kind_and_path_inputs (app_artifact_tests.ArtifactValidation.test_duplicate_wrong_kind_and_path_inputs) ... ok
+test_each_build_field_mismatch (app_artifact_tests.ArtifactValidation.test_each_build_field_mismatch) ... ok
+test_each_runtime_package_pin (app_artifact_tests.ArtifactValidation.test_each_runtime_package_pin) ... ok
+test_existing_destination_symlink_cannot_escape (app_artifact_tests.ArtifactValidation.test_existing_destination_symlink_cannot_escape) ... ok
+test_hash_and_unlisted_inputs (app_artifact_tests.ArtifactValidation.test_hash_and_unlisted_inputs) ... ok
+test_missing_required_executable (app_artifact_tests.ArtifactValidation.test_missing_required_executable) ... ok
+test_native_architecture_and_execute_permission (app_artifact_tests.ArtifactValidation.test_native_architecture_and_execute_permission) ... ok
+test_native_header_formats_and_wrong_architectures (app_artifact_tests.ArtifactValidation.test_native_header_formats_and_wrong_architectures) ... ok
+test_runtime_provenance_schema_and_executable_declaration (app_artifact_tests.ArtifactValidation.test_runtime_provenance_schema_and_executable_declaration) ... ok
+test_runtime_wheel_full_metadata_agreement (app_artifact_tests.ArtifactValidation.test_runtime_wheel_full_metadata_agreement) ... ok
+test_safe_relative_library_link (app_artifact_tests.ArtifactValidation.test_safe_relative_library_link) ... ok
+test_source_and_dirty_provenance (app_artifact_tests.ArtifactValidation.test_source_and_dirty_provenance) ... ok
+test_unresolved_or_wrong_external_tool (app_artifact_tests.ArtifactValidation.test_unresolved_or_wrong_external_tool) ... ok
+test_valid_fixture_and_extraction (app_artifact_tests.ArtifactValidation.test_valid_fixture_and_extraction) ... ok
+test_verifier_entry_point (app_artifact_tests.ArtifactValidation.test_verifier_entry_point) ... ok
+test_wheel_missing_or_wrong_metadata_and_native_bindings (app_artifact_tests.ArtifactValidation.test_wheel_missing_or_wrong_metadata_and_native_bindings) ... ok
+test_ctd_checks_both_versions_and_category (test_tool_metadata.ToolMetadataTests.test_ctd_checks_both_versions_and_category) ... ok
+test_ini_root_and_product_version (test_tool_metadata.ToolMetadataTests.test_ini_root_and_product_version) ... ok
+
+----------------------------------------------------------------------
+Ran 57 tests in 11.011s
+
+OK
+Checking packages/core
+test_archive_requires_explicit_assertions (test_build_identity.BuildIdentityTests.test_archive_requires_explicit_assertions) ... ok
+test_build_guard_rejects_source_changed_after_configuration (test_build_identity.BuildIdentityTests.test_build_guard_rejects_source_changed_after_configuration) ... ok
+test_clean_dirty_staged_and_untracked_identity (test_build_identity.BuildIdentityTests.test_clean_dirty_staged_and_untracked_identity) ... ok
+test_generated_json_uses_actual_configuration_and_has_no_build_paths (test_build_identity.BuildIdentityTests.test_generated_json_uses_actual_configuration_and_has_no_build_paths) ... ok
+test_override_cannot_relabel_checkout (test_build_identity.BuildIdentityTests.test_override_cannot_relabel_checkout) ... ok
+test_standard_library_probe_uses_the_selected_compiler (test_build_identity.BuildIdentityTests.test_standard_library_probe_uses_the_selected_compiler) ... ok
+test_relocated_metadata_needs_no_native_dependencies (test_sdk_contract.DataMetadataTests.test_relocated_metadata_needs_no_native_dependencies) ... ok
+test_core_has_no_cli_header_dependency (test_sdk_contract.OwnershipTests.test_core_has_no_cli_header_dependency) ... ok
+test_core_source_lists_resolve (test_sdk_contract.OwnershipTests.test_core_source_lists_resolve) ... ok
+test_extracted_fixtures_are_local (test_sdk_contract.OwnershipTests.test_extracted_fixtures_are_local) ... ok
+test_library_only_install_and_consumer_options (test_sdk_contract.SDKContractTests.test_library_only_install_and_consumer_options) ... ok
+test_missing_required_test_support_is_rejected (test_sdk_contract.SDKContractTests.test_missing_required_test_support_is_rejected) ... ok
+test_optional_test_support_component (test_sdk_contract.SDKContractTests.test_optional_test_support_component) ... ok
+test_repeated_find_can_add_test_support_without_rediscovering_dependencies (test_sdk_contract.SDKContractTests.test_repeated_find_can_add_test_support_without_rediscovering_dependencies) ... ok
+test_wrong_arrow_linkage_is_rejected (test_sdk_contract.SDKContractTests.test_wrong_arrow_linkage_is_rejected) ... ok
+test_wrong_arrow_version_is_rejected (test_sdk_contract.SDKContractTests.test_wrong_arrow_version_is_rejected) ... ok
+test_wrong_core_version_is_rejected (test_sdk_contract.SDKContractTests.test_wrong_core_version_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 4.478s
+
+OK
+Checking packages/core
+test_accepts_exact_openms_failure (test_invalid_data_wrapper.InvalidDataOverrideWrapperTests.test_accepts_exact_openms_failure) ... ok
+test_rejects_diagnostic_for_different_path (test_invalid_data_wrapper.InvalidDataOverrideWrapperTests.test_rejects_diagnostic_for_different_path) ... ok
+test_rejects_loader_failure (test_invalid_data_wrapper.InvalidDataOverrideWrapperTests.test_rejects_loader_failure) ... ok
+test_rejects_loader_failure_mixed_with_expected_diagnostic (test_invalid_data_wrapper.InvalidDataOverrideWrapperTests.test_rejects_loader_failure_mixed_with_expected_diagnostic) ... ok
+test_rejects_other_exit_code_even_with_expected_diagnostic (test_invalid_data_wrapper.InvalidDataOverrideWrapperTests.test_rejects_other_exit_code_even_with_expected_diagnostic) ... ok
+test_rejects_signal_even_with_expected_diagnostic (test_invalid_data_wrapper.InvalidDataOverrideWrapperTests.test_rejects_signal_even_with_expected_diagnostic) ... ok
+test_rejects_stdout_only_diagnostic (test_invalid_data_wrapper.InvalidDataOverrideWrapperTests.test_rejects_stdout_only_diagnostic) ... ok
+test_rejects_success_even_with_expected_diagnostic (test_invalid_data_wrapper.InvalidDataOverrideWrapperTests.test_rejects_success_even_with_expected_diagnostic) ... ok
+test_rejects_unrelated_failure (test_invalid_data_wrapper.InvalidDataOverrideWrapperTests.test_rejects_unrelated_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.327s
+
+OK
+Checking packages/test-data
+test_accepts_expected_failure_across_output_streams (test_failure_wrapper.FailureWrapperTests.test_accepts_expected_failure_across_output_streams) ... ok
+test_rejects_loader_diagnostic_even_with_expected_text_and_code (test_failure_wrapper.FailureWrapperTests.test_rejects_loader_diagnostic_even_with_expected_text_and_code) ... ok
+test_rejects_signal_with_expected_diagnostic (test_failure_wrapper.FailureWrapperTests.test_rejects_signal_with_expected_diagnostic) ... ok
+test_rejects_unrelated_failure_with_same_exit_code (test_failure_wrapper.FailureWrapperTests.test_rejects_unrelated_failure_with_same_exit_code) ... ok
+test_rejects_wrong_status_even_with_expected_diagnostic (test_failure_wrapper.FailureWrapperTests.test_rejects_wrong_status_even_with_expected_diagnostic) ... ok
+test_external_engine_conditions_are_preserved (test_packaging.PackagingTests.test_external_engine_conditions_are_preserved) ... ok
+test_fixtures_are_copied_into_writable_build_tree (test_packaging.PackagingTests.test_fixtures_are_copied_into_writable_build_tree) ... ok
+test_flat_custom_binary_directory_with_spaces (test_packaging.PackagingTests.test_flat_custom_binary_directory_with_spaces) ... ok
+test_full_suite_registers_against_installed_bins (test_packaging.PackagingTests.test_full_suite_registers_against_installed_bins) ... ok
+test_parameter_negatives_require_expected_status_and_diagnostics (test_packaging.PackagingTests.test_parameter_negatives_require_expected_status_and_diagnostics) ... ok
+test_registration_has_no_original_source_paths (test_packaging.PackagingTests.test_registration_has_no_original_source_paths) ... ok
+test_relocated_package_is_discoverable (test_packaging.PackagingTests.test_relocated_package_is_discoverable) ... ok
+test_runtime_data_is_pinned_for_all_regression_processes (test_packaging.PackagingTests.test_runtime_data_is_pinned_for_all_regression_processes) ... ok
+test_windows_tools_keep_names_and_use_exe_paths (test_packaging.PackagingTests.test_windows_tools_keep_names_and_use_exe_paths) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 3.761s
+
+OK
+Checking packages/flash
+test_altered_mass_missing_row_and_nonfinite_values_fail (test_compare_features.ScientificComparison.test_altered_mass_missing_row_and_nonfinite_values_fail) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.002s
+
+OK
+Checking packages/desktop
+test_frontends_have_single_owners (test_source_boundaries.DesktopSourceBoundaries.test_frontends_have_single_owners) ... ok
+test_native_application_resources (test_source_boundaries.DesktopSourceBoundaries.test_native_application_resources) ... ok
+test_pipeline_resource_inputs_are_owned (test_source_boundaries.DesktopSourceBoundaries.test_pipeline_resource_inputs_are_owned) ... ok
+test_provenance_paths_exist (test_source_boundaries.DesktopSourceBoundaries.test_provenance_paths_exist) ... ok
+test_resource_archive_is_complete (test_source_boundaries.DesktopSourceBoundaries.test_resource_archive_is_complete) ... ok
+test_source_manifests_are_complete (test_source_boundaries.DesktopSourceBoundaries.test_source_manifests_are_complete) ... ok
+test_tool_discovery_has_no_sibling_layout_calls (test_source_boundaries.DesktopSourceBoundaries.test_tool_discovery_has_no_sibling_layout_calls) ... ok
+test_ui_includes_have_inputs (test_source_boundaries.DesktopSourceBoundaries.test_ui_includes_have_inputs) ... ok
+test_visual_headers_resolve_within_gui_sdk (test_source_boundaries.DesktopSourceBoundaries.test_visual_headers_resolve_within_gui_sdk) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.069s
+
+OK
+Checking packages/pyopenms
+test_core_and_topp_have_independent_paths (__main__.InstalledFixtureTests.test_core_and_topp_have_independent_paths) ... ok
+test_fixture_path_must_be_directory (__main__.InstalledFixtureTests.test_fixture_path_must_be_directory) ... ok
+test_invalid_override_does_not_fall_back_to_other_package (__main__.InstalledFixtureTests.test_invalid_override_does_not_fall_back_to_other_package) ... ok
+test_missing_fixture_packages_fail_explicitly (__main__.InstalledFixtureTests.test_missing_fixture_packages_fail_explicitly) ... ok
+test_all_domains_and_zero_copy_sources_exist (__main__.SourceCompletenessTests.test_all_domains_and_zero_copy_sources_exist) ... ok
+test_python_sources_parse_without_importing_extensions (__main__.SourceCompletenessTests.test_python_sources_parse_without_importing_extensions) ... /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/pyopenms/tests/unittests/test_chaining_semantics.py:20: SyntaxWarning: "\ " is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\ "? A raw string is also an option.
+  are ``shared_ptr``\ s to provenance records shared across spectra by design
+ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.203s
+
+OK
+Checking packages/pyopenms
+normal PASS 0
+-- pyOpenMS: PY_RPATH = '@loader_path/'
+-- pyOpenMS: Building _arrow_zerocopy module
+-- pyOpenMS 4.0.0.dev0: OpenMS 4.0.0 at 1111111111111111111111111111111111111111
+-- Core SDK: /var/folders/0d/nx2m0w3n76s59tfg8g708d240000gn/T/openms4-py-contract-knnhjf5p/sdk/lib/cmake/OpenMS; runtime data: /var/folders/0d/nx2m0w3n76s59tfg8g708d240000gn/T/openms4-py-contract-knnhjf5p/sdk/share/OpenMS/4.0.0; tests: OFF
+-- Configuring done (0.4s)
+-- Generating done (0.0s)
+-- Build files have been written to: /var/folders/0d/nx2m0w3n76s59tfg8g708d240000gn/T/openms4-py-contract-knnhjf5p/normal
+
+runtime data excludes fixtures and clears reused staging: PASS
+tests PASS 0
+-- pyOpenMS: PY_RPATH = '@loader_path/'
+-- pyOpenMS: Building _arrow_zerocopy module
+-- pyOpenMS 4.0.0.dev0: OpenMS 4.0.0 at 1111111111111111111111111111111111111111
+-- Core SDK: /var/folders/0d/nx2m0w3n76s59tfg8g708d240000gn/T/openms4-py-contract-knnhjf5p/sdk/lib/cmake/OpenMS; runtime data: /var/folders/0d/nx2m0w3n76s59tfg8g708d240000gn/T/openms4-py-contract-knnhjf5p/sdk/share/OpenMS/4.0.0; tests: ON
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /var/folders/0d/nx2m0w3n76s59tfg8g708d240000gn/T/openms4-py-contract-knnhjf5p/tests
+
+Test project /var/folders/0d/nx2m0w3n76s59tfg8g708d240000gn/T/openms4-py-contract-knnhjf5p/tests
+  Test #1: pyopenms_unittests
+  Test #2: pyopenms_docstring_tests
+  Test #3: pyopenms_integration_tests
+  Test #4: pyopenms_feature_tests
+
+Total Tests: 4
+
+wrong-revision PASS 1
+CMake Error at cmake/OpenMS4Dependencies.cmake:63 (message):
+  OpenMS SDK revision mismatch: expected
+  2222222222222222222222222222222222222222, got
+  1111111111111111111111111111111111111111
+Call Stack (most recent call first):
+  cmake/OpenMS4Dependencies.cmake:76 (openms4_find_package)
+  CMakeLists.txt:33 (openms4_find_core)
+
+
+-- Configuring incomplete, errors occurred!
+
+wrong-build-type PASS 1
+CMake Error at cmake/PyOpenMSBuildIdentity.cmake:37 (message):
+  OpenMS SDK build configuration mismatch: Debug versus Release; select a
+  matching SDK or CMAKE_BUILD_TYPE
+Call Stack (most recent call first):
+  CMakeLists.txt:49 (include)
+
+
+-- Configuring incomplete, errors occurred!
+
+wrong-architecture PASS 1
+CMake Error at cmake/PyOpenMSBuildIdentity.cmake:30 (message):
+  OpenMS SDK architecture mismatch: invalid-arch versus arm64
+Call Stack (most recent call first):
+  CMakeLists.txt:49 (include)
+
+
+-- Configuring incomplete, errors occurred!
+
+missing-feature PASS 1
+CMake Error at cmake/PyOpenMSBuildIdentity.cmake:44 (message):
+  pyOpenMS requires the OpenSWATH SDK feature
+Call Stack (most recent call first):
+  CMakeLists.txt:49 (include)
+
+
+-- Configuring incomplete, errors occurred!
+
+All source/configuration checks passed. This command does not run native compilation or numerical tests.

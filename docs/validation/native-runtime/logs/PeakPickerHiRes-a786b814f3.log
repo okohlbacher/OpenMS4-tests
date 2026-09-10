@@ -1,0 +1,16 @@
+Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'loading mzML':
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/runtime-product-evidence-final/inputs/PeakPickerHiRes_input.mzML': Ill formed absolute or relative sourceFile path: file://IBT-RABEAM/Data/andersm
+  Progress of 'loading spectra list':
+
+  -- done [took 0.01 s (CPU), 0.01 s (Wall)] -- 
+
+-- done [took 0.03 s (CPU), 0.02 s (Wall) @ 24.81 MiB/s] -- 
+Progress of 'picking peaks':
+
+-- done [took 0.01 s (CPU), 0.01 s (Wall)] -- 
+#Spectra that needed to and could be picked by MS-level:
+  MS-level 1: 2 / 2
+  MS-level 2: 0 / 3
+PeakPickerHiRes took 0.38 s (wall), 0.38 s (CPU), 0.00 s (system), 0.38 s (user); Peak Memory Usage: 64 MB.

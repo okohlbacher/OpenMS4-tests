@@ -1,0 +1,2 @@
+Warning: Only one FASTA input file was provided, which might not contain contaminants. You probably want to have them! Just add the contaminant file to the input file list 'in'.
+DecoyDatabase took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 54 MB.

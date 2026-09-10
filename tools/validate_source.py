@@ -11,6 +11,7 @@ checks = [
     (root/'packages/core', [sys.executable, '-m', 'unittest', 'discover', '-s', 'tests/sdk_contract', '-v']),
     (root/'packages/core', [sys.executable, '-m', 'unittest', 'discover', '-s', 'tests/installed_sdk_acceptance', '-v']),
     (root/'packages/test-data', [sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-v']),
+    (root/'packages/flash', [sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-v']),
     (root/'packages/desktop', [sys.executable, '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_source_boundaries.py', '-v']),
     (root/'packages/pyopenms', [sys.executable, 'tools/check_standalone.py']),
     (root/'packages/pyopenms', [sys.executable, 'tools/check_cmake_contract.py']),

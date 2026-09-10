@@ -1,0 +1,37 @@
+stty: stdin isn't a terminal
+
+PercolatorAdapter -- Facilitate input to Percolator and reintegrate.
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_PercolatorAdapter.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  PercolatorAdapter <options>
+
+Options (mandatory options marked with '*'):
+  -in <files>                          Input file(s) (valid formats: 'mzid', 'idXML', 'idparquet')
+  -in_decoy <files>                    Input decoy file(s) in case of separate searches (valid formats: 'mzid', 'idXML', 'idparquet')
+  -in_osw <file>                       Input file in OSW format (valid formats: 'OSW')
+  -out <file>*                         Output file (valid formats: 'idXML', 'mzid', 'osw', 'idparquet')
+  -out_type <type>                     Output file type -- default: determined from file extension or content. (valid: 'mzid', 'idXML', 'osw', 'idparquet')
+  -enzyme <enzyme>                     Type of enzyme: no_enzyme,elastase,pepsin,proteinasek,thermolysin,chymotrypsin,lys-n,lys-c,arg-c,asp-n,glu-c,trypsin,trypsinp (default: 'trypsin') (valid: 'no_enzyme', 'elastase', 'pepsin', 'proteinasek', 'thermolysin', 'chymotrypsin', 'lys-n', 'lys-c', 'arg-c', 'asp-n', 'glu-c', 'trypsin', 'trypsinp')
+  -use_subprocess <choice>             Run the external 'percolator' binary instead of the in-process OpenMS::Percolator library. The in-process backend covers the idXML/mzid + PSM-level FDR path; OSW input, protein-level FDR, and peptide-level FDR still require the subprocess. (default: 'false') (valid: 'true', 'false')
+  -percolator_executable <executable>  The Percolator executable. Required only when -use_subprocess=true; the in-process backend doesn't need it.
+  -peptide_level_fdrs                  Calculate peptide-level FDRs instead of PSM-level FDRs.
+  -protein_level_fdrs                  Use the picked protein-level FDR to infer protein probabilities. Use the -fasta option and -decoy_pattern to set the Fasta file and decoy pattern.
+  -osw_level <osw_level>               OSW: the data level selected for scoring. (default: 'ms2') (valid: 'ms1', 'ms2', 'transition')
+  -score_type <type>                   Type of the peptide main score (default: 'q-value') (valid: 'q-value', 'pep', 'svm')
+
+Post-filter parameters applied to Percolator output:
+  -score:fdr <value>                   FDR cutoff applied to the Percolator q-value before writing output. PSMs with q-value > cutoff are dropped. 1.0 disables the filter. (default: '1.0') (min: '0.0' max: '1.0')
+
+  -best_per_spectrum_only              After applying score:fdr, retain only the best-scoring PSM per spectrum (default: keep all hits, matching legacy PercolatorAdapter behaviour).
+                                       
+Common TOPP options:
+  -ini <file>                          Use the given TOPP INI file
+  -threads <n>                         Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>                    Writes the default configuration file
+  --help                               Shows options
+  --helphelp                           Shows all options (including advanced)
+

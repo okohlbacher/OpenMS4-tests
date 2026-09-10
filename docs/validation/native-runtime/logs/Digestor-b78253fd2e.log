@@ -1,0 +1,33 @@
+stty: stdin isn't a terminal
+
+Digestor -- Digests a protein database in-silico.
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_Digestor.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  Digestor <options>
+
+Options (mandatory options marked with '*'):
+  -in <file>*                  Input file (valid formats: 'fasta')
+  -out <file>*                 Output file (peptides) (valid formats: 'idXML', 'fasta')
+  -out_type <type>             Set this if you cannot control the filename of 'out', e.g., in TOPPAS. (valid: 'idXML', 'fasta')
+  -missed_cleavages <number>   The number of allowed missed cleavages (default: '1') (min: '0')
+  -min_length <number>         Minimum length of peptide (default: '6')
+  -max_length <number>         Maximum length of peptide (default: '40')
+  -enzyme <string>             The type of digestion enzyme (default: 'Trypsin') (valid: 'Asp-N/B', 'Trypsin', 'Asp-N', 'Arg-C/P', 'Arg-C', 'Asp-N_ambic', 'Chymotrypsin', 'Lys-N', 'Lys-C', 'V8-E', 'V8-DE', 'Trypsin/P', 'TrypChymo', 'PepsinA', 'Lys-C/P', 'leukocyte elastase', 'proline endopeptidase', 'Formic_acid', 'glutamyl endopeptidase', 'CNBr', 'Chymotrypsin/P', 'Alpha-lytic protease', '2-iodobenzoate', 'iodosobenzoate', 'staphylococcal protease/D', 'proline-endopeptidase/HKR', 'Glu-C+P', 'PepsinA + P', 'cyanogen-bromide', 'Clostripain/P', 'elastase-trypsin-chymotrypsin', 'no cleavage', 'unspecific cleavage')
+
+Options for FASTA output files:
+  -FASTA:ID <option>           Identifier to use for each peptide: copy from parent protein (parent); a consecutive number (number); parent ID + consecutive number (both) (default: 'parent') (valid: 'parent', 'number', 'both')
+  -FASTA:description <option>  Keep or remove the (possibly lengthy) FASTA header description. Keeping it can increase resulting FASTA file significantly. (default: 'remove') (valid: 'remove', 'keep')
+
+  -replace_ambiguous           Replace ambiguous amino acids with a random unambiguous amino acid. This is useful for generating an output file that mimics a search engine result (since they usually do not contain ambiguous amino acids).
+                               
+Common TOPP options:
+  -ini <file>                  Use the given TOPP INI file
+  -threads <n>                 Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>            Writes the default configuration file
+  --help                       Shows options
+  --helphelp                   Shows all options (including advanced)
+

@@ -1,0 +1,98 @@
+stty: stdin isn't a terminal
+
+IsobaricWorkflow -- Calculates isobaric quantitative values for peptides
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_IsobaricWorkflow.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  IsobaricWorkflow <options>
+
+This tool has algorithm parameters that are not shown here! Please check the ini file for a detailed description or use the --helphelp option
+
+Options (mandatory options marked with '*'):
+  -type <mode>                                                            Isobaric Quantitation method used in the experiment. (default: 'itraq4plex') (valid: 'itraq4plex', 'itraq8plex', 'tmt10plex', 'tmt11plex', 'tmt16plex', 'tmt18plex', 'tmt32plex', 'tmt35plex', 'tmt6plex')
+  -in <file>*                                                             Input centroided spectrum files (valid formats: 'mzML')
+  -in_id <file>*                                                          Corresponding input PSMs.
+                                                                          One identification per spectrum is expected: this tool quantifies one consensus feature
+                                                                          per identification, so several identifications of one spectrum agreeing on peptidoform
+                                                                          and charge would contribute the same reporter intensities more than once. Only the
+                                                                          best-scoring one of such a group is kept. Combine results from several search engines
+                                                                          with ConsensusID rather than concatenating them. (valid formats: 'idXML', 'mzId', 'idparquet')
+  -exp_design <file>                                                      Experimental design file (optional). If not given, the design is assumed to be unfractionated. (valid formats: 'tsv')
+  -out <file>                                                             Optional output consensusXML file. At least one output must be specified. (valid formats: 'consensusXML')
+  -out_mzTab <file>                                                       Optional output mzTab file with quantitative information. At least one output must be specified. (valid formats: 'mzTab')
+  -out_qpx <directory>                                                    Optional output directory for QPX Parquet files (quantms.feature.parquet, quantms.psm.parquet, quantms.pg.parquet). At least one output must be specified.
+  -calculate_id_purity                                                    Calculate the purity of the precursor ion based on the MS1 spectrum. Only used for MS3, otherwise it is the same as the quant. precursor purity.
+  -psm_score <score>                                                      The score which should be reached by a peptide hit to be kept.  (use 'NAN' to disable this filter) (default: 'NaN')
+  -protein_score <score>                                                  The score which should be reached by a protein hit to be kept. All proteins are filtered based on their singleton scores irrespective of grouping. Use in combination with 'delete_unreferenced_peptide_hits' to remove affected peptides. (use 'NAN' to disable this filter) (default: 'NaN')
+  -delete_unreferenced_peptide_hits                                       Peptides not referenced by any protein are deleted in the IDs.
+  -inference_method <option>                                              Methods used for protein inference (default: 'aggregation') (valid: 'aggregation', 'bayesian')
+  -proteinFDR <threshold>                                                 Protein FDR threshold (0.05=5%). (default: '1.0') (min: '0.0' max: '1.0')
+  -psmFDR <threshold>                                                     FDR threshold for sub-protein level (e.g. 0.05=5%). (default: '1.0') (min: '0.0' max: '1.0')
+
+ProteinQuantification:
+  -ProteinQuantification:method <choice>                                  - top - quantify based on three most abundant peptides (number can be changed in 'top').
+                                                                          - iBAQ (intensity based absolute quantification), calculate the sum of all peptide peak intensities divided by the number of theoretically observable tryptic peptides (https://rdcu.be/cND1J). Warning: only consensusXML or featureXML input is allowed! (default: 'top') (valid: 'top', 'iBAQ')
+  -ProteinQuantification:best_charge                                      Distinguish between fraction and charge states in detailed peptide output. For protein quantification, select one charge per modified peptide globally: maximize the number of (fraction group, label) assays with a positive abundance, then break ties by total abundance; retain that charge's values in every assay.
+                                                                          By default, protein abundances are summed over all charge states. How the retained values of several fractions are combined is governed by 'fractions:aggregate', not by this flag.
+
+Additional options for custom quantification using top N peptides.:
+  -ProteinQuantification:top:N <number>                                   Calculate protein abundance from this number of proteotypic peptides (most abundant first; '0' for all) (default: '3') (min: '0')
+  -ProteinQuantification:top:aggregate <choice>                           Aggregation method used to compute protein abundances from peptide abundances (default: 'median') (valid: 'median', 'mean', 'weighted_mean', 'sum')
+
+Options for combining the fractions of a fraction group.:
+  -ProteinQuantification:fractions:aggregate <choice>                     How the fractions of one fraction group are combined into that group's (fraction group, label) assay values.
+                                                                          - sum - add up every fraction, i.e. treat them as the parts of one separated sample that they are.
+                                                                          - best - keep a single fraction per peptide and fraction group and discard the others. The fraction is chosen ONCE per peptide, ranked by the number of labels in which it has a positive abundance and then by the total of those abundances (an exact tie keeps the lowest fraction number), and ALL of its labels are then taken from it. The choice is deliberately not made per label: taking one channel from one fraction and another channel from a different fraction would mix physical aliquots and destroy the reporter-ion ratios that isobaric quantification consists of.
+                                                                          Only the assay values are affected. Per-(file, channel) quantities are per fraction by definition and always report every file. (default: 'sum') (valid: 'sum', 'best')
+
+Additional options for consensus maps (and identification results comprising multiple runs):
+  -ProteinQuantification:consensus:normalize                              Scale peptide abundances so that the median of each (fraction group, label) assay matches the overall median.
+                                                                          Abundances of zero count as 'not detected' and are left out of the medians; an assay without any positive abundance takes no part in the normalization.
+  -ProteinQuantification:consensus:fix_peptides                           Use the same peptides for protein quantification across all (fraction group, label) assays.
+                                                                          With 'N 0',all peptides that occur in every assay are considered.
+                                                                          Otherwise ('N'), the N peptides that occur in the most assays (independently of each other) are selected,
+                                                                          breaking ties by total abundance (there is no guarantee that the best co-ocurring peptides are chosen!).
+                                                                          A peptide counts as occurring in an assay only where its abundance is positive: an abundance stored as zero means 'not detected' (e.g. an isobaric reporter below 'min_reporter_intensity'), not a measurement of absence.
+
+BasicProteinInference:
+  -BasicProteinInference:min_peptides_per_protein <number>                Minimal number of peptides needed for a protein identification. If set to zero, unmatched proteins get a score of -Infinity. If bigger than zero, proteins with less peptides are filtered and evidences removed from the PSMs. PSMs that do not reference any proteins anymore are removed but the spectrum info is kept. (default: '1') (min: '0')
+  -BasicProteinInference:score_aggregation_method <choice>                How to aggregate scores of peptides matching to the same protein? (default: 'best') (valid: 'best', 'product', 'sum', 'maximum')
+  -BasicProteinInference:treat_charge_variants_separately <choice>        If this is true, different charge variants of the same peptide sequence count as individual evidences. (default: 'true') (valid: 'true', 'false')
+  -BasicProteinInference:treat_modification_variants_separately <choice>  If this is true, different modification variants of the same peptide sequence count as individual evidences. (default: 'true') (valid: 'true', 'false')
+  -BasicProteinInference:use_shared_peptides <choice>                     If this is true, shared peptides are used as evidences. Note: shared_peptides are not deleted and potentially resolved in postprocessing as well. (default: 'true') (valid: 'true', 'false')
+  -BasicProteinInference:skip_count_annotation                            If this is set, peptide counts won't be annotated at the proteins.
+  -BasicProteinInference:score_type <choice>                              PSM score type to use for inference. (default: empty = main score) (valid: '', 'PEP', 'q-value', 'RAW')
+
+BayesianProteinInference:
+  -BayesianProteinInference:psm_probability_cutoff <value>                Remove PSMs with probabilities less than this cutoff (default: '1.0e-03') (min: '0.0' max: '1.0')
+  -BayesianProteinInference:top_PSMs <number>                             Consider only top X PSMs per spectrum. 0 considers all. (default: '1') (min: '0')
+
+                                                                          
+Common TOPP options:
+  -ini <file>                                                             Use the given TOPP INI file
+  -threads <n>                                                            Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>                                                       Writes the default configuration file
+  --help                                                                  Shows options
+  --helphelp                                                              Shows all options (including advanced)
+
+The following configuration subsections are valid:
+ - extraction       Parameters for the channel extraction.
+ - itraq4plex       Algorithm parameters for iTRAQ 4-plex
+ - itraq8plex       Algorithm parameters for iTRAQ 8-plex
+ - quantification   Parameters for the peptide quantification.
+ - tmt10plex        Algorithm parameters for TMT 10-plex
+ - tmt11plex        Algorithm parameters for TMT 11-plex
+ - tmt16plex        Algorithm parameters for TMT 16-plex (TMTpro)
+ - tmt18plex        Algorithm parameters for TMT 18-plex
+ - tmt32plex        Algorithm parameters for TMT 32-plex
+ - tmt35plex        Algorithm parameters for TMT 35-plex
+ - tmt6plex         Algorithm parameters for TMT 6-plex
+
+You can write an example INI file using the '-write_ini' option.
+Documentation of subsection parameters can be found in the doxygen documentation or the INIFileEditor.
+For more information, please consult the online documentation for this tool:
+  - http://www.openms.de/doxygen/release/4.0.0/html/TOPP_IsobaricWorkflow.html
+

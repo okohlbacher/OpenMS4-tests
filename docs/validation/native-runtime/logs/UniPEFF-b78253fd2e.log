@@ -1,0 +1,31 @@
+stty: stdin isn't a terminal
+
+UniPEFF -- Convert a UniProtKB XML protein database to PEFF 1.0 with rich annotations.
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_UniPEFF.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  UniPEFF <options>
+
+Options (mandatory options marked with '*'):
+  -in <file>*                      Input UniProtKB XML file (plain or gzip; gzip is auto-detected). (valid formats: 'xml')
+  -out <file>*                     Output PEFF 1.0 file. (valid formats: 'peff')
+  -ptmlist <file>                  UniProt ptmlist.txt; defaults to the bundled snapshot. (valid formats: 'txt')
+  -psimod_obo <file>               PSI-MOD.obo for canonical modification names; defaults to the bundled OpenMS PSI-MOD.obo. (valid formats: 'obo')
+  -unimod_obo <file>               Optional unimod.obo for canonical Unimod names; if absent, names fall back to the UniProt ptmlist IDs. (valid formats: 'obo')
+  -prefix <string>                 Force a single PEFF prefix for every entry (e.g. 'sp'); if empty, sp/tr is derived from the UniProt dataset.
+  -dbversion <string>              Value for the mandatory '# DbVersion=' PEFF header line. (default: 'unknown')
+  -annotation_identifiers          Emit PEFF Option B: assign a sequential id: prefix to every annotation tuple and emit \DisulfideBond connectivity.
+  -omit_molecular_processing       Skip the \Processed annotations (initiator methionine, signal/transit peptide, propeptide, chain).
+  -omit_amino_acid_modifications   Skip \ModResPsi / \ModResUnimod / \ModRes and \DisulfideBond; ptmlist is not read.
+  -omit_sequence_variations        Skip \VariantSimple and \VariantComplex annotations.
+                                   
+Common TOPP options:
+  -ini <file>                      Use the given TOPP INI file
+  -threads <n>                     Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>                Writes the default configuration file
+  --help                           Shows options
+  --helphelp                       Shows all options (including advanced)
+

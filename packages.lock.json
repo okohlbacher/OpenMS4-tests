@@ -9,47 +9,47 @@
     "core": {
       "path": "packages/core",
       "repository": "https://github.com/okohlbacher/OpenMS4-core",
-      "source_revision": "21b295c9ad889b402db1e3a20f13e8d08330b61b"
+      "source_revision": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85"
     },
     "cli": {
       "path": "packages/cli",
       "repository": "https://github.com/okohlbacher/OpenMS4-cli",
-      "source_revision": "a93fa142c0e51eec616e16cb91d41fa743a42ed3"
+      "source_revision": "51db6bbbdeba53abc57d23c664de37f9c285372e"
     },
     "test-data": {
       "path": "packages/test-data",
       "repository": "https://github.com/okohlbacher/OpenMS4-test-data",
-      "source_revision": "a030e39ab7ef4ee8df73ea9aa83c550169919f6f"
+      "source_revision": "c3e52c917bc2a04e27720f5c7d8189c0f4f522da"
     },
     "topp": {
       "path": "packages/topp",
       "repository": "https://github.com/okohlbacher/OpenMS4-topp",
-      "source_revision": "3e1af1e14c80f0d98cef18b50519d3badb3cf96e"
+      "source_revision": "94e997007b7af9adbaee95d144324276e9fa56ee"
     },
     "openswath": {
       "path": "packages/openswath",
       "repository": "https://github.com/okohlbacher/OpenMS4-openswath",
-      "source_revision": "d10d9d13b8749eedcdf7765a2d7f73841f696267"
+      "source_revision": "c7901a79cc27463968ec335b6d04894b05b98339"
     },
     "flash": {
       "path": "packages/flash",
       "repository": "https://github.com/okohlbacher/OpenMS4-flash",
-      "source_revision": "8125964c7c4559519c418d0fe077bbeed98c418f"
+      "source_revision": "a6ee68f8589e3dd7eb8cb10b0ea7f3b790e72a4c"
     },
     "desktop": {
       "path": "packages/desktop",
       "repository": "https://github.com/okohlbacher/OpenMS4-desktop",
-      "source_revision": "af65c9cd393fb548323fbbb45f6a4bc14433b3a4"
+      "source_revision": "b39230036c53f74b537c3683520f3ba2ef1ba963"
     },
     "pyopenms": {
       "path": "packages/pyopenms",
       "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms",
-      "source_revision": "b4de01e1477ddea99121230bfe619c160ec47ff4"
+      "source_revision": "14d950a460636b9a8fa255b7ac657926fec403de"
     },
     "flashapp": {
       "path": "packages/flashapp",
       "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
-      "source_revision": "f367bd3b57d5eb0f18c3161e8bb0a1b7ed396c18"
+      "source_revision": "3e7f53137eab8ee8c8e15a018731f624d0ff1138"
     }
   }
 }

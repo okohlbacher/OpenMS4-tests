@@ -1,0 +1,76 @@
+{
+  "desktop_source_revision": "b39230036c53f74b537c3683520f3ba2ef1ba963",
+  "source_dirty": false,
+  "dependencies": {
+    "OpenMS": {
+      "version": "4.0.0",
+      "source_revision": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85",
+      "repository": "https://github.com/okohlbacher/OpenMS4-core"
+    },
+    "OpenMSCLI": {
+      "version": "1.0.0",
+      "source_revision": "51db6bbbdeba53abc57d23c664de37f9c285372e",
+      "repository": "https://github.com/okohlbacher/OpenMS4-cli"
+    },
+    "OpenMSTestData": {
+      "version": "1.0.0",
+      "source_revision": "c3e52c917bc2a04e27720f5c7d8189c0f4f522da",
+      "repository": "https://github.com/okohlbacher/OpenMS4-test-data"
+    }
+  },
+  "profile": {
+    "platform": "macOS",
+    "architecture": "arm64",
+    "configuration": "Debug",
+    "webengine": false,
+    "qt_version": "6.11.1",
+    "require_clean_source": true
+  },
+  "gui_build_steps": 173,
+  "gui_class_tests": {
+    "passed": 5,
+    "failed": 0,
+    "seconds": 5.81
+  },
+  "standalone_builds": {
+    "viewers_steps": 9,
+    "workflows_steps": 6
+  },
+  "imagecreator_ctest": {
+    "passed": 4,
+    "failed": 0,
+    "exact_bmp_comparisons": 2,
+    "seconds": 4.86
+  },
+  "installed_pipeline": {
+    "exit_code": 0,
+    "seconds": 7.07,
+    "outputs": [
+      "desktop-workflows-build/tests/output/TOPPAS_out/008-FileInfo-out_tsv/ExecutePipeline_1.tsv",
+      "desktop-workflows-build/tests/output/TOPPAS_out/007-FileInfo-out_tsv/ExecutePipeline_2.tsv",
+      "desktop-workflows-build/tests/output/TOPPAS_out/007-FileInfo-out_tsv/ExecutePipeline_1.tsv",
+      "desktop-workflows-build/tests/output/TOPPAS_out/010-FileMerger-out/ExecutePipeline_1_to_ExecutePipeline_2_mrgd.mzML"
+    ]
+  },
+  "relocation": {
+    "checks": 10,
+    "passed": 10,
+    "original_sdk_source_and_build_reads_denied": true,
+    "exact_bmp_comparisons": 2,
+    "records": "desktop-relocation-results.json"
+  },
+  "artifact_sha256": {
+    "lib/libOpenMS_GUI.dylib": "6a60887958d447bd53b57ea69ae451bdc81a52f52c73e45a9c9d1be3e00ce241",
+    "bin/TOPPView.app/Contents/MacOS/TOPPView": "0e36c1b355bac2445cdce10f9905013b026d17feb37a7cf7995dedd6fd5e1c85",
+    "bin/TOPPAS.app/Contents/MacOS/TOPPAS": "fa177ca4278ef07afab92ef0ccb9997f263cf17c0a2d9970bce14bec5d401757",
+    "bin/INIFileEditor.app/Contents/MacOS/INIFileEditor": "ed1a60555e5cc929f0033ad756c040febcbabdec2f6d2730036d41cc15f242d1",
+    "bin/ImageCreator": "bb95ae88851d5520c9f6fd62c6a709c90743d160c7344d35f3bcfdeabde136d1",
+    "bin/ExecutePipeline": "33221dc74233156a4f9cd1797844503364fec8b4a3e99b1dd774a5c7cab8f787"
+  },
+  "limitations": [
+    "WebEngine-enabled, interactive Qt tests and user-driven GUI workflows were not tested.",
+    "Qt/native dependencies remain installed externally; this is not a self-contained signed/notarized distribution.",
+    "The host re2 requires its existing older Abseil runtime through the recorded DYLD_FALLBACK_LIBRARY_PATH; no OpenMS loader-path override was used.",
+    "Linux/Windows and non-Debug desktop profiles remain unvalidated."
+  ]
+}

@@ -1,0 +1,24 @@
+stty: stdin isn't a terminal
+
+IDRipper -- Split protein/peptide identification file into several files according to identification run and annotated file origin.
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_IDRipper.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  IDRipper <options>
+
+Options (mandatory options marked with '*'):
+  -in <file>*          Input file, in which the protein/peptide identifications must be tagged with 'file_origin' (valid formats: 'idXML', 'idparquet')
+  -out <directory>*    Path to the output directory to write the ripped files to.
+  -numeric_filenames   Do not infer output filenames from spectra_data or file_origin but use the input filename with numeric suffixes.
+  -split_ident_runs    Split different identification runs into separate files.
+                       
+Common TOPP options:
+  -ini <file>          Use the given TOPP INI file
+  -threads <n>         Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>    Writes the default configuration file
+  --help               Shows options
+  --helphelp           Shows all options (including advanced)
+

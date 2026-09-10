@@ -1,0 +1,140 @@
+[
+  {
+    "command": [
+      "cmake",
+      "-S",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/core/tests/installed_sdk_acceptance",
+      "-B",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/original-consumer",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-release-sdk;/opt/homebrew;/opt/homebrew/Cellar/libomp/22.1.8",
+      "-DOpenMS_DIR=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-release-sdk/lib/cmake/OpenMS",
+      "-DOPENMS_EXPECTED_PREFIX=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-release-sdk",
+      "-DCURL_ROOT=/opt/homebrew/opt/curl",
+      "-DCMAKE_FIND_FRAMEWORK=LAST",
+      "-DOPENMS_ACCEPTANCE_TEST_SUPPORT=OFF",
+      "-DOPENMS_EXPECTED_SOURCE_REVISION=4fdec46b205459b92e7d3b9e56df5d8e912d5c85"
+    ],
+    "returncode": 0,
+    "expected_failure": false,
+    "passed": true,
+    "elapsed_seconds": 2.241,
+    "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/01.log"
+  },
+  {
+    "command": [
+      "cmake",
+      "--build",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/original-consumer",
+      "--config",
+      "Release",
+      "--parallel",
+      "2"
+    ],
+    "returncode": 0,
+    "expected_failure": false,
+    "passed": true,
+    "elapsed_seconds": 2.564,
+    "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/02.log"
+  },
+  {
+    "command": [
+      "ctest",
+      "--test-dir",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/original-consumer",
+      "-C",
+      "Release",
+      "--output-on-failure",
+      "--parallel",
+      "2"
+    ],
+    "returncode": 0,
+    "expected_failure": false,
+    "passed": true,
+    "elapsed_seconds": 2.741,
+    "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/03.log"
+  },
+  {
+    "command": [
+      "cmake",
+      "-S",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/core/tests/installed_sdk_acceptance",
+      "-B",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/relocated-consumer",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/relocated-sdk;/opt/homebrew;/opt/homebrew/Cellar/libomp/22.1.8",
+      "-DOpenMS_DIR=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/relocated-sdk/lib/cmake/OpenMS",
+      "-DOPENMS_EXPECTED_PREFIX=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/relocated-sdk",
+      "-DCURL_ROOT=/opt/homebrew/opt/curl",
+      "-DCMAKE_FIND_FRAMEWORK=LAST",
+      "-DOPENMS_ACCEPTANCE_TEST_SUPPORT=OFF",
+      "-DOPENMS_EXPECTED_SOURCE_REVISION=4fdec46b205459b92e7d3b9e56df5d8e912d5c85"
+    ],
+    "returncode": 0,
+    "expected_failure": false,
+    "passed": true,
+    "elapsed_seconds": 2.176,
+    "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/04.log"
+  },
+  {
+    "command": [
+      "cmake",
+      "--build",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/relocated-consumer",
+      "--config",
+      "Release",
+      "--parallel",
+      "2"
+    ],
+    "returncode": 0,
+    "expected_failure": false,
+    "passed": true,
+    "elapsed_seconds": 2.605,
+    "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/05.log"
+  },
+  {
+    "command": [
+      "ctest",
+      "--test-dir",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/relocated-consumer",
+      "-C",
+      "Release",
+      "--output-on-failure",
+      "--parallel",
+      "2"
+    ],
+    "returncode": 0,
+    "expected_failure": false,
+    "passed": true,
+    "elapsed_seconds": 2.463,
+    "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/06.log"
+  },
+  {
+    "command": [
+      "cmake",
+      "-S",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/core/tests/installed_sdk_acceptance",
+      "-B",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/wrong-revision-consumer",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-release-sdk;/opt/homebrew;/opt/homebrew/Cellar/libomp/22.1.8",
+      "-DOpenMS_DIR=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-release-sdk/lib/cmake/OpenMS",
+      "-DOPENMS_EXPECTED_PREFIX=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-release-sdk",
+      "-DCURL_ROOT=/opt/homebrew/opt/curl",
+      "-DCMAKE_FIND_FRAMEWORK=LAST",
+      "-DOPENMS_ACCEPTANCE_TEST_SUPPORT=OFF",
+      "-DOPENMS_EXPECTED_SOURCE_REVISION=0000000000000000000000000000000000000000"
+    ],
+    "returncode": 1,
+    "expected_failure": true,
+    "passed": true,
+    "elapsed_seconds": 2.2,
+    "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/07.log"
+  }
+]

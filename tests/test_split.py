@@ -1,13 +1,8 @@
 import hashlib
 import importlib.util
-import io
 import json
-import os
 from pathlib import Path
 import re
-import subprocess
-import tarfile
-import tempfile
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -62,42 +57,14 @@ class SourceOwnership(unittest.TestCase):
             self.assertNotRegex(cmake,r'add_subdirectory\([^\n]*openms(?:\)|/)')
 
 
-class ArtifactValidation(unittest.TestCase):
-    def setUp(self):
-        self.temp = tempfile.TemporaryDirectory(); self.root = Path(self.temp.name)
-        self.files = self.root/'artifacts'; self.files.mkdir()
-        self.file = self.files/'runtime.tar'; self.file.write_bytes(b'product')
-        self.lock = {'schema_version':1,'core_source_revision':'a'*40,'artifacts':[{'path':self.file.name,'kind':'runtime','sha256':hashlib.sha256(b'product').hexdigest()}]}
-        self.path = self.root/'lock.json'
-    def tearDown(self):self.temp.cleanup()
-    def verify(self):
-        self.path.write_text(json.dumps(self.lock)); return artifacts.verified_artifacts(self.path,self.files)
-    def test_correct_digest(self):self.assertEqual(len(self.verify()[1]),1)
-    def test_changed_binary_rejected(self):
-        self.file.write_bytes(b'changed')
-        with self.assertRaisesRegex(ValueError,'mismatch'):self.verify()
-    def test_placeholder_pin_rejected(self):
-        self.lock['core_source_revision']='REPLACE_ME'
-        with self.assertRaisesRegex(ValueError,'source commit'):self.verify()
-    def test_extra_wheel_rejected(self):
-        (self.files/'unapproved.whl').write_bytes(b'x')
-        with self.assertRaisesRegex(ValueError,'Unlisted'):self.verify()
-    def test_duplicate_artifact_rejected(self):
-        self.lock['artifacts']*=2
-        with self.assertRaisesRegex(ValueError,'unique'):self.verify()
-    def test_parent_traversal_rejected_before_extraction(self):
-        path=self.root/'unsafe.tar'
-        with tarfile.open(path,'w') as archive:
-            member=tarfile.TarInfo('../escape');member.size=3
-            archive.addfile(member,io.BytesIO(b'bad'))
-        with self.assertRaisesRegex(ValueError,'Unsafe'):artifacts.extract_runtime(path,self.root/'output')
-        self.assertFalse((self.root/'escape').exists())
-    def test_external_symlink_rejected(self):
-        path=self.root/'unsafe.tar'
-        with tarfile.open(path,'w') as archive:
-            member=tarfile.TarInfo('escape');member.type=tarfile.SYMTYPE;member.linkname='/outside'
-            archive.addfile(member)
-        with self.assertRaises(tarfile.FilterError):artifacts.extract_runtime(path,self.root/'output')
+def load_tests(loader, suite, pattern):
+    # Exercise the implementation actually copied into the app image.
+    path = PACKAGES / 'flashapp/tests/test_artifacts.py'
+    spec = importlib.util.spec_from_file_location('app_artifact_tests', path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    suite.addTests(loader.loadTestsFromModule(module))
+    return suite
 
 
 if __name__ == '__main__':unittest.main()
