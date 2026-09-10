@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "package": "OpenMS Core SDK",
+  "version": "4.0.0",
+  "source_revision": "21b295c9ad889b402db1e3a20f13e8d08330b61b",
+  "platform": {
+    "system": "macOS",
+    "version": "26.5.1",
+    "architecture": "arm64"
+  },
+  "compiler": {
+    "id": "AppleClang",
+    "version": "21.0.0.21000101",
+    "cxx_standard": 23,
+    "standard_library": "Apple libc++"
+  },
+  "configuration": "Debug",
+  "shared": true,
+  "features": {
+    "OpenMP": true,
+    "OpenSwathAlgo": true,
+    "class_testing_hooks": true,
+    "TestSupport": true,
+    "HDF5": false,
+    "ONNX": false,
+    "WNetAlign": false,
+    "TDL": false,
+    "opentims": false,
+    "ThermoRAW": false
+  },
+  "dependencies": {
+    "Boost": "1.90.0 shared",
+    "Eigen": "5.0.1",
+    "Arrow": "25.0.0 shared",
+    "Parquet": "25.0.0 shared",
+    "CURL": "8.21.0",
+    "LP_solver": "COIN-OR",
+    "runtime_abseil_fallback": "/opt/homebrew/Cellar/abseil/20260107.1/lib"
+  },
+  "installed_libraries": [
+    {
+      "path": "lib/libIsoSpec.a",
+      "bytes": 1892376,
+      "sha256": "092d7f625a4a8e0129b3216a0d8e7448c5d570907db97c797c28a6840347ef6c"
+    },
+    {
+      "path": "lib/libOpenMS.dylib",
+      "bytes": 91930064,
+      "sha256": "1398d1937d0bc502681788d622fcb8fc3a6a2d29fb3f9f0b08e043cf89b66561"
+    },
+    {
+      "path": "lib/libOpenMSTestFramework.a",
+      "bytes": 1600544,
+      "sha256": "7fff9d263be9eff1e48a8b80b8307240305957eedf09337f3fcd219b60a586c3"
+    },
+    {
+      "path": "lib/libOpenSwathAlgo.dylib",
+      "bytes": 689672,
+      "sha256": "c0e6ba728b8298a7105fb41300ada8eba67aa5326f403f018551de8887857484"
+    },
+    {
+      "path": "lib/libeol-bspline.a",
+      "bytes": 474424,
+      "sha256": "9c49a3aab9532896aabc54f3022fafec403e2cb2861faac61f25f82cc8f25cc7"
+    }
+  ],
+  "distribution_status": "Local tested SDK using system/Homebrew dependencies; not a fully bundled or published binary distribution.",
+  "data_digest": {
+    "path": "share/OpenMS/4.0.0",
+    "includes_optional_test_fixtures": true,
+    "files": 660,
+    "bytes": 298366290,
+    "sha256": "702198fdb2dd85cdc1656ee63682ef86ef6065b8630642c587f4031a6e148f6a",
+    "algorithm": "SHA-256 of sorted UTF-8 lines: relative POSIX path, NUL, file content SHA-256 in hex, newline; regular files and dereferenced file symlinks."
+  },
+  "cmake_flags": {
+    "CMAKE_CXX_FLAGS": "",
+    "CMAKE_CXX_FLAGS_DEBUG": "-g",
+    "CMAKE_FIND_FRAMEWORK": "LAST",
+    "CURL_ROOT": "/opt/homebrew/opt/curl",
+    "BOOST_USE_STATIC": "OFF",
+    "ARROW_USE_STATIC": "OFF",
+    "LP_SOLVER": "COIN"
+  }
+}

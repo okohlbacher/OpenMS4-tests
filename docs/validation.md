@@ -1,12 +1,15 @@
 # Validation recorded on 10 September 2026
 
-The extraction has passed **53 source, configuration and packaging tests**. These checks do not establish native binary correctness.
+The stripped Core SDK and scientific tests built on **macOS arm64, Debug**, and the full suite passed **709/709 CTests in 311.29 seconds**. The final committed SDK also passed 26 consumer runtime checks across library-only/TestSupport and original/relocated installations, with Core source/build paths hidden. See [Core native validation](core-native-validation.md) for the observed dependency issues, exact profile and continuing acceptance results.
+
+Source/configuration validation passed **62 checks**: the original 53 plus nine regressions for the exact invalid-data-override assertion. These checks are separate from native CTest results.
 
 | Check group | Result |
 | --- | --- |
 | Suite source ownership, artifact verification and consumer CMake configuration | 19 passed |
 | Parent/submodule and consumer dependency pin consistency | 2 passed |
 | Core SDK contracts and compiler-free data metadata | 10 passed |
+| Invalid-data-override subprocess assertion | 9 passed |
 | Test-data installation, relocation and suite registration | 7 passed |
 | Desktop source/resource boundaries | 9 passed |
 | Standalone Python source and fixture contracts | 6 passed |
@@ -19,6 +22,8 @@ The Python package configured with tests disabled and enabled against fake insta
 
 Desktop additionally passed six configuration/generation scenarios with **real Qt 6.11.1** and mock Core/CLI SDKs, including standalone viewers/workflows using an installed GUI export, a source tree without GUI sources, multi-configuration generation and WebEngine. Twelve desktop tests registered; wrong core/GUI pins failed. See [the detailed report](desktop-configuration-validation.md).
 
-No OpenMS/native product build, numerical test, extension import, wheel repair or GUI execution was performed. Configure-time compiler feature probes are distinct from an OpenMS build; the desktop harness documents one initial Qt atomic probe. Required binary acceptance remains: real core build/test/install/relocation; installed SDK consumers with original trees unavailable; CLI/product numerical tests; Python wheel/runtime checks; desktop tool discovery/pipelines; platform packaging and ABI/dependency identity checks. See [the ordered plan](refactoring-plan.md).
+The Core runtime pass includes the slow realistic PipEcho test (55.73 seconds) and FLASH algorithm test (205.26 seconds); it does not build the FLASH executable package. The portable profile disables optional native readers/models, and unavailable external Percolator subprocess sections remain outside the claim. The invalid-data-override assertion requires exit code 1 and the exact OpenMS diagnostic, rejecting unrelated crashes or loader failures.
+
+CLI/product native builds and numerical suites, Python extension imports/wheel repair, GUI execution, platform packaging and ABI/dependency identity acceptance remain pending. Core consumers passed with original source/build paths unavailable; both SDK configurations passed relocation and rejected incorrect source pins. Configure-time mock/Qt probes above do not satisfy those gates. See [the ordered plan](refactoring-plan.md).
 
 Reproduce the source/configuration checks with `python3 tools/validate_source.py` (Python 3.12+). GitHub Actions remain disabled. Binary artifact digests must be generated from actual built products; the app's example artifact lock is intentionally unusable until supplied with verified products.

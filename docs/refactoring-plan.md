@@ -2,9 +2,10 @@
 
 **10 September 2026.** The experiment establishes an installed scientific SDK as
 the boundary between OpenMS and its products. Nine private child repositories
-contain the extracted sources, build entry points, tests and provenance. This is
-an implemented source-level decomposition; independent native builds and binary
-compatibility remain unproven because building OpenMS was not authorized.
+contain the extracted sources, build entry points, tests and provenance. The
+stripped Core SDK now builds independently on macOS arm64 in Debug mode, with
+**709/709 CTests passing in 311.29 seconds**. The final committed SDK passed isolation and relocation checks with and without
+TestSupport. Other platforms and downstream native products remain pending; see [Core native validation](core-native-validation.md).
 
 The OpenMS baseline is
 [`ca32296038839459d8c9b075b759e285913d6294`](https://github.com/OpenMS/OpenMS/commit/ca32296038839459d8c9b075b759e285913d6294),
@@ -170,22 +171,25 @@ artifact verifier requires actual matching files and rejects placeholder hashes.
 Publish the artifact that passed validation, or explicitly prove equivalence to
 the tested configuration.
 
-Source/fixture checks, mock installed-SDK configurations, wrong-pin rejection and
-CTest registration checks have been performed. They cannot establish compilation,
-linking, ABI compatibility, relocation, GUI behavior or numerical correctness.
-The original numerical suite is preserved, not yet fully assigned to independent
-product suites. No native build, algorithm test run, repaired wheel or working app
-image is claimed.
+Source/configuration coverage comprises 62 checks, including nine new regressions
+that reject false-positive invalid-data-override failures. Separately, the macOS
+Debug Core native suite passed all 709 registered tests. Neither result establishes
+downstream product behavior, repaired wheels, working app images or cross-platform
+ABI compatibility. The preserved TOPP numerical suite still needs assignment and
+execution against independently built products.
 
-Proceed in this order once builds are authorized:
+Acceptance proceeds in this order:
 
-1. **Core identity and numerical baseline.** Build core with products absent, run
-   scientific/OpenSwathAlgo tests, and exercise optional external-Percolator
-   conditions. Preserve dependency-provider and testing-hook identity.
-2. **Installed SDK isolation.** Install runtime/SDK/data and optional TestSupport
-   separately; relocate them and make original source/build trees unavailable.
-   Compile/link/run ordinary, Eigen, Arrow and test-framework consumers. Reject
-   incorrect versions, revisions and dependency flavours.
+1. **Core identity and numerical baseline — passed for the portable macOS Debug
+   profile.** Core builds with products absent and all scientific/OpenSwathAlgo
+   CTests passed, including slow PipEcho. The final SDK embeds the verified Core
+   commit and has recorded library hashes; optional-reader/model integrations and unavailable external-Percolator
+   sections need their own runs. Preserve dependency-provider and testing-hook identity.
+2. **Installed SDK isolation — passed for the same profile.** Library-only and
+   TestSupport installations passed all 26 consumer runtime checks before/after
+   relocation, with original source/build paths hidden. Wrong Core revisions and
+   missing TestSupport were rejected. Extend this gate to other platforms and
+   release configurations before distribution.
 3. **Python proof.** Build an sdist and wheel against that SDK, repair and relocate
    the wheel, then run complete Python tests with installed fixtures. Exercise
    chemistry resources, Arrow round trips, subprocess imports and enabled vendor
