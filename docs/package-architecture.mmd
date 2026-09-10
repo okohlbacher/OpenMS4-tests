@@ -1,72 +1,28 @@
-flowchart TB
-  META["OpenMS4-tests · private integration parent<br/>Nine private child repositories pinned by commit<br/>Source decomposition implemented · native acceptance pending"]
-
-  subgraph APPS["Application package"]
-    APP["FLASHApp<br/>OpenMS4-flashapp<br/>Separate public-source snapshot"]
+flowchart BT
+  Core["Core SDK: scientific library, OpenSwathAlgo, readers/writers, data and optional TestSupport"]
+  CLI["CLI framework and tool registration"] --> Core
+  TOPP["TOPP: 123 registered tools"] --> CLI
+  SWATH["OpenSWATH: 19 executables"] --> CLI
+  Tools["Seven repos: NuXL, NASE, Comet, Mascot, DatabaseSuitability, ProteomicsLFQ, ParquetDiff"] --> CLI
+  FLASH["FLASH: backend and FLASHDeconv"] --> Core
+  FLASH -->|executable only| CLI
+  ProSE["ProSE: backend and executable"] --> Core
+  ProSE -->|executable only| CLI
+  Python["pyOpenMS"] --> Core
+  Python -->|backend| FLASH
+  Python -->|backend| ProSE
+  subgraph Desktop["Desktop: one repository"]
+    Viewers["TOPPView, ImageCreator, INIFileEditor"] --> GUI["GUI SDK"]
+    Workflows["TOPPAS, ExecutePipeline"] --> GUI
   end
-
-  PY["pyOpenMS 4.0.0.dev0<br/>13 domains + addons + wheels"]
-  TOPP["TOPP · 131 potential tools<br/>Includes FuzzyDiff"]
-  SWATH["OpenSWATH · 19 tools<br/>Owns OpenSwathBase"]
-  FLASH["FLASH · FLASHDeconv"]
-
-  subgraph DESKTOP["OpenMS4-desktop · one repository, three build entry points"]
-    VIEW["Viewers<br/>TOPPView · ImageCreator · INIFileEditor"]
-    WORK["Workflows<br/>TOPPAS · ExecutePipeline"]
-    GUI["GUI SDK<br/>Shared widgets + application implementations<br/>Application-class extraction deferred"]
-    VIEW -->|"GUI SDK"| GUI
-    WORK -->|"GUI SDK"| GUI
-  end
-
-  CLI["CLI SDK · OpenMS::CLI<br/>TOPPBase · ToolHandler · installed TSV manifests"]
-
-  subgraph COREPKG["OpenMS4-core · experimental 4.0.0 ABI"]
-    CORE["Scientific SDK<br/>OpenMS::Core · OpenSwathAlgo · Arrow<br/>FLASH/OpenSWATH algorithms retained<br/>ConsoleUtils + ParamTags retained"]
-    DATA["Versioned runtime data<br/>Compatibility bundle includes GUI data initially"]
-    SUPPORT["Optional TestSupport development component<br/>Framework + support source + core fixtures"]
-    CORE -.->|"runtime data"| DATA
-  end
-
-  TESTDATA["OpenMS4-test-data<br/>Full TOPP numerical suite + fixtures<br/>Per-product numerical partition pending"]
-  QT["Qt runtime + development libraries"]
-  NATIVE["Pinned native scientific dependencies<br/>C++23 · matching compiler/runtime/configuration"]
-  TNT["Separate FLASHTnT artifact required<br/>Absent from audited OpenMS baseline"]
-  ENGINES["Explicit external engines<br/>Tool/workflow-specific dependencies"]
-
-  APP -.->|"wheel"| PY
-  APP -.->|"runtime tools"| FLASH
-  APP -.->|"runtime tool"| TNT
-  PY -->|"installed SDK + Arrow"| CORE
-  PY -.->|"core fixtures during tests"| SUPPORT
-  PY -.->|"TOPP fixtures during tests"| TESTDATA
-  TOPP --> CLI
-  SWATH --> CLI
-  FLASH --> CLI
-  TOPP --> CORE
-  SWATH --> CORE
-  FLASH --> CORE
-  TOPP -->|"FuzzyDiff build"| SUPPORT
-  CLI -->|"installed SDK"| CORE
-  GUI --> CORE
+  GUI --> Core
   GUI --> CLI
-  GUI --> QT
-  GUI -.->|"GUI data compatibility"| DATA
-  VIEW -.->|"optional processing tools"| TOPP
-  WORK -.->|"workflow executables"| TOPP
-  WORK -.->|"workflow executables"| SWATH
-  TOPP -.->|"selected adapters"| ENGINES
-  TESTDATA -.->|"regression executable set"| TOPP
-  TESTDATA -.->|"regression executable set"| SWATH
-  TESTDATA -.->|"regression executable set"| FLASH
-  CORE --> NATIVE
-
-  LEGEND["Arrows point from consumer to dependency<br/>Solid: SDK/library or build dependency<br/>Dashed: runtime or test-fixture dependency<br/>Source SHA pins exist; binary hashes await authorized builds"]
-
-  classDef core fill:#dceefb,stroke:#24668b,color:#14364b;
-  classDef product fill:#e7f3e8,stroke:#4d7e52,color:#234428;
-  classDef support fill:#f5eddc,stroke:#9b783c,color:#584421;
-  classDef pending fill:#fbe8e4,stroke:#ad6354,color:#64392f;
-  class CORE,CLI,PY core;
-  class TOPP,SWATH,FLASH,GUI,VIEW,WORK,APP product;
-  class DATA,SUPPORT,TESTDATA support;
-  class TNT,META,LEGEND pending;
+  GUI --> Qt
+  Fixtures["Test-data repository"] -. fixture metadata .-> Core
+  TOPP -. tests .-> Fixtures
+  Python -. tests .-> Fixtures
+  App["FLASHApp"] --> Python
+  App -. tools .-> TOPP
+  App -. tool .-> FLASH
+  App -. separate artifact required .-> TNT["External FLASHTnT"]
+  Core --> Native["Matching native dependency environment"]

@@ -1,37 +1,39 @@
 digraph Packages {
-  graph [rankdir=TB, bgcolor="#F7F9FC", pad="0.35", nodesep="0.35", ranksep="0.65", fontname="Helvetica", label="OpenMS 4 — independent packages, pinned dependencies\nPrivate experiment • source implementation complete • native acceptance pending", labelloc=t, fontsize=24];
-  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=14, margin="0.18,0.13", color="#45769B", fillcolor="#E8F2FC", fontcolor="#183347"];
-  edge [color="#536B83", arrowsize=0.7, penwidth=1.4, fontname="Helvetica", fontsize=11];
-  app [label="FLASHApp\nOwn source + container\nVerified runtime / wheel inputs", fillcolor="#DCF0E4", color="#56856A"];
-  py [label="pyOpenMS\nBindings · addons · wheels"];
-  topp [label="TOPP\n131 tools\nFuzzyDiff retained"];
-  swath [label="OpenSWATH tools\n19 executables\nOpenSwathBase"];
-  flash [label="FLASH tools\nFLASHDeconv"];
+  graph [rankdir=TB, bgcolor="#F7F9FC", pad="0.35", nodesep="0.35", ranksep="0.6", fontname="Helvetica", label="OpenMS 4 — 17 repositories, installed SDK dependencies\nCore builds and tests independently; consumers pin its version and source commit", labelloc=t, fontsize=22];
+  node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=13, margin="0.18,0.13", color="#45769B", fillcolor="#E8F2FC", fontcolor="#183347"];
+  edge [color="#536B83", arrowsize=0.7, penwidth=1.4, fontname="Helvetica", fontsize=10];
+  app [label="FLASHApp\nPython app + Vue component", fillcolor="#DCF0E4", color="#56856A"];
+  py [label="pyOpenMS\nBindings, addons and wheels"];
+  topp [label="TOPP\n123 registered tools\nOptional tools depend on SDK features"];
+  swath [label="OpenSWATH tools\n19 executables + OpenSwathBase"];
+  flash [label="FLASH\nFLASHDeconv executable\nOpenMS::FLASH backend"];
+  prose [label="ProSE\nProSE executable\nOpenMS::ProSE backend"];
+  products [label="Seven tool repositories\nNuXL · NASE · Comet · Mascot\nDatabaseSuitability · ProteomicsLFQ\nParquetDiff"];
   subgraph cluster_desktop {
-    label="Desktop — one repository initially"; fontname="Helvetica"; fontsize=15; color="#79A089"; style="rounded";
+    label="Desktop — one repository, three entry points"; fontname="Helvetica"; fontsize=14; color="#79A089"; style="rounded";
     viewers [label="Viewers\nTOPPView · ImageCreator\nINIFileEditor", fillcolor="#DCF0E4", color="#56856A"];
     workflows [label="Workflows\nTOPPAS · ExecutePipeline", fillcolor="#DCF0E4", color="#56856A"];
-    gui [label="GUI SDK\nWidgets + shared application code", fillcolor="#DCF0E4", color="#56856A"];
+    gui [label="GUI SDK\nWidgets and shared application code", fillcolor="#DCF0E4", color="#56856A"];
     {rank=same; viewers; workflows;}
     viewers -> gui; workflows -> gui;
   }
-  cli [label="CLI SDK\nTOPPBase · ToolHandler\nProduct manifests + executable discovery", fillcolor="#D6E7FA", penwidth=2];
-  core [label="CORE SDK — 4.0.0 experimental\nScientific library · OpenSwathAlgo · Arrow interface\nFLASH / SWATH algorithms · ConsoleUtils · ParamTags\nVersioned data + optional development TestSupport", fillcolor="#BCD8F0", color="#24668B", penwidth=2.4, fontsize=16];
-  fixtures [label="Test data\nFull TOPP numerical suite\nVersioned fixtures", fillcolor="#FFF1D5", color="#AF8A43"];
-  native [label="Native dependencies\nC++23 · compiler / runtime identity\nExact Arrow / Parquet build", fillcolor="#ECECF2", color="#858595"];
+  cli [label="CLI SDK\nTOPPBase · ToolHandler\nTool registration and discovery", fillcolor="#D6E7FA", penwidth=2];
+  core [label="CORE SDK — 4.0.0 experimental\nScientific library + OpenSwathAlgo\nReusable readers/writers, Arrow/Parquet and shared records\nVersioned runtime data + optional TestSupport", fillcolor="#BCD8F0", color="#24668B", penwidth=2.4, fontsize=16];
+  fixtures [label="Test data\nVersioned TOPP fixtures\nInstalled numerical test suite", fillcolor="#FFF1D5", color="#AF8A43"];
+  native [label="Native dependencies\nMatching compiler, runtime and library versions", fillcolor="#ECECF2", color="#858595"];
   qt [label="Qt", fillcolor="#ECECF2", color="#858595"];
-  {rank=same; py; topp; swath; flash;}
-  app -> py [style=dashed]; app -> flash [style=dashed];
-  py -> core;
-  topp -> cli; swath -> cli; flash -> cli;
+  tnt [label="External FLASHTnT\nSeparate source pin\nCompatible artifact still required", fillcolor="#FFF1D5", color="#AF8A43"];
+  app -> py; app -> flash [style=dashed, label="tool"]; app -> topp [style=dashed, label="tools"]; app -> tnt [style=dashed];
+  py -> core; py -> prose [label="backend"]; py -> flash [label="backend"];
+  topp -> cli; swath -> cli; products -> cli;
+  flash -> cli [label="executable only"]; prose -> cli [label="executable only"];
+  flash -> core; prose -> core;
   cli -> core; gui -> cli; gui -> core; gui -> qt;
-  topp -> core [style=invis];
-  fixtures -> core [style=dashed, label="class fixture metadata"];
-  fixtures -> topp [style=dashed, constraint=false];
-  py -> fixtures [style=dashed, label="tests", constraint=false];
+  fixtures -> core [style=dashed, label="fixture metadata"];
+  topp -> fixtures [style=dashed, label="tests"];
+  py -> fixtures [style=dashed, constraint=false];
   viewers -> topp [style=dashed, label="optional tools", constraint=false];
-  workflows -> swath [style=dashed, constraint=false];
   core -> native;
-  note [shape=plain, fillcolor="#F7F9FC", fontcolor="#536B83", fontsize=12, label="Each colored product box belongs to a private subrepository; desktop groups three build entry points.\nArrows: consumer → dependency. Dashed: runtime / test use.\nSource commits are locked. Binary hashes and compatibility require real builds.\nFLASHApp also needs a separate FLASHTnT artifact, absent from this OpenMS baseline."];
+  note [shape=plain, fontcolor="#536B83", fontsize=12, label="Arrows: consumer → dependency. Dashed: runtime or test use. Repeated/transitive edges are omitted.\nCore is public; the other 16 repositories are private. Readers and writers remain in Core.\nProSE and FLASH backend libraries link Core; Python does not load the CLI or GUI libraries.\nThis diagram describes package boundaries, not a self-contained runtime or completed FLASHApp deployment."];
   native -> note [style=invis];
 }
