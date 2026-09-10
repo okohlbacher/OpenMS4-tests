@@ -1,0 +1,44 @@
+[
+  {
+    "name": "core-source",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+      "/usr/bin/head",
+      "-n",
+      "1",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/core/CMakeLists.txt"
+    ],
+    "exit_code": 1,
+    "diagnostic": "head: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/core/CMakeLists.txt: Operation not permitted"
+  },
+  {
+    "name": "core-build",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+      "/usr/bin/head",
+      "-n",
+      "1",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build/CMakeCache.txt"
+    ],
+    "exit_code": 1,
+    "diagnostic": "head: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build/CMakeCache.txt: Operation not permitted"
+  },
+  {
+    "name": "original-sdk",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+      "/usr/bin/head",
+      "-n",
+      "1",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMS/OpenMSConfig.cmake"
+    ],
+    "exit_code": 1,
+    "diagnostic": "head: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMS/OpenMSConfig.cmake: Operation not permitted"
+  }
+]

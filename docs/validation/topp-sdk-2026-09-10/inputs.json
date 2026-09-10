@@ -1,11 +1,17 @@
 {
-  "schema_version": 1,
-  "baseline": {
-    "repository": "https://github.com/OpenMS/OpenMS",
-    "branch": "develop",
-    "commit": "ca32296038839459d8c9b075b759e285913d6294"
-  },
-  "packages": {
+  "topp_source_revision": "582535805581f2bdf4f3871d6802a0b45a3abe36",
+  "source_archive": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/topp-source.tar",
+  "source": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/source",
+  "sdk": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk",
+  "sdk_owned_files": 1764,
+  "blocked_paths": [
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk"
+  ],
+  "source_revisions": {
     "core": {
       "path": "packages/core",
       "repository": "https://github.com/okohlbacher/OpenMS4-core",
@@ -49,7 +55,8 @@
     "flashapp": {
       "path": "packages/flashapp",
       "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
-      "source_revision": "b845126dc6ff17675cccd5cafea6870c4b3db805"
+      "source_revision": "3e7f53137eab8ee8c8e15a018731f624d0ff1138"
     }
-  }
+  },
+  "environment_note": "Homebrew dependencies are external; existing Abseil loader workaround retained for this developer SDK profile."
 }

@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "name": "Darwin-c++",
+    "tests": "258",
+    "failures": "0",
+    "disabled": "0",
+    "skipped": "0",
+    "hostname": "MBP-OK-2.local",
+    "time": "27",
+    "timestamp": "2026-09-10T15:40:25"
+  },
+  "numerical": {
+    "name": "Darwin-unknown",
+    "tests": "285",
+    "failures": "0",
+    "disabled": "0",
+    "skipped": "0",
+    "hostname": "MBP-OK-2.local",
+    "time": "69",
+    "timestamp": "2026-09-10T15:40:54"
+  },
+  "selected-negative": {
+    "name": "Darwin-unknown",
+    "tests": "53",
+    "failures": "0",
+    "disabled": "0",
+    "skipped": "0",
+    "hostname": "MBP-OK-2.local",
+    "time": "9",
+    "timestamp": "2026-09-10T15:42:04"
+  }
+}

@@ -1,0 +1,1073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Darwin-c++"
+	tests="258"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname="MBP-OK-2.local"
+	time="27"
+	timestamp="2026-09-10T15:40:25"
+	>
+	<testcase name="AccurateMassSearch_write_ini" classname="AccurateMassSearch_write_ini" time="0.416794" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="AccurateMassSearch_write_ctd" classname="AccurateMassSearch_write_ctd" time="0.460849" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="AssayGeneratorMetabo_write_ini" classname="AssayGeneratorMetabo_write_ini" time="0.38117" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="AssayGeneratorMetabo_write_ctd" classname="AssayGeneratorMetabo_write_ctd" time="0.38106" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="AssayGeneratorMetaboSirius_write_ini" classname="AssayGeneratorMetaboSirius_write_ini" time="0.386771" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="AssayGeneratorMetaboSirius_write_ctd" classname="AssayGeneratorMetaboSirius_write_ctd" time="0.330571" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="BaselineFilter_write_ini" classname="BaselineFilter_write_ini" time="0.355507" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="BaselineFilter_write_ctd" classname="BaselineFilter_write_ctd" time="0.345276" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="CVInspector_write_ini" classname="CVInspector_write_ini" time="0.363019" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="CVInspector_write_ctd" classname="CVInspector_write_ctd" time="0.37007" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ClusterMassTraces_write_ini" classname="ClusterMassTraces_write_ini" time="0.348808" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ClusterMassTraces_write_ctd" classname="ClusterMassTraces_write_ctd" time="0.401891" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ClusterMassTracesByPrecursor_write_ini" classname="ClusterMassTracesByPrecursor_write_ini" time="0.305852" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ClusterMassTracesByPrecursor_write_ctd" classname="ClusterMassTracesByPrecursor_write_ctd" time="0.341436" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="CometAdapter_write_ini" classname="CometAdapter_write_ini" time="0.870051" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="CometAdapter_write_ctd" classname="CometAdapter_write_ctd" time="0.846724" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ConsensusID_write_ini" classname="ConsensusID_write_ini" time="0.363989" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ConsensusID_write_ctd" classname="ConsensusID_write_ctd" time="0.354466" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ConsensusMapNormalizer_write_ini" classname="ConsensusMapNormalizer_write_ini" time="0.29719" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ConsensusMapNormalizer_write_ctd" classname="ConsensusMapNormalizer_write_ctd" time="0.414937" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="DTAExtractor_write_ini" classname="DTAExtractor_write_ini" time="0.431745" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="DTAExtractor_write_ctd" classname="DTAExtractor_write_ctd" time="0.40251" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="DatabaseFilter_write_ini" classname="DatabaseFilter_write_ini" time="0.337696" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="DatabaseFilter_write_ctd" classname="DatabaseFilter_write_ctd" time="0.354201" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="DatabaseSuitability_write_ini" classname="DatabaseSuitability_write_ini" time="0.381597" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="DatabaseSuitability_write_ctd" classname="DatabaseSuitability_write_ctd" time="0.318096" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="DeMeanderize_write_ini" classname="DeMeanderize_write_ini" time="0.330583" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="DeMeanderize_write_ctd" classname="DeMeanderize_write_ctd" time="0.384198" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="Decharger_write_ini" classname="Decharger_write_ini" time="0.324134" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="Decharger_write_ctd" classname="Decharger_write_ctd" time="0.369129" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="DecoyDatabase_write_ini" classname="DecoyDatabase_write_ini" time="0.408359" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="DecoyDatabase_write_ctd" classname="DecoyDatabase_write_ctd" time="0.356344" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="Digestor_write_ini" classname="Digestor_write_ini" time="0.361811" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="Digestor_write_ctd" classname="Digestor_write_ctd" time="0.351496" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="DigestorMotif_write_ini" classname="DigestorMotif_write_ini" time="0.350735" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="DigestorMotif_write_ctd" classname="DigestorMotif_write_ctd" time="0.382455" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="EICExtractor_write_ini" classname="EICExtractor_write_ini" time="0.31219" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="EICExtractor_write_ctd" classname="EICExtractor_write_ctd" time="0.350486" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="Epifany_write_ini" classname="Epifany_write_ini" time="0.455772" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="Epifany_write_ctd" classname="Epifany_write_ctd" time="0.470764" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ExternalCalibration_write_ini" classname="ExternalCalibration_write_ini" time="0.309202" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ExternalCalibration_write_ctd" classname="ExternalCalibration_write_ctd" time="0.352404" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FalseDiscoveryRate_write_ini" classname="FalseDiscoveryRate_write_ini" time="0.44132" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FalseDiscoveryRate_write_ctd" classname="FalseDiscoveryRate_write_ctd" time="0.391818" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureFinderCentroided_write_ini" classname="FeatureFinderCentroided_write_ini" time="0.346237" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureFinderCentroided_write_ctd" classname="FeatureFinderCentroided_write_ctd" time="0.331204" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureFinderIdentification_write_ini" classname="FeatureFinderIdentification_write_ini" time="0.38079" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureFinderIdentification_write_ctd" classname="FeatureFinderIdentification_write_ctd" time="0.420358" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureFinderLFQ_write_ini" classname="FeatureFinderLFQ_write_ini" time="0.353111" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureFinderLFQ_write_ctd" classname="FeatureFinderLFQ_write_ctd" time="0.361696" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureFinderMetabo_write_ini" classname="FeatureFinderMetabo_write_ini" time="0.352948" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureFinderMetabo_write_ctd" classname="FeatureFinderMetabo_write_ctd" time="0.336371" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureFinderMetaboIdent_write_ini" classname="FeatureFinderMetaboIdent_write_ini" time="0.40459" status="run">
+		<properties/>
+		<system-out>RT window size calculated as 240 seconds.
+</system-out>
+	</testcase>
+	<testcase name="FeatureFinderMetaboIdent_write_ctd" classname="FeatureFinderMetaboIdent_write_ctd" time="0.39979" status="run">
+		<properties/>
+		<system-out>RT window size calculated as 240 seconds.
+</system-out>
+	</testcase>
+	<testcase name="FeatureFinderMultiplex_write_ini" classname="FeatureFinderMultiplex_write_ini" time="0.36534" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureFinderMultiplex_write_ctd" classname="FeatureFinderMultiplex_write_ctd" time="0.319866" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureLinkerLabeled_write_ini" classname="FeatureLinkerLabeled_write_ini" time="0.333188" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureLinkerLabeled_write_ctd" classname="FeatureLinkerLabeled_write_ctd" time="0.346776" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureLinkerUnlabeled_write_ini" classname="FeatureLinkerUnlabeled_write_ini" time="0.445333" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureLinkerUnlabeled_write_ctd" classname="FeatureLinkerUnlabeled_write_ctd" time="0.534243" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureLinkerUnlabeledKD_write_ini" classname="FeatureLinkerUnlabeledKD_write_ini" time="0.380266" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureLinkerUnlabeledKD_write_ctd" classname="FeatureLinkerUnlabeledKD_write_ctd" time="0.373008" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureLinkerUnlabeledQT_write_ini" classname="FeatureLinkerUnlabeledQT_write_ini" time="0.36608" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FeatureLinkerUnlabeledQT_write_ctd" classname="FeatureLinkerUnlabeledQT_write_ctd" time="0.354322" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FileConverter_write_ini" classname="FileConverter_write_ini" time="0.361966" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FileConverter_write_ctd" classname="FileConverter_write_ctd" time="0.373003" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FileFilter_write_ini" classname="FileFilter_write_ini" time="0.353539" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FileFilter_write_ctd" classname="FileFilter_write_ctd" time="0.379727" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FileInfo_write_ini" classname="FileInfo_write_ini" time="0.323935" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FileInfo_write_ctd" classname="FileInfo_write_ctd" time="0.346915" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FileMerger_write_ini" classname="FileMerger_write_ini" time="0.381586" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FileMerger_write_ctd" classname="FileMerger_write_ctd" time="0.419518" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FuzzyDiff_write_ini" classname="FuzzyDiff_write_ini" time="0.342624" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FuzzyDiff_write_ctd" classname="FuzzyDiff_write_ctd" time="0.310096" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="GNPSExport_write_ini" classname="GNPSExport_write_ini" time="0.355846" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="GNPSExport_write_ctd" classname="GNPSExport_write_ctd" time="0.379078" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="HighResPrecursorMassCorrector_write_ini" classname="HighResPrecursorMassCorrector_write_ini" time="0.47649" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="HighResPrecursorMassCorrector_write_ctd" classname="HighResPrecursorMassCorrector_write_ctd" time="0.378631" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDConflictResolver_write_ini" classname="IDConflictResolver_write_ini" time="0.441132" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDConflictResolver_write_ctd" classname="IDConflictResolver_write_ctd" time="0.395501" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDDecoyProbability_write_ini" classname="IDDecoyProbability_write_ini" time="0.379355" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDDecoyProbability_write_ctd" classname="IDDecoyProbability_write_ctd" time="0.375438" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDExtractor_write_ini" classname="IDExtractor_write_ini" time="0.338696" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDExtractor_write_ctd" classname="IDExtractor_write_ctd" time="0.380836" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDFileConverter_write_ini" classname="IDFileConverter_write_ini" time="0.390586" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDFileConverter_write_ctd" classname="IDFileConverter_write_ctd" time="0.332888" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDFilter_write_ini" classname="IDFilter_write_ini" time="0.791621" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDFilter_write_ctd" classname="IDFilter_write_ctd" time="0.830189" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDMapper_write_ini" classname="IDMapper_write_ini" time="0.343452" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDMapper_write_ctd" classname="IDMapper_write_ctd" time="0.401069" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDMerger_write_ini" classname="IDMerger_write_ini" time="0.426471" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDMerger_write_ctd" classname="IDMerger_write_ctd" time="0.336113" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDPosteriorErrorProbability_write_ini" classname="IDPosteriorErrorProbability_write_ini" time="0.309757" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDPosteriorErrorProbability_write_ctd" classname="IDPosteriorErrorProbability_write_ctd" time="0.353728" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDRTCalibration_write_ini" classname="IDRTCalibration_write_ini" time="0.431154" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDRTCalibration_write_ctd" classname="IDRTCalibration_write_ctd" time="0.505714" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDRipper_write_ini" classname="IDRipper_write_ini" time="0.395079" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDRipper_write_ctd" classname="IDRipper_write_ctd" time="0.365861" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDScoreSwitcher_write_ini" classname="IDScoreSwitcher_write_ini" time="0.346002" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDScoreSwitcher_write_ctd" classname="IDScoreSwitcher_write_ctd" time="0.493033" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDSplitter_write_ini" classname="IDSplitter_write_ini" time="0.330109" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IDSplitter_write_ctd" classname="IDSplitter_write_ctd" time="0.388695" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="INIUpdater_write_ini" classname="INIUpdater_write_ini" time="0.347356" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="INIUpdater_write_ctd" classname="INIUpdater_write_ctd" time="0.375689" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="InternalCalibration_write_ini" classname="InternalCalibration_write_ini" time="0.371412" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="InternalCalibration_write_ctd" classname="InternalCalibration_write_ctd" time="0.44496" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IonMobilityBinning_write_ini" classname="IonMobilityBinning_write_ini" time="0.429377" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IonMobilityBinning_write_ctd" classname="IonMobilityBinning_write_ctd" time="0.436578" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IsobaricAnalyzer_write_ini" classname="IsobaricAnalyzer_write_ini" time="0.370137" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IsobaricAnalyzer_write_ctd" classname="IsobaricAnalyzer_write_ctd" time="0.346862" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IsobaricWorkflow_write_ini" classname="IsobaricWorkflow_write_ini" time="0.386484" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="IsobaricWorkflow_write_ctd" classname="IsobaricWorkflow_write_ctd" time="0.439584" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="JSONExporter_write_ini" classname="JSONExporter_write_ini" time="0.417636" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="JSONExporter_write_ctd" classname="JSONExporter_write_ctd" time="0.361888" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="LuciphorAdapter_write_ini" classname="LuciphorAdapter_write_ini" time="0.771215" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="LuciphorAdapter_write_ctd" classname="LuciphorAdapter_write_ctd" time="0.834899" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MRMMapper_write_ini" classname="MRMMapper_write_ini" time="0.362224" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MRMMapper_write_ctd" classname="MRMMapper_write_ctd" time="0.459826" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MRMPairFinder_write_ini" classname="MRMPairFinder_write_ini" time="0.352181" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MRMPairFinder_write_ctd" classname="MRMPairFinder_write_ctd" time="0.431702" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MSFraggerAdapter_write_ini" classname="MSFraggerAdapter_write_ini" time="0.395656" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MSFraggerAdapter_write_ctd" classname="MSFraggerAdapter_write_ctd" time="0.422644" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MSGFPlusAdapter_write_ini" classname="MSGFPlusAdapter_write_ini" time="0.809876" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MSGFPlusAdapter_write_ctd" classname="MSGFPlusAdapter_write_ctd" time="0.84982" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MSstatsConverter_write_ini" classname="MSstatsConverter_write_ini" time="0.344346" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MSstatsConverter_write_ctd" classname="MSstatsConverter_write_ctd" time="0.451952" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MaRaClusterAdapter_write_ini" classname="MaRaClusterAdapter_write_ini" time="0.351179" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MaRaClusterAdapter_write_ctd" classname="MaRaClusterAdapter_write_ctd" time="0.28702" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MapAlignerIdentification_write_ini" classname="MapAlignerIdentification_write_ini" time="0.386956" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MapAlignerIdentification_write_ctd" classname="MapAlignerIdentification_write_ctd" time="0.401909" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MapAlignerPoseClustering_write_ini" classname="MapAlignerPoseClustering_write_ini" time="0.437378" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MapAlignerPoseClustering_write_ctd" classname="MapAlignerPoseClustering_write_ctd" time="0.350644" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MapAlignerTreeGuided_write_ini" classname="MapAlignerTreeGuided_write_ini" time="0.345623" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MapAlignerTreeGuided_write_ctd" classname="MapAlignerTreeGuided_write_ctd" time="0.371229" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MapNormalizer_write_ini" classname="MapNormalizer_write_ini" time="0.376582" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MapNormalizer_write_ctd" classname="MapNormalizer_write_ctd" time="0.399174" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MapRTTransformer_write_ini" classname="MapRTTransformer_write_ini" time="0.344554" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MapRTTransformer_write_ctd" classname="MapRTTransformer_write_ctd" time="0.320308" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MapStatistics_write_ini" classname="MapStatistics_write_ini" time="0.368375" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MapStatistics_write_ctd" classname="MapStatistics_write_ctd" time="0.368399" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MascotAdapterOnline_write_ini" classname="MascotAdapterOnline_write_ini" time="0.851229" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MascotAdapterOnline_write_ctd" classname="MascotAdapterOnline_write_ctd" time="0.837398" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MassCalculator_write_ini" classname="MassCalculator_write_ini" time="0.320614" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MassCalculator_write_ctd" classname="MassCalculator_write_ctd" time="0.413238" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MassTraceExtractor_write_ini" classname="MassTraceExtractor_write_ini" time="0.339809" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MassTraceExtractor_write_ctd" classname="MassTraceExtractor_write_ctd" time="0.396217" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MetaProSIP_write_ini" classname="MetaProSIP_write_ini" time="0.380152" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MetaProSIP_write_ctd" classname="MetaProSIP_write_ctd" time="0.373484" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MetaboliteAdductDecharger_write_ini" classname="MetaboliteAdductDecharger_write_ini" time="0.321833" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MetaboliteAdductDecharger_write_ctd" classname="MetaboliteAdductDecharger_write_ctd" time="0.449985" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MetaboliteSpectralMatcher_write_ini" classname="MetaboliteSpectralMatcher_write_ini" time="0.423089" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MetaboliteSpectralMatcher_write_ctd" classname="MetaboliteSpectralMatcher_write_ctd" time="0.384443" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MultiplexResolver_write_ini" classname="MultiplexResolver_write_ini" time="0.356511" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MultiplexResolver_write_ctd" classname="MultiplexResolver_write_ctd" time="0.393931" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MzMLSplitter_write_ini" classname="MzMLSplitter_write_ini" time="0.336355" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MzMLSplitter_write_ctd" classname="MzMLSplitter_write_ctd" time="0.419742" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MzTabExporter_write_ini" classname="MzTabExporter_write_ini" time="0.443744" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="MzTabExporter_write_ctd" classname="MzTabExporter_write_ctd" time="0.366966" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="NoiseFilterGaussian_write_ini" classname="NoiseFilterGaussian_write_ini" time="0.289507" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="NoiseFilterGaussian_write_ctd" classname="NoiseFilterGaussian_write_ctd" time="0.362486" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="NoiseFilterSGolay_write_ini" classname="NoiseFilterSGolay_write_ini" time="0.390262" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="NoiseFilterSGolay_write_ctd" classname="NoiseFilterSGolay_write_ctd" time="0.363449" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="NovorAdapter_write_ini" classname="NovorAdapter_write_ini" time="0.35132" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="NovorAdapter_write_ctd" classname="NovorAdapter_write_ctd" time="0.362285" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="NucleicAcidSearchEngine_write_ini" classname="NucleicAcidSearchEngine_write_ini" time="0.518803" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="NucleicAcidSearchEngine_write_ctd" classname="NucleicAcidSearchEngine_write_ctd" time="0.459814" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="OpenMSDatabasesInfo_write_ini" classname="OpenMSDatabasesInfo_write_ini" time="0.372112" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="OpenMSDatabasesInfo_write_ctd" classname="OpenMSDatabasesInfo_write_ctd" time="0.335851" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="OpenNuXL_write_ini" classname="OpenNuXL_write_ini" time="1.39169" status="run">
+		<properties/>
+		<system-out>Found presets file: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/OpenMS/4.0.0/NUXL/nuxl_presets.json
+Found presets: 25
+&lt;Found presets file: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/OpenMS/4.0.0/NUXL/nuxl_presets.json&gt; occurred 2 times
+Using preset 'DNA-DEB' from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/OpenMS/4.0.0/NUXL/nuxl_presets.json
+Found presets file: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/OpenMS/4.0.0/NUXL/nuxl_presets.json
+Found presets: 25
+Using preset 'DNA-DEB Extended' from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/OpenMS/4.0.0/NUXL/nuxl_presets.json
+Found presets file: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/OpenMS/4.0.0/NUXL/nuxl_presets.json
+Found presets: 25
+Using preset 'DNA-FA' from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/Ope...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="OpenNuXL_write_ctd" classname="OpenNuXL_write_ctd" time="1.3586" status="run">
+		<properties/>
+		<system-out>Found presets file: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/OpenMS/4.0.0/NUXL/nuxl_presets.json
+Found presets: 25
+&lt;Found presets file: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/OpenMS/4.0.0/NUXL/nuxl_presets.json&gt; occurred 2 times
+Using preset 'DNA-DEB' from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/OpenMS/4.0.0/NUXL/nuxl_presets.json
+Found presets file: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/OpenMS/4.0.0/NUXL/nuxl_presets.json
+Found presets: 25
+Using preset 'DNA-DEB Extended' from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/OpenMS/4.0.0/NUXL/nuxl_presets.json
+Found presets file: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/OpenMS/4.0.0/NUXL/nuxl_presets.json
+Found presets: 25
+Using preset 'DNA-FA' from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/share/Ope...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="OpenPepXL_write_ini" classname="OpenPepXL_write_ini" time="0.792638" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="OpenPepXL_write_ctd" classname="OpenPepXL_write_ctd" time="0.848291" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PSMFeatureExtractor_write_ini" classname="PSMFeatureExtractor_write_ini" time="0.401201" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PSMFeatureExtractor_write_ctd" classname="PSMFeatureExtractor_write_ctd" time="0.355493" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ParquetConverter_write_ini" classname="ParquetConverter_write_ini" time="0.415688" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ParquetConverter_write_ctd" classname="ParquetConverter_write_ctd" time="0.429213" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ParquetDiff_write_ini" classname="ParquetDiff_write_ini" time="0.369393" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ParquetDiff_write_ctd" classname="ParquetDiff_write_ctd" time="0.380169" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PeakPickerHiRes_write_ini" classname="PeakPickerHiRes_write_ini" time="0.371641" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PeakPickerHiRes_write_ctd" classname="PeakPickerHiRes_write_ctd" time="0.390788" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PeakPickerIM_write_ini" classname="PeakPickerIM_write_ini" time="0.500669" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PeakPickerIM_write_ctd" classname="PeakPickerIM_write_ctd" time="0.357386" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PeakPickerIterative_write_ini" classname="PeakPickerIterative_write_ini" time="0.390241" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PeakPickerIterative_write_ctd" classname="PeakPickerIterative_write_ctd" time="0.358702" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PeptideIndexer_write_ini" classname="PeptideIndexer_write_ini" time="0.314271" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PeptideIndexer_write_ctd" classname="PeptideIndexer_write_ctd" time="0.400512" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PercolatorAdapter_write_ini" classname="PercolatorAdapter_write_ini" time="0.402013" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PercolatorAdapter_write_ctd" classname="PercolatorAdapter_write_ctd" time="0.360941" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PhosphoScoring_write_ini" classname="PhosphoScoring_write_ini" time="0.33616" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="PhosphoScoring_write_ctd" classname="PhosphoScoring_write_ctd" time="0.408792" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ProSE_write_ini" classname="ProSE_write_ini" time="0.819768" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ProSE_write_ctd" classname="ProSE_write_ctd" time="0.906451" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ProteinInference_write_ini" classname="ProteinInference_write_ini" time="0.365245" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ProteinInference_write_ctd" classname="ProteinInference_write_ctd" time="0.435032" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ProteinQuantifier_write_ini" classname="ProteinQuantifier_write_ini" time="0.463075" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ProteinQuantifier_write_ctd" classname="ProteinQuantifier_write_ctd" time="0.416541" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ProteomicsLFQ_write_ini" classname="ProteomicsLFQ_write_ini" time="0.452172" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="ProteomicsLFQ_write_ctd" classname="ProteomicsLFQ_write_ctd" time="0.38249" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCCalculator_write_ini" classname="QCCalculator_write_ini" time="0.337737" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCCalculator_write_ctd" classname="QCCalculator_write_ctd" time="0.470538" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCEmbedder_write_ini" classname="QCEmbedder_write_ini" time="0.411356" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCEmbedder_write_ctd" classname="QCEmbedder_write_ctd" time="0.372298" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCExporter_write_ini" classname="QCExporter_write_ini" time="0.384035" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCExporter_write_ctd" classname="QCExporter_write_ctd" time="0.455637" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCExtractor_write_ini" classname="QCExtractor_write_ini" time="0.405656" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCExtractor_write_ctd" classname="QCExtractor_write_ctd" time="0.38441" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCImporter_write_ini" classname="QCImporter_write_ini" time="0.341942" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCImporter_write_ctd" classname="QCImporter_write_ctd" time="0.365089" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCMerger_write_ini" classname="QCMerger_write_ini" time="0.369725" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCMerger_write_ctd" classname="QCMerger_write_ctd" time="0.384327" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCShrinker_write_ini" classname="QCShrinker_write_ini" time="0.423433" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QCShrinker_write_ctd" classname="QCShrinker_write_ctd" time="0.439679" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QualityControl_write_ini" classname="QualityControl_write_ini" time="0.361911" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="QualityControl_write_ctd" classname="QualityControl_write_ctd" time="0.381135" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="RNADigestor_write_ini" classname="RNADigestor_write_ini" time="0.364452" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="RNADigestor_write_ctd" classname="RNADigestor_write_ctd" time="0.465889" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="RNAMassCalculator_write_ini" classname="RNAMassCalculator_write_ini" time="0.346371" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="RNAMassCalculator_write_ctd" classname="RNAMassCalculator_write_ctd" time="0.348203" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="RNPxlXICFilter_write_ini" classname="RNPxlXICFilter_write_ini" time="0.307606" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="RNPxlXICFilter_write_ctd" classname="RNPxlXICFilter_write_ctd" time="0.374574" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="Resampler_write_ini" classname="Resampler_write_ini" time="0.372042" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="Resampler_write_ctd" classname="Resampler_write_ctd" time="0.340136" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SageAdapter_write_ini" classname="SageAdapter_write_ini" time="0.792866" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SageAdapter_write_ctd" classname="SageAdapter_write_ctd" time="0.839127" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SeedListGenerator_write_ini" classname="SeedListGenerator_write_ini" time="0.33999" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SeedListGenerator_write_ctd" classname="SeedListGenerator_write_ctd" time="0.445512" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SemanticValidator_write_ini" classname="SemanticValidator_write_ini" time="0.392214" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SemanticValidator_write_ctd" classname="SemanticValidator_write_ctd" time="0.331278" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SequenceCoverageCalculator_write_ini" classname="SequenceCoverageCalculator_write_ini" time="0.378338" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SequenceCoverageCalculator_write_ctd" classname="SequenceCoverageCalculator_write_ctd" time="0.394315" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SimpleSearchEngine_write_ini" classname="SimpleSearchEngine_write_ini" time="0.817023" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SimpleSearchEngine_write_ctd" classname="SimpleSearchEngine_write_ctd" time="0.76493" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SiriusExport_write_ini" classname="SiriusExport_write_ini" time="0.307677" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SiriusExport_write_ctd" classname="SiriusExport_write_ctd" time="0.404259" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SpectraFilterNLargest_write_ini" classname="SpectraFilterNLargest_write_ini" time="0.411658" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SpectraFilterNLargest_write_ctd" classname="SpectraFilterNLargest_write_ctd" time="0.348608" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SpectraFilterNormalizer_write_ini" classname="SpectraFilterNormalizer_write_ini" time="0.303068" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SpectraFilterNormalizer_write_ctd" classname="SpectraFilterNormalizer_write_ctd" time="0.356667" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SpectraFilterThresholdMower_write_ini" classname="SpectraFilterThresholdMower_write_ini" time="0.349413" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SpectraFilterThresholdMower_write_ctd" classname="SpectraFilterThresholdMower_write_ctd" time="0.336594" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SpectraFilterWindowMower_write_ini" classname="SpectraFilterWindowMower_write_ini" time="0.399251" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SpectraFilterWindowMower_write_ctd" classname="SpectraFilterWindowMower_write_ctd" time="0.398709" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SpectraMerger_write_ini" classname="SpectraMerger_write_ini" time="0.371213" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SpectraMerger_write_ctd" classname="SpectraMerger_write_ctd" time="0.335763" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SpectraSTSearchAdapter_write_ini" classname="SpectraSTSearchAdapter_write_ini" time="0.366723" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="SpectraSTSearchAdapter_write_ctd" classname="SpectraSTSearchAdapter_write_ctd" time="0.371049" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="StaticModification_write_ini" classname="StaticModification_write_ini" time="1.07772" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="StaticModification_write_ctd" classname="StaticModification_write_ctd" time="1.04443" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="TICCalculator_write_ini" classname="TICCalculator_write_ini" time="0.478221" status="run">
+		<properties/>
+		<system-out> Memory consumption before 52176
+Warning: Duplicate parameter '-test' given. Using last occurrence with value 'true' (ignoring 'true').
+ Memory consumption final 53312
+</system-out>
+	</testcase>
+	<testcase name="TICCalculator_write_ctd" classname="TICCalculator_write_ctd" time="0.501355" status="run">
+		<properties/>
+		<system-out> Memory consumption before 52016
+Warning: Duplicate parameter '-test' given. Using last occurrence with value 'true' (ignoring 'true').
+ Memory consumption final 53088
+</system-out>
+	</testcase>
+	<testcase name="TextExporter_write_ini" classname="TextExporter_write_ini" time="0.378265" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="TextExporter_write_ctd" classname="TextExporter_write_ctd" time="0.40178" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="UniPEFF_write_ini" classname="UniPEFF_write_ini" time="0.409872" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="UniPEFF_write_ctd" classname="UniPEFF_write_ctd" time="0.364973" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="XFDR_write_ini" classname="XFDR_write_ini" time="0.405397" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="XFDR_write_ctd" classname="XFDR_write_ctd" time="0.400532" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="XMLValidator_write_ini" classname="XMLValidator_write_ini" time="0.38856" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="XMLValidator_write_ctd" classname="XMLValidator_write_ctd" time="0.414108" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+</testsuite>
