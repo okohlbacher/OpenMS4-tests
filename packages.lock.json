@@ -49,7 +49,7 @@
     "flashapp": {
       "path": "packages/flashapp",
       "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
-      "source_revision": "961991ca270e8c2414fe9f6d01f40b4696760efe"
+      "source_revision": "ea9d933e7ca742f743c094f097f6d3396b1840b4"
     },
     "nuxl": {
       "path": "packages/nuxl",

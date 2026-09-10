@@ -1,8 +1,8 @@
 # OpenMS 4 package experiment
 
-The [tool backend extraction plan](docs/tool-backend-refactoring.md) describes the current 17-package layout and retained Core format support. The [build and test report](docs/tool-backend-validation.md) records the implemented boundaries and native validation. ProSE and FLASH provide optional installed backend SDKs for Python; FLASHApp remains frozen at its prior dependency graph and is outside this refactoring.
+The [tool backend extraction plan](docs/tool-backend-refactoring.md) describes the current 17-package layout and retained Core format support. The [build and test report](docs/tool-backend-validation.md) records the implemented boundaries and native validation. ProSE and FLASH provide optional installed backend SDKs for Python; FLASHApp now follows the same SDK graph; its external FLASHTnT dependency remains a separate deployment gate.
 
-A private, source-complete decomposition of OpenMS develop at `ca32296038839459d8c9b075b759e285913d6294`. The original OpenMS 3.6 history remains on `develop`; this experimental branch replaces the shared source build with pinned package submodules.
+A source-complete decomposition of OpenMS develop at `ca32296038839459d8c9b075b759e285913d6294`. The original OpenMS 3.6 history remains on `develop`; this experimental branch replaces the shared source build with pinned package submodules.
 
 Read [the synthesized refactoring plan](docs/refactoring-plan.md), [the package diagram](docs/package-architecture.svg), and [validation results](docs/validation.md). The plan incorporates actual command-line reviews from Claude Fable 5.1, Kimi and Vibe; verbatim reviews and invocation metadata are in [docs/reviews](docs/reviews/).
 
@@ -37,9 +37,11 @@ git submodule update --init packages/core packages/cli packages/test-data packag
 python3 tools/validate_source.py  # Python 3.12+
 ```
 
+The [current Release integration report](docs/split-sdk-validation.md) records fresh builds and numerical tests against the simplified SDK. Use [the package build runner](docs/build-split-packages.md) to reproduce the installed dependency graph.
+
 Each package has its own CMake or Python entry point. Install the core SDK first, then CLI and fixtures, then the products. Set `CMAKE_PREFIX_PATH` to installed dependencies. Consumers require the exact version and full source commit in `dependencies.lock.json`; they never build core through `add_subdirectory`. GUI/viewer/workflow entry points share one desktop source revision initially because controllers remain intertwined. See individual package READMEs for configuration options.
 
-Before the backend extraction, Core passed **712/712 Debug CTests** and installed/relocated SDK checks in Debug and Release. CLI, all enabled TOPP/OpenSWATH/FLASH tools and desktop products build against installed dependencies and have native acceptance evidence. See the [current implementation report](docs/implementation-2026-09-10/README.md) for exact tests, wheel/runtime artifacts and limitations; the [earlier Core report](docs/core-native-validation.md) remains historical. All repositories are private and GitHub Actions are disabled. Source pins alone do not establish binary compatibility; the runtime and artifact checks validate additional identity and ABI metadata.
+Before the backend extraction, Core passed **712/712 Debug CTests** and installed/relocated SDK checks in Debug and Release. CLI, all enabled TOPP/OpenSWATH/FLASH tools and desktop products build against installed dependencies and have native acceptance evidence. See the [current implementation report](docs/implementation-2026-09-10/README.md) for exact tests, wheel/runtime artifacts and limitations; the [earlier Core report](docs/core-native-validation.md) remains historical. Core is public; the other package repositories remain private. Core native CI and FLASHApp contract CI are enabled. Source pins alone do not establish binary compatibility; the runtime and artifact checks validate additional identity and ABI metadata.
 
 Before this backend extraction, the [standalone TOPP SDK build](docs/topp-sdk-validation.md) validated the earlier TOPP pin with the original repositories and build trees inaccessible: 130 tools, 258 metadata tests and 338 installed numerical/negative tests passed. Its subsequent [complete runnable TOPP test and runtime report](docs/topp-runtime-report.md) records 1,948 checks passed, five skipped and zero failures in 342.03 seconds, plus repeated TICCalculator reading benchmarks.
 
