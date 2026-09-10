@@ -1,0 +1,71 @@
+[
+  {
+    "phase": "configure",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+      "/usr/bin/env",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/opt/homebrew/bin/cmake",
+      "-S",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/test-data-sdk/share/openms4-test-data/1.0.0",
+      "-B",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-runtime-report/regressions",
+      "-DCMAKE_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk",
+      "-DOPENMS4_REGRESSION_TESTS=ON",
+      "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+      "-DOPENMS4_TOOLS_BIN=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/bin"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 0.7710276669822633
+  },
+  {
+    "phase": "parallel",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+      "/usr/bin/env",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/opt/homebrew/bin/ctest",
+      "--test-dir",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-runtime-report/regressions",
+      "--tests-from-file",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-runtime-report/regression-parallel-tests.txt",
+      "--parallel",
+      "4",
+      "--timeout",
+      "300",
+      "--output-on-failure",
+      "--output-junit",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-runtime-report/numerical-parallel.xml"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 217.1871362500242
+  },
+  {
+    "phase": "serial",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+      "/usr/bin/env",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/opt/homebrew/bin/ctest",
+      "--test-dir",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-runtime-report/regressions",
+      "--tests-from-file",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-runtime-report/regression-serial-tests.txt",
+      "--parallel",
+      "1",
+      "--timeout",
+      "300",
+      "--output-on-failure",
+      "--output-junit",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-runtime-report/numerical-serial.xml"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 1.52092466695467
+  }
+]

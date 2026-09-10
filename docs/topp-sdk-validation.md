@@ -5,6 +5,10 @@ archive using the pinned Core and CLI SDKs. Original repositories, Core/CLI/TOPP
 build trees and the original SDK installation were inaccessible throughout
 configuration, compilation and the final native tests. No Core source was built.
 
+The subsequent [TOPP runtime report](topp-runtime-report.md) executes every runnable
+registered test in this installation and records repeated reading benchmarks.
+The build and subset results below remain the original validation record.
+
 ## Package contract
 
 | Input | Exact source revision |

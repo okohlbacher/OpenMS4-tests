@@ -1,0 +1,8 @@
+(version 1)
+(allow default)
+(deny network*)
+(deny file-read* (subpath "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests"))
+(deny file-read* (subpath "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build"))
+(deny file-read* (subpath "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build"))
+(deny file-read* (subpath "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build"))
+(deny file-read* (subpath "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk"))

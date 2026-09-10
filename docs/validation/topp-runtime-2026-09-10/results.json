@@ -1,0 +1,83 @@
+{
+  "date": "2026-09-10",
+  "checks": 1953,
+  "passed": 1948,
+  "skipped": 5,
+  "failed": 0,
+  "ctest_wall_seconds": 342.03,
+  "batches": [
+    {
+      "name": "metadata",
+      "label": "Strict metadata validation",
+      "workers": 4,
+      "checks": 258,
+      "passed": 258,
+      "skipped": [],
+      "failed": [],
+      "ctest_wall_seconds": 113.46
+    },
+    {
+      "name": "numerical-parallel",
+      "label": "Numerical, negative and helper tests",
+      "workers": 4,
+      "checks": 1296,
+      "passed": 1291,
+      "skipped": [
+        "TOPP_MSGFPlusAdapter_missing",
+        "TOPP_SageAdapter_missing",
+        "TOPP_CometAdapter_missing",
+        "TOPP_CometAdapter_failing",
+        "TOPP_MSFraggerAdapter_missing"
+      ],
+      "failed": [],
+      "ctest_wall_seconds": 217.15
+    },
+    {
+      "name": "numerical-serial",
+      "label": "Shared-output numerical cases",
+      "workers": 1,
+      "checks": 10,
+      "passed": 10,
+      "skipped": [],
+      "failed": [],
+      "ctest_wall_seconds": 1.5
+    },
+    {
+      "name": "legacy-metadata",
+      "label": "Registered metadata and overwrite tests",
+      "workers": 4,
+      "checks": 389,
+      "passed": 389,
+      "skipped": [],
+      "failed": [],
+      "ctest_wall_seconds": 9.92
+    }
+  ],
+  "benchmark_measured_runs": 60,
+  "benchmark_warmups": 12,
+  "benchmark_all_process_wall_seconds": 42.57172116590664,
+  "benchmark_measured_process_wall_seconds": 33.2131556639215,
+  "cache_creation_seconds": 1.5275848329765722,
+  "slowest_numerical_cases": [
+    {
+      "name": "TOPP_PeakPickerIM_1",
+      "seconds": 69.2641
+    },
+    {
+      "name": "TOPP_PeakPickerIM_3",
+      "seconds": 60.9705
+    },
+    {
+      "name": "TOPP_ProteomicsLFQ_biosaur2_seeds",
+      "seconds": 25.5885
+    },
+    {
+      "name": "TOPP_ProteomicsLFQ_fraction_fwhm",
+      "seconds": 19.2651
+    },
+    {
+      "name": "TOPP_ProteomicsLFQ_qpx_seeds",
+      "seconds": 18.9325
+    }
+  ]
+}
