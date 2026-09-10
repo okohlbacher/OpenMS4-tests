@@ -45,3 +45,34 @@ function(openms4_load_tools output)
   endforeach()
   set(${output} "${_enabled}" PARENT_SCOPE)
 endfunction()
+
+# Register already-created tools; each package keeps ownership of its targets and
+# backend linkage. The build bindir can differ from GNUInstallDirs (notably NuXL).
+function(openms4_install_tools package build_bindir)
+  if(BUILD_TESTING)
+    find_package(Python3 REQUIRED COMPONENTS Interpreter)
+  endif()
+  set(manifest "# name\tcategory\tversion\texecutable\n")
+  set(build_manifest "${manifest}")
+  foreach(tool IN LISTS ARGN)
+    target_compile_features(${tool} PRIVATE cxx_std_23)
+    openms4_install_rpath(${tool})
+    install(TARGETS ${tool} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+    string(APPEND manifest "${tool}\t${${tool}_CATEGORY}\t${PROJECT_VERSION}\t${CMAKE_INSTALL_BINDIR}/${tool}${CMAKE_EXECUTABLE_SUFFIX}\n")
+    string(APPEND build_manifest "${tool}\t${${tool}_CATEGORY}\t${PROJECT_VERSION}\t${build_bindir}/${tool}${CMAKE_EXECUTABLE_SUFFIX}\n")
+    if(BUILD_TESTING AND NOT tool STREQUAL "OpenMSInfo")
+      foreach(kind ini ctd)
+        add_test(NAME ${tool}_write_${kind} COMMAND ${Python3_EXECUTABLE}
+          ${CMAKE_CURRENT_FUNCTION_LIST_DIR}/CheckToolMetadata.py $<TARGET_FILE:${tool}>
+          ${tool} ${PROJECT_VERSION} "${${tool}_CATEGORY}" ${kind}
+          ${CMAKE_CURRENT_BINARY_DIR}/metadata/${kind}/${tool}.${kind})
+        set_tests_properties(${tool}_write_${kind} PROPERTIES ENVIRONMENT
+          "OPENMS_TOOL_PREFIX_PATH=${CMAKE_BINARY_DIR};OPENMS_DISABLE_UPDATE_CHECK=ON")
+      endforeach()
+    endif()
+  endforeach()
+  file(MAKE_DIRECTORY ${CMAKE_BINARY_DIR}/share/openms4/tools ${CMAKE_BINARY_DIR}/install-manifests)
+  file(WRITE ${CMAKE_BINARY_DIR}/share/openms4/tools/${package}.tools.tsv "${build_manifest}")
+  file(WRITE ${CMAKE_BINARY_DIR}/install-manifests/${package}.tools.tsv "${manifest}")
+  install(FILES ${CMAKE_BINARY_DIR}/install-manifests/${package}.tools.tsv DESTINATION share/openms4/tools)
+endfunction()

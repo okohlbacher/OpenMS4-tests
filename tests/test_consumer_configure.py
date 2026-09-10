@@ -50,6 +50,15 @@ endforeach()
         self.check('topp',True)
         self.assertIn('\tbin/FileInfo',(self.root/'build/share/openms4/tools/topp.tools.tsv').read_text())
         self.assertIn('\tcustom-bin/FileInfo',(self.root/'build/install-manifests/topp.tools.tsv').read_text())
+        registered = subprocess.run(['ctest', '--test-dir', str(self.root/'build'),
+                                     '--show-only=json-v1'], text=True, capture_output=True, check=True)
+        names = [test['name'] for test in json.loads(registered.stdout)['tests']]
+        metadata = json.loads((PACKAGES/'topp/tools.json').read_text())['tools']
+        expected = {entry['name'] + '_write_' + kind for entry in metadata
+                    if entry['name'] != 'OpenMSInfo' and not entry.get('requires_feature')
+                    for kind in ('ini', 'ctd')}
+        self.assertEqual(set(names), expected)
+
     def test_swath_configuration(self):self.check('openswath',True)
     def test_flash_configuration(self):self.check('flash',True)
     def test_wrong_core_pin_is_rejected(self):
