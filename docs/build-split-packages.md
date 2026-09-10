@@ -36,3 +36,21 @@ FLASHApp is a Python/container consumer and has separate acceptance steps in its
 `experimental/README.md`. Its source lock follows the current graph. A lock update
 alone does not establish a deployable wheel/runtime bundle or qualify the
 externally sourced FLASHTnT workflow.
+
+After the native build, use a Python environment with FLASHApp's hash-pinned
+requirements to exercise the actual installed deconvolution workflow:
+
+```sh
+python tools/test_flashapp_deconvolution.py \
+  --sdk-prefix /path/to/empty-build-workspace/sdk \
+  --work-dir /path/to/new-app-test-workspace
+```
+
+This loads pyOpenMS from the selected SDK, checks its runtime identity against
+the app lock, creates and reloads INI/settings files, runs FLASHDeconv and FuzzyDiff,
+compares the 18 scientific reference columns, and verifies missing-input failure
+propagation and process-record cleanup. The work directory must not exist; outputs
+and `result.json` remain there for inspection. The immediate FLASH and FLASHApp
+source checkouts and installed test-data fixtures are test inputs. This is a local
+application check; it does not exercise a browser, Redis worker, container image,
+or the separately required FLASHTnT tagging workflow.
