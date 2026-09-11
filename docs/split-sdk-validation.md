@@ -101,10 +101,27 @@ separately pinned external FLASHTnT implementation; updating source locks does n
 manufacture that binary.
 
 Core's [final five-platform run](https://github.com/okohlbacher/OpenMS4-core/actions/runs/34572051447)
-at `94a2b114939e4c70e16b1141bd98c87b8d21d166` is running. Release publication
-waits for successful scientific and extracted/relocated SDK tests on all five
-platforms at this exact commit. Earlier Linux/macOS successes at `82ce5b3` are not
-substituted for qualification of the final source revision.
+passed on Linux x64/arm64, macOS x64/arm64 and Windows x64 at exact commit
+`94a2b114939e4c70e16b1141bd98c87b8d21d166`. Each platform passed all 701
+scientific tests, followed by installed SDK packaging and extracted/relocated
+consumer acceptance. All five downloaded archives match their SHA-256 checksums
+and clean full source identities.
+
+| Platform | Clean build, seconds | 701 tests, seconds | Extracted/relocated SDK, seconds |
+| --- | ---: | ---: | ---: |
+| linux-arm64 | 1747.89 | 31.92 | 18.77 |
+| linux-x64 | 2128.51 | 47.05 | 18.16 |
+| macos-arm64 | 1688.23 | 71.72 | 23.87 |
+| macos-x64 | 2887.97 | 167.93 | 56.11 |
+| windows-x64 | 3832.09 | 55.72 | 142.36 |
+
+Windows SDK acceptance includes 2,000 additional Parquet probe repetitions.
+The [Core SDK prerelease `core-v4.0.0-ci.1`](https://github.com/okohlbacher/OpenMS4-core/releases/tag/core-v4.0.0-ci.1)
+was published by the successful
+[release workflow](https://github.com/okohlbacher/OpenMS4-core/actions/runs/34578193995).
+Publication reused these exact qualified archives. The remote tag points to
+`94a2b114939e4c70e16b1141bd98c87b8d21d166`; all five archive assets and all five
+checksum assets match the locally verified CI files by SHA-256 and size.
 
 ### Windows Parquet file lifetime
 
@@ -129,7 +146,10 @@ its duplicated chunk-combining code. Caller-owned files remain open. Regressions
 check immediate deletion while the table remains usable, caller ownership, and
 cleanup after a read error. Windows CI performs 1,000 consecutive probe runs per
 prefix and fails on the first error; it does not retry failures until they pass.
-The separate original quiet probe will also be run against the final Windows SDK.
+The separate [original quiet probe against the final Windows SDK](https://github.com/okohlbacher/OpenMS4-core/actions/runs/34577610599)
+also passed 1,000 consecutive runs per prefix, with the same exact dependency
+packages as its producer. Native CI and the additional quiet probe therefore
+completed 4,000 successful repetitions against the fixed Core revision.
 
 ## Evidence
 

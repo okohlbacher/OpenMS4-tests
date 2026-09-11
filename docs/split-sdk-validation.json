@@ -1755,12 +1755,2275 @@
         ]
       },
       "same_dependency_packages": true
+    },
+    "fixed_sdk_test": {
+      "run_url": "https://github.com/okohlbacher/OpenMS4-core/actions/runs/34577610599",
+      "producer_revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+      "test_revision": "8a262bc7e805dae6758fc9dcddc1bc2d9f99e960",
+      "same_dependency_packages": true,
+      "repetitions": [
+        {
+          "passed": 1000,
+          "seconds": 51.688,
+          "log": "core-build-ci-execution/windows-sdk-fixed-94a2b11/acceptance/04.log"
+        },
+        {
+          "passed": 1000,
+          "seconds": 51.656,
+          "log": "core-build-ci-execution/windows-sdk-fixed-94a2b11/acceptance/08.log"
+        }
+      ],
+      "acceptance": [
+        {
+          "command": [
+            "cmake",
+            "-S",
+            "D:\\a\\OpenMS4-core\\OpenMS4-core\\tests\\installed_sdk_acceptance",
+            "-B",
+            "D:\\a\\_temp\\core-sdk\\acceptance\\original-consumer",
+            "-G",
+            "Visual Studio 17 2022",
+            "-DCMAKE_BUILD_TYPE=Release",
+            "-DCMAKE_PREFIX_PATH=D:/a/_temp/core-sdk/deployed/OpenMS4-core-windows-x64-Release-94a2b114939e;C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+            "-DOpenMS_DIR=D:/a/_temp/core-sdk/deployed/OpenMS4-core-windows-x64-Release-94a2b114939e/CMake",
+            "-DOPENMS_EXPECTED_PREFIX=D:/a/_temp/core-sdk/deployed/OpenMS4-core-windows-x64-Release-94a2b114939e",
+            "-DCMAKE_PREFIX_PATH=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+            "-DCURL_ROOT=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+            "-DCMAKE_FIND_FRAMEWORK=LAST",
+            "-DLP_SOLVER=GLPK",
+            "-DSTL_DEBUG=OFF",
+            "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreadedDLL",
+            "-DCMAKE_GENERATOR_PLATFORM=x64",
+            "-DOPENMS_EXPECTED_SOURCE_REVISION=94a2b114939e4c70e16b1141bd98c87b8d21d166"
+          ],
+          "returncode": 0,
+          "expected_failure": false,
+          "passed": true,
+          "elapsed_seconds": 6.296,
+          "log": "D:\\a\\_temp\\core-sdk\\acceptance\\01.log"
+        },
+        {
+          "command": [
+            "cmake",
+            "--build",
+            "D:\\a\\_temp\\core-sdk\\acceptance\\original-consumer",
+            "--config",
+            "Release",
+            "--parallel",
+            "4"
+          ],
+          "returncode": 0,
+          "expected_failure": false,
+          "passed": true,
+          "elapsed_seconds": 13.735,
+          "log": "D:\\a\\_temp\\core-sdk\\acceptance\\02.log"
+        },
+        {
+          "command": [
+            "ctest",
+            "--test-dir",
+            "D:\\a\\_temp\\core-sdk\\acceptance\\original-consumer",
+            "-C",
+            "Release",
+            "--output-on-failure",
+            "--parallel",
+            "4"
+          ],
+          "returncode": 0,
+          "expected_failure": false,
+          "passed": true,
+          "elapsed_seconds": 0.39,
+          "log": "D:\\a\\_temp\\core-sdk\\acceptance\\03.log"
+        },
+        {
+          "command": [
+            "ctest",
+            "--test-dir",
+            "D:\\a\\_temp\\core-sdk\\acceptance\\original-consumer",
+            "-C",
+            "Release",
+            "--output-on-failure",
+            "--no-tests=error",
+            "-R",
+            "^sdk_arrow$",
+            "--repeat",
+            "until-fail:1000"
+          ],
+          "returncode": 0,
+          "expected_failure": false,
+          "passed": true,
+          "elapsed_seconds": 51.688,
+          "log": "D:\\a\\_temp\\core-sdk\\acceptance\\04.log"
+        },
+        {
+          "command": [
+            "cmake",
+            "-S",
+            "D:\\a\\OpenMS4-core\\OpenMS4-core\\tests\\installed_sdk_acceptance",
+            "-B",
+            "D:\\a\\_temp\\core-sdk\\acceptance\\relocated-consumer",
+            "-G",
+            "Visual Studio 17 2022",
+            "-DCMAKE_BUILD_TYPE=Release",
+            "-DCMAKE_PREFIX_PATH=D:/a/_temp/core-sdk/acceptance/relocated-sdk;C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+            "-DOpenMS_DIR=D:/a/_temp/core-sdk/acceptance/relocated-sdk/CMake",
+            "-DOPENMS_EXPECTED_PREFIX=D:/a/_temp/core-sdk/acceptance/relocated-sdk",
+            "-DCMAKE_PREFIX_PATH=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+            "-DCURL_ROOT=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+            "-DCMAKE_FIND_FRAMEWORK=LAST",
+            "-DLP_SOLVER=GLPK",
+            "-DSTL_DEBUG=OFF",
+            "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreadedDLL",
+            "-DCMAKE_GENERATOR_PLATFORM=x64",
+            "-DOPENMS_EXPECTED_SOURCE_REVISION=94a2b114939e4c70e16b1141bd98c87b8d21d166"
+          ],
+          "returncode": 0,
+          "expected_failure": false,
+          "passed": true,
+          "elapsed_seconds": 5.406,
+          "log": "D:\\a\\_temp\\core-sdk\\acceptance\\05.log"
+        },
+        {
+          "command": [
+            "cmake",
+            "--build",
+            "D:\\a\\_temp\\core-sdk\\acceptance\\relocated-consumer",
+            "--config",
+            "Release",
+            "--parallel",
+            "4"
+          ],
+          "returncode": 0,
+          "expected_failure": false,
+          "passed": true,
+          "elapsed_seconds": 10.469,
+          "log": "D:\\a\\_temp\\core-sdk\\acceptance\\06.log"
+        },
+        {
+          "command": [
+            "ctest",
+            "--test-dir",
+            "D:\\a\\_temp\\core-sdk\\acceptance\\relocated-consumer",
+            "-C",
+            "Release",
+            "--output-on-failure",
+            "--parallel",
+            "4"
+          ],
+          "returncode": 0,
+          "expected_failure": false,
+          "passed": true,
+          "elapsed_seconds": 0.328,
+          "log": "D:\\a\\_temp\\core-sdk\\acceptance\\07.log"
+        },
+        {
+          "command": [
+            "ctest",
+            "--test-dir",
+            "D:\\a\\_temp\\core-sdk\\acceptance\\relocated-consumer",
+            "-C",
+            "Release",
+            "--output-on-failure",
+            "--no-tests=error",
+            "-R",
+            "^sdk_arrow$",
+            "--repeat",
+            "until-fail:1000"
+          ],
+          "returncode": 0,
+          "expected_failure": false,
+          "passed": true,
+          "elapsed_seconds": 51.656,
+          "log": "D:\\a\\_temp\\core-sdk\\acceptance\\08.log"
+        },
+        {
+          "command": [
+            "cmake",
+            "-S",
+            "D:\\a\\OpenMS4-core\\OpenMS4-core\\tests\\installed_sdk_acceptance",
+            "-B",
+            "D:\\a\\_temp\\core-sdk\\acceptance\\wrong-revision-consumer",
+            "-G",
+            "Visual Studio 17 2022",
+            "-DCMAKE_BUILD_TYPE=Release",
+            "-DCMAKE_PREFIX_PATH=D:/a/_temp/core-sdk/deployed/OpenMS4-core-windows-x64-Release-94a2b114939e;C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+            "-DOpenMS_DIR=D:/a/_temp/core-sdk/deployed/OpenMS4-core-windows-x64-Release-94a2b114939e/CMake",
+            "-DOPENMS_EXPECTED_PREFIX=D:/a/_temp/core-sdk/deployed/OpenMS4-core-windows-x64-Release-94a2b114939e",
+            "-DCMAKE_PREFIX_PATH=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+            "-DCURL_ROOT=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+            "-DCMAKE_FIND_FRAMEWORK=LAST",
+            "-DLP_SOLVER=GLPK",
+            "-DSTL_DEBUG=OFF",
+            "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreadedDLL",
+            "-DCMAKE_GENERATOR_PLATFORM=x64",
+            "-DOPENMS_EXPECTED_SOURCE_REVISION=0000000000000000000000000000000000000000"
+          ],
+          "returncode": 1,
+          "expected_failure": true,
+          "passed": true,
+          "elapsed_seconds": 4.734,
+          "log": "D:\\a\\_temp\\core-sdk\\acceptance\\09.log"
+        }
+      ]
     }
   },
   "hosted_core": {
     "revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
     "run_url": "https://github.com/okohlbacher/OpenMS4-core/actions/runs/34572051447",
-    "status": "in_progress",
-    "release_status": "not_published"
+    "status": "success",
+    "release_status": "published",
+    "platforms": {
+      "linux-arm64": {
+        "commands": [
+          {
+            "name": "source-revision",
+            "command": [
+              "git",
+              "rev-parse",
+              "HEAD"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.002
+          },
+          {
+            "name": "ci-driver-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tools/ci",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.071
+          },
+          {
+            "name": "source-contract-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/sdk_contract",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 4.507
+          },
+          {
+            "name": "test-wrapper-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/installed_sdk_acceptance",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.211
+          },
+          {
+            "name": "dependencies",
+            "command": [
+              "micromamba",
+              "list",
+              "--explicit"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.32
+          },
+          {
+            "name": "dependency-inventory",
+            "command": [
+              "micromamba",
+              "list",
+              "--json"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.328
+          },
+          {
+            "name": "configure",
+            "command": [
+              "cmake",
+              "--preset",
+              "core-release",
+              "-B",
+              "/home/runner/work/_temp/core-sdk/build",
+              "-G",
+              "Ninja",
+              "-DCMAKE_INSTALL_PREFIX=/home/runner/work/_temp/core-sdk/sdk",
+              "-DOPENMS_REQUIRE_CLEAN_SOURCE=ON",
+              "-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 7.118
+          },
+          {
+            "name": "build",
+            "command": [
+              "cmake",
+              "--build",
+              "/home/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 1747.891
+          },
+          {
+            "name": "scientific-tests",
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/home/runner/work/_temp/core-sdk/build",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--no-tests=error",
+              "--parallel",
+              "4",
+              "--output-junit",
+              "/home/runner/work/_temp/core-sdk/results/scientific-tests.xml"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 31.924
+          },
+          {
+            "name": "install",
+            "command": [
+              "cmake",
+              "--install",
+              "/home/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.402
+          },
+          {
+            "name": "deployed-sdk-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "/home/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance/run_acceptance.py",
+              "--sdk-prefix",
+              "/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-arm64-Release-94a2b114939e",
+              "--work-dir",
+              "/home/runner/work/_temp/core-sdk/acceptance",
+              "--dependency-prefix",
+              "/home/runner/micromamba/envs/core-ci",
+              "--expected-revision",
+              "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+              "--configuration",
+              "Release",
+              "--generator",
+              "Ninja",
+              "--jobs",
+              "4",
+              "--cmake-argument=-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCMAKE_FIND_FRAMEWORK=LAST",
+              "--cmake-argument=-DLP_SOLVER=COIN",
+              "--cmake-argument=-DSTL_DEBUG=OFF"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 18.771
+          }
+        ],
+        "ctest": {
+          "testcase": 701,
+          "failure": 0,
+          "error": 0,
+          "skipped": 0
+        },
+        "acceptance": [
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "/home/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance",
+              "-B",
+              "/home/runner/work/_temp/core-sdk/acceptance/original-consumer",
+              "-G",
+              "Ninja",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-arm64-Release-94a2b114939e;/home/runner/micromamba/envs/core-ci",
+              "-DOpenMS_DIR=/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-arm64-Release-94a2b114939e/lib/cmake/OpenMS",
+              "-DOPENMS_EXPECTED_PREFIX=/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-arm64-Release-94a2b114939e",
+              "-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=94a2b114939e4c70e16b1141bd98c87b8d21d166"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 0.745,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/01.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "--build",
+              "/home/runner/work/_temp/core-sdk/acceptance/original-consumer",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 8.001,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/02.log"
+          },
+          {
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/home/runner/work/_temp/core-sdk/acceptance/original-consumer",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 0.152,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/03.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "/home/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance",
+              "-B",
+              "/home/runner/work/_temp/core-sdk/acceptance/relocated-consumer",
+              "-G",
+              "Ninja",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=/home/runner/work/_temp/core-sdk/acceptance/relocated-sdk;/home/runner/micromamba/envs/core-ci",
+              "-DOpenMS_DIR=/home/runner/work/_temp/core-sdk/acceptance/relocated-sdk/lib/cmake/OpenMS",
+              "-DOPENMS_EXPECTED_PREFIX=/home/runner/work/_temp/core-sdk/acceptance/relocated-sdk",
+              "-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=94a2b114939e4c70e16b1141bd98c87b8d21d166"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 0.737,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/04.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "--build",
+              "/home/runner/work/_temp/core-sdk/acceptance/relocated-consumer",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 8.021,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/05.log"
+          },
+          {
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/home/runner/work/_temp/core-sdk/acceptance/relocated-consumer",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 0.147,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/06.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "/home/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance",
+              "-B",
+              "/home/runner/work/_temp/core-sdk/acceptance/wrong-revision-consumer",
+              "-G",
+              "Ninja",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-arm64-Release-94a2b114939e;/home/runner/micromamba/envs/core-ci",
+              "-DOpenMS_DIR=/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-arm64-Release-94a2b114939e/lib/cmake/OpenMS",
+              "-DOPENMS_EXPECTED_PREFIX=/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-arm64-Release-94a2b114939e",
+              "-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=0000000000000000000000000000000000000000"
+            ],
+            "returncode": 1,
+            "expected_failure": true,
+            "passed": true,
+            "elapsed_seconds": 0.723,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/07.log"
+          }
+        ],
+        "repetitions": []
+      },
+      "linux-x64": {
+        "commands": [
+          {
+            "name": "source-revision",
+            "command": [
+              "git",
+              "rev-parse",
+              "HEAD"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.002
+          },
+          {
+            "name": "ci-driver-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tools/ci",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.281
+          },
+          {
+            "name": "source-contract-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/sdk_contract",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 6.512
+          },
+          {
+            "name": "test-wrapper-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/installed_sdk_acceptance",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.226
+          },
+          {
+            "name": "dependencies",
+            "command": [
+              "micromamba",
+              "list",
+              "--explicit"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.321
+          },
+          {
+            "name": "dependency-inventory",
+            "command": [
+              "micromamba",
+              "list",
+              "--json"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.324
+          },
+          {
+            "name": "configure",
+            "command": [
+              "cmake",
+              "--preset",
+              "core-release",
+              "-B",
+              "/home/runner/work/_temp/core-sdk/build",
+              "-G",
+              "Ninja",
+              "-DCMAKE_INSTALL_PREFIX=/home/runner/work/_temp/core-sdk/sdk",
+              "-DOPENMS_REQUIRE_CLEAN_SOURCE=ON",
+              "-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 5.098
+          },
+          {
+            "name": "build",
+            "command": [
+              "cmake",
+              "--build",
+              "/home/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 2128.511
+          },
+          {
+            "name": "scientific-tests",
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/home/runner/work/_temp/core-sdk/build",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--no-tests=error",
+              "--parallel",
+              "4",
+              "--output-junit",
+              "/home/runner/work/_temp/core-sdk/results/scientific-tests.xml"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 47.048
+          },
+          {
+            "name": "install",
+            "command": [
+              "cmake",
+              "--install",
+              "/home/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.463
+          },
+          {
+            "name": "deployed-sdk-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "/home/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance/run_acceptance.py",
+              "--sdk-prefix",
+              "/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-x64-Release-94a2b114939e",
+              "--work-dir",
+              "/home/runner/work/_temp/core-sdk/acceptance",
+              "--dependency-prefix",
+              "/home/runner/micromamba/envs/core-ci",
+              "--expected-revision",
+              "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+              "--configuration",
+              "Release",
+              "--generator",
+              "Ninja",
+              "--jobs",
+              "4",
+              "--cmake-argument=-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCMAKE_FIND_FRAMEWORK=LAST",
+              "--cmake-argument=-DLP_SOLVER=COIN",
+              "--cmake-argument=-DSTL_DEBUG=OFF"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 18.159
+          }
+        ],
+        "ctest": {
+          "testcase": 701,
+          "failure": 0,
+          "error": 0,
+          "skipped": 0
+        },
+        "acceptance": [
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "/home/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance",
+              "-B",
+              "/home/runner/work/_temp/core-sdk/acceptance/original-consumer",
+              "-G",
+              "Ninja",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-x64-Release-94a2b114939e;/home/runner/micromamba/envs/core-ci",
+              "-DOpenMS_DIR=/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-x64-Release-94a2b114939e/lib/cmake/OpenMS",
+              "-DOPENMS_EXPECTED_PREFIX=/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-x64-Release-94a2b114939e",
+              "-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=94a2b114939e4c70e16b1141bd98c87b8d21d166"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 0.732,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/01.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "--build",
+              "/home/runner/work/_temp/core-sdk/acceptance/original-consumer",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 7.638,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/02.log"
+          },
+          {
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/home/runner/work/_temp/core-sdk/acceptance/original-consumer",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 0.231,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/03.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "/home/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance",
+              "-B",
+              "/home/runner/work/_temp/core-sdk/acceptance/relocated-consumer",
+              "-G",
+              "Ninja",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=/home/runner/work/_temp/core-sdk/acceptance/relocated-sdk;/home/runner/micromamba/envs/core-ci",
+              "-DOpenMS_DIR=/home/runner/work/_temp/core-sdk/acceptance/relocated-sdk/lib/cmake/OpenMS",
+              "-DOPENMS_EXPECTED_PREFIX=/home/runner/work/_temp/core-sdk/acceptance/relocated-sdk",
+              "-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=94a2b114939e4c70e16b1141bd98c87b8d21d166"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 0.742,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/04.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "--build",
+              "/home/runner/work/_temp/core-sdk/acceptance/relocated-consumer",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 7.594,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/05.log"
+          },
+          {
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/home/runner/work/_temp/core-sdk/acceptance/relocated-consumer",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 0.235,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/06.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "/home/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance",
+              "-B",
+              "/home/runner/work/_temp/core-sdk/acceptance/wrong-revision-consumer",
+              "-G",
+              "Ninja",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-x64-Release-94a2b114939e;/home/runner/micromamba/envs/core-ci",
+              "-DOpenMS_DIR=/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-x64-Release-94a2b114939e/lib/cmake/OpenMS",
+              "-DOPENMS_EXPECTED_PREFIX=/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-x64-Release-94a2b114939e",
+              "-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=0000000000000000000000000000000000000000"
+            ],
+            "returncode": 1,
+            "expected_failure": true,
+            "passed": true,
+            "elapsed_seconds": 0.719,
+            "log": "/home/runner/work/_temp/core-sdk/acceptance/07.log"
+          }
+        ],
+        "repetitions": []
+      },
+      "macos-arm64": {
+        "commands": [
+          {
+            "name": "source-revision",
+            "command": [
+              "git",
+              "rev-parse",
+              "HEAD"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.017
+          },
+          {
+            "name": "ci-driver-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tools/ci",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.133
+          },
+          {
+            "name": "source-contract-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/sdk_contract",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 9.926
+          },
+          {
+            "name": "test-wrapper-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/installed_sdk_acceptance",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.4
+          },
+          {
+            "name": "dependencies",
+            "command": [
+              "micromamba",
+              "list",
+              "--explicit"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.376
+          },
+          {
+            "name": "dependency-inventory",
+            "command": [
+              "micromamba",
+              "list",
+              "--json"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.323
+          },
+          {
+            "name": "configure",
+            "command": [
+              "cmake",
+              "--preset",
+              "core-release",
+              "-B",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "-G",
+              "Ninja",
+              "-DCMAKE_INSTALL_PREFIX=/Users/runner/work/_temp/core-sdk/sdk",
+              "-DOPENMS_REQUIRE_CLEAN_SOURCE=ON",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 13.02
+          },
+          {
+            "name": "build",
+            "command": [
+              "cmake",
+              "--build",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release",
+              "--parallel",
+              "2"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 1688.231
+          },
+          {
+            "name": "scientific-tests",
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--no-tests=error",
+              "--parallel",
+              "2",
+              "--output-junit",
+              "/Users/runner/work/_temp/core-sdk/results/scientific-tests.xml"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 71.722
+          },
+          {
+            "name": "install",
+            "command": [
+              "cmake",
+              "--install",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 3.327
+          },
+          {
+            "name": "deployed-sdk-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "/Users/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance/run_acceptance.py",
+              "--sdk-prefix",
+              "/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-arm64-Release-94a2b114939e",
+              "--work-dir",
+              "/Users/runner/work/_temp/core-sdk/acceptance",
+              "--dependency-prefix",
+              "/Users/runner/micromamba/envs/core-ci",
+              "--expected-revision",
+              "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+              "--configuration",
+              "Release",
+              "--generator",
+              "Ninja",
+              "--jobs",
+              "2",
+              "--cmake-argument=-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCMAKE_FIND_FRAMEWORK=LAST",
+              "--cmake-argument=-DLP_SOLVER=COIN",
+              "--cmake-argument=-DSTL_DEBUG=OFF",
+              "--cmake-argument=-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "--cmake-argument=-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "--cmake-argument=-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 23.869
+          }
+        ],
+        "ctest": {
+          "testcase": 701,
+          "failure": 0,
+          "error": 0,
+          "skipped": 0
+        },
+        "acceptance": [
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "/Users/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance",
+              "-B",
+              "/Users/runner/work/_temp/core-sdk/acceptance/original-consumer",
+              "-G",
+              "Ninja",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-arm64-Release-94a2b114939e;/Users/runner/micromamba/envs/core-ci",
+              "-DOpenMS_DIR=/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-arm64-Release-94a2b114939e/lib/cmake/OpenMS",
+              "-DOPENMS_EXPECTED_PREFIX=/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-arm64-Release-94a2b114939e",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=94a2b114939e4c70e16b1141bd98c87b8d21d166"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 2.913,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/01.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "--build",
+              "/Users/runner/work/_temp/core-sdk/acceptance/original-consumer",
+              "--config",
+              "Release",
+              "--parallel",
+              "2"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 6.428,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/02.log"
+          },
+          {
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/Users/runner/work/_temp/core-sdk/acceptance/original-consumer",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--parallel",
+              "2"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 0.869,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/03.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "/Users/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance",
+              "-B",
+              "/Users/runner/work/_temp/core-sdk/acceptance/relocated-consumer",
+              "-G",
+              "Ninja",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/work/_temp/core-sdk/acceptance/relocated-sdk;/Users/runner/micromamba/envs/core-ci",
+              "-DOpenMS_DIR=/Users/runner/work/_temp/core-sdk/acceptance/relocated-sdk/lib/cmake/OpenMS",
+              "-DOPENMS_EXPECTED_PREFIX=/Users/runner/work/_temp/core-sdk/acceptance/relocated-sdk",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=94a2b114939e4c70e16b1141bd98c87b8d21d166"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 2.005,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/04.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "--build",
+              "/Users/runner/work/_temp/core-sdk/acceptance/relocated-consumer",
+              "--config",
+              "Release",
+              "--parallel",
+              "2"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 7.67,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/05.log"
+          },
+          {
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/Users/runner/work/_temp/core-sdk/acceptance/relocated-consumer",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--parallel",
+              "2"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 0.663,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/06.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "/Users/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance",
+              "-B",
+              "/Users/runner/work/_temp/core-sdk/acceptance/wrong-revision-consumer",
+              "-G",
+              "Ninja",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-arm64-Release-94a2b114939e;/Users/runner/micromamba/envs/core-ci",
+              "-DOpenMS_DIR=/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-arm64-Release-94a2b114939e/lib/cmake/OpenMS",
+              "-DOPENMS_EXPECTED_PREFIX=/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-arm64-Release-94a2b114939e",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=0000000000000000000000000000000000000000"
+            ],
+            "returncode": 1,
+            "expected_failure": true,
+            "passed": true,
+            "elapsed_seconds": 1.762,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/07.log"
+          }
+        ],
+        "repetitions": []
+      },
+      "macos-x64": {
+        "commands": [
+          {
+            "name": "source-revision",
+            "command": [
+              "git",
+              "rev-parse",
+              "HEAD"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.026
+          },
+          {
+            "name": "ci-driver-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tools/ci",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.292
+          },
+          {
+            "name": "source-contract-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/sdk_contract",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 22.653
+          },
+          {
+            "name": "test-wrapper-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/installed_sdk_acceptance",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.989
+          },
+          {
+            "name": "dependencies",
+            "command": [
+              "micromamba",
+              "list",
+              "--explicit"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.951
+          },
+          {
+            "name": "dependency-inventory",
+            "command": [
+              "micromamba",
+              "list",
+              "--json"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.809
+          },
+          {
+            "name": "configure",
+            "command": [
+              "cmake",
+              "--preset",
+              "core-release",
+              "-B",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "-G",
+              "Ninja",
+              "-DCMAKE_INSTALL_PREFIX=/Users/runner/work/_temp/core-sdk/sdk",
+              "-DOPENMS_REQUIRE_CLEAN_SOURCE=ON",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 36.01
+          },
+          {
+            "name": "build",
+            "command": [
+              "cmake",
+              "--build",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 2887.972
+          },
+          {
+            "name": "scientific-tests",
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--no-tests=error",
+              "--parallel",
+              "4",
+              "--output-junit",
+              "/Users/runner/work/_temp/core-sdk/results/scientific-tests.xml"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 167.931
+          },
+          {
+            "name": "install",
+            "command": [
+              "cmake",
+              "--install",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 7.498
+          },
+          {
+            "name": "deployed-sdk-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "/Users/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance/run_acceptance.py",
+              "--sdk-prefix",
+              "/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-x64-Release-94a2b114939e",
+              "--work-dir",
+              "/Users/runner/work/_temp/core-sdk/acceptance",
+              "--dependency-prefix",
+              "/Users/runner/micromamba/envs/core-ci",
+              "--expected-revision",
+              "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+              "--configuration",
+              "Release",
+              "--generator",
+              "Ninja",
+              "--jobs",
+              "4",
+              "--cmake-argument=-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCMAKE_FIND_FRAMEWORK=LAST",
+              "--cmake-argument=-DLP_SOLVER=COIN",
+              "--cmake-argument=-DSTL_DEBUG=OFF",
+              "--cmake-argument=-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "--cmake-argument=-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "--cmake-argument=-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 56.112
+          }
+        ],
+        "ctest": {
+          "testcase": 701,
+          "failure": 0,
+          "error": 0,
+          "skipped": 0
+        },
+        "acceptance": [
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "/Users/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance",
+              "-B",
+              "/Users/runner/work/_temp/core-sdk/acceptance/original-consumer",
+              "-G",
+              "Ninja",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-x64-Release-94a2b114939e;/Users/runner/micromamba/envs/core-ci",
+              "-DOpenMS_DIR=/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-x64-Release-94a2b114939e/lib/cmake/OpenMS",
+              "-DOPENMS_EXPECTED_PREFIX=/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-x64-Release-94a2b114939e",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=94a2b114939e4c70e16b1141bd98c87b8d21d166"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 7.272,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/01.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "--build",
+              "/Users/runner/work/_temp/core-sdk/acceptance/original-consumer",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 18.343,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/02.log"
+          },
+          {
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/Users/runner/work/_temp/core-sdk/acceptance/original-consumer",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 1.819,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/03.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "/Users/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance",
+              "-B",
+              "/Users/runner/work/_temp/core-sdk/acceptance/relocated-consumer",
+              "-G",
+              "Ninja",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/work/_temp/core-sdk/acceptance/relocated-sdk;/Users/runner/micromamba/envs/core-ci",
+              "-DOpenMS_DIR=/Users/runner/work/_temp/core-sdk/acceptance/relocated-sdk/lib/cmake/OpenMS",
+              "-DOPENMS_EXPECTED_PREFIX=/Users/runner/work/_temp/core-sdk/acceptance/relocated-sdk",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=94a2b114939e4c70e16b1141bd98c87b8d21d166"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 3.903,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/04.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "--build",
+              "/Users/runner/work/_temp/core-sdk/acceptance/relocated-consumer",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 15.416,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/05.log"
+          },
+          {
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/Users/runner/work/_temp/core-sdk/acceptance/relocated-consumer",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 2.495,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/06.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "/Users/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance",
+              "-B",
+              "/Users/runner/work/_temp/core-sdk/acceptance/wrong-revision-consumer",
+              "-G",
+              "Ninja",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-x64-Release-94a2b114939e;/Users/runner/micromamba/envs/core-ci",
+              "-DOpenMS_DIR=/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-x64-Release-94a2b114939e/lib/cmake/OpenMS",
+              "-DOPENMS_EXPECTED_PREFIX=/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-x64-Release-94a2b114939e",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=0000000000000000000000000000000000000000"
+            ],
+            "returncode": 1,
+            "expected_failure": true,
+            "passed": true,
+            "elapsed_seconds": 3.918,
+            "log": "/Users/runner/work/_temp/core-sdk/acceptance/07.log"
+          }
+        ],
+        "repetitions": []
+      },
+      "windows-x64": {
+        "commands": [
+          {
+            "name": "source-revision",
+            "command": [
+              "git",
+              "rev-parse",
+              "HEAD"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.016
+          },
+          {
+            "name": "ci-driver-tests",
+            "command": [
+              "C:\\Users\\runneradmin\\micromamba\\envs\\core-ci\\python.exe",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tools/ci",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.219
+          },
+          {
+            "name": "source-contract-tests",
+            "command": [
+              "C:\\Users\\runneradmin\\micromamba\\envs\\core-ci\\python.exe",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/sdk_contract",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 49.234
+          },
+          {
+            "name": "test-wrapper-tests",
+            "command": [
+              "C:\\Users\\runneradmin\\micromamba\\envs\\core-ci\\python.exe",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/installed_sdk_acceptance",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.438
+          },
+          {
+            "name": "dependencies",
+            "command": [
+              "micromamba",
+              "list",
+              "--explicit"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.468
+          },
+          {
+            "name": "dependency-inventory",
+            "command": [
+              "micromamba",
+              "list",
+              "--json"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.469
+          },
+          {
+            "name": "configure",
+            "command": [
+              "cmake",
+              "--preset",
+              "core-release",
+              "-B",
+              "D:\\a\\_temp\\core-sdk\\build",
+              "-G",
+              "Visual Studio 17 2022",
+              "-DCMAKE_INSTALL_PREFIX=D:/a/_temp/core-sdk/sdk",
+              "-DOPENMS_REQUIRE_CLEAN_SOURCE=ON",
+              "-DCMAKE_PREFIX_PATH=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "-DCURL_ROOT=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=GLPK",
+              "-DSTL_DEBUG=OFF",
+              "-A",
+              "x64",
+              "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreadedDLL"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 28.063
+          },
+          {
+            "name": "build",
+            "command": [
+              "cmake",
+              "--build",
+              "D:\\a\\_temp\\core-sdk\\build",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 3832.093
+          },
+          {
+            "name": "scientific-tests",
+            "command": [
+              "ctest",
+              "--test-dir",
+              "D:\\a\\_temp\\core-sdk\\build",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--no-tests=error",
+              "--parallel",
+              "4",
+              "--output-junit",
+              "D:\\a\\_temp\\core-sdk\\results\\scientific-tests.xml"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 55.719
+          },
+          {
+            "name": "install",
+            "command": [
+              "cmake",
+              "--install",
+              "D:\\a\\_temp\\core-sdk\\build",
+              "--config",
+              "Release"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 3.594
+          },
+          {
+            "name": "deployed-sdk-tests",
+            "command": [
+              "C:\\Users\\runneradmin\\micromamba\\envs\\core-ci\\python.exe",
+              "D:\\a\\OpenMS4-core\\OpenMS4-core\\tests\\installed_sdk_acceptance\\run_acceptance.py",
+              "--sdk-prefix",
+              "D:\\a\\_temp\\core-sdk\\deployed\\OpenMS4-core-windows-x64-Release-94a2b114939e",
+              "--work-dir",
+              "D:\\a\\_temp\\core-sdk\\acceptance",
+              "--dependency-prefix",
+              "C:\\Users\\runneradmin\\micromamba\\envs\\core-ci\\Library",
+              "--expected-revision",
+              "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+              "--configuration",
+              "Release",
+              "--generator",
+              "Visual Studio 17 2022",
+              "--jobs",
+              "4",
+              "--cmake-argument=-DCMAKE_PREFIX_PATH=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "--cmake-argument=-DCURL_ROOT=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "--cmake-argument=-DCMAKE_FIND_FRAMEWORK=LAST",
+              "--cmake-argument=-DLP_SOLVER=GLPK",
+              "--cmake-argument=-DSTL_DEBUG=OFF",
+              "--cmake-argument=-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreadedDLL",
+              "--cmake-argument=-DCMAKE_GENERATOR_PLATFORM=x64"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 142.36
+          }
+        ],
+        "ctest": {
+          "testcase": 701,
+          "failure": 0,
+          "error": 0,
+          "skipped": 0
+        },
+        "acceptance": [
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "D:\\a\\OpenMS4-core\\OpenMS4-core\\tests\\installed_sdk_acceptance",
+              "-B",
+              "D:\\a\\_temp\\core-sdk\\acceptance\\original-consumer",
+              "-G",
+              "Visual Studio 17 2022",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=D:/a/_temp/core-sdk/deployed/OpenMS4-core-windows-x64-Release-94a2b114939e;C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "-DOpenMS_DIR=D:/a/_temp/core-sdk/deployed/OpenMS4-core-windows-x64-Release-94a2b114939e/CMake",
+              "-DOPENMS_EXPECTED_PREFIX=D:/a/_temp/core-sdk/deployed/OpenMS4-core-windows-x64-Release-94a2b114939e",
+              "-DCMAKE_PREFIX_PATH=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "-DCURL_ROOT=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=GLPK",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreadedDLL",
+              "-DCMAKE_GENERATOR_PLATFORM=x64",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=94a2b114939e4c70e16b1141bd98c87b8d21d166"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 5.328,
+            "log": "D:\\a\\_temp\\core-sdk\\acceptance\\01.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "--build",
+              "D:\\a\\_temp\\core-sdk\\acceptance\\original-consumer",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 10.609,
+            "log": "D:\\a\\_temp\\core-sdk\\acceptance\\02.log"
+          },
+          {
+            "command": [
+              "ctest",
+              "--test-dir",
+              "D:\\a\\_temp\\core-sdk\\acceptance\\original-consumer",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 0.313,
+            "log": "D:\\a\\_temp\\core-sdk\\acceptance\\03.log"
+          },
+          {
+            "command": [
+              "ctest",
+              "--test-dir",
+              "D:\\a\\_temp\\core-sdk\\acceptance\\original-consumer",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--no-tests=error",
+              "-R",
+              "^sdk_arrow$",
+              "--repeat",
+              "until-fail:1000"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 51.125,
+            "log": "D:\\a\\_temp\\core-sdk\\acceptance\\04.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "D:\\a\\OpenMS4-core\\OpenMS4-core\\tests\\installed_sdk_acceptance",
+              "-B",
+              "D:\\a\\_temp\\core-sdk\\acceptance\\relocated-consumer",
+              "-G",
+              "Visual Studio 17 2022",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=D:/a/_temp/core-sdk/acceptance/relocated-sdk;C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "-DOpenMS_DIR=D:/a/_temp/core-sdk/acceptance/relocated-sdk/CMake",
+              "-DOPENMS_EXPECTED_PREFIX=D:/a/_temp/core-sdk/acceptance/relocated-sdk",
+              "-DCMAKE_PREFIX_PATH=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "-DCURL_ROOT=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=GLPK",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreadedDLL",
+              "-DCMAKE_GENERATOR_PLATFORM=x64",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=94a2b114939e4c70e16b1141bd98c87b8d21d166"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 6.36,
+            "log": "D:\\a\\_temp\\core-sdk\\acceptance\\05.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "--build",
+              "D:\\a\\_temp\\core-sdk\\acceptance\\relocated-consumer",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 10.953,
+            "log": "D:\\a\\_temp\\core-sdk\\acceptance\\06.log"
+          },
+          {
+            "command": [
+              "ctest",
+              "--test-dir",
+              "D:\\a\\_temp\\core-sdk\\acceptance\\relocated-consumer",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 0.359,
+            "log": "D:\\a\\_temp\\core-sdk\\acceptance\\07.log"
+          },
+          {
+            "command": [
+              "ctest",
+              "--test-dir",
+              "D:\\a\\_temp\\core-sdk\\acceptance\\relocated-consumer",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--no-tests=error",
+              "-R",
+              "^sdk_arrow$",
+              "--repeat",
+              "until-fail:1000"
+            ],
+            "returncode": 0,
+            "expected_failure": false,
+            "passed": true,
+            "elapsed_seconds": 51.25,
+            "log": "D:\\a\\_temp\\core-sdk\\acceptance\\08.log"
+          },
+          {
+            "command": [
+              "cmake",
+              "-S",
+              "D:\\a\\OpenMS4-core\\OpenMS4-core\\tests\\installed_sdk_acceptance",
+              "-B",
+              "D:\\a\\_temp\\core-sdk\\acceptance\\wrong-revision-consumer",
+              "-G",
+              "Visual Studio 17 2022",
+              "-DCMAKE_BUILD_TYPE=Release",
+              "-DCMAKE_PREFIX_PATH=D:/a/_temp/core-sdk/deployed/OpenMS4-core-windows-x64-Release-94a2b114939e;C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "-DOpenMS_DIR=D:/a/_temp/core-sdk/deployed/OpenMS4-core-windows-x64-Release-94a2b114939e/CMake",
+              "-DOPENMS_EXPECTED_PREFIX=D:/a/_temp/core-sdk/deployed/OpenMS4-core-windows-x64-Release-94a2b114939e",
+              "-DCMAKE_PREFIX_PATH=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "-DCURL_ROOT=C:/Users/runneradmin/micromamba/envs/core-ci/Library",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=GLPK",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_MSVC_RUNTIME_LIBRARY=MultiThreadedDLL",
+              "-DCMAKE_GENERATOR_PLATFORM=x64",
+              "-DOPENMS_EXPECTED_SOURCE_REVISION=0000000000000000000000000000000000000000"
+            ],
+            "returncode": 1,
+            "expected_failure": true,
+            "passed": true,
+            "elapsed_seconds": 5.391,
+            "log": "D:\\a\\_temp\\core-sdk\\acceptance\\09.log"
+          }
+        ],
+        "repetitions": [
+          {
+            "passed": 1000,
+            "seconds": 51.125
+          },
+          {
+            "passed": 1000,
+            "seconds": 51.25
+          }
+        ]
+      }
+    },
+    "archives": [
+      {
+        "archive": "OpenMS4-core-linux-arm64-Release-94a2b114939e.tar.gz",
+        "sha256": "d1f1fa332873fca73ec2a355d67c801e6736d873394c0cc700535190ef3e61ff",
+        "revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+        "manifest": {
+          "build_type": "Release",
+          "class_testing_enabled": true,
+          "cxx_compiler_id": "GNU",
+          "cxx_compiler_version": "14.4.0",
+          "cxx_standard": 23,
+          "dependencies": {
+            "arrow": {
+              "target": "Arrow::arrow_shared",
+              "version": "23.0.1"
+            },
+            "boost": {
+              "linkage": "shared",
+              "version": "1.89.0"
+            },
+            "curl": {
+              "version": "8.21.0"
+            },
+            "eigen": {
+              "version": "5.0.1"
+            },
+            "openmp": {
+              "version": "4.5"
+            },
+            "parquet": {
+              "target": "Parquet::parquet_shared",
+              "version": "23.0.1"
+            }
+          },
+          "features": {
+            "hdf5": false,
+            "onnx": false,
+            "openmp": true,
+            "openswath": true,
+            "opentims": false,
+            "tdl": false,
+            "thermo_raw": false,
+            "wnetalign": false
+          },
+          "libstdcxx_cxx11_abi": 1,
+          "msvc_runtime_library": null,
+          "schema_version": 1,
+          "shared_libs": true,
+          "source_dirty": false,
+          "source_revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+          "standard_library": "libstdc++",
+          "stl_debug": false,
+          "system_name": "Linux",
+          "system_processor": "aarch64",
+          "version": "4.0.0"
+        }
+      },
+      {
+        "archive": "OpenMS4-core-macos-arm64-Release-94a2b114939e.tar.gz",
+        "sha256": "e1d2e5c62711ed3ec18bd0e65de2b5cd7a65e0ac32942dd5225328bd6c993f7a",
+        "revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+        "manifest": {
+          "build_type": "Release",
+          "class_testing_enabled": true,
+          "cxx_compiler_id": "AppleClang",
+          "cxx_compiler_version": "17.0.0.17000013",
+          "cxx_standard": 23,
+          "dependencies": {
+            "arrow": {
+              "target": "Arrow::arrow_shared",
+              "version": "23.0.1"
+            },
+            "boost": {
+              "linkage": "shared",
+              "version": "1.89.0"
+            },
+            "curl": {
+              "version": "8.21.0"
+            },
+            "eigen": {
+              "version": "5.0.1"
+            },
+            "openmp": {
+              "version": "5.1"
+            },
+            "parquet": {
+              "target": "Parquet::parquet_shared",
+              "version": "23.0.1"
+            }
+          },
+          "features": {
+            "hdf5": false,
+            "onnx": false,
+            "openmp": true,
+            "openswath": true,
+            "opentims": false,
+            "tdl": false,
+            "thermo_raw": false,
+            "wnetalign": false
+          },
+          "libstdcxx_cxx11_abi": null,
+          "msvc_runtime_library": null,
+          "schema_version": 1,
+          "shared_libs": true,
+          "source_dirty": false,
+          "source_revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+          "standard_library": "libc++",
+          "stl_debug": false,
+          "system_name": "Darwin",
+          "system_processor": "arm64",
+          "version": "4.0.0"
+        }
+      },
+      {
+        "archive": "OpenMS4-core-linux-x64-Release-94a2b114939e.tar.gz",
+        "sha256": "a522b4086b69901ddf666d502c3c8e8cab9d213827007e9aaba980c1176e6e8c",
+        "revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+        "manifest": {
+          "build_type": "Release",
+          "class_testing_enabled": true,
+          "cxx_compiler_id": "GNU",
+          "cxx_compiler_version": "14.4.0",
+          "cxx_standard": 23,
+          "dependencies": {
+            "arrow": {
+              "target": "Arrow::arrow_shared",
+              "version": "23.0.1"
+            },
+            "boost": {
+              "linkage": "shared",
+              "version": "1.89.0"
+            },
+            "curl": {
+              "version": "8.21.0"
+            },
+            "eigen": {
+              "version": "5.0.1"
+            },
+            "openmp": {
+              "version": "4.5"
+            },
+            "parquet": {
+              "target": "Parquet::parquet_shared",
+              "version": "23.0.1"
+            }
+          },
+          "features": {
+            "hdf5": false,
+            "onnx": false,
+            "openmp": true,
+            "openswath": true,
+            "opentims": false,
+            "tdl": false,
+            "thermo_raw": false,
+            "wnetalign": false
+          },
+          "libstdcxx_cxx11_abi": 1,
+          "msvc_runtime_library": null,
+          "schema_version": 1,
+          "shared_libs": true,
+          "source_dirty": false,
+          "source_revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+          "standard_library": "libstdc++",
+          "stl_debug": false,
+          "system_name": "Linux",
+          "system_processor": "x86_64",
+          "version": "4.0.0"
+        }
+      },
+      {
+        "archive": "OpenMS4-core-macos-x64-Release-94a2b114939e.tar.gz",
+        "sha256": "206be21ea412b7602181fb2e9c5848b91e27e7c3b16d6c9a7ad5881bf493491b",
+        "revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+        "manifest": {
+          "build_type": "Release",
+          "class_testing_enabled": true,
+          "cxx_compiler_id": "AppleClang",
+          "cxx_compiler_version": "17.0.0.17000013",
+          "cxx_standard": 23,
+          "dependencies": {
+            "arrow": {
+              "target": "Arrow::arrow_shared",
+              "version": "23.0.1"
+            },
+            "boost": {
+              "linkage": "shared",
+              "version": "1.89.0"
+            },
+            "curl": {
+              "version": "8.21.0"
+            },
+            "eigen": {
+              "version": "5.0.1"
+            },
+            "openmp": {
+              "version": "5.1"
+            },
+            "parquet": {
+              "target": "Parquet::parquet_shared",
+              "version": "23.0.1"
+            }
+          },
+          "features": {
+            "hdf5": false,
+            "onnx": false,
+            "openmp": true,
+            "openswath": true,
+            "opentims": false,
+            "tdl": false,
+            "thermo_raw": false,
+            "wnetalign": false
+          },
+          "libstdcxx_cxx11_abi": null,
+          "msvc_runtime_library": null,
+          "schema_version": 1,
+          "shared_libs": true,
+          "source_dirty": false,
+          "source_revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+          "standard_library": "libc++",
+          "stl_debug": false,
+          "system_name": "Darwin",
+          "system_processor": "x86_64",
+          "version": "4.0.0"
+        }
+      },
+      {
+        "archive": "OpenMS4-core-windows-x64-Release-94a2b114939e.tar.gz",
+        "sha256": "caeeeb15ae2cebcae29d2100f08937da02911d14e823453893d8970cc68ca6fa",
+        "revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+        "manifest": {
+          "build_type": "Release",
+          "class_testing_enabled": true,
+          "cxx_compiler_id": "MSVC",
+          "cxx_compiler_version": "19.44.35228.0",
+          "cxx_standard": 23,
+          "dependencies": {
+            "arrow": {
+              "target": "Arrow::arrow_shared",
+              "version": "23.0.1"
+            },
+            "boost": {
+              "linkage": "shared",
+              "version": "1.89.0"
+            },
+            "curl": {
+              "version": "8.22.0"
+            },
+            "eigen": {
+              "version": "5.0.1"
+            },
+            "openmp": {
+              "version": "2.0"
+            },
+            "parquet": {
+              "target": "Parquet::parquet_shared",
+              "version": "23.0.1"
+            }
+          },
+          "features": {
+            "hdf5": false,
+            "onnx": false,
+            "openmp": true,
+            "openswath": true,
+            "opentims": false,
+            "tdl": false,
+            "thermo_raw": false,
+            "wnetalign": false
+          },
+          "libstdcxx_cxx11_abi": null,
+          "msvc_runtime_library": "MultiThreadedDLL",
+          "schema_version": 1,
+          "shared_libs": true,
+          "source_dirty": false,
+          "source_revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+          "standard_library": "msvc-stl",
+          "stl_debug": false,
+          "system_name": "Windows",
+          "system_processor": "AMD64",
+          "version": "4.0.0"
+        }
+      }
+    ]
+  },
+  "release": {
+    "release_url": "https://github.com/okohlbacher/OpenMS4-core/releases/tag/core-v4.0.0-ci.1",
+    "tag": "core-v4.0.0-ci.1",
+    "revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+    "published_at": "2026-09-11T08:14:56Z",
+    "verified_assets": [
+      {
+        "name": "OpenMS4-core-linux-arm64-Release-94a2b114939e.tar.gz",
+        "sha256": "d1f1fa332873fca73ec2a355d67c801e6736d873394c0cc700535190ef3e61ff",
+        "size": 150873120,
+        "url": "https://github.com/okohlbacher/OpenMS4-core/releases/download/core-v4.0.0-ci.1/OpenMS4-core-linux-arm64-Release-94a2b114939e.tar.gz"
+      },
+      {
+        "name": "OpenMS4-core-linux-arm64-Release-94a2b114939e.tar.gz.sha256",
+        "sha256": "6e3e910f5f38c9e3bb7852d106b3603187a17677b2e6eb177b43c7b7e2e4eaa4",
+        "size": 119,
+        "url": "https://github.com/okohlbacher/OpenMS4-core/releases/download/core-v4.0.0-ci.1/OpenMS4-core-linux-arm64-Release-94a2b114939e.tar.gz.sha256"
+      },
+      {
+        "name": "OpenMS4-core-linux-x64-Release-94a2b114939e.tar.gz",
+        "sha256": "a522b4086b69901ddf666d502c3c8e8cab9d213827007e9aaba980c1176e6e8c",
+        "size": 152076750,
+        "url": "https://github.com/okohlbacher/OpenMS4-core/releases/download/core-v4.0.0-ci.1/OpenMS4-core-linux-x64-Release-94a2b114939e.tar.gz"
+      },
+      {
+        "name": "OpenMS4-core-linux-x64-Release-94a2b114939e.tar.gz.sha256",
+        "sha256": "1712ebcbb433b3d7a0271576274123ce80f2f1410add31a9b40cc063e557ef04",
+        "size": 117,
+        "url": "https://github.com/okohlbacher/OpenMS4-core/releases/download/core-v4.0.0-ci.1/OpenMS4-core-linux-x64-Release-94a2b114939e.tar.gz.sha256"
+      },
+      {
+        "name": "OpenMS4-core-macos-arm64-Release-94a2b114939e.tar.gz",
+        "sha256": "e1d2e5c62711ed3ec18bd0e65de2b5cd7a65e0ac32942dd5225328bd6c993f7a",
+        "size": 145861211,
+        "url": "https://github.com/okohlbacher/OpenMS4-core/releases/download/core-v4.0.0-ci.1/OpenMS4-core-macos-arm64-Release-94a2b114939e.tar.gz"
+      },
+      {
+        "name": "OpenMS4-core-macos-arm64-Release-94a2b114939e.tar.gz.sha256",
+        "sha256": "c95f58518bff7a65249251d6944915f59f3c305997194f3687becfe92bde5617",
+        "size": 119,
+        "url": "https://github.com/okohlbacher/OpenMS4-core/releases/download/core-v4.0.0-ci.1/OpenMS4-core-macos-arm64-Release-94a2b114939e.tar.gz.sha256"
+      },
+      {
+        "name": "OpenMS4-core-macos-x64-Release-94a2b114939e.tar.gz",
+        "sha256": "206be21ea412b7602181fb2e9c5848b91e27e7c3b16d6c9a7ad5881bf493491b",
+        "size": 146786779,
+        "url": "https://github.com/okohlbacher/OpenMS4-core/releases/download/core-v4.0.0-ci.1/OpenMS4-core-macos-x64-Release-94a2b114939e.tar.gz"
+      },
+      {
+        "name": "OpenMS4-core-macos-x64-Release-94a2b114939e.tar.gz.sha256",
+        "sha256": "d9c6c5a4b85187295a17b0b14ef00bbf628d5e08805a058e7d3250d610aefee1",
+        "size": 117,
+        "url": "https://github.com/okohlbacher/OpenMS4-core/releases/download/core-v4.0.0-ci.1/OpenMS4-core-macos-x64-Release-94a2b114939e.tar.gz.sha256"
+      },
+      {
+        "name": "OpenMS4-core-windows-x64-Release-94a2b114939e.tar.gz",
+        "sha256": "caeeeb15ae2cebcae29d2100f08937da02911d14e823453893d8970cc68ca6fa",
+        "size": 145483920,
+        "url": "https://github.com/okohlbacher/OpenMS4-core/releases/download/core-v4.0.0-ci.1/OpenMS4-core-windows-x64-Release-94a2b114939e.tar.gz"
+      },
+      {
+        "name": "OpenMS4-core-windows-x64-Release-94a2b114939e.tar.gz.sha256",
+        "sha256": "7dce7eea440c57c1d6b32b572cdd3bf8e7901f6823dc5f3a6232604c5c62c7c2",
+        "size": 120,
+        "url": "https://github.com/okohlbacher/OpenMS4-core/releases/download/core-v4.0.0-ci.1/OpenMS4-core-windows-x64-Release-94a2b114939e.tar.gz.sha256"
+      }
+    ],
+    "workflow_url": "https://github.com/okohlbacher/OpenMS4-core/actions/runs/34578193995"
   }
 }
