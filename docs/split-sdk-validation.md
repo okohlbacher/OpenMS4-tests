@@ -1,8 +1,8 @@
 # Split SDK validation — 2026-09-11
 
-The complete native package graph at parent `e548e405d55f374f548cdee62be6e13740ea1abe` was freshly checked out
+The complete native package graph at parent `089cffa1f9f68607476f0713a334aa93bac24b71` was freshly checked out
 from GitHub and built in Release on IBMI dax. Every consumer used installed Core
-`82ce5b373c97f934ffd9b1ffd80215ca66473d0b`. No Core source/build-tree fallback or
+`94a2b114939e4c70e16b1141bd98c87b8d21d166`. No Core source/build-tree fallback or
 scientific reference/tolerance change was needed.
 
 Core's build system now uses native CMake unity support, a small Debug/Release
@@ -25,48 +25,48 @@ the dependency order, builds, package tests and installed numerical suite.
 
 ## Linux native results
 
-Dax had 384 logical CPUs, approximately 2.1 TiB available memory and load 6.34
+Dax had 384 logical CPUs, approximately 2.1 TiB available memory and load 6.84
 (0.02/core) at selection. Builds used up to 320 compilation jobs, four concurrent
 consumer builds, and up to 128 CTest jobs. The environment used GCC 14.4, shared
 Core/Boost, Arrow 23.0.1, Eigen 5.0.1, COIN, Qt 6.10.1, Python 3.12 and nanobind
 2.10.0. Optional instrument/ONNX/HDF5 integrations and interactive/WebEngine
 desktop tests were disabled; OpenMP and OpenSWATH were enabled.
 
-Core rebuilt in **6.93 seconds** after the Windows test and acceptance changes and
-passed **701/701** tests in **22.46 seconds**. This is an incremental rebuild;
-the earlier clean Core build at `39975e5` took 91.19 seconds.
+Core rebuilt in **7.01 seconds** for the final build identity and CI regression change and
+passed **701/701** tests in **22.39 seconds**. The Parquet ownership fix itself rebuilt in **13.47 seconds** at `8497608`.
+These are incremental rebuilds; the earlier clean Core build at `39975e5` took 91.19 seconds.
 Installed and relocated SDK consumers passed, including rejection of a wrong
-source pin, in **17.24 seconds**. A separate installed desktop consumer passed
+source pin, in **17.20 seconds**. A separate installed desktop consumer passed
 all nine resource, viewer, image and pipeline checks in **0.98 seconds**.
 
 A separate clean build at preceding Core revision `74526a8`, before the Windows
-test/CI-only changes, with both
+test and Parquet lifetime fixes, with both
 `ENABLE_CLASS_TESTING=OFF` and `OPENMS_BUILD_TEST_SUPPORT=OFF` completed in
 **83.67 seconds**. Installed and relocated consumer checks passed in **14.44
 seconds**, confirming Core remains independent of the test framework.
 
 | Package | Clean build, seconds | Package tests |
 | --- | ---: | --- |
-| cli | 9.20 | 9 CTest entries in 0.13 s |
+| cli | 9.19 | 9 CTest entries in 0.13 s |
 | test-data | 0.03 | Fixtures installed |
-| topp | 16.76 | 242 CTest entries in 0.91 s |
-| openswath | 12.82 | 38 CTest entries in 0.23 s |
-| flash | 12.24 | 9 CTest entries in 59.78 s |
-| desktop | 33.84 | 10 CTest entries in 0.77 s |
-| pyopenms | 66.21 | 4 CTest entries in 10.88 s |
-| nuxl | 20.09 | 13 CTest entries in 0.24 s |
-| prose | 17.67 | 3 CTest entries in 7.11 s |
-| nase | 13.16 | 2 CTest entries in 0.11 s |
-| comet | 7.79 | 3 CTest entries in 0.15 s |
-| mascot | 4.85 | 4 CTest entries in 1.74 s |
-| database-suitability | 10.74 | 4 CTest entries in 0.38 s |
-| proteomics-lfq | 13.05 | 3 CTest entries in 0.11 s |
-| parquet-diff | 6.45 | 3 CTest entries in 0.10 s |
+| topp | 17.20 | 242 CTest entries in 0.89 s |
+| openswath | 12.65 | 38 CTest entries in 0.23 s |
+| flash | 12.15 | 9 CTest entries in 59.33 s |
+| desktop | 33.63 | 10 CTest entries in 0.72 s |
+| pyopenms | 62.55 | 4 CTest entries in 10.84 s |
+| nuxl | 19.38 | 13 CTest entries in 0.24 s |
+| prose | 17.59 | 3 CTest entries in 7.12 s |
+| nase | 13.15 | 2 CTest entries in 0.12 s |
+| comet | 7.82 | 3 CTest entries in 0.16 s |
+| mascot | 4.87 | 4 CTest entries in 1.77 s |
+| database-suitability | 10.76 | 4 CTest entries in 0.39 s |
+| proteomics-lfq | 13.13 | 3 CTest entries in 0.12 s |
+| parquet-diff | 6.45 | 3 CTest entries in 0.11 s |
 
-The complete fresh consumer build/test/install run took **180.73 seconds**.
+The complete fresh consumer build/test/install run took **176.35 seconds**.
 
 The installed console suite registered 2,041 tests across 150 tools:
-**2,036 passed, five existing skips, zero failures**, in **10.71 seconds**.
+**2,036 passed, five existing skips, zero failures**, in **10.65 seconds**.
 The retained skips are the inherited MSGFPlus, Sage, Comet and MSFragger
 missing/failing-engine cases. External proprietary services/engines were not
 provisioned.
@@ -86,49 +86,58 @@ at different parallelism. Concurrent component durations cannot be summed.
 FLASHApp's old OpenMS 3.5 Windows installers and unrelated template workflow were
 removed. Its artifact checks and ordinary dependency tests now run on the current
 branch under an allowlist of three exact GitHub action commits. Both jobs passed
-in [run 34571043061](https://github.com/okohlbacher/OpenMS4-flashapp/actions/runs/34571043061).
+in [run 34572234903](https://github.com/okohlbacher/OpenMS4-flashapp/actions/runs/34572234903).
 The ordinary hash-pinned dependencies also installed and passed `pip check` in an
 isolated Linux environment. The real `DeconvWorkflow.execution` path passed in
-**2.17 seconds** using the new SDK: INI creation/pyOpenMS parameter parsing,
+**2.05 seconds** using the new SDK: INI creation/pyOpenMS parameter parsing,
 persisted settings, native FLASHDeconv and FuzzyDiff execution, cached mzML/table
 parsing, and expected missing-input failure propagation. Four scan rows and four
 mass-table rows were produced, and all 18 scientific reference columns matched.
-This ran app source `941ac78e18313296d01dc4320b6b11e1cfed60d5` with the
+This ran app source `eb261e677a14de89998e03931ce9285f54d0e6f1` with the
 committed `tools/test_flashapp_deconvolution.py` acceptance driver.
 Bare Streamlit context and input native-ID warnings remain in the evidence.
 A full image/tagging workflow still requires the
 separately pinned external FLASHTnT implementation; updating source locks does not
 manufacture that binary.
 
-Core's [five-platform run](https://github.com/okohlbacher/OpenMS4-core/actions/runs/34565642540)
-at `82ce5b373c97f934ffd9b1ffd80215ca66473d0b` has passed on Linux and macOS,
-both x64 and arm64. Each passed all 701 scientific tests and installed/relocated
-SDK acceptance. The four downloaded SDK archives match their SHA-256 checksums
-and full clean source identities. Windows is still running at this evidence
-capture; no release is published yet.
+Core's [final five-platform run](https://github.com/okohlbacher/OpenMS4-core/actions/runs/34572051447)
+at `94a2b114939e4c70e16b1141bd98c87b8d21d166` is running. Release publication
+waits for successful scientific and extracted/relocated SDK tests on all five
+platforms at this exact commit. Earlier Linux/macOS successes at `82ce5b3` are not
+substituted for qualification of the final source revision.
 
-| Platform | Clean build, seconds | 701 tests, seconds | Extracted/relocated SDK, seconds |
-| --- | ---: | ---: | ---: |
-| linux-arm64 | 1777.25 | 31.83 | 18.98 |
-| linux-x64 | 2429.58 | 50.02 | 20.74 |
-| macos-arm64 | 1666.81 | 97.98 | 28.48 |
-| macos-x64 | 3011.34 | 241.27 | 90.14 |
+### Windows Parquet file lifetime
 
-An earlier Windows run passed all 701 scientific tests but its relocated Parquet
-SDK probe exited with `0xc0000409`. Core CI now retains failed SDK archives,
-prints probe stages and runs the Windows probe 50 consecutive times per prefix,
-stopping on the first failure. A separate diagnostic branch can reuse the actual
-Windows archive with the original quiet probe for 1,000 runs per prefix. These
-are diagnostic and regression checks, not an established root-cause fix. The
-independent Arrow-only comparison programs did not reproduce the failure.
+Native Windows CI passed all 701 scientific tests but the installed Parquet
+probe failed when deleting its input file immediately after `readTable(filename)`.
+The instrumented probe identified an open-handle sharing violation; the original
+uncaught exception appeared as exit `0xc0000409`. Arrow's
+[asynchronous read task](https://github.com/apache/arrow/blob/apache-arrow-23.0.1/cpp/src/arrow/io/interfaces.cc#L165-L172)
+retains shared ownership of the file, so returning from the reader did not
+reliably close the filename-owned input.
+
+The [original quiet probe](https://github.com/okohlbacher/OpenMS4-core/actions/runs/34571493775)
+passed 1,000 times at the original prefix, then failed on the 479th relocated run.
+Using the same actual SDK archive and identical dependency packages,
+[explicit closure](https://github.com/okohlbacher/OpenMS4-core/actions/runs/34571563778)
+passed 1,000 consecutive runs at each prefix. Independent Arrow-only comparison
+programs had not reproduced this OpenMS integration failure.
+
+Core now closes the input it owns on both successful and exceptional read paths.
+The filename overload delegates to the existing shared-file reader, removing
+its duplicated chunk-combining code. Caller-owned files remain open. Regressions
+check immediate deletion while the table remains usable, caller ownership, and
+cleanup after a read error. Windows CI performs 1,000 consecutive probe runs per
+prefix and fails on the first error; it does not retry failures until they pass.
+The separate original quiet probe will also be run against the final Windows SDK.
 
 ## Evidence
 
 Exact commands, source pins, test counts and Python summaries are recorded in
 [the machine-readable report](split-sdk-validation.json). Raw JUnit files and logs
 are retained in the local evidence
-archive `split-sdk-execution/evidence-release.tar.gz` in the exploration workspace;
-SHA-256 `8e0001de63987f2dcff96ec690bce330291be1e28da0fd57d4200ed32c8b6d7a`.
+archive `split-sdk-execution/evidence-qualified-94a2b11.tar.gz` in the exploration workspace;
+SHA-256 `3bef8bcdfb347c6b9edcc2f547d521d2385b77d64e6a8f10e8c902164cffff4b`.
 Scratch sources, installed products and raw logs are under
 `/scratch/kohlbach/openms4-split-sdk-20260910` on dax. The original installed Core
 and dependency environment were not overwritten. Runtime dependencies are
