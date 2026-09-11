@@ -198,6 +198,42 @@ tool whose purpose is reporting configuration. No bottle is published, so every
 cask install pays for a full Core source build. Homebrew delivery covers macOS
 only; Linux and Windows packaging are not addressed here.
 
+## macOS native package build
+
+The complete consumer graph also builds on macOS arm64 against the installed
+Homebrew Core SDK. `tools/build_packages.py` ran with `--workers 1`, so the
+fifteen packages were configured, built, tested and installed strictly one after
+another, using Core `94a2b114939e4c70e16b1141bd98c87b8d21d166` from the
+`openms4-core` formula and Homebrew for every other dependency. All fifteen
+packages and all 2,369 tests passed, and the run installed 150 console tools.
+
+| Package | Seconds | Tests |
+| --- | ---: | ---: |
+| topp | 66.3 | 242 |
+| desktop | 79.9 | 10 |
+| pyopenms | 55.0 | 4 |
+| flash | 39.8 | 9 |
+| openswath | 15.7 | 38 |
+| nuxl | 16.1 | 13 |
+| prose | 17.7 | 3 |
+| the remaining eight packages | 58.3 | 28 |
+| installed numerical suite | 66.2 | 2022 |
+
+Two host provisioning requirements are not carried by the packages. Consumers of
+the released Core cannot find Homebrew's keg-only OpenMP: `find_dependency(OpenMP)`
+fails during the first consumer configure unless `OpenMP_ROOT` names
+`/opt/homebrew/opt/libomp`. Core `29fa3be` exports it, but that commit is above
+the qualified revision, so the fix is absent from `core-v4.0.0-ci.1`. pyOpenMS
+needs its declared `test` extra present in the selected interpreter; without
+`pytest` all four of its test targets fail immediately while the bindings
+themselves build and import cleanly.
+
+This is one host and one architecture, and it does not replace the five-platform
+matrix. FLASHApp acceptance remains a separate Python step and was not run here.
+Interactive desktop and WebEngine tests stay disabled in the headless profile,
+and optional instrument readers and external search engines are absent from this
+SDK, so their conditional tests do not execute.
+
 ## Evidence
 
 Exact commands, source pins, test counts and Python summaries are recorded in
@@ -207,7 +243,10 @@ archive `split-sdk-execution/evidence-qualified-94a2b11.tar.gz` in the explorati
 SHA-256 `3bef8bcdfb347c6b9edcc2f547d521d2385b77d64e6a8f10e8c902164cffff4b`. The
 Homebrew job logs and the repeatable artifact verifier are archived alongside it as
 `split-sdk-execution/evidence-homebrew-9efa969.tar.gz`;
-SHA-256 `ab6ed17558e6497345d0d67ec5443cd44729ff36b8850132002160d43bebfd60`.
+SHA-256 `ab6ed17558e6497345d0d67ec5443cd44729ff36b8850132002160d43bebfd60`. The
+sequential macOS package build keeps its command receipts, logs and JUnit reports in
+`split-native-build-evidence.tar.gz`;
+SHA-256 `2048a6e28ed175998ee303bbe55a14f348d073e2cde597eb48566ea762a0f21b`.
 Scratch sources, installed products and raw logs are under
 `/scratch/kohlbach/openms4-split-sdk-20260910` on dax. The original installed Core
 and dependency environment were not overwritten. Runtime dependencies are
