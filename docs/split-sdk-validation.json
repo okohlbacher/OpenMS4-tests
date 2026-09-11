@@ -4025,5 +4025,127 @@
       }
     ],
     "workflow_url": "https://github.com/okohlbacher/OpenMS4-core/actions/runs/34578193995"
+  },
+  "homebrew": {
+    "core_formula": {
+      "tap": "okohlbacher/openms4-core",
+      "path": "Formula/openms4-core.rb",
+      "package_revision": "0715382300003c5744d31483c396eb4adf7b54ab",
+      "source_build": true,
+      "bottled": false,
+      "tag": "core-v4.0.0-ci.1",
+      "url": "https://github.com/okohlbacher/OpenMS4-core/archive/refs/tags/core-v4.0.0-ci.1.tar.gz",
+      "declared_sha256": "7516b9ae2330a15dd3968ffd6a2028f6e407d8b44d47dcb5dcce2fe03dc1e939",
+      "downloaded_sha256": "7516b9ae2330a15dd3968ffd6a2028f6e407d8b44d47dcb5dcce2fe03dc1e939",
+      "tag_revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+      "pinned_source_revision": "94a2b114939e4c70e16b1141bd98c87b8d21d166",
+      "run_url": "https://github.com/okohlbacher/OpenMS4-core/actions/runs/34590442515",
+      "run_status": "success"
+    },
+    "topp_cask": {
+      "tap": "okohlbacher/openms4-topp",
+      "path": "Casks/openms4-topp.rb",
+      "package_revision": "9efa969a0414340dd871221eccf7d38714891370",
+      "version": "1.0.0-ci.2,f257c6d7d7a8",
+      "build": "f257c6d7d7a8",
+      "archives": {
+        "arm": {
+          "asset": "OpenMS4-topp-macos-arm64-Homebrew-f257c6d7d7a8.tar.gz",
+          "asset_sha256": "6fee2ced03153757e51b7c0ebe324efc5b7c7e03a4780be86573f3abac13396f",
+          "cask_sha256": "6fee2ced03153757e51b7c0ebe324efc5b7c7e03a4780be86573f3abac13396f"
+        },
+        "intel": {
+          "asset": "OpenMS4-topp-macos-x64-Homebrew-f257c6d7d7a8.tar.gz",
+          "asset_sha256": "7ad017c823846a909abc79b36ede68c3b849b0b7b87587341865233fe5f07907",
+          "cask_sha256": "7ad017c823846a909abc79b36ede68c3b849b0b7b87587341865233fe5f07907"
+        }
+      },
+      "renamed_binaries": {
+        "FileInfo": "OpenMSFileInfo"
+      },
+      "exposed_binaries": 122,
+      "arm64_archive_sha256": "6fee2ced03153757e51b7c0ebe324efc5b7c7e03a4780be86573f3abac13396f"
+    },
+    "cask_run": {
+      "run_url": "https://github.com/okohlbacher/OpenMS4-topp/actions/runs/34597449097",
+      "status": "success",
+      "commands": [
+        "brew tap okohlbacher/openms4-core https://github.com/okohlbacher/OpenMS4-core",
+        "brew trust --formula okohlbacher/openms4-core/openms4-core",
+        "brew tap okohlbacher/openms4-topp https://github.com/okohlbacher/OpenMS4-topp",
+        "brew install --cask okohlbacher/openms4-topp/openms4-topp",
+        "OpenMSInfo --help",
+        "brew uninstall --cask openms4-topp"
+      ],
+      "jobs": {
+        "macos-arm64": {
+          "runner": "macos-15",
+          "conclusion": "success",
+          "elapsed_seconds": 588,
+          "core_source_build_seconds": 458,
+          "reported_version": "1.0.0 (OpenMS core 4.0.0, revision exported)"
+        },
+        "macos-x64": {
+          "runner": "macos-15-intel",
+          "conclusion": "success",
+          "elapsed_seconds": 2112,
+          "core_source_build_seconds": 1502,
+          "reported_version": "1.0.0 (OpenMS core 4.0.0, revision exported)"
+        }
+      },
+      "earlier_failures": [
+        {
+          "run_url": "https://github.com/okohlbacher/OpenMS4-topp/actions/runs/34597052500",
+          "cause": "Refusing to load formula okohlbacher/openms4-core/openms4-core from untrusted tap",
+          "fix_revision": "1f3f29e260da05ae0ce55172f113b1d334b1c604"
+        },
+        {
+          "run_url": "https://github.com/okohlbacher/OpenMS4-topp/actions/runs/34597220410",
+          "cause": "30-minute job timeout during the Intel Core source build",
+          "fix_revision": "9efa969a0414340dd871221eccf7d38714891370"
+        }
+      ]
+    },
+    "dependency_bottles": {
+      "macos-arm64": {
+        "apache-arrow": "25.0.1_5",
+        "boost": "1.92.0",
+        "cbc": "2.10.13",
+        "eigen": "5.0.1",
+        "libomp": "23.1.0",
+        "libsvm": "3.37",
+        "libxml2": "2.15.4",
+        "libzip": "1.11.4_1",
+        "xerces-c": "3.3.0"
+      },
+      "macos-x64": {
+        "apache-arrow": "25.0.1_4",
+        "boost": "1.92.0",
+        "cbc": "2.10.13",
+        "eigen": "5.0.1",
+        "libomp": "22.1.8",
+        "libsvm": "3.37",
+        "libxml2": "2.15.3",
+        "libzip": "1.11.4_1",
+        "xerces-c": "3.3.0"
+      }
+    },
+    "checks": {
+      "arm64_archive_matches_declared_sha256": true,
+      "cask_archives_match_published_assets": true,
+      "cask_exposes_exactly_the_archive_executables": true,
+      "formula_archive_matches_declared_sha256": true,
+      "formula_pins_qualified_core_revision": true,
+      "formula_tag_is_qualified_core_revision": true
+    },
+    "open_items": [
+      "OpenMSInfo prints the legacy Git field, which is 'exported' for archive builds; VersionInfo::getSourceRevision() carries the exact qualified revision but is not reported.",
+      "No bottle is published, so every cask install builds Core from source.",
+      "Homebrew delivery covers macOS only; Linux and Windows packaging remain open."
+    ],
+    "evidence": {
+      "path": "split-sdk-execution/evidence-homebrew-9efa969.tar.gz",
+      "sha256": "ab6ed17558e6497345d0d67ec5443cd44729ff36b8850132002160d43bebfd60"
+    }
   }
 }

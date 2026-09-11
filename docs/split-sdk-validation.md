@@ -151,13 +151,63 @@ also passed 1,000 consecutive runs per prefix, with the same exact dependency
 packages as its producer. Native CI and the additional quiet probe therefore
 completed 4,000 successful repetitions against the fixed Core revision.
 
+## Homebrew delivery
+
+macOS consumers can now install the qualified SDK and the released tools from the
+two repository taps. The Core formula `Formula/openms4-core.rb` builds
+`core-v4.0.0-ci.1` from its published source archive; the TOPP cask
+`Casks/openms4-topp.rb` installs the prebuilt Homebrew archives of
+`topp-v1.0.0-ci.2` and declares the formula as its dependency. Core and TOPP
+package revisions are `0715382300003c5744d31483c396eb4adf7b54ab` and
+`9efa969a0414340dd871221eccf7d38714891370`.
+
+The [cask installation run](https://github.com/okohlbacher/OpenMS4-topp/actions/runs/34597449097)
+passed on both macOS architectures. Each job tapped both repositories, trusted
+the Core formula, installed the cask, ran `OpenMSInfo --help` and uninstalled the
+cask again. Homebrew poured bottles for all native dependencies and built Core
+itself from source; the Intel job needed the raised 90-minute timeout.
+
+| Platform | Runner | Job, seconds | Core source build, seconds |
+| --- | --- | ---: | ---: |
+| macos-arm64 | macos-15 | 588 | 458 |
+| macos-x64 | macos-15-intel | 2112 | 1502 |
+
+Both platforms report `Version: 1.0.0 (OpenMS core 4.0.0, revision exported)`,
+which is the intended separation of product and linked-core versions. The
+dependency sets differ between architectures, notably Arrow `25.0.1_5` against
+`25.0.1_4` and libomp `23.1.0` against `22.1.8`. Two earlier cask runs failed
+first because the cask's formula dependency came from an
+[untrusted tap](https://github.com/okohlbacher/OpenMS4-topp/actions/runs/34597052500),
+then on the original
+[30-minute timeout](https://github.com/okohlbacher/OpenMS4-topp/actions/runs/34597220410).
+Both causes are fixed in the pinned revisions rather than retried.
+
+Six independent artifact checks were repeated locally against the published
+files. The formula archive re-hashes to the `sha256` the formula declares; its
+tag resolves to `94a2b114939e4c70e16b1141bd98c87b8d21d166`, the same revision the
+formula asserts through `OPENMS_SOURCE_REVISION` and the revision qualified on
+all five platforms. Both cask checksums match the published Homebrew release
+assets, the downloaded arm64 archive re-hashes to its declared sum, and the cask
+exposes exactly the 122 executables that archive contains, with `FileInfo`
+installed as `OpenMSFileInfo` to avoid a generic name in a shared prefix.
+
+Three limitations remain. `OpenMSInfo` prints the legacy Git field, which is
+`exported` for any archive build, so the exact source revision is compiled in and
+available through `VersionInfo::getSourceRevision()` but is not reported by the
+tool whose purpose is reporting configuration. No bottle is published, so every
+cask install pays for a full Core source build. Homebrew delivery covers macOS
+only; Linux and Windows packaging are not addressed here.
+
 ## Evidence
 
 Exact commands, source pins, test counts and Python summaries are recorded in
 [the machine-readable report](split-sdk-validation.json). Raw JUnit files and logs
 are retained in the local evidence
 archive `split-sdk-execution/evidence-qualified-94a2b11.tar.gz` in the exploration workspace;
-SHA-256 `3bef8bcdfb347c6b9edcc2f547d521d2385b77d64e6a8f10e8c902164cffff4b`.
+SHA-256 `3bef8bcdfb347c6b9edcc2f547d521d2385b77d64e6a8f10e8c902164cffff4b`. The
+Homebrew job logs and the repeatable artifact verifier are archived alongside it as
+`split-sdk-execution/evidence-homebrew-9efa969.tar.gz`;
+SHA-256 `ab6ed17558e6497345d0d67ec5443cd44729ff36b8850132002160d43bebfd60`.
 Scratch sources, installed products and raw logs are under
 `/scratch/kohlbach/openms4-split-sdk-20260910` on dax. The original installed Core
 and dependency environment were not overwritten. Runtime dependencies are
