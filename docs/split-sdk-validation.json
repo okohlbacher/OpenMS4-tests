@@ -1,14 +1,14 @@
 {
-  "parent_revision": "a5b67b7f797b870597b6ac65c18bf5a671ed44e3",
+  "parent_revision": "e548e405d55f374f548cdee62be6e13740ea1abe",
   "host": {
     "host": "dax",
     "load": [
-      7.9716796875,
-      7.6455078125,
-      7.28759765625
+      6.33642578125,
+      6.298828125,
+      6.27685546875
     ],
     "jobs": 320,
-    "meminfo": "MemTotal:       2377572828 kB\nMemFree:        1603642956 kB\nMemAvailable:   2301926572 kB\nBuffers:         1439168 kB\nCached:         696024576 kB\nSwapCached:        40184 kB\nActive:         119326932 kB\nInactive:       622269792 kB\nActive(anon):   31245904 kB\nInactive(anon): 13189164 kB\nActive(file):   88081028 kB\nInactive(file): 609080628 kB\nUnevictable:       36708 kB\nMlocked:           27708 kB\nSwapTotal:       8388604 kB\nSwapFree:             60 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:               572 kB\nWriteback:             0 kB\nAnonPages:      44123432 kB\nMapped:           755536 kB\nShmem:            294724 kB\nKReclaimable:   16960032 kB\nSlab:           23775296 kB\nSReclaimable:   16960032 kB\nSUnreclaim:      6815264 kB\nKernelStack:      477664 kB\nPageTables:      1311616 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    1197175016 kB\nCommitted_AS:   2956916984 kB\nVmallocTotal:   13743895347199 kB\nVmallocUsed:     2956336 kB\nVmallocChunk:          0 kB\nPercpu:          1841664 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:   1837056 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      470264 kB\nDirectMap2M:    27568128 kB\nDirectMap1G:    2387607552 kB\n"
+    "meminfo": "MemTotal:       2377572828 kB\nMemFree:        1587159324 kB\nMemAvailable:   2294672248 kB\nBuffers:         1534244 kB\nCached:         705717676 kB\nSwapCached:        39212 kB\nActive:         127434376 kB\nInactive:       633350028 kB\nActive(anon):   39597156 kB\nInactive(anon): 13172280 kB\nActive(file):   87837220 kB\nInactive(file): 620177748 kB\nUnevictable:       36580 kB\nMlocked:           27580 kB\nSwapTotal:       8388604 kB\nSwapFree:           2024 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              1036 kB\nWriteback:             0 kB\nAnonPages:      53519940 kB\nMapped:           658476 kB\nShmem:            294728 kB\nKReclaimable:   15336028 kB\nSlab:           20894156 kB\nSReclaimable:   15336028 kB\nSUnreclaim:      5558128 kB\nKernelStack:      506432 kB\nPageTables:      1327220 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    1197175016 kB\nCommitted_AS:   2960033836 kB\nVmallocTotal:   13743895347199 kB\nVmallocUsed:     2984648 kB\nVmallocChunk:          0 kB\nPercpu:          1883136 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:   2766848 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:         0 kB\nFilePmdMapped:         0 kB\nUnaccepted:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      470264 kB\nDirectMap2M:    27568128 kB\nDirectMap1G:    2387607552 kB\n"
   },
   "core_steps": [
     {
@@ -22,7 +22,7 @@
         "codex/package-split"
       ],
       "returncode": 0,
-      "seconds": 0.651
+      "seconds": 0.644
     },
     {
       "label": "checkout",
@@ -50,14 +50,14 @@
         "-G",
         "Ninja",
         "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-5d1e239-20260910/deps",
-        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-74526a8",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-82ce5b3",
         "-DLP_SOLVER=COIN",
         "-DSTL_DEBUG=OFF",
         "-DMT_ENABLE_OPENMP=ON",
         "-DOPENMS_REQUIRE_CLEAN_SOURCE=ON"
       ],
       "returncode": 0,
-      "seconds": 3.326
+      "seconds": 3.316
     },
     {
       "label": "core-build",
@@ -69,7 +69,7 @@
         "320"
       ],
       "returncode": 0,
-      "seconds": 63.41
+      "seconds": 6.934
     },
     {
       "label": "core-tests",
@@ -82,10 +82,10 @@
         "--output-on-failure",
         "--no-tests=error",
         "--output-junit",
-        "/scratch/kohlbach/openms4-core-runtime-20260910/shared-format-evidence/core-tests.xml"
+        "/scratch/kohlbach/openms4-core-runtime-20260910/sdk-diagnostics-evidence/core-tests.xml"
       ],
       "returncode": 0,
-      "seconds": 22.442
+      "seconds": 22.459
     },
     {
       "label": "core-install",
@@ -95,7 +95,7 @@
         "/scratch/kohlbach/openms4-core-runtime-20260910/core-build"
       ],
       "returncode": 0,
-      "seconds": 0.709
+      "seconds": 0.707
     },
     {
       "label": "core-acceptance",
@@ -103,13 +103,13 @@
         "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/python",
         "/scratch/kohlbach/openms4-core-runtime-20260910/source/tests/installed_sdk_acceptance/run_acceptance.py",
         "--sdk-prefix",
-        "/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-74526a8",
+        "/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-82ce5b3",
         "--work-dir",
-        "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-74526a8",
+        "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-82ce5b3",
         "--dependency-prefix",
         "/scratch/kohlbach/openms4-5d1e239-20260910/deps",
         "--expected-revision",
-        "74526a865953865d61321482bafbececfc7e0b9f",
+        "82ce5b373c97f934ffd9b1ffd80215ca66473d0b",
         "--configuration",
         "Release",
         "--jobs",
@@ -118,7 +118,7 @@
         "--cmake-argument=-DCMAKE_CXX_COMPILER=/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/x86_64-conda-linux-gnu-c++"
       ],
       "returncode": 0,
-      "seconds": 17.482
+      "seconds": 17.244
     },
     {
       "label": "fetch",
@@ -131,7 +131,7 @@
         "codex/package-split"
       ],
       "returncode": 0,
-      "seconds": 17.214
+      "seconds": 17.358
     },
     {
       "label": "checkout",
@@ -179,7 +179,7 @@
         "packages/parquet-diff"
       ],
       "returncode": 0,
-      "seconds": 0.185
+      "seconds": 0.187
     },
     {
       "label": "packages",
@@ -187,18 +187,18 @@
         "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/python",
         "/scratch/kohlbach/openms4-split-sdk-20260910/source/tools/build_packages.py",
         "--core-prefix",
-        "/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-74526a8",
+        "/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-82ce5b3",
         "--dependencies",
         "/scratch/kohlbach/openms4-5d1e239-20260910/deps",
         "--work-dir",
-        "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable",
+        "/scratch/kohlbach/openms4-split-sdk-20260910/products-release",
         "--jobs",
         "320",
         "--workers",
         "4"
       ],
       "returncode": 0,
-      "seconds": 174.665
+      "seconds": 180.732
     }
   ],
   "packages": {
@@ -209,36 +209,36 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/cli",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/cli",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/cli",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
           "-DBUILD_TESTING=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 2.974
+        "elapsed_seconds": 2.932
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/cli",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/cli",
           "--config",
           "Release",
           "--parallel",
           "160"
         ],
         "returncode": 0,
-        "elapsed_seconds": 9.262
+        "elapsed_seconds": 9.196
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/cli",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/cli",
           "-C",
           "Release",
           "--parallel",
@@ -246,21 +246,21 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/cli-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/cli-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.131
+        "elapsed_seconds": 0.133
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/cli",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/cli",
           "--config",
           "Release"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.011
+        "elapsed_seconds": 0.01
       }
     },
     "test-data": {
@@ -270,41 +270,41 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/test-data",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/test-data",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/test-data",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
           "-DBUILD_TESTING=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.861
+        "elapsed_seconds": 0.881
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/test-data",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/test-data",
           "--config",
           "Release",
           "--parallel",
           "160"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.031
+        "elapsed_seconds": 0.029
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/test-data",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/test-data",
           "--config",
           "Release"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.614
+        "elapsed_seconds": 0.616
       }
     },
     "topp": {
@@ -314,10 +314,10 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/topp",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/topp",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/topp",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
@@ -325,26 +325,26 @@
           "-DOPENMS4_REGRESSION_TESTS=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 3.214
+        "elapsed_seconds": 3.141
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/topp",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/topp",
           "--config",
           "Release",
           "--parallel",
           "80"
         ],
         "returncode": 0,
-        "elapsed_seconds": 17.03
+        "elapsed_seconds": 16.759
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/topp",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/topp",
           "-C",
           "Release",
           "--parallel",
@@ -352,21 +352,21 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/topp-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/topp-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.896
+        "elapsed_seconds": 0.914
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/topp",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/topp",
           "--config",
           "Release"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.06
+        "elapsed_seconds": 0.059
       }
     },
     "openswath": {
@@ -376,10 +376,10 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/openswath",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/openswath",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/openswath",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
@@ -387,26 +387,26 @@
           "-DOPENMS4_REGRESSION_TESTS=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 3.015
+        "elapsed_seconds": 2.912
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/openswath",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/openswath",
           "--config",
           "Release",
           "--parallel",
           "80"
         ],
         "returncode": 0,
-        "elapsed_seconds": 12.859
+        "elapsed_seconds": 12.824
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/openswath",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/openswath",
           "-C",
           "Release",
           "--parallel",
@@ -414,7 +414,7 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/openswath-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/openswath-tests.xml"
         ],
         "returncode": 0,
         "elapsed_seconds": 0.234
@@ -423,12 +423,12 @@
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/openswath",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/openswath",
           "--config",
           "Release"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.017
+        "elapsed_seconds": 0.018
       }
     },
     "flash": {
@@ -438,10 +438,10 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/flash",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/flash",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/flash",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
@@ -449,26 +449,26 @@
           "-DOPENMS4_REGRESSION_TESTS=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 3.44
+        "elapsed_seconds": 3.198
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/flash",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/flash",
           "--config",
           "Release",
           "--parallel",
           "80"
         ],
         "returncode": 0,
-        "elapsed_seconds": 12.159
+        "elapsed_seconds": 12.239
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/flash",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/flash",
           "-C",
           "Release",
           "--parallel",
@@ -476,21 +476,21 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/flash-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/flash-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 57.245
+        "elapsed_seconds": 59.776
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/flash",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/flash",
           "--config",
           "Release"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.01
+        "elapsed_seconds": 0.011
       }
     },
     "desktop": {
@@ -500,10 +500,10 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/desktop",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/desktop",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/desktop",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
@@ -519,20 +519,20 @@
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/desktop",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/desktop",
           "--config",
           "Release",
           "--parallel",
           "80"
         ],
         "returncode": 0,
-        "elapsed_seconds": 33.616
+        "elapsed_seconds": 33.84
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/desktop",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/desktop",
           "-C",
           "Release",
           "--parallel",
@@ -540,21 +540,21 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/desktop-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/desktop-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.751
+        "elapsed_seconds": 0.771
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/desktop",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/desktop",
           "--config",
           "Release"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.033
+        "elapsed_seconds": 0.035
       }
     },
     "pyopenms": {
@@ -564,10 +564,10 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/pyopenms",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/pyopenms",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/pyopenms",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
@@ -578,26 +578,26 @@
           "-DCMAKE_INSTALL_RPATH=$ORIGIN/../lib"
         ],
         "returncode": 0,
-        "elapsed_seconds": 2.289
+        "elapsed_seconds": 2.415
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/pyopenms",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/pyopenms",
           "--config",
           "Release",
           "--parallel",
           "320"
         ],
         "returncode": 0,
-        "elapsed_seconds": 62.577
+        "elapsed_seconds": 66.213
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/pyopenms",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/pyopenms",
           "-C",
           "Release",
           "--parallel",
@@ -605,21 +605,21 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/pyopenms-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/pyopenms-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 10.977
+        "elapsed_seconds": 10.875
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/pyopenms",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/pyopenms",
           "--config",
           "Release"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.101
+        "elapsed_seconds": 0.102
       }
     },
     "nuxl": {
@@ -629,10 +629,10 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/nuxl",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/nuxl",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/nuxl",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
@@ -640,26 +640,26 @@
           "-DOPENMS4_REGRESSION_TESTS=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 2.838
+        "elapsed_seconds": 2.901
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/nuxl",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/nuxl",
           "--config",
           "Release",
           "--parallel",
           "80"
         ],
         "returncode": 0,
-        "elapsed_seconds": 19.299
+        "elapsed_seconds": 20.089
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/nuxl",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/nuxl",
           "-C",
           "Release",
           "--parallel",
@@ -667,21 +667,21 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/nuxl-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/nuxl-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.253
+        "elapsed_seconds": 0.241
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/nuxl",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/nuxl",
           "--config",
           "Release"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.01
+        "elapsed_seconds": 0.011
       }
     },
     "prose": {
@@ -691,36 +691,36 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/prose",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/prose",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/prose",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
           "-DBUILD_TESTING=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 3.184
+        "elapsed_seconds": 3.042
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/prose",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/prose",
           "--config",
           "Release",
           "--parallel",
           "80"
         ],
         "returncode": 0,
-        "elapsed_seconds": 17.747
+        "elapsed_seconds": 17.666
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/prose",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/prose",
           "-C",
           "Release",
           "--parallel",
@@ -728,16 +728,16 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/prose-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/prose-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 7.14
+        "elapsed_seconds": 7.11
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/prose",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/prose",
           "--config",
           "Release"
         ],
@@ -752,10 +752,10 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/nase",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/nase",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/nase",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
@@ -763,26 +763,26 @@
           "-DOPENMS4_REGRESSION_TESTS=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 2.877
+        "elapsed_seconds": 2.946
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/nase",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/nase",
           "--config",
           "Release",
           "--parallel",
           "80"
         ],
         "returncode": 0,
-        "elapsed_seconds": 13.107
+        "elapsed_seconds": 13.162
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/nase",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/nase",
           "-C",
           "Release",
           "--parallel",
@@ -790,21 +790,21 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/nase-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/nase-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.116
+        "elapsed_seconds": 0.106
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/nase",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/nase",
           "--config",
           "Release"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.008
+        "elapsed_seconds": 0.01
       }
     },
     "comet": {
@@ -814,36 +814,36 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/comet",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/comet",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/comet",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
           "-DBUILD_TESTING=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 2.964
+        "elapsed_seconds": 2.905
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/comet",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/comet",
           "--config",
           "Release",
           "--parallel",
           "80"
         ],
         "returncode": 0,
-        "elapsed_seconds": 7.84
+        "elapsed_seconds": 7.79
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/comet",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/comet",
           "-C",
           "Release",
           "--parallel",
@@ -851,21 +851,21 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/comet-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/comet-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.166
+        "elapsed_seconds": 0.15
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/comet",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/comet",
           "--config",
           "Release"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.008
+        "elapsed_seconds": 0.007
       }
     },
     "mascot": {
@@ -875,36 +875,36 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/mascot",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/mascot",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/mascot",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
           "-DBUILD_TESTING=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 2.928
+        "elapsed_seconds": 2.757
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/mascot",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/mascot",
           "--config",
           "Release",
           "--parallel",
           "80"
         ],
         "returncode": 0,
-        "elapsed_seconds": 4.847
+        "elapsed_seconds": 4.849
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/mascot",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/mascot",
           "-C",
           "Release",
           "--parallel",
@@ -912,16 +912,16 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/mascot-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/mascot-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 1.757
+        "elapsed_seconds": 1.739
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/mascot",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/mascot",
           "--config",
           "Release"
         ],
@@ -936,36 +936,36 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/database-suitability",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/database-suitability",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/database-suitability",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
           "-DBUILD_TESTING=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 2.943
+        "elapsed_seconds": 2.833
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/database-suitability",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/database-suitability",
           "--config",
           "Release",
           "--parallel",
           "80"
         ],
         "returncode": 0,
-        "elapsed_seconds": 10.703
+        "elapsed_seconds": 10.736
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/database-suitability",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/database-suitability",
           "-C",
           "Release",
           "--parallel",
@@ -973,21 +973,21 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/database-suitability-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/database-suitability-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.411
+        "elapsed_seconds": 0.383
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/database-suitability",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/database-suitability",
           "--config",
           "Release"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.009
+        "elapsed_seconds": 0.01
       }
     },
     "proteomics-lfq": {
@@ -997,36 +997,36 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/proteomics-lfq",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/proteomics-lfq",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/proteomics-lfq",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
           "-DBUILD_TESTING=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 2.938
+        "elapsed_seconds": 2.917
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/proteomics-lfq",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/proteomics-lfq",
           "--config",
           "Release",
           "--parallel",
           "80"
         ],
         "returncode": 0,
-        "elapsed_seconds": 13.048
+        "elapsed_seconds": 13.053
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/proteomics-lfq",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/proteomics-lfq",
           "-C",
           "Release",
           "--parallel",
@@ -1034,21 +1034,21 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/proteomics-lfq-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/proteomics-lfq-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.109
+        "elapsed_seconds": 0.106
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/proteomics-lfq",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/proteomics-lfq",
           "--config",
           "Release"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.008
+        "elapsed_seconds": 0.007
       }
     },
     "parquet-diff": {
@@ -1058,36 +1058,36 @@
           "-S",
           "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/parquet-diff",
           "-B",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/parquet-diff",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/parquet-diff",
           "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
+          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
           "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
           "-G",
           "Ninja",
           "-DBUILD_TESTING=ON"
         ],
         "returncode": 0,
-        "elapsed_seconds": 2.969
+        "elapsed_seconds": 2.916
       },
       "build": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--build",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/parquet-diff",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/parquet-diff",
           "--config",
           "Release",
           "--parallel",
           "80"
         ],
         "returncode": 0,
-        "elapsed_seconds": 6.448
+        "elapsed_seconds": 6.452
       },
       "tests": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
           "--test-dir",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/parquet-diff",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/parquet-diff",
           "-C",
           "Release",
           "--parallel",
@@ -1095,16 +1095,16 @@
           "--output-on-failure",
           "--no-tests=error",
           "--output-junit",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/results/parquet-diff-tests.xml"
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/results/parquet-diff-tests.xml"
         ],
         "returncode": 0,
-        "elapsed_seconds": 0.113
+        "elapsed_seconds": 0.102
       },
       "install": {
         "command": [
           "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
           "--install",
-          "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/build/parquet-diff",
+          "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/build/parquet-diff",
           "--config",
           "Release"
         ],
@@ -1117,87 +1117,87 @@
     "core": {
       "path": "packages/core",
       "repository": "https://github.com/okohlbacher/OpenMS4-core",
-      "source_revision": "74526a865953865d61321482bafbececfc7e0b9f"
+      "source_revision": "82ce5b373c97f934ffd9b1ffd80215ca66473d0b"
     },
     "cli": {
       "path": "packages/cli",
       "repository": "https://github.com/okohlbacher/OpenMS4-cli",
-      "source_revision": "0a68482a19c125eb896a8bdf83708a41c56362a2"
+      "source_revision": "e67cc4ad08b36885a2645c9e79b08e628fbe3079"
     },
     "test-data": {
       "path": "packages/test-data",
       "repository": "https://github.com/okohlbacher/OpenMS4-test-data",
-      "source_revision": "7a2b2e1752dd2ba1a72c90a84b8fee61999e3ec3"
+      "source_revision": "a8841fbc83c5cda085c89af61aa93c43007caa9c"
     },
     "topp": {
       "path": "packages/topp",
       "repository": "https://github.com/okohlbacher/OpenMS4-topp",
-      "source_revision": "90c0cd83e2a5e13f8244397a3b610da97dd23e6c"
+      "source_revision": "8443c7cbe51f01ac87aab0244935094b018cd981"
     },
     "openswath": {
       "path": "packages/openswath",
       "repository": "https://github.com/okohlbacher/OpenMS4-openswath",
-      "source_revision": "bcb7dd77d0909d6a855545b32aa485dec50eeb36"
+      "source_revision": "ecb967da8ae5ba6a4640f8df67e9e0c5576a58d6"
     },
     "flash": {
       "path": "packages/flash",
       "repository": "https://github.com/okohlbacher/OpenMS4-flash",
-      "source_revision": "0049cfb241ee1ecbf7ececb6b9011a1bfcd9019c"
+      "source_revision": "62484dabca322187f4947b0add4efde9f2c01089"
     },
     "desktop": {
       "path": "packages/desktop",
       "repository": "https://github.com/okohlbacher/OpenMS4-desktop",
-      "source_revision": "488b172663a91f69b7bec9bd37c9783cf54dbb8e"
+      "source_revision": "dd6340d6d820cac68f1a327215b38b79dd8e0057"
     },
     "pyopenms": {
       "path": "packages/pyopenms",
       "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms",
-      "source_revision": "a31b95a98253262e812594c3d644c02ba5a1d3a7"
+      "source_revision": "9f3831551106c3e8acd35b37c6006204687bbc26"
     },
     "flashapp": {
       "path": "packages/flashapp",
       "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
-      "source_revision": "43335129e513b66374c7f4beeb52f5c54e40d959"
+      "source_revision": "941ac78e18313296d01dc4320b6b11e1cfed60d5"
     },
     "nuxl": {
       "path": "packages/nuxl",
       "repository": "https://github.com/okohlbacher/OpenMS4-nuxl",
-      "source_revision": "cb127fd47955e57fc3ef39fba89d94e2a918e3eb"
+      "source_revision": "1004dd97f951e96e933babead567c18af365ab62"
     },
     "prose": {
       "path": "packages/prose",
       "repository": "https://github.com/okohlbacher/OpenMS4-prose",
-      "source_revision": "a4f7c70871b64f374c7cf4ce9e980681c0fe1275"
+      "source_revision": "14c7fe6ae2198827a8ad9d05767eb2b547477e41"
     },
     "nase": {
       "path": "packages/nase",
       "repository": "https://github.com/okohlbacher/OpenMS4-nase",
-      "source_revision": "0fe6672473c6c46c870004aade631115a888ce34"
+      "source_revision": "c2ca24158da1f9da712b249602bc3f3e77f665d1"
     },
     "comet": {
       "path": "packages/comet",
       "repository": "https://github.com/okohlbacher/OpenMS4-comet",
-      "source_revision": "f2ee4943297d1496137d902ad6009938eaa20045"
+      "source_revision": "329f46e9f3b8823cdbcd9122c0e00687ec68ce75"
     },
     "mascot": {
       "path": "packages/mascot",
       "repository": "https://github.com/okohlbacher/OpenMS4-mascot",
-      "source_revision": "54d2739d34cd3bcef515b76ad5e8196ed27701cd"
+      "source_revision": "e5b9457b2f0ba302fab5bdf2a474b538c546ef25"
     },
     "database-suitability": {
       "path": "packages/database-suitability",
       "repository": "https://github.com/okohlbacher/OpenMS4-database-suitability",
-      "source_revision": "def832d67657b0e199fea961bd1c491c03af986f"
+      "source_revision": "36b9ac5fb69a98b085801a5895d0fbb38f78c703"
     },
     "proteomics-lfq": {
       "path": "packages/proteomics-lfq",
       "repository": "https://github.com/okohlbacher/OpenMS4-proteomics-lfq",
-      "source_revision": "367952d31a2b2f962ca27189675baa62c30a0568"
+      "source_revision": "f71d48d83d34b93211f8a1f4e0aea8a3349f35d2"
     },
     "parquet-diff": {
       "path": "packages/parquet-diff",
       "repository": "https://github.com/okohlbacher/OpenMS4-parquet-diff",
-      "source_revision": "f6cb65906afef01f17f26499833356ff5996b014"
+      "source_revision": "0942fa96b3271bfe348321ba802bfbb2c6a7e370"
     }
   },
   "ctest": {
@@ -1300,11 +1300,11 @@
   },
   "python_groups": [
     "========================= 1 passed, 1 warning in 0.33s =========================",
-    "======================== 80 passed, 1 warning in 4.09s =========================",
-    "================ 2703 passed, 2 skipped, 751 warnings in 7.63s =================",
-    "===== 2965 passed, 90 skipped, 10 xfailed, 7 xpassed, 8 warnings in 10.64s ====="
+    "======================== 80 passed, 1 warning in 4.07s =========================",
+    "================ 2703 passed, 2 skipped, 751 warnings in 7.65s =================",
+    "===== 2965 passed, 90 skipped, 10 xfailed, 7 xpassed, 8 warnings in 10.54s ====="
   ],
-  "console_seconds": 10.573,
+  "console_seconds": 10.706,
   "installed_products": [
     {
       "label": "installed-python",
@@ -1314,355 +1314,771 @@
         "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/python",
         "/scratch/kohlbach/openms4-split-sdk-20260910/python-installed.py",
         "/scratch/kohlbach/openms4-split-sdk-20260910",
-        "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk"
+        "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk"
       ]
     },
     {
       "label": "installed-desktop",
       "returncode": 0,
-      "seconds": 6.537,
+      "seconds": 6.67,
       "command": [
         "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/python",
-        "/scratch/kohlbach/openms4-split-sdk-20260910/desktop-acceptance-portable.py"
+        "/scratch/kohlbach/openms4-split-sdk-20260910/desktop-acceptance-release.py"
       ]
     },
     {
       "label": "flashapp-deconvolution",
       "returncode": 0,
-      "seconds": 3.466,
+      "seconds": 3.545,
       "command": [
         "/scratch/kohlbach/openms4-split-sdk-20260910/app-env/bin/python",
         "/scratch/kohlbach/openms4-split-sdk-20260910/source/tools/test_flashapp_deconvolution.py",
         "--sdk-prefix",
-        "/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
+        "/scratch/kohlbach/openms4-split-sdk-20260910/products-release/sdk",
         "--work-dir",
-        "/scratch/kohlbach/openms4-split-sdk-20260910/app-results-portable/check"
+        "/scratch/kohlbach/openms4-split-sdk-20260910/app-results-release/check"
       ]
     }
   ],
   "flashapp": {
-    "app_source_revision": "43335129e513b66374c7f4beeb52f5c54e40d959",
-    "python_source_revision": "a31b95a98253262e812594c3d644c02ba5a1d3a7",
-    "core_source_revision": "74526a865953865d61321482bafbececfc7e0b9f",
+    "app_source_revision": "941ac78e18313296d01dc4320b6b11e1cfed60d5",
+    "python_source_revision": "9f3831551106c3e8acd35b37c6006204687bbc26",
+    "core_source_revision": "82ce5b373c97f934ffd9b1ffd80215ca66473d0b",
     "scope": "real local non-UI DeconvWorkflow.execution, INI creation/pyOpenMS parsing, persisted parameters, cached parsing, FLASHDeconv and FuzzyDiff run_topp, intended missing-input failure",
     "deployment": "fresh installed Release SDK and products; third-party dependencies in the recorded isolated environment; no container or repaired wheel claim",
-    "workspace": "/scratch/kohlbach/openms4-split-sdk-20260910/app-results-portable/check",
-    "dataset": "FLASHDeconv_sample_input_20260910-230101",
+    "workspace": "/scratch/kohlbach/openms4-split-sdk-20260910/app-results-release/check",
+    "dataset": "FLASHDeconv_sample_input_20260911-084547",
     "scan_rows": 4,
     "mass_table_rows": 4,
     "feature_reference": "/scratch/kohlbach/openms4-split-sdk-20260910/source/packages/flash/tests/data/FLASHDeconv_sample_pre_refactor.tsv",
     "feature_columns_compared": 18,
-    "duration_seconds": 2.08,
+    "duration_seconds": 2.171,
     "returncode": 0,
     "workflow_execution_success": true
   },
-  "desktop_acceptance": [
-    {
-      "label": "configure",
-      "command": [
-        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
-        "-S",
-        "/scratch/kohlbach/openms4-split-sdk-20260910/desktop-acceptance-portable/project",
-        "-B",
-        "/scratch/kohlbach/openms4-split-sdk-20260910/desktop-acceptance-portable/build",
-        "-G",
-        "Ninja",
-        "-DCMAKE_BUILD_TYPE=Release",
-        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
-        "-DCMAKE_CXX_COMPILER=/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/x86_64-conda-linux-gnu-c++",
-        "-DDESKTOP_SDK=/scratch/kohlbach/openms4-split-sdk-20260910/products-portable/sdk",
-        "-DEXPECTED_DESKTOP_REVISION=488b172663a91f69b7bec9bd37c9783cf54dbb8e",
-        "-DEXPECTED_CORE_REVISION=74526a865953865d61321482bafbececfc7e0b9f"
-      ],
-      "returncode": 0,
-      "seconds": 2.871
-    },
-    {
-      "label": "build",
-      "command": [
-        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
-        "--build",
-        "/scratch/kohlbach/openms4-split-sdk-20260910/desktop-acceptance-portable/build",
-        "--parallel",
-        "4"
-      ],
-      "returncode": 0,
-      "seconds": 2.66
-    },
-    {
-      "label": "tests",
-      "command": [
-        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
-        "--test-dir",
-        "/scratch/kohlbach/openms4-split-sdk-20260910/desktop-acceptance-portable/build",
-        "--parallel",
-        "2",
-        "--output-on-failure",
-        "--no-tests=error",
-        "--output-junit",
-        "/scratch/kohlbach/openms4-split-sdk-20260910/desktop-acceptance-portable/tests.xml"
-      ],
-      "returncode": 0,
-      "seconds": 0.972
-    }
-  ],
-  "evidence_archive": {
-    "path": "split-sdk-execution/evidence-portable.tar.gz",
-    "sha256": "87766d7f84a294645afb74795d71343bb9297b89d3bba217c95542bf5d8f0222"
-  },
-  "hosted_flashapp": {
-    "revision": "43335129e513b66374c7f4beeb52f5c54e40d959",
-    "run_url": "https://github.com/okohlbacher/OpenMS4-flashapp/actions/runs/34529420192",
-    "conclusion": "success"
+  "evidence": {
+    "path": "split-sdk-execution/evidence-release.tar.gz",
+    "sha256": "8e0001de63987f2dcff96ec690bce330291be1e28da0fd57d4200ed32c8b6d7a"
   },
   "hosted_core": {
-    "revision": "74526a865953865d61321482bafbececfc7e0b9f",
-    "run_url": "https://github.com/okohlbacher/OpenMS4-core/actions/runs/34529087385",
-    "conclusion": "in_progress"
-  },
-  "library_only": {
-    "revision": "74526a865953865d61321482bafbececfc7e0b9f",
-    "commands": [
-      {
-        "label": "fetch",
-        "command": [
-          "git",
-          "-C",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/source",
-          "fetch",
-          "origin",
-          "codex/package-split"
+    "revision": "82ce5b373c97f934ffd9b1ffd80215ca66473d0b",
+    "run_url": "https://github.com/okohlbacher/OpenMS4-core/actions/runs/34565642540",
+    "captured": "2026-09-11T06:46:00Z",
+    "platforms": {
+      "linux-arm64": {
+        "commands": [
+          {
+            "name": "source-revision",
+            "command": [
+              "git",
+              "rev-parse",
+              "HEAD"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.002
+          },
+          {
+            "name": "ci-driver-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tools/ci",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.075
+          },
+          {
+            "name": "source-contract-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/sdk_contract",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 4.718
+          },
+          {
+            "name": "test-wrapper-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/installed_sdk_acceptance",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.203
+          },
+          {
+            "name": "dependencies",
+            "command": [
+              "micromamba",
+              "list",
+              "--explicit"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.316
+          },
+          {
+            "name": "dependency-inventory",
+            "command": [
+              "micromamba",
+              "list",
+              "--json"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.329
+          },
+          {
+            "name": "configure",
+            "command": [
+              "cmake",
+              "--preset",
+              "core-release",
+              "-B",
+              "/home/runner/work/_temp/core-sdk/build",
+              "-G",
+              "Ninja",
+              "-DCMAKE_INSTALL_PREFIX=/home/runner/work/_temp/core-sdk/sdk",
+              "-DOPENMS_REQUIRE_CLEAN_SOURCE=ON",
+              "-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 6.188
+          },
+          {
+            "name": "build",
+            "command": [
+              "cmake",
+              "--build",
+              "/home/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 1777.254
+          },
+          {
+            "name": "scientific-tests",
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/home/runner/work/_temp/core-sdk/build",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--no-tests=error",
+              "--parallel",
+              "4",
+              "--output-junit",
+              "/home/runner/work/_temp/core-sdk/results/scientific-tests.xml"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 31.828
+          },
+          {
+            "name": "install",
+            "command": [
+              "cmake",
+              "--install",
+              "/home/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.411
+          },
+          {
+            "name": "deployed-sdk-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "/home/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance/run_acceptance.py",
+              "--sdk-prefix",
+              "/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-arm64-Release-82ce5b373c97",
+              "--work-dir",
+              "/home/runner/work/_temp/core-sdk/acceptance",
+              "--dependency-prefix",
+              "/home/runner/micromamba/envs/core-ci",
+              "--expected-revision",
+              "82ce5b373c97f934ffd9b1ffd80215ca66473d0b",
+              "--configuration",
+              "Release",
+              "--generator",
+              "Ninja",
+              "--jobs",
+              "4",
+              "--cmake-argument=-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCMAKE_FIND_FRAMEWORK=LAST",
+              "--cmake-argument=-DLP_SOLVER=COIN",
+              "--cmake-argument=-DSTL_DEBUG=OFF"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 18.984
+          }
         ],
-        "returncode": 0,
-        "seconds": 0.435
+        "ctest": {
+          "testcase": 701,
+          "failure": 0,
+          "error": 0,
+          "skipped": 0
+        }
       },
-      {
-        "label": "checkout",
-        "command": [
-          "git",
-          "-C",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/source",
-          "checkout",
-          "--detach",
-          "FETCH_HEAD"
+      "linux-x64": {
+        "commands": [
+          {
+            "name": "source-revision",
+            "command": [
+              "git",
+              "rev-parse",
+              "HEAD"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.002
+          },
+          {
+            "name": "ci-driver-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tools/ci",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.082
+          },
+          {
+            "name": "source-contract-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/sdk_contract",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 3.397
+          },
+          {
+            "name": "test-wrapper-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/installed_sdk_acceptance",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.285
+          },
+          {
+            "name": "dependencies",
+            "command": [
+              "micromamba",
+              "list",
+              "--explicit"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.366
+          },
+          {
+            "name": "dependency-inventory",
+            "command": [
+              "micromamba",
+              "list",
+              "--json"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.386
+          },
+          {
+            "name": "configure",
+            "command": [
+              "cmake",
+              "--preset",
+              "core-release",
+              "-B",
+              "/home/runner/work/_temp/core-sdk/build",
+              "-G",
+              "Ninja",
+              "-DCMAKE_INSTALL_PREFIX=/home/runner/work/_temp/core-sdk/sdk",
+              "-DOPENMS_REQUIRE_CLEAN_SOURCE=ON",
+              "-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 6.663
+          },
+          {
+            "name": "build",
+            "command": [
+              "cmake",
+              "--build",
+              "/home/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 2429.578
+          },
+          {
+            "name": "scientific-tests",
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/home/runner/work/_temp/core-sdk/build",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--no-tests=error",
+              "--parallel",
+              "4",
+              "--output-junit",
+              "/home/runner/work/_temp/core-sdk/results/scientific-tests.xml"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 50.018
+          },
+          {
+            "name": "install",
+            "command": [
+              "cmake",
+              "--install",
+              "/home/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.816
+          },
+          {
+            "name": "deployed-sdk-tests",
+            "command": [
+              "/home/runner/micromamba/envs/core-ci/bin/python",
+              "/home/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance/run_acceptance.py",
+              "--sdk-prefix",
+              "/home/runner/work/_temp/core-sdk/deployed/OpenMS4-core-linux-x64-Release-82ce5b373c97",
+              "--work-dir",
+              "/home/runner/work/_temp/core-sdk/acceptance",
+              "--dependency-prefix",
+              "/home/runner/micromamba/envs/core-ci",
+              "--expected-revision",
+              "82ce5b373c97f934ffd9b1ffd80215ca66473d0b",
+              "--configuration",
+              "Release",
+              "--generator",
+              "Ninja",
+              "--jobs",
+              "4",
+              "--cmake-argument=-DCMAKE_PREFIX_PATH=/home/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCURL_ROOT=/home/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCMAKE_FIND_FRAMEWORK=LAST",
+              "--cmake-argument=-DLP_SOLVER=COIN",
+              "--cmake-argument=-DSTL_DEBUG=OFF"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 20.739
+          }
         ],
-        "returncode": 0,
-        "seconds": 0.012
+        "ctest": {
+          "testcase": 701,
+          "failure": 0,
+          "error": 0,
+          "skipped": 0
+        }
       },
-      {
-        "label": "core-configure",
-        "command": [
-          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
-          "--preset",
-          "core-release",
-          "-S",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/source",
-          "-B",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/core-build-library-only",
-          "-G",
-          "Ninja",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-5d1e239-20260910/deps",
-          "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-library-only",
-          "-DLP_SOLVER=COIN",
-          "-DSTL_DEBUG=OFF",
-          "-DMT_ENABLE_OPENMP=ON",
-          "-DOPENMS_REQUIRE_CLEAN_SOURCE=ON",
-          "-DENABLE_CLASS_TESTING=OFF",
-          "-DOPENMS_BUILD_TEST_SUPPORT=OFF"
+      "macos-arm64": {
+        "commands": [
+          {
+            "name": "source-revision",
+            "command": [
+              "git",
+              "rev-parse",
+              "HEAD"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.018
+          },
+          {
+            "name": "ci-driver-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tools/ci",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.123
+          },
+          {
+            "name": "source-contract-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/sdk_contract",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 10.271
+          },
+          {
+            "name": "test-wrapper-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/installed_sdk_acceptance",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.356
+          },
+          {
+            "name": "dependencies",
+            "command": [
+              "micromamba",
+              "list",
+              "--explicit"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.347
+          },
+          {
+            "name": "dependency-inventory",
+            "command": [
+              "micromamba",
+              "list",
+              "--json"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.281
+          },
+          {
+            "name": "configure",
+            "command": [
+              "cmake",
+              "--preset",
+              "core-release",
+              "-B",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "-G",
+              "Ninja",
+              "-DCMAKE_INSTALL_PREFIX=/Users/runner/work/_temp/core-sdk/sdk",
+              "-DOPENMS_REQUIRE_CLEAN_SOURCE=ON",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 11.966
+          },
+          {
+            "name": "build",
+            "command": [
+              "cmake",
+              "--build",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release",
+              "--parallel",
+              "2"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 1666.807
+          },
+          {
+            "name": "scientific-tests",
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--no-tests=error",
+              "--parallel",
+              "2",
+              "--output-junit",
+              "/Users/runner/work/_temp/core-sdk/results/scientific-tests.xml"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 97.985
+          },
+          {
+            "name": "install",
+            "command": [
+              "cmake",
+              "--install",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 4.312
+          },
+          {
+            "name": "deployed-sdk-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "/Users/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance/run_acceptance.py",
+              "--sdk-prefix",
+              "/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-arm64-Release-82ce5b373c97",
+              "--work-dir",
+              "/Users/runner/work/_temp/core-sdk/acceptance",
+              "--dependency-prefix",
+              "/Users/runner/micromamba/envs/core-ci",
+              "--expected-revision",
+              "82ce5b373c97f934ffd9b1ffd80215ca66473d0b",
+              "--configuration",
+              "Release",
+              "--generator",
+              "Ninja",
+              "--jobs",
+              "2",
+              "--cmake-argument=-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCMAKE_FIND_FRAMEWORK=LAST",
+              "--cmake-argument=-DLP_SOLVER=COIN",
+              "--cmake-argument=-DSTL_DEBUG=OFF",
+              "--cmake-argument=-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "--cmake-argument=-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "--cmake-argument=-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 28.484
+          }
         ],
-        "returncode": 0,
-        "seconds": 4.507
+        "ctest": {
+          "testcase": 701,
+          "failure": 0,
+          "error": 0,
+          "skipped": 0
+        }
       },
-      {
-        "label": "core-build-library-only",
-        "command": [
-          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
-          "--build",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/core-build-library-only",
-          "--parallel",
-          "320"
+      "macos-x64": {
+        "commands": [
+          {
+            "name": "source-revision",
+            "command": [
+              "git",
+              "rev-parse",
+              "HEAD"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.023
+          },
+          {
+            "name": "ci-driver-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tools/ci",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.212
+          },
+          {
+            "name": "source-contract-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/sdk_contract",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 19.946
+          },
+          {
+            "name": "test-wrapper-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "-m",
+              "unittest",
+              "discover",
+              "-s",
+              "tests/installed_sdk_acceptance",
+              "-v"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.856
+          },
+          {
+            "name": "dependencies",
+            "command": [
+              "micromamba",
+              "list",
+              "--explicit"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.652
+          },
+          {
+            "name": "dependency-inventory",
+            "command": [
+              "micromamba",
+              "list",
+              "--json"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 0.823
+          },
+          {
+            "name": "configure",
+            "command": [
+              "cmake",
+              "--preset",
+              "core-release",
+              "-B",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "-G",
+              "Ninja",
+              "-DCMAKE_INSTALL_PREFIX=/Users/runner/work/_temp/core-sdk/sdk",
+              "-DOPENMS_REQUIRE_CLEAN_SOURCE=ON",
+              "-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "-DCMAKE_FIND_FRAMEWORK=LAST",
+              "-DLP_SOLVER=COIN",
+              "-DSTL_DEBUG=OFF",
+              "-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 22.411
+          },
+          {
+            "name": "build",
+            "command": [
+              "cmake",
+              "--build",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release",
+              "--parallel",
+              "4"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 3011.339
+          },
+          {
+            "name": "scientific-tests",
+            "command": [
+              "ctest",
+              "--test-dir",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "-C",
+              "Release",
+              "--output-on-failure",
+              "--no-tests=error",
+              "--parallel",
+              "4",
+              "--output-junit",
+              "/Users/runner/work/_temp/core-sdk/results/scientific-tests.xml"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 241.273
+          },
+          {
+            "name": "install",
+            "command": [
+              "cmake",
+              "--install",
+              "/Users/runner/work/_temp/core-sdk/build",
+              "--config",
+              "Release"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 7.872
+          },
+          {
+            "name": "deployed-sdk-tests",
+            "command": [
+              "/Users/runner/micromamba/envs/core-ci/bin/python",
+              "/Users/runner/work/OpenMS4-core/OpenMS4-core/tests/installed_sdk_acceptance/run_acceptance.py",
+              "--sdk-prefix",
+              "/Users/runner/work/_temp/core-sdk/deployed/OpenMS4-core-macos-x64-Release-82ce5b373c97",
+              "--work-dir",
+              "/Users/runner/work/_temp/core-sdk/acceptance",
+              "--dependency-prefix",
+              "/Users/runner/micromamba/envs/core-ci",
+              "--expected-revision",
+              "82ce5b373c97f934ffd9b1ffd80215ca66473d0b",
+              "--configuration",
+              "Release",
+              "--generator",
+              "Ninja",
+              "--jobs",
+              "4",
+              "--cmake-argument=-DCMAKE_PREFIX_PATH=/Users/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCURL_ROOT=/Users/runner/micromamba/envs/core-ci",
+              "--cmake-argument=-DCMAKE_FIND_FRAMEWORK=LAST",
+              "--cmake-argument=-DLP_SOLVER=COIN",
+              "--cmake-argument=-DSTL_DEBUG=OFF",
+              "--cmake-argument=-DCMAKE_C_COMPILER=/usr/bin/clang",
+              "--cmake-argument=-DCMAKE_CXX_COMPILER=/usr/bin/clang++",
+              "--cmake-argument=-DOpenMP_ROOT=/Users/runner/micromamba/envs/core-ci"
+            ],
+            "returncode": 0,
+            "elapsed_seconds": 90.143
+          }
         ],
-        "returncode": 0,
-        "seconds": 83.674
-      },
-      {
-        "label": "core-install",
-        "command": [
-          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
-          "--install",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/core-build-library-only"
-        ],
-        "returncode": 0,
-        "seconds": 0.448
-      },
-      {
-        "label": "core-acceptance",
-        "command": [
-          "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/python",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/source/tests/installed_sdk_acceptance/run_acceptance.py",
-          "--sdk-prefix",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-library-only",
-          "--work-dir",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only",
-          "--dependency-prefix",
-          "/scratch/kohlbach/openms4-5d1e239-20260910/deps",
-          "--expected-revision",
-          "74526a865953865d61321482bafbececfc7e0b9f",
-          "--configuration",
-          "Release",
-          "--cmake-argument=-DOPENMS_ACCEPTANCE_TEST_SUPPORT=OFF",
-          "--jobs",
-          "32",
-          "--cmake-argument=-DCMAKE_C_COMPILER=/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/x86_64-conda-linux-gnu-cc",
-          "--cmake-argument=-DCMAKE_CXX_COMPILER=/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/x86_64-conda-linux-gnu-c++"
-        ],
-        "returncode": 0,
-        "seconds": 14.44
+        "ctest": {
+          "testcase": 701,
+          "failure": 0,
+          "error": 0,
+          "skipped": 0
+        }
       }
-    ],
-    "acceptance": [
-      {
-        "command": [
-          "cmake",
-          "-S",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/source/tests/installed_sdk_acceptance",
-          "-B",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/original-consumer",
-          "-G",
-          "Ninja",
-          "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-library-only;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
-          "-DOpenMS_DIR=/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-library-only/lib/cmake/OpenMS",
-          "-DOPENMS_EXPECTED_PREFIX=/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-library-only",
-          "-DOPENMS_ACCEPTANCE_TEST_SUPPORT=OFF",
-          "-DCMAKE_C_COMPILER=/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/x86_64-conda-linux-gnu-cc",
-          "-DCMAKE_CXX_COMPILER=/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/x86_64-conda-linux-gnu-c++",
-          "-DOPENMS_EXPECTED_SOURCE_REVISION=74526a865953865d61321482bafbececfc7e0b9f"
-        ],
-        "returncode": 0,
-        "expected_failure": false,
-        "passed": true,
-        "elapsed_seconds": 2.72,
-        "log": "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/01.log"
-      },
-      {
-        "command": [
-          "cmake",
-          "--build",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/original-consumer",
-          "--config",
-          "Release",
-          "--parallel",
-          "32"
-        ],
-        "returncode": 0,
-        "expected_failure": false,
-        "passed": true,
-        "elapsed_seconds": 2.86,
-        "log": "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/02.log"
-      },
-      {
-        "command": [
-          "ctest",
-          "--test-dir",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/original-consumer",
-          "-C",
-          "Release",
-          "--output-on-failure",
-          "--parallel",
-          "32"
-        ],
-        "returncode": 0,
-        "expected_failure": false,
-        "passed": true,
-        "elapsed_seconds": 0.166,
-        "log": "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/03.log"
-      },
-      {
-        "command": [
-          "cmake",
-          "-S",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/source/tests/installed_sdk_acceptance",
-          "-B",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/relocated-consumer",
-          "-G",
-          "Ninja",
-          "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/relocated-sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
-          "-DOpenMS_DIR=/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/relocated-sdk/lib/cmake/OpenMS",
-          "-DOPENMS_EXPECTED_PREFIX=/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/relocated-sdk",
-          "-DOPENMS_ACCEPTANCE_TEST_SUPPORT=OFF",
-          "-DCMAKE_C_COMPILER=/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/x86_64-conda-linux-gnu-cc",
-          "-DCMAKE_CXX_COMPILER=/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/x86_64-conda-linux-gnu-c++",
-          "-DOPENMS_EXPECTED_SOURCE_REVISION=74526a865953865d61321482bafbececfc7e0b9f"
-        ],
-        "returncode": 0,
-        "expected_failure": false,
-        "passed": true,
-        "elapsed_seconds": 2.623,
-        "log": "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/04.log"
-      },
-      {
-        "command": [
-          "cmake",
-          "--build",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/relocated-consumer",
-          "--config",
-          "Release",
-          "--parallel",
-          "32"
-        ],
-        "returncode": 0,
-        "expected_failure": false,
-        "passed": true,
-        "elapsed_seconds": 2.885,
-        "log": "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/05.log"
-      },
-      {
-        "command": [
-          "ctest",
-          "--test-dir",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/relocated-consumer",
-          "-C",
-          "Release",
-          "--output-on-failure",
-          "--parallel",
-          "32"
-        ],
-        "returncode": 0,
-        "expected_failure": false,
-        "passed": true,
-        "elapsed_seconds": 0.166,
-        "log": "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/06.log"
-      },
-      {
-        "command": [
-          "cmake",
-          "-S",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/source/tests/installed_sdk_acceptance",
-          "-B",
-          "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/wrong-revision-consumer",
-          "-G",
-          "Ninja",
-          "-DCMAKE_BUILD_TYPE=Release",
-          "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-library-only;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
-          "-DOpenMS_DIR=/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-library-only/lib/cmake/OpenMS",
-          "-DOPENMS_EXPECTED_PREFIX=/scratch/kohlbach/openms4-core-runtime-20260910/core-sdk-library-only",
-          "-DOPENMS_ACCEPTANCE_TEST_SUPPORT=OFF",
-          "-DCMAKE_C_COMPILER=/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/x86_64-conda-linux-gnu-cc",
-          "-DCMAKE_CXX_COMPILER=/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/x86_64-conda-linux-gnu-c++",
-          "-DOPENMS_EXPECTED_SOURCE_REVISION=0000000000000000000000000000000000000000"
-        ],
-        "returncode": 1,
-        "expected_failure": true,
-        "passed": true,
-        "elapsed_seconds": 2.669,
-        "log": "/scratch/kohlbach/openms4-core-runtime-20260910/core-acceptance-library-only/07.log"
-      }
-    ],
-    "evidence_archive": {
-      "path": "core-build-ci-execution/library-only-evidence.tar.gz",
-      "sha256": "1768ef297e36c498e09050af6b031cda3ec2fd06d35b7dcc6b758db8f7186b77"
-    }
+    },
+    "windows_status": "in_progress",
+    "release_status": "not_published"
   }
 }
