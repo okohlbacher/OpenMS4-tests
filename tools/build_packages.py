@@ -39,7 +39,7 @@ def main():
     parser.add_argument('--dependencies', required=True, type=Path)
     parser.add_argument('--work-dir', required=True, type=Path)
     parser.add_argument('--jobs', type=int, default=os.cpu_count() or 2)
-    parser.add_argument('--workers', type=int, default=4)
+    parser.add_argument('--workers', type=int, default=4, help='packages built at once; the ready set is 11 wide')
     parser.add_argument('--skip', nargs='*', default=[], help='packages to leave out, e.g. one awaiting its re-pin')
     args = parser.parse_args()
     work, core, deps = (p.resolve() for p in (args.work_dir, args.core_prefix, args.dependencies))
@@ -122,7 +122,7 @@ def main():
         run(name + '-build', [cmake, '--build', str(build), '--config', config, '--parallel', str(jobs)])
         if name != 'test-data':
             run(name + '-tests', [ctest, '--test-dir', str(build), '-C', config,
-                '--parallel', str(min(jobs, 32)), '--output-on-failure', '--no-tests=error',
+                '--parallel', str(jobs), '--output-on-failure', '--no-tests=error',
                 '--output-junit', str(results / f'{name}-tests.xml')],
                 {'OMP_NUM_THREADS': str(min(jobs, 16))} if name == 'flash' else None)
         with install_lock:
@@ -153,7 +153,7 @@ def main():
         f'-DOPENMS4_TOOLS_BIN={sdk}/bin', '-DOPENMS4_TOOL_NAMES=' + ';'.join(sorted(names)),
         '-DWITH_GUI=OFF', '-DHAS_XSERVER=OFF'])
     run('regressions-tests', [ctest, '--test-dir', str(build), '-C', config,
-        '--parallel', str(min(args.jobs, 128)), '--output-on-failure', '--no-tests=error',
+        '--parallel', str(args.jobs), '--output-on-failure', '--no-tests=error',
         '--output-junit', str(results / 'regressions-tests.xml')])
     (results / 'packages.json').write_text(json.dumps(packages, indent=2) + '\n')
     print(f'Installed {len(names)} console tools and native packages in {sdk}', flush=True)
