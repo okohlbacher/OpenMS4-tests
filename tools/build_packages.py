@@ -40,6 +40,7 @@ def main():
     parser.add_argument('--work-dir', required=True, type=Path)
     parser.add_argument('--jobs', type=int, default=os.cpu_count() or 2)
     parser.add_argument('--workers', type=int, default=4)
+    parser.add_argument('--skip', nargs='*', default=[], help='packages to leave out, e.g. one awaiting its re-pin')
     args = parser.parse_args()
     work, core, deps = (p.resolve() for p in (args.work_dir, args.core_prefix, args.dependencies))
     if min(args.jobs, args.workers) < 1 or (work.exists() and any(work.iterdir())):
@@ -48,6 +49,10 @@ def main():
         parser.error('work directory must be separate from sources and installed dependencies')
     packages = json.loads((ROOT / 'packages.lock.json').read_text())['packages']
     graph = native_graph(packages)
+    for name in args.skip:
+        if any(name in deps for deps in graph.values()):
+            parser.error(f'{name}: other packages build against it')
+        graph.pop(name, None)
     for name in ('core', *graph):
         source = ROOT / packages[name]['path']
         head = subprocess.check_output(['git', '-C', str(source), 'rev-parse', 'HEAD'], text=True).strip()
@@ -104,8 +109,7 @@ def main():
         if name in ('topp', 'openswath', 'flash', 'nuxl', 'nase'):
             options += ['-DOPENMS4_REGRESSION_TESTS=ON']
         elif name == 'desktop':
-            options += ['-DOPENMS_GUI_WEBENGINE=OFF', '-DOPENMS_DESKTOP_INTERACTIVE_TESTS=OFF',
-                        '-DOPENMS_DESKTOP_PIPELINE_TESTS=ON']
+            options += ['-DOPENMS_DESKTOP_INTERACTIVE_TESTS=OFF', '-DOPENMS_DESKTOP_PIPELINE_TESTS=ON']
         elif name == 'pyopenms':
             options += ['-DPYOPENMS_BUILD_TESTING=ON', '-DPYOPENMS_GENERATE_STUBS=ON',
                         f'-DPython_EXECUTABLE={sys.executable}']
