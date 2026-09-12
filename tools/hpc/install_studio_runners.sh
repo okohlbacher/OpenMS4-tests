@@ -27,7 +27,8 @@ while read -r repo token; do
   # Own HOME per runner: setup-micromamba keeps its root under ~ and concurrent
   # jobs sharing one would race ("Non-conda folder exists at prefix").
   mkdir -p "$dir/home"
-  printf 'HOME=%s\n' "$dir/home" > "$dir/.env"
+  # .env is applied by the runner itself; a launchd service inherits almost no PATH.
+  printf 'HOME=%s\nPATH=%s/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin\n' "$dir/home" "$ROOT" > "$dir/.env"
   ( cd "$dir" && ./config.sh --unattended --replace --url "https://github.com/okohlbacher/$repo" \
       --token "$token" --name "studio-$repo" --labels studio-macos-arm64 --work _work --disableupdate )
   # config.sh writes .path from the configuring shell's PATH; jobs need gh in front of it.
