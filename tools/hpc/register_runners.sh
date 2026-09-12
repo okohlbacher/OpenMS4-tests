@@ -8,7 +8,7 @@ set -euo pipefail
 target=${1:?dax or studio}
 case "$target" in
   dax)    host=dax;       script=install_dax_runners.sh;    remote=/scratch/kohlbach ;;
-  studio) host=${STUDIO_HOST:-macstudio}; script=install_studio_runners.sh; remote='~' ;;
+  studio) host=${STUDIO_HOST:-oliver@100.94.67.26}; script=install_studio_runners.sh; remote='~' ;;   # Tailscale address of the Mac Studio
   *) echo "unknown target $target"; exit 1 ;;
 esac
 cd "$(dirname "$0")/../.."
