@@ -49,7 +49,7 @@
     "flashapp": {
       "path": "packages/flashapp",
       "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
-      "source_revision": "2eaad619a2c4ac4e3296d1200159ff887ae53ae2",
+      "source_revision": "42cd062405fcd7f3a69a85cdd6c5c15b254cc74d",
       "frozen_dependencies": true,
       "qualification_note": "Uses the qualified pyOpenMS ci.2 wheel while the ci.3 Windows build and wheel release complete; Core/CLI/TOPP/FLASH/FLASHTnT pins match the native graph."
     },
@@ -91,7 +91,7 @@
     "flashtnt": {
       "path": "packages/flashtnt",
       "repository": "https://github.com/okohlbacher/OpenMS4-flashtnt",
-      "source_revision": "250debbc26565b51ef861ccaa8132b9e11b4f8d9"
+      "source_revision": "4ca4e73a975152f863084ddb8576d40f1241133a"
     },
     "parquet-diff": {
       "path": "packages/parquet-diff",
