@@ -2,9 +2,11 @@
 
 The starting point was parent `bab12406e0` and its Core ci.2 graph, not the older
 unfinished-build notes. The separate Rust worktree was outside this task. The
-[previous cycle report](core-ci2-cycle-validation.md) remains the evidence for
-the full 15-consumer native build and 2,041 installed regression tests (five
-external-engine skips); those totals are not a new execution in this review.
+[previous cycle report](core-ci2-cycle-validation.md) records the earlier
+15-consumer build. A fresh, clean checkout of parent `56406032068d` now builds all
+16 native packages against the released Core ci.2 SDK on IBMI dax. It installs
+151 console tools and passes 2,039 of 2,044 registered regression tests; five
+external-engine tests are skipped. Core itself was reused, not rebuilt.
 
 ## Architecture review
 
@@ -58,7 +60,12 @@ flowchart TD
   using the bundled AQPZ dataset. Live Redis/RQ testing exposed and fixed a
   cancellation race: a worker returning a canceled result before RQ acknowledges
   the stop request is now shown as canceled, not failed. Frozen ordinary
-  dependencies are retained.
+  dependencies are retained. Queued starts now use a short Redis submission lock,
+  preserve an active or uncertain job identity, and refuse local fallback after a
+  queue failure. A lease that expires during status lookup is rejected before
+  parameters or job identity are changed. This bounded lease is not an
+  unconditional distributed fencing guarantee; missing job outcomes require
+  explicit reconciliation.
 - **FLASHTnT:** ports legacy String/ProForma calls to the installed SDK, keeps the
   tool interface, and tests the serializer and private helper behavior. Native
   input checks reject incomplete/nonfinite deconvolution metadata before indexing
@@ -75,8 +82,47 @@ Fresh local/targeted results:
 | FLASHApp full suite with published ci.2 wheel and frozen dependencies | 109 passed plus 49 subcases | 5.19 s |
 | Actual Linux DeconvWorkflow, INI/settings round trip, FLASHDeconv/FuzzyDiff, missing-input cleanup | 18 reference columns matched; four scan rows and four mass rows | 2.308 s |
 | Desktop real Cocoa/QRhi framebuffer | 1 CTest passed and PNG inspected | 1.03 s |
-| FLASHApp full suite after the cancellation fix | 113 passed plus 49 subcases | 2.00 s |
+| FLASHApp full suite after cancellation and duplicate-submission fixes (`2eaad619`) | 127 passed plus 49 subcases; one opt-in live test skipped | 1.79 s |
 | Real Redis/RQ worker success, failure and cancellation | All three outcomes correct; owned child processes exited | 0.65 / 0.60 / 0.67 s |
+| Focused queued-start tests with dedicated live Redis | 14 passed, including concurrent callers and real lease expiry | 0.19 s |
+| Standalone FLASHTnT (`250debbc`), native CTest including AQPZ | 4 passed | 10.10 s |
+| FLASHApp native tagging plus result parsers / complete raw TagWorkflow | Both execute; historical numerical comparison fails | 11.15 / 13.22 s |
+| Installed combined regression suite, 240 CTest jobs | 2,039 passed; five external-engine skips | 10.94 s |
+
+The [native build receipt](port-resumption-2026-09-12/native-build.json) records
+every command, revision, per-package result, warning and original log checksum.
+The 353 package-level CTest entries all pass; they overlap the installed
+regressions and should not be added to them as unique tests. Individual test
+times range from 0.10 seconds for small contracts to 56.62 seconds for FLASH.
+The consumer build has 14 existing C++ `u8path` deprecation warnings in CLI,
+NuXL and database-suitability tests, plus six pyOpenMS stub-pattern warnings;
+the new FLASHTnT compiles without warnings. Those existing warnings remain
+visible rather than being described as a warning-free full build.
+
+**FLASHTnT remains experimental: historical numerical parity fails.** The app's
+[strict AQPZ comparison](../packages/flashapp/experimental/validation/flashtnt-aqpz.json)
+preserves the May 2025 reference and reports the mismatch: 622 tags versus 2,968,
+10 proteins versus 17, and AQPZ score 559 versus 505. The full 240-residue AQPZ
+sequence and positions match, but mass, fragment count and coverage also differ.
+The ported March 2026 source contains intervening algorithm changes; this is a
+possible explanation, not an established cause. Neither the old reference nor
+the failed comparison was replaced with a new numerical golden result.
+
+## Platform CI
+
+Desktop `15c7a630` passes all five platform jobs in
+[run 34720440935](https://github.com/okohlbacher/OpenMS4-desktop/actions/runs/34720440935).
+The macOS ARM row additionally requires the real Cocoa framebuffer test.
+
+FLASHTnT `250debbc` cannot yet claim final five-platform qualification:
+[run 34721161781](https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34721161781)
+was blocked before any job started. All five annotations identify GitHub account
+payments or spending-limit configuration as the cause. No compilation or test
+failed in that run. The earlier `367a33d0` revision passed all five platforms;
+the final revision has the fresh Linux HPC evidence above. Account billing was
+not changed as part of this work.
+
+## Evidence and limits
 
 The wheel's skips cover unavailable instrument features/data, unsupported copy
 constructors and a few documentation/iterator cases. Seven stale expected-failure

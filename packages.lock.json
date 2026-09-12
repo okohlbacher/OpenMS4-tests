@@ -49,7 +49,7 @@
     "flashapp": {
       "path": "packages/flashapp",
       "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
-      "source_revision": "65e6382075a2559db9427833df47182c1a6b432a",
+      "source_revision": "2eaad619a2c4ac4e3296d1200159ff887ae53ae2",
       "frozen_dependencies": true,
       "qualification_note": "Uses the qualified pyOpenMS ci.2 wheel while the ci.3 Windows build and wheel release complete; Core/CLI/TOPP/FLASH/FLASHTnT pins match the native graph."
     },
