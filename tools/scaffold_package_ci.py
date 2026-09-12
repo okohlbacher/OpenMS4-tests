@@ -80,7 +80,7 @@ def core_download_step(core_tag: str, core_short: str) -> str:
 """
 
 
-def native_job(slug: str, title: str, refs: dict, kind: str, topp_tag: str = "", topp_short: str = "") -> str:
+def native_job(slug: str, title: str, refs: dict, kind: str, env_name: str, topp_tag: str = "", topp_short: str = "") -> str:
     core_tag, core_short = refs["core_tag"], refs["core"][:12]
     matrix = "".join(
         f"          - platform: {p}\n            runner: {r}\n"
@@ -101,8 +101,8 @@ def native_job(slug: str, title: str, refs: dict, kind: str, topp_tag: str = "",
         run: |
           # The bindings ask for nanobind 2.10.0 EXACT. conda-forge went from
           # 2.9.2 to 2.10.2 without packaging 2.10.0, so it comes from PyPI.
-          micromamba run -n package-ci python -m pip install --no-input nanobind==2.10.0
-          micromamba run -n package-ci python -c "import nanobind, sys; assert nanobind.__version__ == '2.10.0', nanobind.__version__; print('nanobind', nanobind.__version__)"
+          micromamba run -n {env_name} python -m pip install --no-input nanobind==2.10.0
+          micromamba run -n {env_name} python -c "import nanobind, sys; assert nanobind.__version__ == '2.10.0', nanobind.__version__; print('nanobind', nanobind.__version__)"
 """
     if kind == "desktop":
         before_build += f"""      - name: Download and verify the released TOPP tools
@@ -171,7 +171,7 @@ jobs:
           cache-environment-key: {slug}-${{{{ matrix.platform }}}}
 {before_build}{core_download_step(core_tag, core_short)}      - name: Build, test, install, and package
         run: >-
-          micromamba run -n package-ci python tools/ci/run.py
+          micromamba run -n {env_name} python tools/ci/run.py
           --platform ${{{{ matrix.platform }}}} --jobs ${{{{ matrix.jobs }}}}
           --core-dir "${{{{ runner.temp }}}}/core"
 {driver_args}          --work-dir "${{{{ runner.temp }}}}/{slug}"
@@ -294,7 +294,10 @@ NOTES = {
 
 
 def cask_workflow(cask: str, repo: str, tools: list) -> str:
-    checks = "".join(f"          {tool} --help\n" for tool in tools[:3])
+    # Writing a default INI through the installed symlink exercises the tool's
+    # executable-relative data lookup; --help would pass with broken data paths.
+    checks = "".join(f'          {tool} -write_ini "$RUNNER_TEMP/{tool}.ini"\n'
+                     f'          test -s "$RUNNER_TEMP/{tool}.ini"\n' for tool in tools[:3])
     return f"""name: Homebrew cask
 
 on:
@@ -360,12 +363,17 @@ def scaffold(name: str, lock: dict, refs: dict) -> None:
         print(f"patched {name}: refs updated in hand-written workflows")
         return
     kind = name if name in SPECIAL else "product"
-    title = {"cli": "CLI", "desktop": "Desktop", "pyopenms": "pyOpenMS"}.get(name, repo.removeprefix("OpenMS4-"))
+    title = {"cli": "CLI", "desktop": "Desktop", "pyopenms": "pyOpenMS", "nuxl": "NuXL"}.get(name, repo.removeprefix("OpenMS4-"))
+    env_file = source / "tools/ci/environment.yml"
+    env_name = "package-ci"
+    if env_file.exists():
+        env_name = next((line.split(":", 1)[1].strip() for line in env_file.read_text().splitlines()
+                         if line.startswith("name:")), env_name)
     topp_tag = topp_short = ""
     if kind == "desktop":
         topp_tag = release_tag(ROOT / lock["topp"]["path"], refs["topp"], "topp-v")
         topp_short = refs["topp"][:12]
-    workflow = native_job(name, title, refs, kind, topp_tag, topp_short)
+    workflow = native_job(name, title, refs, kind, env_name, topp_tag, topp_short)
     if kind == "product":
         workflow += cask_payload_job(name, refs["cli"])
     (workflows / f"{name}.yml").write_text(workflow, encoding="utf-8")
