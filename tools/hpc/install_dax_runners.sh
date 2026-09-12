@@ -1,0 +1,31 @@
+#!/bin/bash
+# Run ON dax. One self-hosted GitHub runner per package repository, all labelled
+# dax-linux-x64, each started in the background as this user (no root, no systemd).
+# Registration lines "<repo> <token>" arrive on stdin from register_dax_runners.sh.
+set -euo pipefail
+umask 077
+ROOT=/scratch/kohlbach/gh-runners
+VERSION=2.337.0
+mkdir -p "$ROOT/bin" "$ROOT/tmp"
+cd "$ROOT"
+if [ ! -f "actions-runner-$VERSION.tar.gz" ]; then
+  curl -sSL -o "actions-runner-$VERSION.tar.gz" \
+    "https://github.com/actions/runner/releases/download/v$VERSION/actions-runner-linux-x64-$VERSION.tar.gz"
+fi
+# The workflows download Core releases with gh; give every job a copy on PATH.
+if [ ! -x bin/gh ]; then
+  curl -sSL "https://github.com/cli/cli/releases/download/v2.97.0/gh_2.97.0_linux_amd64.tar.gz" \
+    | tar -xz --strip-components=2 -C bin gh_2.97.0_linux_amd64/bin/gh
+fi
+while read -r repo token; do
+  [ -n "$repo" ] || continue
+  dir="$ROOT/$repo"
+  mkdir -p "$dir"
+  if [ ! -f "$dir/config.sh" ]; then tar -xzf "actions-runner-$VERSION.tar.gz" -C "$dir"; fi
+  echo "$ROOT/bin" > "$dir/.path"      # prepended to PATH of every job
+  printf 'TMPDIR=%s\nDOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1\n' "$ROOT/tmp" > "$dir/.env"
+  ( cd "$dir" && ./config.sh --unattended --replace --url "https://github.com/okohlbacher/$repo" \
+      --token "$token" --name "dax-$repo" --labels dax-linux-x64 --work _work --disableupdate )
+  ( cd "$dir" && nohup ./run.sh > runner.log 2>&1 & )
+  echo "started dax-$repo"
+done

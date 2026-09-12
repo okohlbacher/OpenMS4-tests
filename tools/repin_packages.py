@@ -40,6 +40,7 @@ def main() -> None:
     parser.add_argument("--core", required=True, help="qualified Core revision to pin (40 hex)")
     parser.add_argument("--skip", nargs="*", default=[], help="packages to leave for a later phase")
     parser.add_argument("--only", nargs="*", default=[], help="restrict to these packages")
+    parser.add_argument("--message", help="commit subject when the cycle is more than a pin move")
     args = parser.parse_args()
     if len(args.core) != 40:
         parser.error("--core must be a full 40-character revision")
@@ -88,7 +89,8 @@ def main() -> None:
             subprocess.run(["git", "-C", str(path), "-c", "user.name=Oliver",
                             "-c", "user.email=oliver.kohlbacher@uni-tuebingen.de",
                             "commit", "-q", "-F", "-"],
-                           input=COMMIT_MESSAGE.format(core=args.core[:12]), text=True, check=True)
+                           input=(f"{args.message}\n\n" if args.message else "") + COMMIT_MESSAGE.format(core=args.core[:12]),
+                           text=True, check=True)
         revisions[name] = git(path, "rev-parse", "HEAD")
         packages[name]["source_revision"] = revisions[name]
         print(f"{name:22} {revisions[name][:12]}", flush=True)
