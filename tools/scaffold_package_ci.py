@@ -171,6 +171,7 @@ jobs:
           generate-run-shell: false
           cache-environment: true
           cache-environment-key: {slug}-${{{{ matrix.platform }}}}
+          post-cleanup: all
 {before_build}{core_download_step(core_tag, core_short)}      - name: Build, test, install, and package
         run: >-
           micromamba run -n {env_name} python tools/ci/run.py

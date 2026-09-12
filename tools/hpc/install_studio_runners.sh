@@ -31,7 +31,8 @@ while read -r repo token; do
   printf 'HOME=%s\nPATH=%s/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin\n' "$dir/home" "$ROOT" > "$dir/.env"
   # setup-micromamba refuses to overwrite its binary and root from an earlier job,
   # so a job-start hook wipes them; the environment is restored from the cache.
-  printf '#!/bin/bash\nrm -rf "$HOME/micromamba-bin" "$HOME/micromamba"\n' > "$dir/pre-job.sh"
+  # Absolute paths: the hook runs with the service's HOME, not the job HOME from .env.
+  printf '#!/bin/bash\nrm -rf "%s/home/micromamba-bin" "%s/home/micromamba"\n' "$dir" "$dir" > "$dir/pre-job.sh"
   chmod +x "$dir/pre-job.sh"
   echo "ACTIONS_RUNNER_HOOK_JOB_STARTED=$dir/pre-job.sh" >> "$dir/.env"
   ( cd "$dir" && ./config.sh --unattended --replace --url "https://github.com/okohlbacher/$repo" \
