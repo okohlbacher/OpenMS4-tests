@@ -21,7 +21,7 @@ UPLOAD = "actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6"
 MAMBA = "mamba-org/setup-micromamba@f457c30a868e4760d3a6fcea5f25dc655b8edf39 # v3"
 
 # Packages that build their own tools but keep hand-maintained drivers.
-KEEP_DRIVERS = {"nuxl"}
+KEEP_DRIVERS = {"nuxl", "flashtnt"}
 # Kinds that are not console products and have bespoke drivers.
 SPECIAL = {"cli", "desktop", "pyopenms"}
 
@@ -62,15 +62,15 @@ def checkout_step(repo: str, ref: str, path: str) -> str:
 """
 
 
-def core_download_step(core_tag: str, core_short: str) -> str:
-    return f"""      - name: Download and verify the pinned Core SDK
+def sdk_download_step(package: str, tag: str, revision_short: str) -> str:
+    return f"""      - name: Download and verify the pinned {package} SDK
         shell: bash
         run: |
-          mkdir -p "${{{{ runner.temp }}}}/core"
-          gh release download {core_tag} --repo okohlbacher/OpenMS4-core \\
-            --pattern "OpenMS4-core-${{{{ matrix.platform }}}}-Release-{core_short}.tar.gz*" \\
-            --dir "${{{{ runner.temp }}}}/core"
-          cd "${{{{ runner.temp }}}}/core"
+          mkdir -p "${{{{ runner.temp }}}}/{package}"
+          gh release download {tag} --repo okohlbacher/OpenMS4-{package} \\
+            --pattern "OpenMS4-{package}-${{{{ matrix.platform }}}}-Release-{revision_short}.tar.gz*" \\
+            --dir "${{{{ runner.temp }}}}/{package}"
+          cd "${{{{ runner.temp }}}}/{package}"
           if command -v shasum >/dev/null; then
             tr -d '\\r' < *.sha256 | shasum -a 256 -c -
           else
@@ -89,12 +89,17 @@ def native_job(slug: str, title: str, refs: dict, kind: str, env_name: str, topp
     checkouts = ""
     if kind != "cli":
         checkouts += checkout_step("OpenMS4-cli", refs["cli"], "cli")
-        checkouts += checkout_step("OpenMS4-test-data", refs["test-data"], "test-data")
+        if slug != "flashtnt":
+            checkouts += checkout_step("OpenMS4-test-data", refs["test-data"], "test-data")
     if kind == "pyopenms":
         checkouts += checkout_step("OpenMS4-prose", refs["prose"], "prose")
         checkouts += checkout_step("OpenMS4-flash", refs["flash"], "flash")
     env_extra = "      QT_QPA_PLATFORM: 'minimal'\n" if kind == "desktop" else ""
+    build_env = ("        env:\n          OPENMS4_QRHI_RENDER_TEST: ${{ startsWith(runner.name, 'studio-') && '1' || '0' }}\n"
+                 if kind == "desktop" else "")
     before_build = ""
+    if slug == "flashtnt":
+        before_build += sdk_download_step("flash", refs["flash_tag"], refs["flash"][:12])
     if kind == "pyopenms":
         before_build += f"""      - name: Install the exact nanobind the bindings require
         shell: bash
@@ -129,6 +134,11 @@ def native_job(slug: str, title: str, refs: dict, kind: str, env_name: str, topp
         "pyopenms": ("          --cli-source dependencies/cli\n          --prose-source dependencies/prose\n"
                      "          --flash-source dependencies/flash\n          --test-data-source dependencies/test-data\n"),
     }[kind]
+    if slug == "flashtnt":
+        driver_args = ('          --cli-source dependencies/cli\n'
+                       '          --flash-dir "${{ runner.temp }}/flash"\n')
+    runner = ("${{ matrix.runner }}" if slug == "flashtnt" else
+              "${{ (github.event_name != 'pull_request' && matrix.platform == 'linux-x64' && 'dax-linux-x64') || (github.event_name != 'pull_request' && matrix.platform == 'macos-arm64' && 'studio-macos-arm64') || matrix.runner }}")
     return f"""name: {title}
 
 on:
@@ -143,12 +153,16 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: ${{{{ github.workflow }}}}-${{{{ github.ref }}}}
+  cancel-in-progress: true
+
 jobs:
   native:
     name: ${{{{ matrix.platform }}}} / Release
-    # Pushes and dispatches build Linux x64 on the dax runner and macOS arm64 on the
-    # Mac Studio; pull requests from forks must never run there, so they stay hosted.
-    runs-on: ${{{{ (github.event_name != 'pull_request' && matrix.platform == 'linux-x64' && 'dax-linux-x64') || (github.event_name != 'pull_request' && matrix.platform == 'macos-arm64' && 'studio-macos-arm64') || matrix.runner }}}}
+    # Existing packages use registered private runners for trusted builds.
+    # Fork PRs and new packages without registered runners use hosted machines.
+    runs-on: {runner}
     timeout-minutes: 120
     strategy:
       fail-fast: false
@@ -172,8 +186,8 @@ jobs:
           cache-environment: true
           cache-environment-key: {slug}-${{{{ matrix.platform }}}}
           post-cleanup: all
-{before_build}{core_download_step(core_tag, core_short)}      - name: Build, test, install, and package
-        run: >-
+{before_build}{sdk_download_step("core", core_tag, core_short)}      - name: Build, test, install, and package
+{build_env}        run: >-
           micromamba run -n {env_name} python tools/ci/run.py
           --platform ${{{{ matrix.platform }}}} --jobs ${{{{ (startsWith(runner.name, 'dax') && 24) || (startsWith(runner.name, 'studio') && 8) || matrix.jobs }}}}
           --core-dir "${{{{ runner.temp }}}}/core"
@@ -382,13 +396,18 @@ def scaffold(name: str, lock: dict, refs: dict) -> None:
     if kind == "desktop":
         topp_tag = release_tag(ROOT / lock["topp"]["path"], refs["topp"], "topp-v")
         topp_short = refs["topp"][:12]
+    if name == "flashtnt":
+        refs = {**refs, "flash_tag": release_tag(ROOT / lock["flash"]["path"], refs["flash"], "flash-v")}
     workflow = native_job(name, title, refs, kind, env_name, topp_tag, topp_short)
-    if kind == "product":
+    with_cask = kind == "product" and name != "flashtnt"
+    if with_cask:
         workflow += cask_payload_job(name, refs["cli"])
     (workflows / f"{name}.yml").write_text(workflow, encoding="utf-8")
     (workflows / "release.yml").write_text(
-        release_workflow(name, title, f"{name}.yml", kind == "product", NOTES[kind]), encoding="utf-8")
-    if kind == "product":
+        release_workflow(name, title, f"{name}.yml", with_cask,
+                         NOTES[kind] if name != "flashtnt" else
+                         "Experimental FLASHTnT binaries tested against the exact Core, CLI and FLASH SDK pins. Native dependencies must be installed separately; this is not a self-contained runtime."), encoding="utf-8")
+    if with_cask:
         tools = [t["name"] for t in json.loads((source / "tools.json").read_text())["tools"]]
         (workflows / "homebrew-cask.yml").write_text(cask_workflow(f"openms4-{name}", repo, tools), encoding="utf-8")
         if name not in KEEP_DRIVERS:

@@ -19,7 +19,7 @@ python tools/build_packages.py \
 
 The runner checks clean source revisions, copies Core into its own installation,
 builds CLI and fixture packages before their consumers, and builds the ProSE and
-FLASH providers before full pyOpenMS. It runs every registered package CTest and
+FLASH providers before full pyOpenMS, and FLASH before FLASHTnT. It runs every registered package CTest and
 the installed console numerical regression suite. Tests use the SDK's build
 configuration and recorded MSVC runtime. Windows Python tests explicitly register
 the dependency DLL directory, as required by Python 3.8 and newer. Compilation jobs are shared across the requested workers; choose
@@ -36,7 +36,8 @@ instrument readers require an SDK built with those features and external data.
 FLASHApp is a Python/container consumer and has separate acceptance steps in its
 `experimental/README.md`. Its source lock follows the current graph. A lock update
 alone does not establish a deployable wheel/runtime bundle or qualify the
-externally sourced FLASHTnT workflow.
+FLASHTnT workflow. FLASHTnT now has its own installed-SDK repository and follows
+the same native build order; it is no longer built through its upstream monorepo.
 
 After the native build, use a Python environment with FLASHApp's hash-pinned
 requirements to exercise the actual installed deconvolution workflow:
@@ -54,4 +55,8 @@ propagation and process-record cleanup. The work directory must not exist; outpu
 and `result.json` remain there for inspection. The immediate FLASH and FLASHApp
 source checkouts and installed test-data fixtures are test inputs. This is a local
 application check; it does not exercise a browser, Redis worker, container image,
-or the separately required FLASHTnT tagging workflow.
+or the FLASHTnT tagging workflow. The app's
+`experimental/accept_flashtnt.py` exercises native tagging and its result parsers
+using the bundled AQPZ reference. Its `--raw-workflow` option also runs the
+complete FLASHDeconv-to-FLASHTnT workflow; see the app's acceptance report for
+the exact tested SDK revisions and remaining deployment gates.

@@ -53,3 +53,7 @@
 [submodule "packages/parquet-diff"]
 	path = packages/parquet-diff
 	url = https://github.com/okohlbacher/OpenMS4-parquet-diff.git
+[submodule "packages/flashtnt"]
+	path = packages/flashtnt
+	url = https://github.com/okohlbacher/OpenMS4-flashtnt.git
+	branch = codex/package-split

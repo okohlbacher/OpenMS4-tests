@@ -9,7 +9,7 @@ ROOT=Path(__file__).resolve().parents[1]
 class PackagePins(unittest.TestCase):
     def test_every_submodule_matches_parent_lock(self):
         lock=json.loads((ROOT/'packages.lock.json').read_text())['packages']
-        self.assertEqual(len(lock),17)
+        self.assertEqual(len(lock),18)
         for name,entry in lock.items():
             head=subprocess.run(['git','-C',str(ROOT/entry['path']),'rev-parse','HEAD'],text=True,capture_output=True,check=True).stdout.strip()
             self.assertEqual(head,entry['source_revision'],name)
@@ -17,7 +17,7 @@ class PackagePins(unittest.TestCase):
             self.assertEqual(index[:2],['160000',head],name)
     def test_consumers_pin_the_selected_dependency_commits(self):
         packages=json.loads((ROOT/'packages.lock.json').read_text())['packages']
-        names={'OpenMS':'core','OpenMSCLI':'cli','OpenMSTestData':'test-data','pyopenms':'pyopenms','OpenMSFLASH':'flash','OpenMSTOPP':'topp','OpenMSProSE':'prose'}
+        names={'OpenMS':'core','OpenMSCLI':'cli','OpenMSTestData':'test-data','pyopenms':'pyopenms','OpenMSFLASH':'flash','OpenMSTOPP':'topp','OpenMSProSE':'prose','FLASHTnT':'flashtnt'}
         for name in packages:
             path=ROOT/packages[name]['path']/'dependencies.lock.json'
             if not path.exists():

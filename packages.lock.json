@@ -39,17 +39,19 @@
     "desktop": {
       "path": "packages/desktop",
       "repository": "https://github.com/okohlbacher/OpenMS4-desktop",
-      "source_revision": "717d0c63da634645d189465f7c800153239d64a5"
+      "source_revision": "15c7a63095610c26a23785403e028ae9a9260bf4"
     },
     "pyopenms": {
       "path": "packages/pyopenms",
       "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms",
-      "source_revision": "52f8726850cc90b52fa21892de82963ae6b5ad72"
+      "source_revision": "b7edae7a89d902727e0cd50ff488fefc60e011e0"
     },
     "flashapp": {
       "path": "packages/flashapp",
       "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
-      "source_revision": "38aa6a6a769234fbd74d9dcc41af8cee65f1344e"
+      "source_revision": "65e6382075a2559db9427833df47182c1a6b432a",
+      "frozen_dependencies": true,
+      "qualification_note": "Uses the qualified pyOpenMS ci.2 wheel while the ci.3 Windows build and wheel release complete; Core/CLI/TOPP/FLASH/FLASHTnT pins match the native graph."
     },
     "nuxl": {
       "path": "packages/nuxl",
@@ -85,6 +87,11 @@
       "path": "packages/proteomics-lfq",
       "repository": "https://github.com/okohlbacher/OpenMS4-proteomics-lfq",
       "source_revision": "cf12fe9163e3b244cd8dd977bc4f18a86dcf087c"
+    },
+    "flashtnt": {
+      "path": "packages/flashtnt",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flashtnt",
+      "source_revision": "250debbc26565b51ef861ccaa8132b9e11b4f8d9"
     },
     "parquet-diff": {
       "path": "packages/parquet-diff",

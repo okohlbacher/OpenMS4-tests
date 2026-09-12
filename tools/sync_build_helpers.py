@@ -5,9 +5,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 COPIES = {
-    'OpenMS4Dependencies.cmake': ('cli', 'test-data', 'topp', 'openswath', 'flash', 'desktop', 'pyopenms', 'nuxl', 'prose', 'nase', 'comet', 'mascot', 'database-suitability', 'proteomics-lfq', 'parquet-diff'),
-    'OpenMS4Tools.cmake': ('topp', 'openswath', 'flash', 'nuxl', 'prose', 'nase', 'comet', 'mascot', 'database-suitability', 'proteomics-lfq', 'parquet-diff'),
-    'CheckToolMetadata.py': ('topp', 'openswath', 'flash', 'nuxl', 'prose', 'nase', 'comet', 'mascot', 'database-suitability', 'proteomics-lfq', 'parquet-diff'),
+    'OpenMS4Dependencies.cmake': ('cli', 'test-data', 'topp', 'openswath', 'flash', 'desktop', 'pyopenms', 'nuxl', 'prose', 'nase', 'comet', 'mascot', 'database-suitability', 'proteomics-lfq', 'parquet-diff', 'flashtnt'),
+    'OpenMS4Tools.cmake': ('topp', 'openswath', 'flash', 'nuxl', 'prose', 'nase', 'comet', 'mascot', 'database-suitability', 'proteomics-lfq', 'parquet-diff', 'flashtnt'),
+    'CheckToolMetadata.py': ('topp', 'openswath', 'flash', 'nuxl', 'prose', 'nase', 'comet', 'mascot', 'database-suitability', 'proteomics-lfq', 'parquet-diff', 'flashtnt'),
 }
 
 

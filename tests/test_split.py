@@ -22,7 +22,12 @@ class SourceOwnership(unittest.TestCase):
                 name = entry['name']; names.append(name)
                 self.assertTrue((PACKAGES/package/'src'/f'{name}.cpp').is_file(), name)
         self.assertEqual(len(names), len(set(names)))
-        self.assertEqual(sorted(names), sorted(inventory['cli_tools']))
+        # FLASHTnT is an additional external port, absent from the original
+        # monorepo inventory. Preserve the baseline rather than rewriting it.
+        self.assertEqual(sorted(names), sorted([*inventory['cli_tools'], 'FLASHTnT']))
+        provenance = json.loads((PACKAGES/'flashtnt/source-provenance.json').read_text())
+        self.assertEqual(provenance['source_revision'], '3f508829ad81c91354d397966f28d428e29e5329')
+        self.assertIn('src/FLASHTnT.cpp', [entry['path'] for entry in provenance['files']])
 
     def test_textually_included_tool_helpers_are_present(self):
         for source in (PACKAGES/'topp/src').glob('*.cpp'):
