@@ -96,7 +96,7 @@ def native_job(slug: str, title: str, refs: dict, kind: str, env_name: str, topp
     env_extra = "      QT_QPA_PLATFORM: 'minimal'\n" if kind == "desktop" else ""
     before_build = ""
     if kind == "pyopenms":
-        before_build += """      - name: Install the exact nanobind the bindings require
+        before_build += f"""      - name: Install the exact nanobind the bindings require
         shell: bash
         run: |
           # The bindings ask for nanobind 2.10.0 EXACT. conda-forge went from
