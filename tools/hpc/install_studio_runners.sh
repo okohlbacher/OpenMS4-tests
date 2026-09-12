@@ -25,6 +25,10 @@ while read -r repo token; do
   mkdir -p "$dir"
   if [ ! -f "$dir/config.sh" ]; then tar -xzf "actions-runner-$VERSION.tar.gz" -C "$dir"; fi
   echo "$ROOT/bin" > "$dir/.path"      # prepended to PATH of every job
+  # Own HOME per runner: setup-micromamba keeps its root under ~ and concurrent
+  # jobs sharing one would race ("Non-conda folder exists at prefix").
+  mkdir -p "$dir/home"
+  printf 'HOME=%s\n' "$dir/home" > "$dir/.env"
   ( cd "$dir" && ./config.sh --unattended --replace --url "https://github.com/okohlbacher/$repo" \
       --token "$token" --name "studio-$repo" --labels studio-macos-arm64 --work _work --disableupdate )
   ( cd "$dir" && ./svc.sh install >/dev/null && ./svc.sh start >/dev/null )

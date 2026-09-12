@@ -23,7 +23,10 @@ while read -r repo token; do
   mkdir -p "$dir"
   if [ ! -f "$dir/config.sh" ]; then tar -xzf "actions-runner-$VERSION.tar.gz" -C "$dir"; fi
   echo "$ROOT/bin" > "$dir/.path"      # prepended to PATH of every job
-  printf 'TMPDIR=%s\nDOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1\n' "$ROOT/tmp" > "$dir/.env"
+  # Every runner gets its own HOME: setup-micromamba keeps its root under ~ and
+  # concurrent jobs sharing one would race ("Non-conda folder exists at prefix").
+  mkdir -p "$dir/home"
+  printf 'HOME=%s\nTMPDIR=%s\nDOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1\n' "$dir/home" "$ROOT/tmp" > "$dir/.env"
   ( cd "$dir" && ./config.sh --unattended --replace --url "https://github.com/okohlbacher/$repo" \
       --token "$token" --name "dax-$repo" --labels dax-linux-x64 --work _work --disableupdate )
   ( cd "$dir" && nohup ./run.sh > runner.log 2>&1 & )
