@@ -146,9 +146,9 @@ permissions:
 jobs:
   native:
     name: ${{{{ matrix.platform }}}} / Release
-    # Pushes and dispatches build Linux x64 on the dax runner and macOS arm64 on the
-    # Mac Studio; pull requests from forks must never run there, so they stay hosted.
-    runs-on: ${{{{ (github.event_name != 'pull_request' && matrix.platform == 'linux-x64' && 'dax-linux-x64') || (github.event_name != 'pull_request' && matrix.platform == 'macos-arm64' && 'studio-macos-arm64') || matrix.runner }}}}
+    # Pushes and dispatches build Linux x64 on the self-hosted dax runner; pull
+    # requests from forks must never run there, so they stay on hosted runners.
+    runs-on: ${{{{ (github.event_name != 'pull_request' && matrix.platform == 'linux-x64' && 'dax-linux-x64') || matrix.runner }}}}
     timeout-minutes: 120
     strategy:
       fail-fast: false
@@ -174,7 +174,7 @@ jobs:
 {before_build}{core_download_step(core_tag, core_short)}      - name: Build, test, install, and package
         run: >-
           micromamba run -n {env_name} python tools/ci/run.py
-          --platform ${{{{ matrix.platform }}}} --jobs ${{{{ (startsWith(runner.name, 'dax') && 24) || (startsWith(runner.name, 'studio') && 12) || matrix.jobs }}}}
+          --platform ${{{{ matrix.platform }}}} --jobs ${{{{ startsWith(runner.name, 'dax') && 24 || matrix.jobs }}}}
           --core-dir "${{{{ runner.temp }}}}/core"
 {driver_args}          --work-dir "${{{{ runner.temp }}}}/{slug}"
       - name: Upload tested package

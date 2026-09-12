@@ -30,6 +30,7 @@ while read -r repo token; do
       --token "$token" --name "dax-$repo" --labels dax-linux-x64 --work _work --disableupdate )
   # config.sh writes .path from the configuring shell's PATH; jobs need gh in front of it.
   sed -i "1s|^|$ROOT/bin:|" "$dir/.path"
+  ln -sfn "$ROOT/bin/gh" "$HOME/.local/bin/gh"   # the PATH jobs inherit starts with ~/.local/bin
   ( cd "$dir" && nohup ./run.sh > runner.log 2>&1 & )
   echo "started dax-$repo"
 done
