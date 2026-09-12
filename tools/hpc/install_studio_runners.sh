@@ -29,6 +29,11 @@ while read -r repo token; do
   mkdir -p "$dir/home"
   # .env is applied by the runner itself; a launchd service inherits almost no PATH.
   printf 'HOME=%s\nPATH=%s/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin\n' "$dir/home" "$ROOT" > "$dir/.env"
+  # setup-micromamba refuses to overwrite its binary and root from an earlier job,
+  # so a job-start hook wipes them; the environment is restored from the cache.
+  printf '#!/bin/bash\nrm -rf "$HOME/micromamba-bin" "$HOME/micromamba"\n' > "$dir/pre-job.sh"
+  chmod +x "$dir/pre-job.sh"
+  echo "ACTIONS_RUNNER_HOOK_JOB_STARTED=$dir/pre-job.sh" >> "$dir/.env"
   ( cd "$dir" && ./config.sh --unattended --replace --url "https://github.com/okohlbacher/$repo" \
       --token "$token" --name "studio-$repo" --labels studio-macos-arm64 --work _work --disableupdate )
   # config.sh writes .path from the configuring shell's PATH; jobs need gh in front of it.

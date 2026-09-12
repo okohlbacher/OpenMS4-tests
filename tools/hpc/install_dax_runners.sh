@@ -26,6 +26,11 @@ while read -r repo token; do
   # concurrent jobs sharing one would race ("Non-conda folder exists at prefix").
   mkdir -p "$dir/home"
   printf 'HOME=%s\nTMPDIR=%s\nDOTNET_SYSTEM_GLOBALIZATION_INVARIANT=1\n' "$dir/home" "$ROOT/tmp" > "$dir/.env"
+  # setup-micromamba refuses to overwrite its binary and root from an earlier job,
+  # so a job-start hook wipes them; the environment is restored from the cache.
+  printf '#!/bin/bash\nrm -rf "$HOME/micromamba-bin" "$HOME/micromamba"\n' > "$dir/pre-job.sh"
+  chmod +x "$dir/pre-job.sh"
+  echo "ACTIONS_RUNNER_HOOK_JOB_STARTED=$dir/pre-job.sh" >> "$dir/.env"
   ( cd "$dir" && ./config.sh --unattended --replace --url "https://github.com/okohlbacher/$repo" \
       --token "$token" --name "dax-$repo" --labels dax-linux-x64 --work _work --disableupdate )
   # config.sh writes .path from the configuring shell's PATH; jobs need gh in front of it.
