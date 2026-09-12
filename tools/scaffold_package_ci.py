@@ -288,7 +288,7 @@ jobs:
 NOTES = {
     "product": "Tested packages for Linux x64/arm64, macOS x64/arm64 and Windows x64, plus Homebrew cask payloads for both macOS architectures. Each payload carries the CLI runtime and this package's tool manifest, and requires the pinned openms4-core SDK.",
     "cli": "Each archive installs the OpenMS::CLI target that every console product links, and requires the pinned openms4-core SDK.",
-    "desktop": "Each archive carries the GUI SDK, TOPPView, ImageCreator, INIFileEditor, TOPPAS and ExecutePipeline, and requires the pinned openms4-core SDK and a matching Qt 6. Interactive and WebEngine tests stay disabled in this headless build.",
+    "desktop": "Each archive carries the GUI SDK, TOPPView, ImageCreator, INIFileEditor, TOPPAS and ExecutePipeline, and requires the pinned openms4-core SDK and a matching Qt 6.7. Interactive tests stay disabled in this headless build.",
     "pyopenms": "Each archive is the installed module tree built against the pinned Core SDK and the ProSE and FLASH backends, with generated stubs. These are not repaired, redistributable wheels; wheel building and repair remain a separate pipeline.",
 }
 
