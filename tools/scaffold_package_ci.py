@@ -267,14 +267,20 @@ jobs:
         run: |
           set -euo pipefail
           revision=$(git rev-parse HEAD)
-          run_id=$(gh run list --workflow {workflow_file} --commit "$revision" --event push \\
-            --status success --limit 1 --json databaseId --jq '.[0].databaseId // empty')
+          # Ask the API directly: 'gh run list --status success' on the runner image does not
+          # match a run whose first attempt failed, which would refuse a release whose CI is green.
+          run_id=$(gh api \\
+            "repos/${{{{ github.repository }}}}/actions/workflows/{workflow_file}/runs?head_sha=$revision&event=push&status=success&per_page=1" \\
+            --jq '.workflow_runs[0].id // empty')
           if [ -z "$run_id" ]; then
             echo "::error::No successful branch CI run exists for $revision"
             exit 1
           fi
           gh run download "$run_id" {patterns} --dir artifacts
-          test "$(find artifacts -name '*.sha256' | wc -l)" -eq {count}
+          # One package archive per platform; pyOpenMS adds a repaired wheel beside it, so
+          # count the archives and verify every checksum the artifacts carry.
+          test "$(find artifacts -name '*.tar.gz' | wc -l)" -eq {count}
+          test "$(find artifacts -name '*.sha256' | wc -l)" -ge {count}
           find artifacts -name '*.sha256' -print0 | while IFS= read -r -d '' checksum; do
             sed -i 's/\\r$//' "$checksum"
             (cd "$(dirname "$checksum")" && shasum -a 256 -c "$(basename "$checksum")")
@@ -292,7 +298,7 @@ NOTES = {
     "product": "Tested packages for Linux x64/arm64, macOS x64/arm64 and Windows x64, plus Homebrew cask payloads for both macOS architectures. Each payload carries the CLI runtime and this package's tool manifest, and requires the pinned openms4-core SDK.",
     "cli": "Each archive installs the OpenMS::CLI target that every console product links, and requires the pinned openms4-core SDK.",
     "desktop": "Each archive carries the GUI SDK, TOPPView, ImageCreator, INIFileEditor, TOPPAS and ExecutePipeline, and requires the pinned openms4-core SDK and a matching Qt 6.7. Interactive tests stay disabled in this headless build.",
-    "pyopenms": "Each archive is the installed module tree built against the pinned Core SDK and the ProSE and FLASH backends, with generated stubs. These are not repaired, redistributable wheels; wheel building and repair remain a separate pipeline.",
+    "pyopenms": "Each archive is the installed module tree built against the pinned Core SDK and the ProSE and FLASH backends, with generated stubs. Beside it is the repaired wheel for that platform, built through the PEP 517 backend and tested from a clean environment on the CI interpreter (CPython 3.12).",
 }
 
 
