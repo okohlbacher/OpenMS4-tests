@@ -44,6 +44,8 @@ ROLES = {
     "flashapp": "Streamlit application and Vue component",
 }
 PARENT = "https://github.com/okohlbacher/OpenMS4-tests"
+# The integration branch that carries these documents; the repository default branch does not.
+PARENT_BRANCH = "codex/package-split"
 
 
 def load_graph() -> tuple[dict, dict, dict]:
@@ -88,8 +90,8 @@ def section(slug: str, lock: dict, dependencies: dict, consumers: dict) -> str:
 The eighteen repositories are assembled by the parent repository
 [OpenMS4-tests]({PARENT}), which holds the submodule pins (`packages.lock.json`), the
 dependency-order build runner and the contract tests that keep the graph consistent.
-[`docs/project-state.md`]({PARENT}/blob/main/docs/project-state.md) is the current state
-of the whole project; [`docs/build-split-packages.md`]({PARENT}/blob/main/docs/build-split-packages.md)
+[`docs/project-state.md`]({PARENT}/blob/{PARENT_BRANCH}/docs/project-state.md) is the current state
+of the whole project; [`docs/build-split-packages.md`]({PARENT}/blob/{PARENT_BRANCH}/docs/build-split-packages.md)
 reproduces the installed-SDK build.
 {END}"""
 
