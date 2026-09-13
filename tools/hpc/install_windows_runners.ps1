@@ -29,15 +29,22 @@ while ($line = [Console]::In.ReadLine()) {
   # HOME; setup-micromamba refuses to overwrite its own root, so the previous job's is wiped
   # before the next one starts. Git's usr/bin carries the cygpath that action needs.
   New-Item -ItemType Directory -Force -Path (Join-Path $dir 'home') | Out-Null
-  Set-Content -Path (Join-Path $dir 'pre-job.ps1') -Encoding ASCII -Value @"
-Remove-Item -Recurse -Force -ErrorAction SilentlyContinue "$dir\home\micromamba-bin", "$dir\home\micromamba"
+  # A .js hook, run by the runner's own node: the runner accepts only .sh, .ps1 and .js,
+  # and it dot-sources a .ps1, which this machine's execution policy refuses to load.
+  $cleanupPaths = @((Join-Path $dir 'home\micromamba-bin'), (Join-Path $dir 'home\micromamba')) | ConvertTo-Json -Compress
+  Set-Content -Path (Join-Path $dir 'pre-job.js') -Encoding ASCII -Value @"
+const fs = require('fs')
+for (const p of $cleanupPaths) {
+  fs.rmSync(p, { recursive: true, force: true })
+}
 "@
   Set-Content -Path (Join-Path $dir 'start.cmd') -Encoding ASCII -Value @"
 @echo off
 set "HOME=$dir\home"
 set "USERPROFILE=$dir\home"
 set "PATH=C:\Program Files\Git\usr\bin;%PATH%"
-set "ACTIONS_RUNNER_HOOK_JOB_STARTED=$dir\pre-job.ps1"
+set "PSExecutionPolicyPreference=Bypass"
+set "ACTIONS_RUNNER_HOOK_JOB_STARTED=$dir\pre-job.js"
 cd /d "$dir"
 call run.cmd >> "$dir\runner.log" 2>&1
 "@
