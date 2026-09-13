@@ -1,0 +1,71 @@
+{
+  "test_source_revision": "93eb47cb0575426dccba1067f51c1c9d8fb4163d",
+  "test_source_sha256": "4c2b11588b5368c63234bf41f8c22cef306e8e1eb923fb462483c6ac627316cf",
+  "test_object_sha256": "518188baebe012b74282485045aa3aaef4bd91d560ba65a128497e9c7655f556",
+  "notes": [
+    "Compile new committed test once with old709 compiler/includes, link identical test object to both unchanged backend archives.",
+    "Explicit rpath-link supplies existing conda dependencies to linker; first exploratory link lacked that search path and did not produce executable."
+  ],
+  "runs": [
+    {
+      "name": "old709",
+      "backend_revision": "709de5e2e79cbdef0cbf563b75b605795b401b4b",
+      "backend_sha256": "62b1309a8ec8420f913dd6ab1f45d0c0b4749ff248af1f66c9f552052c73b031",
+      "returncode": -6,
+      "output": "\n---------------------------------------------------\nFATAL: uncaught exception!\n---------------------------------------------------\nlast entry in the exception handler: \nexception of type InvalidValue occurred in line 139, function static std::string OpenMS::FLASHTnTFile::generateProFormaString_(const std::string&, int, int, const std::vector<double>&, const std::vector<int>&, const std::vector<int>&, const std::vector<std::__cxx11::basic_string<char> >&) of /scratch/kohlbach/openms4-flashtnt-fixed-709de5e2e79c/source/source/FORMAT/FLASHTnTFile.cpp\nerror message: the value 'PEPTIDE' was used but is not valid; Inconsistent FLASHTnT modification records\n---------------------------------------------------\n",
+      "link_command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/x86_64-conda-linux-gnu-g++",
+        "-O3",
+        "-DNDEBUG",
+        "/scratch/kohlbach/openms4-flashtnt-pet-negative-control/port_contract.o",
+        "-o",
+        "/scratch/kohlbach/openms4-flashtnt-pet-negative-control/old709",
+        "-Wl,-rpath,/scratch/kohlbach/openms4-flashtnt-fixed-709de5e2e79c/cli-provider/lib:/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/lib",
+        "/scratch/kohlbach/openms4-flashtnt-fixed-709de5e2e79c/release/libflashtnt_backend.a",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/lib/libOpenMS_FLASH.so.1.0.0",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/lib/libOpenMS.so",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/lib/libOpenSwathAlgo.so",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libcurl.so",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libcurl.so",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libboost_regex.so.1.89.0",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libparquet.so.2300.1.0",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libarrow.so.2300.1.0",
+        "-ldl",
+        "-lrt",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/gcc/x86_64-conda-linux-gnu/14.4.0/libgomp.so",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/x86_64-conda-linux-gnu/sysroot/lib/libpthread.a",
+        "-Wl,-rpath-link,/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib"
+      ]
+    },
+    {
+      "name": "fixed93",
+      "backend_revision": "93eb47cb0575426dccba1067f51c1c9d8fb4163d",
+      "backend_sha256": "32c4897cc7c00a14537e46a04b0cb28da98402663d4e89df57ac957668156dcd",
+      "returncode": 0,
+      "output": "Progress of 'Finding sequence tags ...':\n  Progress of 'Finding sequence tags ...':\n",
+      "link_command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/x86_64-conda-linux-gnu-g++",
+        "-O3",
+        "-DNDEBUG",
+        "/scratch/kohlbach/openms4-flashtnt-pet-negative-control/port_contract.o",
+        "-o",
+        "/scratch/kohlbach/openms4-flashtnt-pet-negative-control/fixed93",
+        "-Wl,-rpath,/scratch/kohlbach/openms4-flashtnt-fixed-709de5e2e79c/cli-provider/lib:/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/lib",
+        "/scratch/kohlbach/openms4-flashtnt-fixed-93eb47cb0575/release/libflashtnt_backend.a",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/lib/libOpenMS_FLASH.so.1.0.0",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/lib/libOpenMS.so",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/lib/libOpenSwathAlgo.so",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libcurl.so",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libcurl.so",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libboost_regex.so.1.89.0",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libparquet.so.2300.1.0",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/libarrow.so.2300.1.0",
+        "-ldl",
+        "-lrt",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib/gcc/x86_64-conda-linux-gnu/14.4.0/libgomp.so",
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/x86_64-conda-linux-gnu/sysroot/lib/libpthread.a",
+        "-Wl,-rpath-link,/scratch/kohlbach/openms4-5d1e239-20260910/deps/lib"
+      ]
+    }
+  ]
+}

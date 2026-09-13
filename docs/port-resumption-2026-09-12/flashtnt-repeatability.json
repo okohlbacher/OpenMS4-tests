@@ -1,0 +1,415 @@
+{
+  "source_revision": "250debbc26565b51ef861ccaa8132b9e11b4f8d9",
+  "executable_sha256": "f43a11671104a33b22d79b20ec5e396e5b19621d2226ce3ead2bfbb9e3291af6",
+  "fixture_sha256": {
+    "out_deconv.mzML": "5b0c0381ef5070ddab4eae39591cadca35895f069d6a8fe395cd6c7b245a8825",
+    "database.fasta": "85fe7404e3d59da76d46d4a8611a0814f05df451a0d21e8bfdb96fcbd440bd2d",
+    "FTnT_parameters.json": "9a07437dc8e63d2bdba549649c5fbdf29a4c1320b5f19b7ae3460fe8b6e620ae"
+  },
+  "host": "IBMI dax",
+  "concurrent_runs": 3,
+  "runs": [
+    {
+      "threads": 1,
+      "repeat": 1,
+      "wall_seconds": 13.553929558955133,
+      "command": [
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/bin/FLASHTnT",
+        "-in",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/out_deconv.mzML",
+        "-fasta",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/database.fasta",
+        "-threads",
+        "1",
+        "-out_tag",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t1-r1/tags.tsv",
+        "-out_pro",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t1-r1/protein.tsv",
+        "-out_prsm",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t1-r1/prsms.tsv",
+        "-ion_type",
+        "b",
+        "c",
+        "y",
+        "z",
+        "-tag:min_length",
+        "4"
+      ],
+      "tables": {
+        "tags.tsv": {
+          "rows": 622,
+          "byte_sha256": "c819477662c62da090943775d79c55ff337a5fb05be25a44dca02d6ccb3cc3df",
+          "row_order_independent_sha256": "cb98f8c0be40e7c2e8451c0cf746c2834d1fb9d5bf800e1d37ba62352e4fa35d"
+        },
+        "protein.tsv": {
+          "rows": 10,
+          "byte_sha256": "bd0d159d8c86a301a61831fee05e2e17077355532c40ffe09a9d1b90a31ff139",
+          "row_order_independent_sha256": "afdf5d9d120c2e65cfd1d687de5b40e29d82625af10f3478a462d1a517b58d0b"
+        },
+        "prsms.tsv": {
+          "rows": 10,
+          "byte_sha256": "9ccaeee210234427537793447db1b8aa62ce7650885d17b9574039b5ef205efc",
+          "row_order_independent_sha256": "9a57ef0991e546b4ed436f8c6fe038f0c8343baf22ba684fd4d71144e3400213"
+        }
+      }
+    },
+    {
+      "threads": 1,
+      "repeat": 2,
+      "wall_seconds": 13.503949447534978,
+      "command": [
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/bin/FLASHTnT",
+        "-in",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/out_deconv.mzML",
+        "-fasta",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/database.fasta",
+        "-threads",
+        "1",
+        "-out_tag",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t1-r2/tags.tsv",
+        "-out_pro",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t1-r2/protein.tsv",
+        "-out_prsm",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t1-r2/prsms.tsv",
+        "-ion_type",
+        "b",
+        "c",
+        "y",
+        "z",
+        "-tag:min_length",
+        "4"
+      ],
+      "tables": {
+        "tags.tsv": {
+          "rows": 622,
+          "byte_sha256": "c819477662c62da090943775d79c55ff337a5fb05be25a44dca02d6ccb3cc3df",
+          "row_order_independent_sha256": "cb98f8c0be40e7c2e8451c0cf746c2834d1fb9d5bf800e1d37ba62352e4fa35d"
+        },
+        "protein.tsv": {
+          "rows": 10,
+          "byte_sha256": "bd0d159d8c86a301a61831fee05e2e17077355532c40ffe09a9d1b90a31ff139",
+          "row_order_independent_sha256": "afdf5d9d120c2e65cfd1d687de5b40e29d82625af10f3478a462d1a517b58d0b"
+        },
+        "prsms.tsv": {
+          "rows": 10,
+          "byte_sha256": "9ccaeee210234427537793447db1b8aa62ce7650885d17b9574039b5ef205efc",
+          "row_order_independent_sha256": "9a57ef0991e546b4ed436f8c6fe038f0c8343baf22ba684fd4d71144e3400213"
+        }
+      }
+    },
+    {
+      "threads": 1,
+      "repeat": 3,
+      "wall_seconds": 13.503156701102853,
+      "command": [
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/bin/FLASHTnT",
+        "-in",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/out_deconv.mzML",
+        "-fasta",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/database.fasta",
+        "-threads",
+        "1",
+        "-out_tag",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t1-r3/tags.tsv",
+        "-out_pro",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t1-r3/protein.tsv",
+        "-out_prsm",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t1-r3/prsms.tsv",
+        "-ion_type",
+        "b",
+        "c",
+        "y",
+        "z",
+        "-tag:min_length",
+        "4"
+      ],
+      "tables": {
+        "tags.tsv": {
+          "rows": 622,
+          "byte_sha256": "c819477662c62da090943775d79c55ff337a5fb05be25a44dca02d6ccb3cc3df",
+          "row_order_independent_sha256": "cb98f8c0be40e7c2e8451c0cf746c2834d1fb9d5bf800e1d37ba62352e4fa35d"
+        },
+        "protein.tsv": {
+          "rows": 10,
+          "byte_sha256": "bd0d159d8c86a301a61831fee05e2e17077355532c40ffe09a9d1b90a31ff139",
+          "row_order_independent_sha256": "afdf5d9d120c2e65cfd1d687de5b40e29d82625af10f3478a462d1a517b58d0b"
+        },
+        "prsms.tsv": {
+          "rows": 10,
+          "byte_sha256": "9ccaeee210234427537793447db1b8aa62ce7650885d17b9574039b5ef205efc",
+          "row_order_independent_sha256": "9a57ef0991e546b4ed436f8c6fe038f0c8343baf22ba684fd4d71144e3400213"
+        }
+      }
+    },
+    {
+      "threads": 2,
+      "repeat": 1,
+      "wall_seconds": 10.142921508289874,
+      "command": [
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/bin/FLASHTnT",
+        "-in",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/out_deconv.mzML",
+        "-fasta",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/database.fasta",
+        "-threads",
+        "2",
+        "-out_tag",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t2-r1/tags.tsv",
+        "-out_pro",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t2-r1/protein.tsv",
+        "-out_prsm",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t2-r1/prsms.tsv",
+        "-ion_type",
+        "b",
+        "c",
+        "y",
+        "z",
+        "-tag:min_length",
+        "4"
+      ],
+      "tables": {
+        "tags.tsv": {
+          "rows": 622,
+          "byte_sha256": "c819477662c62da090943775d79c55ff337a5fb05be25a44dca02d6ccb3cc3df",
+          "row_order_independent_sha256": "cb98f8c0be40e7c2e8451c0cf746c2834d1fb9d5bf800e1d37ba62352e4fa35d"
+        },
+        "protein.tsv": {
+          "rows": 10,
+          "byte_sha256": "bd0d159d8c86a301a61831fee05e2e17077355532c40ffe09a9d1b90a31ff139",
+          "row_order_independent_sha256": "afdf5d9d120c2e65cfd1d687de5b40e29d82625af10f3478a462d1a517b58d0b"
+        },
+        "prsms.tsv": {
+          "rows": 10,
+          "byte_sha256": "9ccaeee210234427537793447db1b8aa62ce7650885d17b9574039b5ef205efc",
+          "row_order_independent_sha256": "9a57ef0991e546b4ed436f8c6fe038f0c8343baf22ba684fd4d71144e3400213"
+        }
+      }
+    },
+    {
+      "threads": 2,
+      "repeat": 2,
+      "wall_seconds": 10.152411377988756,
+      "command": [
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/bin/FLASHTnT",
+        "-in",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/out_deconv.mzML",
+        "-fasta",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/database.fasta",
+        "-threads",
+        "2",
+        "-out_tag",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t2-r2/tags.tsv",
+        "-out_pro",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t2-r2/protein.tsv",
+        "-out_prsm",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t2-r2/prsms.tsv",
+        "-ion_type",
+        "b",
+        "c",
+        "y",
+        "z",
+        "-tag:min_length",
+        "4"
+      ],
+      "tables": {
+        "tags.tsv": {
+          "rows": 622,
+          "byte_sha256": "c819477662c62da090943775d79c55ff337a5fb05be25a44dca02d6ccb3cc3df",
+          "row_order_independent_sha256": "cb98f8c0be40e7c2e8451c0cf746c2834d1fb9d5bf800e1d37ba62352e4fa35d"
+        },
+        "protein.tsv": {
+          "rows": 10,
+          "byte_sha256": "bd0d159d8c86a301a61831fee05e2e17077355532c40ffe09a9d1b90a31ff139",
+          "row_order_independent_sha256": "afdf5d9d120c2e65cfd1d687de5b40e29d82625af10f3478a462d1a517b58d0b"
+        },
+        "prsms.tsv": {
+          "rows": 10,
+          "byte_sha256": "9ccaeee210234427537793447db1b8aa62ce7650885d17b9574039b5ef205efc",
+          "row_order_independent_sha256": "9a57ef0991e546b4ed436f8c6fe038f0c8343baf22ba684fd4d71144e3400213"
+        }
+      }
+    },
+    {
+      "threads": 2,
+      "repeat": 3,
+      "wall_seconds": 10.143276739865541,
+      "command": [
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/bin/FLASHTnT",
+        "-in",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/out_deconv.mzML",
+        "-fasta",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/database.fasta",
+        "-threads",
+        "2",
+        "-out_tag",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t2-r3/tags.tsv",
+        "-out_pro",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t2-r3/protein.tsv",
+        "-out_prsm",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t2-r3/prsms.tsv",
+        "-ion_type",
+        "b",
+        "c",
+        "y",
+        "z",
+        "-tag:min_length",
+        "4"
+      ],
+      "tables": {
+        "tags.tsv": {
+          "rows": 622,
+          "byte_sha256": "c819477662c62da090943775d79c55ff337a5fb05be25a44dca02d6ccb3cc3df",
+          "row_order_independent_sha256": "cb98f8c0be40e7c2e8451c0cf746c2834d1fb9d5bf800e1d37ba62352e4fa35d"
+        },
+        "protein.tsv": {
+          "rows": 10,
+          "byte_sha256": "bd0d159d8c86a301a61831fee05e2e17077355532c40ffe09a9d1b90a31ff139",
+          "row_order_independent_sha256": "afdf5d9d120c2e65cfd1d687de5b40e29d82625af10f3478a462d1a517b58d0b"
+        },
+        "prsms.tsv": {
+          "rows": 10,
+          "byte_sha256": "9ccaeee210234427537793447db1b8aa62ce7650885d17b9574039b5ef205efc",
+          "row_order_independent_sha256": "9a57ef0991e546b4ed436f8c6fe038f0c8343baf22ba684fd4d71144e3400213"
+        }
+      }
+    },
+    {
+      "threads": 8,
+      "repeat": 1,
+      "wall_seconds": 6.637498220428824,
+      "command": [
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/bin/FLASHTnT",
+        "-in",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/out_deconv.mzML",
+        "-fasta",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/database.fasta",
+        "-threads",
+        "8",
+        "-out_tag",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t8-r1/tags.tsv",
+        "-out_pro",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t8-r1/protein.tsv",
+        "-out_prsm",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t8-r1/prsms.tsv",
+        "-ion_type",
+        "b",
+        "c",
+        "y",
+        "z",
+        "-tag:min_length",
+        "4"
+      ],
+      "tables": {
+        "tags.tsv": {
+          "rows": 622,
+          "byte_sha256": "c819477662c62da090943775d79c55ff337a5fb05be25a44dca02d6ccb3cc3df",
+          "row_order_independent_sha256": "cb98f8c0be40e7c2e8451c0cf746c2834d1fb9d5bf800e1d37ba62352e4fa35d"
+        },
+        "protein.tsv": {
+          "rows": 10,
+          "byte_sha256": "bd0d159d8c86a301a61831fee05e2e17077355532c40ffe09a9d1b90a31ff139",
+          "row_order_independent_sha256": "afdf5d9d120c2e65cfd1d687de5b40e29d82625af10f3478a462d1a517b58d0b"
+        },
+        "prsms.tsv": {
+          "rows": 10,
+          "byte_sha256": "9ccaeee210234427537793447db1b8aa62ce7650885d17b9574039b5ef205efc",
+          "row_order_independent_sha256": "9a57ef0991e546b4ed436f8c6fe038f0c8343baf22ba684fd4d71144e3400213"
+        }
+      }
+    },
+    {
+      "threads": 8,
+      "repeat": 2,
+      "wall_seconds": 6.646894346922636,
+      "command": [
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/bin/FLASHTnT",
+        "-in",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/out_deconv.mzML",
+        "-fasta",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/database.fasta",
+        "-threads",
+        "8",
+        "-out_tag",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t8-r2/tags.tsv",
+        "-out_pro",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t8-r2/protein.tsv",
+        "-out_prsm",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t8-r2/prsms.tsv",
+        "-ion_type",
+        "b",
+        "c",
+        "y",
+        "z",
+        "-tag:min_length",
+        "4"
+      ],
+      "tables": {
+        "tags.tsv": {
+          "rows": 622,
+          "byte_sha256": "c819477662c62da090943775d79c55ff337a5fb05be25a44dca02d6ccb3cc3df",
+          "row_order_independent_sha256": "cb98f8c0be40e7c2e8451c0cf746c2834d1fb9d5bf800e1d37ba62352e4fa35d"
+        },
+        "protein.tsv": {
+          "rows": 10,
+          "byte_sha256": "bd0d159d8c86a301a61831fee05e2e17077355532c40ffe09a9d1b90a31ff139",
+          "row_order_independent_sha256": "afdf5d9d120c2e65cfd1d687de5b40e29d82625af10f3478a462d1a517b58d0b"
+        },
+        "prsms.tsv": {
+          "rows": 10,
+          "byte_sha256": "9ccaeee210234427537793447db1b8aa62ce7650885d17b9574039b5ef205efc",
+          "row_order_independent_sha256": "9a57ef0991e546b4ed436f8c6fe038f0c8343baf22ba684fd4d71144e3400213"
+        }
+      }
+    },
+    {
+      "threads": 8,
+      "repeat": 3,
+      "wall_seconds": 6.6827174592763186,
+      "command": [
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/bin/FLASHTnT",
+        "-in",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/out_deconv.mzML",
+        "-fasta",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/database.fasta",
+        "-threads",
+        "8",
+        "-out_tag",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t8-r3/tags.tsv",
+        "-out_pro",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t8-r3/protein.tsv",
+        "-out_prsm",
+        "/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-repeatability/t8-r3/prsms.tsv",
+        "-ion_type",
+        "b",
+        "c",
+        "y",
+        "z",
+        "-tag:min_length",
+        "4"
+      ],
+      "tables": {
+        "tags.tsv": {
+          "rows": 622,
+          "byte_sha256": "c819477662c62da090943775d79c55ff337a5fb05be25a44dca02d6ccb3cc3df",
+          "row_order_independent_sha256": "cb98f8c0be40e7c2e8451c0cf746c2834d1fb9d5bf800e1d37ba62352e4fa35d"
+        },
+        "protein.tsv": {
+          "rows": 10,
+          "byte_sha256": "bd0d159d8c86a301a61831fee05e2e17077355532c40ffe09a9d1b90a31ff139",
+          "row_order_independent_sha256": "afdf5d9d120c2e65cfd1d687de5b40e29d82625af10f3478a462d1a517b58d0b"
+        },
+        "prsms.tsv": {
+          "rows": 10,
+          "byte_sha256": "9ccaeee210234427537793447db1b8aa62ce7650885d17b9574039b5ef205efc",
+          "row_order_independent_sha256": "9a57ef0991e546b4ed436f8c6fe038f0c8343baf22ba684fd4d71144e3400213"
+        }
+      }
+    }
+  ],
+  "limits": [
+    "Run times are concurrent smoke-test observations, not scaling benchmarks.",
+    "This checks same-revision repeatability, not historical numerical parity."
+  ],
+  "identical_bytes": true,
+  "identical_rows": true
+}

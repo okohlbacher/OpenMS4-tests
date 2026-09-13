@@ -1,0 +1,173 @@
+{
+  "desktop": {
+    "status": "completed",
+    "conclusion": "success",
+    "headSha": "15c7a63095610c26a23785403e028ae9a9260bf4",
+    "url": "https://github.com/okohlbacher/OpenMS4-desktop/actions/runs/34720440935",
+    "jobs": [
+      {
+        "name": "linux-x64 / Release",
+        "status": "completed",
+        "conclusion": "success",
+        "startedAt": "2026-09-12T21:36:43Z",
+        "completedAt": "2026-09-12T21:39:33Z",
+        "url": "https://github.com/okohlbacher/OpenMS4-desktop/actions/runs/34720440935/job/103625197765"
+      },
+      {
+        "name": "windows-x64 / Release",
+        "status": "completed",
+        "conclusion": "success",
+        "startedAt": "2026-09-12T21:36:43Z",
+        "completedAt": "2026-09-12T22:02:17Z",
+        "url": "https://github.com/okohlbacher/OpenMS4-desktop/actions/runs/34720440935/job/103625197790"
+      },
+      {
+        "name": "linux-arm64 / Release",
+        "status": "completed",
+        "conclusion": "success",
+        "startedAt": "2026-09-12T21:36:46Z",
+        "completedAt": "2026-09-12T21:43:36Z",
+        "url": "https://github.com/okohlbacher/OpenMS4-desktop/actions/runs/34720440935/job/103625197794"
+      },
+      {
+        "name": "macos-arm64 / Release",
+        "status": "completed",
+        "conclusion": "success",
+        "startedAt": "2026-09-12T21:36:43Z",
+        "completedAt": "2026-09-12T21:40:18Z",
+        "url": "https://github.com/okohlbacher/OpenMS4-desktop/actions/runs/34720440935/job/103625197824"
+      },
+      {
+        "name": "macos-x64 / Release",
+        "status": "completed",
+        "conclusion": "success",
+        "startedAt": "2026-09-12T21:36:47Z",
+        "completedAt": "2026-09-12T21:50:11Z",
+        "url": "https://github.com/okohlbacher/OpenMS4-desktop/actions/runs/34720440935/job/103625197834"
+      }
+    ]
+  },
+  "flashtnt_previous": {
+    "status": "completed",
+    "conclusion": "failure",
+    "headSha": "250debbc26565b51ef861ccaa8132b9e11b4f8d9",
+    "url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34721161781",
+    "jobs": [
+      {
+        "name": "linux-arm64 / Release",
+        "status": "completed",
+        "conclusion": "failure",
+        "startedAt": "2026-09-12T21:52:33Z",
+        "completedAt": "2026-09-12T21:52:37Z",
+        "url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34721161781/job/103627211957"
+      },
+      {
+        "name": "linux-x64 / Release",
+        "status": "completed",
+        "conclusion": "failure",
+        "startedAt": "2026-09-12T21:52:33Z",
+        "completedAt": "2026-09-12T21:52:34Z",
+        "url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34721161781/job/103627212033"
+      },
+      {
+        "name": "macos-x64 / Release",
+        "status": "completed",
+        "conclusion": "failure",
+        "startedAt": "2026-09-12T21:52:33Z",
+        "completedAt": "2026-09-12T21:52:35Z",
+        "url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34721161781/job/103627212053"
+      },
+      {
+        "name": "windows-x64 / Release",
+        "status": "completed",
+        "conclusion": "failure",
+        "startedAt": "2026-09-12T21:52:33Z",
+        "completedAt": "2026-09-12T21:52:34Z",
+        "url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34721161781/job/103627212092"
+      },
+      {
+        "name": "macos-arm64 / Release",
+        "status": "completed",
+        "conclusion": "failure",
+        "startedAt": "2026-09-12T21:52:33Z",
+        "completedAt": "2026-09-12T21:52:37Z",
+        "url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34721161781/job/103627212095"
+      }
+    ],
+    "startup_blocker": "All five jobs were refused before execution because GitHub reported account payments or spending-limit configuration; no source/test failure occurred."
+  },
+  "flashtnt": {
+    "conclusion": "failure",
+    "headSha": "4ca4e73a975152f863084ddb8576d40f1241133a",
+    "jobs": [
+      {
+        "completedAt": "2026-09-12T22:26:40Z",
+        "conclusion": "failure",
+        "databaseId": 103631524069,
+        "name": "linux-x64 / Release",
+        "startedAt": "2026-09-12T22:26:38Z",
+        "status": "completed",
+        "steps": [],
+        "url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34722768283/job/103631524069",
+        "startup_annotations": [
+          "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings"
+        ]
+      },
+      {
+        "completedAt": "2026-09-12T22:26:40Z",
+        "conclusion": "failure",
+        "databaseId": 103631524096,
+        "name": "windows-x64 / Release",
+        "startedAt": "2026-09-12T22:26:38Z",
+        "status": "completed",
+        "steps": [],
+        "url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34722768283/job/103631524096",
+        "startup_annotations": [
+          "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings"
+        ]
+      },
+      {
+        "completedAt": "2026-09-12T22:26:43Z",
+        "conclusion": "failure",
+        "databaseId": 103631524112,
+        "name": "macos-arm64 / Release",
+        "startedAt": "2026-09-12T22:26:38Z",
+        "status": "completed",
+        "steps": [],
+        "url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34722768283/job/103631524112",
+        "startup_annotations": [
+          "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings"
+        ]
+      },
+      {
+        "completedAt": "2026-09-12T22:26:42Z",
+        "conclusion": "failure",
+        "databaseId": 103631524164,
+        "name": "macos-x64 / Release",
+        "startedAt": "2026-09-12T22:26:38Z",
+        "status": "completed",
+        "steps": [],
+        "url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34722768283/job/103631524164",
+        "startup_annotations": [
+          "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings"
+        ]
+      },
+      {
+        "completedAt": "2026-09-12T22:26:42Z",
+        "conclusion": "failure",
+        "databaseId": 103631524172,
+        "name": "linux-arm64 / Release",
+        "startedAt": "2026-09-12T22:26:38Z",
+        "status": "completed",
+        "steps": [],
+        "url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34722768283/job/103631524172",
+        "startup_annotations": [
+          "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings"
+        ]
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34722768283",
+    "startup_blocker": "All five jobs were refused before executing any step because GitHub reported account payments or spending-limit configuration. No final hosted compilation or test execution occurred."
+  }
+}

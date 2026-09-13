@@ -28,6 +28,13 @@ Command logs, runtimes, JUnit reports and exact package pins are in `results/`.
 The original Core installation is unchanged. Third-party libraries remain in the
 provided dependency environment; this is not a self-contained runtime bundle.
 
+For a later standalone rebuild of one product, use provider-only SDK prefixes
+(Core, CLI and any backend it needs). Reusing the combined installation after
+that same product is already installed can expose both its installed and
+build-tree tool registries; CLI deliberately rejects duplicate registrations.
+Keep the existing combined installation intact and use a separate build/test
+prefix for that rebuild.
+
 The dependency environment also needs Qt for desktop, and pyOpenMS's build/test
 requirements, including nanobind 2.10.0 and compatible PyArrow. Interactive desktop
 and optional WebEngine tests are excluded by this headless profile. Optional

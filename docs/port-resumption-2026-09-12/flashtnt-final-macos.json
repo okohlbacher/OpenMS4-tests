@@ -1,0 +1,249 @@
+{
+  "platform": "macos-arm64",
+  "os": "macOS 26.6.2 (25G83)",
+  "compiler": "Apple Clang 21.0.0 (clang-2100.1.1.101)",
+  "cmake": "3.31.8",
+  "core_revision": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+  "flash_revision": "b2c6771de7746c43ad55558d17429a15087083fb",
+  "cli_revision": "d5213ff3551a8608e4e3f930fd4a6f85a8c82f97",
+  "final_revision": "4ca4e73a975152f863084ddb8576d40f1241133a",
+  "final_ctest": {
+    "passed": 4,
+    "total": 4,
+    "wall_seconds": 5.8
+  },
+  "final_run": {
+    "positive_identity_checks_passed": true,
+    "aqpz_tags": 114,
+    "legacy_reference_matches": false,
+    "legacy_reference_comparison": {
+      "tags.tsv_rows": {
+        "actual": 698,
+        "reference": 2968,
+        "match": false
+      },
+      "protein.tsv_rows": {
+        "actual": 10,
+        "reference": 17,
+        "match": false
+      },
+      "prsms.tsv_rows": {
+        "actual": 10,
+        "reference": 17,
+        "match": false
+      },
+      "tag_sequence_counts": {
+        "match": false,
+        "extra_count": 0,
+        "missing_count": 2270
+      },
+      "Score": {
+        "actual": 559.0,
+        "reference": 505.0,
+        "match": false
+      },
+      "PrecursorMass": {
+        "actual": -1.0,
+        "reference": -1.0,
+        "match": true
+      },
+      "ProteoformMass": {
+        "actual": 24633.174543367222,
+        "reference": 24724.11885683967,
+        "match": false
+      },
+      "MatchingFragments": {
+        "actual": 79.0,
+        "reference": 69.0,
+        "match": false
+      },
+      "Coverage(%)": {
+        "actual": 32.9167,
+        "reference": 28.75,
+        "match": false
+      },
+      "StartPosition": {
+        "actual": 1.0,
+        "reference": 1.0,
+        "match": true
+      },
+      "EndPosition": {
+        "actual": 240.0,
+        "reference": 240.0,
+        "match": true
+      }
+    },
+    "wall_seconds": 5.774829499889165,
+    "command": [
+      "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/package-build/bin/FLASHTnT",
+      "-in",
+      "/Users/oliver/openms4-qualification-flashtnt-250debb/source-4ca4e73/tests/data/aqpz/out_deconv.mzML",
+      "-fasta",
+      "/Users/oliver/openms4-qualification-flashtnt-250debb/source-4ca4e73/tests/data/aqpz/database.fasta",
+      "-threads",
+      "2",
+      "-out_tag",
+      "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/package-build/aqpz-results/tags.tsv",
+      "-out_pro",
+      "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/package-build/aqpz-results/protein.tsv",
+      "-out_prsm",
+      "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/package-build/aqpz-results/prsms.tsv",
+      "-ion_type",
+      "b",
+      "c",
+      "y",
+      "z",
+      "-tag:min_length",
+      "4"
+    ]
+  },
+  "final_artifact_sha256": "a2c807e9d39678d5ba384f65439c2758dad036ef64dfe1f89bf23485a07cf91f",
+  "final_commands": [
+    {
+      "name": "driver-tests",
+      "command": [
+        "/Users/oliver/openms4-qualification-flashtnt-250debb/env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools/ci",
+        "-v"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.048
+    },
+    {
+      "name": "configure-cli",
+      "command": [
+        "cmake",
+        "-S",
+        "/Users/oliver/openms4-qualification-flashtnt-250debb/cli-source",
+        "-B",
+        "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/cli-build",
+        "-DCMAKE_INSTALL_PREFIX=/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/cli",
+        "-DCMAKE_PREFIX_PATH=/Users/oliver/openms4-qualification-flashtnt-250debb/core/OpenMS4-core-macos-arm64-Release-bc9cc12514c7;/Users/oliver/openms4-qualification-flashtnt-250debb/env",
+        "-G",
+        "Ninja",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-DOpenMP_ROOT=/Users/oliver/openms4-qualification-flashtnt-250debb/env",
+        "-DCURL_ROOT=/Users/oliver/openms4-qualification-flashtnt-250debb/env",
+        "-DCMAKE_FIND_FRAMEWORK=LAST"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.374
+    },
+    {
+      "name": "build-cli",
+      "command": [
+        "cmake",
+        "--build",
+        "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/cli-build",
+        "--config",
+        "Release",
+        "--parallel",
+        "4"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 6.283
+    },
+    {
+      "name": "install-cli",
+      "command": [
+        "cmake",
+        "--install",
+        "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/cli-build",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.027
+    },
+    {
+      "name": "configure-package",
+      "command": [
+        "cmake",
+        "-S",
+        "/Users/oliver/openms4-qualification-flashtnt-250debb/source-4ca4e73",
+        "-B",
+        "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/package-build",
+        "-DCMAKE_INSTALL_PREFIX=/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/package",
+        "-DCMAKE_PREFIX_PATH=/Users/oliver/openms4-qualification-flashtnt-250debb/core/OpenMS4-core-macos-arm64-Release-bc9cc12514c7;/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/cli;/Users/oliver/openms4-qualification-flashtnt-250debb/flash/OpenMS4-flash-macos-arm64-Release-b2c6771de774;/Users/oliver/openms4-qualification-flashtnt-250debb/env",
+        "-DOPENMS4_WARNINGS_AS_ERRORS=ON",
+        "-G",
+        "Ninja",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-DOpenMP_ROOT=/Users/oliver/openms4-qualification-flashtnt-250debb/env",
+        "-DCURL_ROOT=/Users/oliver/openms4-qualification-flashtnt-250debb/env",
+        "-DCMAKE_FIND_FRAMEWORK=LAST"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.336
+    },
+    {
+      "name": "build-package",
+      "command": [
+        "cmake",
+        "--build",
+        "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/package-build",
+        "--config",
+        "Release",
+        "--parallel",
+        "4"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 4.301
+    },
+    {
+      "name": "test-package",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/package-build",
+        "-C",
+        "Release",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--parallel",
+        "4"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 5.815
+    },
+    {
+      "name": "install-package",
+      "command": [
+        "cmake",
+        "--install",
+        "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/package-build",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.024
+    },
+    {
+      "name": "installed-write-ini",
+      "command": [
+        "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/package/bin/FLASHTnT",
+        "-write_ini",
+        "/Users/oliver/openms4-qualification-flashtnt-250debb/work-4ca4e73/installed.ini"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.375
+    }
+  ],
+  "final_tables_sha256": {
+    "tags.tsv": "6b49a1ae3405d30d88913c5123af1da75dec3f4f40bfb21f09bc78d3c315c62b",
+    "protein.tsv": "9af96028a2583e70a5a8c3e5b9500382a725860b2469e6a337412f2b0c3b6d26",
+    "prsms.tsv": "280640f6624d4d6631fd86317ad7b313485e3e1070b5fb2bc91c638d1506d923"
+  },
+  "final_tables_equal_linux93": true,
+  "final_notes": [
+    "Exact4ca normal CI driver succeeded; Linux-only sanitizer gate is skipped correctly onMac.",
+    "No final FLASHTnT compiler warnings; -Werror verified in Ninja flags.",
+    "All scientific tables remain byte-identical to corrected93 Linux/Mac results; historical reference still differs."
+  ]
+}

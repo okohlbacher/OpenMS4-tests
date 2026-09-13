@@ -1,0 +1,180 @@
+[
+  {
+    "name": "driver-tests",
+    "command": [
+      "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/ci",
+      "-v"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.054
+  },
+  {
+    "name": "configure-cli",
+    "command": [
+      "cmake",
+      "-S",
+      "/scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/cli",
+      "-B",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/cli-build",
+      "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/cli",
+      "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-cycle2-final/core/OpenMS4-core-linux-x64-Release-bc9cc12514c7;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 3.028
+  },
+  {
+    "name": "build-cli",
+    "command": [
+      "cmake",
+      "--build",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/cli-build",
+      "--config",
+      "Release",
+      "--parallel",
+      "12"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 9.129
+  },
+  {
+    "name": "install-cli",
+    "command": [
+      "cmake",
+      "--install",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/cli-build",
+      "--config",
+      "Release"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.01
+  },
+  {
+    "name": "configure-package",
+    "command": [
+      "cmake",
+      "-S",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/source",
+      "-B",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/package-build",
+      "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/package",
+      "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-cycle2-final/core/OpenMS4-core-linux-x64-Release-bc9cc12514c7;/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/cli;/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/flash/OpenMS4-flash-linux-x64-Release-b2c6771de774;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+      "-DOPENMS4_WARNINGS_AS_ERRORS=ON",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.855
+  },
+  {
+    "name": "build-package",
+    "command": [
+      "cmake",
+      "--build",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/package-build",
+      "--config",
+      "Release",
+      "--parallel",
+      "12"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 7.179
+  },
+  {
+    "name": "test-package",
+    "command": [
+      "ctest",
+      "--test-dir",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/package-build",
+      "-C",
+      "Release",
+      "--output-on-failure",
+      "--no-tests=error",
+      "--parallel",
+      "12"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 10.146
+  },
+  {
+    "name": "configure-sanitizers",
+    "command": [
+      "cmake",
+      "-S",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/source",
+      "-B",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/sanitizer-build",
+      "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-cycle2-final/core/OpenMS4-core-linux-x64-Release-bc9cc12514c7;/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/cli;/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/flash/OpenMS4-flash-linux-x64-Release-b2c6771de774;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+      "-DBUILD_TESTING=ON",
+      "-DOPENMS4_WARNINGS_AS_ERRORS=ON",
+      "-DCMAKE_CXX_FLAGS=-g -fsanitize=address,undefined -fno-omit-frame-pointer",
+      "-DCMAKE_EXE_LINKER_FLAGS=-fsanitize=address,undefined",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 2.948
+  },
+  {
+    "name": "build-sanitizers",
+    "command": [
+      "cmake",
+      "--build",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/sanitizer-build",
+      "--parallel",
+      "12"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 31.313
+  },
+  {
+    "name": "test-sanitizers",
+    "command": [
+      "ctest",
+      "--test-dir",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/sanitizer-build",
+      "--output-on-failure",
+      "--no-tests=error",
+      "--parallel",
+      "12",
+      "--output-junit",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/results/sanitizers.xml"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 37.323
+  },
+  {
+    "name": "install-package",
+    "command": [
+      "cmake",
+      "--install",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/package-build",
+      "--config",
+      "Release"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.01
+  },
+  {
+    "name": "installed-write-ini",
+    "command": [
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/package/bin/FLASHTnT",
+      "-write_ini",
+      "/scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/installed.ini"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.085
+  }
+]
