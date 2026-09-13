@@ -73,9 +73,9 @@ SDK acceptance at `63e332c`. The five-platform run for `63e332c` failed on Linux
 Windows, all on one assertion: `MzXMLFile_test` expected a ParseError for `peaksCount="-1"` and got
 OutOfMemory, the allocation defect in the last row above. dax can satisfy that reservation, which is
 why it passed there; under a 12 GB `ulimit -v` it fails the same way, and it passes with the fix in
-`c77ff14`. The five-platform run for `c77ff14` is in progress; no revision after `df774c1` is
-platform-qualified yet. These fixes are not in any released Core; they reach consumers with the next
-pin cycle.
+`c77ff14`. The five-platform run for `c77ff14` passed all seven jobs, the two Homebrew formula builds
+included, and that revision is tagged `core-v4.0.0-ci.3`. The fixes reach consumers with that
+release's pin cycle.
 
 ## Every finding
 
