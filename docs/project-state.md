@@ -38,20 +38,27 @@ five applications, one Python binding package and one Streamlit application.
 | proteomics-lfq | public | `cf12fe9163e3` | `proteomics-lfq-v1.0.0-ci.2` | ProteomicsLFQ |
 | parquet-diff | public | `682f7086ebe9` | `parquet-diff-v1.0.0-ci.2` | ParquetDiff |
 | desktop | public | `15c7a6309561` | `desktop-v1.0.0-ci.2` at `717d0c63da63` | GUI SDK, TOPPView, ImageCreator, INIFileEditor, TOPPAS, ExecutePipeline |
-| pyopenms | public | `b7edae7a89d9` | `pyopenms-v4.0.0.dev0-ci.2` at `52f8726850cc` | nanobind bindings, installed module tree and repaired wheels |
-| flashtnt | private | `4ca4e73a9751` | – | FLASHTnT tagging executable |
-| flashapp | private | `e723dec00ed7` | – | Streamlit application and Vue component |
+| pyopenms | public | `b7edae7a89d9` | `pyopenms-v4.0.0.dev0-ci.3` at `b7edae7a89d9` | nanobind bindings, installed module tree and repaired wheels |
+| flashtnt | public | `4ca4e73a9751` | – | FLASHTnT tagging executable |
+| flashapp | private | `57be473c38b78` | – | Streamlit application and Vue component |
 
-Three pinned revisions are **ahead of their releases**: desktop and pyOpenMS by one
-review cycle each (both have a green five-platform CI run at the pinned revision, so
-they are ready to tag), and FLASHTnT has never been released — see the blocker below.
+The Core review branch `codex/cpp-review-completion` is at `9b568722aee9`, with
+702 Release tests, 13 targeted Debug tests and installed/relocated SDK acceptance
+passing on Linux. It is not the released Core pin above. Its coordinated consumer
+update waits for native platform and Homebrew qualification. TOPP's compatibility
+change is preserved separately on `codex/core-compatibility`.
+
+pyOpenMS ci.3 is published for all five platforms. FLASHTnT's newer `b0cf76d19340`
+has a green manually dispatched five-platform build; its release pipeline requires
+a green push build, which is being rerun before publication. The app runtime retains
+the tested `4ca4e73` FLASHTnT pin.
 
 ## Building and testing
 
 The parent's contract tests need nothing but Python:
 
 ```bash
-python3 -m unittest discover -s tests      # 64 tests: pins, boundaries, tool metadata, receipts
+python3 -m unittest discover -s tests      # 65 tests: pins, boundaries, tool metadata, receipts
 ```
 
 The whole native graph is built from the installed Core with one runner; see
@@ -80,10 +87,16 @@ published `core-v4.0.0-ci.2` Linux archive:
 | --- | --- |
 | Installed console regression suite | 2,044 entries, 5 external-engine skips, **0 failures** |
 | TOPP / OpenSWATH / NuXL / FLASH / CLI | 242 / 38 / 14 / 9 / 9, all pass |
-| desktop (incl. the real QRhi frame) | 11, all pass |
+| desktop (headless Linux suite) | 11, all pass |
 | FLASHTnT | 4, all pass |
 | pyOpenMS | four groups, all pass |
-| Parent contracts | 64, all pass |
+| Parent contracts at the earlier snapshot | 64, all pass |
+
+The real QRhi frame was checked separately on macOS; the Linux headless run does
+not establish Cocoa or interactive Windows acceptance. The current working tree
+has 64/65 parent contracts passing: the pin gate rejects the review Core checkout
+while the integration lock retains released Core. Generated child documentation
+also awaits the coordinated commit/pin cycle.
 
 151 console tools were installed with no duplicate registration. Receipts are under
 `/scratch/kohlbach/openms4-verify-20260913/work/results` on dax; the
@@ -109,28 +122,32 @@ and the FLASHTnT sanitizer, repeatability and cross-platform evidence.
 Package CI routes the `linux-x64` row of push and dispatch events to self-hosted
 runners on the IBMI node dax and the `macos-arm64` row to a Mac Studio; pull requests
 always stay on hosted runners, because the repositories are public and a fork must
-never execute on either machine. macOS x64, linux-arm64 and Windows x64 remain hosted.
+never execute on either machine. Windows x64 push/dispatch jobs also use the dedicated workstation runners. macOS
+x64 and Linux arm64 remain hosted. Core currently retains its own hosted matrix.
 `tools/hpc/` holds the runner install and registration scripts, one runner per
 repository, each with its own `HOME` and a job-start hook that clears the previous
 job's micromamba.
 
-**Blocker: GitHub Actions is refusing to start jobs in the two private repositories.**
-Every job in `OpenMS4-flashtnt` and `OpenMS4-flashapp` since 2026-09-12 21:50 UTC ends
-immediately with *"The job was not started because recent account payments have failed
-or your spending limit needs to be increased"*. Public repositories are unaffected, as
-they consume no paid minutes. FLASHTnT and FLASHApp therefore have no CI evidence and
-cannot be released until the account's billing or spending limit is fixed; their
-current qualification is the local and dax runs recorded in the reports.
+FLASHApp's hosted jobs were refused by GitHub's billing/spending-limit gate. A
+dedicated private-repository runner on dax now runs both application CI jobs:
+run `34756837299` passes at `57be473`. The Linux wheel/application job passes
+134 tests and 52 subtests (three skips), and isolated lifecycle/artifact contracts
+pass 61 tests and 52 subtests (two skips). FLASHTnT is public and its five-platform
+CI is green. No repository visibility was changed during this resumption.
+
+The Windows cleanup hooks now use PowerShell's JSON serializer for paths. Native
+PowerShell/Node testing verified both target directories are removed and an unrelated
+sibling is retained; the corrected hooks were applied to all sixteen existing runners.
 
 ## Not qualified
 
 - **FLASHTnT numerical parity.** The port executes and is sanitizer-clean at
   `4ca4e73`, but the strict comparison against the retained May 2025 AQPZ outputs
-  fails (622 tags versus 2,968, 10 proteins versus 17). The upstream algorithm changed
+  fails (698 tags versus 2,968, 10 proteins versus 17). The upstream algorithm changed
   between those dates; this is an open question, not a passing check.
 - **FLASHApp deployment.** The image, its Vue bundle and the queue lifecycle have
-  evidence, but no image has been published or deployed and the final native workflow
-  rerun is outstanding. `packages/flashapp/experimental/validation/current-status.md`
+  evidence, and the final image rerun passes native loading and both workflow forms. No image
+  has been published or deployed, and historical numerical equivalence remains unqualified. `packages/flashapp/experimental/validation/current-status.md`
   is the live checklist.
 - **Desktop beyond macOS rendering.** Interactive behaviour on Windows and Linux, Qt
   plugin deployment, signing, notarization and installers have no acceptance.
@@ -142,7 +159,8 @@ current qualification is the local and dax runs recorded in the reports.
 
 | Document | Scope |
 | --- | --- |
-| [port-resumption-2026-09-12.md](port-resumption-2026-09-12.md) | newest: FLASHTnT integration, app runtime, fresh graph acceptance |
+| [port-resumption-2026-09-13.md](port-resumption-2026-09-13.md) | Core review completion, pyOpenMS ci.3, final app image and runner fixes |
+| [port-resumption-2026-09-12.md](port-resumption-2026-09-12.md) | previous: FLASHTnT integration, app runtime, fresh graph acceptance |
 | [core-ci2-cycle-validation.md](core-ci2-cycle-validation.md) | the Core ci.2 release cycle, its releases and the defects it exposed |
 | [build-split-packages.md](build-split-packages.md) | how to reproduce the installed-SDK build and tests |
 | [split-sdk-validation.md](split-sdk-validation.md) | the first full split-SDK validation |

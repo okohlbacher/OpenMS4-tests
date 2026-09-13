@@ -1,0 +1,23 @@
+{
+  "python": "3.12.14",
+  "machine": "x86_64",
+  "libc": [
+    "glibc",
+    "2.41"
+  ],
+  "pyopenms_source": "b7edae7a89d902727e0cd50ff488fefc60e011e0",
+  "runtime_core_source": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+  "core_metadata_matches": true,
+  "builder_files_absent": true,
+  "help_and_ini_wall_seconds": {
+    "DecoyDatabase": 0.621,
+    "FLASHDeconv": 0.512,
+    "FLASHTnT": 0.532
+  },
+  "streamlit_quickstart_exceptions": 0,
+  "workflow_configuration_and_run_controls": [
+    "FLASHDeconv",
+    "FLASHTnT"
+  ],
+  "wall_seconds": 4.959429126989562
+}

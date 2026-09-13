@@ -1,0 +1,44 @@
+{
+  "core_revision": "9b568722aee9040b5aa010d2ff4dd0b68357e6dd",
+  "release_tests": [
+    "701/702 Test #500: PipEchoAlgorithm_realistic_test ..................   Passed   22.07 sec",
+    "        Start  31: StopWatch_test",
+    "702/702 Test  #31: StopWatch_test ...................................   Passed    0.40 sec",
+    "",
+    "100% tests passed, 0 tests failed out of 702",
+    "",
+    "Label Time Summary:",
+    "core                    =   0.21 sec*proc (1 test)",
+    "optional-integration    =   0.21 sec*proc (1 test)",
+    "slow                    =  22.07 sec*proc (1 test)",
+    "",
+    "Total Test time (real) =  22.49 sec"
+  ],
+  "debug_tests": [
+    "13/13 Test #240: PepXMLFile_test ..................   Passed    0.73 sec",
+    "",
+    "100% tests passed, 0 tests failed out of 13",
+    "",
+    "Total Test time (real) =   0.75 sec"
+  ],
+  "build_seconds": {
+    "build-seconds.txt": "Command exited with non-zero status 1\n85.97",
+    "build-b6dd412-seconds.txt": "14.85",
+    "build-e4dcc47-seconds.txt": "13.66",
+    "build-9b56872-seconds.txt": "13.54",
+    "debug-build-seconds.txt": "44.93"
+  },
+  "warnings": {
+    "build-9b56872.log": [],
+    "debug-build.log": [
+      "/scratch/kohlbach/openms4-core-181dadf/source/src/openms/thirdparty/percolator/ScoreHolder.h:41:13: warning: 'OpenMS::Internal::Percolator::ScoreHolder::label' will be initialized after [-Wreorder]",
+      "/scratch/kohlbach/openms4-core-181dadf/source/src/openms/thirdparty/percolator/ScoreHolder.h:40:19: warning:   'OpenMS::Internal::Percolator::PSMDescription* OpenMS::Internal::Percolator::ScoreHolder::pPSM' [-Wreorder]",
+      "/scratch/kohlbach/openms4-core-181dadf/source/src/openms/thirdparty/percolator/ScoreHolder.h:43:3: warning:   when initialized here [-Wreorder]",
+      "/scratch/kohlbach/openms4-core-181dadf/source/src/openms/thirdparty/percolator/ScoreHolder.h:41:13: warning: 'OpenMS::Internal::Percolator::ScoreHolder::label' will be initialized after [-Wreorder]",
+      "/scratch/kohlbach/openms4-core-181dadf/source/src/openms/thirdparty/percolator/ScoreHolder.h:40:19: warning:   'OpenMS::Internal::Percolator::PSMDescription* OpenMS::Internal::Percolator::ScoreHolder::pPSM' [-Wreorder]",
+      "/scratch/kohlbach/openms4-core-181dadf/source/src/openms/thirdparty/percolator/ScoreHolder.h:50:3: warning:   when initialized here [-Wreorder]",
+      "/scratch/kohlbach/openms4-core-181dadf/source/src/openms/thirdparty/percolator/SetHandler.h:95:3: warning: type qualifiers ignored on function return type [-Wignored-qualifiers]",
+      "/scratch/kohlbach/openms4-core-181dadf/source/src/openms/extern/Quadtree/include/Vector2.h:13:26: warning: template-id not allowed for constructor in C++20 [-Wtemplate-id-cdtor]"
+    ]
+  }
+}

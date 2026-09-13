@@ -1,0 +1,98 @@
+{
+  "source_revision": "b7edae7a89d902727e0cd50ff488fefc60e011e0",
+  "core_revision": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+  "source_ci_url": "https://github.com/okohlbacher/OpenMS4-pyopenms/actions/runs/34720130408",
+  "complete": true,
+  "platforms": [
+    {
+      "platform": "linux-arm64",
+      "checksums": "passed",
+      "wheel_provenance_and_runtime_data": "passed",
+      "installed_tree_provenance": "passed",
+      "assets": [
+        {
+          "name": "OpenMS4-pyopenms-linux-arm64-Release-b7edae7a89d9.tar.gz",
+          "size": 11424804,
+          "sha256": "3c07a39d3918aa646d70cd5df53f810d897e3bcf571d6e0f4b5a88dd4e41a654"
+        },
+        {
+          "name": "pyopenms-4.0.0.dev0-cp312-cp312-manylinux_2_39_aarch64.whl",
+          "size": 89791407,
+          "sha256": "6ce882a89c34f375a122071e9d92e20d5630df23c9c81ed7efc256a3c495ad6a"
+        }
+      ]
+    },
+    {
+      "platform": "linux-x64",
+      "checksums": "passed",
+      "wheel_provenance_and_runtime_data": "passed",
+      "installed_tree_provenance": "passed",
+      "assets": [
+        {
+          "name": "OpenMS4-pyopenms-linux-x64-Release-b7edae7a89d9.tar.gz",
+          "size": 11909095,
+          "sha256": "5dd176afa36fabe84cd54ab4deda126b28a9bfa3e1e578ffcd752922255463f8"
+        },
+        {
+          "name": "pyopenms-4.0.0.dev0-cp312-cp312-manylinux_2_39_x86_64.whl",
+          "size": 99894164,
+          "sha256": "3a8eb05a5ec97e10544f814f8ca767113427968fb5f4d696ae1e886cef4f5899"
+        }
+      ]
+    },
+    {
+      "platform": "macos-arm64",
+      "checksums": "passed",
+      "wheel_provenance_and_runtime_data": "passed",
+      "installed_tree_provenance": "passed",
+      "assets": [
+        {
+          "name": "OpenMS4-pyopenms-macos-arm64-Release-b7edae7a89d9.tar.gz",
+          "size": 10553307,
+          "sha256": "d4e2a3527cbd4c30e238ba31a83fc93c141f05b96cb4d7521a786689d5924af3"
+        },
+        {
+          "name": "pyopenms-4.0.0.dev0-cp312-cp312-macosx_26_0_arm64.whl",
+          "size": 72360168,
+          "sha256": "e2d1d537ff2d2753ca3fc824de05a6e518f9665a675628370a2a27910481cab8"
+        }
+      ]
+    },
+    {
+      "platform": "macos-x64",
+      "checksums": "passed",
+      "wheel_provenance_and_runtime_data": "passed",
+      "installed_tree_provenance": "passed",
+      "assets": [
+        {
+          "name": "OpenMS4-pyopenms-macos-x64-Release-b7edae7a89d9.tar.gz",
+          "size": 10761845,
+          "sha256": "c532b4d4ad96471e1455c3f2c1b4892aa2f920ff673e4ed428bcff123e13257d"
+        },
+        {
+          "name": "pyopenms-4.0.0.dev0-cp312-cp312-macosx_15_0_x86_64.whl",
+          "size": 83457778,
+          "sha256": "77ba41e2bbf8321e8d4983baa74b5f3adc2b99f2b553070c3a5bdc0af2d28b92"
+        }
+      ]
+    },
+    {
+      "platform": "windows-x64",
+      "checksums": "passed",
+      "wheel_provenance_and_runtime_data": "passed",
+      "installed_tree_provenance": "passed",
+      "assets": [
+        {
+          "name": "OpenMS4-pyopenms-windows-x64-Release-b7edae7a89d9.tar.gz",
+          "size": 10621013,
+          "sha256": "a5ab6fc1aeec5a5d91643145fd3da0ce248f3129722ff593e1277ff2d8aac54f"
+        },
+        {
+          "name": "pyopenms-4.0.0.dev0-cp312-cp312-win_amd64.whl",
+          "size": 56571094,
+          "sha256": "4b6c64ccd20280810fce120863ac71f1156df4ec0a5dc1e3177e07d210edbf74"
+        }
+      ]
+    }
+  ]
+}
