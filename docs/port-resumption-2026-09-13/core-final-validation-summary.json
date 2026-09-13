@@ -1,0 +1,22 @@
+{
+  "source_revision": "63e332c8dbc653769de3cf291c2fd54c86ddacd1",
+  "build_type": "incremental, against existing GCC 14.4 scratch builds",
+  "build_parallelism": 192,
+  "release_test_parallelism": 96,
+  "debug_test_parallelism": 64,
+  "openmp_threads": 1,
+  "openblas_threads": 1,
+  "release_build_seconds": 13.8,
+  "debug_build_seconds": 20.97,
+  "release_tests": 702,
+  "release_test_seconds": 22.42,
+  "debug_tests": 22,
+  "debug_test_seconds": 2.0,
+  "release_warning_lines": 0,
+  "debug_warning_lines": 0,
+  "installed_and_relocated_acceptance": true,
+  "mzml_old_library_exit": 1,
+  "baseline_mzml_library_revision": "86f01c4be660906337bb5931a67a822feacec9cd",
+  "baseline_proforma_library_revision": "df774c1f88bef0cf314047fb33f75bce6994f86d",
+  "proforma_old_library_exit": 1
+}

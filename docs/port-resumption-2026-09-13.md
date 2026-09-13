@@ -67,7 +67,7 @@ in the Core presets were not qualified by these tests.
 
 ## Integration with Claude's newer Core branch
 
-The current review HEAD is `df774c1f88bef0cf314047fb33f75bce6994f86d`. Merge
+The first merged review candidate was `df774c1f88bef0cf314047fb33f75bce6994f86d`. Merge
 `268ebb6` also brings in Claude's already-pushed default-branch work through
 `ef71b05`: the FragmentIndex thread budget, synchronized FeatureFinder abort
 accounting and trace warning, invalid RNA-modification diagnostics, declared
@@ -80,7 +80,10 @@ formula. Its green status therefore did not test the review revision. Commit
 the exact Git archive and checksum, removes released bottle entries, builds it,
 and verifies the installed source revision and clean flag. The published formula
 is unchanged. Three CI helper tests, nineteen SDK contracts and Ruby syntax checks
-pass locally. Native and Homebrew qualification is rerunning at this revision.
+pass locally. This revision completed all seven CI jobs successfully: 702 class tests on
+each of five platforms, installed/relocated SDK acceptance, and both exact-source
+Homebrew builds. [CI receipt](port-resumption-2026-09-13/core-df774c1-platform-ci.json)
+and [native summary](port-resumption-2026-09-13/core-df774c1-native-summary.json).
 
 The exact merged source now passes Linux validation on dax:
 
@@ -135,7 +138,7 @@ pending new Core dependency pin.
 
 All five native platform jobs also passed in push run
 [34757301717](https://github.com/okohlbacher/OpenMS4-topp/actions/runs/34757301717).
-The two Homebrew payload jobs are still running at the recorded snapshot;
+Both Homebrew payload jobs also passed, completing all seven jobs;
 [platform receipt](port-resumption-2026-09-13/topp-platform-ci.json).
 
 ## Published pyOpenMS and final app image
@@ -203,11 +206,10 @@ These are native package archives that need the matching installed SDK dependenc
 not self-contained application images. The app image above retains its independently
 tested FLASHTnT `4ca4e73` runtime pin.
 
-Core's current push CI is
-[34757972524](https://github.com/okohlbacher/OpenMS4-core/actions/runs/34757972524),
-covering five native platforms and both macOS Homebrew checks. It is still in
-progress. Superseded runs and duplicate PR runs were cancelled. Core remains a draft pending those checks,
-additional review coverage and the coordinated consumer pin/rebuild cycle.
+Core's current candidate is `63e332c8dbc653769de3cf291c2fd54c86ddacd1`, with
+[push CI 34766681820](https://github.com/okohlbacher/OpenMS4-core/actions/runs/34766681820)
+running the five native platforms and both Homebrew builds. Superseded and duplicate
+PR runs were cancelled; current platform qualification is still pending.
 
 The working integration checkout deliberately still rejects the reviewed Core HEAD
 against the released Core lock: 64/65 parent tests passed, with the source-pin test
@@ -222,10 +224,70 @@ in dependency order; rebuild and rerun the complete installed-tool suite before
 releasing a new consumer graph. TOPP's hull-cache change is prepared on
 `codex/core-compatibility` and is independently checked against released Core first.
 
-An additional inspection of the MSstats, mzData, mzXML and qcML changes found a
-retained-test gap: `MSstatsFile_test` contains no assertions, and many relevant
-qcML methods remain `NOT_TESTABLE`. The inherited mzData/mzXML malformed-input
-checks were temporary scratch programs. Existing suite success therefore does not
-exercise the new rejection and SAX chunk-boundary paths. Preserve those regression
-cases in Core's class tests before closing these review groups; no independent
-closure is claimed here.
+## Retained review regressions and output corrections
+
+Commit `b2079fb` replaces temporary scratch checks with class-test regressions for
+MSstats aggregation, malformed mzData arrays, mzXML SAX chunk boundaries and peak
+counts, qcML history/table round trips and ProForma mass/conversion behavior. The
+first run passed 701/702 tests: a new ProForma fixture incorrectly assumed `+1` would
+remain an exact mass delta instead of resolving to a nearby database modification.
+The fixture now uses an exact carbon formula.
+
+Claude Fable 5.1 found no new ProForma implementation regression but identified
+pre-existing silent chemistry loss in cross-linked spectra. Commit `86f01c4` rejects
+unsupported chain chemistry and missing linker chemistry, rejects empty ambiguous
+regions for mass calculation, and uses the same resolved linker mass in both APIs.
+Its new tests fail against the saved `df774c1` library and pass with the fix.
+
+Kimi's review exposed array-processing references in mzML that were not
+declared in the header. The same IDs also collided across array types and between
+spectra and chromatograms. Commit `63e332c` collects all supplemental-array histories
+for software/processing declarations and gives them distinct IDs. Streaming output
+retains the first record's histories and warns when later array histories cannot
+be declared, without mutating the caller's data. New tests verify all six array/type
+round trips and schema-valid streaming with spectra-first and chromatograms-only
+inputs. They fail against the saved `86f01c4` library and pass with the fix.
+
+Vibe's three actionable sqMass claims were rejected: OpenMS defines the string/number
+operators, MSExperiment publicly inherits ExperimentalSettings, and the SQLite
+handler constructor does not open or replace the file. Its claims of checking
+unprovided callers are unsupported because its tools were disabled.
+
+| Check at `63e332c` | Result | Wall time |
+| --- | --- | --- |
+| Full Release class suite | 702/702 passed | 22.42 s |
+| Targeted Debug suite | 22/22 passed | 2.00 s |
+| Installed/relocated SDK tests | 8/8 each passed | see receipt |
+| Wrong source pin | expected rejection | see receipt |
+| Incremental Release/Debug compilation | zero warning lines | 13.80 / 20.97 s |
+
+[Release XML](port-resumption-2026-09-13/core-final-release-tests.xml),
+[Debug XML](port-resumption-2026-09-13/core-final-debug-tests.xml),
+[SDK acceptance](port-resumption-2026-09-13/core-final-sdk-acceptance.json),
+[build identity](port-resumption-2026-09-13/core-final-build-info.json),
+[validation summary](port-resumption-2026-09-13/core-final-validation-summary.json),
+[ProForma old-library failure](port-resumption-2026-09-13/proforma-regression-old-library.log),
+and [mzML old-library failure](port-resumption-2026-09-13/mzml-regression-old-library.log).
+
+Review outputs: [Claude](port-resumption-2026-09-13/claude-proforma-followup.md),
+[Vibe](port-resumption-2026-09-13/vibe-sqmass-followup.md),
+[Kimi](port-resumption-2026-09-13/kimi-mzml-sqmass-followup.md), and
+[maintainer synthesis](port-resumption-2026-09-13/review-synthesis.md). All three CLI
+reviews have completed; their claims are not proof of closure.
+
+Before advancing consumer pins, retain the following follow-ups:
+
+- Retain the deferred SQLite step/error handling and checksum/empty-index work.
+  Kimi's final review also flags the documented streaming fallback to the first
+  spectrum's processing history when a later spectrum carries no history. These
+  are not claimed resolved. Its string/number diagnostic claim is rejected for
+  the same reason as Vibe's: the source constructs std::string first.
+- Correct OpenSwathMzMLFileCacher's low-memory MSDataSqlConsumer call: its omitted
+  run-ID argument shifts the batch-size/metadata/compression parameters. Its sqMass
+  to sqMass branch also constructs an mzML writer. Add package-level numerical tests.
+- Expose explicit sqMass finalization and retain mass-validation regressions in the
+  pyOpenMS pin cycle; the existing bindings do not expose the ion-spectrum overload.
+- Fix generated package documentation links that currently use the parent's absent
+  `main` branch, then commit the retained child documentation before graph repinning.
+- Qualify the new Core matrix, publish the matching SDK, then regenerate and rebuild
+  consumers in dependency order. No released pins changed in this checkpoint.

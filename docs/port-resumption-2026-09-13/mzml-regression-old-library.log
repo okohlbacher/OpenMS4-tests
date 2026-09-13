@@ -1,0 +1,65 @@
+checking (MSDataWritingConsumer(const std::string& filename)) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_99.tmp' (line 306)
+: passed
+
+checking (~MSDataWritingConsumer()) ... : passed
+Warning: no subtests performed in '(~MSDataWritingConsumer())' (line 111)!
+
+checking (void setExperimentalSettings(const ExperimentalSettings& exp)) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_116.tmp' (line 306)
+: passed
+
+checking (void setExpectedSize(Size expectedSpectra, Size expectedChromatograms)) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_135.tmp' (line 306)
+: passed
+
+checking (void consumeSpectrum(SpectrumType & s)) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_155.tmp' (line 306)
+: passed
+
+checking (void consumeChromatogram(ChromatogramType & c)) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_184.tmp' (line 306)
+: passed
+
+checking (virtual void addDataProcessing(DataProcessing d)) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_207.tmp' (line 306)
+: passed
+
+checking (virtual Size getNrSpectraWritten()) ... : passed
+
+checking (virtual Size getNrChromatogramsWritten()) ... : passed
+
+checking ([EXTRA] later spectra only reference what the header written from the first spectrum declares) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_244.tmp' (line 306)
+Warning: 'MSDataWritingConsumer_test_244.tmp': a spectrum carries a source file or data processing that the mzML header (written from the first spectrum) does not declare. Such spectra are written without their own source file and with the first spectrum's data processing; use MzMLFile::store to keep them.
+: passed
+
+checking (regression: stored spectrum and chromatogram array histories are distinct) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_306.tmp' (line 306)
+ -  line 325:  TEST_STRING_EQUAL(integers.getDataProcessing()[0]->getMetaValue("array history").toString(),prefix + "integer"): got "spectrum float", expected "spectrum integer"
+ -  line 326:  TEST_STRING_EQUAL(strings.getDataProcessing()[0]->getMetaValue("array history").toString(),prefix + "string"): got "spectrum float", expected "spectrum string"
+ -  line 324:  TEST_STRING_EQUAL(floats.getDataProcessing()[0]->getMetaValue("array history").toString(),prefix + "float"): got "spectrum float", expected "chromatogram float"
+ -  line 325:  TEST_STRING_EQUAL(integers.getDataProcessing()[0]->getMetaValue("array history").toString(),prefix + "integer"): got "spectrum float", expected "chromatogram integer"
+ -  line 326:  TEST_STRING_EQUAL(strings.getDataProcessing()[0]->getMetaValue("array history").toString(),prefix + "string"): got "spectrum float", expected "chromatogram string"
+: failed
+
+checking (regression: streamed arrays reference only declared processing records) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_344.tmp' (line 306)
+Validation error in file 'MSDataWritingConsumer_test_344.tmp' line 139 column 8: identity constraint key for element 'mzML' not found
+Validation error in file 'MSDataWritingConsumer_test_344.tmp' line 139 column 8: identity constraint key for element 'mzML' not found
+Validation error in file 'MSDataWritingConsumer_test_344.tmp' line 148 column 15: ID attribute 'dp_sp_0_bi_0' is referenced but was never declared
+Validation error in file 'MSDataWritingConsumer_test_344.tmp' line 148 column 15: ID attribute 'dp_sp_1_bi_0' is referenced but was never declared
+ -  line 367 : TEST_EQUAL(file.isValid(filename),true): got '0', expected '1'
+ -  line 369 : TEST_EQUAL(xml.find("dataProcessingRef=\"dp_sp_1_"),std::string::npos): got '7036', expected '18446744073709551615'
+ -  line 371 : TEST_EQUAL(xml.find("dataProcessingRef=\"dp_ch_0_") == std::string::npos,spectrum_first): got '1', expected '0'
+    creating new temporary filename 'MSDataWritingConsumer_test_344.tmp' (line 306)
+Warning: 'MSDataWritingConsumer_test_344.tmp': a spectrum carries a source file or data processing that the mzML header (written from the first spectrum) does not declare. Such spectra are written without their own source file and with the first spectrum's data processing; use MzMLFile::store to keep them.
+Validation error in file 'MSDataWritingConsumer_test_344.tmp' line 236 column 8: identity constraint key for element 'mzML' not found
+Validation error in file 'MSDataWritingConsumer_test_344.tmp' line 249 column 15: ID attribute 'dp_sp_1_bi_0' is referenced but was never declared
+ -  line 367 : TEST_EQUAL(file.isValid(filename),true): got '0', expected '1'
+ -  line 369 : TEST_EQUAL(xml.find("dataProcessingRef=\"dp_sp_1_"),std::string::npos): got '7955', expected '18446744073709551615'
+: failed
+
+Output of successful tests were suppressed. Set the environment variable 'OPENMS_TEST_VERBOSE=True' to enable them.
+FAILED
+Failed lines: 325 326 324 325 326 367 369 371 367 369 

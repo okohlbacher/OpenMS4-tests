@@ -42,15 +42,17 @@ five applications, one Python binding package and one Streamlit application.
 | flashtnt | public | `4ca4e73a9751` | `flashtnt-v1.0.0-ci.1` at `b0cf76d19340` | FLASHTnT tagging executable |
 | flashapp | private | `57be473c38b78` | – | Streamlit application and Vue component |
 
-The Core review branch `codex/cpp-review-completion` is at `df774c1f88be`, merging
-Claude's latest default-branch fixes and correcting Homebrew CI to test the exact
-candidate source. This merged revision passes 702 Release tests, 16 targeted Debug
-tests and installed/relocated SDK acceptance on Linux. It is not the released Core pin above.
-The coordinated consumer update waits for native platform and Homebrew qualification. TOPP's compatibility
-change is preserved separately on `codex/core-compatibility`, with all five native
-platform jobs green, 242 metadata tests passing and a combined installation run
-of 1,952 passed/five skipped in 12.46 seconds against released Core. Its Homebrew
-payload jobs are still running.
+The Core review branch `codex/cpp-review-completion` is at `63e332c8dbc6`. It
+passes 702 Release tests (22.42 s), 22 targeted Debug tests (2.00 s), and installed/
+relocated SDK acceptance on Linux. Follow-up fixes prevent silent ProForma chemistry
+loss and invalid/colliding mzML array-processing references; regression tests fail
+against the pre-fix libraries. The earlier `df774c1` passed all seven native/Homebrew
+CI jobs; the current revision's matrix is still running. It is not the released Core pin above.
+
+TOPP's compatibility change on `codex/core-compatibility` passes all seven native/
+Homebrew CI jobs, 242 metadata tests, and a combined installation run of 1,952
+passed/five skipped in 12.46 seconds against released Core. The new Core dependency
+pin and coordinated consumer rebuild are still pending.
 
 pyOpenMS ci.3 and FLASHTnT ci.1 are published for all five platforms. FLASHTnT's
 newer `b0cf76d19340` passed both dispatch and push builds, and all release archives
