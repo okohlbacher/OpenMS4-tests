@@ -61,15 +61,21 @@ Tracing the entries surfaced these; each is fixed unless marked open.
 | `IDFilter`'s in-silico digestion passes `end - start` as the peptide length, but evidence ends are inclusive, so every length is one short | core | **open**: five TOPP references were produced with the current length and need analysis before it changes |
 | A full-metadata sqMass file whose native ids lack `=` cannot be read back: the mzML snapshot renames them to `spectrum=<index>` while the SQL tables keep the original | core | **open** |
 | A later spectrum without processing history is written with the first spectrum's history in streaming mzML output | core | **open**, documented fallback |
+| The mzXML and mzData readers reserve memory from a file's declared `peaksCount`, `scanCount` or `count`; `peaksCount="-1"` wraps and requests about 34 GB, so a corrupt file fails as OutOfMemory instead of ParseError, or passes on a host large enough to grant it | core | fixed; `MzXMLFile_test` covers it |
 
 ## Validation
 
 The branch with every change above passes all 702 Core class tests on dax (GCC 14.4, the Core CI
-dependency environment). The follow-up session's receipts cover its own revisions: 702 tests on each
-of five platforms at `df774c1`, and 702 Release plus targeted Debug tests, installed and relocated
-SDK acceptance at `63e332c`. The five-platform run for `63e332c` itself failed on both Linux jobs
-while macOS and Homebrew passed; its cause is not yet known, and no revision after `df774c1` is
-platform-qualified. These fixes are not in any released Core; they reach consumers with the next pin cycle.
+dependency environment), and the CI driver's own reproduction at `5f7d33f` also passed installed and
+relocated SDK acceptance there. The follow-up session's receipts cover its own revisions: 702 tests on
+each of five platforms at `df774c1`, and 702 Release plus targeted Debug tests, installed and relocated
+SDK acceptance at `63e332c`. The five-platform run for `63e332c` failed on Linux x64, Linux arm64 and
+Windows, all on one assertion: `MzXMLFile_test` expected a ParseError for `peaksCount="-1"` and got
+OutOfMemory, the allocation defect in the last row above. dax can satisfy that reservation, which is
+why it passed there; under a 12 GB `ulimit -v` it fails the same way, and it passes with the fix in
+`c77ff14`. The five-platform run for `c77ff14` is in progress; no revision after `df774c1` is
+platform-qualified yet. These fixes are not in any released Core; they reach consumers with the next
+pin cycle.
 
 ## Every finding
 
