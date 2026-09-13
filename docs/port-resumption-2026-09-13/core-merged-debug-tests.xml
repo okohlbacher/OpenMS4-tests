@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="(empty)"
+	tests="16"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname=""
+	time="1"
+	timestamp="2026-09-13T14:48:15"
+	>
+	<testcase name="UniqueIdIndexer_test" classname="UniqueIdIndexer_test" time="0.0701638" status="run">
+		<properties/>
+		<system-out>checking (UniqueIdIndexer()) ... 
+: passed
+
+checking (~UniqueIdIndexer()) ... : passed
+Warning: no subtests performed in '(~UniqueIdIndexer())' (line 81)!
+
+checking (Size uniqueIdToIndex(UInt64 unique_id) const) ... 
+    line 99: status:  shuffling ...
+    line 121: status:  shuffling ...
+: passed
+
+checking (void updateUniqueIdToIndex() const) ... : passed
+
+checking (Size resolveUniqueIdConflicts()) ... 
+: passed
+
+checking (void swap(UniqueIdIndexer &amp;rhs)) ... 
+: passed
+
+checking ([EXTRA] seeded maps may need more than 64 redraws) ... 
+: passed
+
+Output of successful tests were suppressed. Set the environment variable 'OPENMS_TEST_VERBOSE=True' to enable them.
+PASSED
+</system-out>
+	</testcase>
+	<testcase name="RangeManager_test" classname="RangeManager_test" time="0.0692144" status="run">
+		<properties/>
+		<system-out>checking RangeBase() ... 
+: passed
+
+checking RangeBase(const double min, const double max) ... 
+: passed
+
+checking const RangeBase&amp; rhs ... 
+: passed
+
+checking RangeBase&amp; operator=(const RangeBase&amp; rhs) ... 
+: passed
+
+checking void clear() ... 
+: passed
+
+checking bool isEmpty() const ... : passed
+
+checking bool contains(const double value) const ... 
+: passed
+
+checking bool contains(const RangeBase&amp; inner_range) const ... 
+: passed
+
+checking void setMin(const double min) ... 
+: passed
+
+checking void setMax(const double max) ... 
+: passed
+
+checking double getMin() const ... : passed
+
+checking double getMax() const ... : passed
+
+checking void extend(const RangeBase&amp; other) ... 
+: passed
+
+checking void extend(const double value) ... 
+: passed
+
+checking void extendLeftRight(const double by) ... 
+: passed
+
+checking void clampTo(const RangeBase&amp; other) ... 
+: passed
+
+checking void pushInto(const RangeBase&amp; sandbox) ... 
+: passed
+
+checking void scaleBy(const double factor) ... 
+: passed
+
+checking void shift(const do...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="BaseFeature_test" classname="BaseFeature_test" time="0.0692976" status="run">
+		<properties/>
+		<system-out>checking (BaseFeature()) ... 
+: passed
+
+checking (~BaseFeature()) ... : passed
+Warning: no subtests performed in '(~BaseFeature())' (line 43)!
+
+checking (QualityType getQuality() const) ... 
+: passed
+
+checking (void setQuality(QualityType q)) ... 
+: passed
+
+checking (WidthType getWidth() const) ... 
+: passed
+
+checking (void setWidth(WidthType fwhm)) ... 
+: passed
+
+checking [EXTRA](IntensityType getIntensity() const) ... 
+: passed
+
+checking [EXTRA](const PositionType&amp; getPosition() const) ... 
+: passed
+
+checking [EXTRA](IntensityType&amp; getIntensity()) ... 
+: passed
+
+checking [EXTRA](PositionType&amp; getPosition()) ... 
+: passed
+
+checking (const ChargeType&amp; getCharge() const) ... 
+: passed
+
+checking (void setCharge(const ChargeType &amp;ch)) ... 
+: passed
+
+checking (BaseFeature(const BaseFeature &amp;feature)) ... 
+: passed
+
+checking (BaseFeature(BaseFeature &amp;&amp;feature)) ... 
+: passed
+
+checking (BaseFeature(const Peak2D&amp; point)) ... 
+: passed
+
+checking (BaseFeature(const RichPeak2D&amp; point)) ... 
+: passed
+
+checking (BaseFeat...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="MSSpectrum_test" classname="MSSpectrum_test" time="0.319678" status="run">
+		<properties/>
+		<system-out>checking (MSSpectrum()) ... 
+: passed
+
+checking (~MSSpectrum()) ... : passed
+Warning: no subtests performed in '(~MSSpectrum())' (line 96)!
+
+checking ([EXTRA] MSSpectrum()) ... 
+: passed
+
+checking (MSSpectrum(const std::initializer_list&lt;Peak1D&gt;&amp; init)) ... 
+: passed
+
+checking (UInt getMSLevel() const) ... 
+: passed
+
+checking (void setMSLevel(UInt ms_level)) ... 
+: passed
+
+checking (const std::string&amp; getName() const) ... 
+: passed
+
+checking (void setName(const std::string &amp;name)) ... 
+: passed
+
+checking (double getRT() const ) ... 
+: passed
+
+checking (void setRT(double rt)) ... 
+: passed
+
+checking (double getDriftTime() const ) ... 
+: passed
+
+checking (void setDriftTime(double dt)) ... 
+: passed
+
+checking (double getDriftTimeUnit() const ) ... 
+: passed
+
+checking (double getDriftTimeUnitAsString() const) ... 
+: passed
+
+checking (void setDriftTimeUnit(double dt)) ... 
+: passed
+
+checking (const FloatDataArrays&amp; getFloatDataArrays() const) ... 
+: passed
+
+checking (FloatDataArrays&amp; getFloatDataArrays()) ... 
+: pa...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="MascotGenericFile_test" classname="MascotGenericFile_test" time="0.354925" status="run">
+		<properties/>
+		<system-out>checking MascotGenericFile() ... 
+: passed
+
+checking virtual ~MascotGenericFile() ... : passed
+Warning: no subtests performed in 'virtual ~MascotGenericFile()' (line 43)!
+
+checking (template &lt; typename MapType &gt; void load(const std::string &amp;filename, MapType &amp;exp)) ... 
+: passed
+
+checking (void store(std::ostream &amp;os, const std::string &amp;filename, const PeakMap &amp;experiment, bool compact = false)) ... MascotGenericFile: no native ID accession.
+
+: passed
+
+checking (void store(const std::string &amp;filename, const PeakMap &amp;experiment, bool compact = false)) ... 
+    creating new temporary filename 'MascotGenericFile_test_165.tmp' (line 306)
+: passed
+
+checking (COMPOUND_NAME to Metabolite_Name mapping) ... 
+    creating new temporary filename 'MascotGenericFile_test_200.tmp' (line 306)
+: passed
+
+checking (GNPS MGF file - 3-Des-Microcystein_LR) ... 
+: passed
+
+checking (SEQ sequence query field - single and multiple) ... 
+    creating new temporary filename 'MascotGenericFile_test_282.tmp' (line 306)
+    creating new t...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="MSDataWritingConsumer_test" classname="MSDataWritingConsumer_test" time="0.378081" status="run">
+		<properties/>
+		<system-out>checking (MSDataWritingConsumer(const std::string&amp; filename)) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_74.tmp' (line 306)
+: passed
+
+checking (~MSDataWritingConsumer()) ... : passed
+Warning: no subtests performed in '(~MSDataWritingConsumer())' (line 86)!
+
+checking (void setExperimentalSettings(const ExperimentalSettings&amp; exp)) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_91.tmp' (line 306)
+: passed
+
+checking (void setExpectedSize(Size expectedSpectra, Size expectedChromatograms)) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_110.tmp' (line 306)
+: passed
+
+checking (void consumeSpectrum(SpectrumType &amp; s)) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_130.tmp' (line 306)
+: passed
+
+checking (void consumeChromatogram(ChromatogramType &amp; c)) ... 
+    creating new temporary filename 'MSDataWritingConsumer_test_159.tmp' (line 306)
+: passed
+
+checking (virtual void addDataProcessing(DataProcessing d)) ... 
+    creating new ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="MzTabFile_test" classname="MzTabFile_test" time="0.348061" status="run">
+		<properties/>
+		<system-out>checking MzTabFile() ... 
+: passed
+
+checking void load(const std::string&amp; filename, MzTab&amp; mzTab) ... : passed
+
+checking void store(const std::string&amp; filename, MzTab&amp; mzTab) ... 
+    creating new temporary filename 'MzTabFile_test_67.tmp' (line 306)
+    creating new temporary filename 'MzTabFile_test_90.tmp' (line 306)
+    creating new temporary filename 'MzTabFile_test_91.tmp' (line 306)
+    creating new temporary filename 'MzTabFile_test_67.tmp' (line 306)
+    creating new temporary filename 'MzTabFile_test_90.tmp' (line 306)
+    creating new temporary filename 'MzTabFile_test_91.tmp' (line 306)
+    creating new temporary filename 'MzTabFile_test_67.tmp' (line 306)
+    creating new temporary filename 'MzTabFile_test_90.tmp' (line 306)
+    creating new temporary filename 'MzTabFile_test_91.tmp' (line 306)
+    creating new temporary filename 'MzTabFile_test_67.tmp' (line 306)
+    creating new temporary filename 'MzTabFile_test_90.tmp' (line 306)
+    creating new temporary filename 'MzTabFile_test_91.tmp' (li...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="OMSFile_test" classname="OMSFile_test" time="0.294258" status="run">
+		<properties/>
+		<system-out>checking void store(const std::string&amp; filename, const IdentificationData&amp; id_data) ... Progress of 'converting protein identification runs':
+  Progress of 'converting protein hits (run 1/2)':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  Progress of 'converting indistinguishable proteins (run 1/2)':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  Progress of 'converting protein groups (run 1/2)':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  Progress of 'converting protein hits (run 2/2)':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'converting peptide identifications':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+
+    creating new temporary filename 'OMSFile_test_53.tmp' (line 306)
+: passed
+
+checking void load(const std::string&amp; filename, IdentificationData&amp; id_data) ... 
+: passed
+
+checking void store(const std::string&amp; filename, const FeatureMap&amp; features) ... Progress of 'converting protein identification runs':
+  Progres...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="PepXMLFile_test" classname="PepXMLFile_test" time="0.694891" status="run">
+		<properties/>
+		<system-out>checking PepXMLFile() ... 
+: passed
+
+checking ~PepXMLFile() ... : passed
+Warning: no subtests performed in '~PepXMLFile()' (line 44)!
+
+checking void load(const std::string&amp; filename, std::vector&lt;ProteinIdentification&gt;&amp; proteins, PeptideIdentificationList&amp; peptides, const std::string&amp; experiment_name, SpectrumMetaDataLookup&amp; lookup) ... While loading '/scratch/kohlbach/openms4-core-181dadf/source/src/tests/class_tests/openms/data/PepXMLFile_test.mzML': Ill formed absolute or relative sourceFile path: file://IBT-RABEAM/Data/andersm
+To ensure tracability of results please prefer mzML files as primary MS runs.
+Filename: 'PepXMLFile_test.mzXML'
+Non-fatal error while loading '/scratch/kohlbach/openms4-core-181dadf/source/src/tests/class_tests/openms/data/PepXMLFile_test.pepxml': Errors during parsing of aminoacid/terminal modification element:
+Non-fatal error while loading '/scratch/kohlbach/openms4-core-181dadf/source/src/tests/class_tests/openms/data/PepXMLFile_test.pepxml': No modification description given. Try...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="SpectrumAccessSqMass_test" classname="SpectrumAccessSqMass_test" time="0.515335" status="run">
+		<properties/>
+		<system-out>checking SpectrumAccessSqMass(OpenMS::Internal::MzMLSqliteHandler handler) ... 
+: passed
+
+checking SpectrumAccessSqMass(const OpenMS::Internal::MzMLSqliteHandler&amp; handler, const std::vector&lt;int&gt; &amp; indices) ... 
+: passed
+
+checking SpectrumAccessSqMass(const SpectrumAccessSqMass&amp; sp, const std::vector&lt;int&gt;&amp; indices) ... 
+: passed
+
+checking ~SpectrumAccessSqMass() ... : passed
+Warning: no subtests performed in '~SpectrumAccessSqMass()' (line 117)!
+
+checking size_t getNrSpectra() const ... 
+: passed
+
+checking OpenSwath::SpectrumPtr getSpectrumById(int id) ... 
+: passed
+
+checking OpenSwath::SpectrumMeta getSpectrumMetaById(int id) const ... 
+: passed
+
+checking std::vector&lt;std::size_t&gt; getSpectraByRT(double RT, double deltaRT) const ... 
+: passed
+
+checking std::shared_ptr&lt;OpenSwath::ISpectrumAccess&gt; lightClone() const ... 
+: passed
+
+checking void getAllSpectra(std::vector&lt; OpenSwath::SpectrumPtr &gt; &amp; spectra, std::vector&lt; OpenSwath::SpectrumMeta &gt; &amp; spectra_meta) ... 
+Update ranges was called but ranges were already...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="DataFilters_test" classname="DataFilters_test" time="0.0593672" status="run">
+		<properties/>
+		<system-out>checking (DataFilters()) ... 
+: passed
+
+checking ([EXTRA]~DataFilters()) ... : passed
+Warning: no subtests performed in '([EXTRA]~DataFilters())' (line 41)!
+
+checking ([EXTRA]DataFilters::DataFilter()) ... 
+: passed
+
+checking ([EXTRA]~DataFilters::DataFilter()) ... : passed
+Warning: no subtests performed in '([EXTRA]~DataFilters::DataFilter())' (line 53)!
+
+checking ([EXTRA]void DataFilter::fromString(const std::string&amp; filter)) ... 
+: passed
+
+checking ([EXTRA]std::string DataFilter::toString() const) ... 
+: passed
+
+checking ([EXTRA]bool DataFilter::operator==(const DataFilter&amp; rhs) const) ... 
+: passed
+
+checking ([EXTRA]bool DataFilter::operator!=(const DataFilter&amp; rhs) const) ... 
+: passed
+
+checking (bool isActive() const) ... 
+: passed
+
+checking (void setActive(bool is_active)) ... 
+: passed
+
+checking (void add(const DataFilter&amp; filter)) ... 
+: passed
+
+checking (const DataFilter&amp; operator[](Size index) const ) ... 
+: passed
+
+checking (Size size() const) ... 
+: passed
+
+checking (void remove(Size index)) ... ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="BinnedSpectrum_test" classname="BinnedSpectrum_test" time="0.0704105" status="run">
+		<properties/>
+		<system-out>checking ~BinnedSpectrum() ... : passed
+Warning: no subtests performed in '~BinnedSpectrum()' (line 40)!
+
+checking (BinnedSpectrum()) ... 
+: passed
+
+checking (BinnedSpectrum(const PeakSpectrum &amp; ps, float size, bool unit_ppm, UInt spread, float offset)) ... 
+: passed
+
+checking (BinnedSpectrum(const BinnedSpectrum &amp;source)) ... 
+: passed
+
+checking (BinnedSpectrum&amp; operator=(const BinnedSpectrum &amp;source)) ... 
+: passed
+
+checking (bool operator==(const BinnedSpectrum &amp;rhs) const ) ... 
+: passed
+
+checking (bool operator!=(const BinnedSpectrum &amp;rhs) const ) ... 
+: passed
+
+checking (float getBinSize() const ) ... 
+: passed
+
+checking (UInt getBinSpread() const ) ... 
+: passed
+
+checking (SparseVectorIndexType getBinIndex(double mz) const) ... 
+: passed
+
+checking (float getBinLowerMZ(size_t i) const) ... 
+: passed
+
+checking (const SparseVectorType* getBins() const) ... 
+: passed
+
+checking (SparseVectorType* getBins()) ... 
+: passed
+
+checking (void setBinning()) ... : passed
+
+checking (bool BinnedSpectrum::isCompatible...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="NASequence_test" classname="NASequence_test" time="0.105996" status="run">
+		<properties/>
+		<system-out>checking (NASequence()=default) ... 
+: passed
+
+checking (NASequence(const NASequence&amp;) = default) ... 
+: passed
+
+checking (NASequence(NASequence&amp;&amp;) = default) ... 
+: passed
+
+checking (NASequence&amp; operator=(const NASequence&amp;)&amp; = default) ... 
+: passed
+
+checking (NASequence&amp; operator=(NASequence&amp;&amp;)&amp; = default) ... 
+: passed
+
+checking (NASequence(std::vector&lt;const Ribonucleotide*&gt; s, const RibonucleotideChainEnd* five_prime, const RibonucleotideChainEnd* three_prime)) ... 
+: passed
+
+checking (virtual ~NASequence()=default) ... : passed
+Warning: no subtests performed in '(virtual ~NASequence()=default)' (line 102)!
+
+checking (bool operator==(const NASequence&amp; rhs) const) ... 
+: passed
+
+checking (bool operator&lt;(const NASequence&amp; rhs) const) ... 
+: passed
+
+checking (void setSequence(const std::vector&lt;const Ribonucleotide*&gt;&amp; s)) ... 
+: passed
+
+checking (const std::vector&lt;const Ribonucleotide*&gt;&amp; getSequence() const ) ... 
+: passed
+
+checking (std::vector&lt;const Ribonucleotide*&gt;&amp; getSequence()) ... 
+: passed
+
+checking (...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="SimpleTSGXLMS_test" classname="SimpleTSGXLMS_test" time="0.0753928" status="run">
+		<properties/>
+		<system-out>checking SimpleTSGXLMS() ... 
+: passed
+
+checking SimpleTSGXLMS(const SimpleTSGXLMS&amp; source) ... 
+: passed
+
+checking ~SimpleTSGXLMS() ... : passed
+Warning: no subtests performed in '~SimpleTSGXLMS()' (line 68)!
+
+checking SimpleTSGXLMS&amp; operator = (const SimpleTSGXLMS&amp; tsg) ... 
+: passed
+
+checking virtual void getLinearIonSpectrum(PeakSpectrum &amp; spectrum, AASequence &amp; peptide, Size link_pos, int charge = 1, Size link_pos_2 = 0) ... 
+: passed
+
+checking virtual void getXLinkIonSpectrum(PeakSpectrum &amp; spectrum, AASequence &amp; peptide, Size link_pos, double precursor_mass, bool frag_alpha, int mincharge, int maxcharge, Size link_pos_2 = 0) ... 
+: passed
+
+checking virtual void getXLinkIonSpectrum(PeakSpectrum &amp; spectrum, OPXLDataStructs::ProteinProteinCrossLink &amp; crosslink, bool frag_alpha, int mincharge, int maxcharge) ... 
+: passed
+
+checking ([EXTRA] charge-two suffix losses use neutral masses) ... 
+: passed
+
+Output of successful tests were suppressed. Set the environment variable 'OPENMS_TEST_VERBOSE=True' to enabl...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="FragmentIndex_test" classname="FragmentIndex_test" time="1.31301" status="run">
+		<properties/>
+		<system-out>checking build() ... Generating peptides...
+Sorting peptides...
+done.
+Generating fragments...
+Sorting fragments...
+Creating DB with bucket_size 4096
+Fragment index built!
+
+Generating peptides...
+Sorting peptides...
+done.
+Generating fragments...
+Sorting fragments...
+Creating DB with bucket_size 4096
+Fragment index built!
+Generating peptides...
+Sorting peptides...
+done.
+Generating fragments...
+Sorting fragments...
+Creating DB with bucket_size 4096
+Fragment index built!
+Generating peptides...
+Sorting peptides...
+done.
+Generating fragments...
+Sorting fragments...
+Creating DB with bucket_size 4096
+Fragment index built!
+: passed
+
+checking [EXTRA] peptide:enzyme_specificity (full / semi / none) ... Generating peptides...
+Sorting peptides...
+done.
+Generating fragments...
+Sorting fragments...
+Creating DB with bucket_size 4096
+Fragment index built!
+
+Generating peptides...
+Sorting peptides...
+done.
+Generating fragments...
+Sorting fragments...
+Creating DB with bucket_size 4096
+Fragment index built!
+Generating peptides......
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="FeatureFinderAlgorithmPicked_test" classname="FeatureFinderAlgorithmPicked_test" time="0.678207" status="run">
+		<properties/>
+		<system-out>checking (FeatureFinderAlgorithmPicked()) ... 
+: passed
+
+checking (~FeatureFinderAlgorithmPicked()) ... : passed
+Warning: no subtests performed in '(~FeatureFinderAlgorithmPicked())' (line 44)!
+
+checking (virtual void run()) ... Update ranges was called but ranges were already up-to-date
+Warning: FeatureFinderAlgorithmPicked received the unknown parameter 'debug'!
+Found 25 seeds for charge 2.
+Found 8 feature candidates for charge 2.
+
+: passed
+
+checking ([EXTRA] isotopic_pattern:mz_tolerance and mass_trace:mz_tolerance are not interchangeable (#9247)) ... Found 15 seeds for charge 2.
+Found 1 feature candidates for charge 2.
+Found 18 seeds for charge 2.
+Found 0 feature candidates for charge 2.
+
+: passed
+
+Output of successful tests were suppressed. Set the environment variable 'OPENMS_TEST_VERBOSE=True' to enable them.
+PASSED
+Removed 0 overlapping features.
+
+Info: reasons for not finalizing a feature during its construction:
+ - Invalid fit: Fitted model is bigger than 'max_rt_span': 1 times
+
+8 features found.
+Re...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+</testsuite>

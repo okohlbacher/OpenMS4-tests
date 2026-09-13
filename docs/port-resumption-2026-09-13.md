@@ -5,9 +5,9 @@ and FLASHApp qualification work. The released graph retains Core `bc9cc12514c7`;
 the new Core and TOPP branches remain review candidates until their coordinated
 consumer and platform checks complete.
 
-## Core review branch
+## Initial Core review validation
 
-Source: `9b568722aee9040b5aa010d2ff4dd0b68357e6dd`, branch
+First validated source: `9b568722aee9040b5aa010d2ff4dd0b68357e6dd`, branch
 `codex/cpp-review-completion`, [draft PR](https://github.com/okohlbacher/OpenMS4-core/pull/1).
 Claude's first committed batch was `1beb468`; this resumption preserved his remaining
 121-file working change and then corrected the review findings and added tests.
@@ -65,6 +65,46 @@ workspace name it is clean at `9b56872`. Installed output is its sibling `sdk`.
 The review changes are not a new released ABI, and optional integrations disabled
 in the Core presets were not qualified by these tests.
 
+## Integration with Claude's newer Core branch
+
+The current review HEAD is `df774c1f88bef0cf314047fb33f75bce6994f86d`. Merge
+`268ebb6` also brings in Claude's already-pushed default-branch work through
+`ef71b05`: the FragmentIndex thread budget, synchronized FeatureFinder abort
+accounting and trace warning, invalid RNA-modification diagnostics, declared
+mzTab score columns, and the ci.2 Homebrew formula/bottle workflow. Both histories
+are preserved. The earlier `9b56872` results above do not qualify this merge.
+
+The former Homebrew job tapped the default repository and built the released
+formula. Its green status therefore did not test the review revision. Commit
+`df774c1` now generates a disposable formula from the checked-out formula, pins
+the exact Git archive and checksum, removes released bottle entries, builds it,
+and verifies the installed source revision and clean flag. The published formula
+is unchanged. Three CI helper tests, nineteen SDK contracts and Ruby syntax checks
+pass locally. Native and Homebrew qualification is rerunning at this revision.
+
+The exact merged source now passes Linux validation on dax:
+
+| Check at `df774c1` | Result | Wall time |
+| --- | --- | --- |
+| Release class suite, slow test enabled | 702/702 passed | 22.49 s |
+| Targeted Debug suite, including the merged algorithm changes | 16/16 passed | 1.34 s |
+| Installed and relocated SDK consumer suites | 8/8 each passed | see acceptance receipt |
+| Wrong source revision | rejected with expected diagnostic | see acceptance receipt |
+
+The incremental Release and Debug builds took 19.52 s and 23.25 s respectively,
+with zero warning lines in either incremental log. This does not supersede the
+vendor-warning limitations of the earlier fresh builds.
+[Release XML](port-resumption-2026-09-13/core-merged-release-tests.xml),
+[Debug XML](port-resumption-2026-09-13/core-merged-debug-tests.xml),
+[SDK acceptance](port-resumption-2026-09-13/core-merged-sdk-acceptance.json),
+[build identity](port-resumption-2026-09-13/core-merged-build-info.json), and
+[summary](port-resumption-2026-09-13/core-merged-validation-summary.json).
+
+An attempt to register persistent Core runners on dax and the Mac Studio was
+rejected by automatic approval review: authorization covered builds, not installing
+an ongoing remote-execution service. No new Core runner was installed. The build
+continues through existing SSH access to scratch and hosted GitHub Actions.
+
 ## TOPP compatibility branch
 
 Source `de96e4a2efedc1cde14a9be6c6811a18540ca0c0`, branch
@@ -92,6 +132,11 @@ installing the new TOPP into the copy then provided its normal CLI/Core runtime
 dependencies for numerical tests. The original qualified SDK was untouched.
 These checks establish compatibility with released Core; they do not qualify the
 pending new Core dependency pin.
+
+All five native platform jobs also passed in push run
+[34757301717](https://github.com/okohlbacher/OpenMS4-topp/actions/runs/34757301717).
+The two Homebrew payload jobs are still running at the recorded snapshot;
+[platform receipt](port-resumption-2026-09-13/topp-platform-ci.json).
 
 ## Published pyOpenMS and final app image
 
@@ -158,10 +203,10 @@ These are native package archives that need the matching installed SDK dependenc
 not self-contained application images. The app image above retains its independently
 tested FLASHTnT `4ca4e73` runtime pin.
 
-Core's final push CI is
-[34756983410](https://github.com/okohlbacher/OpenMS4-core/actions/runs/34756983410),
+Core's current push CI is
+[34757972524](https://github.com/okohlbacher/OpenMS4-core/actions/runs/34757972524),
 covering five native platforms and both macOS Homebrew checks. It is still in
-progress. Superseded runs were cancelled. Core remains a draft pending those checks,
+progress. Superseded runs and duplicate PR runs were cancelled. Core remains a draft pending those checks,
 additional review coverage and the coordinated consumer pin/rebuild cycle.
 
 The working integration checkout deliberately still rejects the reviewed Core HEAD
