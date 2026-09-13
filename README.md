@@ -1,5 +1,9 @@
 # OpenMS 4 package experiment
 
+**[State of the project](docs/project-state.md)** — the current picture in one page:
+the eighteen packages and their pins, what is released and delivered, what the last
+verification proved, what is not qualified, and where every other report fits.
+
 The [latest port review and acceptance report](docs/port-resumption-2026-09-12.md) records the remaining work, new FLASHTnT package and fresh consumer tests. The [Core ci.2 integration report](docs/core-ci2-cycle-validation.md) records the released SDK graph, five-platform CI and 2,041 installed-tool regression checks. Use the [installed-SDK build instructions](docs/build-split-packages.md) to reproduce the consumer build and tests.
 
 The [tool backend extraction plan](docs/tool-backend-refactoring.md) describes the original 17-package layout and retained Core format support. The additional FLASHTnT package ports FLASHApp's previously external tagging executable. ProSE and FLASH provide installed backend SDKs for Python. Complete FLASHApp runtime/image acceptance remains separate from the native package and wheel tests.

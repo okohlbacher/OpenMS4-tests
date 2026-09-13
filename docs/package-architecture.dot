@@ -1,5 +1,5 @@
 digraph Packages {
-  graph [rankdir=TB, bgcolor="#F7F9FC", pad="0.35", nodesep="0.35", ranksep="0.6", fontname="Helvetica", label="OpenMS 4 — 17 repositories, installed SDK dependencies\nCore builds and tests independently; consumers pin its version and source commit", labelloc=t, fontsize=22];
+  graph [rankdir=TB, bgcolor="#F7F9FC", pad="0.35", nodesep="0.35", ranksep="0.6", fontname="Helvetica", label="OpenMS 4 — 18 repositories, installed SDK dependencies\nCore builds and tests independently; consumers pin its version and source commit", labelloc=t, fontsize=22];
   node [shape=box, style="rounded,filled", fontname="Helvetica", fontsize=13, margin="0.18,0.13", color="#45769B", fillcolor="#E8F2FC", fontcolor="#183347"];
   edge [color="#536B83", arrowsize=0.7, penwidth=1.4, fontname="Helvetica", fontsize=10];
   app [label="FLASHApp\nPython app + Vue component", fillcolor="#DCF0E4", color="#56856A"];
@@ -22,11 +22,12 @@ digraph Packages {
   fixtures [label="Test data\nVersioned TOPP fixtures\nInstalled numerical test suite", fillcolor="#FFF1D5", color="#AF8A43"];
   native [label="Native dependencies\nMatching compiler, runtime and library versions", fillcolor="#ECECF2", color="#858595"];
   qt [label="Qt", fillcolor="#ECECF2", color="#858595"];
-  tnt [label="External FLASHTnT\nSeparate source pin\nCompatible artifact still required", fillcolor="#FFF1D5", color="#AF8A43"];
-  app -> py; app -> flash [style=dashed, label="tool"]; app -> topp [style=dashed, label="tools"]; app -> tnt [style=dashed];
+  tnt [label="FLASHTnT\nFLASHTnT executable\nTagging and identification"];
+  app -> py; app -> flash [style=dashed, label="tool"]; app -> topp [style=dashed, label="tools"]; app -> tnt [style=dashed, label="tool"];
   py -> core; py -> prose [label="backend"]; py -> flash [label="backend"];
   topp -> cli; swath -> cli; products -> cli;
   flash -> cli [label="executable only"]; prose -> cli [label="executable only"];
+  tnt -> cli; tnt -> flash [label="backend"];
   flash -> core; prose -> core;
   cli -> core; gui -> cli; gui -> core; gui -> qt;
   fixtures -> core [style=dashed, label="fixture metadata"];
@@ -34,6 +35,6 @@ digraph Packages {
   py -> fixtures [style=dashed, constraint=false];
   viewers -> topp [style=dashed, label="optional tools", constraint=false];
   core -> native;
-  note [shape=plain, fontcolor="#536B83", fontsize=12, label="Arrows: consumer → dependency. Dashed: runtime or test use. Repeated/transitive edges are omitted.\nCore is public; the other 16 repositories are private. Readers and writers remain in Core.\nProSE and FLASH backend libraries link Core; Python does not load the CLI or GUI libraries.\nThis diagram describes package boundaries, not a self-contained runtime or completed FLASHApp deployment."];
+  note [shape=plain, fontcolor="#536B83", fontsize=12, label="Arrows: consumer → dependency. Dashed: runtime or test use. Repeated/transitive edges are omitted.\nCore is public; the other 17 repositories are private. Readers and writers remain in Core.\nProSE and FLASH backend libraries link Core; Python does not load the CLI or GUI libraries.\nThis diagram describes package boundaries, not a self-contained runtime or completed FLASHApp deployment."];
   native -> note [style=invis];
 }

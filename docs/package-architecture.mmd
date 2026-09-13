@@ -24,5 +24,7 @@ flowchart BT
   App["FLASHApp"] --> Python
   App -. tools .-> TOPP
   App -. tool .-> FLASH
-  App -. separate artifact required .-> TNT["External FLASHTnT"]
+  TNT["FLASHTnT: tagging executable"] --> CLI
+  TNT -->|backend| FLASH
+  App -. tool .-> TNT
   Core --> Native["Matching native dependency environment"]
