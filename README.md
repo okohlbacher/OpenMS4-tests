@@ -10,7 +10,10 @@ The [tool backend extraction plan](docs/tool-backend-refactoring.md) describes t
 
 A source-complete decomposition of OpenMS develop at `ca32296038839459d8c9b075b759e285913d6294`. The original OpenMS 3.6 history remains on `develop`; this experimental branch replaces the shared source build with pinned package submodules.
 
-Read [the synthesized refactoring plan](docs/refactoring-plan.md), [the package diagram](docs/package-architecture.svg), and [validation results](docs/validation.md). The plan incorporates actual command-line reviews from Claude Fable 5.1, Kimi and Vibe; verbatim reviews and invocation metadata are in [docs/reviews](docs/reviews/).
+Read [the synthesized refactoring plan](docs/refactoring-plan.md) and [validation results](docs/validation.md).
+
+![OpenMS 4 package architecture](docs/package-architecture.svg)
+ The plan incorporates actual command-line reviews from Claude Fable 5.1, Kimi and Vibe; verbatim reviews and invocation metadata are in [docs/reviews](docs/reviews/).
 
 The subsequent [implementation audit](docs/reviews/2026-09-10-implementation-adversarial/review.md) cross-checks fresh Claude, Kimi and Vibe reviews against the extracted packages. The resulting [refactoring implementation and validation matrix](docs/implementation-2026-09-10/README.md) records the fixes, removed obsolete code, native builds, numerical tests, source identity and remaining publication gates. The original audit and plan are retained as dated evidence.
 
@@ -35,7 +38,7 @@ The subsequent [implementation audit](docs/reviews/2026-09-10-implementation-adv
 | [test-data](https://github.com/okohlbacher/OpenMS4-test-data) | Versioned TOPP fixtures and preserved full numerical acceptance suite |
 | [flashapp](https://github.com/okohlbacher/OpenMS4-flashapp) | Public FLASHApp snapshot migrated to verified runtime/wheel inputs |
 
-The integration, FLASHApp and experimental FLASHTnT repositories require access; the released native package repositories are public. Initialize the immediate package submodules below. Core's contrib/vcpkg and FLASHApp's Vue component retain their upstream pins; initialize those nested dependencies only when needed.
+Only the integration parent and FLASHApp are private; the other sixteen repositories are public. Initialize the immediate package submodules below. Core's contrib/vcpkg and FLASHApp's Vue component retain their upstream pins; initialize those nested dependencies only when needed.
 
 ```sh
 git clone --branch codex/package-split https://github.com/okohlbacher/OpenMS4-tests.git

@@ -1,5 +1,7 @@
 # Package split review and port resumption — 2026-09-12
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 The review resumed from parent `bab12406e0` and its released Core ci.2 graph. The
 [previous cycle report](core-ci2-cycle-validation.md) records the earlier
 15-consumer build. A fresh, clean checkout of parent `39ff564483bf` builds all

@@ -1,5 +1,7 @@
 # Standalone TOPP build against the installed Core SDK
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 All 130 enabled TOPP tools built and installed from a clean standalone source
 archive using the pinned Core and CLI SDKs. Original repositories, Core/CLI/TOPP
 build trees and the original SDK installation were inaccessible throughout

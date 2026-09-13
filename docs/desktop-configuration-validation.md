@@ -1,5 +1,7 @@
 # Desktop configure-only validation
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 The final desktop package CMake files were copied into a temporary directory and configured with the real Homebrew Qt 6.11.1 installation. OpenMS core/CLI SDKs were deliberately fake imported targets with revision `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa`. The installed GUI export was produced by the GUI CMake configuration, with an empty placeholder library file; it is not a built binary.
 
 ## Passed configuration/generation cases

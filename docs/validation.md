@@ -1,5 +1,7 @@
 # Validation recorded on 10 September 2026
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 The stripped Core SDK and scientific tests built on **macOS arm64, Debug**, and the full suite passed **709/709 CTests in 311.29 seconds**. The final committed SDK also passed 26 consumer runtime checks across library-only/TestSupport and original/relocated installations, with Core source/build paths hidden. See [Core native validation](core-native-validation.md) for the observed dependency issues, exact profile and continuing acceptance results.
 
 Source/configuration validation passed **62 checks**: the original 53 plus nine regressions for the exact invalid-data-override assertion. These checks are separate from native CTest results.

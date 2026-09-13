@@ -1,5 +1,7 @@
 # Relocated native tool runtime — 2026-09-10
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 The installed Core, CLI and 150 TOPP/OpenSWATH/FLASH tools passed a macOS arm64 runtime qualification after dependency bundling and relocation. The final archive was safely extracted into another directory containing spaces and executed with access to both the original SDK and the assembled runtime denied.
 
 Archive: `openms4-tools-macos-arm64.tar.gz`, **82,818,555 bytes** (79.0 MiB).

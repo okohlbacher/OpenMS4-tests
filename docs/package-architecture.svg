@@ -303,7 +303,7 @@
 <title>note</title>
 <path fill="#e8f2fc" stroke="none" d="M1045.98,-53.25C1045.98,-53.25 475.98,-53.25 475.98,-53.25 469.98,-53.25 463.98,-47.25 463.98,-41.25 463.98,-41.25 463.98,-12 463.98,-12 463.98,-6 469.98,0 475.98,0 475.98,0 1045.98,0 1045.98,0 1051.98,0 1057.98,-6 1057.98,-12 1057.98,-12 1057.98,-41.25 1057.98,-41.25 1057.98,-47.25 1051.98,-53.25 1045.98,-53.25"/>
 <text xml:space="preserve" text-anchor="middle" x="760.98" y="-41.85" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#536b83">Arrows: consumer → dependency. Dashed: runtime or test use. Repeated/transitive edges are omitted.</text>
-<text xml:space="preserve" text-anchor="middle" x="760.98" y="-26.85" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#536b83">Core is public; the other 17 repositories are private. Readers and writers remain in Core.</text>
+<text xml:space="preserve" text-anchor="middle" x="760.98" y="-26.85" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#536b83">Seventeen repositories are public; only FLASHApp is private. Readers and writers remain in Core.</text>
 <text xml:space="preserve" text-anchor="middle" x="760.98" y="-14.1" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#536b83">ProSE and FLASH backend libraries link Core; Python does not load the CLI or GUI libraries.</text>
 <text xml:space="preserve" text-anchor="middle" x="760.98" y="-1.35" font-family="Helvetica,sans-Serif" font-size="12.00" fill="#536b83">This diagram describes package boundaries, not a self&#45;contained runtime or completed FLASHApp deployment.</text>
 </g>

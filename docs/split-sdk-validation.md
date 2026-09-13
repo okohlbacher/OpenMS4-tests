@@ -1,5 +1,7 @@
 # Split SDK validation — 2026-09-11
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 The complete native package graph at parent `089cffa1f9f68607476f0713a334aa93bac24b71` was freshly checked out
 from GitHub and built in Release on IBMI dax. Every consumer used installed Core
 `94a2b114939e4c70e16b1141bd98c87b8d21d166`. No Core source/build-tree fallback or

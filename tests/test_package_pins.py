@@ -26,5 +26,10 @@ class PackagePins(unittest.TestCase):
                 self.assertRegex(entry['source_revision'],r'^[0-9a-f]{40}$')
                 if not packages[name].get('frozen_dependencies', False):
                     self.assertEqual(entry['source_revision'],packages[names[dependency]]['source_revision'],f'{name}->{dependency}')
+    def test_every_package_carries_the_current_graph_section(self):
+        # Each package repository is standalone, so it ships its own copy of the figure and of
+        # the generated section naming its dependencies and consumers; both follow the locks.
+        result=subprocess.run(['python3',str(ROOT/'tools'/'sync_package_docs.py'),'--check'],text=True,capture_output=True)
+        self.assertEqual(result.returncode,0,result.stdout+result.stderr)
 
 if __name__=='__main__':unittest.main()

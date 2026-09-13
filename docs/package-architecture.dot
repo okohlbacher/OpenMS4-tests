@@ -35,6 +35,6 @@ digraph Packages {
   py -> fixtures [style=dashed, constraint=false];
   viewers -> topp [style=dashed, label="optional tools", constraint=false];
   core -> native;
-  note [shape=plain, fontcolor="#536B83", fontsize=12, label="Arrows: consumer → dependency. Dashed: runtime or test use. Repeated/transitive edges are omitted.\nCore is public; the other 17 repositories are private. Readers and writers remain in Core.\nProSE and FLASH backend libraries link Core; Python does not load the CLI or GUI libraries.\nThis diagram describes package boundaries, not a self-contained runtime or completed FLASHApp deployment."];
+  note [shape=plain, fontcolor="#536B83", fontsize=12, label="Arrows: consumer → dependency. Dashed: runtime or test use. Repeated/transitive edges are omitted.\nSeventeen repositories are public; only FLASHApp is private. Readers and writers remain in Core.\nProSE and FLASH backend libraries link Core; Python does not load the CLI or GUI libraries.\nThis diagram describes package boundaries, not a self-contained runtime or completed FLASHApp deployment."];
   native -> note [style=invis];
 }

@@ -1,5 +1,7 @@
 # Tool backend extraction: native validation
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 This page records the macOS validation at parent `5d1e2391167dbb16c8ea6cd1001393bf5609e296`. The subsequent GCC numerical corrections and refreshed package pins are covered by the [Linux HPC validation](linux-hpc-validation.md).
 
 This implements the [refactoring plan](tool-backend-refactoring.md) on `codex/package-split`. The parent selects 17 private repositories through `packages.lock.json` and Git submodules. Eight repositories are new: NuXL, ProSE, NASE, Comet, Mascot, DatabaseSuitability, ProteomicsLFQ and ParquetDiff. The existing FLASH repository now owns its scientific backend as well as FLASHDeconv. FLASHApp and its previous dependency graph remain unchanged.

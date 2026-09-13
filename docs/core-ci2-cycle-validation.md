@@ -1,5 +1,7 @@
 # Core 4.0.0-ci.2 pin cycle — 2026-09-12
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 The package graph was advanced to Core `bc9cc12514c768385ce121d6ca4bb710fe1983c4`
 (`core-v4.0.0-ci.2`) as one qualified cycle: every consumer's `dependencies.lock.json`
 and generated workflows were rewritten from the parent lock in dependency order, each

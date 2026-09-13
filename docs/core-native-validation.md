@@ -1,5 +1,7 @@
 # Core SDK native validation
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 This is the historical Debug validation of Core `21b295c`. For the current
 build-system cleanup, pinned package graph and platform CI results, see
 [the current SDK validation report](split-sdk-validation.md).

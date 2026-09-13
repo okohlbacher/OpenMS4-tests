@@ -1,5 +1,7 @@
 # OpenMS 4 package split — state of the project, 2026-09-13
 
+*Part of the [OpenMS 4 package split](../README.md). [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 One document for someone arriving at this repository: what exists, what is proven,
 what is delivered, and what is explicitly not qualified yet. The dated reports keep
 the detail; this page keeps the current picture and links to them.

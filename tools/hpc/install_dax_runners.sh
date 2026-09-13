@@ -1,7 +1,10 @@
 #!/bin/bash
-# Run ON dax. One self-hosted GitHub runner per package repository, all labelled
-# dax-linux-x64, each started in the background as this user (no root, no systemd).
-# Registration lines "<repo> <token>" arrive on stdin from register_dax_runners.sh.
+# Run ON an IBMI Linux node (dax or ibminode05). One self-hosted GitHub runner per
+# package repository, started in the background as this user (no root, no systemd).
+# Every runner joins the dax-linux-x64 pool, which the generated workflows ask for;
+# the label names the pool, not the host, and the runner is additionally labelled with
+# its own hostname. Registration lines "<repo> <token>" arrive on stdin from
+# register_runners.sh.
 set -euo pipefail
 umask 077
 ROOT=/scratch/kohlbach/gh-runners
@@ -33,10 +36,10 @@ while read -r repo token; do
   chmod +x "$dir/pre-job.sh"
   echo "ACTIONS_RUNNER_HOOK_JOB_STARTED=$dir/pre-job.sh" >> "$dir/.env"
   ( cd "$dir" && ./config.sh --unattended --replace --url "https://github.com/okohlbacher/$repo" \
-      --token "$token" --name "dax-$repo" --labels dax-linux-x64 --work _work --disableupdate )
+      --token "$token" --name "$(hostname -s)-$repo" --labels "dax-linux-x64,$(hostname -s)" --work _work --disableupdate )
   # config.sh writes .path from the configuring shell's PATH; jobs need gh in front of it.
   sed -i "1s|^|$ROOT/bin:|" "$dir/.path"
   ln -sfn "$ROOT/bin/gh" "$HOME/.local/bin/gh"   # the PATH jobs inherit starts with ~/.local/bin
   ( cd "$dir" && nohup ./run.sh > runner.log 2>&1 & )
-  echo "started dax-$repo"
+  echo "started $(hostname -s)-$repo"
 done

@@ -1,5 +1,7 @@
 # TOPP test and benchmark runtimes — 10 September 2026
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 **1,948 checks passed, five skipped and none failed.** The four test batches
 consumed **342.03 seconds (5 minutes 42 seconds)** of CTest wall time. All 1,695
 runnable registered tests in this TOPP-only installation were executed, plus 258

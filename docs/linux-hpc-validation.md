@@ -1,5 +1,7 @@
 # Linux HPC validation of the extracted packages
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 The complete native package graph was checked out from GitHub and built on IBMI's `dax` node, using node-local `/scratch` for sources, builds and temporary files. The initial input was parent `5d1e2391167dbb16c8ea6cd1001393bf5609e296`. Linux testing exposed an inherited numerical defect; its corrections and all dependent pins were committed and pushed as parent `afeceb45805f6aeeb349a4902b136fbd705a461b` before a second, fresh build.
 
 ## Profile

@@ -1,5 +1,7 @@
 # Standalone tool backends: implementation plan
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 This plan supersedes the earlier ownership proposal where it suggested moving file writers out of Core. Requested on 2026-09-10: retain file-format support in the SDK; extract NuXL, ProSE, NASE and FLASH tools, with independent repositories and maximum-parallel native validation.
 
 ## Ownership

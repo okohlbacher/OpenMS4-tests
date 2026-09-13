@@ -1,5 +1,7 @@
 # OpenMS 4: synthesized refactoring plan and implemented experiment
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
+
 The later [implementation audit](reviews/2026-09-10-implementation-adversarial/review.md) reviews the extracted packages and provides the [next refactoring plan](reviews/2026-09-10-implementation-adversarial/refactoring-plan.md). It also corrects the testing-hook terminology below: the inherited compile definition is unused; its exported value records class-test enablement, not implemented hooks. The recorded native test results remain valid. This document retains the original decomposition decisions and implementation history.
 
 **10 September 2026.** The experiment establishes an installed scientific SDK as

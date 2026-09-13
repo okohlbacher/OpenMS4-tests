@@ -1,5 +1,9 @@
 # Build the split packages against Core
 
+*Part of the [OpenMS 4 package split](../README.md). [State of the project](project-state.md) · [Package architecture](package-architecture.svg)*
+
+![OpenMS 4 package architecture](package-architecture.svg)
+
 Each repository remains independently configurable with CMake and an installed
 SDK. `dependencies.lock.json` selects exact source revisions. The parent runner
 provides the build order and a combined installation for integration testing; it
