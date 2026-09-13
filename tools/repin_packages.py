@@ -26,7 +26,7 @@ Consumed packages move to the revisions the integration parent now pins, and the
 generated workflows follow: the Core release they download, the CLI and fixture
 checkouts they build, and for pyOpenMS the ProSE and FLASH backends.
 
-Co-Authored-By: Claude Fable 5.1 <noreply@anthropic.com>
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
 """
 
 
