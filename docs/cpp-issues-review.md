@@ -27,11 +27,11 @@ were wrong, intentional or already fixed. Each was read against the current sour
 
 | State | Findings |
 | --- | ---: |
-| fixed | 203 |
+| fixed | 200 |
 | documented | 20 |
 | not a defect | 1 |
 | not reachable | 1 |
-| open | 3 |
+| open | 6 |
 | no finding | 1 |
 
 *Documented* means the behaviour is intended or cannot change without breaking callers, and the
@@ -55,7 +55,8 @@ Tracing the entries surfaced these; each is fixed unless marked open.
 | Finding | Package | Outcome |
 | --- | --- | --- |
 | `.oms` consensus ratios were stored under the id of the feature's last handle and loaded into a local copy after it had been appended, so every ratio was lost | core | fixed, with a round-trip test |
-| `SimpleTSGXLMS` divides charge-two suffix losses by the charge twice (the sibling of CPP-042) | core | fixed |
+| `SimpleTSGXLMS` divides charge-two suffix losses by the charge twice (the sibling of CPP-042) | core | **open**: fixed in core-v4.0.0-ci.3, reverted for ci.4 with CPP-042 and CPP-043 because it changed OpenPepXL identification output |
+| `SqMassFile::transform` rebuilt chromatograms from the SQL tables alone, so SRM chromatograms lost their type in the low-memory sqMass-to-sqMass conversion, while `load()` kept it | core | fixed for ci.4; found by the new OpenSwath cacher test, covered by `SqMassFile_test` |
 | `FeatureFinderAlgorithm.h` and `FeatureFinderDefs.h` were installed but included by nothing, and the second duplicates a struct `FeatureFinderAlgorithmPicked.h` defines | core | deleted |
 | OpenSwathMzMLFileCacher's low-memory sqMass conversions shifted the writer's arguments and wrote mzML under a `.sqMass` name | openswath, test-data | fixed, with two round-trip tests |
 | `IDFilter`'s in-silico digestion passes `end - start` as the peptide length, but evidence ends are inclusive, so every length is one short | core | **open**: five TOPP references were produced with the current length and need analysis before it changes |
@@ -74,8 +75,17 @@ Windows, all on one assertion: `MzXMLFile_test` expected a ParseError for `peaks
 OutOfMemory, the allocation defect in the last row above. dax can satisfy that reservation, which is
 why it passed there; under a 12 GB `ulimit -v` it fails the same way, and it passes with the fix in
 `c77ff14`. The five-platform run for `c77ff14` passed all seven jobs, the two Homebrew formula builds
-included, and that revision is tagged `core-v4.0.0-ci.3`. The fixes reach consumers with that
-release's pin cycle.
+included, and that revision was released as `core-v4.0.0-ci.3`. That qualification was incomplete:
+rebuilding the package graph on dax against the ci.3 SDK, the installed console regression suite
+(2041 tests passing at ci.2) failed 107 of 2047 tests, because several fixes here change what the
+console tools write and the Core class tests do not compare those outputs. 89 failures come from
+CPP-026, 14 from the `dataProcessingList` count correction in `63e332c`, one from the `indexList`
+count correction in `181dadf`, three from the cross-link generator fixes (CPP-042, its SimpleTSGXLMS
+sibling, CPP-043), and one from a new OpenSwath cacher test that found the sqMass chromatogram-type
+loss listed above. For ci.4, CPP-026 and the cross-link fixes are reverted and recorded as open, the
+two count corrections stay with their references regenerated after checking each diff, and the
+sqMass loss is fixed (`23944b6`). ci.4 is not qualified yet: its class suite passes on dax, but its
+CI run, SDK, graph rebuild and regression suite are still to come.
 
 ## Every finding
 
@@ -106,7 +116,7 @@ release's pin cycle.
 | CPP-023 | Vocabulary printing splits output between two streams | **fixed** | the vocabulary stream operator writes is_a lines to its own stream |
 | CPP-024 | CV parameter rendering does not escape every XML attribute | **fixed** | accession, cvRef and unit accession are XML-escaped |
 | CPP-025 | A later processing method can omit its required action term | **fixed** | the fallback data-transformation term is decided per processing method |
-| CPP-026 | Processing step order is always written as zero | **fixed** | processingMethod order is the method index |
+| CPP-026 | Processing step order is always written as zero | **open** | Real: the mzML schema orders consecutive steps by it. Fixed in core-v4.0.0-ci.3 and reverted for ci.4, because 210 of the 267 TOPP reference mzML files record 0 for every step and the change failed 89 installed regression tests; it needs a coordinated reference update |
 | CPP-027 | mzML writing discards processing completion seconds | **documented** | mzML records the completion time to the minute; |
 | CPP-028 | Recognized software metadata can throw during mzML writing | **fixed** | software metadata is validated against the mapping's own path, and locateTerm reports an unmapped path instead of throwing std::out_of_range |
 | CPP-029 | Annotation-only brackets pass conversion checks but fail conversion | **fixed** | The attachment throw now uses the same predicate: policy == FAIL_ON_LOSS && carriesChemistry_(mod) (2399). |
@@ -122,8 +132,8 @@ release's pin cycle.
 | CPP-039 | SemanticValidator compares descendant units with the measured term | **fixed** | The lambda now compares with parsed_term.unit_accession (SemanticValidator.cpp:405), with a comment. |
 | CPP-040 | Failed semantic validation contaminates later document paths | **fixed** | validate() now also clears open_tags_ and fulfilled_ before parsing (SemanticValidator.cpp:155-160), with a comment explaining why. |
 | CPP-041 | The mzML header writer does not escape several string attributes | **fixed** | All of these sites now go through writeXMLAttribute_: software version (MzMLHandler.cpp:3800), SHA-1 and MD5 checksum text (:3832, :3836), fraction identifier (:5268), externalSpectrumID (:5481) and the non-standard array names in the spectrum and chromatogra… |
-| CPP-042 | XLMS linear suffix losses divide the mass by charge twice | **fixed** | Suffix losses divide by the charge once; the same double division in the sibling SimpleTSGXLMS generator, which OpenPepXL uses for its main score, was corrected too, with a regression that fails against the earlier library. |
-| CPP-043 | XLMS precursor isotope companions omit charge normalization | **fixed** | All three companions (lines 625, 656 and 686) now use `(mono_pos + Constants::C13C12_MASSDIFF_U) / static_cast<double>(charge)`. |
+| CPP-042 | XLMS linear suffix losses divide the mass by charge twice | **open** | Real. Fixed in core-v4.0.0-ci.3 (with the same double division in the sibling SimpleTSGXLMS generator, which OpenPepXL uses for its main score) and reverted for ci.4: it changed OpenPepXL scores and fragment annotations, failing three installed regression tests. It needs a reviewed reference update |
+| CPP-043 | XLMS precursor isotope companions omit charge normalization | **open** | Real. Fixed in core-v4.0.0-ci.3 and reverted for ci.4 together with CPP-042, so that ci.4 restores the ci.2 cross-link spectra exactly; reverting it with the suffix losses was a scoping decision, not a finding that the fix was wrong |
 | CPP-044 | Unmapped CV lookup depends on earlier validation calls | **fixed** | Both callbacks now look rules up with rules_.find() and fall back to a local empty vector, so they no longer insert (SemanticValidator.cpp:209-214 and 344-347), with a comment. |
 | CPP-045 | PeptideEvidence misclassifies valid and invalid position limits | **fixed** | hasValidLimits now returns start >= 0 && end >= 0 && start <= end (PeptideEvidence.cpp:86), with a comment explaining the inclusive contract and why end == N_TERMINAL_POSITION is a valid endpoint. |
 | CPP-046 | Semantic date validation applies date-time syntax to xsd:date | **not reachable** | Every shipped term the loader classifies as XSD_DATE is an xsd:dateTime (e.g. MS:1000747 completion time), so a date without a time is correctly invalid. The first fix relaxed validation for those terms and was reverted; the branch now documents why. |
