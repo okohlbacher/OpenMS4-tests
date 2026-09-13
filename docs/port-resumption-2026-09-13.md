@@ -65,6 +65,34 @@ workspace name it is clean at `9b56872`. Installed output is its sibling `sdk`.
 The review changes are not a new released ABI, and optional integrations disabled
 in the Core presets were not qualified by these tests.
 
+## TOPP compatibility branch
+
+Source `de96e4a2efedc1cde14a9be6c6811a18540ca0c0`, branch
+`codex/core-compatibility`, [draft PR](https://github.com/okohlbacher/OpenMS4-topp/pull/1).
+FeatureFinderCentroided no longer mutates the cached overall hull just before
+invalidating it. Its individual mass-trace hulls are still expanded. The package
+continues to pin released Core `bc9cc12514c7` and CLI `d5213ff3551a`.
+
+| Linux installed-package check | Result | Wall time |
+| --- | --- | --- |
+| Package metadata tests | 242/242 passed | 0.60 s |
+| Combined installation numerical suite | 1,952 passed, five skipped, zero failed | 12.46 s |
+
+[Metadata XML](port-resumption-2026-09-13/topp-metadata-tests.xml) and
+[numerical XML](port-resumption-2026-09-13/topp-combined-regressions.xml) retain the
+individual results. The five skips need external MSGFPlus, Sage, Comet or MSFragger
+executables. The combined prefix has updated TOPP and unchanged previously qualified
+sibling products, so the 1,957 entries are not exclusively TOPP tests.
+
+The fresh source checkout and test outputs are under
+`/scratch/kohlbach/openms4-topp-de96e4a` on dax. Compilation took 13.20 s after
+configuration against a disposable copy of the earlier complete SDK. That copy's
+old TOPP registration was removed before metadata tests to avoid duplicate discovery;
+installing the new TOPP into the copy then provided its normal CLI/Core runtime
+dependencies for numerical tests. The original qualified SDK was untouched.
+These checks establish compatibility with released Core; they do not qualify the
+pending new Core dependency pin.
+
 ## Published pyOpenMS and final app image
 
 [pyOpenMS ci.3](https://github.com/okohlbacher/OpenMS4-pyopenms/releases/tag/pyopenms-v4.0.0.dev0-ci.3)
@@ -120,10 +148,15 @@ removed its two designated caches, and retained an unrelated sibling. The correc
 hooks were deployed without restarting running jobs. No credentials were recorded.
 
 FLASHTnT `b0cf76d19340c824d51d3c403c609e11eda7a72e` passes all five platforms in
-manual run `34747196117`. Publication requires a successful **push** run, so the
-cancelled push run `34743012215` is being rerun at the same source. The annotated
-`flashtnt-v1.0.0-ci.1` tag is created; the first release attempt correctly refused
-publication while that gate was missing. Publication will be retried after it passes.
+both manual run `34747196117` and rerun push `34743012215`.
+[flashtnt-v1.0.0-ci.1](https://github.com/okohlbacher/OpenMS4-flashtnt/releases/tag/flashtnt-v1.0.0-ci.1)
+is published. Release workflow `34757106299` succeeded after the exact-source push
+gate passed. All ten asset digests, five archive checksums, executable architectures,
+source revisions and Core/CLI/FLASH dependency pins were verified;
+[receipt](port-resumption-2026-09-13/flashtnt-ci1-artifacts.json).
+These are native package archives that need the matching installed SDK dependencies,
+not self-contained application images. The app image above retains its independently
+tested FLASHTnT `4ca4e73` runtime pin.
 
 Core's final push CI is
 [34756983410](https://github.com/okohlbacher/OpenMS4-core/actions/runs/34756983410),
@@ -143,3 +176,11 @@ follow-ups; qualify Core on all platforms; update consumer locks and generated C
 in dependency order; rebuild and rerun the complete installed-tool suite before
 releasing a new consumer graph. TOPP's hull-cache change is prepared on
 `codex/core-compatibility` and is independently checked against released Core first.
+
+An additional inspection of the MSstats, mzData, mzXML and qcML changes found a
+retained-test gap: `MSstatsFile_test` contains no assertions, and many relevant
+qcML methods remain `NOT_TESTABLE`. The inherited mzData/mzXML malformed-input
+checks were temporary scratch programs. Existing suite success therefore does not
+exercise the new rejection and SAX chunk-boundary paths. Preserve those regression
+cases in Core's class tests before closing these review groups; no independent
+closure is claimed here.

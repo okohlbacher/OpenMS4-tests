@@ -39,19 +39,21 @@ five applications, one Python binding package and one Streamlit application.
 | parquet-diff | public | `682f7086ebe9` | `parquet-diff-v1.0.0-ci.2` | ParquetDiff |
 | desktop | public | `15c7a6309561` | `desktop-v1.0.0-ci.2` at `717d0c63da63` | GUI SDK, TOPPView, ImageCreator, INIFileEditor, TOPPAS, ExecutePipeline |
 | pyopenms | public | `b7edae7a89d9` | `pyopenms-v4.0.0.dev0-ci.3` at `b7edae7a89d9` | nanobind bindings, installed module tree and repaired wheels |
-| flashtnt | public | `4ca4e73a9751` | – | FLASHTnT tagging executable |
+| flashtnt | public | `4ca4e73a9751` | `flashtnt-v1.0.0-ci.1` at `b0cf76d19340` | FLASHTnT tagging executable |
 | flashapp | private | `57be473c38b78` | – | Streamlit application and Vue component |
 
 The Core review branch `codex/cpp-review-completion` is at `9b568722aee9`, with
 702 Release tests, 13 targeted Debug tests and installed/relocated SDK acceptance
 passing on Linux. It is not the released Core pin above. Its coordinated consumer
 update waits for native platform and Homebrew qualification. TOPP's compatibility
-change is preserved separately on `codex/core-compatibility`.
+change is preserved separately on `codex/core-compatibility`, with 242 metadata
+tests passing and a combined installation run of 1,952 passed/five skipped in
+12.46 seconds against released Core.
 
-pyOpenMS ci.3 is published for all five platforms. FLASHTnT's newer `b0cf76d19340`
-has a green manually dispatched five-platform build; its release pipeline requires
-a green push build, which is being rerun before publication. The app runtime retains
-the tested `4ca4e73` FLASHTnT pin.
+pyOpenMS ci.3 and FLASHTnT ci.1 are published for all five platforms. FLASHTnT's
+newer `b0cf76d19340` passed both dispatch and push builds, and all release archives
+have verified checksums, source pins and executable architectures. The app runtime
+retains the tested `4ca4e73` FLASHTnT pin.
 
 ## Building and testing
 
@@ -115,7 +117,8 @@ and the FLASHTnT sanitizer, repeatability and cross-platform evidence.
 - **pyOpenMS** — installed module trees plus repaired wheels (CPython 3.12) for five
   platforms, tested from a clean environment.
 - **desktop** — five platform archives; no installer, signing or notarization.
-- **FLASHTnT, FLASHApp** — no published artifact.
+- **FLASHTnT** — five native platform archives, requiring the pinned SDK dependencies.
+- **FLASHApp** — locally tested image; no published artifact.
 
 ## Build infrastructure
 
