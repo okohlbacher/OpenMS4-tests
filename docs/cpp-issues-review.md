@@ -84,8 +84,12 @@ count correction in `181dadf`, three from the cross-link generator fixes (CPP-04
 sibling, CPP-043), and one from a new OpenSwath cacher test that found the sqMass chromatogram-type
 loss listed above. For ci.4, CPP-026 and the cross-link fixes are reverted and recorded as open, the
 two count corrections stay with their references regenerated after checking each diff, and the
-sqMass loss is fixed (`23944b6`). ci.4 is not qualified yet: its class suite passes on dax, but its
-CI run, SDK, graph rebuild and regression suite are still to come.
+sqMass loss is fixed (`23944b6`). A review of that candidate found the same settings loss for spectra, fixed in `4f5c86f`. The
+five-platform run for `4f5c86f` passed all seven jobs. Rebuilding the package graph on dax against
+that run's own Linux SDK, every package test passed and the installed regression suite failed only
+the 14 tests whose references carried the old counts; with those references updated (test-data
+`43b02b1`), it passes 2047 of 2047. `4f5c86f` is tagged `core-v4.0.0-ci.4`. Desktop and FLASHTnT
+are rebuilt once this cycle's TOPP and FLASH releases exist.
 
 ## Every finding
 
