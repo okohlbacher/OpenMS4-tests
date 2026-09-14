@@ -420,7 +420,8 @@ def scaffold(name: str, lock: dict, refs: dict) -> None:
             ci = source / "tools/ci"
             ci.mkdir(parents=True, exist_ok=True)
             for template in TEMPLATES.iterdir():
-                shutil.copyfile(template, ci / template.name)
+                if template.is_file():  # skip __pycache__ left by checking a template locally
+                    shutil.copyfile(template, ci / template.name)
     ignore = source / ".gitignore"
     lines = ignore.read_text().splitlines() if ignore.exists() else []
     for wanted in ("/dependencies/", "build/", "__pycache__/"):
