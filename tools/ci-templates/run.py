@@ -80,6 +80,9 @@ def main() -> None:
     parser.add_argument("--work-dir", required=True, type=Path)
     parser.add_argument("--jobs", type=int, default=2)
     args = parser.parse_args()
+    # The first launches of freshly built binaries stall in syspolicyd on the Mac Studio runner;
+    # serial tests confine that stall to the first test, so its workflow asks for them. Builds stay parallel.
+    test_jobs = "1" if os.environ.get("OPENMS4_SERIAL_TESTS") == "1" else str(args.jobs)
     source = Path(__file__).resolve().parents[2]
     work = args.work_dir.resolve()
     if args.jobs < 1 or (work.exists() and any(work.iterdir())):
@@ -166,7 +169,7 @@ def main() -> None:
         dll_dirs = sorted({str(path.parent) for path in build.rglob("*.dll")})
         env["PATH"] = os.pathsep.join([*dll_dirs, env["PATH"]])
     run("test-package", ["ctest", "--test-dir", str(build), "-C", configuration,
-                      "--output-on-failure", "--no-tests=error", "--parallel", str(args.jobs)])
+                      "--output-on-failure", "--no-tests=error", "--parallel", test_jobs])
     run("install-package", ["cmake", "--install", str(build), "--config", configuration])
     check_install(install, tools, windows)
     env["OPENMS_TOOL_PREFIX_PATH"] = str(install)
