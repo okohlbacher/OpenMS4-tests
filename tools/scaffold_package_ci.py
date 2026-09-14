@@ -174,6 +174,9 @@ jobs:
       GH_TOKEN: ${{{{ github.token }}}}
       PYTHONUTF8: '1'
       OMP_NUM_THREADS: '1'
+      # Parallel launches of freshly built binaries stall ~25 s on the Mac Studio runner (in
+      # syspolicyd); serial launches do not. The drivers run ctest serially when this is 1.
+      OPENMS4_SERIAL_TESTS: ${{{{ startsWith(runner.name, 'studio-') && '1' || '0' }}}}
 {env_extra}    steps:
       - uses: {CHECKOUT}
         with:
