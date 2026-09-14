@@ -162,6 +162,16 @@ sibling is retained; the corrected hooks were applied to all sixteen existing ru
 - Source pins establish provenance, not binary compatibility: consumers must use the
   same compiler, runtime and dependency profile as the installed Core.
 
+## Backlog
+
+- **Warnings as errors.** The CI scripts of twelve packages (CLI, Comet,
+  DatabaseSuitability, desktop, FLASH, Mascot, NASE, NuXL, OpenSWATH, ParquetDiff,
+  ProSE, ProteomicsLFQ) pass `-DOPENMS4_WARNINGS_AS_ERRORS=ON`, but only TOPP and
+  FLASHTnT define that option, so the others' CMake reports it as unused and their
+  warnings stay warnings. At ci.4, OpenSWATH's macOS x64 cask build showed the same
+  `OSWFile.h` warning that failed TOPP's. Defining the option may surface new failures,
+  so it waits for a cycle of its own.
+
 ## Where the documents are
 
 | Document | Scope |
