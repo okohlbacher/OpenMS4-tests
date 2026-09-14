@@ -275,7 +275,7 @@ are rebuilt once this cycle's TOPP and FLASH releases exist.
 | CPP-178 | MSstats missing design pair silently uses sample0 | **fixed** | In storeLFQ (MSstatsFile.cpp:455-473) and storeISO (726-740), the (file, label) pair is now looked up with find() in path_label_to_sample. |
 | CPP-179 | MSstats unknown summarization method writes zero intensities | **fixed** | storeLFQ now checks the method against manual,max,min,mean,sum with ListUtils::create/ListUtils::contains. |
 | CPP-180 | MSstats aggregation collapses equal intensities at distinct times | **fixed** | intensities is now a vector<MSstatsFile::Intensity>, filled once per distinct retention time (MSstatsFile.cpp:148-165). |
-| CPP-181 | SqliteConnector permits copying an owned database handle | **fixed** | SqliteConnector's copy constructor and assignment are deleted: it owns its handle |
+| CPP-181 | SqliteConnector permits copying an owned database handle | **fixed** | SqliteConnector's copy constructor and assignment are deleted: it owns its handle. ci.4 left `OSWFile`'s defaulted copy operations, which became implicitly deleted; clang's warning about them failed TOPP's macOS x64 Homebrew cask build, so ci.5 deletes them too |
 | CPP-182 | SqliteConnector does not close a handle when opening fails | **fixed** | a failed sqlite3_open_v2 closes the handle it still allocates before throwing |
 | CPP-183 | SQLite bound statements leak on bind or step errors | **fixed** | executeBindStatement finalises its statement through a guard on every exit |
 | CPP-184 | SQLite table-name helpers interpolate names as SQL syntax | **fixed** | table names are bound or quoted as identifiers instead of interpolated as SQL |

@@ -171,6 +171,37 @@ sibling is retained; the corrected hooks were applied to all sixteen existing ru
   warnings stay warnings. At ci.4, OpenSWATH's macOS x64 cask build showed the same
   `OSWFile.h` warning that failed TOPP's. Defining the option may surface new failures,
   so it waits for a cycle of its own.
+- **CPP-042 re-land.** Re-apply only the one-line suffix-loss fix in both cross-link
+  spectrum generators, with absolute m/z tests for both, a CPP-042-only OpenPepXL_1 run
+  and a reviewed reference update (decided 2026-09-14; kept out of ci.5 and the P0 branches).
+- **Pre-existing defects found while reviewing the P0 follow-ups** (not fixed on those branches):
+  - `StringUtils::skipNonWhitespace(string_view)` returns `int`, so `removeWhitespaces`
+    can write before the buffer for strings over 2 GiB. Base64 no longer calls it; the
+    mzML handler's default whitespace stripping still does.
+  - `MzMLSqliteHandler`: a read that throws skips `sqlite3_finalize`; `sqlite3_close_v2`
+    then leaves a zombie connection that keeps the file open for the process lifetime.
+  - `MascotXMLHandler`: a negative `<NumQueries>` throws `std::length_error` instead of
+    ParseError, and query numbers above `INT_MAX` are truncated by Xerces `parseInt`.
+  - Activation-method name tables are indexed without bounds checks by `Precursor`,
+    FileInfo, the mzXML writer, `RangeUtils` and `IsobaricChannelExtractor`; an
+    out-of-range enum set through the API reaches them.
+  - FileConverter passes `exp.size()` (the spectrum count) as the peak limit `n` of
+    `MapConversion::convert`, which looks unintended.
+  - The mzTab writer spells `colunit-PSM`; the specification uses `colunit-psm`.
+  - `MzXMLHandler`: a scan with two `<peaks>` elements after one `<precursorMz>` fails the
+    whole load ("Error during parsing of binary data"), because both payloads are buffered
+    into one base64 string; the schema allows repeated `<peaks>`.
+  - `MzTabFile::load` cannot read mzTab-M files (ConversionError on the SML section; ci.5
+    crashed on their metadata keys instead). Use `MzTabMFile`.
+- **Base64 check cost in released Core.** The CPP-055 alphabet check in core-v4.0.0-ci.3 to
+  ci.5 makes decoding the arrays of a 1.77 GB uncompressed mzML (astral_7x60) take 1.57 s
+  instead of 0.35 s (ci.2), about 23% of that file's 5.3 s load. The reworked check on
+  `codex/p0-base64-design` decodes them in 0.45 s.
+- **Heap-overflow regression tests outside glibc.** The CPP-005 test fails on the old code
+  only under glibc malloc checking on Linux; Core CI has no AddressSanitizer job.
+- **Rust port follow-up.** `OpenMS4-R` `tests/map_operations.rs` (`cm_split_error_paths`)
+  still expects `ConsensusMap::split` to fail for an identification from an unknown map;
+  the P0 follow-up drops such identifications with a warning instead.
 
 ## Where the documents are
 
