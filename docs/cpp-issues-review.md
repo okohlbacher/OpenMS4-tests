@@ -79,7 +79,7 @@ included, and that revision was released as `core-v4.0.0-ci.3`. That qualificati
 rebuilding the package graph on dax against the ci.3 SDK, the installed console regression suite
 (2041 tests passing at ci.2) failed 107 of 2047 tests, because several fixes here change what the
 console tools write and the Core class tests do not compare those outputs. 89 failures come from
-CPP-026, 14 from the `dataProcessingList` count correction in `63e332c`, one from the `indexList`
+CPP-026, 13 from the `dataProcessingList` count correction in `63e332c`, one from the `indexList`
 count correction in `181dadf`, three from the cross-link generator fixes (CPP-042, its SimpleTSGXLMS
 sibling, CPP-043), and one from a new OpenSwath cacher test that found the sqMass chromatogram-type
 loss listed above. For ci.4, CPP-026 and the cross-link fixes are reverted and recorded as open, the
@@ -116,7 +116,7 @@ CI run, SDK, graph rebuild and regression suite are still to come.
 | CPP-023 | Vocabulary printing splits output between two streams | **fixed** | the vocabulary stream operator writes is_a lines to its own stream |
 | CPP-024 | CV parameter rendering does not escape every XML attribute | **fixed** | accession, cvRef and unit accession are XML-escaped |
 | CPP-025 | A later processing method can omit its required action term | **fixed** | the fallback data-transformation term is decided per processing method |
-| CPP-026 | Processing step order is always written as zero | **open** | Real: the mzML schema orders consecutive steps by it. Fixed in core-v4.0.0-ci.3 and reverted for ci.4, because 210 of the 267 TOPP reference mzML files record 0 for every step and the change failed 89 installed regression tests; it needs a coordinated reference update |
+| CPP-026 | Processing step order is always written as zero | **open** | Real: the mzML schema orders consecutive steps by it. Fixed in core-v4.0.0-ci.3 and reverted for ci.4: 252 of the 267 TOPP reference mzML files record 0 for every step (211 would change if the index were written), and the change failed 89 installed regression tests. It needs a coordinated reference update |
 | CPP-027 | mzML writing discards processing completion seconds | **documented** | mzML records the completion time to the minute; |
 | CPP-028 | Recognized software metadata can throw during mzML writing | **fixed** | software metadata is validated against the mapping's own path, and locateTerm reports an unmapped path instead of throwing std::out_of_range |
 | CPP-029 | Annotation-only brackets pass conversion checks but fail conversion | **fixed** | The attachment throw now uses the same predicate: policy == FAIL_ON_LOSS && carriesChemistry_(mod) (2399). |

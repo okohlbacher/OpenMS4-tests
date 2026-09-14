@@ -30,6 +30,9 @@ Corrections completed here:
 - Check process timer accounting without assuming a fixed CPU/wall-time ratio.
 - Correct the sibling `SimpleTSGXLMS` charge-two suffix-loss calculation; its new
   regression fails against the earlier `e4dcc47` library and passes against `9b56872`.
+  *Later note:* this correction, CPP-042 and CPP-043 shipped in core-v4.0.0-ci.3 and are
+  reverted for ci.4 (Core `23944b6`) because they changed OpenPepXL output; see
+  [cpp-issues-review.md](cpp-issues-review.md) for the current outcome.
 - Initialize ten test pointers flagged by the clean GCC build and document public API changes.
 
 | Exact-revision check | Result | Wall time |
