@@ -46,6 +46,13 @@ class PackagingTest(unittest.TestCase):
             with self.assertRaises(ValueError):
                 check_install(prefix, ["Widget"], False)
 
+    def test_cask_refuses_a_different_core(self):
+        from update_cask import render
+        text = render("openms4-x", "o/OpenMS4-x", "OpenMS4-x", "x-v", "T", "D", "1.0.0", "b" * 12,
+                      {"arm": "0" * 64, "intel": "1" * 64}, ["Tool"], "c" * 40)
+        self.assertIn(f'next if core == "{"c" * 40}"', text)
+        self.assertIn("raise Cask::CaskError", text)
+
 
 if __name__ == "__main__":
     unittest.main()

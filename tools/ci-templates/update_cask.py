@@ -27,7 +27,8 @@ def repository(source: Path) -> str:
 
 
 def render(cask: str, repo: str, package: str, tag_prefix: str, title: str, description: str,
-           version: str, build: str, digests: dict[str, str], tools: list[str]) -> str:
+           version: str, build: str, digests: dict[str, str], tools: list[str],
+           core_revision: str) -> str:
     binaries = "".join(f'  binary "#{{payload}}/bin/{tool}"\n' for tool in tools)
     return f'''cask "{cask}" do
   arch arm: "arm64", intel: "x64"
@@ -47,6 +48,17 @@ def render(cask: str, repo: str, package: str, tag_prefix: str, title: str, desc
 
   payload = "{package}-macos-#{{arch}}-Homebrew-#{{version.csv.second}}"
 {binaries}
+  # libOpenMS has no versioned name, so a payload only runs with the Core it was built against.
+  preflight do
+    config = "#{{HOMEBREW_PREFIX}}/opt/openms4-core/lib/cmake/OpenMS/OpenMSConfig.cmake"
+    core = File.exist?(config) ? File.read(config)[/set\\(OpenMS_SOURCE_REVISION "([0-9a-f]{{40}})"\\)/, 1] : nil
+    next if core == "{core_revision}"
+
+    raise Cask::CaskError, "{cask} #{{version.csv.first}} was built against openms4-core {core_revision[:12]}, " \\
+                           "but the installed openms4-core is #{{core&.slice(0, 12) || "unknown"}}. " \\
+                           "Install the {cask} release built for the installed Core."
+  end
+
   postflight_steps do
     run "/usr/bin/xattr",
         args:           ["-dr", "com.apple.quarantine", "."],
@@ -58,23 +70,28 @@ end
 
 
 def main() -> None:
-    source = Path(__file__).resolve().parents[2]
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--tag", required=True, help="published release tag, e.g. topp-v1.0.0-ci.1")
+    parser.add_argument("--source", type=Path, default=Path(__file__).resolve().parents[2],
+                        help="package checkout (default: the package this script belongs to)")
+    parser.add_argument("--title", help="cask name (default: OpenMS 4 <package> tools)")
+    parser.add_argument("--desc",
+                        default="Command-line mass-spectrometry tools built against the OpenMS Core SDK")
+    parser.add_argument("--output", type=Path, help="default: <source>/Casks/<cask>.rb")
+    args = parser.parse_args()
+    source = args.source.resolve()
     package = package_name(source)
     suffix = package.removeprefix("OpenMS4-")
     cask = f"openms4-{suffix}"
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--tag", required=True, help=f"published release tag, e.g. {suffix}-v1.0.0-ci.1")
-    parser.add_argument("--title", default=f"OpenMS 4 {suffix} tools")
-    parser.add_argument("--desc",
-                        default="Command-line mass-spectrometry tools built against the OpenMS Core SDK")
-    parser.add_argument("--output", type=Path, default=source / f"Casks/{cask}.rb")
-    args = parser.parse_args()
     if "-v" not in args.tag:
         parser.error("--tag must look like <package>-v<version>")
     head, version = args.tag.rsplit("-v", 1)
     tag_prefix = f"{head}-v"
     repo = repository(source)
     tools = package_tools(source)
+    lock = json.loads(subprocess.check_output(
+        ["git", "-C", str(source), "show", f"{args.tag}:dependencies.lock.json"], text=True))
+    core_revision = lock["dependencies"]["OpenMS"]["source_revision"]
     assets = json.loads(subprocess.check_output(
         ["gh", "release", "view", args.tag, "--repo", repo, "--json", "assets"],
         text=True))["assets"]
@@ -92,11 +109,12 @@ def main() -> None:
         builds.add(matches[0]["name"].removeprefix(prefix).removesuffix(".tar.gz"))
     if len(builds) != 1:
         raise SystemExit(f"payloads disagree about the source revision: {sorted(builds)}")
-    args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(
-        render(cask, repo, package, tag_prefix, args.title, args.desc,
-               version, builds.pop(), digests, tools), encoding="utf-8")
-    print(f"wrote {args.output} for {args.tag}")
+    output = args.output or source / f"Casks/{cask}.rb"
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(
+        render(cask, repo, package, tag_prefix, args.title or f"OpenMS 4 {suffix} tools", args.desc,
+               version, builds.pop(), digests, tools, core_revision), encoding="utf-8")
+    print(f"wrote {output} for {args.tag} (Core {core_revision[:12]})")
 
 
 if __name__ == "__main__":
