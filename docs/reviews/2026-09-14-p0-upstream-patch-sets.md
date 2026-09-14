@@ -7,12 +7,12 @@ Seven local branches on dax carry the reviewed OpenMS4 Core fixes and their foll
 - **Core counterpart:** `codex/p0-<area>` in `/scratch/kohlbach/openms4-p0`, merged into `codex/p0-followups` on OpenMS4-core. Code and test changes made during polishing were mirrored there as new commits.
 - Every touched file was byte-identical between upstream `develop` and `core-v4.0.0-ci.2` when the branches were built.
 
-## Decisions still open
+## Decisions (accepted 14 September 2026)
 
-- **CPP-113:** confirm that identifications from unknown maps are dropped with a warning (provisional refinement) rather than kept elsewhere.
-- **CPP-166:** the Decision says to replace the empty-block MGF test; both branches keep it next to the new two-block test because it is the only coverage of the END IONS change.
-- **CPP-170:** whether the mzData "m/z or intensity array missing" message should be raised from debug-level `XMLHandler::warning()` to a visible warning.
-- **Upstream CHANGELOG:** the series change user-visible behaviour (corrupt numeric Base64 throws, wrapped Base64 is accepted, short design rows are padded, malformed mzTab 1.0 metadata keys throw). Add entries in the pull requests or leave them to upstream maintainers.
+- **CPP-113:** identifications from unknown maps are dropped with a warning, as implemented.
+- **CPP-166:** the empty-block MGF test stays next to the new two-block test, as implemented.
+- **CPP-170:** the mzData "m/z or intensity array missing" message stays at debug level, as implemented.
+- **Upstream CHANGELOG (provisional):** no CHANGELOG commits in the series; describe the user-visible changes (corrupt numeric Base64 throws, wrapped Base64 is accepted, short design rows are padded, malformed mzTab 1.0 metadata keys throw) in each pull request description instead.
 
 ## mzdata-mzxml (CPP-170, CPP-171, CPP-173)
 
