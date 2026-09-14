@@ -96,8 +96,12 @@ def native_job(slug: str, title: str, refs: dict, kind: str, env_name: str, topp
         checkouts += checkout_step("OpenMS4-prose", refs["prose"], "prose")
         checkouts += checkout_step("OpenMS4-flash", refs["flash"], "flash")
     env_extra = "      QT_QPA_PLATFORM: 'minimal'\n" if kind == "desktop" else ""
-    build_env = ("        env:\n          OPENMS4_QRHI_RENDER_TEST: ${{ startsWith(runner.name, 'studio-') && '1' || '0' }}\n"
-                 if kind == "desktop" else "")
+    # Parallel launches of freshly built binaries stall ~25 s on the Mac Studio runner (in syspolicyd);
+    # serial launches do not, so the drivers run ctest serially there. The runner context exists only
+    # at step level, so the switch belongs to the build step, not the job env.
+    build_env = ("        env:\n          OPENMS4_SERIAL_TESTS: ${{ startsWith(runner.name, 'studio-') && '1' || '0' }}\n"
+                 + ("          OPENMS4_QRHI_RENDER_TEST: ${{ startsWith(runner.name, 'studio-') && '1' || '0' }}\n"
+                    if kind == "desktop" else ""))
     before_build = ""
     if slug == "flashtnt":
         before_build += sdk_download_step("flash", refs["flash_tag"], refs["flash"][:12])
@@ -174,9 +178,6 @@ jobs:
       GH_TOKEN: ${{{{ github.token }}}}
       PYTHONUTF8: '1'
       OMP_NUM_THREADS: '1'
-      # Parallel launches of freshly built binaries stall ~25 s on the Mac Studio runner (in
-      # syspolicyd); serial launches do not. The drivers run ctest serially when this is 1.
-      OPENMS4_SERIAL_TESTS: ${{{{ startsWith(runner.name, 'studio-') && '1' || '0' }}}}
 {env_extra}    steps:
       - uses: {CHECKOUT}
         with:
