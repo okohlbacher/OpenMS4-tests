@@ -53,6 +53,11 @@ class PackagingTest(unittest.TestCase):
         self.assertIn(f'next if core == "{"c" * 40}"', text)
         self.assertIn("raise Cask::CaskError", text)
 
+    def test_cask_links_only_shipped_tools(self):
+        from update_cask import shipped
+        members = ["p", "p/bin", "p/bin/FileInfo", "p/share/openms4/tools/x.tools.tsv", "p/lib/bin/Stray"]
+        self.assertEqual(shipped(["FileInfo", "FeatureLinkerWNet", "Stray"], members), ["FileInfo"])
+
 
 if __name__ == "__main__":
     unittest.main()

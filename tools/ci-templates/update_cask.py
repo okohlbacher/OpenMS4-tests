@@ -8,10 +8,12 @@ tools.json, so this script is identical in every console product package.
 """
 
 import argparse
+import io
 import json
 from pathlib import Path
 import subprocess
 import sys
+import tarfile
 
 sys.path.insert(0, str(Path(__file__).parent))
 from run import package_name, package_tools
@@ -24,6 +26,12 @@ def repository(source: Path) -> str:
         ["git", "-C", str(source), "remote", "get-url", "origin"], text=True).strip()
     owner, name = url.rstrip("/").removesuffix(".git").rsplit("/", 2)[-2:]
     return f"{owner}/{name}"
+
+
+def shipped(tools: list[str], members: list[str]) -> list[str]:
+    """The declared tools a payload actually installs; a Homebrew build can leave optional ones out."""
+    binaries = {Path(m).parts[2] for m in members if Path(m).parts[1:2] == ("bin",) and len(Path(m).parts) == 3}
+    return [tool for tool in tools if tool in binaries]
 
 
 def render(cask: str, repo: str, package: str, tag_prefix: str, title: str, description: str,
@@ -109,6 +117,16 @@ def main() -> None:
         builds.add(matches[0]["name"].removeprefix(prefix).removesuffix(".tar.gz"))
     if len(builds) != 1:
         raise SystemExit(f"payloads disagree about the source revision: {sorted(builds)}")
+    arm = f"{package}-macos-arm64-Homebrew-{next(iter(builds))}.tar.gz"
+    payload = subprocess.check_output(
+        ["gh", "release", "download", args.tag, "--repo", repo, "--pattern", arm, "--output", "-"])
+    with tarfile.open(fileobj=io.BytesIO(payload), mode="r:gz") as archive:
+        installed = shipped(tools, archive.getnames())
+    if not installed:
+        raise SystemExit(f"{arm} installs none of the tools in tools.json")
+    for tool in sorted(set(tools) - set(installed)):
+        print(f"{args.tag}: {tool} is not in the Homebrew payload, so the cask does not link it")
+    tools = installed
     output = args.output or source / f"Casks/{cask}.rb"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(

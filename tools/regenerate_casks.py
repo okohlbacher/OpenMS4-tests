@@ -3,7 +3,7 @@
 
 update_cask.py reads the checksums and the pinned Core revision out of a package's
 release, so every cask it writes is the generator's default text. Two casks were
-named by hand and one links a tool under a second name; those live here so a later
+named by hand and one installs a tool under another name; those live here so a later
 cycle does not silently drop them.
 """
 
@@ -23,8 +23,8 @@ TEXT = {
     "nuxl": ["--title", "OpenNuXL", "--desc",
              "Search engine for protein-nucleic acid cross-links, built against the OpenMS Core SDK"],
 }
-# TOPP's FileInfo would shadow other tools of that name on PATH, so it installs under a second name.
-ALIAS = {"topp": '  binary "#{payload}/bin/FileInfo", target: "OpenMSFileInfo"\n'}
+# TOPP's FileInfo would shadow other tools of that name on PATH, so it installs only under another name.
+RENAME = {"topp": {"FileInfo": "OpenMSFileInfo"}}
 
 
 def main() -> None:
@@ -39,12 +39,13 @@ def main() -> None:
         subprocess.run([sys.executable, str(ROOT / "tools/ci-templates/update_cask.py"),
                         "--source", str(source), "--tag", tag] + TEXT.get(name, []), check=True)
         cask = source / f"Casks/openms4-{name}.rb"
-        if name in ALIAS:
-            text = cask.read_text()
-            anchor = "\n  # libOpenMS has no versioned name"
-            if anchor not in text:
-                raise SystemExit(f"{cask}: no preflight block to anchor the {name} alias to")
-            cask.write_text(text.replace(anchor, ALIAS[name] + anchor, 1), encoding="utf-8")
+        text = cask.read_text()
+        for tool, target in RENAME.get(name, {}).items():
+            line = f'  binary "#{{payload}}/bin/{tool}"\n'
+            if line not in text:
+                raise SystemExit(f"{cask}: no {tool} binary to rename")
+            text = text.replace(line, f'  binary "#{{payload}}/bin/{tool}", target: "{target}"\n')
+        cask.write_text(text, encoding="utf-8")
         if "disable!" in cask.read_text():
             raise SystemExit(f"{cask}: still disabled after regeneration")
 
