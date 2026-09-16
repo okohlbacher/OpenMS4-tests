@@ -21,6 +21,10 @@ five applications, one Python binding package and one Streamlit application.
 
 ## The eighteen packages
 
+Each package counts its own releases: the number in `topp-v1.0.0-ci.5` is TOPP's fifth
+release, not the Core cycle it was built against, because a package can be re-released
+against one Core (TOPP ci.1 to ci.3 all shipped against the same one) or sit out a cycle.
+
 | Package | Visibility | Pinned revision | Release | Contents |
 | --- | --- | --- | --- | --- |
 | core | public | `ac41cc177023` | `core-v4.0.0-ci.5` | scientific library, OpenSwathAlgo, readers/writers, runtime data, optional TestSupport |
