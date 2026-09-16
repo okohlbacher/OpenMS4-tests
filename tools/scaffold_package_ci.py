@@ -81,10 +81,22 @@ def sdk_download_step(package: str, tag: str, revision_short: str) -> str:
 """
 
 
+def pool_for(kind: str, platform: str, pool: str) -> str:
+    """The self-hosted pool for a row, or "" to stay hosted.
+
+    Qt's conda package extracts header paths past the 260-character Windows limit,
+    which the self-hosted Windows box rejects because long paths are not enabled
+    there. The desktop keeps its Windows row hosted until they are.
+    """
+    if kind == "desktop" and platform == "windows-x64":
+        return ""
+    return pool
+
+
 def native_job(slug: str, title: str, refs: dict, kind: str, env_name: str, topp_tag: str = "", topp_short: str = "") -> str:
     core_tag, core_short = refs["core_tag"], refs["core"][:12]
     matrix = "".join(
-        f"          - platform: {p}\n            runner: {r}\n            pool: {pool or "''"}\n"
+        f"          - platform: {p}\n            runner: {r}\n            pool: {pool_for(kind, p, pool) or "''"}\n"
         f"            packages: {pk}{DESKTOP_EXTRA[p] if kind == 'desktop' else ''}\n            jobs: {j}\n"
         for p, r, pool, pk, j in PLATFORMS)
     checkouts = ""
