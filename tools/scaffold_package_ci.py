@@ -81,14 +81,15 @@ def sdk_download_step(package: str, tag: str, revision_short: str) -> str:
 """
 
 
-def pool_for(kind: str, platform: str, pool: str) -> str:
+def pool_for(kind: str, slug: str, platform: str, pool: str) -> str:
     """The self-hosted pool for a row, or "" to stay hosted.
 
-    Qt's conda package extracts header paths past the 260-character Windows limit,
-    which the self-hosted Windows box rejects because long paths are not enabled
-    there. The desktop keeps its Windows row hosted until they are.
+    Conda packages extract paths past the 260-character Windows limit, which the
+    self-hosted Windows box rejects because long paths are not enabled there: Qt's
+    headers for the desktop, libopentelemetry-cpp-headers for database-suitability.
+    Both keep their Windows row hosted until the setting is on.
     """
-    if kind == "desktop" and platform == "windows-x64":
+    if platform == "windows-x64" and (kind == "desktop" or slug == "database-suitability"):
         return ""
     return pool
 
@@ -96,7 +97,7 @@ def pool_for(kind: str, platform: str, pool: str) -> str:
 def native_job(slug: str, title: str, refs: dict, kind: str, env_name: str, topp_tag: str = "", topp_short: str = "") -> str:
     core_tag, core_short = refs["core_tag"], refs["core"][:12]
     matrix = "".join(
-        f"          - platform: {p}\n            runner: {r}\n            pool: {pool_for(kind, p, pool) or "''"}\n"
+        f"          - platform: {p}\n            runner: {r}\n            pool: {pool_for(kind, slug, p, pool) or "''"}\n"
         f"            packages: {pk}{DESKTOP_EXTRA[p] if kind == 'desktop' else ''}\n            jobs: {j}\n"
         for p, r, pool, pk, j in PLATFORMS)
     checkouts = ""
