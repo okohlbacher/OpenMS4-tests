@@ -185,7 +185,11 @@ sibling is retained; the corrected hooks were applied to all sixteen existing ru
   - `MzMLSqliteHandler`: a read that throws skips `sqlite3_finalize`; `sqlite3_close_v2`
     then leaves a zombie connection that keeps the file open for the process lifetime.
   - `MascotXMLHandler`: a negative `<NumQueries>` throws `std::length_error` instead of
-    ParseError, and query numbers above `INT_MAX` are truncated by Xerces `parseInt`.
+    ParseError, and a huge one allocates and constructs one identification per declared
+    query (about 5.5 GB for 5e7) before any query number is checked. Query numbers above
+    the Int range are truncated by Xerces `parseInt` (4294967297 becomes 1), so the hit is
+    attributed to another spectrum without an error. Confirmed again by the ci.6
+    pre-release review; ci.5 behaves the same.
   - Activation-method name tables are indexed without bounds checks by `Precursor`,
     FileInfo, the mzXML writer, `RangeUtils` and `IsobaricChannelExtractor`; an
     out-of-range enum set through the API reaches them.
