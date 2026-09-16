@@ -1,4 +1,4 @@
-# OpenMS 4 package split — state of the project, 2026-09-13
+# OpenMS 4 package split — state of the project, 2026-09-16
 
 *Part of the [OpenMS 4 package split](../README.md). [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
 
@@ -23,24 +23,24 @@ five applications, one Python binding package and one Streamlit application.
 
 | Package | Visibility | Pinned revision | Release | Contents |
 | --- | --- | --- | --- | --- |
-| core | public | `bc9cc12514c7` | `core-v4.0.0-ci.2` | scientific library, OpenSwathAlgo, readers/writers, runtime data, optional TestSupport |
-| cli | public | `d5213ff3551a` | `cli-v1.0.0-ci.2` | TOPPBase, tool registration and discovery |
-| test-data | public | `a14ecf5d5f5d` | – | versioned fixtures and the installed numerical suite |
-| topp | public | `c6e98a7782cc` | `topp-v1.0.0-ci.4` | 123 console tools |
-| openswath | public | `851e8f0e0ec4` | `openswath-v1.0.0-ci.2` | 19 executables and OpenSwathBase |
-| flash | public | `b2c6771de774` | `flash-v1.0.0-ci.2` | FLASHDeconv and the `OpenMS::FLASH` backend |
-| prose | public | `828d72595677` | `prose-v1.0.0-ci.2` | ProSE and the `OpenMS::ProSE` backend |
-| nuxl | public | `dc6f61c5ed8a` | `nuxl-v1.0.0-ci.2` | OpenNuXL |
-| nase | public | `a9b317b889cc` | `nase-v1.0.0-ci.2` | NucleicAcidSearchEngine |
-| comet | public | `c3c4d1b99a15` | `comet-v1.0.0-ci.2` | CometAdapter |
-| mascot | public | `fcbcc61346c3` | `mascot-v1.0.0-ci.2` | MascotAdapterOnline |
-| database-suitability | public | `c46998ff1001` | `database-suitability-v1.0.0-ci.2` | DatabaseSuitability |
-| proteomics-lfq | public | `cf12fe9163e3` | `proteomics-lfq-v1.0.0-ci.2` | ProteomicsLFQ |
-| parquet-diff | public | `682f7086ebe9` | `parquet-diff-v1.0.0-ci.2` | ParquetDiff |
-| desktop | public | `15c7a6309561` | `desktop-v1.0.0-ci.2` at `717d0c63da63` | GUI SDK, TOPPView, ImageCreator, INIFileEditor, TOPPAS, ExecutePipeline |
-| pyopenms | public | `b7edae7a89d9` | `pyopenms-v4.0.0.dev0-ci.3` at `b7edae7a89d9` | nanobind bindings, installed module tree and repaired wheels |
-| flashtnt | public | `4ca4e73a9751` | `flashtnt-v1.0.0-ci.1` at `b0cf76d19340` | FLASHTnT tagging executable |
-| flashapp | private | `57be473c38b78` | – | Streamlit application and Vue component |
+| core | public | `ac41cc177023` | `core-v4.0.0-ci.5` | scientific library, OpenSwathAlgo, readers/writers, runtime data, optional TestSupport |
+| cli | public | `6f50080aa391` | – (consumed by revision; `cli-v1.0.0-ci.2` is the last release) | TOPPBase, tool registration and discovery |
+| test-data | public | `1c24a5e0e15d` | – | versioned fixtures and the installed numerical suite |
+| topp | public | `0206f6e17541` | `topp-v1.0.0-ci.5` | 123 console tools |
+| openswath | public | `2ac1cca68c65` | `openswath-v1.0.0-ci.3` | 19 executables and OpenSwathBase |
+| flash | public | `0b0dfe14e4c4` | `flash-v1.0.0-ci.3` | FLASHDeconv and the `OpenMS::FLASH` backend |
+| prose | public | `b056c8639269` | `prose-v1.0.0-ci.3` | ProSE and the `OpenMS::ProSE` backend |
+| nuxl | public | `d3038ba1a222` | `nuxl-v1.0.0-ci.3` | OpenNuXL |
+| nase | public | `0b272c6dfd10` | `nase-v1.0.0-ci.3` | NucleicAcidSearchEngine |
+| comet | public | `a8e676d23764` | `comet-v1.0.0-ci.3` | CometAdapter |
+| mascot | public | `70d3a423623c` | `mascot-v1.0.0-ci.3` | MascotAdapterOnline |
+| database-suitability | public | `e3faa1ffe174` | – (pending) | DatabaseSuitability |
+| proteomics-lfq | public | `953ccc18ab40` | `proteomics-lfq-v1.0.0-ci.3` | ProteomicsLFQ |
+| parquet-diff | public | `e576c1d1364b` | `parquet-diff-v1.0.0-ci.3` | ParquetDiff |
+| desktop | public | `28902925f94d` | – (pending) | GUI SDK, TOPPView, ImageCreator, INIFileEditor, TOPPAS, ExecutePipeline |
+| pyopenms | public | `d3e6867135eb` | `pyopenms-v4.0.0.dev0-ci.4` | nanobind bindings, installed module tree and repaired wheels |
+| flashtnt | public | `f956a6ddb67f` | `flashtnt-v1.0.0-ci.2` | FLASHTnT tagging executable |
+| flashapp | private | `8bdcc0516611` | – (no release; the app consumes the pyOpenMS wheel) | Streamlit application and Vue component |
 
 The Core review branch `codex/cpp-review-completion` is at `63e332c8dbc6`. It
 passes 702 Release tests (22.42 s), 22 targeted Debug tests (2.00 s), and installed/
@@ -112,12 +112,17 @@ and the FLASHTnT sanitizer, repeatability and cross-platform evidence.
 ## Delivery
 
 - **Core** — Homebrew formula `okohlbacher/openms4-core` with bottles for arm64 Sequoia,
-  Intel Sequoia and x86_64 Linux, published as assets of the ci.2 release.
-- **Console products** — eleven Homebrew casks (`openms4-topp`, `openms4-openswath`,
+  Intel Sequoia and x86_64 Linux, published as assets of the ci.5 release.
+- **Console products** — eleven Homebrew casks, ten serving this cycle's payloads (`openms4-topp`, `openms4-openswath`,
   `openms4-flash`, `openms4-prose`, `openms4-nuxl`, `openms4-nase`, `openms4-comet`,
   `openms4-mascot`, `openms4-database-suitability`, `openms4-proteomics-lfq`,
   `openms4-parquet-diff`), each pointing at this cycle's payloads and verified by an
-  install workflow.
+  install workflow that installs the cask from the tap on both macOS architectures.
+  `openms4-database-suitability` still serves its disabled ci.2 cask, because its
+  Windows row has not passed since ci.2. Every generated cask refuses to install unless
+  the installed Core carries the payload's source revision, and lists only the tools its
+  Homebrew payload actually ships: the Homebrew Core is built without WNetAlign, so
+  `FeatureLinkerWNet` is in `tools.json` but not in a cask.
 - **pyOpenMS** — installed module trees plus repaired wheels (CPython 3.12) for five
   platforms, tested from a clean environment.
 - **desktop** — five platform archives; no installer, signing or notarization.
@@ -200,12 +205,22 @@ sibling is retained; the corrected hooks were applied to all sixteen existing ru
 - **Casks and Core upgrades.** libOpenMS has no versioned install name, and the casks
   depend on the unversioned tap formula, so a payload built against one Core can run
   against another and corrupt memory (shown for ci.2-built TOPP tools on ci.4). The 11
-  ci.2-built casks are disabled (2026-09-14), and casks generated by
-  `tools/ci-templates/update_cask.py` now refuse to install unless the installed Core has
-  the payload's source revision. Upgrading `openms4-core` after a cask is installed is
+  ci.2-built casks were disabled (2026-09-14) and ten were republished for ci.5
+  (2026-09-15); casks generated by `tools/ci-templates/update_cask.py` refuse to install
+  unless the installed Core has the payload's source revision, which the cask workflow
+  now exercises by installing from the tap on both macOS architectures. Upgrading
+  `openms4-core` after a cask is installed is
   still not caught: a SOVERSION or install name carrying the Core cycle, or a startup
   check in the CLI that compares the linked Core revision with the one built against,
   is still needed.
+- **Long paths on the self-hosted Windows box.** `DESKTOP-POHV0H0` does not have
+  `LongPathsEnabled`, so creating a conda environment fails whenever a package extracts a
+  path past 260 characters: Qt's headers for the desktop (261 characters) and
+  `libopentelemetry-cpp-headers` for database-suitability. Both leave an unusable package
+  cache behind, which micromamba reports as invalid instead of re-extracting. The desktop's
+  Windows row is generated hosted until the setting is on and the two caches
+  (`C:\actions-runners\OpenMS4-{desktop,database-suitability}\home\micromamba\pkgs`)
+  are cleared; database-suitability can take the same fallback if the setting stays off.
 - **Heap-overflow regression tests outside glibc.** The CPP-005 test fails on the old code
   only under glibc malloc checking on Linux; Core CI has no AddressSanitizer job.
 - **Rust port follow-up.** `OpenMS4-R` `tests/map_operations.rs` (`cm_split_error_paths`)
