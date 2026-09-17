@@ -9,94 +9,94 @@
     "core": {
       "path": "packages/core",
       "repository": "https://github.com/okohlbacher/OpenMS4-core",
-      "source_revision": "ac41cc177023e24a8fbc711a6ce9010187c54c44"
+      "source_revision": "84847138c0de67149601aaa860af7ac8e2e64534"
     },
     "cli": {
       "path": "packages/cli",
       "repository": "https://github.com/okohlbacher/OpenMS4-cli",
-      "source_revision": "6f50080aa391207a0360e472921f0544f5e0bc6d"
+      "source_revision": "b65ece7fd5a72b02b87cc18432d917c60b2b4282"
     },
     "test-data": {
       "path": "packages/test-data",
       "repository": "https://github.com/okohlbacher/OpenMS4-test-data",
-      "source_revision": "1c24a5e0e15d866babad91557f1411bfa100dc4d"
+      "source_revision": "6bb571197e2c58b9cf5af1597e01a113a737c9ec"
     },
     "topp": {
       "path": "packages/topp",
       "repository": "https://github.com/okohlbacher/OpenMS4-topp",
-      "source_revision": "0206f6e175418d6b51e77095f97466271acff8a7"
+      "source_revision": "1e9a0a18590c4ed947ed907e35060825a4bf395e"
     },
     "openswath": {
       "path": "packages/openswath",
       "repository": "https://github.com/okohlbacher/OpenMS4-openswath",
-      "source_revision": "2ac1cca68c65fec87e261dcdf3b26971a80603dc"
+      "source_revision": "52b0cb35b945e89b2271b2e09476498730e6ccf7"
     },
     "flash": {
       "path": "packages/flash",
       "repository": "https://github.com/okohlbacher/OpenMS4-flash",
-      "source_revision": "0b0dfe14e4c439c0b95fbafcabc3d23a76ff8d84"
+      "source_revision": "3b5b6e65422ac516598e035006eb083a982d824f"
     },
     "desktop": {
       "path": "packages/desktop",
       "repository": "https://github.com/okohlbacher/OpenMS4-desktop",
-      "source_revision": "f3592559f020181b85d84c09c127649c1a213463"
+      "source_revision": "64f40a2ca9b04eb2012f217a6d79185d352275ff"
     },
     "pyopenms": {
       "path": "packages/pyopenms",
       "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms",
-      "source_revision": "d3e6867135eb57e7b2699a8fad5d7a2154a544a3"
+      "source_revision": "3013dfed9338b7f8926b35d6120f6d138e7ad15e"
     },
     "flashapp": {
       "path": "packages/flashapp",
       "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
-      "source_revision": "8bdcc0516611f6a88098e5b0e76701d169b0ee54",
+      "source_revision": "e2cbc08cec2527ec1de3ad6a67ba7f9091a35fab",
       "frozen_dependencies": true,
       "qualification_note": "Uses the qualified pyOpenMS ci.2 wheel while the ci.3 Windows build and wheel release complete; Core/CLI/TOPP/FLASH/FLASHTnT pins match the native graph."
     },
     "nuxl": {
       "path": "packages/nuxl",
       "repository": "https://github.com/okohlbacher/OpenMS4-nuxl",
-      "source_revision": "d3038ba1a222540d0e70b357582925162f5e45ea"
+      "source_revision": "e7b88ecf4e40ce4bdf274d6b14692fc0de8cbdd8"
     },
     "prose": {
       "path": "packages/prose",
       "repository": "https://github.com/okohlbacher/OpenMS4-prose",
-      "source_revision": "b056c8639269ad2b7ddb7790a108262f019d06cb"
+      "source_revision": "4fecf3cf80b6e331115ad54fa41f6ea2aef4bd88"
     },
     "nase": {
       "path": "packages/nase",
       "repository": "https://github.com/okohlbacher/OpenMS4-nase",
-      "source_revision": "0b272c6dfd1006eb034d3b2628097f83b231f075"
+      "source_revision": "1ab61e144ddb21041b1930e678704893e0d5ef82"
     },
     "comet": {
       "path": "packages/comet",
       "repository": "https://github.com/okohlbacher/OpenMS4-comet",
-      "source_revision": "a8e676d23764a828f31ae8720f209294a0561917"
+      "source_revision": "642e574f7f213f8bf34fb2b23f8f86c4fc562137"
     },
     "mascot": {
       "path": "packages/mascot",
       "repository": "https://github.com/okohlbacher/OpenMS4-mascot",
-      "source_revision": "70d3a423623c0a486d178a1e607e81ab5a84433b"
+      "source_revision": "384ee0c61fc3cfde4e1f77dbe1e5736b7443a8de"
     },
     "database-suitability": {
       "path": "packages/database-suitability",
       "repository": "https://github.com/okohlbacher/OpenMS4-database-suitability",
-      "source_revision": "79021a07180d94a043fe5d53baad3649fdb34dfd"
+      "source_revision": "17ca75dc5467f552d95d9cfabd7f1d0bad20075e"
     },
     "proteomics-lfq": {
       "path": "packages/proteomics-lfq",
       "repository": "https://github.com/okohlbacher/OpenMS4-proteomics-lfq",
-      "source_revision": "953ccc18ab405655b172ec4262ac184f60028cdf"
+      "source_revision": "c9439ea7c8d9c568e8f1f93de1efcf0e98fdabbb"
     },
     "flashtnt": {
       "path": "packages/flashtnt",
       "repository": "https://github.com/okohlbacher/OpenMS4-flashtnt",
-      "source_revision": "f956a6ddb67f17c2d054700ba0b3f2d63f5ae4a8"
+      "source_revision": "48f760f239750030a4c967e0e63ce680ed94daed"
     },
     "parquet-diff": {
       "path": "packages/parquet-diff",
       "repository": "https://github.com/okohlbacher/OpenMS4-parquet-diff",
-      "source_revision": "e576c1d1364bee5ac51bebc4e704f3566966d764"
+      "source_revision": "1cd0b6b1e3c59d294b4c071d97499d0f4627b51d"
     }
   }
 }
