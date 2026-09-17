@@ -26,12 +26,16 @@ KEEP_DRIVERS = {"nuxl", "flashtnt"}
 SPECIAL = {"cli", "desktop", "pyopenms"}
 
 # platform, hosted runner, self-hosted pool ("" where there is none), micromamba packages, jobs
+# Windows stays hosted: the self-hosted box (DESKTOP-POHV0H0, pool flashbox-windows-x64) was offline on
+# 2026-09-17 with jobs queued for half a day, and it rejects conda packages whose paths pass 260 characters
+# (Qt for the desktop, libopentelemetry-cpp-headers for database-suitability) because long paths are not
+# enabled there. Put "flashbox-windows-x64" back once both are fixed.
 PLATFORMS = [
     ("linux-x64", "ubuntu-24.04", "dax-linux-x64", "gcc_linux-64=14 gxx_linux-64=14 coin-or-cbc=2.10.*", 4),
     ("linux-arm64", "ubuntu-24.04-arm", "", "gcc_linux-aarch64=14 gxx_linux-aarch64=14 coin-or-cbc=2.10.*", 4),
     ("macos-arm64", "macos-15", "studio-macos-arm64", "llvm-openmp coin-or-cbc=2.10.*", 2),
     ("macos-x64", "macos-15-intel", "", "llvm-openmp coin-or-cbc=2.10.*", 4),
-    ("windows-x64", "windows-2022", "flashbox-windows-x64", "glpk=5.*", 4),
+    ("windows-x64", "windows-2022", "", "glpk=5.*", 4),
 ]
 # Qt's CMake package requires an OpenGL provider, which the Linux runners lack.
 DESKTOP_EXTRA = {"linux-x64": " qt6-main>=6.7 libgl-devel libegl-devel libglx-devel",
@@ -81,23 +85,10 @@ def sdk_download_step(package: str, tag: str, revision_short: str) -> str:
 """
 
 
-def pool_for(kind: str, slug: str, platform: str, pool: str) -> str:
-    """The self-hosted pool for a row, or "" to stay hosted.
-
-    Conda packages extract paths past the 260-character Windows limit, which the
-    self-hosted Windows box rejects because long paths are not enabled there: Qt's
-    headers for the desktop, libopentelemetry-cpp-headers for database-suitability.
-    Both keep their Windows row hosted until the setting is on.
-    """
-    if platform == "windows-x64" and (kind == "desktop" or slug == "database-suitability"):
-        return ""
-    return pool
-
-
 def native_job(slug: str, title: str, refs: dict, kind: str, env_name: str, topp_tag: str = "", topp_short: str = "") -> str:
     core_tag, core_short = refs["core_tag"], refs["core"][:12]
     matrix = "".join(
-        f"          - platform: {p}\n            runner: {r}\n            pool: {pool_for(kind, slug, p, pool) or "''"}\n"
+        f"          - platform: {p}\n            runner: {r}\n            pool: {pool or "''"}\n"
         f"            packages: {pk}{DESKTOP_EXTRA[p] if kind == 'desktop' else ''}\n            jobs: {j}\n"
         for p, r, pool, pk, j in PLATFORMS)
     checkouts = ""
