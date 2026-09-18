@@ -1,4 +1,4 @@
-# OpenMS 4 package split — state of the project, 2026-09-17
+# OpenMS 4 package split — state of the project, 2026-09-18
 
 *Part of the [OpenMS 4 package split](../README.md). [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
 
@@ -27,38 +27,45 @@ against one Core (TOPP ci.1 to ci.3 all shipped against the same one) or sit out
 
 | Package | Visibility | Pinned revision | Release | Contents |
 | --- | --- | --- | --- | --- |
-| core | public | `84847138c0de` | `core-v4.0.0-ci.6` | scientific library, OpenSwathAlgo, readers/writers, runtime data, optional TestSupport |
-| cli | public | `b65ece7fd5a7` | – (consumed by revision; `cli-v1.0.0-ci.2` is the last release) | TOPPBase, tool registration and discovery |
-| test-data | public | `6bb571197e2c` | – | versioned fixtures and the installed numerical suite |
-| topp | public | `1e9a0a18590c` | `topp-v1.0.0-ci.6` | 123 console tools |
-| openswath | public | `52b0cb35b945` | `openswath-v1.0.0-ci.4` | 19 executables and OpenSwathBase |
-| flash | public | `3b5b6e65422a` | `flash-v1.0.0-ci.4` | FLASHDeconv and the `OpenMS::FLASH` backend |
-| prose | public | `4fecf3cf80b6` | `prose-v1.0.0-ci.4` | ProSE and the `OpenMS::ProSE` backend |
-| nuxl | public | `e7b88ecf4e40` | `nuxl-v1.0.0-ci.4` | OpenNuXL |
-| nase | public | `1ab61e144ddb` | `nase-v1.0.0-ci.4` | NucleicAcidSearchEngine |
-| comet | public | `642e574f7f21` | `comet-v1.0.0-ci.4` | CometAdapter |
-| mascot | public | `384ee0c61fc3` | `mascot-v1.0.0-ci.4` | MascotAdapterOnline |
-| database-suitability | public | `17ca75dc5467` | `database-suitability-v1.0.0-ci.4` | DatabaseSuitability |
-| proteomics-lfq | public | `c9439ea7c8d9` | `proteomics-lfq-v1.0.0-ci.4` | ProteomicsLFQ |
-| parquet-diff | public | `1cd0b6b1e3c5` | `parquet-diff-v1.0.0-ci.4` | ParquetDiff |
-| desktop | public | `64f40a2ca9b0` | `desktop-v1.0.0-ci.4` | GUI SDK, TOPPView, ImageCreator, INIFileEditor, TOPPAS, ExecutePipeline |
-| pyopenms | public | `3013dfed9338` | `pyopenms-v4.0.0.dev0-ci.5` | nanobind bindings, installed module tree and repaired wheels |
-| flashtnt | public | `48f760f23975` | `flashtnt-v1.0.0-ci.3` | FLASHTnT tagging executable |
-| flashapp | private | `e2cbc08cec25` | – (no release; the app consumes the pyOpenMS wheel) | Streamlit application and Vue component |
+| core | public | `eb58e981d7e0` | `core-v4.0.0-ci.7` | scientific library, OpenSwathAlgo, readers/writers, runtime data, optional TestSupport |
+| cli | public | `35d96dbea2c4` | – (consumed by revision; `cli-v1.0.0-ci.2` is the last release) | TOPPBase, tool registration and discovery |
+| test-data | public | `37327c7b53e1` | – | versioned fixtures and the installed numerical suite |
+| topp | public | `c1d2cd45a621` | `topp-v1.0.0-ci.7` | 123 console tools |
+| openswath | public | `4766d8525e8f` | `openswath-v1.0.0-ci.5` | 19 executables and OpenSwathBase |
+| flash | public | `5af478a978f4` | `flash-v1.0.0-ci.5` | FLASHDeconv and the `OpenMS::FLASH` backend |
+| prose | public | `11bc89966a2a` | `prose-v1.0.0-ci.5` | ProSE and the `OpenMS::ProSE` backend |
+| nuxl | public | `77c129b72746` | `nuxl-v1.0.0-ci.5` | OpenNuXL |
+| nase | public | `f5be59cd9320` | `nase-v1.0.0-ci.5` | NucleicAcidSearchEngine |
+| comet | public | `2eec96ecf944` | `comet-v1.0.0-ci.5` | CometAdapter |
+| mascot | public | `eea9e95b73e8` | `mascot-v1.0.0-ci.5` | MascotAdapterOnline |
+| database-suitability | public | `0cdbd1a0571b` | `database-suitability-v1.0.0-ci.5` | DatabaseSuitability |
+| proteomics-lfq | public | `084b19739bd0` | `proteomics-lfq-v1.0.0-ci.5` | ProteomicsLFQ |
+| parquet-diff | public | `70bfad287412` | `parquet-diff-v1.0.0-ci.5` | ParquetDiff |
+| desktop | public | `91f1d749ab02` | `desktop-v1.0.0-ci.5` | GUI SDK, TOPPView, ImageCreator, INIFileEditor, TOPPAS, ExecutePipeline |
+| pyopenms | public | `8fcb6af788a6` | `pyopenms-v4.0.0.dev0-ci.6` | nanobind bindings, installed module tree and repaired wheels |
+| flashtnt | public | `f493178b2946` | `flashtnt-v1.0.0-ci.4` | FLASHTnT tagging executable |
+| flashapp | private | `0c91d3b07cfa` | – (no release; the app consumes the pyOpenMS wheel) | Streamlit application and Vue component |
 
 Every revision above has a green push run on all of its platforms (test-data has no
 CI of its own; each consumer checks it out at that revision), and every release was
-published from that run. This is the Core ci.6 cycle, closed on 2026-09-17.
+published from that run. This is the Core ci.7 cycle, closed on 2026-09-18.
 
-Core ci.6 carries the P0 follow-ups from the [P0 walkthrough](cpp-p0-walkthrough.md).
+Core ci.7 re-lands CPP-042 on its own: the water and ammonia loss peaks of linear suffix
+ions at charge 2 or higher were emitted at (M/z - L)/z instead of (M - L)/z. Both generators
+now have a class test for it that fails on the reverted code. The fix changes what OpenPepXL
+matches, so the TOPP_OpenPepXL references were updated in the same cycle; each changed value
+was verified at peak level before the files were replaced (see the test-data commit). With the
+new references the installed console suite passes 2047 of 2047. CPP-043 stays reverted.
+
+Core ci.6 carried the P0 follow-ups from the [P0 walkthrough](cpp-p0-walkthrough.md).
 Before it was tagged, two adversarial reviews ran over the whole change. The first
 found an experimental-design regression, which was fixed, and a set of release-note
 errors, which were corrected. The package graph was built on dax against the
 candidate's Linux SDK: every consumer passed its own tests, and the installed
 console suite passed 2047 of 2047 (5 skipped). CPP-042 is still not re-landed.
 
-pyOpenMS ci.5 and FLASHTnT ci.3 are published for all five platforms. FLASHApp pins
-FLASHTnT `48f760f23975` and runs its app tests against the published pyOpenMS ci.5 Linux
+pyOpenMS ci.6 and FLASHTnT ci.4 are published for all five platforms. FLASHApp pins
+FLASHTnT `f493178b2946` and runs its app tests against the published pyOpenMS ci.6 Linux
 wheel, whose SHA-256 its lock records.
 
 ## Building and testing
@@ -114,7 +121,7 @@ and the FLASHTnT sanitizer, repeatability and cross-platform evidence.
 ## Delivery
 
 - **Core** — Homebrew formula `okohlbacher/openms4-core` with bottles for arm64 Sequoia,
-  Intel Sequoia and x86_64 Linux, published as assets of the ci.6 release.
+  Intel Sequoia and x86_64 Linux, published as assets of the ci.7 release.
 - **Console products** — eleven Homebrew casks (`openms4-topp`, `openms4-openswath`,
   `openms4-flash`, `openms4-prose`, `openms4-nuxl`, `openms4-nase`, `openms4-comet`,
   `openms4-mascot`, `openms4-database-suitability`, `openms4-proteomics-lfq`,
@@ -177,9 +184,14 @@ sibling is retained; the corrected hooks were applied to all sixteen existing ru
   warnings stay warnings. At ci.4, OpenSWATH's macOS x64 cask build showed the same
   `OSWFile.h` warning that failed TOPP's. Defining the option may surface new failures,
   so it waits for a cycle of its own.
-- **CPP-042 re-land.** Re-apply only the one-line suffix-loss fix in both cross-link
-  spectrum generators, with absolute m/z tests for both, a CPP-042-only OpenPepXL_1 run
-  and a reviewed reference update (decided 2026-09-14; kept out of ci.5 and the P0 branches).
+- **CPP-043 re-land.** The precursor isotope companions of the cross-link generator stay
+  reverted (they were reverted with CPP-042 in ci.4, a scoping call). Like CPP-042 in ci.7,
+  they need their own cycle with a reviewed reference update. CPP-026 (processingMethod order)
+  is the same kind of item, and larger: 211 of 267 TOPP mzML references would change.
+- **OpenPepXL mono-link precursor mass.** The cross-link ions of a mono-link candidate are
+  generated from the uncorrected measured precursor mass although the search allows
+  isotope_error=2, so those theoretical peaks can sit an isotope off. Found while reviewing the
+  ci.7 references, present in ci.2 and unchanged by CPP-042.
 - **Pre-existing defects found while reviewing the P0 follow-ups** (not fixed on those branches):
   - `StringUtils::skipNonWhitespace(string_view)` returns `int`, so `removeWhitespaces`
     can write before the buffer for strings over 2 GiB. Base64 no longer calls it; the
@@ -207,7 +219,7 @@ sibling is retained; the corrected hooks were applied to all sixteen existing ru
   depend on the unversioned tap formula, so a payload built against one Core can run
   against another and corrupt memory (shown for ci.2-built TOPP tools on ci.4). The 11
   ci.2-built casks were disabled (2026-09-14) and republished for ci.5
-  (2026-09-15/16) and ci.6 (2026-09-17). Between merging a Core release into the tap and
+  (2026-09-15/16), ci.6 (2026-09-17) and ci.7 (2026-09-18). Between merging a Core release into the tap and
   republishing a cask, installing that cask fails with the Core-mismatch error. Casks generated by `tools/ci-templates/update_cask.py` refuse to install
   unless the installed Core has the payload's source revision, which the cask workflow
   now exercises by installing from the tap on both macOS architectures. Upgrading

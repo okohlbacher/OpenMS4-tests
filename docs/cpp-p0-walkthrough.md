@@ -26,6 +26,8 @@ Each entry explains one priority-0 finding from the Rust port's C++ defect list,
 
 ## Implementation status (14 September 2026)
 
+- **CPP-042 released (18 September 2026).** Re-landed alone in `core-v4.0.0-ci.7`, with a class test in both
+  generators and the reviewed OpenPepXL reference update; CPP-043 stays reverted.
 - **Released (17 September 2026).** `codex/p0-followups` shipped in `core-v4.0.0-ci.6`, together with two fixes from its pre-release reviews: indented experimental-design sample tables line up again, and mzTab keys that ci.5 skipped are skipped again, with a warning. The CHANGELOG entry for ci.6 lists every input ci.5 accepted that ci.6 rejects.
 - **OpenMS4 Core.** Each area has a branch `codex/p0-<area>` on dax that went through three implement-and-review rounds; all seven are marked ready. They merge without conflicts into `codex/p0-followups` (48 commits, 30 files), which is pushed to OpenMS4-core for CI. On dax its 15 changed class tests and 17 neighbouring ones pass (32 of 32). CPP-042 is not included; it is re-landed in a later cycle.
 - **Upstream OpenMS.** One patch branch per area, `p0/<area>` in `/scratch/kohlbach/openms-upstream-p0` on dax (series under `/scratch/kohlbach/openms-upstream-p0-wt/patches/<area>`), built and tested against `develop` 3befd8ed77, where every touched file matched `core-v4.0.0-ci.2`. Nothing is pushed.
