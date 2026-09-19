@@ -1,0 +1,9 @@
+Progress of 'loading mzML':
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/test-data-sdk/share/openms4-test-data/1.0.0/topp/THIRDPARTY/MaRaClusterAdapter_1_in_1.mzML': Obsolete CV term 'MS:1000763 - PeakPicker' used in tag 'software'.
+  Progress of 'loading spectra list':
+
+    52.61 %               
+  -- done [took 0.74 s (CPU), 0.74 s (Wall)] -- 
+
+-- done [took 0.75 s (CPU), 0.75 s (Wall) @ 17.3 MiB/s] -- 
+FileConverter took 1.43 s (wall), 1.42 s (CPU), 0.04 s (system), 1.38 s (user); Peak Memory Usage: 88 MB.

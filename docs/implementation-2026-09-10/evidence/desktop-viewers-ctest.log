@@ -1,0 +1,13 @@
+Test project /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-viewers-build
+    Start 1: TOPP_ImageCreator_1
+    Start 3: TOPP_ImageCreator_2
+1/4 Test #3: TOPP_ImageCreator_2 ..............   Passed    4.84 sec
+    Start 4: TOPP_ImageCreator_2_out1
+2/4 Test #1: TOPP_ImageCreator_1 ..............   Passed    4.85 sec
+    Start 2: TOPP_ImageCreator_1_out1
+3/4 Test #4: TOPP_ImageCreator_2_out1 .........   Passed    0.01 sec
+4/4 Test #2: TOPP_ImageCreator_1_out1 .........   Passed    0.01 sec
+
+100% tests passed out of 4
+
+Total Test time (real) =   4.86 sec

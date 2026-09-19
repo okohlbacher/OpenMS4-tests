@@ -1,0 +1,4 @@
+[0/2] Re-checking globbed directories...
+[1/3] cd /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build && /opt/homebrew/bin/cmake -DOPENMS4_CHECK_SOURCE_DIR=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/flash -DOPENMS4_SOURCE_REVISION=a6ee68f8589e3dd7eb8cb10b0ea7f3b790e72a4c -DOPENMS4_SOURCE_DIRTY=OFF -DOPENMS4_EXPECTED_REVISION=a6ee68f8589e3dd7eb8cb10b0ea7f3b790e72a4c -DOPENMS4_EXPECTED_DIRTY=OFF -DOPENMS4_REQUIRE_CLEAN_SOURCE=ON -P /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/flash/cmake/OpenMS4Dependencies.cmake
+-- Found Git: /usr/bin/git (found version "2.50.1 (Apple Git-155)")
+[2/3] Linking CXX executable bin/FLASHDeconv

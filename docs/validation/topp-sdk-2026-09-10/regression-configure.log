@@ -1,0 +1,15 @@
+-- Searching for third party tools...
+--   - MaRaCluster not found
+--   - Comet not found
+--   - Sage not found
+--   - X! Tandem not found
+--   - MS-GF+ not found
+--   - MSFragger not found
+--   - Percolator not found
+--   - Novor not found
+--   - SpectraST not found
+--   - ThermoRawFileParser not found
+--   - LuciPHOr2 not found
+-- Configuring done (1.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions

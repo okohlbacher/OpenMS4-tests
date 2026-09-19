@@ -1,0 +1,15 @@
+Test project /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build
+    Start 1: Annotation1DPeakItem_test
+    Start 2: AxisTickCalculator_test
+    Start 3: FileWatcher_test
+1/5 Test #2: AxisTickCalculator_test ..........   Passed    4.89 sec
+2/5 Test #3: FileWatcher_test .................   Passed    4.88 sec
+    Start 4: GUIHelpers_test
+    Start 5: MultiGradient_test
+3/5 Test #1: Annotation1DPeakItem_test ........   Passed    4.89 sec
+4/5 Test #4: GUIHelpers_test ..................   Passed    0.52 sec
+5/5 Test #5: MultiGradient_test ...............   Passed    0.91 sec
+
+100% tests passed out of 5
+
+Total Test time (real) =   5.81 sec

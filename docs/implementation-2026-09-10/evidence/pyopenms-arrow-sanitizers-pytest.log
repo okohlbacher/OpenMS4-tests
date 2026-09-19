@@ -1,0 +1,11 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.9, pytest-9.1.1, pluggy-1.6.0
+rootdir: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/pyopenms
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collected 4 items
+
+OpenMS4-tests/packages/pyopenms/tests/native_arrow/test_arrow_table.py . [ 25%]
+...                                                                      [100%]
+
+============================== 4 passed in 1.79s ===============================

@@ -1,0 +1,521 @@
+Test project /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build
+        Start   1: AccurateMassSearch_write_ini
+        Start   2: AccurateMassSearch_write_ctd
+        Start   3: AssayGeneratorMetabo_write_ini
+        Start   4: AssayGeneratorMetabo_write_ctd
+        Start   5: AssayGeneratorMetaboSirius_write_ini
+        Start   6: AssayGeneratorMetaboSirius_write_ctd
+  1/258 Test   #2: AccurateMassSearch_write_ctd ..............   Passed    0.77 sec
+        Start   7: BaselineFilter_write_ini
+  2/258 Test   #1: AccurateMassSearch_write_ini ..............   Passed    0.81 sec
+        Start   8: BaselineFilter_write_ctd
+  3/258 Test   #3: AssayGeneratorMetabo_write_ini ............   Passed    1.12 sec
+        Start   9: CVInspector_write_ini
+  4/258 Test   #4: AssayGeneratorMetabo_write_ctd ............   Passed    1.11 sec
+        Start  10: CVInspector_write_ctd
+  5/258 Test   #5: AssayGeneratorMetaboSirius_write_ini ......   Passed    1.40 sec
+        Start  11: ClusterMassTraces_write_ini
+  6/258 Test   #6: AssayGeneratorMetaboSirius_write_ctd ......   Passed    1.39 sec
+        Start  12: ClusterMassTraces_write_ctd
+  7/258 Test   #7: BaselineFilter_write_ini ..................   Passed    1.09 sec
+        Start  13: ClusterMassTracesByPrecursor_write_ini
+  8/258 Test   #8: BaselineFilter_write_ctd ..................   Passed    1.09 sec
+        Start  14: ClusterMassTracesByPrecursor_write_ctd
+  9/258 Test  #10: CVInspector_write_ctd .....................   Passed    1.22 sec
+        Start  15: CometAdapter_write_ini
+ 10/258 Test   #9: CVInspector_write_ini .....................   Passed    1.24 sec
+        Start  16: CometAdapter_write_ctd
+ 11/258 Test  #12: ClusterMassTraces_write_ctd ...............   Passed    1.13 sec
+        Start  17: ConsensusID_write_ini
+ 12/258 Test  #11: ClusterMassTraces_write_ini ...............   Passed    1.16 sec
+        Start  18: ConsensusID_write_ctd
+ 13/258 Test  #14: ClusterMassTracesByPrecursor_write_ctd ....   Passed    1.03 sec
+        Start  19: ConsensusMapNormalizer_write_ini
+ 14/258 Test  #13: ClusterMassTracesByPrecursor_write_ini ....   Passed    1.06 sec
+        Start  20: ConsensusMapNormalizer_write_ctd
+ 15/258 Test  #18: ConsensusID_write_ctd .....................   Passed    0.99 sec
+        Start  21: DTAExtractor_write_ini
+ 16/258 Test  #17: ConsensusID_write_ini .....................   Passed    1.07 sec
+        Start  22: DTAExtractor_write_ctd
+ 17/258 Test  #15: CometAdapter_write_ini ....................   Passed    1.31 sec
+        Start  23: DatabaseFilter_write_ini
+ 18/258 Test  #16: CometAdapter_write_ctd ....................   Passed    1.33 sec
+        Start  24: DatabaseFilter_write_ctd
+ 19/258 Test  #20: ConsensusMapNormalizer_write_ctd ..........   Passed    0.97 sec
+        Start  25: DatabaseSuitability_write_ini
+ 20/258 Test  #19: ConsensusMapNormalizer_write_ini ..........   Passed    0.99 sec
+        Start  26: DatabaseSuitability_write_ctd
+ 21/258 Test  #21: DTAExtractor_write_ini ....................   Passed    0.72 sec
+        Start  27: DeMeanderize_write_ini
+ 22/258 Test  #22: DTAExtractor_write_ctd ....................   Passed    0.66 sec
+        Start  28: DeMeanderize_write_ctd
+ 23/258 Test  #23: DatabaseFilter_write_ini ..................   Passed    0.96 sec
+        Start  29: Decharger_write_ini
+ 24/258 Test  #24: DatabaseFilter_write_ctd ..................   Passed    0.95 sec
+        Start  30: Decharger_write_ctd
+ 25/258 Test  #26: DatabaseSuitability_write_ctd .............   Passed    1.08 sec
+        Start  31: DecoyDatabase_write_ini
+ 26/258 Test  #25: DatabaseSuitability_write_ini .............   Passed    1.11 sec
+        Start  32: DecoyDatabase_write_ctd
+ 27/258 Test  #28: DeMeanderize_write_ctd ....................   Passed    1.04 sec
+        Start  33: Digestor_write_ini
+ 28/258 Test  #27: DeMeanderize_write_ini ....................   Passed    1.05 sec
+        Start  34: Digestor_write_ctd
+ 29/258 Test  #30: Decharger_write_ctd .......................   Passed    0.96 sec
+        Start  35: DigestorMotif_write_ini
+ 30/258 Test  #29: Decharger_write_ini .......................   Passed    0.97 sec
+        Start  36: DigestorMotif_write_ctd
+ 31/258 Test  #32: DecoyDatabase_write_ctd ...................   Passed    1.05 sec
+        Start  37: EICExtractor_write_ini
+ 32/258 Test  #31: DecoyDatabase_write_ini ...................   Passed    1.08 sec
+        Start  38: EICExtractor_write_ctd
+ 33/258 Test  #34: Digestor_write_ctd ........................   Passed    1.02 sec
+        Start  39: Epifany_write_ini
+ 34/258 Test  #33: Digestor_write_ini ........................   Passed    1.05 sec
+        Start  40: Epifany_write_ctd
+ 35/258 Test  #36: DigestorMotif_write_ctd ...................   Passed    1.10 sec
+        Start  41: ExternalCalibration_write_ini
+ 36/258 Test  #35: DigestorMotif_write_ini ...................   Passed    1.13 sec
+        Start  42: ExternalCalibration_write_ctd
+ 37/258 Test  #37: EICExtractor_write_ini ....................   Passed    1.06 sec
+        Start  43: FalseDiscoveryRate_write_ini
+ 38/258 Test  #38: EICExtractor_write_ctd ....................   Passed    1.05 sec
+        Start  44: FalseDiscoveryRate_write_ctd
+ 39/258 Test  #39: Epifany_write_ini .........................   Passed    1.08 sec
+        Start  45: FeatureFinderCentroided_write_ini
+ 40/258 Test  #40: Epifany_write_ctd .........................   Passed    1.07 sec
+        Start  46: FeatureFinderCentroided_write_ctd
+ 41/258 Test  #41: ExternalCalibration_write_ini .............   Passed    1.05 sec
+ 42/258 Test  #42: ExternalCalibration_write_ctd .............   Passed    1.03 sec
+        Start  47: FeatureFinderIdentification_write_ini
+        Start  48: FeatureFinderIdentification_write_ctd
+ 43/258 Test  #43: FalseDiscoveryRate_write_ini ..............   Passed    1.01 sec
+        Start  49: FeatureFinderLFQ_write_ini
+ 44/258 Test  #44: FalseDiscoveryRate_write_ctd ..............   Passed    1.01 sec
+        Start  50: FeatureFinderLFQ_write_ctd
+ 45/258 Test  #46: FeatureFinderCentroided_write_ctd .........   Passed    1.01 sec
+        Start  51: FeatureFinderMetabo_write_ini
+ 46/258 Test  #45: FeatureFinderCentroided_write_ini .........   Passed    1.13 sec
+        Start  52: FeatureFinderMetabo_write_ctd
+ 47/258 Test  #48: FeatureFinderIdentification_write_ctd .....   Passed    1.11 sec
+        Start  53: FeatureFinderMetaboIdent_write_ini
+ 48/258 Test  #47: FeatureFinderIdentification_write_ini .....   Passed    1.12 sec
+        Start  54: FeatureFinderMetaboIdent_write_ctd
+ 49/258 Test  #50: FeatureFinderLFQ_write_ctd ................   Passed    1.05 sec
+        Start  55: FeatureFinderMultiplex_write_ini
+ 50/258 Test  #49: FeatureFinderLFQ_write_ini ................   Passed    1.07 sec
+        Start  56: FeatureFinderMultiplex_write_ctd
+ 51/258 Test  #51: FeatureFinderMetabo_write_ini .............   Passed    1.08 sec
+        Start  57: FeatureLinkerLabeled_write_ini
+ 52/258 Test  #52: FeatureFinderMetabo_write_ctd .............   Passed    1.01 sec
+        Start  58: FeatureLinkerLabeled_write_ctd
+ 53/258 Test  #54: FeatureFinderMetaboIdent_write_ctd ........   Passed    0.99 sec
+        Start  59: FeatureLinkerUnlabeled_write_ini
+ 54/258 Test  #53: FeatureFinderMetaboIdent_write_ini ........   Passed    1.01 sec
+        Start  60: FeatureLinkerUnlabeled_write_ctd
+ 55/258 Test  #56: FeatureFinderMultiplex_write_ctd ..........   Passed    1.04 sec
+        Start  61: FeatureLinkerUnlabeledKD_write_ini
+ 56/258 Test  #55: FeatureFinderMultiplex_write_ini ..........   Passed    1.07 sec
+        Start  62: FeatureLinkerUnlabeledKD_write_ctd
+ 57/258 Test  #57: FeatureLinkerLabeled_write_ini ............   Passed    0.99 sec
+        Start  63: FeatureLinkerUnlabeledQT_write_ini
+ 58/258 Test  #58: FeatureLinkerLabeled_write_ctd ............   Passed    0.98 sec
+        Start  64: FeatureLinkerUnlabeledQT_write_ctd
+ 59/258 Test  #59: FeatureLinkerUnlabeled_write_ini ..........   Passed    1.01 sec
+        Start  65: FileConverter_write_ini
+ 60/258 Test  #60: FeatureLinkerUnlabeled_write_ctd ..........   Passed    1.02 sec
+        Start  66: FileConverter_write_ctd
+ 61/258 Test  #62: FeatureLinkerUnlabeledKD_write_ctd ........   Passed    1.04 sec
+        Start  67: FileFilter_write_ini
+ 62/258 Test  #61: FeatureLinkerUnlabeledKD_write_ini ........   Passed    1.07 sec
+        Start  68: FileFilter_write_ctd
+ 63/258 Test  #64: FeatureLinkerUnlabeledQT_write_ctd ........   Passed    1.06 sec
+        Start  69: FileInfo_write_ini
+ 64/258 Test  #63: FeatureLinkerUnlabeledQT_write_ini ........   Passed    1.08 sec
+        Start  70: FileInfo_write_ctd
+ 65/258 Test  #65: FileConverter_write_ini ...................   Passed    1.08 sec
+        Start  71: FileMerger_write_ini
+ 66/258 Test  #66: FileConverter_write_ctd ...................   Passed    1.09 sec
+        Start  72: FileMerger_write_ctd
+ 67/258 Test  #68: FileFilter_write_ctd ......................   Passed    1.03 sec
+        Start  73: FuzzyDiff_write_ini
+ 68/258 Test  #67: FileFilter_write_ini ......................   Passed    1.04 sec
+        Start  74: FuzzyDiff_write_ctd
+ 69/258 Test  #70: FileInfo_write_ctd ........................   Passed    1.07 sec
+        Start  75: GNPSExport_write_ini
+ 70/258 Test  #69: FileInfo_write_ini ........................   Passed    1.08 sec
+        Start  76: GNPSExport_write_ctd
+ 71/258 Test  #72: FileMerger_write_ctd ......................   Passed    1.04 sec
+        Start  77: HighResPrecursorMassCorrector_write_ini
+ 72/258 Test  #71: FileMerger_write_ini ......................   Passed    1.07 sec
+        Start  78: HighResPrecursorMassCorrector_write_ctd
+ 73/258 Test  #74: FuzzyDiff_write_ctd .......................   Passed    1.04 sec
+        Start  79: IDConflictResolver_write_ini
+ 74/258 Test  #73: FuzzyDiff_write_ini .......................   Passed    1.05 sec
+        Start  80: IDConflictResolver_write_ctd
+ 75/258 Test  #75: GNPSExport_write_ini ......................   Passed    1.06 sec
+        Start  81: IDDecoyProbability_write_ini
+ 76/258 Test  #76: GNPSExport_write_ctd ......................   Passed    1.13 sec
+        Start  82: IDDecoyProbability_write_ctd
+ 77/258 Test  #77: HighResPrecursorMassCorrector_write_ini ...   Passed    1.08 sec
+        Start  83: IDExtractor_write_ini
+ 78/258 Test  #78: HighResPrecursorMassCorrector_write_ctd ...   Passed    1.10 sec
+        Start  84: IDExtractor_write_ctd
+ 79/258 Test  #79: IDConflictResolver_write_ini ..............   Passed    1.06 sec
+        Start  85: IDFileConverter_write_ini
+ 80/258 Test  #80: IDConflictResolver_write_ctd ..............   Passed    1.08 sec
+        Start  86: IDFileConverter_write_ctd
+ 81/258 Test  #82: IDDecoyProbability_write_ctd ..............   Passed    1.01 sec
+        Start  87: IDFilter_write_ini
+ 82/258 Test  #81: IDDecoyProbability_write_ini ..............   Passed    1.10 sec
+        Start  88: IDFilter_write_ctd
+ 83/258 Test  #84: IDExtractor_write_ctd .....................   Passed    1.04 sec
+        Start  89: IDMapper_write_ini
+ 84/258 Test  #85: IDFileConverter_write_ini .................   Passed    1.09 sec
+        Start  90: IDMapper_write_ctd
+ 85/258 Test  #86: IDFileConverter_write_ctd .................   Passed    1.09 sec
+        Start  91: IDMerger_write_ini
+ 86/258 Test  #83: IDExtractor_write_ini .....................   Passed    1.62 sec
+        Start  92: IDMerger_write_ctd
+ 87/258 Test  #89: IDMapper_write_ini ........................   Passed    1.07 sec
+        Start  93: IDPosteriorErrorProbability_write_ini
+ 88/258 Test  #90: IDMapper_write_ctd ........................   Passed    0.74 sec
+        Start  94: IDPosteriorErrorProbability_write_ctd
+ 89/258 Test  #88: IDFilter_write_ctd ........................   Passed    1.71 sec
+        Start  95: IDRTCalibration_write_ini
+ 90/258 Test  #87: IDFilter_write_ini ........................   Passed    1.72 sec
+        Start  96: IDRTCalibration_write_ctd
+ 91/258 Test  #91: IDMerger_write_ini ........................   Passed    1.10 sec
+        Start  97: IDRipper_write_ini
+ 92/258 Test  #92: IDMerger_write_ctd ........................   Passed    0.96 sec
+        Start  98: IDRipper_write_ctd
+ 93/258 Test  #94: IDPosteriorErrorProbability_write_ctd .....   Passed    0.73 sec
+        Start  99: IDScoreSwitcher_write_ini
+ 94/258 Test  #93: IDPosteriorErrorProbability_write_ini .....   Passed    0.80 sec
+        Start 100: IDScoreSwitcher_write_ctd
+ 95/258 Test  #96: IDRTCalibration_write_ctd .................   Passed    0.82 sec
+        Start 101: IDSplitter_write_ini
+ 96/258 Test  #95: IDRTCalibration_write_ini .................   Passed    0.86 sec
+        Start 102: IDSplitter_write_ctd
+ 97/258 Test  #97: IDRipper_write_ini ........................   Passed    1.02 sec
+        Start 103: INIUpdater_write_ini
+ 98/258 Test  #98: IDRipper_write_ctd ........................   Passed    1.02 sec
+        Start 104: INIUpdater_write_ctd
+ 99/258 Test  #99: IDScoreSwitcher_write_ini .................   Passed    1.07 sec
+        Start 105: InternalCalibration_write_ini
+100/258 Test #100: IDScoreSwitcher_write_ctd .................   Passed    1.07 sec
+        Start 106: InternalCalibration_write_ctd
+101/258 Test #101: IDSplitter_write_ini ......................   Passed    1.02 sec
+        Start 107: IonMobilityBinning_write_ini
+102/258 Test #102: IDSplitter_write_ctd ......................   Passed    1.00 sec
+        Start 108: IonMobilityBinning_write_ctd
+103/258 Test #104: INIUpdater_write_ctd ......................   Passed    1.04 sec
+        Start 109: IsobaricAnalyzer_write_ini
+104/258 Test #103: INIUpdater_write_ini ......................   Passed    1.07 sec
+        Start 110: IsobaricAnalyzer_write_ctd
+105/258 Test #105: InternalCalibration_write_ini .............   Passed    1.00 sec
+        Start 111: IsobaricWorkflow_write_ini
+106/258 Test #106: InternalCalibration_write_ctd .............   Passed    0.99 sec
+        Start 112: IsobaricWorkflow_write_ctd
+107/258 Test #108: IonMobilityBinning_write_ctd ..............   Passed    1.02 sec
+        Start 113: JSONExporter_write_ini
+108/258 Test #107: IonMobilityBinning_write_ini ..............   Passed    1.04 sec
+        Start 114: JSONExporter_write_ctd
+109/258 Test #110: IsobaricAnalyzer_write_ctd ................   Passed    1.11 sec
+        Start 115: LuciphorAdapter_write_ini
+110/258 Test #109: IsobaricAnalyzer_write_ini ................   Passed    1.15 sec
+        Start 116: LuciphorAdapter_write_ctd
+111/258 Test #111: IsobaricWorkflow_write_ini ................   Passed    1.18 sec
+        Start 117: MRMMapper_write_ini
+112/258 Test #112: IsobaricWorkflow_write_ctd ................   Passed    1.17 sec
+        Start 118: MRMMapper_write_ctd
+113/258 Test #113: JSONExporter_write_ini ....................   Passed    1.07 sec
+        Start 119: MRMPairFinder_write_ini
+114/258 Test #114: JSONExporter_write_ctd ....................   Passed    1.07 sec
+        Start 120: MRMPairFinder_write_ctd
+115/258 Test #117: MRMMapper_write_ini .......................   Passed    1.00 sec
+        Start 121: MSFraggerAdapter_write_ini
+116/258 Test #118: MRMMapper_write_ctd .......................   Passed    1.03 sec
+        Start 122: MSFraggerAdapter_write_ctd
+117/258 Test #115: LuciphorAdapter_write_ini .................   Passed    1.52 sec
+        Start 123: MSGFPlusAdapter_write_ini
+118/258 Test #116: LuciphorAdapter_write_ctd .................   Passed    1.54 sec
+        Start 124: MSGFPlusAdapter_write_ctd
+119/258 Test #119: MRMPairFinder_write_ini ...................   Passed    1.06 sec
+        Start 125: MSstatsConverter_write_ini
+120/258 Test #120: MRMPairFinder_write_ctd ...................   Passed    1.08 sec
+        Start 126: MSstatsConverter_write_ctd
+121/258 Test #122: MSFraggerAdapter_write_ctd ................   Passed    0.76 sec
+        Start 127: MaRaClusterAdapter_write_ini
+122/258 Test #121: MSFraggerAdapter_write_ini ................   Passed    0.81 sec
+        Start 128: MaRaClusterAdapter_write_ctd
+123/258 Test #123: MSGFPlusAdapter_write_ini .................   Passed    1.42 sec
+        Start 129: MapAlignerIdentification_write_ini
+124/258 Test #125: MSstatsConverter_write_ini ................   Passed    1.30 sec
+        Start 130: MapAlignerIdentification_write_ctd
+125/258 Test #126: MSstatsConverter_write_ctd ................   Passed    1.30 sec
+        Start 131: MapAlignerPoseClustering_write_ini
+126/258 Test #124: MSGFPlusAdapter_write_ctd .................   Passed    1.50 sec
+        Start 132: MapAlignerPoseClustering_write_ctd
+127/258 Test #127: MaRaClusterAdapter_write_ini ..............   Passed    1.08 sec
+        Start 133: MapAlignerTreeGuided_write_ini
+128/258 Test #128: MaRaClusterAdapter_write_ctd ..............   Passed    1.08 sec
+        Start 134: MapAlignerTreeGuided_write_ctd
+129/258 Test #129: MapAlignerIdentification_write_ini ........   Passed    0.84 sec
+        Start 135: MapNormalizer_write_ini
+130/258 Test #130: MapAlignerIdentification_write_ctd ........   Passed    0.82 sec
+        Start 136: MapNormalizer_write_ctd
+131/258 Test #131: MapAlignerPoseClustering_write_ini ........   Passed    1.08 sec
+        Start 137: MapRTTransformer_write_ini
+132/258 Test #132: MapAlignerPoseClustering_write_ctd ........   Passed    1.09 sec
+        Start 138: MapRTTransformer_write_ctd
+133/258 Test #133: MapAlignerTreeGuided_write_ini ............   Passed    1.19 sec
+        Start 139: MapStatistics_write_ini
+134/258 Test #134: MapAlignerTreeGuided_write_ctd ............   Passed    1.26 sec
+        Start 140: MapStatistics_write_ctd
+135/258 Test #135: MapNormalizer_write_ini ...................   Passed    1.04 sec
+136/258 Test #136: MapNormalizer_write_ctd ...................   Passed    1.00 sec
+        Start 141: MascotAdapterOnline_write_ini
+        Start 142: MascotAdapterOnline_write_ctd
+137/258 Test #137: MapRTTransformer_write_ini ................   Passed    0.95 sec
+        Start 143: MassCalculator_write_ini
+138/258 Test #138: MapRTTransformer_write_ctd ................   Passed    0.92 sec
+        Start 144: MassCalculator_write_ctd
+139/258 Test #140: MapStatistics_write_ctd ...................   Passed    0.79 sec
+        Start 145: MassTraceExtractor_write_ini
+140/258 Test #139: MapStatistics_write_ini ...................   Passed    0.87 sec
+        Start 146: MassTraceExtractor_write_ctd
+141/258 Test #144: MassCalculator_write_ctd ..................   Passed    0.96 sec
+        Start 147: MetaProSIP_write_ini
+142/258 Test #143: MassCalculator_write_ini ..................   Passed    0.98 sec
+        Start 148: MetaProSIP_write_ctd
+143/258 Test #141: MascotAdapterOnline_write_ini .............   Passed    1.34 sec
+        Start 149: MetaboliteAdductDecharger_write_ini
+144/258 Test #142: MascotAdapterOnline_write_ctd .............   Passed    1.35 sec
+        Start 150: MetaboliteAdductDecharger_write_ctd
+145/258 Test #145: MassTraceExtractor_write_ini ..............   Passed    1.09 sec
+        Start 151: MetaboliteSpectralMatcher_write_ini
+146/258 Test #146: MassTraceExtractor_write_ctd ..............   Passed    1.09 sec
+        Start 152: MetaboliteSpectralMatcher_write_ctd
+147/258 Test #148: MetaProSIP_write_ctd ......................   Passed    0.74 sec
+        Start 153: MultiplexResolver_write_ini
+148/258 Test #147: MetaProSIP_write_ini ......................   Passed    0.76 sec
+        Start 154: MultiplexResolver_write_ctd
+149/258 Test #150: MetaboliteAdductDecharger_write_ctd .......   Passed    0.96 sec
+        Start 155: MzMLSplitter_write_ini
+150/258 Test #149: MetaboliteAdductDecharger_write_ini .......   Passed    0.98 sec
+        Start 156: MzMLSplitter_write_ctd
+151/258 Test #151: MetaboliteSpectralMatcher_write_ini .......   Passed    1.02 sec
+        Start 157: MzTabExporter_write_ini
+152/258 Test #152: MetaboliteSpectralMatcher_write_ctd .......   Passed    1.03 sec
+        Start 158: MzTabExporter_write_ctd
+153/258 Test #154: MultiplexResolver_write_ctd ...............   Passed    0.97 sec
+        Start 159: NoiseFilterGaussian_write_ini
+154/258 Test #153: MultiplexResolver_write_ini ...............   Passed    1.02 sec
+        Start 160: NoiseFilterGaussian_write_ctd
+155/258 Test #156: MzMLSplitter_write_ctd ....................   Passed    1.07 sec
+        Start 161: NoiseFilterSGolay_write_ini
+156/258 Test #155: MzMLSplitter_write_ini ....................   Passed    1.08 sec
+        Start 162: NoiseFilterSGolay_write_ctd
+157/258 Test #157: MzTabExporter_write_ini ...................   Passed    1.20 sec
+158/258 Test #158: MzTabExporter_write_ctd ...................   Passed    1.17 sec
+        Start 163: NovorAdapter_write_ini
+        Start 164: NovorAdapter_write_ctd
+159/258 Test #160: NoiseFilterGaussian_write_ctd .............   Passed    1.15 sec
+        Start 165: NucleicAcidSearchEngine_write_ini
+160/258 Test #159: NoiseFilterGaussian_write_ini .............   Passed    1.20 sec
+        Start 166: NucleicAcidSearchEngine_write_ctd
+161/258 Test #162: NoiseFilterSGolay_write_ctd ...............   Passed    1.15 sec
+        Start 167: OpenMSDatabasesInfo_write_ini
+162/258 Test #161: NoiseFilterSGolay_write_ini ...............   Passed    1.17 sec
+        Start 168: OpenMSDatabasesInfo_write_ctd
+163/258 Test #164: NovorAdapter_write_ctd ....................   Passed    0.92 sec
+        Start 169: OpenNuXL_write_ini
+164/258 Test #163: NovorAdapter_write_ini ....................   Passed    0.93 sec
+        Start 170: OpenNuXL_write_ctd
+165/258 Test #165: NucleicAcidSearchEngine_write_ini .........   Passed    1.08 sec
+        Start 171: OpenPepXL_write_ini
+166/258 Test #166: NucleicAcidSearchEngine_write_ctd .........   Passed    1.08 sec
+        Start 172: OpenPepXL_write_ctd
+167/258 Test #167: OpenMSDatabasesInfo_write_ini .............   Passed    1.01 sec
+        Start 173: PSMFeatureExtractor_write_ini
+168/258 Test #168: OpenMSDatabasesInfo_write_ctd .............   Passed    1.03 sec
+        Start 174: PSMFeatureExtractor_write_ctd
+169/258 Test #173: PSMFeatureExtractor_write_ini .............   Passed    1.00 sec
+        Start 175: ParquetConverter_write_ini
+170/258 Test #174: PSMFeatureExtractor_write_ctd .............   Passed    0.97 sec
+        Start 176: ParquetConverter_write_ctd
+171/258 Test #171: OpenPepXL_write_ini .......................   Passed    1.67 sec
+        Start 177: ParquetDiff_write_ini
+172/258 Test #172: OpenPepXL_write_ctd .......................   Passed    1.70 sec
+        Start 178: ParquetDiff_write_ctd
+173/258 Test #169: OpenNuXL_write_ini ........................   Passed    2.30 sec
+        Start 179: PeakPickerHiRes_write_ini
+174/258 Test #170: OpenNuXL_write_ctd ........................   Passed    2.46 sec
+        Start 180: PeakPickerHiRes_write_ctd
+175/258 Test #176: ParquetConverter_write_ctd ................   Passed    0.71 sec
+        Start 181: PeakPickerIM_write_ini
+176/258 Test #175: ParquetConverter_write_ini ................   Passed    0.78 sec
+        Start 182: PeakPickerIM_write_ctd
+177/258 Test #177: ParquetDiff_write_ini .....................   Passed    0.87 sec
+178/258 Test #178: ParquetDiff_write_ctd .....................   Passed    0.84 sec
+        Start 183: PeakPickerIterative_write_ini
+        Start 184: PeakPickerIterative_write_ctd
+179/258 Test #180: PeakPickerHiRes_write_ctd .................   Passed    0.94 sec
+        Start 185: PeptideIndexer_write_ini
+180/258 Test #179: PeakPickerHiRes_write_ini .................   Passed    1.17 sec
+        Start 186: PeptideIndexer_write_ctd
+181/258 Test #182: PeakPickerIM_write_ctd ....................   Passed    1.18 sec
+        Start 187: PercolatorAdapter_write_ini
+182/258 Test #181: PeakPickerIM_write_ini ....................   Passed    1.25 sec
+        Start 188: PercolatorAdapter_write_ctd
+183/258 Test #184: PeakPickerIterative_write_ctd .............   Passed    1.09 sec
+        Start 189: PhosphoScoring_write_ini
+184/258 Test #183: PeakPickerIterative_write_ini .............   Passed    1.13 sec
+        Start 190: PhosphoScoring_write_ctd
+185/258 Test #185: PeptideIndexer_write_ini ..................   Passed    1.03 sec
+        Start 191: ProSE_write_ini
+186/258 Test #186: PeptideIndexer_write_ctd ..................   Passed    0.99 sec
+        Start 192: ProSE_write_ctd
+187/258 Test #188: PercolatorAdapter_write_ctd ...............   Passed    1.91 sec
+        Start 193: ProteinInference_write_ini
+188/258 Test #187: PercolatorAdapter_write_ini ...............   Passed    1.93 sec
+        Start 194: ProteinInference_write_ctd
+189/258 Test #189: PhosphoScoring_write_ini ..................   Passed    1.95 sec
+        Start 195: ProteinQuantifier_write_ini
+190/258 Test #190: PhosphoScoring_write_ctd ..................   Passed    1.94 sec
+        Start 196: ProteinQuantifier_write_ctd
+191/258 Test #193: ProteinInference_write_ini ................   Passed    1.29 sec
+        Start 197: ProteomicsLFQ_write_ini
+192/258 Test #194: ProteinInference_write_ctd ................   Passed    1.28 sec
+        Start 198: ProteomicsLFQ_write_ctd
+193/258 Test #191: ProSE_write_ini ...........................   Passed    2.65 sec
+        Start 199: QCCalculator_write_ini
+194/258 Test #192: ProSE_write_ctd ...........................   Passed    2.74 sec
+        Start 200: QCCalculator_write_ctd
+195/258 Test #195: ProteinQuantifier_write_ini ...............   Passed    1.17 sec
+        Start 201: QCEmbedder_write_ini
+196/258 Test #196: ProteinQuantifier_write_ctd ...............   Passed    1.18 sec
+        Start 202: QCEmbedder_write_ctd
+197/258 Test #197: ProteomicsLFQ_write_ini ...................   Passed    0.95 sec
+        Start 203: QCExporter_write_ini
+198/258 Test #198: ProteomicsLFQ_write_ctd ...................   Passed    0.97 sec
+        Start 204: QCExporter_write_ctd
+199/258 Test #199: QCCalculator_write_ini ....................   Passed    1.12 sec
+        Start 205: QCExtractor_write_ini
+200/258 Test #200: QCCalculator_write_ctd ....................   Passed    1.00 sec
+        Start 206: QCExtractor_write_ctd
+201/258 Test #201: QCEmbedder_write_ini ......................   Passed    1.28 sec
+202/258 Test #202: QCEmbedder_write_ctd ......................   Passed    1.25 sec
+        Start 207: QCImporter_write_ini
+        Start 208: QCImporter_write_ctd
+203/258 Test #203: QCExporter_write_ini ......................   Passed    0.93 sec
+        Start 209: QCMerger_write_ini
+204/258 Test #204: QCExporter_write_ctd ......................   Passed    0.92 sec
+        Start 210: QCMerger_write_ctd
+205/258 Test #205: QCExtractor_write_ini .....................   Passed    0.99 sec
+        Start 211: QCShrinker_write_ini
+206/258 Test #206: QCExtractor_write_ctd .....................   Passed    1.01 sec
+        Start 212: QCShrinker_write_ctd
+207/258 Test #207: QCImporter_write_ini ......................   Passed    1.08 sec
+        Start 213: QualityControl_write_ini
+208/258 Test #208: QCImporter_write_ctd ......................   Passed    1.09 sec
+        Start 214: QualityControl_write_ctd
+209/258 Test #210: QCMerger_write_ctd ........................   Passed    1.05 sec
+        Start 215: RNADigestor_write_ini
+210/258 Test #209: QCMerger_write_ini ........................   Passed    1.07 sec
+        Start 216: RNADigestor_write_ctd
+211/258 Test #212: QCShrinker_write_ctd ......................   Passed    1.02 sec
+        Start 217: RNAMassCalculator_write_ini
+212/258 Test #211: QCShrinker_write_ini ......................   Passed    1.05 sec
+        Start 218: RNAMassCalculator_write_ctd
+213/258 Test #213: QualityControl_write_ini ..................   Passed    1.02 sec
+        Start 219: RNPxlXICFilter_write_ini
+214/258 Test #214: QualityControl_write_ctd ..................   Passed    1.01 sec
+        Start 220: RNPxlXICFilter_write_ctd
+215/258 Test #215: RNADigestor_write_ini .....................   Passed    1.08 sec
+        Start 221: Resampler_write_ini
+216/258 Test #216: RNADigestor_write_ctd .....................   Passed    1.09 sec
+        Start 222: Resampler_write_ctd
+217/258 Test #218: RNAMassCalculator_write_ctd ...............   Passed    1.13 sec
+        Start 223: SageAdapter_write_ini
+218/258 Test #217: RNAMassCalculator_write_ini ...............   Passed    1.16 sec
+        Start 224: SageAdapter_write_ctd
+219/258 Test #220: RNPxlXICFilter_write_ctd ..................   Passed    1.05 sec
+        Start 225: SeedListGenerator_write_ini
+220/258 Test #219: RNPxlXICFilter_write_ini ..................   Passed    1.06 sec
+        Start 226: SeedListGenerator_write_ctd
+221/258 Test #221: Resampler_write_ini .......................   Passed    1.02 sec
+        Start 227: SemanticValidator_write_ini
+222/258 Test #222: Resampler_write_ctd .......................   Passed    1.07 sec
+        Start 228: SemanticValidator_write_ctd
+223/258 Test #226: SeedListGenerator_write_ctd ...............   Passed    1.17 sec
+        Start 229: SequenceCoverageCalculator_write_ini
+224/258 Test #225: SeedListGenerator_write_ini ...............   Passed    1.18 sec
+        Start 230: SequenceCoverageCalculator_write_ctd
+225/258 Test #223: SageAdapter_write_ini .....................   Passed    1.69 sec
+        Start 231: SimpleSearchEngine_write_ini
+226/258 Test #224: SageAdapter_write_ctd .....................   Passed    1.71 sec
+        Start 232: SimpleSearchEngine_write_ctd
+227/258 Test #228: SemanticValidator_write_ctd ...............   Passed    1.10 sec
+        Start 233: SiriusExport_write_ini
+228/258 Test #227: SemanticValidator_write_ini ...............   Passed    1.17 sec
+        Start 234: SiriusExport_write_ctd
+229/258 Test #229: SequenceCoverageCalculator_write_ini ......   Passed    0.74 sec
+        Start 235: SpectraFilterNLargest_write_ini
+230/258 Test #230: SequenceCoverageCalculator_write_ctd ......   Passed    0.75 sec
+        Start 236: SpectraFilterNLargest_write_ctd
+231/258 Test #234: SiriusExport_write_ctd ....................   Passed    1.13 sec
+        Start 237: SpectraFilterNormalizer_write_ini
+232/258 Test #233: SiriusExport_write_ini ....................   Passed    1.16 sec
+        Start 238: SpectraFilterNormalizer_write_ctd
+233/258 Test #231: SimpleSearchEngine_write_ini ..............   Passed    1.34 sec
+        Start 239: SpectraFilterThresholdMower_write_ini
+234/258 Test #232: SimpleSearchEngine_write_ctd ..............   Passed    1.42 sec
+        Start 240: SpectraFilterThresholdMower_write_ctd
+235/258 Test #235: SpectraFilterNLargest_write_ini ...........   Passed    1.06 sec
+        Start 241: SpectraFilterWindowMower_write_ini
+236/258 Test #236: SpectraFilterNLargest_write_ctd ...........   Passed    1.06 sec
+        Start 242: SpectraFilterWindowMower_write_ctd
+237/258 Test #237: SpectraFilterNormalizer_write_ini .........   Passed    0.74 sec
+        Start 243: SpectraMerger_write_ini
+238/258 Test #238: SpectraFilterNormalizer_write_ctd .........   Passed    0.73 sec
+        Start 244: SpectraMerger_write_ctd
+239/258 Test #240: SpectraFilterThresholdMower_write_ctd .....   Passed    0.90 sec
+        Start 245: SpectraSTSearchAdapter_write_ini
+240/258 Test #239: SpectraFilterThresholdMower_write_ini .....   Passed    1.00 sec
+        Start 246: SpectraSTSearchAdapter_write_ctd
+241/258 Test #241: SpectraFilterWindowMower_write_ini ........   Passed    1.02 sec
+        Start 247: StaticModification_write_ini
+242/258 Test #242: SpectraFilterWindowMower_write_ctd ........   Passed    1.00 sec
+        Start 248: StaticModification_write_ctd
+243/258 Test #243: SpectraMerger_write_ini ...................   Passed    0.94 sec
+        Start 249: TICCalculator_write_ini
+244/258 Test #244: SpectraMerger_write_ctd ...................   Passed    0.95 sec
+        Start 250: TICCalculator_write_ctd
+245/258 Test #245: SpectraSTSearchAdapter_write_ini ..........   Passed    0.98 sec
+        Start 251: TextExporter_write_ini
+246/258 Test #246: SpectraSTSearchAdapter_write_ctd ..........   Passed    0.98 sec
+        Start 252: TextExporter_write_ctd
+247/258 Test #250: TICCalculator_write_ctd ...................   Passed    1.01 sec
+        Start 253: UniPEFF_write_ini
+248/258 Test #249: TICCalculator_write_ini ...................   Passed    1.03 sec
+        Start 254: UniPEFF_write_ctd
+249/258 Test #247: StaticModification_write_ini ..............   Passed    1.40 sec
+        Start 255: XFDR_write_ini
+250/258 Test #248: StaticModification_write_ctd ..............   Passed    1.48 sec
+        Start 256: XFDR_write_ctd
+251/258 Test #251: TextExporter_write_ini ....................   Passed    0.97 sec
+        Start 257: XMLValidator_write_ini
+252/258 Test #252: TextExporter_write_ctd ....................   Passed    0.97 sec
+        Start 258: XMLValidator_write_ctd
+253/258 Test #253: UniPEFF_write_ini .........................   Passed    0.69 sec
+254/258 Test #254: UniPEFF_write_ctd .........................   Passed    0.69 sec
+255/258 Test #255: XFDR_write_ini ............................   Passed    0.96 sec
+256/258 Test #256: XFDR_write_ctd ............................   Passed    0.88 sec
+257/258 Test #257: XMLValidator_write_ini ....................   Passed    1.16 sec
+258/258 Test #258: XMLValidator_write_ctd ....................   Passed    1.17 sec
+
+100% tests passed out of 258
+
+Total Test time (real) =  48.03 sec

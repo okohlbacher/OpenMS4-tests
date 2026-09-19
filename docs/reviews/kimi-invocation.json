@@ -1,0 +1,61 @@
+{
+  "cli": "/Users/kohlbach/.kimi-code/bin/kimi",
+  "cli_version": "0.41.0",
+  "configured_model_alias": "kimi-code/k3",
+  "configured_provider": "managed:kimi-code",
+  "configured_model_id": "k3",
+  "model_verification": "Selected default model from local config.toml; stream reports CLI version but not resolved server model.",
+  "source_commit": "ca32296038839459d8c9b075b759e285913d6294",
+  "working_directory": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/reviews/2026-09-10",
+  "invocation": "/Users/kohlbach/.kimi-code/bin/kimi --agent-file kimi-readonly-agent.md --output-format stream-json -p \"$(cat review-request.md)\" > kimi-raw.jsonl 2> kimi-stderr.log",
+  "read_only_controls": {
+    "allowed_tools": [
+      "Read",
+      "Grep",
+      "Glob"
+    ],
+    "subagents": [],
+    "profile": "kimi-readonly-agent.md"
+  },
+  "initial_attempt": "--plan --prompt is unsupported by Kimi 0.41.0: Cannot combine --prompt with --plan. Replaced by documented strict tool-allowlist profile.",
+  "profile_reference": "https://moonshotai.github.io/kimi-code/en/customization/agents.html",
+  "exit_code": 0,
+  "tool_calls": {
+    "Read": 51,
+    "Glob": 5,
+    "Grep": 14
+  },
+  "transient_retry": {
+    "role": "meta",
+    "type": "turn.step.retrying",
+    "failed_attempt": 1,
+    "next_attempt": 2,
+    "max_attempts": 10,
+    "delay_ms": 574.0187946621749,
+    "error_name": "APIConnectionError",
+    "error_message": "terminated"
+  },
+  "session_id": "session_1263e6a3-76e0-41b5-bcee-65287202e406",
+  "files": {
+    "kimi-raw.jsonl": {
+      "sha256": "e5faa67f4280511328643ccc5385d08522618688149dd9d9afd4d7124b59a9d0",
+      "bytes": 410465
+    },
+    "kimi-review.md": {
+      "sha256": "e27cd4bb06f8c9afbbaa4b806cb03bec3f4cdf2c8daee9a8bd025994941cba00",
+      "bytes": 25557
+    },
+    "kimi-stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "kimi-readonly-agent.md": {
+      "sha256": "c760aff40500da13dc4fd75c906abae6df7ece0b6d29a0dd895c621ccf6a02e7",
+      "bytes": 980
+    },
+    "review-request.md": {
+      "sha256": "032cb0e125ed5d3fe53ed265cb7008e5b44cb61f6e8c6507e9c7ff03bda1c4cb",
+      "bytes": 2707
+    }
+  }
+}

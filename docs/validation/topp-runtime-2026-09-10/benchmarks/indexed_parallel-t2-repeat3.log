@@ -1,0 +1,7 @@
+ Memory consumption before 52016
+Read method: indexed (parallel)
+There are 1684 spectra and 479455 peaks in the input file.
+The total ion current is 4.295e+09
+ Memory consumption after 58464
+TICCalculator took 0.28 s (wall), 0.44 s (CPU), 0.00 s (system), 0.44 s (user); Peak Memory Usage: 57 MB.
+ Memory consumption final 58480

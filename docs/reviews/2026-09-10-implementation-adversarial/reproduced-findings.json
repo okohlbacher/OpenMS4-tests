@@ -1,0 +1,32 @@
+{
+  "worker_exception": {
+    "reported_success": true,
+    "exceptions": [
+      "controlled missing executable",
+      "controlled missing executable"
+    ]
+  },
+  "completed_process_log_tail": {
+    "expected_stderr_lines": 3,
+    "captured_stderr": [
+      "err1"
+    ],
+    "captured_logs": [
+      "out1",
+      "STDERR: err1"
+    ]
+  },
+  "pid_failure_cleanup": {
+    "cleanup_calls": [],
+    "limitation": "Fake child proves missing cleanup path, not measured native heap leakage."
+  },
+  "unbound_artifact_identity": {
+    "accepted": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "package_pin": "21b295c9ad889b402db1e3a20f13e8d08330b61b",
+    "limitation": "Manifest/hash verification only; archive extraction is a separate step."
+  },
+  "wheel_fixture_copy": {
+    "copied_test_only_fixture": true,
+    "method": "Exact production CMake copy block, isolated marker SDK; no wheel built."
+  }
+}

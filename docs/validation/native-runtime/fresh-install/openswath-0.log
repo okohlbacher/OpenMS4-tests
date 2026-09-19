@@ -1,0 +1,22 @@
+[0/2] Re-checking globbed directories...
+[1/21] cd /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/openswath-build && /opt/homebrew/bin/cmake -DOPENMS4_CHECK_SOURCE_DIR=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/openswath -DOPENMS4_SOURCE_REVISION=c7901a79cc27463968ec335b6d04894b05b98339 -DOPENMS4_SOURCE_DIRTY=OFF -DOPENMS4_EXPECTED_REVISION=c7901a79cc27463968ec335b6d04894b05b98339 -DOPENMS4_EXPECTED_DIRTY=OFF -DOPENMS4_REQUIRE_CLEAN_SOURCE=ON -P /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/openswath/cmake/OpenMS4Dependencies.cmake
+-- Found Git: /usr/bin/git (found version "2.50.1 (Apple Git-155)")
+[2/21] Linking CXX executable bin/OpenSwathAnalyzer
+[3/21] Linking CXX executable bin/MRMTransitionGroupPicker
+[4/21] Linking CXX executable bin/OpenSwathAssayGenerator
+[5/21] Linking CXX executable bin/OpenSwathChromatogramExtractor
+[6/21] Linking CXX executable bin/OpenSwathDIAPreScoring
+[7/21] Linking CXX executable bin/OpenSwathConfidenceScoring
+[8/21] Linking CXX executable bin/OpenSwathExport
+[9/21] Linking CXX executable bin/OpenSwathDecoyGenerator
+[10/21] Linking CXX executable bin/OpenSwathFeatureXMLToTSV
+[11/21] Linking CXX executable bin/OpenSwathFileSplitter
+[12/21] Linking CXX executable bin/OpenSwathInfer
+[13/21] Linking CXX executable bin/OpenSwathMzMLFileCacher
+[14/21] Linking CXX executable bin/OpenSwathPercolatorScoring
+[15/21] Linking CXX executable bin/OpenSwathPeakMapExtractor
+[16/21] Linking CXX executable bin/OpenSwathRTNormalizer
+[17/21] Linking CXX executable bin/OpenSwathRewriteToFeatureXML
+[18/21] Linking CXX executable bin/TargetedFileConverter
+[19/21] Linking CXX executable bin/OpenSwathWorkflow
+[20/21] Linking CXX executable bin/TransitionListEvidenceFilter

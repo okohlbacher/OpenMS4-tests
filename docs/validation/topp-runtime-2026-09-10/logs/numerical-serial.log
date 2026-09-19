@@ -1,0 +1,25 @@
+Test project /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-runtime-report/regressions
+      Start  445: TOPP_DTAExtractor_1
+ 1/10 Test  #445: TOPP_DTAExtractor_1 .......................   Passed    0.32 sec
+      Start  446: TOPP_DTAExtractor_1_out1
+ 2/10 Test  #446: TOPP_DTAExtractor_1_out1 ..................   Passed    0.08 sec
+      Start  447: TOPP_DTAExtractor_2
+ 3/10 Test  #447: TOPP_DTAExtractor_2 .......................   Passed    0.30 sec
+      Start  448: TOPP_DTAExtractor_2_out1
+ 4/10 Test  #448: TOPP_DTAExtractor_2_out1 ..................   Passed    0.08 sec
+      Start  449: TOPP_DTAExtractor_3
+ 5/10 Test  #449: TOPP_DTAExtractor_3 .......................   Passed    0.31 sec
+      Start  450: TOPP_DTAExtractor_3_out1
+ 6/10 Test  #450: TOPP_DTAExtractor_3_out1 ..................   Passed    0.08 sec
+      Start 1959: TOPP_MassTraceExtractor_3_flat_json
+ 7/10 Test #1959: TOPP_MassTraceExtractor_3_flat_json .......   Passed    0.08 sec
+      Start 1960: TOPP_MassTraceExtractor_3_flat_json_out
+ 8/10 Test #1960: TOPP_MassTraceExtractor_3_flat_json_out ...   Passed    0.08 sec
+      Start 1961: TOPP_MassTraceExtractor_3_json
+ 9/10 Test #1961: TOPP_MassTraceExtractor_3_json ............   Passed    0.08 sec
+      Start 1962: TOPP_MassTraceExtractor_3_json_out
+10/10 Test #1962: TOPP_MassTraceExtractor_3_json_out ........   Passed    0.08 sec
+
+100% tests passed out of 10
+
+Total Test time (real) =   1.50 sec

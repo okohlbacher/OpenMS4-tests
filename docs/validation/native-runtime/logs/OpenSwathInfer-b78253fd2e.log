@@ -1,0 +1,44 @@
+stty: stdin isn't a terminal
+
+OpenSwathInfer -- Runs inference on OpenSWATH results.
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_OpenSwathInfer.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  OpenSwathInfer <options>
+
+Options (mandatory options marked with '*'):
+  -in <file>*                                             Input OpenSWATH OSW file. (valid formats: 'osw')
+  -out <file>                                             Optional output OSW file. If empty, the input file is updated in place. (valid formats: 'osw')
+
+Peptidoform/IPF inference options.:
+  -peptidoform:run <true|false>                           Enable peptidoform inference in this invocation. (default: 'false') (valid: 'true', 'false')
+  -peptidoform:ipf_ms1_scoring <true|false>               Use MS1 precursor evidence. (default: 'false') (valid: 'true', 'false')
+  -peptidoform:ipf_ms2_scoring <true|false>               Use MS2 precursor evidence from transition-level precursor rows. (default: 'false') (valid: 'true', 'false')
+  -peptidoform:propagate_signal_across_runs <true|false>  Propagate confident transition evidence across aligned runs using FEATURE_MS2_ALIGNMENT_CANDIDATE. (default: 'false') (valid: 'true', 'false')
+
+Peptide-level inference selection options.:
+  -peptide:global <true|false>                            Enable peptide inference in the global context. (default: 'true') (valid: 'true', 'false')
+  -peptide:experiment_wide <true|false>                   Enable peptide inference in the experiment-wide context. (default: 'false') (valid: 'true', 'false')
+  -peptide:run_specific <true|false>                      Enable peptide inference in the run-specific context. (default: 'false') (valid: 'true', 'false')
+
+Protein-level inference selection options.:
+  -protein:global <true|false>                            Enable protein inference in the global context. (default: 'true') (valid: 'true', 'false')
+  -protein:experiment_wide <true|false>                   Enable protein inference in the experiment-wide context. (default: 'false') (valid: 'true', 'false')
+  -protein:run_specific <true|false>                      Enable protein inference in the run-specific context. (default: 'false') (valid: 'true', 'false')
+
+Gene-level inference selection options.:
+  -gene:global <true|false>                               Enable gene inference in the global context. (default: 'false') (valid: 'true', 'false')
+  -gene:experiment_wide <true|false>                      Enable gene inference in the experiment-wide context. (default: 'false') (valid: 'true', 'false')
+  -gene:run_specific <true|false>                         Enable gene inference in the run-specific context. (default: 'false') (valid: 'true', 'false')
+
+                                                          
+Common TOPP options:
+  -ini <file>                                             Use the given TOPP INI file
+  -threads <n>                                            Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>                                       Writes the default configuration file
+  --help                                                  Shows options
+  --helphelp                                              Shows all options (including advanced)
+

@@ -1,0 +1,26 @@
+{
+  "local_directory": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/reviews/2026-09-10-implementation-adversarial",
+  "policy": "Raw streaming logs and launcher files remain local; final CLI reports are published verbatim.",
+  "raw_streams": [
+    {
+      "file": "claude-raw.jsonl",
+      "sha256": "f9161a404ae1311d148c29ff7603d4249fa5263436c60df8107976f94c04088f",
+      "bytes": 2109032
+    },
+    {
+      "file": "kimi-raw.jsonl",
+      "sha256": "3d0cb79c45ae84d6bf31641fc20fd85e454a4aa08ef40d78d5a7107e8b6e5680",
+      "bytes": 721804
+    },
+    {
+      "file": "vibe-raw.jsonl",
+      "sha256": "c63f224a9e5c573888f05bfa9a37e92e7e9b8f6841d64614beee92856f42a8ae",
+      "bytes": 389625
+    },
+    {
+      "file": "vibe-unavailable-mistral-large-4-raw.jsonl",
+      "sha256": "4286f79b2d6e3c8f8223a86c265a4b0ebddf10f5626a578d661f561abebcf66f",
+      "bytes": 6300
+    }
+  ]
+}

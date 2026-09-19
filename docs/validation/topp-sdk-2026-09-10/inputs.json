@@ -1,0 +1,62 @@
+{
+  "topp_source_revision": "582535805581f2bdf4f3871d6802a0b45a3abe36",
+  "source_archive": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/topp-source.tar",
+  "source": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/source",
+  "sdk": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk",
+  "sdk_owned_files": 1764,
+  "blocked_paths": [
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk"
+  ],
+  "source_revisions": {
+    "core": {
+      "path": "packages/core",
+      "repository": "https://github.com/okohlbacher/OpenMS4-core",
+      "source_revision": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85"
+    },
+    "cli": {
+      "path": "packages/cli",
+      "repository": "https://github.com/okohlbacher/OpenMS4-cli",
+      "source_revision": "51db6bbbdeba53abc57d23c664de37f9c285372e"
+    },
+    "test-data": {
+      "path": "packages/test-data",
+      "repository": "https://github.com/okohlbacher/OpenMS4-test-data",
+      "source_revision": "c3e52c917bc2a04e27720f5c7d8189c0f4f522da"
+    },
+    "topp": {
+      "path": "packages/topp",
+      "repository": "https://github.com/okohlbacher/OpenMS4-topp",
+      "source_revision": "582535805581f2bdf4f3871d6802a0b45a3abe36"
+    },
+    "openswath": {
+      "path": "packages/openswath",
+      "repository": "https://github.com/okohlbacher/OpenMS4-openswath",
+      "source_revision": "c7901a79cc27463968ec335b6d04894b05b98339"
+    },
+    "flash": {
+      "path": "packages/flash",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flash",
+      "source_revision": "a6ee68f8589e3dd7eb8cb10b0ea7f3b790e72a4c"
+    },
+    "desktop": {
+      "path": "packages/desktop",
+      "repository": "https://github.com/okohlbacher/OpenMS4-desktop",
+      "source_revision": "b39230036c53f74b537c3683520f3ba2ef1ba963"
+    },
+    "pyopenms": {
+      "path": "packages/pyopenms",
+      "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms",
+      "source_revision": "14d950a460636b9a8fa255b7ac657926fec403de"
+    },
+    "flashapp": {
+      "path": "packages/flashapp",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
+      "source_revision": "3e7f53137eab8ee8c8e15a018731f624d0ff1138"
+    }
+  },
+  "environment_note": "Homebrew dependencies are external; existing Abseil loader workaround retained for this developer SDK profile."
+}

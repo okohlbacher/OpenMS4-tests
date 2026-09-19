@@ -1,0 +1,111 @@
+Test project /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions
+      Start  702: TOPP_FileInfo_1
+      Start  704: TOPP_FileInfo_2
+      Start  706: TOPP_FileInfo_3
+      Start  708: TOPP_FileInfo_4
+ 1/53 Test  #702: TOPP_FileInfo_1 ..................   Passed    3.48 sec
+      Start  710: TOPP_FileInfo_5
+ 2/53 Test  #708: TOPP_FileInfo_4 ..................   Passed    3.47 sec
+      Start  712: TOPP_FileInfo_6
+ 3/53 Test  #706: TOPP_FileInfo_3 ..................   Passed    3.49 sec
+      Start  714: TOPP_FileInfo_7
+ 4/53 Test  #704: TOPP_FileInfo_2 ..................   Passed    3.51 sec
+      Start  716: TOPP_FileInfo_9
+ 5/53 Test  #710: TOPP_FileInfo_5 ..................   Passed    0.28 sec
+      Start  718: TOPP_FileInfo_10
+ 6/53 Test  #714: TOPP_FileInfo_7 ..................   Passed    0.28 sec
+      Start  723: TOPP_FileInfo_14
+ 7/53 Test  #718: TOPP_FileInfo_10 .................   Passed    0.32 sec
+      Start  725: TOPP_FileInfo_15
+ 8/53 Test  #723: TOPP_FileInfo_14 .................   Passed    0.35 sec
+      Start  727: TOPP_FileInfo_16
+ 9/53 Test  #725: TOPP_FileInfo_15 .................   Passed    0.31 sec
+      Start  729: TOPP_FileInfo_17
+10/53 Test  #727: TOPP_FileInfo_16 .................   Passed    0.29 sec
+      Start  731: TOPP_FileInfo_18
+11/53 Test  #712: TOPP_FileInfo_6 ..................   Passed    1.05 sec
+      Start  733: TOPP_FileInfo_19
+12/53 Test  #716: TOPP_FileInfo_9 ..................   Passed    1.05 sec
+      Start  735: TOPP_FileInfo_20
+13/53 Test  #729: TOPP_FileInfo_17 .................   Passed    0.24 sec
+      Start 1314: TOPP_PeakPickerHiRes_1
+14/53 Test  #731: TOPP_FileInfo_18 .................   Passed    0.22 sec
+      Start 1316: TOPP_PeakPickerHiRes_2
+15/53 Test  #735: TOPP_FileInfo_20 .................   Passed    0.20 sec
+      Start 1318: TOPP_PeakPickerHiRes_3
+16/53 Test  #733: TOPP_FileInfo_19 .................   Passed    0.79 sec
+      Start 1320: TOPP_PeakPickerHiRes_4
+17/53 Test #1320: TOPP_PeakPickerHiRes_4 ...........   Passed    1.26 sec
+      Start 1322: TOPP_PeakPickerHiRes_5
+18/53 Test #1316: TOPP_PeakPickerHiRes_2 ...........   Passed    1.96 sec
+      Start 1324: TOPP_PeakPickerHiRes_6
+19/53 Test #1318: TOPP_PeakPickerHiRes_3 ...........   Passed    1.91 sec
+      Start  390: TOPP_INI_INVALIDVALUE
+20/53 Test #1314: TOPP_PeakPickerHiRes_1 ...........   Passed    2.07 sec
+      Start  391: TOPP_CLI_INVALIDVALUE
+21/53 Test  #390: TOPP_INI_INVALIDVALUE ............   Passed    0.29 sec
+      Start  392: TOPP_INI_INVALIDVALUE_SECTION
+22/53 Test  #391: TOPP_CLI_INVALIDVALUE ............   Passed    0.29 sec
+      Start  393: TOPP_CLI_INVALIDVALUE_SECTION
+23/53 Test  #392: TOPP_INI_INVALIDVALUE_SECTION ....   Passed    0.33 sec
+      Start  394: TOPP_INI_INVALIDNAME
+24/53 Test  #393: TOPP_CLI_INVALIDVALUE_SECTION ....   Passed    0.31 sec
+      Start  395: TOPP_CLI_INVALIDNAME
+25/53 Test #1322: TOPP_PeakPickerHiRes_5 ...........   Passed    0.98 sec
+      Start  703: TOPP_FileInfo_1_out1
+26/53 Test  #394: TOPP_INI_INVALIDNAME .............   Passed    0.29 sec
+      Start  705: TOPP_FileInfo_2_out1
+27/53 Test  #395: TOPP_CLI_INVALIDNAME .............   Passed    0.35 sec
+      Start  707: TOPP_FileInfo_3_out1
+28/53 Test #1324: TOPP_PeakPickerHiRes_6 ...........   Passed    1.04 sec
+      Start  709: TOPP_FileInfo_4_out1
+29/53 Test  #703: TOPP_FileInfo_1_out1 .............   Passed    0.29 sec
+      Start  711: TOPP_FileInfo_5_out1
+30/53 Test  #705: TOPP_FileInfo_2_out1 .............   Passed    0.32 sec
+      Start  713: TOPP_FileInfo_6_out1
+31/53 Test  #709: TOPP_FileInfo_4_out1 .............   Passed    0.27 sec
+      Start  715: TOPP_FileInfo_7_out1
+32/53 Test  #707: TOPP_FileInfo_3_out1 .............   Passed    0.30 sec
+      Start  717: TOPP_FileInfo_9_out1
+33/53 Test  #711: TOPP_FileInfo_5_out1 .............   Passed    0.29 sec
+      Start  719: TOPP_FileInfo_10_out1
+34/53 Test  #713: TOPP_FileInfo_6_out1 .............   Passed    0.28 sec
+      Start  720: TOPP_FileInfo_11
+35/53 Test  #715: TOPP_FileInfo_7_out1 .............   Passed    0.28 sec
+      Start  721: TOPP_FileInfo_12
+36/53 Test  #717: TOPP_FileInfo_9_out1 .............   Passed    0.30 sec
+      Start  722: TOPP_FileInfo_13
+37/53 Test  #719: TOPP_FileInfo_10_out1 ............   Passed    0.39 sec
+      Start  724: TOPP_FileInfo_14_out1
+38/53 Test  #720: TOPP_FileInfo_11 .................   Passed    0.36 sec
+      Start  726: TOPP_FileInfo_15_out1
+39/53 Test  #722: TOPP_FileInfo_13 .................   Passed    0.44 sec
+      Start  728: TOPP_FileInfo_16_out1
+40/53 Test  #724: TOPP_FileInfo_14_out1 ............   Passed    0.28 sec
+      Start  730: TOPP_FileInfo_17_out1
+41/53 Test  #726: TOPP_FileInfo_15_out1 ............   Passed    0.29 sec
+      Start  732: TOPP_FileInfo_18_out1
+42/53 Test  #728: TOPP_FileInfo_16_out1 ............   Passed    0.25 sec
+      Start  734: TOPP_FileInfo_19_out1
+43/53 Test  #730: TOPP_FileInfo_17_out1 ............   Passed    0.20 sec
+      Start  736: TOPP_FileInfo_20_out1
+44/53 Test  #732: TOPP_FileInfo_18_out1 ............   Passed    0.28 sec
+      Start 1315: TOPP_PeakPickerHiRes_1_out1
+45/53 Test  #734: TOPP_FileInfo_19_out1 ............   Passed    0.28 sec
+      Start 1317: TOPP_PeakPickerHiRes_2_out1
+46/53 Test  #721: TOPP_FileInfo_12 .................   Passed    1.05 sec
+      Start 1319: TOPP_PeakPickerHiRes_3_out1
+47/53 Test  #736: TOPP_FileInfo_20_out1 ............   Passed    0.40 sec
+      Start 1321: TOPP_PeakPickerHiRes_4_out1
+48/53 Test #1315: TOPP_PeakPickerHiRes_1_out1 ......   Passed    0.37 sec
+      Start 1323: TOPP_PeakPickerHiRes_5_out1
+49/53 Test #1319: TOPP_PeakPickerHiRes_3_out1 ......   Passed    0.39 sec
+      Start 1325: TOPP_PeakPickerHiRes_6_out1
+50/53 Test #1321: TOPP_PeakPickerHiRes_4_out1 ......   Passed    0.27 sec
+51/53 Test #1317: TOPP_PeakPickerHiRes_2_out1 ......   Passed    0.46 sec
+52/53 Test #1323: TOPP_PeakPickerHiRes_5_out1 ......   Passed    0.24 sec
+53/53 Test #1325: TOPP_PeakPickerHiRes_6_out1 ......   Passed    0.20 sec
+
+100% tests passed out of 53
+
+Total Test time (real) =   9.95 sec

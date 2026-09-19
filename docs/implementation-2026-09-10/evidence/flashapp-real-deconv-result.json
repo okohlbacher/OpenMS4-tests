@@ -1,0 +1,18 @@
+{
+  "app_source_revision": "3e7f53137eab8ee8c8e15a018731f624d0ff1138",
+  "python_source_revision": "14d950a460636b9a8fa255b7ac657926fec403de",
+  "core_source_revision": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85",
+  "scope": "real local non-UI DeconvWorkflow.execution, INI creation/pyOpenMS parsing, persisted parameters, cached parsing, FLASHDeconv and FuzzyDiff run_topp, intended missing-input failure",
+  "deployment": "relocated self-contained product runtime verified tools; no inherited DYLD or initial data override; app execution itself does not use the filesystem-denial sandbox",
+  "workspace": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flashapp-real-deconv-vhwi1ch_",
+  "dataset": "FLASHDeconv_sample_input_20260910-120405",
+  "scan_rows": 4,
+  "mass_table_rows": 4,
+  "feature_reference": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/flash/tests/data/FLASHDeconv_sample_pre_refactor.tsv",
+  "feature_columns_compared": 18,
+  "duration_seconds": 21.616,
+  "returncode": 0,
+  "workflow_execution_success": true,
+  "workflow_limitation": null,
+  "pid_records_remaining": 0
+}

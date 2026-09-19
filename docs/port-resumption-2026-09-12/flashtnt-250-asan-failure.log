@@ -1,0 +1,80 @@
+Initializing ...
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] --
+  Progress of 'loading chromatogram list':
+
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] --
+
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 17.54 MiB/s] --
+Finding sequence tags from deconvolved spectra ...
+Processing : /scratch/kohlbach/openms4-resume-final-56406032068d/source/packages/flashtnt/tests/data/aqpz/out_deconv.mzML
+Progress of 'Finding sequence tags ...':
+
+-- done [took 0.15 s (CPU), 0.15 s (Wall)] --
+Progress of 'Searching tags against database ...':
+
+-- done [took 0.07 s (CPU), 0.06 s (Wall)] --
+Progress of 'Running candidate protein filtration and extension algorithm ...':
+
+  100.00 %               =================================================================
+==926081==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x5220000f90f0 at pc 0x5affd1a92a4c bp 0x7ffcef0e08b0 sp 0x7ffcef0e08a8
+READ of size 8 at 0x5220000f90f0 thread T0
+    #0 0x5affd1a92a4b in OpenMS::FLASHExtenderAlgorithm::findSubPathsBetweenTagEndPoints(std::map<unsigned long, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > > > > >&, OpenMS::FLASHExtenderAlgorithm::HitInformation&, unsigned long, int, int, int, double, double, std::map<unsigned long, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > > > > >&, int) (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0xc57a4b)
+    #1 0x5affd1a9b8d7 in OpenMS::FLASHExtenderAlgorithm::findPathsAlongTagEndPoints(std::set<unsigned long, std::less<unsigned long>, std::allocator<unsigned long> >&, OpenMS::FLASHExtenderAlgorithm::HitInformation&, std::map<unsigned long, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > > > > >&, unsigned long, double, double, std::map<unsigned long, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > > > > >&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, bool) (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0xc608d7)
+    #2 0x5affd1a99778 in OpenMS::FLASHExtenderAlgorithm::findPathsAlongTagEndPoints(std::set<unsigned long, std::less<unsigned long>, std::allocator<unsigned long> >&, OpenMS::FLASHExtenderAlgorithm::HitInformation&, std::map<unsigned long, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > > > > >&, unsigned long, double, double, std::map<unsigned long, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > > > > >&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, bool) (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0xc5e778)
+    #3 0x5affd1a9c01e in OpenMS::FLASHExtenderAlgorithm::findPathsAlongTagEndPoints(std::set<unsigned long, std::less<unsigned long>, std::allocator<unsigned long> >&, OpenMS::FLASHExtenderAlgorithm::HitInformation&, std::map<unsigned long, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > > > > >&, unsigned long, double, double, std::map<unsigned long, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > > > > >&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, bool) (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0xc6101e)
+    #4 0x5affd1a99778 in OpenMS::FLASHExtenderAlgorithm::findPathsAlongTagEndPoints(std::set<unsigned long, std::less<unsigned long>, std::allocator<unsigned long> >&, OpenMS::FLASHExtenderAlgorithm::HitInformation&, std::map<unsigned long, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > > > > >&, unsigned long, double, double, std::map<unsigned long, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > > > > >&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, bool) (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0xc5e778)
+    #5 0x5affd1a9c01e in OpenMS::FLASHExtenderAlgorithm::findPathsAlongTagEndPoints(std::set<unsigned long, std::less<unsigned long>, std::allocator<unsigned long> >&, OpenMS::FLASHExtenderAlgorithm::HitInformation&, std::map<unsigned long, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > > > > >&, unsigned long, double, double, std::map<unsigned long, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > > > > >&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, bool) (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0xc6101e)
+    #6 0x5affd1aa975e in OpenMS::FLASHExtenderAlgorithm::constructDAG_(std::set<unsigned long, std::less<unsigned long>, std::allocator<unsigned long> >&, OpenMS::FLASHExtenderAlgorithm::HitInformation&, std::vector<std::vector<int, std::allocator<int> >, std::allocator<std::vector<int, std::allocator<int> > > > const&, int, bool) (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0xc6e75e)
+    #7 0x5affd1aaf890 in OpenMS::FLASHExtenderAlgorithm::run_(OpenMS::ProteinHit const&, OpenMS::FLASHExtenderAlgorithm::HitInformation&, std::vector<OpenMS::FLASHTnTHelpers::Tag, std::allocator<OpenMS::FLASHTnTHelpers::Tag> > const&, std::map<int, std::vector<unsigned long, std::allocator<unsigned long> >, std::less<int>, std::allocator<std::pair<int const, std::vector<unsigned long, std::allocator<unsigned long> > > > >&, int) (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0xc74890)
+    #8 0x5affd1acac70 in OpenMS::FLASHExtenderAlgorithm::run(std::vector<OpenMS::ProteinHit, std::allocator<OpenMS::ProteinHit> >&, OpenMS::DeconvolvedSpectrum const&, std::vector<int, std::allocator<int> >, std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > > const&, std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > > const&, std::vector<OpenMS::FLASHTnTHelpers::Tag, std::allocator<OpenMS::FLASHTnTHelpers::Tag> > const&, double, bool) [clone ._omp_fn.0] (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0xc8fc70)
+    #9 0x7ad54e11df35 in GOMP_parallel ../../../libgomp/parallel.c:178
+    #10 0x5affd1a84b3f in OpenMS::FLASHExtenderAlgorithm::run(std::vector<OpenMS::ProteinHit, std::allocator<OpenMS::ProteinHit> >&, OpenMS::DeconvolvedSpectrum const&, std::vector<int, std::allocator<int> >, std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > > const&, std::vector<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> >, std::allocator<std::unordered_set<int, std::hash<int>, std::equal_to<int>, std::allocator<int> > > > const&, std::vector<OpenMS::FLASHTnTHelpers::Tag, std::allocator<OpenMS::FLASHTnTHelpers::Tag> > const&, double, bool) (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0xc49b3f)
+    #11 0x5affd17ac11e in OpenMS::FLASHTnTAlgorithm::run(OpenMS::MSExperiment const&, std::vector<OpenMS::FASTAFile::FASTAEntry, std::allocator<OpenMS::FASTAFile::FASTAEntry> > const&) (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0x97111e)
+    #12 0x5affd1744113 in TOPPFLASHTnT::main_(int, char const**) (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0x909113)
+    #13 0x7ad54e9056dc in OpenMS::TOPPBase::main(int, char const**) (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/cli-provider/lib/libOpenMS_CLI.so.1+0x306dc)
+    #14 0x5affd16dff01 in main (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0x8a4f01)
+    #15 0x7ad54962a1c9 in __libc_start_call_main ../sysdeps/nptl/libc_start_call_main.h:58
+    #16 0x7ad54962a28a in __libc_start_main_impl ../csu/libc-start.c:360
+    #17 0x5affd16f1124 in _start (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0x8b6124)
+
+0x5220000f90f0 is located 16 bytes before 4896-byte region [0x5220000f9100,0x5220000fa420)
+allocated by thread T0 here:
+    #0 0x7ad54e2f7738 in operator new(unsigned long) ../../../../libsanitizer/asan/asan_new_delete.cpp:95
+    #1 0x7ad54c80494b in OpenMS::MSSpectrum::operator=(OpenMS::MSSpectrum const&) (/scratch/kohlbach/openms4-resume-final-56406032068d/work/sdk/lib/libOpenMS.so+0xa0494b)
+
+SUMMARY: AddressSanitizer: heap-buffer-overflow (/scratch/kohlbach/openms4-resume-final-56406032068d/flashtnt-sanitizers/bin/FLASHTnT+0xc57a4b) in OpenMS::FLASHExtenderAlgorithm::findSubPathsBetweenTagEndPoints(std::map<unsigned long, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::set<std::pair<double, double>, std::less<std::pair<double, double> >, std::allocator<std::pair<double, double> > > > > >&, OpenMS::FLASHExtenderAlgorithm::HitInformation&, unsigned long, int, int, int, double, double, std::map<unsigned long, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > >, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, std::map<unsigned long, int, std::less<unsigned long>, std::allocator<std::pair<unsigned long const, int> > > > > >&, int)
+Shadow bytes around the buggy address:
+  0x5220000f8e00: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x5220000f8e80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x5220000f8f00: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x5220000f8f80: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+  0x5220000f9000: fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa fa
+=>0x5220000f9080: fa fa fa fa fa fa fa fa fa fa fa fa fa fa[fa]fa
+  0x5220000f9100: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x5220000f9180: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x5220000f9200: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x5220000f9280: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x5220000f9300: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==926081==ABORTING

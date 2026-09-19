@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "repository": "https://github.com/OpenMS/OpenMS",
+    "branch": "develop",
+    "commit": "ca32296038839459d8c9b075b759e285913d6294"
+  },
+  "packages": {
+    "core": {
+      "path": "packages/core",
+      "repository": "https://github.com/okohlbacher/OpenMS4-core",
+      "source_revision": "eb58e981d7e0864634b59230874a56a1512369f7"
+    },
+    "cli": {
+      "path": "packages/cli",
+      "repository": "https://github.com/okohlbacher/OpenMS4-cli",
+      "source_revision": "35d96dbea2c4fdbe40d4fccc7c5d88c0af31f448"
+    },
+    "test-data": {
+      "path": "packages/test-data",
+      "repository": "https://github.com/okohlbacher/OpenMS4-test-data",
+      "source_revision": "37327c7b53e1d44baefb665deb385ef93286c77c"
+    },
+    "topp": {
+      "path": "packages/topp",
+      "repository": "https://github.com/okohlbacher/OpenMS4-topp",
+      "source_revision": "c1d2cd45a62184f5d0cc3b4413399483021af157"
+    },
+    "openswath": {
+      "path": "packages/openswath",
+      "repository": "https://github.com/okohlbacher/OpenMS4-openswath",
+      "source_revision": "4766d8525e8faa9496431cf49540f0cd6b1ab76c"
+    },
+    "flash": {
+      "path": "packages/flash",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flash",
+      "source_revision": "5af478a978f453e697070746c2f854d27b06bcb2"
+    },
+    "desktop": {
+      "path": "packages/desktop",
+      "repository": "https://github.com/okohlbacher/OpenMS4-desktop",
+      "source_revision": "91f1d749ab0281a435afac2eb4d6545f79fba7e9"
+    },
+    "pyopenms": {
+      "path": "packages/pyopenms",
+      "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms",
+      "source_revision": "8fcb6af788a614bf914188e8f081e46c076c014c"
+    },
+    "flashapp": {
+      "path": "packages/flashapp",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
+      "source_revision": "0c91d3b07cfa7787386da95319735302e6da9b27",
+      "frozen_dependencies": true,
+      "qualification_note": "Uses the qualified pyOpenMS ci.2 wheel while the ci.3 Windows build and wheel release complete; Core/CLI/TOPP/FLASH/FLASHTnT pins match the native graph."
+    },
+    "nuxl": {
+      "path": "packages/nuxl",
+      "repository": "https://github.com/okohlbacher/OpenMS4-nuxl",
+      "source_revision": "77c129b727462b7c6156585e75a322eb08393520"
+    },
+    "prose": {
+      "path": "packages/prose",
+      "repository": "https://github.com/okohlbacher/OpenMS4-prose",
+      "source_revision": "11bc89966a2a13e1f524f83736ca544e2fe98e2f"
+    },
+    "nase": {
+      "path": "packages/nase",
+      "repository": "https://github.com/okohlbacher/OpenMS4-nase",
+      "source_revision": "f5be59cd9320d9e5d3165cba37ed52b43cd8d1b8"
+    },
+    "comet": {
+      "path": "packages/comet",
+      "repository": "https://github.com/okohlbacher/OpenMS4-comet",
+      "source_revision": "2eec96ecf9445e0612698c8548065f93afa17076"
+    },
+    "mascot": {
+      "path": "packages/mascot",
+      "repository": "https://github.com/okohlbacher/OpenMS4-mascot",
+      "source_revision": "eea9e95b73e8e690d7d919f5ded5cc3e71a3c7e3"
+    },
+    "database-suitability": {
+      "path": "packages/database-suitability",
+      "repository": "https://github.com/okohlbacher/OpenMS4-database-suitability",
+      "source_revision": "0cdbd1a0571bf2bb5b1c53927b6305776058d683"
+    },
+    "proteomics-lfq": {
+      "path": "packages/proteomics-lfq",
+      "repository": "https://github.com/okohlbacher/OpenMS4-proteomics-lfq",
+      "source_revision": "084b19739bd0c2547d3042a317375f59ee8d0d43"
+    },
+    "flashtnt": {
+      "path": "packages/flashtnt",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flashtnt",
+      "source_revision": "f493178b294698320ff2f39338e818b83a665e4d"
+    },
+    "parquet-diff": {
+      "path": "packages/parquet-diff",
+      "repository": "https://github.com/okohlbacher/OpenMS4-parquet-diff",
+      "source_revision": "70bfad28741220b4609d2f430ae46affbca4475c"
+    }
+  }
+}

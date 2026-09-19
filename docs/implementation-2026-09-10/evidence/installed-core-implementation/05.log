@@ -1,0 +1,13 @@
+[1/13] Building CXX object CMakeFiles/sdk_identity.dir/identity.cpp.o
+[2/13] Building CXX object CMakeFiles/sdk_api.dir/api.cpp.o
+[3/13] Building CXX object CMakeFiles/sdk_eigen.dir/eigen.cpp.o
+[4/13] Building CXX object CMakeFiles/sdk_data.dir/data.cpp.o
+[5/13] Building CXX object CMakeFiles/sdk_arrow.dir/arrow.cpp.o
+[6/13] Building CXX object CMakeFiles/sdk_test_support.dir/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-implementation/relocated-sdk/lib/cmake/OpenMS/TestSupport/OpenMSTestSupport.cpp.o
+[7/13] Linking CXX executable sdk_identity
+[8/13] Linking CXX executable sdk_api
+[9/13] Linking CXX executable sdk_eigen
+[10/13] Linking CXX executable sdk_arrow
+[11/13] Linking CXX executable sdk_data
+[12/13] Building CXX object CMakeFiles/sdk_test_support.dir/test_support.cpp.o
+[13/13] Linking CXX executable sdk_test_support

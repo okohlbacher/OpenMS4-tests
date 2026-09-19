@@ -1,0 +1,575 @@
+Test project /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions
+        Start  410: TOPP_IDMerger_6
+        Start  413: TOPP_IDMerger_idparquet
+        Start  586: TOPP_FileConverter_34
+        Start  589: TOPP_FileConverter_35
+  1/285 Test  #410: TOPP_IDMerger_6 ........................   Passed    1.12 sec
+        Start  594: TOPP_FileConverter_nonascii_prepare
+  2/285 Test  #594: TOPP_FileConverter_nonascii_prepare ....   Passed    0.01 sec
+        Start  400: TOPP_IDMerger_1
+  3/285 Test  #413: TOPP_IDMerger_idparquet ................   Passed    1.13 sec
+        Start  402: TOPP_IDMerger_2
+  4/285 Test  #586: TOPP_FileConverter_34 ..................   Passed    1.56 sec
+        Start  404: TOPP_IDMerger_3
+  5/285 Test  #589: TOPP_FileConverter_35 ..................   Passed    1.61 sec
+        Start  406: TOPP_IDMerger_4
+  6/285 Test  #400: TOPP_IDMerger_1 ........................   Passed    0.81 sec
+  7/285 Test  #402: TOPP_IDMerger_2 ........................   Passed    0.81 sec
+        Start  408: TOPP_IDMerger_5
+        Start  411: TOPP_IDMerger_6_out1
+  8/285 Test  #404: TOPP_IDMerger_3 ........................   Passed    0.80 sec
+        Start  414: TOPP_IDMerger_idparquet_convert
+  9/285 Test  #406: TOPP_IDMerger_4 ........................   Passed    0.77 sec
+        Start  435: TOPP_ConsensusMapNormalizer_1
+ 10/285 Test  #408: TOPP_IDMerger_5 ........................   Passed    0.68 sec
+        Start  437: TOPP_MapNormalizer_1
+ 11/285 Test  #411: TOPP_IDMerger_6_out1 ...................   Passed    1.23 sec
+        Start  518: TOPP_FileConverter_1
+ 12/285 Test  #414: TOPP_IDMerger_idparquet_convert ........   Passed    0.91 sec
+        Start  520: TOPP_FileConverter_2
+ 13/285 Test  #435: TOPP_ConsensusMapNormalizer_1 ..........   Passed    1.13 sec
+        Start  522: TOPP_FileConverter_3
+ 14/285 Test  #437: TOPP_MapNormalizer_1 ...................   Passed    1.41 sec
+        Start  524: TOPP_FileConverter_4
+ 15/285 Test  #518: TOPP_FileConverter_1 ...................   Passed    0.95 sec
+        Start  526: TOPP_FileConverter_5
+ 16/285 Test  #520: TOPP_FileConverter_2 ...................   Passed    0.94 sec
+        Start  528: TOPP_FileConverter_6
+ 17/285 Test  #522: TOPP_FileConverter_3 ...................   Passed    1.04 sec
+        Start  530: TOPP_FileConverter_7
+ 18/285 Test  #524: TOPP_FileConverter_4 ...................   Passed    1.13 sec
+        Start  532: TOPP_FileConverter_8
+ 19/285 Test  #526: TOPP_FileConverter_5 ...................   Passed    1.04 sec
+        Start  534: TOPP_FileConverter_9
+ 20/285 Test  #528: TOPP_FileConverter_6 ...................   Passed    1.04 sec
+        Start  536: TOPP_FileConverter_10
+ 21/285 Test  #530: TOPP_FileConverter_7 ...................   Passed    0.81 sec
+        Start  538: TOPP_FileConverter_11
+ 22/285 Test  #534: TOPP_FileConverter_9 ...................   Passed    0.69 sec
+        Start  540: TOPP_FileConverter_12
+ 23/285 Test  #536: TOPP_FileConverter_10 ..................   Passed    0.62 sec
+        Start  542: TOPP_FileConverter_13
+ 24/285 Test  #532: TOPP_FileConverter_8 ...................   Passed    0.81 sec
+        Start  544: TOPP_FileConverter_14
+ 25/285 Test  #538: TOPP_FileConverter_11 ..................   Passed    0.65 sec
+        Start  546: TOPP_FileConverter_15
+ 26/285 Test  #542: TOPP_FileConverter_13 ..................   Passed    0.69 sec
+        Start  548: TOPP_FileConverter_16
+ 27/285 Test  #540: TOPP_FileConverter_12 ..................   Passed    0.73 sec
+        Start  550: TOPP_FileConverter_17
+ 28/285 Test  #544: TOPP_FileConverter_14 ..................   Passed    0.70 sec
+        Start  552: TOPP_FileConverter_18
+ 29/285 Test  #546: TOPP_FileConverter_15 ..................   Passed    0.69 sec
+        Start  554: TOPP_FileConverter_19
+ 30/285 Test  #548: TOPP_FileConverter_16 ..................   Passed    0.83 sec
+        Start  556: TOPP_FileConverter_20
+ 31/285 Test  #550: TOPP_FileConverter_17 ..................   Passed    0.84 sec
+        Start  558: TOPP_FileConverter_21
+ 32/285 Test  #552: TOPP_FileConverter_18 ..................   Passed    0.83 sec
+        Start  561: TOPP_FileConverter_23
+ 33/285 Test  #554: TOPP_FileConverter_19 ..................   Passed    1.09 sec
+        Start  563: TOPP_FileConverter_24
+ 34/285 Test  #556: TOPP_FileConverter_20 ..................   Passed    0.93 sec
+        Start  565: TOPP_FileConverter_25
+ 35/285 Test  #558: TOPP_FileConverter_21 ..................   Passed    1.36 sec
+        Start  567: TOPP_FileConverter_26
+ 36/285 Test  #561: TOPP_FileConverter_23 ..................   Passed    1.38 sec
+        Start  569: TOPP_FileConverter_26-2
+ 37/285 Test  #563: TOPP_FileConverter_24 ..................   Passed    1.40 sec
+        Start  571: TOPP_FileConverter_27
+ 38/285 Test  #569: TOPP_FileConverter_26-2 ................   Passed    0.67 sec
+        Start  573: TOPP_FileConverter_28
+ 39/285 Test  #565: TOPP_FileConverter_25 ..................   Passed    1.61 sec
+        Start  575: TOPP_FileConverter_29
+ 40/285 Test  #567: TOPP_FileConverter_26 ..................   Passed    1.51 sec
+        Start  578: TOPP_FileConverter_30
+ 41/285 Test  #571: TOPP_FileConverter_27 ..................   Passed    2.00 sec
+        Start  580: TOPP_FileConverter_31
+ 42/285 Test  #573: TOPP_FileConverter_28 ..................   Passed    2.10 sec
+        Start  582: TOPP_FileConverter_32
+ 43/285 Test  #575: TOPP_FileConverter_29 ..................   Passed    2.01 sec
+        Start  584: TOPP_FileConverter_33
+ 44/285 Test  #580: TOPP_FileConverter_31 ..................   Passed    0.80 sec
+        Start  587: TOPP_FileConverter_34_back
+ 45/285 Test  #578: TOPP_FileConverter_30 ..................   Passed    2.46 sec
+        Start  590: TOPP_FileConverter_35_back
+ 46/285 Test  #582: TOPP_FileConverter_32 ..................   Passed    1.51 sec
+        Start  592: TOPP_FileConverter_36
+ 47/285 Test  #584: TOPP_FileConverter_33 ..................   Passed    1.38 sec
+        Start  595: TOPP_FileConverter_nonascii
+ 48/285 Test  #587: TOPP_FileConverter_34_back .............   Passed    1.45 sec
+        Start  737: TOPP_FileMerger_1
+ 49/285 Test  #590: TOPP_FileConverter_35_back .............   Passed    1.10 sec
+        Start  739: TOPP_FileMerger_2
+ 50/285 Test  #592: TOPP_FileConverter_36 ..................   Passed    0.93 sec
+        Start  741: TOPP_FileMerger_3
+ 51/285 Test  #595: TOPP_FileConverter_nonascii ............   Passed    1.25 sec
+        Start  743: TOPP_FileMerger_4
+ 52/285 Test  #739: TOPP_FileMerger_2 ......................   Passed    1.20 sec
+        Start  745: TOPP_FileMerger_5
+ 53/285 Test  #737: TOPP_FileMerger_1 ......................   Passed    1.66 sec
+        Start  747: TOPP_FileMerger_6
+ 54/285 Test  #741: TOPP_FileMerger_3 ......................   Passed    1.18 sec
+        Start  749: TOPP_FileMerger_7
+ 55/285 Test  #743: TOPP_FileMerger_4 ......................   Passed    1.05 sec
+        Start  751: TOPP_FileMerger_8
+ 56/285 Test  #749: TOPP_FileMerger_7 ......................   Passed    0.94 sec
+        Start  753: TOPP_FileMerger_9
+ 57/285 Test  #745: TOPP_FileMerger_5 ......................   Passed    1.21 sec
+        Start  755: TOPP_FileMerger_10
+ 58/285 Test  #747: TOPP_FileMerger_6 ......................   Passed    1.17 sec
+        Start  759: TOPP_FileMerger_11
+ 59/285 Test  #751: TOPP_FileMerger_8 ......................   Passed    1.07 sec
+        Start  893: TOPP_IDFilter_1
+ 60/285 Test  #759: TOPP_FileMerger_11 .....................   Passed    0.74 sec
+        Start  895: TOPP_IDFilter_3
+ 61/285 Test  #755: TOPP_FileMerger_10 .....................   Passed    0.99 sec
+        Start  897: TOPP_IDFilter_4
+ 62/285 Test  #753: TOPP_FileMerger_9 ......................   Passed    1.52 sec
+        Start  899: TOPP_IDFilter_5
+ 63/285 Test  #893: TOPP_IDFilter_1 ........................   Passed    1.60 sec
+        Start  901: TOPP_IDFilter_5a
+ 64/285 Test  #895: TOPP_IDFilter_3 ........................   Passed    1.26 sec
+        Start  903: TOPP_IDFilter_5b
+ 65/285 Test  #897: TOPP_IDFilter_4 ........................   Passed    1.29 sec
+        Start  905: TOPP_IDFilter_5c
+ 66/285 Test  #899: TOPP_IDFilter_5 ........................   Passed    1.46 sec
+        Start  907: TOPP_IDFilter_6
+ 67/285 Test  #901: TOPP_IDFilter_5a .......................   Passed    1.23 sec
+        Start  909: TOPP_IDFilter_7
+ 68/285 Test  #903: TOPP_IDFilter_5b .......................   Passed    1.35 sec
+        Start  911: TOPP_IDFilter_8
+ 69/285 Test  #905: TOPP_IDFilter_5c .......................   Passed    1.34 sec
+        Start  913: TOPP_IDFilter_9
+ 70/285 Test  #907: TOPP_IDFilter_6 ........................   Passed    1.15 sec
+        Start  915: TOPP_IDFilter_10
+ 71/285 Test  #909: TOPP_IDFilter_7 ........................   Passed    1.06 sec
+        Start  917: TOPP_IDFilter_11
+ 72/285 Test  #911: TOPP_IDFilter_8 ........................   Passed    1.08 sec
+        Start  919: TOPP_IDFilter_12
+ 73/285 Test  #913: TOPP_IDFilter_9 ........................   Passed    1.13 sec
+        Start  921: TOPP_IDFilter_13
+ 74/285 Test  #915: TOPP_IDFilter_10 .......................   Passed    1.12 sec
+        Start  923: TOPP_IDFilter_14
+ 75/285 Test  #917: TOPP_IDFilter_11 .......................   Passed    1.25 sec
+        Start  925: TOPP_IDFilter_15
+ 76/285 Test  #919: TOPP_IDFilter_12 .......................   Passed    1.14 sec
+        Start  927: TOPP_IDFilter_16
+ 77/285 Test  #921: TOPP_IDFilter_13 .......................   Passed    1.30 sec
+        Start  929: TOPP_IDFilter_17
+ 78/285 Test  #923: TOPP_IDFilter_14 .......................   Passed    1.18 sec
+        Start  931: TOPP_IDFilter_18
+ 79/285 Test  #925: TOPP_IDFilter_15 .......................   Passed    1.01 sec
+        Start  933: TOPP_IDFilter_19
+ 80/285 Test  #927: TOPP_IDFilter_16 .......................   Passed    1.09 sec
+        Start  935: TOPP_IDFilter_20
+ 81/285 Test  #929: TOPP_IDFilter_17 .......................   Passed    1.60 sec
+        Start  937: TOPP_IDFilter_21
+ 82/285 Test  #931: TOPP_IDFilter_18 .......................   Passed    1.31 sec
+        Start  939: TOPP_IDFilter_22
+ 83/285 Test  #933: TOPP_IDFilter_19 .......................   Passed    1.40 sec
+        Start  941: TOPP_IDFilter_23
+ 84/285 Test  #935: TOPP_IDFilter_20 .......................   Passed    1.30 sec
+        Start  943: TOPP_IDFilter_24
+ 85/285 Test  #937: TOPP_IDFilter_21 .......................   Passed    0.98 sec
+        Start  945: TOPP_MapAlignerPoseClustering_1
+ 86/285 Test  #939: TOPP_IDFilter_22 .......................   Passed    1.50 sec
+        Start  952: TOPP_MapAlignerPoseClustering_2
+ 87/285 Test  #943: TOPP_IDFilter_24 .......................   Passed    2.04 sec
+        Start  956: TOPP_MapAlignerPoseClustering_3
+ 88/285 Test  #941: TOPP_IDFilter_23 .......................   Passed    2.22 sec
+        Start  959: TOPP_MapAlignerPoseClustering_4
+ 89/285 Test  #959: TOPP_MapAlignerPoseClustering_4 ........   Passed    1.35 sec
+        Start  962: TOPP_MapAlignerPoseClustering_5
+ 90/285 Test  #945: TOPP_MapAlignerPoseClustering_1 ........   Passed    3.71 sec
+        Start  964: TOPP_MapAlignerPoseClustering_6
+ 91/285 Test  #956: TOPP_MapAlignerPoseClustering_3 ........   Passed    2.45 sec
+        Start  966: TOPP_MapAlignerIdentification_1
+ 92/285 Test  #952: TOPP_MapAlignerPoseClustering_2 ........   Passed    4.63 sec
+        Start  969: TOPP_MapAlignerIdentification_2
+ 93/285 Test  #962: TOPP_MapAlignerPoseClustering_5 ........   Passed    2.40 sec
+        Start  971: TOPP_MapAlignerIdentification_3
+ 94/285 Test  #966: TOPP_MapAlignerIdentification_1 ........   Passed    1.87 sec
+        Start  974: TOPP_MapAlignerIdentification_4
+ 95/285 Test  #964: TOPP_MapAlignerPoseClustering_6 ........   Passed    2.04 sec
+        Start  977: TOPP_MapAlignerIdentification_5
+ 96/285 Test  #971: TOPP_MapAlignerIdentification_3 ........   Passed    1.30 sec
+        Start  980: TOPP_MapAlignerIdentification_6
+ 97/285 Test  #969: TOPP_MapAlignerIdentification_2 ........   Passed    1.40 sec
+        Start  982: TOPP_MapAlignerIdentification_7
+ 98/285 Test  #974: TOPP_MapAlignerIdentification_4 ........   Passed    1.26 sec
+        Start  985: TOPP_MapAlignerIdentification_8
+ 99/285 Test  #980: TOPP_MapAlignerIdentification_6 ........   Passed    0.60 sec
+        Start  999: TOPP_MapRTTransformer_1
+100/285 Test  #977: TOPP_MapAlignerIdentification_5 ........   Passed    1.48 sec
+        Start 1001: TOPP_MapRTTransformer_2
+101/285 Test  #982: TOPP_MapAlignerIdentification_7 ........   Passed    1.17 sec
+        Start 1003: TOPP_MapRTTransformer_3
+102/285 Test  #985: TOPP_MapAlignerIdentification_8 ........   Passed    1.14 sec
+        Start 1005: TOPP_MapRTTransformer_4
+103/285 Test #1003: TOPP_MapRTTransformer_3 ................   Passed    0.41 sec
+        Start 1007: TOPP_MapRTTransformer_5
+104/285 Test  #999: TOPP_MapRTTransformer_1 ................   Passed    1.39 sec
+        Start 1009: TOPP_MapRTTransformer_6
+105/285 Test #1001: TOPP_MapRTTransformer_2 ................   Passed    2.08 sec
+        Start 1298: TOPP_NoiseFilterGaussian_1
+106/285 Test #1007: TOPP_MapRTTransformer_5 ................   Passed    1.48 sec
+        Start 1300: TOPP_NoiseFilterGaussian_2
+107/285 Test #1009: TOPP_MapRTTransformer_6 ................   Passed    1.41 sec
+        Start 1302: TOPP_NoiseFilterGaussian_3
+108/285 Test #1005: TOPP_MapRTTransformer_4 ................   Passed    1.92 sec
+        Start 1304: TOPP_NoiseFilterGaussian_4
+109/285 Test #1300: TOPP_NoiseFilterGaussian_2 .............   Passed    3.22 sec
+        Start 1306: TOPP_NoiseFilterSGolay_1
+110/285 Test #1298: TOPP_NoiseFilterGaussian_1 .............   Passed    3.61 sec
+        Start 1308: TOPP_NoiseFilterSGolay_2
+111/285 Test #1302: TOPP_NoiseFilterGaussian_3 .............   Passed    3.38 sec
+        Start 1310: TOPP_NoiseFilterSGolay_3
+112/285 Test #1304: TOPP_NoiseFilterGaussian_4 .............   Passed    3.76 sec
+        Start 1312: TOPP_NoiseFilterSGolay_4
+113/285 Test #1306: TOPP_NoiseFilterSGolay_1 ...............   Passed    2.80 sec
+        Start 1382: TOPP_TextExporter_1
+114/285 Test #1308: TOPP_NoiseFilterSGolay_2 ...............   Passed    2.78 sec
+        Start 1384: TOPP_TextExporter_2
+115/285 Test #1312: TOPP_NoiseFilterSGolay_4 ...............   Passed    2.01 sec
+        Start 1389: TOPP_TextExporter_3
+116/285 Test #1310: TOPP_NoiseFilterSGolay_3 ...............   Passed    2.48 sec
+        Start 1391: TOPP_TextExporter_4
+117/285 Test #1391: TOPP_TextExporter_4 ....................   Passed    0.81 sec
+        Start 1393: TOPP_TextExporter_5
+118/285 Test #1389: TOPP_TextExporter_3 ....................   Passed    0.91 sec
+        Start 1395: TOPP_TextExporter_6
+119/285 Test #1384: TOPP_TextExporter_2 ....................   Passed    1.05 sec
+        Start 1397: TOPP_TextExporter_7
+120/285 Test #1382: TOPP_TextExporter_1 ....................   Passed    1.10 sec
+        Start 1399: TOPP_TextExporter_8
+121/285 Test #1395: TOPP_TextExporter_6 ....................   Passed    0.36 sec
+        Start 1401: TOPP_TextExporter_9
+122/285 Test #1399: TOPP_TextExporter_8 ....................   Passed    0.47 sec
+        Start 1403: TOPP_TextExporter_10
+123/285 Test #1397: TOPP_TextExporter_7 ....................   Passed    0.58 sec
+        Start 1758: TOPP_DecoyDatabase_1
+124/285 Test #1401: TOPP_TextExporter_9 ....................   Passed    0.68 sec
+        Start 1760: TOPP_DecoyDatabase_2
+125/285 Test #1393: TOPP_TextExporter_5 ....................   Passed    1.84 sec
+        Start 1762: TOPP_DecoyDatabase_3
+126/285 Test #1760: TOPP_DecoyDatabase_2 ...................   Passed    0.81 sec
+        Start 1764: TOPP_DecoyDatabase_4
+127/285 Test #1758: TOPP_DecoyDatabase_1 ...................   Passed    1.25 sec
+        Start 1768: TOPP_DecoyDatabase_7
+128/285 Test #1762: TOPP_DecoyDatabase_3 ...................   Passed    0.79 sec
+129/285 Test #1764: TOPP_DecoyDatabase_4 ...................   Passed    0.74 sec
+        Start 1772: TOPP_DecoyDatabase_8
+        Start  401: TOPP_IDMerger_1_out1
+130/285 Test #1768: TOPP_DecoyDatabase_7 ...................   Passed    0.74 sec
+131/285 Test #1403: TOPP_TextExporter_10 ...................   Passed    2.06 sec
+        Start  403: TOPP_IDMerger_2_out1
+        Start  405: TOPP_IDMerger_3_out1
+132/285 Test #1772: TOPP_DecoyDatabase_8 ...................   Passed    0.80 sec
+        Start  407: TOPP_IDMerger_4_out1
+133/285 Test  #401: TOPP_IDMerger_1_out1 ...................   Passed    1.01 sec
+        Start  409: TOPP_IDMerger_5_out1
+134/285 Test  #405: TOPP_IDMerger_3_out1 ...................   Passed    1.01 sec
+        Start  412: TOPP_IDMerger_6_out2
+135/285 Test  #403: TOPP_IDMerger_2_out1 ...................   Passed    1.03 sec
+        Start  415: TOPP_IDMerger_idparquet_diff
+136/285 Test  #407: TOPP_IDMerger_4_out1 ...................   Passed    0.52 sec
+        Start  436: TOPP_ConsensusMapNormalizer_1_out1
+137/285 Test  #409: TOPP_IDMerger_5_out1 ...................   Passed    0.60 sec
+        Start  438: TOPP_MapNormalizer_1_out1
+138/285 Test  #412: TOPP_IDMerger_6_out2 ...................   Passed    0.60 sec
+        Start  519: TOPP_FileConverter_1_out1
+139/285 Test  #415: TOPP_IDMerger_idparquet_diff ...........   Passed    0.70 sec
+        Start  521: TOPP_FileConverter_2_out1
+140/285 Test  #438: TOPP_MapNormalizer_1_out1 ..............   Passed    1.39 sec
+        Start  523: TOPP_FileConverter_3_out1
+141/285 Test  #519: TOPP_FileConverter_1_out1 ..............   Passed    1.53 sec
+        Start  525: TOPP_FileConverter_4_out1
+142/285 Test  #436: TOPP_ConsensusMapNormalizer_1_out1 .....   Passed    2.00 sec
+        Start  527: TOPP_FileConverter_5_out1
+143/285 Test  #521: TOPP_FileConverter_2_out1 ..............   Passed    1.68 sec
+        Start  529: TOPP_FileConverter_6_out1
+144/285 Test  #523: TOPP_FileConverter_3_out1 ..............   Passed    0.63 sec
+        Start  531: TOPP_FileConverter_7_out1
+145/285 Test  #525: TOPP_FileConverter_4_out1 ..............   Passed    0.71 sec
+        Start  533: TOPP_FileConverter_8_out1
+146/285 Test  #527: TOPP_FileConverter_5_out1 ..............   Passed    0.55 sec
+        Start  535: TOPP_FileConverter_9_out1
+147/285 Test  #529: TOPP_FileConverter_6_out1 ..............   Passed    1.05 sec
+        Start  537: TOPP_FileConverter_10_out1
+148/285 Test  #531: TOPP_FileConverter_7_out1 ..............   Passed    0.93 sec
+        Start  539: TOPP_FileConverter_11_out1
+149/285 Test  #535: TOPP_FileConverter_9_out1 ..............   Passed    1.24 sec
+        Start  541: TOPP_FileConverter_12_out1
+150/285 Test  #537: TOPP_FileConverter_10_out1 .............   Passed    0.64 sec
+        Start  543: TOPP_FileConverter_13_out1
+151/285 Test  #533: TOPP_FileConverter_8_out1 ..............   Passed    1.27 sec
+        Start  545: TOPP_FileConverter_14_out1
+152/285 Test  #539: TOPP_FileConverter_11_out1 .............   Passed    0.69 sec
+        Start  547: TOPP_FileConverter_15_out1
+153/285 Test  #543: TOPP_FileConverter_13_out1 .............   Passed    0.36 sec
+        Start  549: TOPP_FileConverter_16_out1
+154/285 Test  #545: TOPP_FileConverter_14_out1 .............   Passed    0.44 sec
+        Start  551: TOPP_FileConverter_17_out1
+155/285 Test  #547: TOPP_FileConverter_15_out1 .............   Passed    0.50 sec
+        Start  553: TOPP_FileConverter_18_out1
+156/285 Test  #541: TOPP_FileConverter_12_out1 .............   Passed    0.65 sec
+        Start  555: TOPP_FileConverter_19_out
+157/285 Test  #549: TOPP_FileConverter_16_out1 .............   Passed    0.50 sec
+        Start  557: TOPP_FileConverter_20_out
+158/285 Test  #551: TOPP_FileConverter_17_out1 .............   Passed    0.48 sec
+        Start  559: TOPP_FileConverter_21_out
+159/285 Test  #553: TOPP_FileConverter_18_out1 .............   Passed    0.50 sec
+        Start  560: TOPP_FileConverter_22
+160/285 Test  #555: TOPP_FileConverter_19_out ..............   Passed    0.60 sec
+        Start  562: TOPP_FileConverter_23_out
+161/285 Test  #557: TOPP_FileConverter_20_out ..............   Passed    0.52 sec
+        Start  564: TOPP_FileConverter_24_out
+162/285 Test  #559: TOPP_FileConverter_21_out ..............   Passed    0.47 sec
+        Start  566: TOPP_FileConverter_25_out
+163/285 Test  #560: TOPP_FileConverter_22 ..................   Passed    0.31 sec
+        Start  568: TOPP_FileConverter_26_out
+164/285 Test  #562: TOPP_FileConverter_23_out ..............   Passed    0.30 sec
+        Start  570: TOPP_FileConverter_26-2_out
+165/285 Test  #564: TOPP_FileConverter_24_out ..............   Passed    0.31 sec
+        Start  572: TOPP_FileConverter_27_out
+166/285 Test  #566: TOPP_FileConverter_25_out ..............   Passed    0.37 sec
+167/285 Test  #568: TOPP_FileConverter_26_out ..............   Passed    0.32 sec
+        Start  574: TOPP_FileConverter_28_out
+        Start  576: TOPP_FileConverter_29_out
+168/285 Test  #570: TOPP_FileConverter_26-2_out ............   Passed    0.32 sec
+        Start  577: TOPP_FileConverter_29_back
+169/285 Test  #572: TOPP_FileConverter_27_out ..............   Passed    0.50 sec
+        Start  579: TOPP_FileConverter_30_out
+170/285 Test  #576: TOPP_FileConverter_29_out ..............   Passed    0.63 sec
+        Start  581: TOPP_FileConverter_31_out
+171/285 Test  #574: TOPP_FileConverter_28_out ..............   Passed    0.65 sec
+        Start  583: TOPP_FileConverter_32_out1
+172/285 Test  #579: TOPP_FileConverter_30_out ..............   Passed    0.53 sec
+        Start  585: TOPP_FileConverter_33_out1
+173/285 Test  #583: TOPP_FileConverter_32_out1 .............   Passed    0.53 sec
+        Start  588: TOPP_FileConverter_34_out1
+174/285 Test  #581: TOPP_FileConverter_31_out ..............   Passed    0.71 sec
+        Start  591: TOPP_FileConverter_35_out1
+175/285 Test  #585: TOPP_FileConverter_33_out1 .............   Passed    0.56 sec
+        Start  593: TOPP_FileConverter_36_out1
+176/285 Test  #591: TOPP_FileConverter_35_out1 .............   Passed    0.51 sec
+        Start  596: TOPP_FileConverter_nonascii_out1
+177/285 Test  #588: TOPP_FileConverter_34_out1 .............   Passed    0.68 sec
+        Start  738: TOPP_FileMerger_1_out1
+178/285 Test  #593: TOPP_FileConverter_36_out1 .............   Passed    0.50 sec
+        Start  740: TOPP_FileMerger_2_out1
+179/285 Test  #596: TOPP_FileConverter_nonascii_out1 .......   Passed    0.41 sec
+        Start  742: TOPP_FileMerger_3_out1
+180/285 Test  #738: TOPP_FileMerger_1_out1 .................   Passed    0.41 sec
+        Start  744: TOPP_FileMerger_4_out1
+181/285 Test  #577: TOPP_FileConverter_29_back .............   Passed    2.35 sec
+182/285 Test  #740: TOPP_FileMerger_2_out1 .................   Passed    0.42 sec
+        Start  746: TOPP_FileMerger_5_out1
+        Start  748: TOPP_FileMerger_6_out1
+183/285 Test  #742: TOPP_FileMerger_3_out1 .................   Passed    0.56 sec
+        Start  750: TOPP_FileMerger_7_out1
+184/285 Test  #746: TOPP_FileMerger_5_out1 .................   Passed    0.63 sec
+        Start  752: TOPP_FileMerger_8_out1
+185/285 Test  #744: TOPP_FileMerger_4_out1 .................   Passed    0.81 sec
+        Start  754: TOPP_FileMerger_9_out1
+186/285 Test  #748: TOPP_FileMerger_6_out1 .................   Passed    0.83 sec
+        Start  756: TOPP_FileMerger_10_out1
+187/285 Test  #750: TOPP_FileMerger_7_out1 .................   Passed    0.63 sec
+        Start  757: TOPP_FileMerger_10_out2
+188/285 Test  #752: TOPP_FileMerger_8_out1 .................   Passed    0.65 sec
+        Start  758: TOPP_FileMerger_10_out3
+189/285 Test  #754: TOPP_FileMerger_9_out1 .................   Passed    0.74 sec
+        Start  760: TOPP_FileMerger_11_out1
+190/285 Test  #756: TOPP_FileMerger_10_out1 ................   Passed    0.55 sec
+        Start  894: TOPP_IDFilter_1_out1
+191/285 Test  #757: TOPP_FileMerger_10_out2 ................   Passed    0.58 sec
+        Start  896: TOPP_IDFilter_3_out1
+192/285 Test  #760: TOPP_FileMerger_11_out1 ................   Passed    0.40 sec
+        Start  898: TOPP_IDFilter_4_out1
+193/285 Test  #758: TOPP_FileMerger_10_out3 ................   Passed    0.54 sec
+        Start  900: TOPP_IDFilter_5_out1
+194/285 Test  #894: TOPP_IDFilter_1_out1 ...................   Passed    0.53 sec
+        Start  902: TOPP_IDFilter_5a_out1
+195/285 Test  #896: TOPP_IDFilter_3_out1 ...................   Passed    0.48 sec
+        Start  904: TOPP_IDFilter_5b_out1
+196/285 Test  #898: TOPP_IDFilter_4_out1 ...................   Passed    0.45 sec
+        Start  906: TOPP_IDFilter_5c_out1
+197/285 Test  #900: TOPP_IDFilter_5_out1 ...................   Passed    0.44 sec
+        Start  908: TOPP_IDFilter_6_out1
+198/285 Test  #902: TOPP_IDFilter_5a_out1 ..................   Passed    0.48 sec
+        Start  910: TOPP_IDFilter_7_out1
+199/285 Test  #904: TOPP_IDFilter_5b_out1 ..................   Passed    0.69 sec
+        Start  912: TOPP_IDFilter_8_out1
+200/285 Test  #906: TOPP_IDFilter_5c_out1 ..................   Passed    0.82 sec
+        Start  914: TOPP_IDFilter_9_out1
+201/285 Test  #908: TOPP_IDFilter_6_out1 ...................   Passed    0.81 sec
+        Start  916: TOPP_IDFilter_10_out1
+202/285 Test  #910: TOPP_IDFilter_7_out1 ...................   Passed    0.77 sec
+        Start  918: TOPP_IDFilter_11_out1
+203/285 Test  #912: TOPP_IDFilter_8_out1 ...................   Passed    0.87 sec
+        Start  920: TOPP_IDFilter_12_out1
+204/285 Test  #914: TOPP_IDFilter_9_out1 ...................   Passed    0.73 sec
+        Start  922: TOPP_IDFilter_13_out1
+205/285 Test  #916: TOPP_IDFilter_10_out1 ..................   Passed    0.95 sec
+        Start  924: TOPP_IDFilter_14_out1
+206/285 Test  #918: TOPP_IDFilter_11_out1 ..................   Passed    0.96 sec
+        Start  926: TOPP_IDFilter_15_out1
+207/285 Test  #920: TOPP_IDFilter_12_out1 ..................   Passed    0.71 sec
+        Start  928: TOPP_IDFilter_16_out1
+208/285 Test  #924: TOPP_IDFilter_14_out1 ..................   Passed    0.43 sec
+        Start  930: TOPP_IDFilter_17_out1
+209/285 Test  #922: TOPP_IDFilter_13_out1 ..................   Passed    0.79 sec
+        Start  932: TOPP_IDFilter_18_out1
+210/285 Test  #926: TOPP_IDFilter_15_out1 ..................   Passed    0.94 sec
+        Start  934: TOPP_IDFilter_19_out1
+211/285 Test  #928: TOPP_IDFilter_16_out1 ..................   Passed    0.92 sec
+        Start  936: TOPP_IDFilter_20_out1
+212/285 Test  #936: TOPP_IDFilter_20_out1 ..................   Passed    0.65 sec
+        Start  938: TOPP_IDFilter_21_out1
+213/285 Test  #932: TOPP_IDFilter_18_out1 ..................   Passed    1.46 sec
+        Start  940: TOPP_IDFilter_22_out1
+214/285 Test  #938: TOPP_IDFilter_21_out1 ..................   Passed    0.50 sec
+        Start  942: TOPP_IDFilter_23_out1
+215/285 Test  #934: TOPP_IDFilter_19_out1 ..................   Passed    1.33 sec
+        Start  944: TOPP_IDFilter_24_out1
+216/285 Test  #940: TOPP_IDFilter_22_out1 ..................   Passed    0.55 sec
+        Start  946: TOPP_MapAlignerPoseClustering_1_out1
+217/285 Test  #944: TOPP_IDFilter_24_out1 ..................   Passed    0.37 sec
+        Start  947: TOPP_MapAlignerPoseClustering_1_out2
+218/285 Test  #930: TOPP_IDFilter_17_out1 ..................   Passed    2.36 sec
+        Start  948: TOPP_MapAlignerPoseClustering_1_out3
+219/285 Test  #942: TOPP_IDFilter_23_out1 ..................   Passed    0.40 sec
+        Start  949: TOPP_MapAlignerPoseClustering_1_out4
+220/285 Test  #946: TOPP_MapAlignerPoseClustering_1_out1 ...   Passed    0.71 sec
+        Start  950: TOPP_MapAlignerPoseClustering_1_out5
+221/285 Test  #948: TOPP_MapAlignerPoseClustering_1_out3 ...   Passed    0.65 sec
+        Start  951: TOPP_MapAlignerPoseClustering_1_out6
+222/285 Test  #949: TOPP_MapAlignerPoseClustering_1_out4 ...   Passed    0.90 sec
+        Start  953: TOPP_MapAlignerPoseClustering_2_out1
+223/285 Test  #947: TOPP_MapAlignerPoseClustering_1_out2 ...   Passed    0.95 sec
+        Start  954: TOPP_MapAlignerPoseClustering_2_out2
+224/285 Test  #950: TOPP_MapAlignerPoseClustering_1_out5 ...   Passed    0.70 sec
+        Start  955: TOPP_MapAlignerPoseClustering_2_out3
+225/285 Test  #953: TOPP_MapAlignerPoseClustering_2_out1 ...   Passed    0.32 sec
+        Start  957: TOPP_MapAlignerPoseClustering_3_out1
+226/285 Test  #951: TOPP_MapAlignerPoseClustering_1_out6 ...   Passed    0.65 sec
+        Start  958: TOPP_MapAlignerPoseClustering_3_out2
+227/285 Test  #954: TOPP_MapAlignerPoseClustering_2_out2 ...   Passed    0.58 sec
+        Start  960: TOPP_MapAlignerPoseClustering_4_out1
+228/285 Test  #955: TOPP_MapAlignerPoseClustering_2_out3 ...   Passed    0.47 sec
+        Start  961: TOPP_MapAlignerPoseClustering_4_out2
+229/285 Test  #957: TOPP_MapAlignerPoseClustering_3_out1 ...   Passed    0.53 sec
+        Start  963: TOPP_MapAlignerPoseClustering_5_out1
+230/285 Test  #958: TOPP_MapAlignerPoseClustering_3_out2 ...   Passed    0.67 sec
+        Start  965: TOPP_MapAlignerPoseClustering_6_out1
+231/285 Test  #960: TOPP_MapAlignerPoseClustering_4_out1 ...   Passed    0.67 sec
+        Start  967: TOPP_MapAlignerIdentification_1_out1
+232/285 Test  #963: TOPP_MapAlignerPoseClustering_5_out1 ...   Passed    0.46 sec
+        Start  968: TOPP_MapAlignerIdentification_1_out2
+233/285 Test  #961: TOPP_MapAlignerPoseClustering_4_out2 ...   Passed    0.65 sec
+        Start  970: TOPP_MapAlignerIdentification_2_out1
+234/285 Test  #965: TOPP_MapAlignerPoseClustering_6_out1 ...   Passed    0.57 sec
+        Start  972: TOPP_MapAlignerIdentification_3_out1
+235/285 Test  #967: TOPP_MapAlignerIdentification_1_out1 ...   Passed    0.52 sec
+        Start  973: TOPP_MapAlignerIdentification_3_out2
+236/285 Test  #968: TOPP_MapAlignerIdentification_1_out2 ...   Passed    0.56 sec
+        Start  975: TOPP_MapAlignerIdentification_4_out1
+237/285 Test  #970: TOPP_MapAlignerIdentification_2_out1 ...   Passed    0.64 sec
+        Start  976: TOPP_MapAlignerIdentification_4_out2
+238/285 Test  #973: TOPP_MapAlignerIdentification_3_out2 ...   Passed    0.37 sec
+        Start  978: TOPP_MapAlignerIdentification_5_out1
+239/285 Test  #972: TOPP_MapAlignerIdentification_3_out1 ...   Passed    0.59 sec
+        Start  979: TOPP_MapAlignerIdentification_5_out2
+240/285 Test  #975: TOPP_MapAlignerIdentification_4_out1 ...   Passed    0.44 sec
+        Start  981: TOPP_MapAlignerIdentification_6_out1
+241/285 Test  #978: TOPP_MapAlignerIdentification_5_out1 ...   Passed    0.46 sec
+        Start  983: TOPP_MapAlignerIdentification_7_out1
+242/285 Test  #976: TOPP_MapAlignerIdentification_4_out2 ...   Passed    0.63 sec
+        Start  984: TOPP_MapAlignerIdentification_7_out2
+243/285 Test  #979: TOPP_MapAlignerIdentification_5_out2 ...   Passed    0.47 sec
+        Start  986: TOPP_MapAlignerIdentification_8_out1
+244/285 Test  #981: TOPP_MapAlignerIdentification_6_out1 ...   Passed    0.42 sec
+        Start 1000: TOPP_MapRTTransformer_1_out1
+245/285 Test  #983: TOPP_MapAlignerIdentification_7_out1 ...   Passed    0.32 sec
+        Start 1002: TOPP_MapRTTransformer_2_out1
+246/285 Test  #984: TOPP_MapAlignerIdentification_7_out2 ...   Passed    0.34 sec
+        Start 1004: TOPP_MapRTTransformer_3_out1
+247/285 Test  #986: TOPP_MapAlignerIdentification_8_out1 ...   Passed    0.45 sec
+        Start 1006: TOPP_MapRTTransformer_4_out1
+248/285 Test #1000: TOPP_MapRTTransformer_1_out1 ...........   Passed    0.59 sec
+        Start 1008: TOPP_MapRTTransformer_5_out1
+249/285 Test #1002: TOPP_MapRTTransformer_2_out1 ...........   Passed    0.63 sec
+        Start 1010: TOPP_MapRTTransformer_6_out1
+250/285 Test #1004: TOPP_MapRTTransformer_3_out1 ...........   Passed    0.66 sec
+        Start 1299: TOPP_NoiseFilterGaussian_1_out1
+251/285 Test #1006: TOPP_MapRTTransformer_4_out1 ...........   Passed    0.54 sec
+        Start 1301: TOPP_NoiseFilterGaussian_2_out1
+252/285 Test #1008: TOPP_MapRTTransformer_5_out1 ...........   Passed    0.49 sec
+        Start 1303: TOPP_NoiseFilterGaussian_3_out1
+253/285 Test #1010: TOPP_MapRTTransformer_6_out1 ...........   Passed    0.37 sec
+        Start 1305: TOPP_NoiseFilterGaussian_4_out1
+254/285 Test #1301: TOPP_NoiseFilterGaussian_2_out1 ........   Passed    0.53 sec
+        Start 1307: TOPP_NoiseFilterSGolay_1_out1
+255/285 Test #1299: TOPP_NoiseFilterGaussian_1_out1 ........   Passed    0.59 sec
+        Start 1309: TOPP_NoiseFilterSGolay_2_out1
+256/285 Test #1303: TOPP_NoiseFilterGaussian_3_out1 ........   Passed    0.52 sec
+        Start 1311: TOPP_NoiseFilterSGolay_3_out1
+257/285 Test #1305: TOPP_NoiseFilterGaussian_4_out1 ........   Passed    0.43 sec
+        Start 1313: TOPP_NoiseFilterSGolay_4_out1
+258/285 Test #1307: TOPP_NoiseFilterSGolay_1_out1 ..........   Passed    0.46 sec
+        Start 1383: TOPP_TextExporter_1_out1
+259/285 Test #1309: TOPP_NoiseFilterSGolay_2_out1 ..........   Passed    0.41 sec
+        Start 1385: TOPP_TextExporter_2_out1
+260/285 Test #1311: TOPP_NoiseFilterSGolay_3_out1 ..........   Passed    0.38 sec
+        Start 1386: TOPP_TextExporter_2_out2
+261/285 Test #1313: TOPP_NoiseFilterSGolay_4_out1 ..........   Passed    0.37 sec
+        Start 1387: TOPP_TextExporter_2_out3
+262/285 Test #1386: TOPP_TextExporter_2_out2 ...............   Passed    0.35 sec
+        Start 1388: TOPP_TextExporter_2_out4
+263/285 Test #1385: TOPP_TextExporter_2_out1 ...............   Passed    0.39 sec
+        Start 1390: TOPP_TextExporter_3_out1
+264/285 Test #1383: TOPP_TextExporter_1_out1 ...............   Passed    0.43 sec
+        Start 1392: TOPP_TextExporter_4_out1
+265/285 Test #1387: TOPP_TextExporter_2_out3 ...............   Passed    0.76 sec
+        Start 1394: TOPP_TextExporter_5_out1
+266/285 Test #1390: TOPP_TextExporter_3_out1 ...............   Passed    0.72 sec
+        Start 1396: TOPP_TextExporter_6_out1
+267/285 Test #1392: TOPP_TextExporter_4_out1 ...............   Passed    0.71 sec
+        Start 1398: TOPP_TextExporter_7_out1
+268/285 Test #1388: TOPP_TextExporter_2_out4 ...............   Passed    0.79 sec
+        Start 1400: TOPP_TextExporter_8_out1
+269/285 Test #1394: TOPP_TextExporter_5_out1 ...............   Passed    0.50 sec
+        Start 1402: TOPP_TextExporter_9_out1
+270/285 Test #1396: TOPP_TextExporter_6_out1 ...............   Passed    0.32 sec
+        Start 1404: TOPP_TextExporter_10_out1
+271/285 Test #1398: TOPP_TextExporter_7_out1 ...............   Passed    0.32 sec
+        Start 1759: TOPP_DecoyDatabase_1_out
+272/285 Test #1400: TOPP_TextExporter_8_out1 ...............   Passed    0.56 sec
+        Start 1761: TOPP_DecoyDatabase_2_out
+273/285 Test #1402: TOPP_TextExporter_9_out1 ...............   Passed    0.66 sec
+        Start 1763: TOPP_DecoyDatabase_3_out
+274/285 Test #1404: TOPP_TextExporter_10_out1 ..............   Passed    0.58 sec
+        Start 1765: TOPP_DecoyDatabase_4_out
+275/285 Test #1759: TOPP_DecoyDatabase_1_out ...............   Passed    0.57 sec
+        Start 1766: TOPP_DecoyDatabase_5
+276/285 Test #1761: TOPP_DecoyDatabase_2_out ...............   Passed    0.40 sec
+        Start 1767: TOPP_DecoyDatabase_6
+277/285 Test #1763: TOPP_DecoyDatabase_3_out ...............   Passed    0.53 sec
+        Start 1769: TOPP_DecoyDatabase_7_out1
+278/285 Test #1766: TOPP_DecoyDatabase_5 ...................   Passed    0.57 sec
+        Start 1770: TOPP_DecoyDatabase_7_out2
+279/285 Test #1765: TOPP_DecoyDatabase_4_out ...............   Passed    0.61 sec
+        Start 1771: TOPP_DecoyDatabase_7_out3
+280/285 Test #1767: TOPP_DecoyDatabase_6 ...................   Passed    0.73 sec
+        Start 1773: TOPP_DecoyDatabase_8_out
+281/285 Test #1769: TOPP_DecoyDatabase_7_out1 ..............   Passed    0.48 sec
+        Start 1774: TOPP_DecoyDatabase_9
+282/285 Test #1770: TOPP_DecoyDatabase_7_out2 ..............   Passed    0.76 sec
+283/285 Test #1771: TOPP_DecoyDatabase_7_out3 ..............   Passed    0.80 sec
+284/285 Test #1773: TOPP_DecoyDatabase_8_out ...............   Passed    0.70 sec
+285/285 Test #1774: TOPP_DecoyDatabase_9 ...................   Passed    0.63 sec
+
+100% tests passed out of 285
+
+Total Test time (real) =  69.71 sec

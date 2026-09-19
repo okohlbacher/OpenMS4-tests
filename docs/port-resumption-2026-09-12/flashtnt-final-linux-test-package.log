@@ -1,0 +1,13 @@
+Test project /scratch/kohlbach/openms4-flashtnt-ci-4ca4e73a9751/work/package-build
+    Start 1: FLASHTnT_write_ini
+    Start 2: FLASHTnT_write_ctd
+    Start 3: FLASHTnT_port_contract
+    Start 4: FLASHTnT_AQPZ_identity
+1/4 Test #3: FLASHTnT_port_contract ...........   Passed    0.11 sec
+2/4 Test #1: FLASHTnT_write_ini ...............   Passed    0.12 sec
+3/4 Test #2: FLASHTnT_write_ctd ...............   Passed    0.12 sec
+4/4 Test #4: FLASHTnT_AQPZ_identity ...........   Passed   10.13 sec
+
+100% tests passed, 0 tests failed out of 4
+
+Total Test time (real) =  10.14 sec

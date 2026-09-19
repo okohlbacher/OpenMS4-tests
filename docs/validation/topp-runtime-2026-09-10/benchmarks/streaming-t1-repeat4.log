@@ -1,0 +1,14 @@
+ Memory consumption before 52032
+Read method: streaming
+Progress of 'loading mzML':
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/test-data-sdk/share/openms4-test-data/1.0.0/topp/THIRDPARTY/MaRaClusterAdapter_1_in_1.mzML': Obsolete CV term 'MS:1000763 - PeakPicker' used in tag 'software'.
+  Progress of 'loading spectra list':
+
+  -- done [took 0.49 s (CPU), 0.49 s (Wall)] -- 
+
+-- done [took 0.49 s (CPU), 0.49 s (Wall) @ 26.24 MiB/s] -- 
+There are 1684 spectra and 479455 peaks in the input file.
+The total ion current is 4.295e+09
+ Memory consumption after 70432
+TICCalculator took 0.72 s (wall), 0.72 s (CPU), 0.01 s (system), 0.71 s (user); Peak Memory Usage: 68 MB.
+ Memory consumption final 70448

@@ -1,0 +1,70 @@
+{
+  "schema_version": 2,
+  "release": "pyopenms-v4.0.0.dev0-ci.3",
+  "core_source_revision": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+  "pyopenms_source_revision": "b7edae7a89d902727e0cd50ff488fefc60e011e0",
+  "artifacts": [
+    {
+      "path": "pyopenms-4.0.0.dev0-cp312-cp312-manylinux_2_39_x86_64.whl",
+      "sha256": "3a8eb05a5ec97e10544f814f8ca767113427968fb5f4d696ae1e886cef4f5899",
+      "kind": "wheel"
+    },
+    {
+      "path": "openms4-flashapp-runtime-linux-x86_64.tar.gz",
+      "kind": "runtime",
+      "sha256": "a1d8e46ddf28e15e0be925d87910a93ea4de2b8431a6d7e898aa284ff8d15d4f"
+    }
+  ],
+  "build_identity": {
+    "build_type": "Release",
+    "system_name": "Linux",
+    "system_processor": "x86_64",
+    "cxx_compiler_id": "GNU",
+    "cxx_compiler_version": "14.4.0",
+    "cxx_standard": 23,
+    "shared_libs": true,
+    "class_testing_enabled": true,
+    "stl_debug": false,
+    "standard_library": "libstdc++",
+    "libstdcxx_cxx11_abi": 1,
+    "msvc_runtime_library": null,
+    "features": {
+      "hdf5": false,
+      "onnx": false,
+      "openmp": true,
+      "openswath": true,
+      "opentims": false,
+      "tdl": false,
+      "thermo_raw": false,
+      "wnetalign": false
+    },
+    "dependencies": {
+      "arrow": {
+        "target": "Arrow::arrow_shared",
+        "version": "23.0.1"
+      },
+      "boost": {
+        "linkage": "shared",
+        "version": "1.89.0"
+      },
+      "curl": {
+        "version": "8.21.0"
+      },
+      "eigen": {
+        "version": "5.0.1"
+      },
+      "openmp": {
+        "version": "4.5"
+      },
+      "parquet": {
+        "target": "Parquet::parquet_shared",
+        "version": "23.0.1"
+      }
+    }
+  },
+  "required_executables": [
+    "DecoyDatabase",
+    "FLASHDeconv",
+    "FLASHTnT"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "core": {
+    "build_type": "Debug",
+    "class_testing_enabled": true,
+    "cxx_compiler_id": "AppleClang",
+    "cxx_compiler_version": "21.0.0.21000101",
+    "cxx_standard": 23,
+    "dependencies": {
+      "arrow": {
+        "target": "Arrow::arrow_shared",
+        "version": "25.0.0"
+      },
+      "boost": {
+        "linkage": "shared",
+        "version": "1.90.0"
+      },
+      "curl": {
+        "version": "8.21.0"
+      },
+      "eigen": {
+        "version": "5.0.1"
+      },
+      "openmp": {
+        "version": "5.1"
+      },
+      "parquet": {
+        "target": "Parquet::parquet_shared",
+        "version": "25.0.0"
+      }
+    },
+    "features": {
+      "hdf5": false,
+      "onnx": false,
+      "openmp": true,
+      "openswath": true,
+      "opentims": false,
+      "tdl": false,
+      "thermo_raw": false,
+      "wnetalign": false
+    },
+    "libstdcxx_cxx11_abi": null,
+    "msvc_runtime_library": null,
+    "schema_version": 1,
+    "shared_libs": true,
+    "source_dirty": false,
+    "source_revision": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85",
+    "standard_library": "libc++",
+    "stl_debug": false,
+    "system_name": "Darwin",
+    "system_processor": "arm64",
+    "version": "4.0.0"
+  },
+  "loaded_library": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product runtime verified/lib/libOpenMS.dylib",
+  "data_directory": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product runtime verified/share/OpenMS/4.0.0",
+  "file_info": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product runtime verified/bin/FileInfo",
+  "registered_tools": 150,
+  "glucose_mono_mass": 180.0633903828,
+  "oxidation_delta": 15.994915
+}

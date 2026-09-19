@@ -1,0 +1,1434 @@
+Test project /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build
+        Start 506: FLASHDeconvAlgorithm_test
+        Start 502: PipEchoAlgorithm_realistic_test
+        Start 584: ProSEAlgorithm_test
+        Start 587: SpectralDeconvolution_test
+        Start 664: TargetedSpectraExtractor_test
+        Start 558: MassFeatureTrace_test
+        Start 699: MQEvidenceExporter_test
+        Start 700: MQMsmsExporter_test
+  1/712 Test #700: MQMsmsExporter_test ..............................   Passed   13.35 sec
+        Start 242: Percolator_test
+  2/712 Test #699: MQEvidenceExporter_test ..........................   Passed   13.46 sec
+        Start 676: OpenSwathPercolatorScoring_test
+  3/712 Test #664: TargetedSpectraExtractor_test ....................   Passed   17.02 sec
+        Start 207: MzIdentMLFile_test
+  4/712 Test #558: MassFeatureTrace_test ............................   Passed   18.68 sec
+        Start 671: MRMFeatureSelector_test
+  5/712 Test #587: SpectralDeconvolution_test .......................   Passed   20.55 sec
+        Start 322: EmgGradientDescent_test
+  6/712 Test #676: OpenSwathPercolatorScoring_test ..................   Passed   10.74 sec
+        Start  23: ExternalProcess_test
+  7/712 Test #242: Percolator_test ..................................   Passed   11.71 sec
+        Start 504: FIAMSDataProcessor_test
+  8/712 Test #207: MzIdentMLFile_test ...............................   Passed    8.08 sec
+        Start 211: MzMLFile_test
+  9/712 Test  #23: ExternalProcess_test .............................   Passed    1.05 sec
+        Start   6: ClassTest_test
+ 10/712 Test #322: EmgGradientDescent_test ..........................   Passed    4.95 sec
+        Start  10: FuzzyStringComparator_test
+ 11/712 Test #671: MRMFeatureSelector_test ..........................   Passed    7.32 sec
+        Start   8: Colorizer_test
+ 12/712 Test   #6: ClassTest_test ...................................   Passed    1.28 sec
+        Start   7: ClassTestUtils_test
+ 13/712 Test  #10: FuzzyStringComparator_test .......................   Passed    1.32 sec
+        Start   9: Exception_Base_test
+ 14/712 Test   #8: Colorizer_test ...................................   Passed    1.13 sec
+        Start  11: PrecisionWrapper_test
+ 15/712 Test   #7: ClassTestUtils_test ..............................   Passed    0.92 sec
+        Start  12: ProgressLogger_test
+ 16/712 Test   #9: Exception_Base_test ..............................   Passed    0.94 sec
+        Start  13: RAIICleanup_test
+ 17/712 Test  #11: PrecisionWrapper_test ............................   Passed    0.94 sec
+        Start  32: SysInfo_test
+ 18/712 Test  #12: ProgressLogger_test ..............................   Passed    0.94 sec
+        Start 675: OpenSwathExport_test
+ 19/712 Test  #13: RAIICleanup_test .................................   Passed    0.95 sec
+        Start 296: QPXFile_test
+ 20/712 Test #504: FIAMSDataProcessor_test ..........................   Passed    4.03 sec
+        Start 639: MRMAssay_test
+ 21/712 Test #211: MzMLFile_test ....................................   Passed    4.93 sec
+        Start  96: OnDiscMSExperiment_test
+ 22/712 Test  #32: SysInfo_test .....................................   Passed    4.47 sec
+        Start 339: PosteriorErrorProbabilityModel_test
+ 23/712 Test  #96: OnDiscMSExperiment_test ..........................   Passed    2.93 sec
+        Start 352: FeatureFindingMetabo_test
+ 24/712 Test #296: QPXFile_test .....................................   Passed    4.31 sec
+        Start 264: TraMLFile_test
+ 25/712 Test #675: OpenSwathExport_test .............................   Passed    5.62 sec
+        Start 550: MapAlignmentAlgorithmPoseClustering_test
+ 26/712 Test #639: MRMAssay_test ....................................   Passed    5.16 sec
+        Start 178: FLASHHelperClasses_test
+ 27/712 Test #339: PosteriorErrorProbabilityModel_test ..............   Passed    1.73 sec
+        Start 358: InternalCalibration_test
+ 28/712 Test #352: FeatureFindingMetabo_test ........................   Passed    3.13 sec
+        Start 294: ConsensusMapArrowExport_test
+ 29/712 Test #178: FLASHHelperClasses_test ..........................   Passed    3.37 sec
+        Start 559: MetaboliteFeatureDeconvolution_test
+ 30/712 Test #264: TraMLFile_test ...................................   Passed    5.11 sec
+        Start 192: IndexedMzMLFileLoader_test
+ 31/712 Test #550: MapAlignmentAlgorithmPoseClustering_test .........   Passed    5.44 sec
+        Start 300: MSChromatogramParquetConsumer_test
+ 32/712 Test #358: InternalCalibration_test .........................   Passed    5.38 sec
+        Start 191: IndexedMzMLFile_test
+ 33/712 Test #294: ConsensusMapArrowExport_test .....................   Passed    3.85 sec
+        Start 179: FileHandler_test
+ 34/712 Test #192: IndexedMzMLFileLoader_test .......................   Passed    3.66 sec
+        Start 241: PepXMLFile_test
+ 35/712 Test #300: MSChromatogramParquetConsumer_test ...............   Passed    3.39 sec
+ 36/712 Test #191: IndexedMzMLFile_test .............................   Passed    3.20 sec
+        Start 123: IdentificationDataConverter_test
+        Start 390: SpectraMerger_test
+ 37/712 Test #179: FileHandler_test .................................   Passed    3.40 sec
+        Start 340: QuadraticRegression_test
+ 38/712 Test #559: MetaboliteFeatureDeconvolution_test ..............   Passed    6.12 sec
+        Start 508: OpenSearchModificationAnalysis_test
+ 39/712 Test #340: QuadraticRegression_test .........................   Passed    1.06 sec
+        Start 342: RANSAC_test
+ 40/712 Test #241: PepXMLFile_test ..................................   Passed    3.04 sec
+        Start 341: RankData_test
+ 41/712 Test #342: RANSAC_test ......................................   Passed    0.81 sec
+        Start 212: ImzMLFile_test
+ 42/712 Test #341: RankData_test ....................................   Passed    0.88 sec
+        Start 206: MzDataFile_test
+ 43/712 Test #123: IdentificationDataConverter_test .................   Passed    2.92 sec
+        Start 493: FeatureDeconvolution_test
+ 44/712 Test #390: SpectraMerger_test ...............................   Passed    3.49 sec
+        Start 505: FIAMSScheduler_test
+ 45/712 Test #508: OpenSearchModificationAnalysis_test ..............   Passed    3.23 sec
+        Start 133: MetaInfoRegistry_test
+ 46/712 Test #493: FeatureDeconvolution_test ........................   Passed    3.12 sec
+        Start  56: GridBasedClustering_test
+ 47/712 Test #212: ImzMLFile_test ...................................   Passed    3.82 sec
+        Start 364: MultiplexClustering_test
+ 48/712 Test #505: FIAMSScheduler_test ..............................   Passed    2.78 sec
+        Start 491: FalseDiscoveryRate_test
+ 49/712 Test #206: MzDataFile_test ..................................   Passed    4.02 sec
+        Start 477: BayesianProteinInferenceAlgorithm_test
+ 50/712 Test #133: MetaInfoRegistry_test ............................   Passed    4.36 sec
+        Start 203: MascotXMLFile_test
+ 51/712 Test  #56: GridBasedClustering_test .........................   Passed    3.02 sec
+        Start 350: Deisotoper_test
+ 52/712 Test #491: FalseDiscoveryRate_test ..........................   Passed    3.05 sec
+        Start 213: ImzMLFile_all_modes_test
+ 53/712 Test #477: BayesianProteinInferenceAlgorithm_test ...........   Passed    3.31 sec
+        Start  62: MassExplainer_test
+ 54/712 Test #364: MultiplexClustering_test .........................   Passed    4.51 sec
+        Start 351: ElutionPeakDetection_test
+ 55/712 Test #203: MascotXMLFile_test ...............................   Passed    2.66 sec
+        Start  24: File_test
+ 56/712 Test #350: Deisotoper_test ..................................   Passed    2.28 sec
+        Start  94: MSExperiment_test
+ 57/712 Test #213: ImzMLFile_all_modes_test .........................   Passed    2.41 sec
+        Start 118: ExperimentalDesign_test
+ 58/712 Test  #62: MassExplainer_test ...............................   Passed    2.70 sec
+        Start 328: CrossValidation_test
+ 59/712 Test #351: ElutionPeakDetection_test ........................   Passed    2.90 sec
+        Start 371: MultiplexFilteringProfile_test
+ 60/712 Test #118: ExperimentalDesign_test ..........................   Passed    2.04 sec
+        Start 152: SpectrumMetaDataLookup_test
+ 61/712 Test  #94: MSExperiment_test ................................   Passed    2.49 sec
+        Start 163: ChromeleonFile_test
+ 62/712 Test #328: CrossValidation_test .............................   Passed    0.95 sec
+        Start 329: Histogram_test
+ 63/712 Test #329: Histogram_test ...................................   Passed    1.65 sec
+        Start 215: MzMLSqliteHandler_test
+ 64/712 Test #152: SpectrumMetaDataLookup_test ......................   Passed    1.88 sec
+        Start 311: ModificationDefinitionIO_test
+ 65/712 Test #371: MultiplexFilteringProfile_test ...................   Passed    2.20 sec
+        Start 337: NNLS_test
+ 66/712 Test #163: ChromeleonFile_test ..............................   Passed    2.35 sec
+        Start 346: ROCCurve_test
+ 67/712 Test #337: NNLS_test ........................................   Passed    1.24 sec
+        Start 272: XQuestResultXMLFile_test
+ 68/712 Test #311: ModificationDefinitionIO_test ....................   Passed    1.54 sec
+        Start  97: MSSpectrum_test
+ 69/712 Test  #24: File_test ........................................   Passed    6.14 sec
+        Start 278: ZipIfstream_test
+ 70/712 Test #346: ROCCurve_test ....................................   Passed    1.22 sec
+        Start 345: RANSACModelQuadratic_test
+ 71/712 Test #345: RANSACModelQuadratic_test ........................   Passed    1.52 sec
+        Start 283: MSDataChainingConsumer_test
+ 72/712 Test  #97: MSSpectrum_test ..................................   Passed    1.99 sec
+        Start 343: RANSACModel_test
+ 73/712 Test #215: MzMLSqliteHandler_test ...........................   Passed    3.85 sec
+        Start 338: NonNegativeLeastSquaresSolver_test
+ 74/712 Test #278: ZipIfstream_test .................................   Passed    2.29 sec
+        Start  98: MSSpectrum_rasterizeIMFrame_test
+ 75/712 Test #343: RANSACModel_test .................................   Passed    0.81 sec
+        Start 287: SpectrumAccessSqMass_test
+ 76/712 Test #272: XQuestResultXMLFile_test .........................   Passed    3.13 sec
+        Start 490: ConsensusMapMergerAlgorithm_test
+ 77/712 Test #338: NonNegativeLeastSquaresSolver_test ...............   Passed    0.94 sec
+        Start 344: RANSACModelLinear_test
+ 78/712 Test #283: MSDataChainingConsumer_test ......................   Passed    1.72 sec
+        Start 166: ConsensusXMLFile_test
+ 79/712 Test  #98: MSSpectrum_rasterizeIMFrame_test .................   Passed    1.89 sec
+        Start 139: PeptideIdentification_test
+ 80/712 Test #344: RANSACModelLinear_test ...........................   Passed    1.51 sec
+        Start 427: IsoelectricPoint_test
+ 81/712 Test #287: SpectrumAccessSqMass_test ........................   Passed    1.94 sec
+        Start  46: DPosition_test
+ 82/712 Test #490: ConsensusMapMergerAlgorithm_test .................   Passed    1.88 sec
+        Start 405: SpectraSTSimilarityScore_test
+ 83/712 Test #166: ConsensusXMLFile_test ............................   Passed    2.15 sec
+        Start 465: TheoreticalSpectrumGenerator_test
+ 84/712 Test  #46: DPosition_test ...................................   Passed    1.25 sec
+        Start 471: AccurateMassSearchEngine_test
+ 85/712 Test #139: PeptideIdentification_test .......................   Passed    1.78 sec
+        Start  53: FASTAContainer_test
+ 86/712 Test #427: IsoelectricPoint_test ............................   Passed    1.56 sec
+        Start 440: ModificationsDB_test
+ 87/712 Test #405: SpectraSTSimilarityScore_test ....................   Passed    2.12 sec
+        Start 167: ControlledVocabulary_test
+ 88/712 Test  #53: FASTAContainer_test ..............................   Passed    1.28 sec
+        Start  52: DistanceMatrix_test
+ 89/712 Test #465: TheoreticalSpectrumGenerator_test ................   Passed    1.82 sec
+        Start 239: PepNovoOutfile_test
+ 90/712 Test #471: AccurateMassSearchEngine_test ....................   Passed    2.47 sec
+        Start  49: DateTime_test
+ 91/712 Test  #52: DistanceMatrix_test ..............................   Passed    1.15 sec
+        Start 238: PepNovoInfile_test
+ 92/712 Test #440: ModificationsDB_test .............................   Passed    2.54 sec
+        Start 450: ProteaseDigestion_test
+ 93/712 Test #167: ControlledVocabulary_test ........................   Passed    1.92 sec
+        Start  51: DefaultParamHandler_test
+ 94/712 Test  #49: DateTime_test ....................................   Passed    0.67 sec
+        Start 240: PepXMLFileMascot_test
+ 95/712 Test #239: PepNovoOutfile_test ..............................   Passed    1.78 sec
+        Start  48: DataValue_test
+ 96/712 Test #584: ProSEAlgorithm_test ..............................   Passed   69.88 sec
+        Start 145: ProteinModificationSummary_test
+ 97/712 Test #238: PepNovoInfile_test ...............................   Passed    1.47 sec
+        Start 438: ModificationDefinition_test
+ 98/712 Test  #51: DefaultParamHandler_test .........................   Passed    1.16 sec
+        Start 437: ModificationDataProvider_test
+ 99/712 Test #450: ProteaseDigestion_test ...........................   Passed    1.61 sec
+        Start 509: IDBoostGraph_test
+100/712 Test  #48: DataValue_test ...................................   Passed    1.56 sec
+        Start 198: MSPFile_test
+101/712 Test #240: PepXMLFileMascot_test ............................   Passed    1.77 sec
+        Start 138: PeptideHit_test
+102/712 Test #145: ProteinModificationSummary_test ..................   Passed    1.76 sec
+        Start  47: DRange_test
+103/712 Test #438: ModificationDefinition_test ......................   Passed    1.95 sec
+        Start 455: ResidueModification_test
+104/712 Test #437: ModificationDataProvider_test ....................   Passed    2.05 sec
+        Start 439: ModificationDefinitionsSet_test
+105/712 Test #509: IDBoostGraph_test ................................   Passed    2.26 sec
+        Start 244: PercolatorInfile_test
+106/712 Test #198: MSPFile_test .....................................   Passed    2.12 sec
+        Start 173: FASTAFile_test
+107/712 Test  #47: DRange_test ......................................   Passed    1.55 sec
+        Start  50: Date_test
+108/712 Test #138: PeptideHit_test ..................................   Passed    2.28 sec
+        Start 454: ResidueDB_test
+109/712 Test #455: ResidueModification_test .........................   Passed    1.92 sec
+        Start 357: IDFilter_test
+110/712 Test #439: ModificationDefinitionsSet_test ..................   Passed    2.14 sec
+        Start 467: AbsoluteQuantitation_test
+111/712 Test #244: PercolatorInfile_test ............................   Passed    2.02 sec
+        Start 258: SwathFile_test
+112/712 Test  #50: Date_test ........................................   Passed    1.62 sec
+        Start 672: MRMFeatureFinderScoring_test
+113/712 Test #173: FASTAFile_test ...................................   Passed    1.96 sec
+        Start 315: OpenSwathOSWParquetRoundTrip_test
+114/712 Test #454: ResidueDB_test ...................................   Passed    2.31 sec
+        Start 448: ProFormaParser_test
+115/712 Test #357: IDFilter_test ....................................   Passed    2.07 sec
+        Start 243: Percolator_subprocess_parity_test
+116/712 Test #467: AbsoluteQuantitation_test ........................   Passed    2.58 sec
+        Start 441: ModifiedNASequenceGenerator_test
+117/712 Test #315: OpenSwathOSWParquetRoundTrip_test ................   Passed    2.89 sec
+        Start 370: MultiplexFilteringCentroided_test
+118/712 Test #258: SwathFile_test ...................................   Passed    3.46 sec
+        Start  21: UniqueIdInterface_test
+119/712 Test #672: MRMFeatureFinderScoring_test .....................   Passed    4.60 sec
+        Start 443: IonNaming_test
+120/712 Test #448: ProFormaParser_test ..............................   Passed    5.26 sec
+        Start 444: MzPAF_test
+121/712 Test #441: ModifiedNASequenceGenerator_test .................   Passed    4.22 sec
+        Start 336: MultipleTesting_test
+122/712 Test #243: Percolator_subprocess_parity_test ................   Passed    5.27 sec
+        Start 442: MonosaccharideDB_test
+123/712 Test  #21: UniqueIdInterface_test ...........................   Passed    3.55 sec
+        Start 310: PSMArrowIO_test
+124/712 Test #370: MultiplexFilteringCentroided_test ................   Passed    4.24 sec
+        Start 331: LevelContextInference_test
+125/712 Test #443: IonNaming_test ...................................   Passed    2.71 sec
+        Start 181: FileInfo_test
+126/712 Test #444: MzPAF_test .......................................   Passed    1.86 sec
+        Start 314: ParquetTableComparator_test
+127/712 Test #336: MultipleTesting_test .............................   Passed    1.94 sec
+        Start 313: ArrowIOHelpers_test
+128/712 Test #442: MonosaccharideDB_test ............................   Passed    2.12 sec
+        Start 122: IdentificationData_test
+129/712 Test #331: LevelContextInference_test .......................   Passed    2.04 sec
+        Start 268: XMassFile_test
+130/712 Test #310: PSMArrowIO_test ..................................   Passed    2.44 sec
+        Start  39: CVMappings_test
+131/712 Test #181: FileInfo_test ....................................   Passed    2.74 sec
+        Start 312: ArrowSchemaRegistry_test
+132/712 Test #314: ParquetTableComparator_test ......................   Passed    2.23 sec
+        Start 116: DataProcessing_test
+133/712 Test #313: ArrowIOHelpers_test ..............................   Passed    2.11 sec
+        Start 117: DocumentIdentifier_test
+134/712 Test #122: IdentificationData_test ..........................   Passed    2.52 sec
+        Start  90: MobilityPeak2D_test
+135/712 Test #268: XMassFile_test ...................................   Passed    2.37 sec
+        Start 333: LinearRegression_test
+136/712 Test  #39: CVMappings_test ..................................   Passed    2.36 sec
+        Start 413: AASequence_test
+137/712 Test #312: ArrowSchemaRegistry_test .........................   Passed    2.25 sec
+        Start  89: MobilityPeak1D_test
+138/712 Test #116: DataProcessing_test ..............................   Passed    2.45 sec
+        Start  92: MRMTransitionGroup_test
+139/712 Test #117: DocumentIdentifier_test ..........................   Passed    2.54 sec
+        Start 463: Tagger_test
+140/712 Test  #90: MobilityPeak2D_test ..............................   Passed    2.18 sec
+        Start  93: MSChromatogram_test
+141/712 Test #333: LinearRegression_test ............................   Passed    1.90 sec
+        Start 334: LinearRegressionWithoutIntercept_test
+142/712 Test #413: AASequence_test ..................................   Passed    2.57 sec
+        Start 308: FeatureMapArrowIO_test
+143/712 Test  #89: MobilityPeak1D_test ..............................   Passed    2.18 sec
+        Start 113: ChromatogramSettings_test
+144/712 Test  #92: MRMTransitionGroup_test ..........................   Passed    2.24 sec
+        Start 154: USI_test
+145/712 Test  #93: MSChromatogram_test ..............................   Passed    2.23 sec
+        Start 293: MSExperimentArrowExport_test
+146/712 Test #463: Tagger_test ......................................   Passed    2.59 sec
+        Start 119: ExperimentalSettings_test
+147/712 Test #334: LinearRegressionWithoutIntercept_test ............   Passed    2.17 sec
+        Start 452: RNaseDigestion_test
+148/712 Test #113: ChromatogramSettings_test ........................   Passed    1.98 sec
+        Start  87: MassTrace_test
+149/712 Test #308: FeatureMapArrowIO_test ...........................   Passed    2.45 sec
+        Start 112: CVTerm_test
+150/712 Test #154: USI_test .........................................   Passed    2.00 sec
+        Start 259: SwathFileConsumer_test
+151/712 Test #293: MSExperimentArrowExport_test .....................   Passed    1.67 sec
+        Start 503: FeatureHandle_test
+152/712 Test #119: ExperimentalSettings_test ........................   Passed    1.93 sec
+        Start 330: KernelDensityEstimation_test
+153/712 Test #452: RNaseDigestion_test ..............................   Passed    2.24 sec
+        Start  22: BuildInfo_test
+154/712 Test  #87: MassTrace_test ...................................   Passed    1.77 sec
+        Start 245: PercolatorOutfile_test
+155/712 Test #112: CVTerm_test ......................................   Passed    1.86 sec
+        Start 425: FineIsotopeDistribution_test
+156/712 Test #503: FeatureHandle_test ...............................   Passed    2.11 sec
+        Start 120: Gradient_test
+157/712 Test #330: KernelDensityEstimation_test .....................   Passed    2.10 sec
+        Start 332: LinearInterpolation_test
+158/712 Test #259: SwathFileConsumer_test ...........................   Passed    2.77 sec
+        Start  91: MRMFeature_test
+159/712 Test  #22: BuildInfo_test ...................................   Passed    1.87 sec
+        Start 488: ConsensusMapNormalizerAlgorithmMedian_test
+160/712 Test #425: FineIsotopeDistribution_test .....................   Passed    1.97 sec
+        Start 155: AbsoluteQuantitationStandardsFile_test
+161/712 Test #245: PercolatorOutfile_test ...........................   Passed    2.32 sec
+        Start 149: Software_test
+162/712 Test #120: Gradient_test ....................................   Passed    1.65 sec
+        Start 124: IdentifiedMolecule_test
+163/712 Test #332: LinearInterpolation_test .........................   Passed    1.64 sec
+        Start 121: HPLC_test
+164/712 Test  #91: MRMFeature_test ..................................   Passed    1.91 sec
+        Start  85: FeatureMap_test
+165/712 Test #488: ConsensusMapNormalizerAlgorithmMedian_test .......   Passed    1.96 sec
+        Start 114: ContactPerson_test
+166/712 Test #155: AbsoluteQuantitationStandardsFile_test ...........   Passed    2.04 sec
+        Start 411: ZhangSimilarityScore_test
+167/712 Test #149: Software_test ....................................   Passed    2.33 sec
+        Start 457: RibonucleotideDB_test
+168/712 Test #124: IdentifiedMolecule_test ..........................   Passed    2.38 sec
+        Start  55: GridBasedCluster_test
+169/712 Test #121: HPLC_test ........................................   Passed    2.32 sec
+        Start 424: EnzymaticDigestion_test
+170/712 Test  #85: FeatureMap_test ..................................   Passed    2.34 sec
+        Start 612: FeatureFinderMultiplexAlgorithm_test
+171/712 Test #114: ContactPerson_test ...............................   Passed    2.29 sec
+        Start  95: MSExperiment_rasterizeRTMZ_test
+172/712 Test #411: ZhangSimilarityScore_test ........................   Passed    1.98 sec
+        Start 151: SpectrumLookup_test
+173/712 Test #457: RibonucleotideDB_test ............................   Passed    2.00 sec
+        Start 115: DataArrays_test
+174/712 Test  #55: GridBasedCluster_test ............................   Passed    1.85 sec
+        Start 150: SourceFile_test
+175/712 Test #424: EnzymaticDigestion_test ..........................   Passed    1.92 sec
+        Start 414: AdductInfo_test
+176/712 Test  #95: MSExperiment_rasterizeRTMZ_test ..................   Passed    2.09 sec
+        Start 476: BasicProteinInferenceAlgorithm_test
+177/712 Test #151: SpectrumLookup_test ..............................   Passed    2.12 sec
+        Start  80: ConsensusMap_test
+178/712 Test #612: FeatureFinderMultiplexAlgorithm_test .............   Passed    3.05 sec
+        Start 156: Base64_test
+179/712 Test #115: DataArrays_test ..................................   Passed    2.07 sec
+        Start  88: Mobilogram_test
+180/712 Test #150: SourceFile_test ..................................   Passed    2.08 sec
+        Start 297: QPXCollectionExport_test
+181/712 Test #414: AdductInfo_test ..................................   Passed    2.56 sec
+        Start 415: CoarseIsotopeDistribution_test
+182/712 Test #476: BasicProteinInferenceAlgorithm_test ..............   Passed    2.22 sec
+        Start 409: SpectrumPrecursorComparator_test
+183/712 Test  #80: ConsensusMap_test ................................   Passed    2.04 sec
+        Start  28: PathUtils_test
+184/712 Test #156: Base64_test ......................................   Passed    2.08 sec
+        Start 422: Element_test
+185/712 Test  #88: Mobilogram_test ..................................   Passed    2.29 sec
+        Start  86: Feature_test
+186/712 Test #297: QPXCollectionExport_test .........................   Passed    2.31 sec
+        Start 216: MzMLSqliteSwathHandler_test
+187/712 Test #415: CoarseIsotopeDistribution_test ...................   Passed    3.37 sec
+        Start 436: MassDecomposer_test
+188/712 Test #409: SpectrumPrecursorComparator_test .................   Passed    3.74 sec
+        Start 702: PeptideMass_test
+189/712 Test  #28: PathUtils_test ...................................   Passed    3.71 sec
+        Start 387: SqrtScaler_test
+190/712 Test #422: Element_test .....................................   Passed    3.76 sec
+        Start 426: HydrophobicityProfile_test
+191/712 Test  #86: Feature_test .....................................   Passed    3.89 sec
+        Start  83: DimMapper_test
+192/712 Test #436: MassDecomposer_test ..............................   Passed    2.82 sec
+        Start 384: SignalToNoiseEstimatorMedian_test
+193/712 Test #216: MzMLSqliteSwathHandler_test ......................   Passed    4.93 sec
+        Start 110: CVTermList_test
+194/712 Test #702: PeptideMass_test .................................   Passed    2.63 sec
+        Start 402: PeakAlignment_test
+195/712 Test #387: SqrtScaler_test ..................................   Passed    2.70 sec
+        Start 417: DecoyGenerator_test
+196/712 Test #426: HydrophobicityProfile_test .......................   Passed    2.70 sec
+        Start 127: IonDetector_test
+197/712 Test  #83: DimMapper_test ...................................   Passed    2.63 sec
+        Start  82: ConstRefVector_test
+198/712 Test #384: SignalToNoiseEstimatorMedian_test ................   Passed    2.71 sec
+        Start 282: MSDataTransformingConsumer_test
+199/712 Test #110: CVTermList_test ..................................   Passed    2.77 sec
+        Start 416: CrossLinksDB_test
+200/712 Test #402: PeakAlignment_test ...............................   Passed    2.79 sec
+        Start 111: CVTermListInterface_test
+201/712 Test #417: DecoyGenerator_test ..............................   Passed    2.78 sec
+        Start 489: ConsensusMapNormalizerAlgorithmQuantile_test
+202/712 Test #127: IonDetector_test .................................   Passed    3.19 sec
+        Start 396: BinnedSumAgreeingIntensities_test
+203/712 Test  #82: ConstRefVector_test ..............................   Passed    3.20 sec
+        Start 382: RankScaler_test
+204/712 Test #416: CrossLinksDB_test ................................   Passed    3.23 sec
+        Start 383: SignalToNoiseEstimatorMeanIterative_test
+205/712 Test #111: CVTermListInterface_test .........................   Passed    2.99 sec
+        Start 298: QPXValueValidation_test
+206/712 Test #282: MSDataTransformingConsumer_test ..................   Passed    4.02 sec
+        Start 423: EmpiricalFormula_test
+207/712 Test #489: ConsensusMapNormalizerAlgorithmQuantile_test .....   Passed    3.05 sec
+        Start 389: WindowMower_test
+208/712 Test #396: BinnedSumAgreeingIntensities_test ................   Passed    2.67 sec
+        Start 434: IsoSpec_test
+209/712 Test #382: RankScaler_test ..................................   Passed    3.95 sec
+        Start 129: MassAnalyzer_test
+210/712 Test #383: SignalToNoiseEstimatorMeanIterative_test .........   Passed    3.15 sec
+        Start 177: FLASHDeconvSpectrumFile_test
+211/712 Test #298: QPXValueValidation_test ..........................   Passed    3.48 sec
+        Start  72: StringListUtils_test
+212/712 Test #423: EmpiricalFormula_test ............................   Passed    3.32 sec
+        Start 420: DigestionEnzymeRNA_test
+213/712 Test #389: WindowMower_test .................................   Passed    3.79 sec
+        Start  84: DPeak_test
+214/712 Test #434: IsoSpec_test .....................................   Passed    3.71 sec
+        Start 395: BinnedSpectrum_test
+215/712 Test #129: MassAnalyzer_test ................................   Passed    2.55 sec
+        Start 404: SingleLinkage_test
+216/712 Test #177: FLASHDeconvSpectrumFile_test .....................   Passed    2.29 sec
+        Start 148: ScanWindow_test
+217/712 Test  #72: StringListUtils_test .............................   Passed    2.17 sec
+        Start 412: AAIndex_test
+218/712 Test #420: DigestionEnzymeRNA_test ..........................   Passed    2.14 sec
+        Start 165: CompressedInputSource_test
+219/712 Test  #84: DPeak_test .......................................   Passed    2.16 sec
+        Start  66: OPXLDataStructs_test
+220/712 Test #395: BinnedSpectrum_test ..............................   Passed    2.31 sec
+        Start  60: ListUtilsIO_test
+221/712 Test #404: SingleLinkage_test ...............................   Passed    2.41 sec
+        Start  81: ConversionHelper_test
+222/712 Test #148: ScanWindow_test ..................................   Passed    2.23 sec
+        Start 459: Ribonucleotide_test
+223/712 Test #412: AAIndex_test .....................................   Passed    2.30 sec
+        Start 461: SimpleTSGXLMS_test
+224/712 Test #165: CompressedInputSource_test .......................   Passed    2.57 sec
+        Start 235: PEFFFile_test
+225/712 Test  #66: OPXLDataStructs_test .............................   Passed    2.33 sec
+        Start  73: StringUtils_test
+226/712 Test  #60: ListUtilsIO_test .................................   Passed    2.25 sec
+        Start 182: FileTypes_test
+227/712 Test  #81: ConversionHelper_test ............................   Passed    2.33 sec
+        Start 419: DigestionEnzymeProtein_test
+228/712 Test #459: Ribonucleotide_test ..............................   Passed    2.47 sec
+        Start 128: IonSource_test
+229/712 Test #461: SimpleTSGXLMS_test ...............................   Passed    2.34 sec
+        Start 309: ConsensusMapArrowIO_test
+230/712 Test  #73: StringUtils_test .................................   Passed    2.31 sec
+        Start  74: String_test
+231/712 Test #182: FileTypes_test ...................................   Passed    2.48 sec
+        Start  99: Peak1D_test
+232/712 Test #235: PEFFFile_test ....................................   Passed    3.09 sec
+        Start  67: OSWData_test
+233/712 Test #419: DigestionEnzymeProtein_test ......................   Passed    2.19 sec
+        Start 418: DigestionEnzyme_test
+234/712 Test #128: IonSource_test ...................................   Passed    2.16 sec
+        Start  29: PythonInfo_test
+235/712 Test  #74: String_test ......................................   Passed    1.95 sec
+        Start 335: MathFunctions_test
+236/712 Test #309: ConsensusMapArrowIO_test .........................   Passed    2.67 sec
+        Start  30: RWrapper_test
+237/712 Test  #99: Peak1D_test ......................................   Passed    1.70 sec
+        Start 381: SavitzkyGolayFilter_test
+238/712 Test  #67: OSWData_test .....................................   Passed    2.05 sec
+        Start 162: Bzip2InputStream_test
+239/712 Test #418: DigestionEnzyme_test .............................   Passed    2.04 sec
+        Start  75: AreaIterator_test
+240/712 Test  #29: PythonInfo_test ..................................   Passed    2.05 sec
+        Start 429: IMSAlphabetTextParser_test
+241/712 Test #335: MathFunctions_test ...............................   Passed    1.82 sec
+        Start 184: GNPSQuantificationFile_test
+242/712 Test  #30: RWrapper_test ....................................   Passed    2.59 sec
+        Start 410: SteinScottImproveScore_test
+243/712 Test #381: SavitzkyGolayFilter_test .........................   Passed    3.34 sec
+        Start 175: FeatureXMLFile_test
+244/712 Test #162: Bzip2InputStream_test ............................   Passed    3.19 sec
+        Start 431: IMSElement_test
+245/712 Test  #75: AreaIterator_test ................................   Passed    3.32 sec
+        Start 180: FileNameUtils_test
+246/712 Test #429: IMSAlphabetTextParser_test .......................   Passed    3.61 sec
+        Start 406: SpectrumAlignmentScore_test
+247/712 Test #184: GNPSQuantificationFile_test ......................   Passed    3.42 sec
+        Start 391: AverageLinkage_test
+248/712 Test #410: SteinScottImproveScore_test ......................   Passed    2.90 sec
+        Start 472: AhoCorasickAmbiguous_test
+249/712 Test #431: IMSElement_test ..................................   Passed    2.44 sec
+        Start  76: BaseFeature_test
+250/712 Test #175: FeatureXMLFile_test ..............................   Passed    2.79 sec
+        Start 109: AnnotatedMSRun_test
+251/712 Test #180: FileNameUtils_test ...............................   Passed    2.48 sec
+        Start  61: LPWrapper_test
+252/712 Test #406: SpectrumAlignmentScore_test ......................   Passed    2.13 sec
+        Start 408: SpectrumCheapDPCorr_test
+253/712 Test #391: AverageLinkage_test ..............................   Passed    2.06 sec
+        Start 474: BaseGroupFinder_test
+254/712 Test #472: AhoCorasickAmbiguous_test ........................   Passed    2.13 sec
+        Start  68: Param_test
+255/712 Test  #76: BaseFeature_test .................................   Passed    1.93 sec
+        Start 136: SpectrumNativeIDParser_test
+256/712 Test #109: AnnotatedMSRun_test ..............................   Passed    2.06 sec
+        Start 397: ClusterAnalyzer_test
+257/712 Test  #61: LPWrapper_test ...................................   Passed    1.93 sec
+        Start  34: Adduct_test
+258/712 Test #408: SpectrumCheapDPCorr_test .........................   Passed    1.91 sec
+        Start 234: ParquetFilter_test
+259/712 Test #474: BaseGroupFinder_test .............................   Passed    1.98 sec
+        Start 299: QPXIdentity_test
+260/712 Test  #68: Param_test .......................................   Passed    1.87 sec
+        Start 292: Arrow_test
+261/712 Test #136: SpectrumNativeIDParser_test ......................   Passed    1.79 sec
+        Start 393: BinnedSpectralContrastAngle_test
+262/712 Test #397: ClusterAnalyzer_test .............................   Passed    1.78 sec
+        Start  78: ChromatogramTools_test
+263/712 Test  #34: Adduct_test ......................................   Passed    1.78 sec
+        Start 394: BinnedSpectrumCompareFunctor_test
+264/712 Test #234: ParquetFilter_test ...............................   Passed    1.81 sec
+        Start 401: EuclideanSimilarity_test
+265/712 Test #299: QPXIdentity_test .................................   Passed    1.71 sec
+        Start  59: ListUtils_test
+266/712 Test #292: Arrow_test .......................................   Passed    1.73 sec
+        Start  58: HashGrid_test
+267/712 Test #393: BinnedSpectralContrastAngle_test .................   Passed    1.72 sec
+        Start 451: RNaseDB_test
+268/712 Test  #78: ChromatogramTools_test ...........................   Passed    1.71 sec
+        Start 469: AbsoluteQuantitationMethodFile_test
+269/712 Test #394: BinnedSpectrumCompareFunctor_test ................   Passed    1.71 sec
+        Start 320: CubicSpline2d_test
+270/712 Test #401: EuclideanSimilarity_test .........................   Passed    1.68 sec
+        Start  57: GridFeature_test
+271/712 Test  #59: ListUtils_test ...................................   Passed    1.69 sec
+        Start 385: SignalToNoiseEstimatorMedianRapid_test
+272/712 Test  #58: HashGrid_test ....................................   Passed    1.68 sec
+        Start 507: FLASHDeconvHelperStructs_test
+273/712 Test #451: RNaseDB_test .....................................   Passed    1.69 sec
+        Start  69: ParamValue_test
+274/712 Test #469: AbsoluteQuantitationMethodFile_test ..............   Passed    1.68 sec
+        Start 159: PASEFHillCentroider_test
+275/712 Test #320: CubicSpline2d_test ...............................   Passed    1.71 sec
+        Start 125: InstrumentSettings_test
+276/712 Test  #57: GridFeature_test .................................   Passed    1.71 sec
+        Start 403: PeakSpectrumCompareFunctor_test
+277/712 Test #385: SignalToNoiseEstimatorMedianRapid_test ...........   Passed    1.73 sec
+        Start 456: Residue_test
+278/712 Test #502: PipEchoAlgorithm_realistic_test ..................   Passed  142.87 sec
+        Start  33: UpdateCheck_test
+279/712 Test #507: FLASHDeconvHelperStructs_test ....................   Passed    1.71 sec
+        Start 388: ThresholdMower_test
+280/712 Test  #69: ParamValue_test ..................................   Passed    1.70 sec
+        Start  77: ChromatogramPeak_test
+281/712 Test #159: PASEFHillCentroider_test .........................   Passed    1.71 sec
+        Start 483: ConsensusIDAlgorithmPEPIons_test
+282/712 Test #125: InstrumentSettings_test ..........................   Passed    1.69 sec
+        Start 143: ProteinHit_test
+283/712 Test #403: PeakSpectrumCompareFunctor_test ..................   Passed    1.67 sec
+        Start 324: GaussFitter_test
+284/712 Test #456: Residue_test .....................................   Passed    1.90 sec
+        Start 158: BrukerTimsImagingFile_test
+285/712 Test  #33: UpdateCheck_test .................................   Passed    1.80 sec
+        Start 492: Scores_test
+286/712 Test #388: ThresholdMower_test ..............................   Passed    1.95 sec
+        Start 108: Acquisition_test
+287/712 Test  #77: ChromatogramPeak_test ............................   Passed    1.96 sec
+        Start 321: SplineBisection_test
+288/712 Test #483: ConsensusIDAlgorithmPEPIons_test .................   Passed    1.95 sec
+        Start 430: IMSAlphabet_test
+289/712 Test #143: ProteinHit_test ..................................   Passed    1.99 sec
+        Start 470: AbsoluteQuantitationStandards_test
+290/712 Test #324: GaussFitter_test .................................   Passed    1.99 sec
+        Start 428: IMSAlphabetParser_test
+291/712 Test #158: BrukerTimsImagingFile_test .......................   Passed    1.75 sec
+        Start 392: BinnedSharedPeakCount_test
+292/712 Test #492: Scores_test ......................................   Passed    1.99 sec
+        Start 164: CVMappingFile_test
+293/712 Test #108: Acquisition_test .................................   Passed    1.98 sec
+        Start 496: FeatureGroupingAlgorithmKD_test
+294/712 Test #321: SplineBisection_test .............................   Passed    1.96 sec
+        Start 432: IMSIsotopeDistribution_test
+295/712 Test #430: IMSAlphabet_test .................................   Passed    1.97 sec
+        Start  54: FlagSet_test
+296/712 Test #470: AbsoluteQuantitationStandards_test ...............   Passed    1.93 sec
+        Start 407: SpectrumAlignment_test
+297/712 Test #428: IMSAlphabetParser_test ...........................   Passed    1.95 sec
+        Start 482: ConsensusIDAlgorithmBest_test
+298/712 Test #392: BinnedSharedPeakCount_test .......................   Passed    1.93 sec
+        Start 253: SqMassFile_test
+299/712 Test #164: CVMappingFile_test ...............................   Passed    1.96 sec
+        Start 134: MetaInfo_test
+300/712 Test #496: FeatureGroupingAlgorithmKD_test ..................   Passed    1.94 sec
+        Start 137: PeptideEvidence_test
+301/712 Test #432: IMSIsotopeDistribution_test ......................   Passed    1.97 sec
+        Start 478: ClusterProxyKD_test
+302/712 Test  #54: FlagSet_test .....................................   Passed    1.98 sec
+        Start  79: ConsensusFeature_test
+303/712 Test #407: SpectrumAlignment_test ...........................   Passed    1.98 sec
+        Start 327: GridSearch_test
+304/712 Test #482: ConsensusIDAlgorithmBest_test ....................   Passed    2.00 sec
+        Start 144: ProteinIdentification_test
+305/712 Test #134: MetaInfo_test ....................................   Passed    1.98 sec
+        Start 176: FLASHDeconvFeatureFile_test
+306/712 Test #137: PeptideEvidence_test .............................   Passed    1.98 sec
+        Start 468: AbsoluteQuantitationMethod_test
+307/712 Test #253: SqMassFile_test ..................................   Passed    2.59 sec
+        Start 497: FeatureGroupingAlgorithmLabeled_test
+308/712 Test #478: ClusterProxyKD_test ..............................   Passed    1.96 sec
+        Start 354: FastLowessSmoothing_test
+309/712 Test  #79: ConsensusFeature_test ............................   Passed    1.95 sec
+        Start 236: PeakFileOptions_test
+310/712 Test #327: GridSearch_test ..................................   Passed    1.96 sec
+        Start 135: CometNativeIDRemapper_test
+311/712 Test #144: ProteinIdentification_test .......................   Passed    1.93 sec
+        Start 169: DTA2DFile_test
+312/712 Test #176: FLASHDeconvFeatureFile_test ......................   Passed    1.68 sec
+        Start 100: Peak2D_test
+313/712 Test #468: AbsoluteQuantitationMethod_test ..................   Passed    1.68 sec
+        Start 433: IntegerMassDecomposer_test
+314/712 Test #497: FeatureGroupingAlgorithmLabeled_test .............   Passed    2.02 sec
+        Start 295: ProteinGroupArrowExport_test
+315/712 Test #354: FastLowessSmoothing_test .........................   Passed    1.99 sec
+        Start 157: BrukerTimsFile_test
+316/712 Test #236: PeakFileOptions_test .............................   Passed    1.97 sec
+        Start 185: GzipIfstream_test
+317/712 Test #135: CometNativeIDRemapper_test .......................   Passed    1.98 sec
+        Start 449: ProteaseDB_test
+318/712 Test #169: DTA2DFile_test ...................................   Passed    1.98 sec
+        Start 353: FeatureOverlapFilter_test
+319/712 Test #100: Peak2D_test ......................................   Passed    1.99 sec
+        Start  63: MatchedIterator_test
+320/712 Test #433: IntegerMassDecomposer_test .......................   Passed    2.00 sec
+        Start  35: CalibrationData_test
+321/712 Test #295: ProteinGroupArrowExport_test .....................   Passed    2.23 sec
+        Start 257: SwathMapMassCorrection_test
+322/712 Test #157: BrukerTimsFile_test ..............................   Passed    1.96 sec
+        Start 271: XMLValidator_test
+323/712 Test #185: GzipIfstream_test ................................   Passed    1.97 sec
+        Start 473: AScore_test
+324/712 Test #449: ProteaseDB_test ..................................   Passed    1.98 sec
+        Start 168: CsvFile_test
+325/712 Test #353: FeatureOverlapFilter_test ........................   Passed    1.97 sec
+        Start 375: MZTrafoModel_test
+326/712 Test  #63: MatchedIterator_test .............................   Passed    1.93 sec
+        Start 361: MassTraceDetection_test
+327/712 Test  #35: CalibrationData_test .............................   Passed    1.95 sec
+        Start 301: MobilogramParquetConsumer_test
+328/712 Test #271: XMLValidator_test ................................   Passed    1.95 sec
+        Start 288: SpectrumAccessOpenMS_test
+329/712 Test #257: SwathMapMassCorrection_test ......................   Passed    2.03 sec
+        Start 317: BilinearInterpolation_test
+330/712 Test #168: CsvFile_test .....................................   Passed    1.95 sec
+        Start 326: GumbelMaxLikelihoodFitter_test
+331/712 Test #473: AScore_test ......................................   Passed    2.24 sec
+        Start 484: ConsensusIDAlgorithmPEPMatrix_test
+332/712 Test #375: MZTrafoModel_test ................................   Passed    1.98 sec
+        Start 453: RealMassDecomposer_test
+333/712 Test #301: MobilogramParquetConsumer_test ...................   Passed    2.00 sec
+        Start 197: MS2File_test
+334/712 Test #361: MassTraceDetection_test ..........................   Passed    2.34 sec
+        Start  26: NetworkGetRequest_test
+335/712 Test #288: SpectrumAccessOpenMS_test ........................   Passed    1.71 sec
+        Start 494: FeatureDistance_test
+336/712 Test #317: BilinearInterpolation_test .......................   Passed    2.07 sec
+        Start 495: FeatureMapping_test
+337/712 Test #326: GumbelMaxLikelihoodFitter_test ...................   Passed    1.69 sec
+        Start 101: PeakIndex_test
+338/712 Test #484: ConsensusIDAlgorithmPEPMatrix_test ...............   Passed    1.95 sec
+        Start 269: XMLFile_test
+339/712 Test #453: RealMassDecomposer_test ..........................   Passed    1.93 sec
+        Start 194: InspectOutfile_test
+340/712 Test #197: MS2File_test .....................................   Passed    1.67 sec
+        Start 161: Bzip2Ifstream_test
+341/712 Test  #26: NetworkGetRequest_test ...........................   Passed    2.03 sec
+        Start  36: ClusteringGrid_test
+342/712 Test #494: FeatureDistance_test .............................   Passed    1.96 sec
+        Start 460: SequenceCoverage_test
+343/712 Test #495: FeatureMapping_test ..............................   Passed    1.79 sec
+        Start 140: PeptideIdentificationList_test
+344/712 Test #101: PeakIndex_test ...................................   Passed    1.97 sec
+        Start 130: MetaInfoDescription_test
+345/712 Test #269: XMLFile_test .....................................   Passed    1.98 sec
+        Start 246: ProtXMLFile_test
+346/712 Test #194: InspectOutfile_test ..............................   Passed    2.00 sec
+        Start 400: CompleteLinkage_test
+347/712 Test #161: Bzip2Ifstream_test ...............................   Passed    1.99 sec
+        Start  27: JavaInfo_test
+348/712 Test  #36: ClusteringGrid_test ..............................   Passed    1.96 sec
+        Start 201: MascotGenericFile_test
+349/712 Test #460: SequenceCoverage_test ............................   Passed    1.96 sec
+        Start 446: NucleicAcidSpectrumGenerator_test
+350/712 Test #140: PeptideIdentificationList_test ...................   Passed    1.95 sec
+        Start 170: DTAFile_test
+351/712 Test #130: MetaInfoDescription_test .........................   Passed    1.96 sec
+        Start 355: GaussFilter_test
+352/712 Test #246: ProtXMLFile_test .................................   Passed    2.18 sec
+        Start 445: NASequence_test
+353/712 Test #400: CompleteLinkage_test .............................   Passed    1.93 sec
+        Start 466: Weights_test
+354/712 Test  #27: JavaInfo_test ....................................   Passed    1.92 sec
+        Start  71: RangeManager_test
+355/712 Test #446: NucleicAcidSpectrumGenerator_test ................   Passed    2.02 sec
+        Start 232: ParamJSONFile_test
+356/712 Test #201: MascotGenericFile_test ...........................   Passed    2.27 sec
+        Start 103: RichPeak2D_test
+357/712 Test #170: DTAFile_test .....................................   Passed    1.99 sec
+        Start 270: XMLHandler_test
+358/712 Test #355: GaussFilter_test .................................   Passed    2.00 sec
+        Start 208: MzDataValidator_test
+359/712 Test #445: NASequence_test ..................................   Passed    1.79 sec
+        Start 447: DigestionEnzymeDataProvider_test
+360/712 Test #466: Weights_test .....................................   Passed    1.99 sec
+        Start 376: NLargest_test
+361/712 Test  #71: RangeManager_test ................................   Passed    1.99 sec
+        Start 569: FragmentIndex_test
+362/712 Test #232: ParamJSONFile_test ...............................   Passed    1.77 sec
+        Start 193: InspectInfile_test
+363/712 Test #103: RichPeak2D_test ..................................   Passed    2.02 sec
+        Start 349: DataFilters_test
+364/712 Test #270: XMLHandler_test ..................................   Passed    2.07 sec
+        Start  37: CVMappingRule_test
+365/712 Test #208: MzDataValidator_test .............................   Passed    2.11 sec
+        Start 386: SignalToNoiseEstimator_test
+366/712 Test #447: DigestionEnzymeDataProvider_test .................   Passed    2.09 sec
+        Start 204: MRMFeaturePickerFile_test
+367/712 Test #376: NLargest_test ....................................   Passed    2.11 sec
+        Start 279: ZipInputStream_test
+368/712 Test #193: InspectInfile_test ...............................   Passed    2.00 sec
+        Start 285: MSDataAggregatingConsumer_test
+369/712 Test #349: DataFilters_test .................................   Passed    2.01 sec
+        Start  25: Network_test
+370/712 Test  #37: CVMappingRule_test ...............................   Passed    1.99 sec
+        Start 701: MzCalibration_test
+371/712 Test #569: FragmentIndex_test ...............................   Passed    3.22 sec
+        Start 190: IndexedMzMLDecoder_test
+372/712 Test #386: SignalToNoiseEstimator_test ......................   Passed    1.92 sec
+        Start 284: MSDataStoringConsumer_test
+373/712 Test #204: MRMFeaturePickerFile_test ........................   Passed    1.93 sec
+        Start 572: OpenPepXLAlgorithm_test
+374/712 Test #279: ZipInputStream_test ..............................   Passed    1.93 sec
+        Start 205: MsInspectFile_test
+375/712 Test #285: MSDataAggregatingConsumer_test ...................   Passed    1.68 sec
+        Start 172: ExperimentalDesignFile_test
+376/712 Test  #25: Network_test .....................................   Passed    1.70 sec
+        Start 229: OSWFileInference_test
+377/712 Test #701: MzCalibration_test ...............................   Passed    1.70 sec
+        Start  38: CVMappingTerm_test
+378/712 Test #190: IndexedMzMLDecoder_test ..........................   Passed    1.78 sec
+        Start 237: PeakTypeEstimator_test
+379/712 Test #284: MSDataStoringConsumer_test .......................   Passed    1.96 sec
+        Start 698: Ms2SpectrumStats_test
+380/712 Test #205: MsInspectFile_test ...............................   Passed    1.98 sec
+        Start 281: MSDataCachedConsumer_test
+381/712 Test #172: ExperimentalDesignFile_test ......................   Passed    1.96 sec
+        Start 356: GaussFilterAlgorithm_test
+382/712 Test #572: OpenPepXLAlgorithm_test ..........................   Passed    2.75 sec
+        Start 210: ThermoRawFileMetadata_test
+383/712 Test #229: OSWFileInference_test ............................   Passed    2.16 sec
+        Start 231: ParamCTDFile_test
+384/712 Test  #38: CVMappingTerm_test ...............................   Passed    1.95 sec
+        Start 380: SplinePackage_test
+385/712 Test #237: PeakTypeEstimator_test ...........................   Passed    2.07 sec
+        Start 225: OMSFile_test
+386/712 Test #698: Ms2SpectrumStats_test ............................   Passed    1.96 sec
+        Start 479: CometModification_test
+387/712 Test #281: MSDataCachedConsumer_test ........................   Passed    2.04 sec
+        Start 500: FeatureGroupingAlgorithm_test
+388/712 Test #356: GaussFilterAlgorithm_test ........................   Passed    1.70 sec
+        Start 323: GammaDistributionFitter_test
+389/712 Test #210: ThermoRawFileMetadata_test .......................   Passed    1.85 sec
+        Start 369: MultiplexFiltering_test
+390/712 Test #231: ParamCTDFile_test ................................   Passed    1.77 sec
+        Start 486: ConsensusIDAlgorithmWorst_test
+391/712 Test #380: SplinePackage_test ...............................   Passed    1.99 sec
+        Start 366: MultiplexDeltaMassesGenerator_test
+392/712 Test #225: OMSFile_test .....................................   Passed    2.12 sec
+        Start 274: XTandemXMLFile_test
+393/712 Test #479: CometModification_test ...........................   Passed    2.22 sec
+        Start  20: UniqueIdIndexer_test
+394/712 Test #500: FeatureGroupingAlgorithm_test ....................   Passed    1.78 sec
+        Start 188: IdXMLFile_test
+395/712 Test #323: GammaDistributionFitter_test .....................   Passed    1.97 sec
+        Start  65: MatrixEigen_test
+396/712 Test #486: ConsensusIDAlgorithmWorst_test ...................   Passed    1.95 sec
+        Start 228: OSWFile_test
+397/712 Test #369: MultiplexFiltering_test ..........................   Passed    2.29 sec
+        Start 222: MzXMLFile_test
+398/712 Test #366: MultiplexDeltaMassesGenerator_test ...............   Passed    2.17 sec
+        Start 266: UnimodXMLFile_test
+399/712 Test #274: XTandemXMLFile_test ..............................   Passed    1.97 sec
+        Start 458: RibonucleotideDataProvider_test
+400/712 Test  #20: UniqueIdIndexer_test .............................   Passed    1.86 sec
+        Start 227: OMSSAXMLFile_test
+401/712 Test #188: IdXMLFile_test ...................................   Passed    2.21 sec
+        Start 325: GumbelDistributionFitter_test
+402/712 Test  #65: MatrixEigen_test .................................   Passed    1.97 sec
+        Start 475: BaseSuperimposer_test
+403/712 Test #228: OSWFile_test .....................................   Passed    1.72 sec
+        Start 362: MorphologicalFilter_test
+404/712 Test #266: UnimodXMLFile_test ...............................   Passed    2.12 sec
+        Start 462: SpectrumAnnotator_test
+405/712 Test #222: MzXMLFile_test ...................................   Passed    2.57 sec
+        Start 153: SpectrumSettings_test
+406/712 Test #458: RibonucleotideDataProvider_test ..................   Passed    1.88 sec
+        Start 318: BSpline2d_test
+407/712 Test #227: OMSSAXMLFile_test ................................   Passed    2.21 sec
+        Start 556: MassDecompositionAlgorithm_test
+408/712 Test #325: GumbelDistributionFitter_test ....................   Passed    1.70 sec
+        Start 487: ConsensusMapNormalizerAlgorithmThreshold_test
+409/712 Test #475: BaseSuperimposer_test ............................   Passed    1.94 sec
+        Start 546: ChromatogramProcessor_test
+410/712 Test #362: MorphologicalFilter_test .........................   Passed    2.11 sec
+        Start 319: BSplineSmoothingSpline_test
+411/712 Test #462: SpectrumAnnotator_test ...........................   Passed    1.48 sec
+        Start 643: TransitionTSVFile_test
+412/712 Test #153: SpectrumSettings_test ............................   Passed    1.69 sec
+        Start 435: IsotopeDistribution_test
+413/712 Test #318: BSpline2d_test ...................................   Passed    1.92 sec
+        Start 480: ConfidenceScoring_test
+414/712 Test #487: ConsensusMapNormalizerAlgorithmThreshold_test ....   Passed    2.75 sec
+        Start 142: Product_test
+415/712 Test #546: ChromatogramProcessor_test .......................   Passed    2.92 sec
+        Start 464: TheoreticalSpectrumGeneratorXLMS_test
+416/712 Test #556: MassDecompositionAlgorithm_test ..................   Passed    3.31 sec
+        Start 586: SimpleSVM_test
+417/712 Test #319: BSplineSmoothingSpline_test ......................   Passed    2.75 sec
+        Start 316: BasicStatistics_test
+418/712 Test #435: IsotopeDistribution_test .........................   Passed    2.75 sec
+        Start 146: IdentifierMSRunMapper_test
+419/712 Test #480: ConfidenceScoring_test ...........................   Passed    2.75 sec
+        Start 481: ConsensusIDAlgorithmAverage_test
+420/712 Test #643: TransitionTSVFile_test ...........................   Passed    3.33 sec
+        Start 233: ParamXMLFile_test
+421/712 Test #142: Product_test .....................................   Passed    1.71 sec
+        Start 501: PipEchoAlgorithm_test
+422/712 Test #464: TheoreticalSpectrumGeneratorXLMS_test ............   Passed    1.71 sec
+        Start 498: FeatureGroupingAlgorithmQT_test
+423/712 Test #316: BasicStatistics_test .............................   Passed    1.95 sec
+        Start 421: ElementDB_test
+424/712 Test #146: IdentifierMSRunMapper_test .......................   Passed    1.71 sec
+        Start 374: MultiplexSatelliteProfile_test
+425/712 Test #586: SimpleSVM_test ...................................   Passed    2.51 sec
+        Start 703: PSMExplainedIonCurrent_test
+426/712 Test #481: ConsensusIDAlgorithmAverage_test .................   Passed    2.77 sec
+        Start 183: GNPSMetaValueFile_test
+427/712 Test #233: ParamXMLFile_test ................................   Passed    2.99 sec
+        Start 196: MRMFeatureQCFile_test
+428/712 Test #501: PipEchoAlgorithm_test ............................   Passed    3.04 sec
+        Start  45: DIntervalBase_test
+429/712 Test #498: FeatureGroupingAlgorithmQT_test ..................   Passed    3.02 sec
+        Start 348: Biosaur2Algorithm_test
+430/712 Test #421: ElementDB_test ...................................   Passed    2.76 sec
+        Start  70: QTCluster_test
+431/712 Test #374: MultiplexSatelliteProfile_test ...................   Passed    2.76 sec
+        Start 291: SiriusFragmentAnnotation_test
+432/712 Test #703: PSMExplainedIonCurrent_test ......................   Passed    3.15 sec
+        Start 399: ClusterHierarchical_test
+433/712 Test #183: GNPSMetaValueFile_test ...........................   Passed    2.22 sec
+        Start 247: QcMLFile_test
+434/712 Test #196: MRMFeatureQCFile_test ............................   Passed    2.22 sec
+        Start 147: Sample_test
+435/712 Test  #45: DIntervalBase_test ...............................   Passed    2.35 sec
+        Start 126: Instrument_test
+436/712 Test #348: Biosaur2Algorithm_test ...........................   Passed    2.38 sec
+        Start 248: SVOutStream_test
+437/712 Test  #70: QTCluster_test ...................................   Passed    2.38 sec
+        Start 520: IsobaricChannelExtractor_test
+438/712 Test #291: SiriusFragmentAnnotation_test ....................   Passed    2.36 sec
+        Start 195: KroenikFile_test
+439/712 Test #399: ClusterHierarchical_test .........................   Passed    3.38 sec
+        Start 132: MetaInfoInterfaceUtils_test
+440/712 Test #247: QcMLFile_test ....................................   Passed    3.55 sec
+        Start 499: FeatureGroupingAlgorithmUnlabeled_test
+441/712 Test #147: Sample_test ......................................   Passed    3.58 sec
+        Start 277: ZipArchiveFile_test
+442/712 Test #126: Instrument_test ..................................   Passed    3.54 sec
+        Start 160: MSNumpressCoder_test
+443/712 Test #248: SVOutStream_test .................................   Passed    3.64 sec
+        Start  42: Compomer_test
+444/712 Test #195: KroenikFile_test .................................   Passed    3.84 sec
+        Start 107: AcquisitionInfo_test
+445/712 Test #520: IsobaricChannelExtractor_test ....................   Passed    4.48 sec
+        Start 365: MultiplexDeltaMasses_test
+446/712 Test #132: MetaInfoInterfaceUtils_test ......................   Passed    2.95 sec
+        Start 290: MRMFeatureAccessOpenMS_test
+447/712 Test #499: FeatureGroupingAlgorithmUnlabeled_test ...........   Passed    2.87 sec
+        Start  44: DBoundingBox_test
+448/712 Test #277: ZipArchiveFile_test ..............................   Passed    2.92 sec
+        Start 485: ConsensusIDAlgorithmRanks_test
+449/712 Test #160: MSNumpressCoder_test .............................   Passed    3.10 sec
+        Start 306: ParquetFile_test
+450/712 Test  #42: Compomer_test ....................................   Passed    2.92 sec
+        Start 398: ClusterFunctor_test
+451/712 Test #107: AcquisitionInfo_test .............................   Passed    2.54 sec
+        Start  43: ConvexHull2D_test
+452/712 Test #365: MultiplexDeltaMasses_test ........................   Passed    2.52 sec
+        Start 174: FeatureFileOptions_test
+453/712 Test #290: MRMFeatureAccessOpenMS_test ......................   Passed    2.59 sec
+        Start 230: PTMXMLFile_test
+454/712 Test  #44: DBoundingBox_test ................................   Passed    2.62 sec
+        Start 378: PrecursorCorrection_test
+455/712 Test #485: ConsensusIDAlgorithmRanks_test ...................   Passed    2.81 sec
+        Start 141: Precursor_test
+456/712 Test #306: ParquetFile_test .................................   Passed    2.63 sec
+        Start  64: Matrix_test
+457/712 Test #398: ClusterFunctor_test ..............................   Passed    2.65 sec
+        Start 347: StatisticFunctions_test
+458/712 Test  #43: ConvexHull2D_test ................................   Passed    2.63 sec
+        Start 373: MultiplexSatelliteCentroided_test
+459/712 Test #174: FeatureFileOptions_test ..........................   Passed    2.57 sec
+        Start 276: Libzip_test
+460/712 Test #230: PTMXMLFile_test ..................................   Passed    2.64 sec
+        Start 267: UniProtXMLFile_test
+461/712 Test #378: PrecursorCorrection_test .........................   Passed    3.11 sec
+        Start 265: TransformationXMLFile_test
+462/712 Test #141: Precursor_test ...................................   Passed    2.92 sec
+        Start 286: SpectrumAccessQuadMZTransforming_test
+463/712 Test  #64: Matrix_test ......................................   Passed    2.86 sec
+        Start 305: XIPMParquetFile_test
+464/712 Test #347: StatisticFunctions_test ..........................   Passed    2.79 sec
+        Start 171: EDTAFile_test
+465/712 Test #373: MultiplexSatelliteCentroided_test ................   Passed    2.81 sec
+        Start 304: XIPMParquetConsumer_test
+466/712 Test #276: Libzip_test ......................................   Passed    2.88 sec
+        Start 106: SpectrumRangeManager_test
+467/712 Test #267: UniProtXMLFile_test ..............................   Passed    3.00 sec
+        Start 379: SplineInterpolatedPeaks_test
+468/712 Test #265: TransformationXMLFile_test .......................   Passed    2.47 sec
+        Start 202: MascotRemoteQuery_test
+469/712 Test #286: SpectrumAccessQuadMZTransforming_test ............   Passed    2.52 sec
+        Start 217: MzMLValidator_test
+470/712 Test #305: XIPMParquetFile_test .............................   Passed    2.54 sec
+        Start 102: RangeUtils_test
+471/712 Test #171: EDTAFile_test ....................................   Passed    2.50 sec
+        Start 263: ToolDescriptionFile_test
+472/712 Test #304: XIPMParquetConsumer_test .........................   Passed    2.65 sec
+        Start  41: ChargePair_test
+473/712 Test #106: SpectrumRangeManager_test ........................   Passed    2.72 sec
+        Start 262: TargetedDataFileLoader_test
+474/712 Test #379: SplineInterpolatedPeaks_test .....................   Passed    2.58 sec
+        Start 189: IndentedStream_test
+475/712 Test #202: MascotRemoteQuery_test ...........................   Passed    2.63 sec
+        Start 510: IDDecoyProbability_test
+476/712 Test #217: MzMLValidator_test ...............................   Passed    2.58 sec
+        Start 131: MetaInfoInterface_test
+477/712 Test #102: RangeUtils_test ..................................   Passed    2.61 sec
+        Start  40: CVReference_test
+478/712 Test #263: ToolDescriptionFile_test .........................   Passed    2.64 sec
+        Start 254: SqliteConnector_test
+479/712 Test  #41: ChargePair_test ..................................   Passed    2.72 sec
+        Start 255: MRMFile_test
+480/712 Test #262: TargetedDataFileLoader_test ......................   Passed    2.66 sec
+        Start 610: FeatureFinderAlgorithmPicked_test
+481/712 Test #189: IndentedStream_test ..............................   Passed    2.57 sec
+        Start 538: LabeledPairFinder_test
+482/712 Test #510: IDDecoyProbability_test ..........................   Passed    2.58 sec
+        Start 573: OPXLHelper_test
+483/712 Test #131: MetaInfoInterface_test ...........................   Passed    2.53 sec
+        Start 289: SpectrumAccessOpenMSInMemory_test
+484/712 Test  #40: CVReference_test .................................   Passed    2.51 sec
+        Start 541: MRMFeaturePicker_test
+485/712 Test #254: SqliteConnector_test .............................   Passed    2.57 sec
+        Start 363: ModifiedSincSmoother_test
+486/712 Test #255: MRMFile_test .....................................   Passed    2.49 sec
+        Start 209: MzIdentMLValidator_test
+487/712 Test #538: LabeledPairFinder_test ...........................   Passed    3.08 sec
+        Start 372: MultiplexIsotopicPeakPattern_test
+488/712 Test #289: SpectrumAccessOpenMSInMemory_test ................   Passed    2.64 sec
+        Start 542: MRMMapping_test
+489/712 Test #610: FeatureFinderAlgorithmPicked_test ................   Passed    3.76 sec
+        Start 187: IBSpectraFile_test
+490/712 Test #541: MRMFeaturePicker_test ............................   Passed    2.51 sec
+        Start 307: ProteinIdentificationArrowIO_test
+491/712 Test #573: OPXLHelper_test ..................................   Passed    4.57 sec
+        Start 360: LowessSmoothing_test
+492/712 Test #363: ModifiedSincSmoother_test ........................   Passed    5.57 sec
+        Start 226: OMSSACSVFile_test
+493/712 Test #209: MzIdentMLValidator_test ..........................   Passed    5.31 sec
+        Start 377: Normalizer_test
+494/712 Test #372: MultiplexIsotopicPeakPattern_test ................   Passed    4.22 sec
+        Start 543: MRMChromHandler_test
+495/712 Test #542: MRMMapping_test ..................................   Passed    4.21 sec
+        Start 367: MultiplexFilteredMSExperiment_test
+496/712 Test #307: ProteinIdentificationArrowIO_test ................   Passed    4.54 sec
+        Start 524: IsobaricQuantifier_test
+497/712 Test #360: LowessSmoothing_test .............................   Passed    3.21 sec
+        Start  19: UniqueIdGenerator_test
+498/712 Test #187: IBSpectraFile_test ...............................   Passed    4.70 sec
+        Start 521: IsobaricIsotopeCorrector_test
+499/712 Test #226: OMSSACSVFile_test ................................   Passed    1.57 sec
+        Start 522: IsobaricNormalizer_test
+500/712 Test #377: Normalizer_test ..................................   Passed    1.61 sec
+        Start 273: XTandemInfile_test
+501/712 Test #543: MRMChromHandler_test .............................   Passed    1.58 sec
+        Start 539: TargetedExperiment_test
+502/712 Test #367: MultiplexFilteredMSExperiment_test ...............   Passed    1.58 sec
+        Start 359: LinearResamplerAlign_test
+503/712 Test #524: IsobaricQuantifier_test ..........................   Passed    1.68 sec
+        Start 645: ChromatogramExtractor_test
+504/712 Test  #19: UniqueIdGenerator_test ...........................   Passed    1.68 sec
+        Start 597: XFDRAlgorithm_test
+505/712 Test #521: IsobaricIsotopeCorrector_test ....................   Passed    2.11 sec
+        Start 640: MRMDecoy_test
+506/712 Test #522: IsobaricNormalizer_test ..........................   Passed    5.10 sec
+        Start 624: PeakPickerHiRes_test
+507/712 Test #359: LinearResamplerAlign_test ........................   Passed    4.87 sec
+        Start 628: SeedListGenerator_test
+508/712 Test #273: XTandemInfile_test ...............................   Passed    5.28 sec
+        Start 200: MSstatsFile_test
+509/712 Test #539: TargetedExperiment_test ..........................   Passed    5.33 sec
+        Start 220: MzTabM_test
+510/712 Test #200: MSstatsFile_test .................................   Passed    1.51 sec
+        Start 561: ModifiedPeptideGenerator_test
+511/712 Test #640: MRMDecoy_test ....................................   Passed    5.47 sec
+        Start 224: TraMLValidator_test
+512/712 Test #597: XFDRAlgorithm_test ...............................   Passed    6.30 sec
+        Start 697: Ms2IdentificationRate_test
+513/712 Test #624: PeakPickerHiRes_test .............................   Passed    2.74 sec
+514/712 Test #220: MzTabM_test ......................................   Passed    2.10 sec
+        Start 256: ThermoRawFile_test
+        Start 627: PeakWidthEstimator_test
+515/712 Test #628: SeedListGenerator_test ...........................   Passed    2.41 sec
+        Start 589: PercolatorFeatureSetHelper_test
+516/712 Test #645: ChromatogramExtractor_test .......................   Passed    6.79 sec
+        Start 280: ZipRandomAccessFile_test
+517/712 Test #561: ModifiedPeptideGenerator_test ....................   Passed    1.12 sec
+        Start 303: XIMParquetFile_test
+518/712 Test #224: TraMLValidator_test ..............................   Passed    2.78 sec
+        Start 275: ZlibCompression_test
+519/712 Test #697: Ms2IdentificationRate_test .......................   Passed    2.65 sec
+        Start 545: DIAChromHandler_test
+520/712 Test #256: ThermoRawFile_test ...............................   Passed    2.61 sec
+        Start 626: PeakPickerIM_test
+521/712 Test #280: ZipRandomAccessFile_test .........................   Passed    3.04 sec
+        Start 302: XICParquetFile_test
+522/712 Test #627: PeakWidthEstimator_test ..........................   Passed    3.38 sec
+        Start 634: IMTypes_test
+523/712 Test #303: XIMParquetFile_test ..............................   Passed    3.14 sec
+        Start 251: SequestOutfile_test
+524/712 Test #589: PercolatorFeatureSetHelper_test ..................   Passed    3.45 sec
+        Start 249: SemanticValidator_test
+525/712 Test #275: ZlibCompression_test .............................   Passed    1.78 sec
+        Start 252: SpecArrayFile_test
+526/712 Test #545: DIAChromHandler_test .............................   Passed    1.74 sec
+        Start 250: SequestInfile_test
+527/712 Test #302: XICParquetFile_test ..............................   Passed    1.49 sec
+        Start 537: KDTreeFeatureNode_test
+528/712 Test #626: PeakPickerIM_test ................................   Passed    2.37 sec
+        Start 261: TextFile_test
+529/712 Test #251: SequestOutfile_test ..............................   Passed    1.78 sec
+        Start 536: KDTreeFeatureMaps_test
+530/712 Test #634: IMTypes_test .....................................   Passed    2.25 sec
+        Start 641: MRMIonSeries_test
+531/712 Test #249: SemanticValidator_test ...........................   Passed    2.35 sec
+        Start 186: GzipInputStream_test
+532/712 Test #252: SpecArrayFile_test ...............................   Passed    1.90 sec
+        Start 531: TMTElevenPlexQuantitationMethod_test
+533/712 Test #250: SequestInfile_test ...............................   Passed    1.83 sec
+        Start 214: MzMLSpectrumDecoder_test
+534/712 Test #537: KDTreeFeatureNode_test ...........................   Passed    1.64 sec
+        Start 535: TMTThirtyFivePlexQuantitationMethod_test
+535/712 Test #261: TextFile_test ....................................   Passed    1.58 sec
+        Start 533: TMTEighteenPlexQuantitationMethod_test
+536/712 Test #536: KDTreeFeatureMaps_test ...........................   Passed    1.53 sec
+        Start 523: IsobaricQuantitationMethod_test
+537/712 Test #186: GzipInputStream_test .............................   Passed    1.71 sec
+        Start 549: MapAlignmentAlgorithmKD_test
+538/712 Test #531: TMTElevenPlexQuantitationMethod_test .............   Passed    1.82 sec
+        Start 547: MRMScoring_test
+539/712 Test #641: MRMIonSeries_test ................................   Passed    2.19 sec
+        Start 548: MapAlignmentAlgorithmIdentification_test
+540/712 Test #214: MzMLSpectrumDecoder_test .........................   Passed    1.96 sec
+        Start 105: SpectrumHelper_test
+541/712 Test #535: TMTThirtyFivePlexQuantitationMethod_test .........   Passed    1.83 sec
+        Start 199: MSPGenericFile_test
+542/712 Test #533: TMTEighteenPlexQuantitationMethod_test ...........   Passed    1.81 sec
+        Start 540: TargetedExperimentHelper_test
+543/712 Test #523: IsobaricQuantitationMethod_test ..................   Passed    2.02 sec
+        Start 529: TMTSixPlexQuantitationMethod_test
+544/712 Test #549: MapAlignmentAlgorithmKD_test .....................   Passed    1.65 sec
+        Start 532: TMTSixteenPlexQuantitationMethod_test
+545/712 Test #547: MRMScoring_test ..................................   Passed    1.72 sec
+        Start 551: MapAlignmentAlgorithmTreeGuided_test
+546/712 Test #548: MapAlignmentAlgorithmIdentification_test .........   Passed    1.81 sec
+        Start 525: IsobaricQuantifierStatistics_test
+547/712 Test #105: SpectrumHelper_test ..............................   Passed    1.80 sec
+        Start 104: StandardTypes_test
+548/712 Test #199: MSPGenericFile_test ..............................   Passed    1.99 sec
+        Start 544: DefaultChromHandler_test
+549/712 Test #540: TargetedExperimentHelper_test ....................   Passed    2.35 sec
+        Start 534: TMTThirtyTwoPlexQuantitationMethod_test
+550/712 Test #529: TMTSixPlexQuantitationMethod_test ................   Passed    2.53 sec
+        Start 555: MapAlignmentTransformer_test
+551/712 Test #532: TMTSixteenPlexQuantitationMethod_test ............   Passed    2.46 sec
+        Start 553: MapAlignmentEvaluationAlgorithmRecall_test
+552/712 Test #551: MapAlignmentAlgorithmTreeGuided_test .............   Passed    2.58 sec
+        Start 670: MRMFeatureScoring_test
+553/712 Test #525: IsobaricQuantifierStatistics_test ................   Passed    2.67 sec
+        Start 518: IsotopeLabelingMDVs_test
+554/712 Test #104: StandardTypes_test ...............................   Passed    2.93 sec
+        Start 554: MapAlignmentEvaluationAlgorithm_test
+555/712 Test #544: DefaultChromHandler_test .........................   Passed    3.07 sec
+        Start 666: OpenSwathDataAccessHelper_test
+556/712 Test #534: TMTThirtyTwoPlexQuantitationMethod_test ..........   Passed    2.83 sec
+        Start 260: SwathWindowLoader_test
+557/712 Test #555: MapAlignmentTransformer_test .....................   Passed    2.59 sec
+        Start 660: DIAScoring_test
+558/712 Test #553: MapAlignmentEvaluationAlgorithmRecall_test .......   Passed    2.60 sec
+        Start 368: MultiplexFilteredPeak_test
+559/712 Test #518: IsotopeLabelingMDVs_test .........................   Passed    2.65 sec
+        Start 667: CalibrationWorkflow_test
+560/712 Test #554: MapAlignmentEvaluationAlgorithm_test .............   Passed    2.80 sec
+        Start 580: NuXLReport_test
+561/712 Test #670: MRMFeatureScoring_test ...........................   Passed    3.82 sec
+        Start 583: NuXLParameterParsing_test
+562/712 Test #260: SwathWindowLoader_test ...........................   Passed    2.70 sec
+        Start 646: ChromatogramExtractorAlgorithm_test
+563/712 Test #666: OpenSwathDataAccessHelper_test ...................   Passed    3.02 sec
+        Start 696: MissedCleavages_test
+564/712 Test #368: MultiplexFilteredPeak_test .......................   Passed    2.74 sec
+        Start 704: QCBase_test
+565/712 Test #660: DIAScoring_test ..................................   Passed    3.17 sec
+        Start  18: Multithreading_test
+566/712 Test #667: CalibrationWorkflow_test .........................   Passed    3.27 sec
+        Start 552: MapAlignmentEvaluationAlgorithmPrecision_test
+567/712 Test #580: NuXLReport_test ..................................   Passed    2.90 sec
+        Start 633: IMDataArrayUtils_test
+568/712 Test #696: MissedCleavages_test .............................   Passed    2.70 sec
+        Start 221: MzTabMFile_test
+569/712 Test #583: NuXLParameterParsing_test ........................   Passed    3.18 sec
+        Start 223: NoopMSDataConsumer_test
+570/712 Test #704: QCBase_test ......................................   Passed    2.43 sec
+        Start 658: MRMTransitionGroupPicker_test
+571/712 Test #646: ChromatogramExtractorAlgorithm_test ..............   Passed    3.29 sec
+        Start 631: FAIMSHelper_test
+572/712 Test  #18: Multithreading_test ..............................   Passed    2.75 sec
+        Start 632: IMDataConverter_test
+573/712 Test #552: MapAlignmentEvaluationAlgorithmPrecision_test ....   Passed    1.97 sec
+        Start 219: MzTabFile_test
+574/712 Test #633: IMDataArrayUtils_test ............................   Passed    2.85 sec
+        Start 516: IonIdentityMolecularNetworking_test
+575/712 Test #223: NoopMSDataConsumer_test ..........................   Passed    2.49 sec
+        Start 528: ItraqEightPlexQuantitationMethod_test
+576/712 Test #221: MzTabMFile_test ..................................   Passed    2.84 sec
+        Start 668: MasstraceCorrelator_test
+577/712 Test #658: MRMTransitionGroupPicker_test ....................   Passed    2.64 sec
+        Start 527: ItraqFourPlexQuantitationMethod_test
+578/712 Test #631: FAIMSHelper_test .................................   Passed    3.41 sec
+        Start 588: StablePairFinder_test
+579/712 Test #632: IMDataConverter_test .............................   Passed    3.43 sec
+        Start 530: TMTTenPlexQuantitationMethod_test
+580/712 Test #219: MzTabFile_test ...................................   Passed    3.11 sec
+        Start 519: IncludeExcludeTarget_test
+581/712 Test #516: IonIdentityMolecularNetworking_test ..............   Passed    2.47 sec
+        Start 511: IDMapper_test
+582/712 Test #528: ItraqEightPlexQuantitationMethod_test ............   Passed    2.61 sec
+        Start 642: MRMRTNormalizer_test
+583/712 Test #668: MasstraceCorrelator_test .........................   Passed    2.55 sec
+        Start 581: NuXLFragmentAdductDefinition_test
+584/712 Test #527: ItraqFourPlexQuantitationMethod_test .............   Passed    2.71 sec
+        Start 659: DIAHelper_test
+585/712 Test #588: StablePairFinder_test ............................   Passed    2.54 sec
+        Start 690: Contaminants_test
+586/712 Test #530: TMTTenPlexQuantitationMethod_test ................   Passed    2.50 sec
+        Start 662: OpenSwathMRMFeatureAccessOpenMS_test
+587/712 Test #519: IncludeExcludeTarget_test ........................   Passed    2.79 sec
+        Start 656: PeakPickerChromatogram_test
+588/712 Test #642: MRMRTNormalizer_test .............................   Passed    2.88 sec
+        Start 657: PeakPickerMobilogram_test
+589/712 Test #581: NuXLFragmentAdductDefinition_test ................   Passed    2.85 sec
+        Start 625: PeakPickerIterative_test
+590/712 Test #511: IDMapper_test ....................................   Passed    3.60 sec
+        Start 635: IonImage_test
+591/712 Test #659: DIAHelper_test ...................................   Passed    2.97 sec
+        Start 661: DIAPrescoring_test
+592/712 Test #690: Contaminants_test ................................   Passed    2.63 sec
+        Start 695: IdentificationSummary_test
+593/712 Test #662: OpenSwathMRMFeatureAccessOpenMS_test .............   Passed    2.68 sec
+        Start 623: ModelDescription_test
+594/712 Test #656: PeakPickerChromatogram_test ......................   Passed    2.58 sec
+        Start 512: IDMergerAlgorithm_test
+595/712 Test #657: PeakPickerMobilogram_test ........................   Passed    2.18 sec
+        Start 585: SimpleSearchEngineAlgorithm_test
+596/712 Test #625: PeakPickerIterative_test .........................   Passed    2.53 sec
+        Start 691: DBSuitability_test
+597/712 Test #635: IonImage_test ....................................   Passed    2.88 sec
+        Start 654: OpenSwathWorkflowScheduler_test
+598/712 Test #661: DIAPrescoring_test ...............................   Passed    2.67 sec
+        Start 566: PeptideProteinResolution_test
+599/712 Test #695: IdentificationSummary_test .......................   Passed    2.71 sec
+        Start 630: EmgScoring_test
+600/712 Test #623: ModelDescription_test ............................   Passed    2.71 sec
+        Start 562: NeedlemanWunsch_test
+601/712 Test #512: IDMergerAlgorithm_test ...........................   Passed    2.92 sec
+        Start 693: FragmentMassError_test
+602/712 Test #691: DBSuitability_test ...............................   Passed    2.74 sec
+        Start 694: FWHM_test
+603/712 Test #585: SimpleSearchEngineAlgorithm_test .................   Passed    3.59 sec
+        Start 560: MetaboliteSpectralMatching_test
+604/712 Test #654: OpenSwathWorkflowScheduler_test ..................   Passed    3.00 sec
+        Start 655: PeakIntegrator_test
+605/712 Test #630: EmgScoring_test ..................................   Passed    3.09 sec
+        Start 517: DDAWorkflowCommons_test
+606/712 Test #566: PeptideProteinResolution_test ....................   Passed    3.80 sec
+        Start 692: FeatureSummary_test
+607/712 Test #562: NeedlemanWunsch_test .............................   Passed    3.21 sec
+        Start 653: OpenSwathScores_test
+608/712 Test #693: FragmentMassError_test ...........................   Passed    3.66 sec
+        Start 557: MassDecomposition_test
+609/712 Test #694: FWHM_test ........................................   Passed    3.02 sec
+        Start 515: ILPDCWrapper_test
+610/712 Test #560: MetaboliteSpectralMatching_test ..................   Passed    3.22 sec
+        Start 611: FeatureFinderIdentificationAlgorithm_test
+611/712 Test #655: PeakIntegrator_test ..............................   Passed    3.08 sec
+        Start 564: PeptideIndexing_test
+612/712 Test #517: DDAWorkflowCommons_test ..........................   Passed    2.63 sec
+        Start 604: ElutionModelFitter_test
+613/712 Test #692: FeatureSummary_test ..............................   Passed    2.95 sec
+        Start 613: Fitter1D_test
+614/712 Test #653: OpenSwathScores_test .............................   Passed    3.04 sec
+        Start 526: ItraqConstants_test
+615/712 Test #557: MassDecomposition_test ...........................   Passed    2.51 sec
+        Start  17: LogStream_test
+616/712 Test #515: ILPDCWrapper_test ................................   Passed    2.63 sec
+        Start 582: NuXLModificationsGenerator_test
+617/712 Test #611: FeatureFinderIdentificationAlgorithm_test ........   Passed    2.67 sec
+        Start 600: BaseModel_test
+618/712 Test #613: Fitter1D_test ....................................   Passed    2.91 sec
+        Start 663: SpectrumAddition_test
+619/712 Test #604: ElutionModelFitter_test ..........................   Passed    3.62 sec
+        Start 579: ReactionMonitoringTransition_test
+620/712 Test #564: PeptideIndexing_test .............................   Passed    3.92 sec
+        Start 563: NeighborSeq_test
+621/712 Test #526: ItraqConstants_test ..............................   Passed    2.96 sec
+        Start 590: TransformationDescription_test
+622/712 Test  #17: LogStream_test ...................................   Passed    3.10 sec
+        Start 577: PrecursorPurity_test
+623/712 Test #600: BaseModel_test ...................................   Passed    2.77 sec
+        Start 594: TransformationModelLowess_test
+624/712 Test #582: NuXLModificationsGenerator_test ..................   Passed    3.49 sec
+        Start 673: MRMFeatureFilter_test
+625/712 Test #663: SpectrumAddition_test ............................   Passed    1.93 sec
+        Start 682: CachedMzML_test
+626/712 Test #579: ReactionMonitoringTransition_test ................   Passed    2.12 sec
+        Start 685: OpenSwathOSWParquetReader_test
+627/712 Test #563: NeighborSeq_test .................................   Passed    2.54 sec
+        Start 575: PoseClusteringAffineSuperimposer_test
+628/712 Test #590: TransformationDescription_test ...................   Passed    2.67 sec
+        Start 599: ConsoleUtils_test
+629/712 Test #594: TransformationModelLowess_test ...................   Passed    2.66 sec
+        Start 603: EGHTraceFitter_test
+630/712 Test #577: PrecursorPurity_test .............................   Passed    3.26 sec
+        Start 571: MorpheusScore_test
+631/712 Test #673: MRMFeatureFilter_test ............................   Passed    2.81 sec
+        Start 595: TransformationModelInterpolated_test
+632/712 Test #575: PoseClusteringAffineSuperimposer_test ............   Passed    2.75 sec
+        Start 605: EmgFitter1D_test
+633/712 Test #685: OpenSwathOSWParquetReader_test ...................   Passed    3.25 sec
+        Start 689: OpenSwathParquetExporter_test
+634/712 Test #599: ConsoleUtils_test ................................   Passed    2.89 sec
+        Start 598: XQuestScores_test
+635/712 Test #682: CachedMzML_test ..................................   Passed    3.99 sec
+        Start 621: LevMarqFitter1D_test
+636/712 Test #603: EGHTraceFitter_test ..............................   Passed    2.42 sec
+        Start 596: TransformationModelLinear_test
+637/712 Test #571: MorpheusScore_test ...............................   Passed    2.80 sec
+        Start 592: TransformationModelDefaults_test
+638/712 Test #595: TransformationModelInterpolated_test .............   Passed    2.88 sec
+        Start 565: PeptideAndProteinQuant_test
+639/712 Test #605: EmgFitter1D_test .................................   Passed    2.12 sec
+        Start 665: OpenSwathSpectrumAccessOpenMS_test
+640/712 Test #689: OpenSwathParquetExporter_test ....................   Passed    2.35 sec
+        Start 570: HyperScore_test
+641/712 Test #598: XQuestScores_test ................................   Passed    2.46 sec
+        Start 669: MRMBatchFeatureSelector_test
+642/712 Test #621: LevMarqFitter1D_test .............................   Passed    2.69 sec
+        Start 606: EmgModel_test
+643/712 Test #596: TransformationModelLinear_test ...................   Passed    2.55 sec
+        Start 567: PeakGroup_test
+644/712 Test #592: TransformationModelDefaults_test .................   Passed    2.61 sec
+        Start 574: OPXLSpectrumProcessingAlgorithms_test
+645/712 Test #665: OpenSwathSpectrumAccessOpenMS_test ...............   Passed    2.58 sec
+        Start 622: MaxLikeliFitter1D_test
+646/712 Test #565: PeptideAndProteinQuant_test ......................   Passed    3.13 sec
+        Start 607: ExtendedIsotopeFitter1D_test
+647/712 Test #570: HyperScore_test ..................................   Passed    2.89 sec
+        Start 684: TransitionParquetFile_test
+648/712 Test #669: MRMBatchFeatureSelector_test .....................   Passed    2.86 sec
+        Start 620: IsotopeModel_test
+649/712 Test #606: EmgModel_test ....................................   Passed    2.92 sec
+        Start 218: MzTab_test
+650/712 Test #567: PeakGroup_test ...................................   Passed    2.83 sec
+        Start 707: TIC_test
+651/712 Test #574: OPXLSpectrumProcessingAlgorithms_test ............   Passed    2.71 sec
+        Start 652: OpenSwathScoring_test
+652/712 Test #622: MaxLikeliFitter1D_test ...........................   Passed    2.53 sec
+        Start 617: IDConflictResolverAlgorithm_test
+653/712 Test #607: ExtendedIsotopeFitter1D_test .....................   Passed    2.96 sec
+        Start 638: MSImagingRegion_test
+654/712 Test #620: IsotopeModel_test ................................   Passed    3.00 sec
+        Start 629: TraceFitter_test
+655/712 Test #684: TransitionParquetFile_test .......................   Passed    3.56 sec
+        Start 514: IDScoreSwitcherAlgorithm_test
+656/712 Test #218: MzTab_test .......................................   Passed    3.01 sec
+        Start 683: CachedMzMLHandler_test
+657/712 Test #707: TIC_test .........................................   Passed    3.03 sec
+        Start 609: FeatureFinderAlgorithmPickedHelperStructs_test
+658/712 Test #652: OpenSwathScoring_test ............................   Passed    3.71 sec
+        Start 637: MSImagingExperiment_test
+659/712 Test #638: MSImagingRegion_test .............................   Passed    3.22 sec
+        Start 636: MSImagingGeometry_test
+660/712 Test #617: IDConflictResolverAlgorithm_test .................   Passed    4.03 sec
+        Start 619: IsotopeFitter1D_test
+661/712 Test #629: TraceFitter_test .................................   Passed    2.78 sec
+        Start 513: IDRipper_test
+662/712 Test #514: IDScoreSwitcherAlgorithm_test ....................   Passed    3.06 sec
+        Start 651: TransitionListEvidenceFilter_test
+663/712 Test #609: FeatureFinderAlgorithmPickedHelperStructs_test ...   Passed    3.12 sec
+        Start 578: QTClusterFinder_test
+664/712 Test #637: MSImagingExperiment_test .........................   Passed    2.73 sec
+        Start 705: RTAlignment_test
+665/712 Test #683: CachedMzMLHandler_test ...........................   Passed    4.30 sec
+        Start 576: PoseClusteringShiftSuperimposer_test
+666/712 Test #636: MSImagingGeometry_test ...........................   Passed    2.60 sec
+        Start 688: OpenSwathResultsExporter_test
+667/712 Test #619: IsotopeFitter1D_test .............................   Passed    2.74 sec
+        Start 601: BiGaussFitter1D_test
+668/712 Test #651: TransitionListEvidenceFilter_test ................   Passed    2.98 sec
+        Start 680: SwathQC_test
+669/712 Test #513: IDRipper_test ....................................   Passed    3.62 sec
+        Start 608: ExtendedIsotopeModel_test
+670/712 Test #578: QTClusterFinder_test .............................   Passed    2.85 sec
+        Start 593: TransformationModelBSpline_test
+671/712 Test #705: RTAlignment_test .................................   Passed    2.55 sec
+        Start 602: BiGaussModel_test
+672/712 Test #576: PoseClusteringShiftSuperimposer_test .............   Passed    2.66 sec
+        Start 591: TransformationModel_test
+673/712 Test #688: OpenSwathResultsExporter_test ....................   Passed    2.69 sec
+        Start 568: PScore_test
+674/712 Test #601: BiGaussFitter1D_test .............................   Passed    2.79 sec
+        Start 616: GaussTraceFitter_test
+675/712 Test #608: ExtendedIsotopeModel_test ........................   Passed    2.58 sec
+        Start 706: SpectrumCount_test
+676/712 Test #593: TransformationModelBSpline_test ..................   Passed    2.53 sec
+        Start 644: TransitionPQPFile_test
+677/712 Test #680: SwathQC_test .....................................   Passed    3.12 sec
+        Start 708: CoreDataPath_explicit_override
+678/712 Test #602: BiGaussModel_test ................................   Passed    2.46 sec
+        Start 648: OpenSwathHelper_test
+679/712 Test #591: TransformationModel_test .........................   Passed    2.58 sec
+        Start 650: OpenSwathOSWWriter_test
+680/712 Test #568: PScore_test ......................................   Passed    2.53 sec
+        Start 614: GaussFitter1D_test
+681/712 Test #616: GaussTraceFitter_test ............................   Passed    2.81 sec
+        Start 618: InterpolationModel_test
+682/712 Test #706: SpectrumCount_test ...............................   Passed    2.26 sec
+        Start 615: GaussModel_test
+683/712 Test #644: TransitionPQPFile_test ...........................   Passed    2.87 sec
+        Start 687: OpenSwathMatrixExporter_test
+684/712 Test #708: CoreDataPath_explicit_override ...................   Passed    2.80 sec
+        Start  16: LogConfigHandler_test
+685/712 Test #648: OpenSwathHelper_test .............................   Passed    2.94 sec
+        Start 686: OpenSwathOSWParquetWriter_test
+686/712 Test #650: OpenSwathOSWWriter_test ..........................   Passed    2.80 sec
+        Start 647: PeakMapExtractor_test
+687/712 Test #614: GaussFitter1D_test ...............................   Passed    3.00 sec
+        Start 709: CoreDataPath_invalid_override
+688/712 Test #618: InterpolationModel_test ..........................   Passed    2.79 sec
+        Start  15: VersionInfo_test
+689/712 Test #709: CoreDataPath_invalid_override ....................   Passed    0.50 sec
+        Start 677: PeptidoformInference_test
+690/712 Test #615: GaussModel_test ..................................   Passed    2.70 sec
+        Start 649: OpenSwathLibraryIDNormalizer_test
+691/712 Test #687: OpenSwathMatrixExporter_test .....................   Passed    2.24 sec
+        Start 674: MRMFeatureQC_test
+692/712 Test  #16: LogConfigHandler_test ............................   Passed    2.70 sec
+        Start 678: SpectrumHelpers_test
+693/712 Test #686: OpenSwathOSWParquetWriter_test ...................   Passed    2.67 sec
+        Start 679: StatsHelpers_test
+694/712 Test #647: PeakMapExtractor_test ............................   Passed    2.91 sec
+        Start 681: IonMobilityScoring_test
+695/712 Test  #15: VersionInfo_test .................................   Passed    2.23 sec
+        Start  14: StreamHandler_test
+696/712 Test #677: PeptidoformInference_test ........................   Passed    2.78 sec
+        Start   1: Scoring_test
+697/712 Test   #1: Scoring_test .....................................   Passed    0.02 sec
+        Start   4: DiaHelpers_test
+698/712 Test #649: OpenSwathLibraryIDNormalizer_test ................   Passed    2.67 sec
+        Start   5: SwathMap_test
+699/712 Test   #4: DiaHelpers_test ..................................   Passed    0.06 sec
+        Start   3: TestConvert
+700/712 Test   #3: TestConvert ......................................   Passed    0.02 sec
+        Start   2: Datastructures_test
+701/712 Test   #5: SwathMap_test ....................................   Passed    0.04 sec
+        Start 710: CoreDataPath_exception_retry
+702/712 Test   #2: Datastructures_test ..............................   Passed    0.03 sec
+        Start 711: CoreIdentity_concurrent
+703/712 Test #674: MRMFeatureQC_test ................................   Passed    2.70 sec
+        Start 712: CoreExecutablePath_unicode_and_long
+704/712 Test #710: CoreDataPath_exception_retry .....................   Passed    0.36 sec
+705/712 Test #678: SpectrumHelpers_test .............................   Passed    2.49 sec
+706/712 Test #679: StatsHelpers_test ................................   Passed    2.78 sec
+707/712 Test #681: IonMobilityScoring_test ..........................   Passed    2.63 sec
+708/712 Test  #14: StreamHandler_test ...............................   Passed    2.76 sec
+709/712 Test #711: CoreIdentity_concurrent ..........................   Passed    2.27 sec
+710/712 Test #712: CoreExecutablePath_unicode_and_long ..............   Passed    2.35 sec
+711/712 Test #506: FLASHDeconvAlgorithm_test ........................   Passed  1309.06 sec
+        Start  31: StopWatch_test
+712/712 Test  #31: StopWatch_test ...................................   Passed    0.74 sec
+
+100% tests passed out of 712
+
+Label Time Summary:
+core                    =   5.27 sec*proc (1 test)
+optional-integration    =   5.27 sec*proc (1 test)
+slow                    = 142.87 sec*proc (1 test)
+
+Total Test time (real) = 1309.82 sec

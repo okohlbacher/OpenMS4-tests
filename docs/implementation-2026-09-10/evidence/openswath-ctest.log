@@ -1,0 +1,81 @@
+Test project /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/openswath-build
+      Start  1: MRMTransitionGroupPicker_write_ini
+      Start  2: MRMTransitionGroupPicker_write_ctd
+      Start  3: OpenSwathAnalyzer_write_ini
+      Start  4: OpenSwathAnalyzer_write_ctd
+ 1/38 Test  #3: OpenSwathAnalyzer_write_ini ................   Passed    0.88 sec
+      Start  5: OpenSwathAssayGenerator_write_ini
+ 2/38 Test  #4: OpenSwathAnalyzer_write_ctd ................   Passed    0.89 sec
+      Start  6: OpenSwathAssayGenerator_write_ctd
+ 3/38 Test  #2: MRMTransitionGroupPicker_write_ctd .........   Passed    1.29 sec
+      Start  7: OpenSwathChromatogramExtractor_write_ini
+ 4/38 Test  #1: MRMTransitionGroupPicker_write_ini .........   Passed    1.30 sec
+      Start  8: OpenSwathChromatogramExtractor_write_ctd
+ 5/38 Test  #5: OpenSwathAssayGenerator_write_ini ..........   Passed    0.86 sec
+      Start  9: OpenSwathConfidenceScoring_write_ini
+ 6/38 Test  #6: OpenSwathAssayGenerator_write_ctd ..........   Passed    0.87 sec
+      Start 10: OpenSwathConfidenceScoring_write_ctd
+ 7/38 Test  #7: OpenSwathChromatogramExtractor_write_ini ...   Passed    0.90 sec
+      Start 11: OpenSwathDIAPreScoring_write_ini
+ 8/38 Test  #8: OpenSwathChromatogramExtractor_write_ctd ...   Passed    0.94 sec
+      Start 12: OpenSwathDIAPreScoring_write_ctd
+ 9/38 Test #10: OpenSwathConfidenceScoring_write_ctd .......   Passed    0.87 sec
+      Start 13: OpenSwathDecoyGenerator_write_ini
+10/38 Test  #9: OpenSwathConfidenceScoring_write_ini .......   Passed    0.91 sec
+      Start 14: OpenSwathDecoyGenerator_write_ctd
+11/38 Test #11: OpenSwathDIAPreScoring_write_ini ...........   Passed    0.95 sec
+      Start 15: OpenSwathExport_write_ini
+12/38 Test #12: OpenSwathDIAPreScoring_write_ctd ...........   Passed    0.92 sec
+      Start 16: OpenSwathExport_write_ctd
+13/38 Test #13: OpenSwathDecoyGenerator_write_ini ..........   Passed    0.93 sec
+      Start 17: OpenSwathFeatureXMLToTSV_write_ini
+14/38 Test #14: OpenSwathDecoyGenerator_write_ctd ..........   Passed    0.91 sec
+      Start 18: OpenSwathFeatureXMLToTSV_write_ctd
+15/38 Test #15: OpenSwathExport_write_ini ..................   Passed    0.76 sec
+      Start 19: OpenSwathFileSplitter_write_ini
+16/38 Test #16: OpenSwathExport_write_ctd ..................   Passed    0.76 sec
+      Start 20: OpenSwathFileSplitter_write_ctd
+17/38 Test #17: OpenSwathFeatureXMLToTSV_write_ini .........   Passed    0.74 sec
+      Start 21: OpenSwathInfer_write_ini
+18/38 Test #18: OpenSwathFeatureXMLToTSV_write_ctd .........   Passed    0.76 sec
+      Start 22: OpenSwathInfer_write_ctd
+19/38 Test #20: OpenSwathFileSplitter_write_ctd ............   Passed    0.83 sec
+      Start 23: OpenSwathMzMLFileCacher_write_ini
+20/38 Test #19: OpenSwathFileSplitter_write_ini ............   Passed    0.91 sec
+      Start 24: OpenSwathMzMLFileCacher_write_ctd
+21/38 Test #22: OpenSwathInfer_write_ctd ...................   Passed    0.90 sec
+      Start 25: OpenSwathPeakMapExtractor_write_ini
+22/38 Test #21: OpenSwathInfer_write_ini ...................   Passed    0.96 sec
+      Start 26: OpenSwathPeakMapExtractor_write_ctd
+23/38 Test #24: OpenSwathMzMLFileCacher_write_ctd ..........   Passed    0.82 sec
+      Start 27: OpenSwathPercolatorScoring_write_ini
+24/38 Test #23: OpenSwathMzMLFileCacher_write_ini ..........   Passed    0.96 sec
+      Start 28: OpenSwathPercolatorScoring_write_ctd
+25/38 Test #25: OpenSwathPeakMapExtractor_write_ini ........   Passed    0.80 sec
+      Start 29: OpenSwathRTNormalizer_write_ini
+26/38 Test #26: OpenSwathPeakMapExtractor_write_ctd ........   Passed    0.78 sec
+      Start 30: OpenSwathRTNormalizer_write_ctd
+27/38 Test #27: OpenSwathPercolatorScoring_write_ini .......   Passed    0.75 sec
+      Start 31: OpenSwathRewriteToFeatureXML_write_ini
+28/38 Test #28: OpenSwathPercolatorScoring_write_ctd .......   Passed    0.68 sec
+      Start 32: OpenSwathRewriteToFeatureXML_write_ctd
+29/38 Test #30: OpenSwathRTNormalizer_write_ctd ............   Passed    0.82 sec
+      Start 33: OpenSwathWorkflow_write_ini
+30/38 Test #29: OpenSwathRTNormalizer_write_ini ............   Passed    0.84 sec
+      Start 34: OpenSwathWorkflow_write_ctd
+31/38 Test #32: OpenSwathRewriteToFeatureXML_write_ctd .....   Passed    0.81 sec
+      Start 35: TargetedFileConverter_write_ini
+32/38 Test #31: OpenSwathRewriteToFeatureXML_write_ini .....   Passed    0.82 sec
+      Start 36: TargetedFileConverter_write_ctd
+33/38 Test #33: OpenSwathWorkflow_write_ini ................   Passed    0.80 sec
+      Start 37: TransitionListEvidenceFilter_write_ini
+34/38 Test #34: OpenSwathWorkflow_write_ctd ................   Passed    0.80 sec
+      Start 38: TransitionListEvidenceFilter_write_ctd
+35/38 Test #35: TargetedFileConverter_write_ini ............   Passed    0.73 sec
+36/38 Test #36: TargetedFileConverter_write_ctd ............   Passed    0.72 sec
+37/38 Test #37: TransitionListEvidenceFilter_write_ini .....   Passed    0.72 sec
+38/38 Test #38: TransitionListEvidenceFilter_write_ctd .....   Passed    0.71 sec
+
+100% tests passed out of 38
+
+Total Test time (real) =   8.41 sec

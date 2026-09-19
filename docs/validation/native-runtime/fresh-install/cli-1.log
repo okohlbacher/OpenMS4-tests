@@ -1,0 +1,20 @@
+-- Install configuration: "Debug"
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/libOpenMS_CLI.1.0.0.dylib
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/libOpenMS_CLI.1.dylib
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/libOpenMS_CLI.dylib
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/include
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/include/OpenMS
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/include/OpenMS/APPLICATIONS
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/include/OpenMS/APPLICATIONS/TOPPBase_defs.h
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/include/OpenMS/APPLICATIONS/ParameterInformation.h
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/include/OpenMS/APPLICATIONS/TOPPBase.h
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/include/OpenMS/APPLICATIONS/INIUpdater.h
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/include/OpenMS/APPLICATIONS/ToolHandler.h
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/include/OpenMS/APPLICATIONS/MapAlignerBase.h
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/include/OpenMS/APPLICATIONS/TOPPExternalToolBase.h
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/include/OpenMS/APPLICATIONS/SearchEngineBase.h
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/include/OpenMS/APPLICATIONS/OpenMSCLIConfig.h
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMSCLI/OpenMSCLITargets.cmake
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMSCLI/OpenMSCLITargets-debug.cmake
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMSCLI/OpenMSCLIConfig.cmake
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMSCLI/OpenMSCLIConfigVersion.cmake

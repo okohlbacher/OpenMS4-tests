@@ -1,0 +1,345 @@
+Determination of memory status is not supported on this 
+ platform, measuring for memoryleaks will never fail
+REPAIRED_WHEEL_IMPORTED_WITH_DEVELOPMENT_READS_DENIED
+{"wheel": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/pyopenms-wheel-venv/lib/python3.12/site-packages/pyopenms/__init__.py", "data": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/pyopenms-wheel-venv/lib/python3.12/site-packages/pyopenms/share/OpenMS", "core": {"build_type": "Debug", "class_testing_enabled": true, "cxx_compiler_id": "AppleClang", "cxx_compiler_version": "21.0.0.21000101", "cxx_standard": 23, "dependencies": {"arrow": {"target": "Arrow::arrow_shared", "version": "25.0.0"}, "boost": {"linkage": "shared", "version": "1.90.0"}, "curl": {"version": "8.21.0"}, "eigen": {"version": "5.0.1"}, "openmp": {"version": "5.1"}, "parquet": {"target": "Parquet::parquet_shared", "version": "25.0.0"}}, "features": {"hdf5": false, "onnx": false, "openmp": true, "openswath": true, "opentims": false, "tdl": false, "thermo_raw": false, "wnetalign": false}, "libstdcxx_cxx11_abi": null, "msvc_runtime_library": null, "schema_version": 1, "shared_libs": true, "source_dirty": false, "source_revision": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85", "standard_library": "libc++", "stl_debug": false, "system_name": "Darwin", "system_processor": "arm64", "version": "4.0.0"}}
+============================= test session starts ==============================
+platform darwin -- Python 3.12.9, pytest-9.1.1, pluggy-1.6.0
+rootdir: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/pyopenms-wheel-tests
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collected 5854 items
+
+tests/integration_tests/test_MRMRTNormalizer.py .                        [  0%]
+tests/test_ProForma.py ................................................. [  0%]
+........................                                                 [  1%]
+tests/test_matrix_zerocopy.py ..                                         [  1%]
+tests/test_modification_discovery.py .....                               [  1%]
+tests/unittests/test_AcquisitionInfo.py .                                [  1%]
+tests/unittests/test_BaselineFiltering.py ..                             [  1%]
+tests/unittests/test_BilinearInterpolation.py ...................        [  1%]
+tests/unittests/test_BrukerTimsFile.py ssssssssss                        [  1%]
+tests/unittests/test_ChemistryBindings.py ...........                    [  2%]
+tests/unittests/test_ChromatogramExtractor.py .                          [  2%]
+tests/unittests/test_ChromatogramExtractorAlgorithm.py .                 [  2%]
+tests/unittests/test_Convexhull.py ..                                    [  2%]
+tests/unittests/test_DIAScoring.py .                                     [  2%]
+tests/unittests/test_DRange.py ............                              [  2%]
+tests/unittests/test_DataProcessing.py .....                             [  2%]
+tests/unittests/test_FAIMSHelper.py ......                               [  2%]
+tests/unittests/test_FLASHDeconv.py .................................... [  3%]
+........................................................................ [  4%]
+......                                                                   [  4%]
+tests/unittests/test_FeatureFinderAlgorithmMetaboIdent_df.py ........... [  4%]
+.......................                                                  [  5%]
+tests/unittests/test_FileIO.py ........                                  [  5%]
+tests/unittests/test_FileInfo.py ......                                  [  5%]
+tests/unittests/test_FileTypes.py .......                                [  5%]
+tests/unittests/test_Hash.py ........................................... [  6%]
+....                                                                     [  6%]
+tests/unittests/test_IDMapper.py .......                                 [  6%]
+tests/unittests/test_ISpectrumAccess.py ....                             [  6%]
+tests/unittests/test_ImzMLFile.py .....................                  [  6%]
+tests/unittests/test_ImzMLFile_modes.py .........                        [  6%]
+tests/unittests/test_InstrumentSettings.py .....                         [  7%]
+tests/unittests/test_IonMobilityData.py ...............                  [  7%]
+tests/unittests/test_Isobaric_Quantitation.py .....                      [  7%]
+tests/unittests/test_MRMFeatureFinderScoring.py .                        [  7%]
+tests/unittests/test_MSExperiment_rasterizeRTMZ.py ..............        [  7%]
+tests/unittests/test_MSNumpressCoder.py ............                     [  7%]
+tests/unittests/test_MSSpectrum.py ........................              [  8%]
+tests/unittests/test_MSSpectrum_rasterizeIMFrame.py ............         [  8%]
+tests/unittests/test_Math.py .....                                       [  8%]
+tests/unittests/test_Mobilogram.py .......                               [  8%]
+tests/unittests/test_MultipleTesting.py ................................ [  9%]
+...                                                                      [  9%]
+tests/unittests/test_MzMLConsumer.py .                                   [  9%]
+tests/unittests/test_MzXMLConsumer.py .                                  [  9%]
+tests/unittests/test_OpenSwathDataStructures.py ........                 [  9%]
+tests/unittests/test_PeakMapExtractor.py ..                              [  9%]
+tests/unittests/test_PeptideAndProteinQuant.py ........                  [  9%]
+tests/unittests/test_Percolator.py ...                                   [  9%]
+tests/unittests/test_ProteaseDigestion.py .                              [  9%]
+tests/unittests/test_RankData.py ....                                    [  9%]
+tests/unittests/test_SequenceCoverage.py .....                           [  9%]
+tests/unittests/test_Smoothing.py .....                                  [  9%]
+tests/unittests/test_SpectraFilter.py ............                       [ 10%]
+tests/unittests/test_SpectrumAccessOpenMS.py .                           [ 10%]
+tests/unittests/test_SpectrumRangeManager.py ......                      [ 10%]
+tests/unittests/test_StandardTypes.py .                                  [ 10%]
+tests/unittests/test_StaticMethods.py .................................. [ 10%]
+.................................................                        [ 11%]
+tests/unittests/test_TargetedQuantitation.py .....................       [ 12%]
+tests/unittests/test_ThermoRawFile.py .ssss.                             [ 12%]
+tests/unittests/test_TraML.py ...                                        [ 12%]
+tests/unittests/test_USI.py .                                            [ 12%]
+tests/unittests/test_Utf8StringInput.py .........................        [ 12%]
+tests/unittests/test_XICParquetFile.py ........                          [ 12%]
+tests/unittests/test_XIMParquetFile.py ........                          [ 12%]
+tests/unittests/test_XIPMParquetFile.py ............                     [ 13%]
+tests/unittests/test_api_missing_classes.py ............................ [ 13%]
+.xxx.......x....x...........                                             [ 14%]
+tests/unittests/test_api_missing_enums.py .............................. [ 14%]
+..                                                                       [ 14%]
+tests/unittests/test_api_missing_methods.py ......................XXX..X [ 15%]
+X...X.............................xxxxx....X............................ [ 16%]
+........................................                                 [ 17%]
+tests/unittests/test_api_singletons.py ................                  [ 17%]
+tests/unittests/test_arrow_io_classes.py .............................   [ 17%]
+tests/unittests/test_arrow_zerocopy.py ......................            [ 18%]
+tests/unittests/test_arrow_zerocopy_lifetime.py ..                       [ 18%]
+tests/unittests/test_backward_compatibility.py ...........               [ 18%]
+tests/unittests/test_borrowed_reference_lifetime.py .................... [ 18%]
+...........................................                              [ 19%]
+tests/unittests/test_chaining_semantics.py ...........                   [ 19%]
+tests/unittests/test_consumer_callback_lifetime.py ..................... [ 20%]
+..                                                                       [ 20%]
+tests/unittests/test_copy_constructors.py .............................. [ 20%]
+........................................................................ [ 21%]
+........................................................................ [ 23%]
+........................................................................ [ 24%]
+........................................................................ [ 25%]
+........................................................................ [ 26%]
+........................................................................ [ 27%]
+........................................................................ [ 29%]
+........................................................................ [ 30%]
+........................................................................ [ 31%]
+........................................................................ [ 32%]
+.....................................s.ss.ss...s....s...............s... [ 34%]
+....s.......s..ss....s....s.......s.....s..............s......s......s.. [ 35%]
+.........s................s.....................ss....ss...s....s....s.s [ 36%]
+.s..s...s........s..............ssss....sssss......ss.....s.ss..s....s.. [ 37%]
+.......sss....s.......sss..s..s....s............ss.............s........ [ 39%]
+.............s..s............s..ss............s..s...s..........s.sss.   [ 40%]
+tests/unittests/test_copy_independence.py .............................. [ 40%]
+.....................                                                    [ 41%]
+tests/unittests/test_dataframe_columns.py .............................. [ 41%]
+............................................                             [ 42%]
+tests/unittests/test_deprecated_dataframe_shims.py ..                    [ 42%]
+tests/unittests/test_docstring_format.py ...........                     [ 42%]
+tests/unittests/test_docstrings.py ..................................... [ 43%]
+........................................................................ [ 44%]
+........................................................................ [ 45%]
+........................................................................ [ 46%]
+........................................................................ [ 48%]
+........................................................................ [ 49%]
+........................................................................ [ 50%]
+........................................................................ [ 51%]
+........................................................................ [ 53%]
+........................................................................ [ 54%]
+........................................................................ [ 55%]
+........................................................................ [ 56%]
+...................................s.................................... [ 57%]
+........................................................................ [ 59%]
+........................................................................ [ 60%]
+........................................................................ [ 61%]
+......................................................................s. [ 62%]
+........................................................................ [ 64%]
+........................................................................ [ 65%]
+........................................................................ [ 66%]
+........................................................................ [ 67%]
+........................................................................ [ 69%]
+........................................................................ [ 70%]
+........................................................................ [ 71%]
+........................................................................ [ 72%]
+........................................................................ [ 73%]
+........................................................................ [ 75%]
+........................................................................ [ 76%]
+........................................................................ [ 77%]
+........................................................................ [ 78%]
+........................................................................ [ 80%]
+........................................................................ [ 81%]
+........................................................................ [ 82%]
+........................................................................ [ 83%]
+........................................................................ [ 85%]
+........................................................................ [ 86%]
+........................................................................ [ 87%]
+.............................................................            [ 88%]
+tests/unittests/test_element_access_semantics.py ....................... [ 88%]
+........................                                                 [ 89%]
+tests/unittests/test_feature_dataframe.py .......................        [ 89%]
+tests/unittests/test_imaging.py ................                         [ 89%]
+tests/unittests/test_ion_mobility_unit.py .....................          [ 90%]
+tests/unittests/test_iterator_lifetime.py ......s...s................... [ 90%]
+......................                                                   [ 91%]
+tests/unittests/test_iterator_mutation_safety.py ......                  [ 91%]
+tests/unittests/test_mobilogram_struct_view.py .......                   [ 91%]
+tests/unittests/test_mschromatogram_struct_view.py .......               [ 91%]
+tests/unittests/test_numpy_getter_lifetime.py ...                        [ 91%]
+tests/unittests/test_output_parameters.py .............................. [ 92%]
+.............                                                            [ 92%]
+tests/unittests/test_peak1d.py .....                                     [ 92%]
+tests/unittests/test_psm_dataframe.py .................................. [ 93%]
+...............................                                          [ 93%]
+tests/unittests/test_pyarrow_compatibility.py ...                        [ 93%]
+tests/unittests/test_runtime_provenance.py ...                           [ 93%]
+tests/unittests/test_select_bounds.py ....                               [ 93%]
+tests/unittests/test_set_ion_mobility.py ............................... [ 94%]
+....                                                                     [ 94%]
+tests/unittests/test_set_peaks_metadata_alignment.py ................... [ 94%]
+........................................................................ [ 95%]
+........................................................................ [ 97%]
+........................................................................ [ 98%]
+................................                                         [ 98%]
+tests/unittests/test_snake_case_properties.py ......                     [ 98%]
+tests/unittests/test_spectrum_zerocopy.py ...                            [ 99%]
+tests/unittests/test_tutorial.py ...........                             [ 99%]
+tests/unittests/test_type_casters.py .....................               [ 99%]
+tests/unittests/test_view_accessors.py .............                     [ 99%]
+tests/unittests/test_zerocopy_conventions.py ...........                 [100%]
+
+=============================== warnings summary ===============================
+tests/unittests/test_chaining_semantics.py:1
+  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/pyopenms-wheel-tests/tests/unittests/test_chaining_semantics.py:1: SyntaxWarning: invalid escape sequence '\ '
+    """Where a chained read or write lands, and where it silently does not (issue #9792).
+
+tests/unittests/test_IonMobilityData.py::TestIonMobilityExperiment::test_spectrum_count
+tests/unittests/test_IonMobilityData.py::TestIonMobilitySwathExperiment::test_spectrum_count
+  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/pyopenms-wheel-venv/lib/python3.12/site-packages/_pytest/fixtures.py:1313: PytestRemovedIn10Warning: Class-scoped fixture defined as instance method is deprecated.
+  Instance attributes set in this fixture will NOT be visible to test methods,
+  as each test gets a new instance while the fixture runs only once per class.
+  Use @classmethod decorator and set attributes on cls instead.
+  See https://docs.pytest.org/en/stable/deprecations.html#class-scoped-fixture-as-instance-method
+    fixturefunc = resolve_fixture_function(fixturedef, request)
+
+tests/unittests/test_dataframe_columns.py::TestBackwardsCompatibleFunctions::test_peptide_identifications_to_df_wrapper
+  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/pyopenms-wheel-tests/tests/unittests/test_dataframe_columns.py:561: DeprecationWarning: peptide_identifications_to_df() is deprecated. Use peps.to_df() instead.
+    df = pyopenms.peptide_identifications_to_df(peptide_id_list)
+
+tests/unittests/test_dataframe_columns.py::TestBackwardsCompatibleFunctions::test_update_scores_from_df_wrapper
+  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/pyopenms-wheel-tests/tests/unittests/test_dataframe_columns.py:569: DeprecationWarning: peptide_identifications_to_df() is deprecated. Use peps.to_df() instead.
+    df = pyopenms.peptide_identifications_to_df(peptide_id_list)
+
+tests/unittests/test_dataframe_columns.py::TestBackwardsCompatibleFunctions::test_update_scores_from_df_wrapper
+  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/pyopenms-wheel-tests/tests/unittests/test_dataframe_columns.py:573: DeprecationWarning: update_scores_from_df() is deprecated. Use peps.update_scores_from_df() instead.
+    result = pyopenms.update_scores_from_df(peptide_id_list, df, 'new_score')
+
+tests/unittests/test_dataframe_columns.py::TestToArrowMethods::test_experiment_to_arrow_long_format
+  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/pyopenms-wheel-tests/tests/unittests/test_dataframe_columns.py:977: DeprecationWarning: long_format parameter is deprecated. Use format='long' or format='semi_wide' instead.
+    table = exp.to_arrow(long_format=True)
+
+tests/unittests/test_docstring_format.py: 10 warnings
+  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/pyopenms-wheel-tests/tests/unittests/test_docstring_format.py:68: DeprecationWarning: The frontend.OptionParser class will be replaced by a subclass of argparse.ArgumentParser in Docutils 2.0 or later.
+    To get default settings, use frontend.get_default_settings().
+    option_parser = OptionParser(components=(Parser,))
+
+tests/unittests/test_docstring_format.py: 740 warnings
+  /Users/kohlbach/.local/share/uv/python/cpython-3.12-macos-aarch64-none/lib/python3.12/optparse.py:1000: DeprecationWarning: The frontend.Option class will be removed in Docutils 2.0 or later.
+    option = self.option_class(*args, **kwargs)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=================================== XPASSES ====================================
+- generated xml file: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/pyopenms-final-wheel-tests.xml -
+=========================== short test summary info ============================
+SKIPPED [1] tests/unittests/test_BrukerTimsFile.py:19: pyOpenMS built without WITH_OPENTIMS
+SKIPPED [1] tests/unittests/test_BrukerTimsFile.py:36: pyOpenMS built without WITH_OPENTIMS
+SKIPPED [1] tests/unittests/test_BrukerTimsFile.py:48: pyOpenMS built without WITH_OPENTIMS
+SKIPPED [1] tests/unittests/test_BrukerTimsFile.py:53: pyOpenMS built without WITH_OPENTIMS
+SKIPPED [1] tests/unittests/test_BrukerTimsFile.py:60: pyOpenMS built without WITH_OPENTIMS
+SKIPPED [1] tests/unittests/test_BrukerTimsFile.py:65: pyOpenMS built without WITH_OPENTIMS
+SKIPPED [1] tests/unittests/test_BrukerTimsFile.py:72: pyOpenMS built without WITH_OPENTIMS
+SKIPPED [1] tests/unittests/test_BrukerTimsFile.py:78: OPENTIMS_DDA_TEST_DATA not set
+SKIPPED [1] tests/unittests/test_BrukerTimsFile.py:89: OPENTIMS_DDA_TEST_DATA not set
+SKIPPED [1] tests/unittests/test_BrukerTimsFile.py:104: OPENTIMS_DIA_TEST_DATA not set
+SKIPPED [1] tests/unittests/test_ThermoRawFile.py:45: no bundled Thermo bridge (WITH_THERMO_RAW=OFF or in-tree build)
+SKIPPED [1] tests/unittests/test_ThermoRawFile.py:55: PYOPENMS_THERMO_RAW_TEST_FILE not set
+SKIPPED [1] tests/unittests/test_ThermoRawFile.py:91: PYOPENMS_THERMO_RAW_TEST_FILE not set
+SKIPPED [1] tests/unittests/test_ThermoRawFile.py:113: OpenMS built without Thermo RAW support
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: AASeqWithMass does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: AQS_featureConcentration does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: AQS_runConcentration does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: AbsoluteQuantitationStandards does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: AbsoluteQuantitationStandardsFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: Adduct does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: Base64 does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: CalibrationData does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: ChromeleonFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: ControlledVocabulary does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: CrossLinkSpectrumMatch does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: CsvFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: DTAFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: DecoyGenerator does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: EDTAFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: ExperimentalDesign does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: FeatureFileOptions does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: FileInfo does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: GaussFitResult does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: ImzMLFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: IsotopeCluster does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MRMFP_ComponentGroupParams does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MRMFP_ComponentParams does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MRMFeaturePicker does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MRMFeatureQC does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MRMIonSeries does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MSDataStoringConsumer does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MSNumpressCoder does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MSPGenericFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MSstatsFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MascotXMLFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MassExplainer does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MetaboTargetedAssay_CompoundTargetDecoyPair does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MsInspectFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MzDataFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MzIdentMLFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MzMLFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MzTab does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MzTabFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MzTabM does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MzTabMFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: MzXMLFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: NumpressConfig does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: OMSSACSVFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: OSChromatogramMeta does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: OSSpectrumMeta does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: OSW_ChromExtractParams does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: OpenMSOSInfo does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: OpenSwathScoring does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: ParamEntry does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: ParamNode does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: ParamXMLFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: PeakBoundary does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: PeptideAndProteinQuant_PeptideData does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: PeptideAndProteinQuant_ProteinData does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: PeptideAndProteinQuant_Statistics does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: PeptideHit_AnalysisResult does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: PeptideProteinResolution_ConnectedComponent does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: PercolatorOutfile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: ProteinProteinCrossLink does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: PurityScores does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: RegularSwathFileConsumer does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: SimplePeak does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: SiriusFragmentAnnotation_SiriusTargetDecoySpectra does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: SpectrumMetaData does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: SqMassConfig does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: SqMassFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: TSE_Match does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: TextFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: TraMLFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: VersionDetails does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: XLPrecursor does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: XMLFile does not support copy construction
+SKIPPED [1] tests/unittests/test_copy_constructors.py:172: XQuestResultXMLFile does not support copy construction
+SKIPPED [2] tests/unittests/test_docstrings.py:205: no docstring
+SKIPPED [1] tests/unittests/test_iterator_lifetime.py:201: Param.__iter__ snapshots owned copies; no retention edge needed
+SKIPPED [1] tests/unittests/test_iterator_lifetime.py:201: NASequence.__iter__ snapshots owned copies; no retention edge needed
+XFAIL tests/unittests/test_api_missing_classes.py::TestIMSWeights::test_exists - IMSWeights class not found in OpenMS codebase — may have been removed
+XFAIL tests/unittests/test_api_missing_classes.py::TestIMSWeights::test_construct - IMSWeights class not found in OpenMS codebase — may have been removed
+XFAIL tests/unittests/test_api_missing_classes.py::TestIMSWeights::test_size - IMSWeights class not found in OpenMS codebase — may have been removed
+XFAIL tests/unittests/test_api_missing_classes.py::TestSpectrumAccessQuadMZ::test_exists - SpectrumAccessQuadMZTransforming inherits from SpectrumAccessTransforming, not bindable without base class support
+XFAIL tests/unittests/test_api_missing_classes.py::TestAMSEAdductInfo::test_construct - AMSE_AdductInfo default constructor not yet bound
+XFAIL tests/unittests/test_api_missing_methods.py::TestDataValueMethods::test_get_unit - DataValue uses type caster, unit info lost in conversion
+XFAIL tests/unittests/test_api_missing_methods.py::TestDataValueMethods::test_set_unit - DataValue uses type caster, unit info lost in conversion
+XFAIL tests/unittests/test_api_missing_methods.py::TestDataValueMethods::test_get_unit_type - DataValue uses type caster, unit info lost in conversion
+XFAIL tests/unittests/test_api_missing_methods.py::TestDataValueMethods::test_set_unit_type - DataValue uses type caster, unit info lost in conversion
+XFAIL tests/unittests/test_api_missing_methods.py::TestDataValueMethods::test_has_unit - DataValue uses type caster, unit info lost in conversion
+XPASS tests/unittests/test_api_missing_methods.py::TestMSExperimentMethods::test_get_2d_peak_data - get2DPeakData needs Python addon implementation
+XPASS tests/unittests/test_api_missing_methods.py::TestMSExperimentMethods::test_get_2d_peak_data_im - get2DPeakDataIM needs Python addon implementation
+XPASS tests/unittests/test_api_missing_methods.py::TestMSExperimentMethods::test_get_df_columns - get_df_columns deprecated, use df_columns instead
+XPASS tests/unittests/test_api_missing_methods.py::TestMSSpectrumMethods::test_intensity_in_range - intensityInRange does not exist in C++ MSSpectrum
+XPASS tests/unittests/test_api_missing_methods.py::TestMSSpectrumMethods::test_get_df_columns - get_df_columns deprecated, use df_columns instead
+XPASS tests/unittests/test_api_missing_methods.py::TestMSChromatogramMethods::test_get_df_columns - get_df_columns deprecated, use df_columns instead
+XPASS tests/unittests/test_api_missing_methods.py::TestFeatureMapMethods::test_get_df_columns - get_df_columns deprecated, use df_columns instead
+= 5745 passed, 92 skipped, 10 xfailed, 7 xpassed, 757 warnings in 65.57s (0:01:05) =
+Using prefix decoy string 'DECOY_'
+Peptide identification engine: 
+Enzyme: Trypsin
+Default-Parameter 'signal_to_noise' overridden: '0' --> '1'!

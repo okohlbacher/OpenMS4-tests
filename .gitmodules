@@ -1,10 +1,59 @@
-[submodule "contrib"]
-	path = contrib
-	url = https://github.com/OpenMS/contrib
 [submodule "THIRDPARTY"]
 	path = THIRDPARTY
 	url = https://github.com/OpenMS/THIRDPARTY
 	shallow = true
-[submodule "vcpkg"]
-	path = vcpkg
-	url = https://github.com/microsoft/vcpkg.git
+[submodule "packages/core"]
+	path = packages/core
+	url = https://github.com/okohlbacher/OpenMS4-core.git
+[submodule "packages/cli"]
+	path = packages/cli
+	url = https://github.com/okohlbacher/OpenMS4-cli.git
+[submodule "packages/test-data"]
+	path = packages/test-data
+	url = https://github.com/okohlbacher/OpenMS4-test-data.git
+[submodule "packages/topp"]
+	path = packages/topp
+	url = https://github.com/okohlbacher/OpenMS4-topp.git
+[submodule "packages/openswath"]
+	path = packages/openswath
+	url = https://github.com/okohlbacher/OpenMS4-openswath.git
+[submodule "packages/flash"]
+	path = packages/flash
+	url = https://github.com/okohlbacher/OpenMS4-flash.git
+[submodule "packages/desktop"]
+	path = packages/desktop
+	url = https://github.com/okohlbacher/OpenMS4-desktop.git
+[submodule "packages/pyopenms"]
+	path = packages/pyopenms
+	url = https://github.com/okohlbacher/OpenMS4-pyopenms.git
+[submodule "packages/flashapp"]
+	path = packages/flashapp
+	url = https://github.com/okohlbacher/OpenMS4-flashapp.git
+[submodule "packages/nuxl"]
+	path = packages/nuxl
+	url = https://github.com/okohlbacher/OpenMS4-nuxl.git
+[submodule "packages/prose"]
+	path = packages/prose
+	url = https://github.com/okohlbacher/OpenMS4-prose.git
+[submodule "packages/nase"]
+	path = packages/nase
+	url = https://github.com/okohlbacher/OpenMS4-nase.git
+[submodule "packages/comet"]
+	path = packages/comet
+	url = https://github.com/okohlbacher/OpenMS4-comet.git
+[submodule "packages/mascot"]
+	path = packages/mascot
+	url = https://github.com/okohlbacher/OpenMS4-mascot.git
+[submodule "packages/database-suitability"]
+	path = packages/database-suitability
+	url = https://github.com/okohlbacher/OpenMS4-database-suitability.git
+[submodule "packages/proteomics-lfq"]
+	path = packages/proteomics-lfq
+	url = https://github.com/okohlbacher/OpenMS4-proteomics-lfq.git
+[submodule "packages/parquet-diff"]
+	path = packages/parquet-diff
+	url = https://github.com/okohlbacher/OpenMS4-parquet-diff.git
+[submodule "packages/flashtnt"]
+	path = packages/flashtnt
+	url = https://github.com/okohlbacher/OpenMS4-flashtnt.git
+	branch = codex/package-split

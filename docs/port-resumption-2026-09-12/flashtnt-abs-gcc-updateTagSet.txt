@@ -1,0 +1,471 @@
+;; Function void OpenMS::FLASHTaggerAlgorithm::updateTagSet_(std::set<OpenMS::FLASHTnTHelpers::Tag>&, std::map<std::__cxx11::basic_string<char>, std::vector<OpenMS::FLASHTnTHelpers::Tag> >&, const std::vector<long unsigned int>&, const std::vector<double>&, const std::vector<int>&, int, double, int) (null)
+;; enabled by -tree-original
+
+
+{
+  double flanking_mass = -1.0e+0;
+  struct vector seqs;
+  struct vector tag_mzs = {.D.174082={._M_impl={.D.173410={._M_start=0B, ._M_finish=0B, ._M_end_of_storage=0B}}}};
+  struct vector tag_scores = {.D.175102={._M_impl={.D.174430={._M_start=0B, ._M_finish=0B, ._M_end_of_storage=0B}}}};
+  struct vector rev_tag_mzs = {.D.174082={._M_impl={.D.173410={._M_start=0B, ._M_finish=0B, ._M_end_of_storage=0B}}}};
+  struct vector rev_tag_scores = {.D.175102={._M_impl={.D.174430={._M_start=0B, ._M_finish=0B, ._M_end_of_storage=0B}}}};
+
+  <<cleanup_point   double flanking_mass = -1.0e+0;>>;
+    struct vector seqs;
+  <<cleanup_point <<< Unknown tree: expr_stmt
+    std::vector<std::__cxx11::basic_string<char> >::vector (&seqs, TARGET_EXPR <D.472036, {._M_array=(const struct basic_string *) &TARGET_EXPR <D.472034, *(const struct basic_string[1] &)     const struct basic_string * D.478220;
+    <<< Unknown tree: expr_stmt
+      (void) (D.478220 = (const struct basic_string *) &D.472034) >>>;
+        const struct basic_string * D.478221;
+    <<< Unknown tree: expr_stmt
+      (void) (D.478221 = D.478220) >>>;
+    TARGET_EXPR <D.478222, 0>;
+    <<< Unknown tree: expr_stmt
+      (void) (*D.478221 = TARGET_EXPR <D.472033, <<< Unknown tree: aggr_init_expr
+        6
+        __ct_comp 
+        D.472033
+        (struct basic_string *) <<< Unknown tree: void_cst >>>
+        (const char *) ""
+        (const struct allocator &) &TARGET_EXPR <D.472032, <<< Unknown tree: aggr_init_expr
+          4
+          __ct_comp 
+          D.472032
+          (struct allocator *) <<< Unknown tree: void_cst >>> >>>> >>>>) >>>;
+    <<< Unknown tree: expr_stmt
+      (void)  ++D.478221 >>>;
+    <<< Unknown tree: expr_stmt
+      (void)  --D.478222 >>>;
+    D.478220;
+    D.478222 = 0;>, ._M_len=1}>, (const struct allocator_type &) &TARGET_EXPR <D.472037, <<< Unknown tree: aggr_init_expr
+      4
+      __ct_comp 
+      D.472037
+      (struct allocator *) <<< Unknown tree: void_cst >>> >>>>) >>>>>;
+  try
+    {
+      <<cleanup_point       struct vector tag_mzs = {.D.174082={._M_impl={.D.173410={._M_start=0B, ._M_finish=0B, ._M_end_of_storage=0B}}}};>>;
+      try
+        {
+          <<cleanup_point           struct vector tag_scores = {.D.175102={._M_impl={.D.174430={._M_start=0B, ._M_finish=0B, ._M_end_of_storage=0B}}}};>>;
+          try
+            {
+              <<cleanup_point <<< Unknown tree: expr_stmt
+                std::vector<double>::reserve (&tag_mzs, std::vector<long unsigned int>::size ((const struct vector *) path) + 18446744073709551615) >>>>>;
+              <<cleanup_point <<< Unknown tree: expr_stmt
+                std::vector<int>::reserve (&tag_scores, std::vector<long unsigned int>::size ((const struct vector *) path) + 18446744073709551615) >>>>>;
+              {
+                int j = 1;
+
+                <<cleanup_point                 int j = 1;>>;
+                goto <D.478345>;
+                <D.478344>:;
+                {
+                  int i1;
+                  int i2;
+
+                                    int i1;
+                  <<cleanup_point <<< Unknown tree: expr_stmt
+                    (void) (i1 = OpenMS::FLASHTaggerAlgorithm::getIndex_ ((struct FLASHTaggerAlgorithm *) this, (value_type) *std::vector<long unsigned int>::operator[] ((const struct vector *) path, (size_type) (j + -1)))) >>>>>;
+                                    int i2;
+                  <<cleanup_point <<< Unknown tree: expr_stmt
+                    (void) (i2 = OpenMS::FLASHTaggerAlgorithm::getIndex_ ((struct FLASHTaggerAlgorithm *) this, (value_type) *std::vector<long unsigned int>::operator[] ((const struct vector *) path, (size_type) j))) >>>>>;
+                  {
+                    if (<<cleanup_point !std::operator== ((const struct _Self &) &TARGET_EXPR <D.472091, std::map<int, std::map<int, std::vector<std::__cxx11::basic_string<char> > > >::find (&((struct FLASHTaggerAlgorithm *) this)->edge_aa_map_, (const key_type &) &i1)>, (const struct _Self &) &TARGET_EXPR <D.472101, std::map<int, std::map<int, std::vector<std::__cxx11::basic_string<char> > > >::end (&((struct FLASHTaggerAlgorithm *) this)->edge_aa_map_)>) && !std::operator== ((const struct _Self &) &TARGET_EXPR <D.472756, std::map<int, std::vector<std::__cxx11::basic_string<char> > >::find ((struct mapped_type *) std::map<int, std::map<int, std::vector<std::__cxx11::basic_string<char> > > >::operator[] (&((struct FLASHTaggerAlgorithm *) this)->edge_aa_map_, (const key_type &) &i1), (const key_type &) &i2)>, (const struct _Self &) &TARGET_EXPR <D.472757, std::map<int, std::vector<std::__cxx11::basic_string<char> > >::end ((struct mapped_type *) std::map<int, std::map<int, std::vector<std::__cxx11::basic_string<char> > > >::operator[] (&((struct FLASHTaggerAlgorithm *) this)->edge_aa_map_, (const key_type &) &i1))>)>>)
+                      {
+                        {
+                          struct map & edge_aa;
+                          struct vector tmp_seqs = {.D.159092={._M_impl={.D.158380={._M_start=0B, ._M_finish=0B, ._M_end_of_storage=0B}}}};
+
+                                                    struct map & edge_aa;
+                          <<cleanup_point <<< Unknown tree: expr_stmt
+                            (void) (edge_aa = (struct map &) std::map<int, std::map<int, std::vector<std::__cxx11::basic_string<char> > > >::operator[] (&((struct FLASHTaggerAlgorithm *) this)->edge_aa_map_, (const key_type &) &i1)) >>>>>;
+                          <<cleanup_point                           struct vector tmp_seqs = {.D.159092={._M_impl={.D.158380={._M_start=0B, ._M_finish=0B, ._M_end_of_storage=0B}}}};>>;
+                          try
+                            {
+                              <<cleanup_point <<< Unknown tree: expr_stmt
+                                std::vector<std::__cxx11::basic_string<char> >::reserve (&tmp_seqs, std::vector<std::__cxx11::basic_string<char> >::size (&seqs) * std::vector<std::__cxx11::basic_string<char> >::size ((struct mapped_type *) std::map<int, std::vector<std::__cxx11::basic_string<char> > >::operator[] ((struct map *) edge_aa, (const key_type &) &i2))) >>>>>;
+                              {
+                                const struct basic_string & tmp_seq;
+                                struct vector & __for_range = (struct vector &) &seqs;
+                                struct iterator __for_begin;
+                                struct iterator __for_end;
+
+                                                                struct vector & __for_range = (struct vector &) &seqs;
+                                                                struct iterator __for_begin;
+                                <<cleanup_point <<< Unknown tree: expr_stmt
+                                  (void) (__for_begin = std::vector<std::__cxx11::basic_string<char> >::begin ((struct vector *) __for_range)) >>>>>;
+                                                                struct iterator __for_end;
+                                <<cleanup_point <<< Unknown tree: expr_stmt
+                                  (void) (__for_end = std::vector<std::__cxx11::basic_string<char> >::end ((struct vector *) __for_range)) >>>>>;
+                                goto <D.478343>;
+                                <D.478342>:;
+                                {
+                                                                    const struct basic_string & tmp_seq;
+                                  <<cleanup_point <<< Unknown tree: expr_stmt
+                                    (void) (tmp_seq = (const struct basic_string &) __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >::operator* (&__for_begin)) >>>>>;
+                                  {
+                                    const struct basic_string & seq;
+                                    struct vector & __for_range;
+                                    struct iterator __for_begin;
+                                    struct iterator __for_end;
+
+                                                                        struct vector & __for_range;
+                                    <<cleanup_point <<< Unknown tree: expr_stmt
+                                      (void) (__for_range = (struct vector &) std::map<int, std::vector<std::__cxx11::basic_string<char> > >::operator[] ((struct map *) edge_aa, (const key_type &) &i2)) >>>>>;
+                                                                        struct iterator __for_begin;
+                                    <<cleanup_point <<< Unknown tree: expr_stmt
+                                      (void) (__for_begin = std::vector<std::__cxx11::basic_string<char> >::begin ((struct vector *) __for_range)) >>>>>;
+                                                                        struct iterator __for_end;
+                                    <<cleanup_point <<< Unknown tree: expr_stmt
+                                      (void) (__for_end = std::vector<std::__cxx11::basic_string<char> >::end ((struct vector *) __for_range)) >>>>>;
+                                    goto <D.478341>;
+                                    <D.478340>:;
+                                                                        const struct basic_string & seq;
+                                    <<cleanup_point <<< Unknown tree: expr_stmt
+                                      (void) (seq = (const struct basic_string &) __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >::operator* (&__for_begin)) >>>>>;
+                                    <<cleanup_point <<< Unknown tree: expr_stmt
+                                      (void) std::vector<std::__cxx11::basic_string<char> >::emplace_back<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > (&tmp_seqs, (struct basic_string &) &TARGET_EXPR <D.472786, <<< Unknown tree: aggr_init_expr
+                                        5
+                                        operator+
+                                        D.472786
+                                        seq
+                                        tmp_seq >>>>) >>>>>;
+                                    <<cleanup_point (void) __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >::operator++ (&__for_begin)>>;
+                                    <D.478341>:;
+                                    if (<<cleanup_point !__gnu_cxx::operator==<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > > ((const struct __normal_iterator &) &__for_begin, (const struct __normal_iterator &) &__for_end)>>) goto <D.478340>; else goto <D.478338>;
+                                    <D.478338>:;
+                                  }
+                                }
+                                <<cleanup_point (void) __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >::operator++ (&__for_begin)>>;
+                                <D.478343>:;
+                                if (<<cleanup_point !__gnu_cxx::operator==<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > > ((const struct __normal_iterator &) &__for_begin, (const struct __normal_iterator &) &__for_end)>>) goto <D.478342>; else goto <D.478336>;
+                                <D.478336>:;
+                              }
+                              <<cleanup_point <<< Unknown tree: expr_stmt
+                                (void) std::vector<std::__cxx11::basic_string<char> >::operator= (&seqs, (const struct vector &) &tmp_seqs) >>>>>;
+                              <<cleanup_point <<< Unknown tree: expr_stmt
+                                std::vector<double>::push_back (&tag_mzs, (const value_type &) std::vector<double>::operator[] ((const struct vector *) mzs, (size_type) i1)) >>>>>;
+                              <<cleanup_point <<< Unknown tree: expr_stmt
+                                std::vector<int>::push_back (&tag_scores, (const value_type &) std::vector<int>::operator[] ((const struct vector *) scores, (size_type) i1)) >>>>>;
+                            }
+                          finally
+                            {
+                              std::vector<std::__cxx11::basic_string<char> >::~vector (&tmp_seqs);
+                            }
+                        }
+                      }
+                    else
+                      {
+                        if (i2 == 0)
+                          {
+                            <<cleanup_point <<< Unknown tree: expr_stmt
+                              std::vector<double>::push_back (&tag_mzs, (const value_type &) std::vector<double>::operator[] ((const struct vector *) mzs, (size_type) i1)) >>>>>;
+                            <<cleanup_point <<< Unknown tree: expr_stmt
+                              std::vector<int>::push_back (&tag_scores, (const value_type &) std::vector<int>::operator[] ((const struct vector *) scores, (size_type) i1)) >>>>>;
+                            <<cleanup_point <<< Unknown tree: expr_stmt
+                              (void) (flanking_mass = (value_type) *std::vector<double>::operator[] ((const struct vector *) mzs, (size_type) i1)) >>>>>;
+                          }
+                      }
+                  }
+                }
+                <<cleanup_point (void) j++ >>;
+                <D.478345>:;
+                if (<<cleanup_point (int) std::vector<long unsigned int>::size ((const struct vector *) path) > j>>) goto <D.478344>; else goto <D.478334>;
+                <D.478334>:;
+              }
+              <<cleanup_point               struct vector rev_tag_mzs = {.D.174082={._M_impl={.D.173410={._M_start=0B, ._M_finish=0B, ._M_end_of_storage=0B}}}};>>;
+              try
+                {
+                  <<cleanup_point <<< Unknown tree: expr_stmt
+                    std::vector<double>::reserve (&rev_tag_mzs, std::vector<double>::size (&tag_mzs)) >>>>>;
+                  <<cleanup_point                   struct vector rev_tag_scores = {.D.175102={._M_impl={.D.174430={._M_start=0B, ._M_finish=0B, ._M_end_of_storage=0B}}}};>>;
+                  try
+                    {
+                      <<cleanup_point <<< Unknown tree: expr_stmt
+                        std::vector<int>::reserve (&rev_tag_scores, std::vector<int>::size (&tag_scores)) >>>>>;
+                      {
+                        int i;
+
+                                                int i;
+                        <<cleanup_point <<< Unknown tree: expr_stmt
+                          (void) (i = (int) std::vector<double>::size (&tag_mzs) + -1) >>>>>;
+                        goto <D.478349>;
+                        <D.478348>:;
+                        <<cleanup_point <<< Unknown tree: expr_stmt
+                          std::vector<double>::push_back (&rev_tag_mzs, (const value_type &) std::vector<double>::operator[] (&tag_mzs, (size_type) i)) >>>>>;
+                        <<cleanup_point <<< Unknown tree: expr_stmt
+                          std::vector<int>::push_back (&rev_tag_scores, (const value_type &) std::vector<int>::operator[] (&tag_scores, (size_type) i)) >>>>>;
+                        <<cleanup_point (void) i-- >>;
+                        <D.478349>:;
+                        if (i >= 0) goto <D.478348>; else goto <D.478346>;
+                        <D.478346>:;
+                      }
+                      {
+                        const struct basic_string & seq;
+                        struct vector & __for_range = (struct vector &) &seqs;
+                        struct iterator __for_begin;
+                        struct iterator __for_end;
+
+                                                struct vector & __for_range = (struct vector &) &seqs;
+                                                struct iterator __for_begin;
+                        <<cleanup_point <<< Unknown tree: expr_stmt
+                          (void) (__for_begin = std::vector<std::__cxx11::basic_string<char> >::begin ((struct vector *) __for_range)) >>>>>;
+                                                struct iterator __for_end;
+                        <<cleanup_point <<< Unknown tree: expr_stmt
+                          (void) (__for_end = std::vector<std::__cxx11::basic_string<char> >::end ((struct vector *) __for_range)) >>>>>;
+                        goto <D.478361>;
+                        <D.478360>:;
+                        {
+                          struct string rev_seq;
+                          struct _Rb_tree_iterator iter;
+                          bool pass = mode != 2;
+
+                                                    const struct basic_string & seq;
+                          <<cleanup_point <<< Unknown tree: expr_stmt
+                            (void) (seq = (const struct basic_string &) __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >::operator* (&__for_begin)) >>>>>;
+                                                    struct string rev_seq;
+                          <<cleanup_point <<< Unknown tree: expr_stmt
+                            (void) (rev_seq = <<< Unknown tree: aggr_init_expr
+                              7
+                              __ct_comp 
+                              D.473564
+                              (struct basic_string *) <<< Unknown tree: void_cst >>>
+                              &TARGET_EXPR <D.473489, <<< Unknown tree: aggr_init_expr
+                                4
+                                rbegin
+                                D.473489
+                                (const struct basic_string *) seq >>>>
+                              &TARGET_EXPR <D.473508, <<< Unknown tree: aggr_init_expr
+                                4
+                                rend
+                                D.473508
+                                (const struct basic_string *) seq >>>>
+                              (const struct allocator &) &TARGET_EXPR <D.473563, <<< Unknown tree: aggr_init_expr
+                                4
+                                __ct_comp 
+                                D.473563
+                                (struct allocator *) <<< Unknown tree: void_cst >>> >>>> >>>) >>>>>;
+                          try
+                            {
+                              if (<<cleanup_point std::operator==<char, std::char_traits<char>, std::allocator<char> > ((const struct basic_string &) &rev_seq, seq)>>)
+                                {
+                                  // predicted unlikely by continue predictor.;
+                                  goto <D.478351>;
+                                }
+                                                            struct _Rb_tree_iterator iter;
+                              <<cleanup_point <<< Unknown tree: expr_stmt
+                                (void) (iter = std::map<std::__cxx11::basic_string<char>, std::vector<OpenMS::FLASHTnTHelpers::Tag> >::find ((struct map *) seq_tag, (const struct key_type &) seq)) >>>>>;
+                                                            bool pass = mode != 2;
+                              {
+                                if (<<cleanup_point pass && !std::operator== ((const struct _Self &) &iter, (const struct _Self &) &TARGET_EXPR <D.475208, std::map<std::__cxx11::basic_string<char>, std::vector<OpenMS::FLASHTnTHelpers::Tag> >::end ((struct map *) seq_tag)>)>>)
+                                  {
+                                    {
+                                      {
+                                        const struct Tag & pt;
+                                        struct vector & __for_range;
+                                        struct iterator __for_begin;
+                                        struct iterator __for_end;
+
+                                                                                struct vector & __for_range;
+                                        <<cleanup_point <<< Unknown tree: expr_stmt
+                                          (void) (__for_range = (struct vector &) &std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::vector<OpenMS::FLASHTnTHelpers::Tag> > >::operator-> (&iter)->second) >>>>>;
+                                                                                struct iterator __for_begin;
+                                        <<cleanup_point <<< Unknown tree: expr_stmt
+                                          (void) (__for_begin = std::vector<OpenMS::FLASHTnTHelpers::Tag>::begin ((struct vector *) __for_range)) >>>>>;
+                                                                                struct iterator __for_end;
+                                        <<cleanup_point <<< Unknown tree: expr_stmt
+                                          (void) (__for_end = std::vector<OpenMS::FLASHTnTHelpers::Tag>::end ((struct vector *) __for_range)) >>>>>;
+                                        goto <D.478355>;
+                                        <D.478354>:;
+                                                                                const struct Tag & pt;
+                                        <<cleanup_point <<< Unknown tree: expr_stmt
+                                          (void) (pt = (const struct Tag &) __gnu_cxx::__normal_iterator<OpenMS::FLASHTnTHelpers::Tag*, std::vector<OpenMS::FLASHTnTHelpers::Tag> >::operator* (&__for_begin)) >>>>>;
+                                        if (<<cleanup_point OpenMS::FLASHTnTHelpers::Tag::getNtermMass ((const struct Tag *) pt) < 0.0>>)
+                                          {
+                                            // predicted unlikely by continue predictor.;
+                                            goto <D.478353>;
+                                          }
+                                        if (<<cleanup_point ((double) ABS_EXPR <(int) (OpenMS::FLASHTnTHelpers::Tag::getNtermMass ((const struct Tag *) pt) - flanking_mass)> / (double) *std::max<double> ((const double &) &TARGET_EXPR <D.475806, OpenMS::FLASHTnTHelpers::Tag::getNtermMass ((const struct Tag *) pt)>, (const double &) &flanking_mass)) * 1.0e+6 > ppm>>)
+                                          {
+                                            // predicted unlikely by continue predictor.;
+                                            goto <D.478353>;
+                                          }
+                                        <<cleanup_point <<< Unknown tree: expr_stmt
+                                          (void) (pass = 0) >>>>>;
+                                        goto <D.478352>;
+                                        <D.478353>:;
+                                        <<cleanup_point (void) __gnu_cxx::__normal_iterator<OpenMS::FLASHTnTHelpers::Tag*, std::vector<OpenMS::FLASHTnTHelpers::Tag> >::operator++ (&__for_begin)>>;
+                                        <D.478355>:;
+                                        if (<<cleanup_point !__gnu_cxx::operator==<OpenMS::FLASHTnTHelpers::Tag*, std::vector<OpenMS::FLASHTnTHelpers::Tag> > ((const struct __normal_iterator &) &__for_begin, (const struct __normal_iterator &) &__for_end)>>) goto <D.478354>; else goto <D.478352>;
+                                        <D.478352>:;
+                                      }
+                                    }
+                                  }
+                              }
+                              {
+                                if (pass)
+                                  {
+                                    {
+                                      const struct Tag direct_tag;
+
+                                                                            const struct Tag direct_tag;
+                                      <<cleanup_point <<< Unknown tree: expr_stmt
+                                        (void) (direct_tag = <<< Unknown tree: aggr_init_expr
+                                          10
+                                          __ct_comp 
+                                          D.475810
+                                          (struct Tag *) <<< Unknown tree: void_cst >>>
+                                          &TARGET_EXPR <D.475809, <<< Unknown tree: aggr_init_expr
+                                            5
+                                            __ct_comp 
+                                            D.475809
+                                            (struct basic_string *) <<< Unknown tree: void_cst >>>
+                                            seq >>>>
+                                          flanking_mass
+                                          -1.0e+0
+                                          (struct vector &) &tag_mzs
+                                          (struct vector &) &tag_scores
+                                          scan >>>) >>>>>;
+                                      try
+                                        {
+                                          <<cleanup_point <<< Unknown tree: expr_stmt
+                                            (void) TARGET_EXPR <D.478179, std::set<OpenMS::FLASHTnTHelpers::Tag>::insert ((struct set *) tag_set, (const struct value_type &) &direct_tag)> >>>>>;
+                                          <<cleanup_point <<< Unknown tree: expr_stmt
+                                            std::vector<OpenMS::FLASHTnTHelpers::Tag>::push_back ((struct mapped_type *) std::map<std::__cxx11::basic_string<char>, std::vector<OpenMS::FLASHTnTHelpers::Tag> >::operator[] ((struct map *) seq_tag, (const struct key_type &) seq), (const struct value_type &) &direct_tag) >>>>>;
+                                        }
+                                      finally
+                                        {
+                                          OpenMS::FLASHTnTHelpers::Tag::~Tag ((struct Tag *) &direct_tag);
+                                        }
+                                    }
+                                  }
+                              }
+                              <<cleanup_point <<< Unknown tree: expr_stmt
+                                (void) (pass = mode != 1) >>>>>;
+                              <<cleanup_point <<< Unknown tree: expr_stmt
+                                (void) (iter = *(struct _Rb_tree_iterator &) &TARGET_EXPR <D.478197, std::map<std::__cxx11::basic_string<char>, std::vector<OpenMS::FLASHTnTHelpers::Tag> >::find ((struct map *) seq_tag, (const struct key_type &) &rev_seq)>) >>>>>;
+                              {
+                                if (<<cleanup_point pass && !std::operator== ((const struct _Self &) &iter, (const struct _Self &) &TARGET_EXPR <D.478204, std::map<std::__cxx11::basic_string<char>, std::vector<OpenMS::FLASHTnTHelpers::Tag> >::end ((struct map *) seq_tag)>)>>)
+                                  {
+                                    {
+                                      {
+                                        const struct Tag & pt;
+                                        struct vector & __for_range;
+                                        struct iterator __for_begin;
+                                        struct iterator __for_end;
+
+                                                                                struct vector & __for_range;
+                                        <<cleanup_point <<< Unknown tree: expr_stmt
+                                          (void) (__for_range = (struct vector &) &std::_Rb_tree_iterator<std::pair<const std::__cxx11::basic_string<char>, std::vector<OpenMS::FLASHTnTHelpers::Tag> > >::operator-> (&iter)->second) >>>>>;
+                                                                                struct iterator __for_begin;
+                                        <<cleanup_point <<< Unknown tree: expr_stmt
+                                          (void) (__for_begin = std::vector<OpenMS::FLASHTnTHelpers::Tag>::begin ((struct vector *) __for_range)) >>>>>;
+                                                                                struct iterator __for_end;
+                                        <<cleanup_point <<< Unknown tree: expr_stmt
+                                          (void) (__for_end = std::vector<OpenMS::FLASHTnTHelpers::Tag>::end ((struct vector *) __for_range)) >>>>>;
+                                        goto <D.478359>;
+                                        <D.478358>:;
+                                                                                const struct Tag & pt;
+                                        <<cleanup_point <<< Unknown tree: expr_stmt
+                                          (void) (pt = (const struct Tag &) __gnu_cxx::__normal_iterator<OpenMS::FLASHTnTHelpers::Tag*, std::vector<OpenMS::FLASHTnTHelpers::Tag> >::operator* (&__for_begin)) >>>>>;
+                                        if (<<cleanup_point OpenMS::FLASHTnTHelpers::Tag::getCtermMass ((const struct Tag *) pt) < 0.0>>)
+                                          {
+                                            // predicted unlikely by continue predictor.;
+                                            goto <D.478357>;
+                                          }
+                                        if (<<cleanup_point ((double) ABS_EXPR <(int) (OpenMS::FLASHTnTHelpers::Tag::getCtermMass ((const struct Tag *) pt) - flanking_mass)> / (double) *std::max<double> ((const double &) &TARGET_EXPR <D.478213, OpenMS::FLASHTnTHelpers::Tag::getCtermMass ((const struct Tag *) pt)>, (const double &) &flanking_mass)) * 1.0e+6 > ppm>>)
+                                          {
+                                            // predicted unlikely by continue predictor.;
+                                            goto <D.478357>;
+                                          }
+                                        <<cleanup_point <<< Unknown tree: expr_stmt
+                                          (void) (pass = 0) >>>>>;
+                                        goto <D.478356>;
+                                        <D.478357>:;
+                                        <<cleanup_point (void) __gnu_cxx::__normal_iterator<OpenMS::FLASHTnTHelpers::Tag*, std::vector<OpenMS::FLASHTnTHelpers::Tag> >::operator++ (&__for_begin)>>;
+                                        <D.478359>:;
+                                        if (<<cleanup_point !__gnu_cxx::operator==<OpenMS::FLASHTnTHelpers::Tag*, std::vector<OpenMS::FLASHTnTHelpers::Tag> > ((const struct __normal_iterator &) &__for_begin, (const struct __normal_iterator &) &__for_end)>>) goto <D.478358>; else goto <D.478356>;
+                                        <D.478356>:;
+                                      }
+                                    }
+                                  }
+                              }
+                              {
+                                if (pass)
+                                  {
+                                    {
+                                      const struct Tag reverse_tag;
+
+                                                                            const struct Tag reverse_tag;
+                                      <<cleanup_point <<< Unknown tree: expr_stmt
+                                        (void) (reverse_tag = <<< Unknown tree: aggr_init_expr
+                                          10
+                                          __ct_comp 
+                                          D.478217
+                                          (struct Tag *) <<< Unknown tree: void_cst >>>
+                                          &TARGET_EXPR <D.478216, <<< Unknown tree: aggr_init_expr
+                                            5
+                                            __ct_comp 
+                                            D.478216
+                                            (struct basic_string *) <<< Unknown tree: void_cst >>>
+                                            (const struct basic_string &) &rev_seq >>>>
+                                          -1.0e+0
+                                          flanking_mass
+                                          (struct vector &) &rev_tag_mzs
+                                          (struct vector &) &rev_tag_scores
+                                          scan >>>) >>>>>;
+                                      try
+                                        {
+                                          <<cleanup_point <<< Unknown tree: expr_stmt
+                                            (void) TARGET_EXPR <D.478218, std::set<OpenMS::FLASHTnTHelpers::Tag>::insert ((struct set *) tag_set, (const struct value_type &) &reverse_tag)> >>>>>;
+                                          <<cleanup_point <<< Unknown tree: expr_stmt
+                                            std::vector<OpenMS::FLASHTnTHelpers::Tag>::push_back ((struct mapped_type *) std::map<std::__cxx11::basic_string<char>, std::vector<OpenMS::FLASHTnTHelpers::Tag> >::operator[] ((struct map *) seq_tag, (const struct key_type &) &rev_seq), (const struct value_type &) &reverse_tag) >>>>>;
+                                        }
+                                      finally
+                                        {
+                                          OpenMS::FLASHTnTHelpers::Tag::~Tag ((struct Tag *) &reverse_tag);
+                                        }
+                                    }
+                                  }
+                              }
+                            }
+                          finally
+                            {
+                              std::__cxx11::basic_string<char>::~basic_string (&rev_seq);
+                            }
+                        }
+                        <D.478351>:;
+                        <<cleanup_point (void) __gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > >::operator++ (&__for_begin)>>;
+                        <D.478361>:;
+                        if (<<cleanup_point !__gnu_cxx::operator==<std::__cxx11::basic_string<char>*, std::vector<std::__cxx11::basic_string<char> > > ((const struct __normal_iterator &) &__for_begin, (const struct __normal_iterator &) &__for_end)>>) goto <D.478360>; else goto <D.478350>;
+                        <D.478350>:;
+                      }
+                    }
+                  finally
+                    {
+                      std::vector<int>::~vector (&rev_tag_scores);
+                    }
+                }
+              finally
+                {
+                  std::vector<double>::~vector (&rev_tag_mzs);
+                }
+            }
+          finally
+            {
+              std::vector<int>::~vector (&tag_scores);
+            }
+        }
+      finally
+        {
+          std::vector<double>::~vector (&tag_mzs);
+        }
+    }
+  finally
+    {
+      std::vector<std::__cxx11::basic_string<char> >::~vector (&seqs);
+    }
+}
+
+

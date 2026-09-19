@@ -1,0 +1,758 @@
+Dumping OpenMS::FLASHTaggerAlgorithm::updateTagSet_:
+CXXMethodDecl 0xbf63602d0 </Users/oliver/openms4-qualification-flashtnt-250debb/source-709de5e/include/OpenMS/ANALYSIS/TOPDOWN/FLASHTaggerAlgorithm.h:142:3, line:148:42> line:142:8 used updateTagSet_ 'void (std::set<FLASHTnTHelpers::Tag> &, std::map<std::string, std::vector<FLASHTnTHelpers::Tag>> &, const std::vector<Size> &, const std::vector<double> &, const std::vector<int> &, int, double, int)'
+|-ParmVarDecl 0xbf635ee58 <col:22, col:54> col:54 tag_set 'std::set<FLASHTnTHelpers::Tag> &'
+|-ParmVarDecl 0xbf635f890 <line:143:22, col:80> col:80 seq_tag 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>> &'
+|-ParmVarDecl 0xbf635fae8 <line:144:22, col:47> col:47 path 'const std::vector<Size> &'
+|-ParmVarDecl 0xbf635fd48 <line:145:22, col:49> col:49 mzs 'const std::vector<double> &'
+|-ParmVarDecl 0xbf635ffa8 <line:146:22, col:46> col:46 scores 'const std::vector<int> &'
+|-ParmVarDecl 0xbf6360028 <line:147:22, col:26> col:26 scan 'int'
+|-ParmVarDecl 0xbf63600a8 <line:148:22, col:29> col:29 ppm 'double'
+`-ParmVarDecl 0xbf6360128 <col:34, col:38> col:38 mode 'int'
+
+Dumping OpenMS::FLASHTaggerAlgorithm::updateTagSet_:
+CXXMethodDecl 0xbf3163c00 parent 0xbf6356d98 prev 0xbf63602d0 </Users/oliver/openms4-qualification-flashtnt-250debb/source-709de5e/source/ANALYSIS/TOPDOWN/FLASHTaggerAlgorithm.cpp:449:1, line:548:1> line:449:28 used updateTagSet_ 'void (std::set<FLASHTnTHelpers::Tag> &, std::map<std::string, std::vector<FLASHTnTHelpers::Tag>> &, const std::vector<Size> &, const std::vector<double> &, const std::vector<int> &, int, double, int)'
+|-ParmVarDecl 0xbf3162b88 <col:42, col:74> col:74 used tag_set 'std::set<FLASHTnTHelpers::Tag> &'
+|-ParmVarDecl 0xbf3163230 <line:450:42, col:100> col:100 used seq_tag 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>> &'
+|-ParmVarDecl 0xbf3163488 <line:451:42, col:67> col:67 used path 'const std::vector<Size> &'
+|-ParmVarDecl 0xbf31636e8 <line:452:42, col:69> col:69 used mzs 'const std::vector<double> &'
+|-ParmVarDecl 0xbf3163948 <line:453:42, col:66> col:66 used scores 'const std::vector<int> &'
+|-ParmVarDecl 0xbf31639c8 <line:454:42, col:46> col:46 used scan 'int'
+|-ParmVarDecl 0xbf3163a48 <line:455:42, col:49> col:49 used ppm 'double'
+|-ParmVarDecl 0xbf3163ac8 <line:456:42, col:46> col:46 used mode 'int'
+`-CompoundStmt 0xbf3325588 <line:457:1, line:548:1>
+  |-DeclStmt 0xbf3163e10 <line:458:3, col:28>
+  | `-VarDecl 0xbf3163d58 <col:3, col:27> col:10 used flanking_mass 'double' cinit
+  |   `-ImplicitCastExpr 0xbf3163df8 <col:26, col:27> 'double' <IntegralToFloating>
+  |     `-UnaryOperator 0xbf3163de0 <col:26, col:27> 'int' prefix '-'
+  |       `-IntegerLiteral 0xbf3163dc0 <col:27> 'int' 1
+  |-DeclStmt 0xbf3164470 <line:459:3, col:37>
+  | `-VarDecl 0xbf3164008 <col:3, col:36> col:28 used seqs 'std::vector<std::string>' listinit destroyed
+  |   `-ExprWithCleanups 0xbf31643d0 <col:28, col:36> 'std::vector<std::string>'
+  |     `-CXXConstructExpr 0xbf31643a0 <col:28, col:36> 'std::vector<std::string>' 'void (initializer_list<value_type>)' list std::initializer_list
+  |       `-CXXStdInitializerListExpr 0xbf3164350 <col:33, col:36> 'initializer_list<value_type>':'std::initializer_list<std::string>'
+  |         `-MaterializeTemporaryExpr 0xbf3164338 <col:33, col:36> 'const value_type[1]' xvalue
+  |           `-CXXBindTemporaryExpr 0xbf3164318 <col:33, col:36> 'const value_type[1]' (CXXTemporary 0xbf3164318)
+  |             `-InitListExpr 0xbf31641f0 <col:33, col:36> 'const value_type[1]'
+  |               `-ImplicitCastExpr 0xbf31642f8 <col:34> 'const value_type':'const std::string' <NoOp>
+  |                 `-ImplicitCastExpr 0xbf31642e0 <col:34> 'value_type':'std::string' <ConstructorConversion>
+  |                   `-CXXConstructExpr 0xbf31642b0 <col:34> 'value_type':'std::string' 'void (const char * _Nonnull)'
+  |                     `-ImplicitCastExpr 0xbf3164298 <col:34> 'const char *' <ArrayToPointerDecay>
+  |                       `-StringLiteral 0xbf3164070 <col:34> 'const char[1]' lvalue ""
+  |-DeclStmt 0xbf3164780 <line:460:3, col:30>
+  | `-VarDecl 0xbf3164638 <col:3, col:23> col:23 used tag_mzs 'std::vector<double>' callinit destroyed
+  |   `-CXXConstructExpr 0xbf31646d0 <col:23> 'std::vector<double>' 'void () noexcept(is_nothrow_default_constructible<allocator_type>::value)'
+  |-DeclStmt 0xbf3164a90 <line:461:3, col:30>
+  | `-VarDecl 0xbf3164948 <col:3, col:20> col:20 used tag_scores 'std::vector<int>' callinit destroyed
+  |   `-CXXConstructExpr 0xbf31649e0 <col:20> 'std::vector<int>' 'void () noexcept(is_nothrow_default_constructible<allocator_type>::value)'
+  |-CXXMemberCallExpr 0xbf3164bf8 <line:462:3, col:34> 'void'
+  | |-MemberExpr 0xbf3164ac8 <col:3, col:11> '<bound member function type>' .reserve 0xbfa84d8e0
+  | | `-DeclRefExpr 0xbf3164aa8 <col:3> 'std::vector<double>' lvalue Var 0xbf3164638 'tag_mzs' 'std::vector<double>'
+  | `-BinaryOperator 0xbf3164bd8 <col:19, col:33> 'size_type':'unsigned long' '-'
+  |   |-CXXMemberCallExpr 0xbf3164b48 <col:19, col:29> 'size_type':'unsigned long'
+  |   | `-MemberExpr 0xbf3164b18 <col:19, col:24> '<bound member function type>' .size 0xbf8b0f4f8
+  |   |   `-DeclRefExpr 0xbf3164af8 <col:19> 'const std::vector<Size>':'const std::vector<unsigned long>' lvalue ParmVar 0xbf3163488 'path' 'const std::vector<Size> &'
+  |   `-ImplicitCastExpr 0xbf3164bc0 <col:33> 'size_type':'unsigned long' <IntegralCast>
+  |     `-IntegerLiteral 0xbf3164ba0 <col:33> 'int' 1
+  |-CXXMemberCallExpr 0xbf3164d48 <line:463:3, col:37> 'void'
+  | |-MemberExpr 0xbf3164c48 <col:3, col:14> '<bound member function type>' .reserve 0xbfa8071d0
+  | | `-DeclRefExpr 0xbf3164c28 <col:3> 'std::vector<int>' lvalue Var 0xbf3164948 'tag_scores' 'std::vector<int>'
+  | `-BinaryOperator 0xbf3164d28 <col:22, col:36> 'size_type':'unsigned long' '-'
+  |   |-CXXMemberCallExpr 0xbf3164cc8 <col:22, col:32> 'size_type':'unsigned long'
+  |   | `-MemberExpr 0xbf3164c98 <col:22, col:27> '<bound member function type>' .size 0xbf8b0f4f8
+  |   |   `-DeclRefExpr 0xbf3164c78 <col:22> 'const std::vector<Size>':'const std::vector<unsigned long>' lvalue ParmVar 0xbf3163488 'path' 'const std::vector<Size> &'
+  |   `-ImplicitCastExpr 0xbf3164d10 <col:36> 'size_type':'unsigned long' <IntegralCast>
+  |     `-IntegerLiteral 0xbf3164cf0 <col:36> 'int' 1
+  |-ForStmt 0xbf319d008 <line:465:3, line:492:3>
+  | |-DeclStmt 0xbf3164e18 <line:465:8, col:17>
+  | | `-VarDecl 0xbf3164d90 <col:8, col:16> col:12 used j 'int' cinit
+  | |   `-IntegerLiteral 0xbf3164df8 <col:16> 'int' 1
+  | |-<<<NULL>>>
+  | |-BinaryOperator 0xbf3164f38 <col:19, col:38> 'bool' '<'
+  | | |-ImplicitCastExpr 0xbf3164f20 <col:19> 'int' <LValueToRValue>
+  | | | `-DeclRefExpr 0xbf3164e30 <col:19> 'int' lvalue Var 0xbf3164d90 'j' 'int'
+  | | `-CStyleCastExpr 0xbf3164ef8 <col:23, col:38> 'int' <NoOp>
+  | |   `-ImplicitCastExpr 0xbf3164ee0 <col:28, col:38> 'int' <IntegralCast> part_of_explicit_cast
+  | |     `-CXXMemberCallExpr 0xbf3164ea0 <col:28, col:38> 'size_type':'unsigned long'
+  | |       `-MemberExpr 0xbf3164e70 <col:28, col:33> '<bound member function type>' .size 0xbf8b0f4f8
+  | |         `-DeclRefExpr 0xbf3164e50 <col:28> 'const std::vector<Size>':'const std::vector<unsigned long>' lvalue ParmVar 0xbf3163488 'path' 'const std::vector<Size> &'
+  | |-UnaryOperator 0xbf3164f78 <col:41, col:42> 'int' postfix '++'
+  | | `-DeclRefExpr 0xbf3164f58 <col:41> 'int' lvalue Var 0xbf3164d90 'j' 'int'
+  | `-CompoundStmt 0xbf319cfe0 <line:466:3, line:492:3>
+  |   |-DeclStmt 0xbf3165330 <line:467:5, col:36>
+  |   | `-VarDecl 0xbf3164fa8 <col:5, col:35> col:9 used i1 'int' cinit
+  |   |   `-CXXMemberCallExpr 0xbf31652e8 <col:14, col:35> 'int'
+  |   |     |-MemberExpr 0xbf3165020 <col:14> '<bound member function type>' ->getIndex_ 0xbf34a3da0
+  |   |     | `-ImplicitCastExpr 0xbf31652d0 <col:14> 'const OpenMS::FLASHTaggerAlgorithm *' <NoOp>
+  |   |     |   `-CXXThisExpr 0xbf3165010 <col:14> 'OpenMS::FLASHTaggerAlgorithm *' implicit this
+  |   |     `-ImplicitCastExpr 0xbf3165318 <col:24, col:34> 'value_type':'unsigned long' <LValueToRValue>
+  |   |       `-CXXOperatorCallExpr 0xbf3165298 <col:24, col:34> 'const value_type':'const unsigned long' lvalue '[]'
+  |   |         |-ImplicitCastExpr 0xbf3165280 <col:28, col:34> 'const_reference (*)(size_type) const noexcept' <FunctionToPointerDecay>
+  |   |         | `-DeclRefExpr 0xbf3165100 <col:28, col:34> 'const_reference (size_type) const noexcept' lvalue CXXMethod 0xbf8b10218 'operator[]' 'const_reference (size_type) const noexcept'
+  |   |         |-DeclRefExpr 0xbf3165050 <col:24> 'const std::vector<Size>':'const std::vector<unsigned long>' lvalue ParmVar 0xbf3163488 'path' 'const std::vector<Size> &'
+  |   |         `-ImplicitCastExpr 0xbf31650e8 <col:29, col:33> 'size_type':'unsigned long' <IntegralCast>
+  |   |           `-BinaryOperator 0xbf31650c8 <col:29, col:33> 'int' '-'
+  |   |             |-ImplicitCastExpr 0xbf31650b0 <col:29> 'int' <LValueToRValue>
+  |   |             | `-DeclRefExpr 0xbf3165070 <col:29> 'int' lvalue Var 0xbf3164d90 'j' 'int'
+  |   |             `-IntegerLiteral 0xbf3165090 <col:33> 'int' 1
+  |   |-DeclStmt 0xbf3165548 <line:468:5, col:32>
+  |   | `-VarDecl 0xbf3165360 <col:5, col:31> col:9 used i2 'int' cinit
+  |   |   `-CXXMemberCallExpr 0xbf3165500 <col:14, col:31> 'int'
+  |   |     |-MemberExpr 0xbf31653d8 <col:14> '<bound member function type>' ->getIndex_ 0xbf34a3da0
+  |   |     | `-ImplicitCastExpr 0xbf31654e8 <col:14> 'const OpenMS::FLASHTaggerAlgorithm *' <NoOp>
+  |   |     |   `-CXXThisExpr 0xbf31653c8 <col:14> 'OpenMS::FLASHTaggerAlgorithm *' implicit this
+  |   |     `-ImplicitCastExpr 0xbf3165530 <col:24, col:30> 'value_type':'unsigned long' <LValueToRValue>
+  |   |       `-CXXOperatorCallExpr 0xbf31654b0 <col:24, col:30> 'const value_type':'const unsigned long' lvalue '[]'
+  |   |         |-ImplicitCastExpr 0xbf3165498 <col:28, col:30> 'const_reference (*)(size_type) const noexcept' <FunctionToPointerDecay>
+  |   |         | `-DeclRefExpr 0xbf3165478 <col:28, col:30> 'const_reference (size_type) const noexcept' lvalue CXXMethod 0xbf8b10218 'operator[]' 'const_reference (size_type) const noexcept'
+  |   |         |-DeclRefExpr 0xbf3165408 <col:24> 'const std::vector<Size>':'const std::vector<unsigned long>' lvalue ParmVar 0xbf3163488 'path' 'const std::vector<Size> &'
+  |   |         `-ImplicitCastExpr 0xbf3165460 <col:29> 'size_type':'unsigned long' <IntegralCast>
+  |   |           `-ImplicitCastExpr 0xbf3165448 <col:29> 'int' <LValueToRValue>
+  |   |             `-DeclRefExpr 0xbf3165428 <col:29> 'int' lvalue Var 0xbf3164d90 'j' 'int'
+  |   `-IfStmt 0xbf319cfb0 <line:470:5, line:491:5> has_else
+  |     |-ExprWithCleanups 0xbf31891a0 <line:470:9, col:106> 'bool'
+  |     | `-BinaryOperator 0xbf3189180 <col:9, col:106> 'bool' '&&'
+  |     |   |-CXXOperatorCallExpr 0xbf3186c28 <col:9, col:51> 'bool' '!=' adl
+  |     |   | |-ImplicitCastExpr 0xbf3186c10 <col:31> 'bool (*)(const __map_iterator<std::__tree_iterator<std::__value_type<int, std::map<int, std::vector<std::string>>>, std::__tree_node<std::__value_type<int, std::map<int, std::vector<std::string>>>, void *> *, long>> &, const __map_iterator<std::__tree_iterator<std::__value_type<int, std::map<int, std::vector<std::string>>>, std::__tree_node<std::__value_type<int, std::map<int, std::vector<std::string>>>, void *> *, long>> &)' <FunctionToPointerDecay>
+  |     |   | | `-DeclRefExpr 0xbf3186b90 <col:31> 'bool (const __map_iterator<std::__tree_iterator<std::__value_type<int, std::map<int, std::vector<std::string>>>, std::__tree_node<std::__value_type<int, std::map<int, std::vector<std::string>>>, void *> *, long>> &, const __map_iterator<std::__tree_iterator<std::__value_type<int, std::map<int, std::vector<std::string>>>, std::__tree_node<std::__value_type<int, std::map<int, std::vector<std::string>>>, void *> *, long>> &)' lvalue Function 0xbf316cfe8 'operator!=' 'bool (const __map_iterator<std::__tree_iterator<std::__value_type<int, std::map<int, std::vector<std::string>>>, std::__tree_node<std::__value_type<int, std::map<int, std::vector<std::string>>>, void *> *, long>> &, const __map_iterator<std::__tree_iterator<std::__value_type<int, std::map<int, std::vector<std::string>>>, std::__tree_node<std::__value_type<int, std::map<int, std::vector<std::string>>>, void *> *, long>> &)'
+  |     |   | |-MaterializeTemporaryExpr 0xbf3186b48 <col:9, col:29> 'const iterator':'const std::__map_iterator<std::__tree_iterator<std::__value_type<int, std::map<int, std::vector<std::string>>>, std::__tree_node<std::__value_type<int, std::map<int, std::vector<std::string>>>, void *> *, long>>' lvalue
+  |     |   | | `-ImplicitCastExpr 0xbf3186b30 <col:9, col:29> 'const iterator':'const std::__map_iterator<std::__tree_iterator<std::__value_type<int, std::map<int, std::vector<std::string>>>, std::__tree_node<std::__value_type<int, std::map<int, std::vector<std::string>>>, void *> *, long>>' <NoOp>
+  |     |   | |   `-CXXMemberCallExpr 0xbf3165dc0 <col:9, col:29> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<int, std::map<int, std::vector<std::string>>>, std::__tree_node<std::__value_type<int, std::map<int, std::vector<std::string>>>, void *> *, long>>'
+  |     |   | |     |-MemberExpr 0xbf3165d90 <col:9, col:22> '<bound member function type>' .find 0xbf5cbbdc0
+  |     |   | |     | `-MemberExpr 0xbf31655b8 <col:9> 'std::map<int, std::map<int, std::vector<std::string>>>' lvalue ->edge_aa_map_ 0xbf5cc3120
+  |     |   | |     |   `-CXXThisExpr 0xbf31655a8 <col:9> 'OpenMS::FLASHTaggerAlgorithm *' implicit this
+  |     |   | |     `-ImplicitCastExpr 0xbf316db08 <col:27> 'const key_type':'const int' lvalue <NoOp>
+  |     |   | |       `-DeclRefExpr 0xbf3165658 <col:27> 'int' lvalue Var 0xbf3164fa8 'i1' 'int'
+  |     |   | `-MaterializeTemporaryExpr 0xbf3186b78 <col:34, col:51> 'const iterator':'const std::__map_iterator<std::__tree_iterator<std::__value_type<int, std::map<int, std::vector<std::string>>>, std::__tree_node<std::__value_type<int, std::map<int, std::vector<std::string>>>, void *> *, long>>' lvalue
+  |     |   |   `-ImplicitCastExpr 0xbf3186b60 <col:34, col:51> 'const iterator':'const std::__map_iterator<std::__tree_iterator<std::__value_type<int, std::map<int, std::vector<std::string>>>, std::__tree_node<std::__value_type<int, std::map<int, std::vector<std::string>>>, void *> *, long>>' <NoOp>
+  |     |   |     `-CXXMemberCallExpr 0xbf316ddd8 <col:34, col:51> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<int, std::map<int, std::vector<std::string>>>, std::__tree_node<std::__value_type<int, std::map<int, std::vector<std::string>>>, void *> *, long>>'
+  |     |   |       `-MemberExpr 0xbf316dda8 <col:34, col:47> '<bound member function type>' .end 0xbf5cb0088
+  |     |   |         `-MemberExpr 0xbf316dd18 <col:34> 'std::map<int, std::map<int, std::vector<std::string>>>' lvalue ->edge_aa_map_ 0xbf5cc3120
+  |     |   |           `-CXXThisExpr 0xbf316dd08 <col:34> 'OpenMS::FLASHTaggerAlgorithm *' implicit this
+  |     |   `-CXXOperatorCallExpr 0xbf3189148 <col:56, col:106> 'bool' '!=' adl
+  |     |     |-ImplicitCastExpr 0xbf3189130 <col:82> 'bool (*)(const __map_iterator<std::__tree_iterator<std::__value_type<int, std::vector<std::string>>, std::__tree_node<std::__value_type<int, std::vector<std::string>>, void *> *, long>> &, const __map_iterator<std::__tree_iterator<std::__value_type<int, std::vector<std::string>>, std::__tree_node<std::__value_type<int, std::vector<std::string>>, void *> *, long>> &)' <FunctionToPointerDecay>
+  |     |     | `-DeclRefExpr 0xbf3189110 <col:82> 'bool (const __map_iterator<std::__tree_iterator<std::__value_type<int, std::vector<std::string>>, std::__tree_node<std::__value_type<int, std::vector<std::string>>, void *> *, long>> &, const __map_iterator<std::__tree_iterator<std::__value_type<int, std::vector<std::string>>, std::__tree_node<std::__value_type<int, std::vector<std::string>>, void *> *, long>> &)' lvalue Function 0xbf3528298 'operator!=' 'bool (const __map_iterator<std::__tree_iterator<std::__value_type<int, std::vector<std::string>>, std::__tree_node<std::__value_type<int, std::vector<std::string>>, void *> *, long>> &, const __map_iterator<std::__tree_iterator<std::__value_type<int, std::vector<std::string>>, std::__tree_node<std::__value_type<int, std::vector<std::string>>, void *> *, long>> &)'
+  |     |     |-MaterializeTemporaryExpr 0xbf31890c8 <col:56, col:80> 'const iterator':'const std::__map_iterator<std::__tree_iterator<std::__value_type<int, std::vector<std::string>>, std::__tree_node<std::__value_type<int, std::vector<std::string>>, void *> *, long>>' lvalue
+  |     |     | `-ImplicitCastExpr 0xbf31890b0 <col:56, col:80> 'const iterator':'const std::__map_iterator<std::__tree_iterator<std::__value_type<int, std::vector<std::string>>, std::__tree_node<std::__value_type<int, std::vector<std::string>>, void *> *, long>>' <NoOp>
+  |     |     |   `-CXXMemberCallExpr 0xbf3187640 <col:56, col:80> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<int, std::vector<std::string>>, std::__tree_node<std::__value_type<int, std::vector<std::string>>, void *> *, long>>'
+  |     |     |     |-MemberExpr 0xbf3187610 <col:56, col:73> '<bound member function type>' .find 0xbf3519250
+  |     |     |     | `-CXXOperatorCallExpr 0xbf3186ea0 <col:56, col:71> 'mapped_type':'std::map<int, std::vector<std::string>>' lvalue '[]'
+  |     |     |     |   |-ImplicitCastExpr 0xbf3186e88 <col:68, col:71> 'mapped_type &(*)(const key_type &)' <FunctionToPointerDecay>
+  |     |     |     |   | `-DeclRefExpr 0xbf3186e68 <col:68, col:71> 'mapped_type &(const key_type &)' lvalue CXXMethod 0xbf5cb18b8 'operator[]' 'mapped_type &(const key_type &)'
+  |     |     |     |   |-MemberExpr 0xbf3186e00 <col:56> 'std::map<int, std::map<int, std::vector<std::string>>>' lvalue ->edge_aa_map_ 0xbf5cc3120
+  |     |     |     |   | `-CXXThisExpr 0xbf3186df0 <col:56> 'OpenMS::FLASHTaggerAlgorithm *' implicit this
+  |     |     |     |   `-ImplicitCastExpr 0xbf3186e50 <col:69> 'const key_type':'const int' lvalue <NoOp>
+  |     |     |     |     `-DeclRefExpr 0xbf3186e30 <col:69> 'int' lvalue Var 0xbf3164fa8 'i1' 'int'
+  |     |     |     `-ImplicitCastExpr 0xbf3187670 <col:78> 'const key_type':'const int' lvalue <NoOp>
+  |     |     |       `-DeclRefExpr 0xbf3186f48 <col:78> 'int' lvalue Var 0xbf3165360 'i2' 'int'
+  |     |     `-MaterializeTemporaryExpr 0xbf31890f8 <col:85, col:106> 'const iterator':'const std::__map_iterator<std::__tree_iterator<std::__value_type<int, std::vector<std::string>>, std::__tree_node<std::__value_type<int, std::vector<std::string>>, void *> *, long>>' lvalue
+  |     |       `-ImplicitCastExpr 0xbf31890e0 <col:85, col:106> 'const iterator':'const std::__map_iterator<std::__tree_iterator<std::__value_type<int, std::vector<std::string>>, std::__tree_node<std::__value_type<int, std::vector<std::string>>, void *> *, long>>' <NoOp>
+  |     |         `-CXXMemberCallExpr 0xbf3187838 <col:85, col:106> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<int, std::vector<std::string>>, std::__tree_node<std::__value_type<int, std::vector<std::string>>, void *> *, long>>'
+  |     |           `-MemberExpr 0xbf3187808 <col:85, col:102> '<bound member function type>' .end 0xbf350d578
+  |     |             `-CXXOperatorCallExpr 0xbf3187770 <col:85, col:100> 'mapped_type':'std::map<int, std::vector<std::string>>' lvalue '[]'
+  |     |               |-ImplicitCastExpr 0xbf3187758 <col:97, col:100> 'mapped_type &(*)(const key_type &)' <FunctionToPointerDecay>
+  |     |               | `-DeclRefExpr 0xbf3187738 <col:97, col:100> 'mapped_type &(const key_type &)' lvalue CXXMethod 0xbf5cb18b8 'operator[]' 'mapped_type &(const key_type &)'
+  |     |               |-MemberExpr 0xbf31876d0 <col:85> 'std::map<int, std::map<int, std::vector<std::string>>>' lvalue ->edge_aa_map_ 0xbf5cc3120
+  |     |               | `-CXXThisExpr 0xbf31876c0 <col:85> 'OpenMS::FLASHTaggerAlgorithm *' implicit this
+  |     |               `-ImplicitCastExpr 0xbf3187720 <col:98> 'const key_type':'const int' lvalue <NoOp>
+  |     |                 `-DeclRefExpr 0xbf3187700 <col:98> 'int' lvalue Var 0xbf3164fa8 'i1' 'int'
+  |     |-CompoundStmt 0xbf319c9f0 <line:471:5, line:485:5>
+  |     | |-DeclStmt 0xbf3189460 <line:472:7, col:39>
+  |     | | `-VarDecl 0xbf31891d8 <col:7, col:38> col:13 used edge_aa 'mapped_type &' cinit
+  |     | |   `-CXXOperatorCallExpr 0xbf31892f0 <col:23, col:38> 'mapped_type':'std::map<int, std::vector<std::string>>' lvalue '[]'
+  |     | |     |-ImplicitCastExpr 0xbf31892d8 <col:35, col:38> 'mapped_type &(*)(const key_type &)' <FunctionToPointerDecay>
+  |     | |     | `-DeclRefExpr 0xbf31892b8 <col:35, col:38> 'mapped_type &(const key_type &)' lvalue CXXMethod 0xbf5cb18b8 'operator[]' 'mapped_type &(const key_type &)'
+  |     | |     |-MemberExpr 0xbf3189250 <col:23> 'std::map<int, std::map<int, std::vector<std::string>>>' lvalue ->edge_aa_map_ 0xbf5cc3120
+  |     | |     | `-CXXThisExpr 0xbf3189240 <col:23> 'OpenMS::FLASHTaggerAlgorithm *' implicit this
+  |     | |     `-ImplicitCastExpr 0xbf31892a0 <col:36> 'const key_type':'const int' lvalue <NoOp>
+  |     | |       `-DeclRefExpr 0xbf3189280 <col:36> 'int' lvalue Var 0xbf3164fa8 'i1' 'int'
+  |     | |-DeclStmt 0xbf31897a0 <line:473:7, col:40>
+  |     | | `-VarDecl 0xbf3189658 <col:7, col:32> col:32 used tmp_seqs 'std::vector<std::string>' callinit destroyed
+  |     | |   `-CXXConstructExpr 0xbf31896f0 <col:32> 'std::vector<std::string>' 'void () noexcept(is_nothrow_default_constructible<allocator_type>::value)'
+  |     | |-CXXMemberCallExpr 0xbf31899f0 <line:474:7, col:56> 'void'
+  |     | | |-MemberExpr 0xbf31897d8 <col:7, col:16> '<bound member function type>' .reserve 0xbfb984350
+  |     | | | `-DeclRefExpr 0xbf31897b8 <col:7> 'std::vector<std::string>' lvalue Var 0xbf3189658 'tmp_seqs' 'std::vector<std::string>'
+  |     | | `-BinaryOperator 0xbf31899d0 <col:24, col:55> 'size_type':'unsigned long' '*'
+  |     | |   |-CXXMemberCallExpr 0xbf3189870 <col:24, col:34> 'size_type':'unsigned long'
+  |     | |   | `-MemberExpr 0xbf3189828 <col:24, col:29> '<bound member function type>' .size 0xbfb983c88
+  |     | |   |   `-ImplicitCastExpr 0xbf3189858 <col:24> 'const std::vector<std::string>' lvalue <NoOp>
+  |     | |   |     `-DeclRefExpr 0xbf3189808 <col:24> 'std::vector<std::string>' lvalue Var 0xbf3164008 'seqs' 'std::vector<std::string>'
+  |     | |   `-CXXMemberCallExpr 0xbf31899a8 <col:38, col:55> 'size_type':'unsigned long'
+  |     | |     `-MemberExpr 0xbf3189960 <col:38, col:50> '<bound member function type>' .size 0xbfb983c88
+  |     | |       `-ImplicitCastExpr 0xbf3189990 <col:38, col:48> 'const std::vector<std::string>' lvalue <NoOp>
+  |     | |         `-CXXOperatorCallExpr 0xbf3189928 <col:38, col:48> 'mapped_type':'std::vector<std::string>' lvalue '[]'
+  |     | |           |-ImplicitCastExpr 0xbf3189910 <col:45, col:48> 'mapped_type &(*)(const key_type &)' <FunctionToPointerDecay>
+  |     | |           | `-DeclRefExpr 0xbf31898f0 <col:45, col:48> 'mapped_type &(const key_type &)' lvalue CXXMethod 0xbf350ed78 'operator[]' 'mapped_type &(const key_type &)'
+  |     | |           |-DeclRefExpr 0xbf3189898 <col:38> 'mapped_type':'std::map<int, std::vector<std::string>>' lvalue Var 0xbf31891d8 'edge_aa' 'mapped_type &'
+  |     | |           `-ImplicitCastExpr 0xbf31898d8 <col:46> 'const key_type':'const int' lvalue <NoOp>
+  |     | |             `-DeclRefExpr 0xbf31898b8 <col:46> 'int' lvalue Var 0xbf3165360 'i2' 'int'
+  |     | |-CXXForRangeStmt 0xbf318c838 <line:475:7, line:481:7>
+  |     | | |-<<<NULL>>>
+  |     | | |-DeclStmt 0xbf3189d00 <line:475:34>
+  |     | | | `-VarDecl 0xbf3189b00 <col:34> col:34 implicit used __range3 'std::vector<std::string> &' cinit
+  |     | | |   `-DeclRefExpr 0xbf3189a20 <col:34> 'std::vector<std::string>' lvalue Var 0xbf3164008 'seqs' 'std::vector<std::string>'
+  |     | | |-DeclStmt 0xbf318a140 <col:32>
+  |     | | | `-VarDecl 0xbf3189d70 <col:32> col:32 implicit used __begin3 'iterator':'std::__wrap_iter<std::string *>' cinit
+  |     | | |   `-CXXMemberCallExpr 0xbf3189ee8 <col:32> 'iterator':'std::__wrap_iter<std::string *>'
+  |     | | |     `-MemberExpr 0xbf3189eb8 <col:32> '<bound member function type>' .begin 0xbfb982778
+  |     | | |       `-DeclRefExpr 0xbf3189d18 <col:32> 'std::vector<std::string>' lvalue Var 0xbf3189b00 '__range3' 'std::vector<std::string> &'
+  |     | | |-DeclStmt 0xbf318a158 <col:32>
+  |     | | | `-VarDecl 0xbf3189df0 <col:32> col:32 implicit used __end3 'iterator':'std::__wrap_iter<std::string *>' cinit
+  |     | | |   `-CXXMemberCallExpr 0xbf318a060 <col:32> 'iterator':'std::__wrap_iter<std::string *>'
+  |     | | |     `-MemberExpr 0xbf318a030 <col:32> '<bound member function type>' .end 0xbfb982b08
+  |     | | |       `-DeclRefExpr 0xbf3189d38 <col:32> 'std::vector<std::string>' lvalue Var 0xbf3189b00 '__range3' 'std::vector<std::string> &'
+  |     | | |-CXXRewrittenBinaryOperator 0xbf318c5a0 <col:32> 'bool'
+  |     | | | `-UnaryOperator 0xbf318c588 <col:32> 'bool' prefix '!' cannot overflow
+  |     | | |   `-CXXOperatorCallExpr 0xbf318c550 <col:32> 'bool' '==' adl
+  |     | | |     |-ImplicitCastExpr 0xbf318c538 <col:32> 'bool (*)(const __wrap_iter<std::string *> &, const __wrap_iter<std::string *> &) noexcept' <FunctionToPointerDecay>
+  |     | | |     | `-DeclRefExpr 0xbf318c518 <col:32> 'bool (const __wrap_iter<std::string *> &, const __wrap_iter<std::string *> &) noexcept' lvalue Function 0xbfa870628 'operator==' 'bool (const __wrap_iter<std::string *> &, const __wrap_iter<std::string *> &) noexcept'
+  |     | | |     |-ImplicitCastExpr 0xbf318c4e8 <col:32> 'const __wrap_iter<std::string *>':'const std::__wrap_iter<std::string *>' lvalue <NoOp>
+  |     | | |     | `-DeclRefExpr 0xbf318a170 <col:32> 'iterator':'std::__wrap_iter<std::string *>' lvalue Var 0xbf3189d70 '__begin3' 'iterator':'std::__wrap_iter<std::string *>'
+  |     | | |     `-ImplicitCastExpr 0xbf318c500 <col:32> 'const __wrap_iter<std::string *>':'const std::__wrap_iter<std::string *>' lvalue <NoOp>
+  |     | | |       `-DeclRefExpr 0xbf318a190 <col:32> 'iterator':'std::__wrap_iter<std::string *>' lvalue Var 0xbf3189df0 '__end3' 'iterator':'std::__wrap_iter<std::string *>'
+  |     | | |-CXXOperatorCallExpr 0xbf318c610 <col:32> '__wrap_iter<std::string *>':'std::__wrap_iter<std::string *>' lvalue '++'
+  |     | | | |-ImplicitCastExpr 0xbf318c5f8 <col:32> '__wrap_iter<std::string *> &(*)() noexcept' <FunctionToPointerDecay>
+  |     | | | | `-DeclRefExpr 0xbf318c5d8 <col:32> '__wrap_iter<std::string *> &() noexcept' lvalue CXXMethod 0xbfa869930 'operator++' '__wrap_iter<std::string *> &() noexcept'
+  |     | | | `-DeclRefExpr 0xbf318c5b8 <col:32> 'iterator':'std::__wrap_iter<std::string *>' lvalue Var 0xbf3189d70 '__begin3' 'iterator':'std::__wrap_iter<std::string *>'
+  |     | | |-DeclStmt 0xbf3189ac8 <col:12, col:38>
+  |     | | | `-VarDecl 0xbf3189a60 <col:12, col:32> col:24 used tmp_seq 'std::string const &' cinit
+  |     | | |   `-ImplicitCastExpr 0xbf318c7d0 <col:32> 'std::string const':'const std::string' lvalue <NoOp>
+  |     | | |     `-CXXOperatorCallExpr 0xbf318c6b0 <col:32> 'std::string' lvalue '*'
+  |     | | |       |-ImplicitCastExpr 0xbf318c698 <col:32> 'reference (*)() const noexcept' <FunctionToPointerDecay>
+  |     | | |       | `-DeclRefExpr 0xbf318c678 <col:32> 'reference () const noexcept' lvalue CXXMethod 0xbfa869458 'operator*' 'reference () const noexcept'
+  |     | | |       `-ImplicitCastExpr 0xbf318c660 <col:32> 'const std::__wrap_iter<std::string *>' lvalue <NoOp>
+  |     | | |         `-DeclRefExpr 0xbf318c640 <col:32> 'iterator':'std::__wrap_iter<std::string *>' lvalue Var 0xbf3189d70 '__begin3' 'iterator':'std::__wrap_iter<std::string *>'
+  |     | | `-CompoundStmt 0xbf3190158 <line:476:7, line:481:7>
+  |     | |   `-CXXForRangeStmt 0xbf318f758 <line:477:9, line:480:9>
+  |     | |     |-<<<NULL>>>
+  |     | |     |-DeclStmt 0xbf318cc20 <line:477:32>
+  |     | |     | `-VarDecl 0xbf318ca18 <col:32, col:42> col:32 implicit used __range4 'mapped_type &' cinit
+  |     | |     |   `-CXXOperatorCallExpr 0xbf318c920 <col:32, col:42> 'mapped_type':'std::vector<std::string>' lvalue '[]'
+  |     | |     |     |-ImplicitCastExpr 0xbf318c908 <col:39, col:42> 'mapped_type &(*)(const key_type &)' <FunctionToPointerDecay>
+  |     | |     |     | `-DeclRefExpr 0xbf318c8e8 <col:39, col:42> 'mapped_type &(const key_type &)' lvalue CXXMethod 0xbf350ed78 'operator[]' 'mapped_type &(const key_type &)'
+  |     | |     |     |-DeclRefExpr 0xbf318c890 <col:32> 'mapped_type':'std::map<int, std::vector<std::string>>' lvalue Var 0xbf31891d8 'edge_aa' 'mapped_type &'
+  |     | |     |     `-ImplicitCastExpr 0xbf318c8d0 <col:40> 'const key_type':'const int' lvalue <NoOp>
+  |     | |     |       `-DeclRefExpr 0xbf318c8b0 <col:40> 'int' lvalue Var 0xbf3165360 'i2' 'int'
+  |     | |     |-DeclStmt 0xbf318d060 <col:30>
+  |     | |     | `-VarDecl 0xbf318cc90 <col:30> col:30 implicit used __begin4 'iterator':'std::__wrap_iter<std::string *>' cinit
+  |     | |     |   `-CXXMemberCallExpr 0xbf318ce08 <col:30> 'iterator':'std::__wrap_iter<std::string *>'
+  |     | |     |     `-MemberExpr 0xbf318cdd8 <col:30> '<bound member function type>' .begin 0xbfb982778
+  |     | |     |       `-DeclRefExpr 0xbf318cc38 <col:30> 'mapped_type':'std::vector<std::string>' lvalue Var 0xbf318ca18 '__range4' 'mapped_type &'
+  |     | |     |-DeclStmt 0xbf318d078 <col:30>
+  |     | |     | `-VarDecl 0xbf318cd10 <col:30> col:30 implicit used __end4 'iterator':'std::__wrap_iter<std::string *>' cinit
+  |     | |     |   `-CXXMemberCallExpr 0xbf318cf80 <col:30> 'iterator':'std::__wrap_iter<std::string *>'
+  |     | |     |     `-MemberExpr 0xbf318cf50 <col:30> '<bound member function type>' .end 0xbfb982b08
+  |     | |     |       `-DeclRefExpr 0xbf318cc58 <col:30> 'mapped_type':'std::vector<std::string>' lvalue Var 0xbf318ca18 '__range4' 'mapped_type &'
+  |     | |     |-CXXRewrittenBinaryOperator 0xbf318f4c0 <col:30> 'bool'
+  |     | |     | `-UnaryOperator 0xbf318f4a8 <col:30> 'bool' prefix '!' cannot overflow
+  |     | |     |   `-CXXOperatorCallExpr 0xbf318f470 <col:30> 'bool' '==' adl
+  |     | |     |     |-ImplicitCastExpr 0xbf318f458 <col:30> 'bool (*)(const __wrap_iter<std::string *> &, const __wrap_iter<std::string *> &) noexcept' <FunctionToPointerDecay>
+  |     | |     |     | `-DeclRefExpr 0xbf318f438 <col:30> 'bool (const __wrap_iter<std::string *> &, const __wrap_iter<std::string *> &) noexcept' lvalue Function 0xbfa870628 'operator==' 'bool (const __wrap_iter<std::string *> &, const __wrap_iter<std::string *> &) noexcept'
+  |     | |     |     |-ImplicitCastExpr 0xbf318f408 <col:30> 'const __wrap_iter<std::string *>':'const std::__wrap_iter<std::string *>' lvalue <NoOp>
+  |     | |     |     | `-DeclRefExpr 0xbf318d090 <col:30> 'iterator':'std::__wrap_iter<std::string *>' lvalue Var 0xbf318cc90 '__begin4' 'iterator':'std::__wrap_iter<std::string *>'
+  |     | |     |     `-ImplicitCastExpr 0xbf318f420 <col:30> 'const __wrap_iter<std::string *>':'const std::__wrap_iter<std::string *>' lvalue <NoOp>
+  |     | |     |       `-DeclRefExpr 0xbf318d0b0 <col:30> 'iterator':'std::__wrap_iter<std::string *>' lvalue Var 0xbf318cd10 '__end4' 'iterator':'std::__wrap_iter<std::string *>'
+  |     | |     |-CXXOperatorCallExpr 0xbf318f530 <col:30> '__wrap_iter<std::string *>':'std::__wrap_iter<std::string *>' lvalue '++'
+  |     | |     | |-ImplicitCastExpr 0xbf318f518 <col:30> '__wrap_iter<std::string *> &(*)() noexcept' <FunctionToPointerDecay>
+  |     | |     | | `-DeclRefExpr 0xbf318f4f8 <col:30> '__wrap_iter<std::string *> &() noexcept' lvalue CXXMethod 0xbfa869930 'operator++' '__wrap_iter<std::string *> &() noexcept'
+  |     | |     | `-DeclRefExpr 0xbf318f4d8 <col:30> 'iterator':'std::__wrap_iter<std::string *>' lvalue Var 0xbf318cc90 '__begin4' 'iterator':'std::__wrap_iter<std::string *>'
+  |     | |     |-DeclStmt 0xbf318c9e0 <col:14, col:43>
+  |     | |     | `-VarDecl 0xbf318c978 <col:14, col:30> col:26 used seq 'std::string const &' cinit
+  |     | |     |   `-ImplicitCastExpr 0xbf318f6f0 <col:30> 'std::string const':'const std::string' lvalue <NoOp>
+  |     | |     |     `-CXXOperatorCallExpr 0xbf318f5d0 <col:30> 'std::string' lvalue '*'
+  |     | |     |       |-ImplicitCastExpr 0xbf318f5b8 <col:30> 'reference (*)() const noexcept' <FunctionToPointerDecay>
+  |     | |     |       | `-DeclRefExpr 0xbf318f598 <col:30> 'reference () const noexcept' lvalue CXXMethod 0xbfa869458 'operator*' 'reference () const noexcept'
+  |     | |     |       `-ImplicitCastExpr 0xbf318f580 <col:30> 'const std::__wrap_iter<std::string *>' lvalue <NoOp>
+  |     | |     |         `-DeclRefExpr 0xbf318f560 <col:30> 'iterator':'std::__wrap_iter<std::string *>' lvalue Var 0xbf318cc90 '__begin4' 'iterator':'std::__wrap_iter<std::string *>'
+  |     | |     `-CompoundStmt 0xbf3190140 <line:478:9, line:480:9>
+  |     | |       `-ExprWithCleanups 0xbf3190128 <line:479:11, col:46> 'value_type':'std::string' lvalue
+  |     | |         `-CXXMemberCallExpr 0xbf31900e0 <col:11, col:46> 'value_type':'std::string' lvalue
+  |     | |           |-MemberExpr 0xbf31900a8 <col:11, col:20> '<bound member function type>' .emplace_back 0xbfba9e0e0
+  |     | |           | `-DeclRefExpr 0xbf318f7b0 <col:11> 'std::vector<std::string>' lvalue Var 0xbf3189658 'tmp_seqs' 'std::vector<std::string>'
+  |     | |           `-MaterializeTemporaryExpr 0xbf3190110 <col:33, col:39> 'basic_string<char, std::char_traits<char>, std::allocator<char>>':'std::string' xvalue
+  |     | |             `-CXXBindTemporaryExpr 0xbf318ffa0 <col:33, col:39> 'basic_string<char, std::char_traits<char>, std::allocator<char>>':'std::string' (CXXTemporary 0xbf318ffa0)
+  |     | |               `-CXXOperatorCallExpr 0xbf318ff60 <col:33, col:39> 'basic_string<char, std::char_traits<char>, std::allocator<char>>':'std::string' '+' adl
+  |     | |                 |-ImplicitCastExpr 0xbf318ff48 <col:37> 'basic_string<char, std::char_traits<char>, std::allocator<char>> (*)(const basic_string<char, std::char_traits<char>, std::allocator<char>> &, const basic_string<char, std::char_traits<char>, std::allocator<char>> &)' <FunctionToPointerDecay>
+  |     | |                 | `-DeclRefExpr 0xbf318ff28 <col:37> 'basic_string<char, std::char_traits<char>, std::allocator<char>> (const basic_string<char, std::char_traits<char>, std::allocator<char>> &, const basic_string<char, std::char_traits<char>, std::allocator<char>> &)' lvalue Function 0xbf752fad0 'operator+' 'basic_string<char, std::char_traits<char>, std::allocator<char>> (const basic_string<char, std::char_traits<char>, std::allocator<char>> &, const basic_string<char, std::char_traits<char>, std::allocator<char>> &)'
+  |     | |                 |-DeclRefExpr 0xbf318f828 <col:33> 'std::string const':'const std::string' lvalue Var 0xbf318c978 'seq' 'std::string const &'
+  |     | |                 `-DeclRefExpr 0xbf318f848 <col:39> 'std::string const':'const std::string' lvalue Var 0xbf3189a60 'tmp_seq' 'std::string const &'
+  |     | |-CXXOperatorCallExpr 0xbf3190200 <line:482:7, col:14> 'vector<std::string>':'std::vector<std::string>' lvalue '='
+  |     | | |-ImplicitCastExpr 0xbf31901e8 <col:12> 'vector<std::string> &(*)(const vector<std::string> &)' <FunctionToPointerDecay>
+  |     | | | `-DeclRefExpr 0xbf31901c8 <col:12> 'vector<std::string> &(const vector<std::string> &)' lvalue CXXMethod 0xbfb97cbc8 'operator=' 'vector<std::string> &(const vector<std::string> &)'
+  |     | | |-DeclRefExpr 0xbf3190170 <col:7> 'std::vector<std::string>' lvalue Var 0xbf3164008 'seqs' 'std::vector<std::string>'
+  |     | | `-ImplicitCastExpr 0xbf31901b0 <col:14> 'const vector<std::string>':'const std::vector<std::string>' lvalue <NoOp>
+  |     | |   `-DeclRefExpr 0xbf3190190 <col:14> 'std::vector<std::string>' lvalue Var 0xbf3189658 'tmp_seqs' 'std::vector<std::string>'
+  |     | |-CXXMemberCallExpr 0xbf319c7c8 <line:483:7, col:32> 'void'
+  |     | | |-MemberExpr 0xbf31903d0 <col:7, col:15> '<bound member function type>' .push_back 0xbfa84f0a0
+  |     | | | `-DeclRefExpr 0xbf3190238 <col:7> 'std::vector<double>' lvalue Var 0xbf3164638 'tag_mzs' 'std::vector<double>'
+  |     | | `-CXXOperatorCallExpr 0xbf3190360 <col:25, col:31> 'const value_type':'const double' lvalue '[]'
+  |     | |   |-ImplicitCastExpr 0xbf3190348 <col:28, col:31> 'const_reference (*)(size_type) const noexcept' <FunctionToPointerDecay>
+  |     | |   | `-DeclRefExpr 0xbf3190328 <col:28, col:31> 'const_reference (size_type) const noexcept' lvalue CXXMethod 0xbfa84deb8 'operator[]' 'const_reference (size_type) const noexcept'
+  |     | |   |-DeclRefExpr 0xbf31902b8 <col:25> 'const std::vector<double>' lvalue ParmVar 0xbf31636e8 'mzs' 'const std::vector<double> &'
+  |     | |   `-ImplicitCastExpr 0xbf3190310 <col:29> 'size_type':'unsigned long' <IntegralCast>
+  |     | |     `-ImplicitCastExpr 0xbf31902f8 <col:29> 'int' <LValueToRValue>
+  |     | |       `-DeclRefExpr 0xbf31902d8 <col:29> 'int' lvalue Var 0xbf3164fa8 'i1' 'int'
+  |     | `-CXXMemberCallExpr 0xbf319c9c0 <line:484:7, col:38> 'void'
+  |     |   |-MemberExpr 0xbf319c990 <col:7, col:18> '<bound member function type>' .push_back 0xbfa808b50
+  |     |   | `-DeclRefExpr 0xbf319c7f8 <col:7> 'std::vector<int>' lvalue Var 0xbf3164948 'tag_scores' 'std::vector<int>'
+  |     |   `-CXXOperatorCallExpr 0xbf319c920 <col:28, col:37> 'const value_type':'const int' lvalue '[]'
+  |     |     |-ImplicitCastExpr 0xbf319c908 <col:34, col:37> 'const_reference (*)(size_type) const noexcept' <FunctionToPointerDecay>
+  |     |     | `-DeclRefExpr 0xbf319c8e8 <col:34, col:37> 'const_reference (size_type) const noexcept' lvalue CXXMethod 0xbfa807828 'operator[]' 'const_reference (size_type) const noexcept'
+  |     |     |-DeclRefExpr 0xbf319c878 <col:28> 'const std::vector<int>' lvalue ParmVar 0xbf3163948 'scores' 'const std::vector<int> &'
+  |     |     `-ImplicitCastExpr 0xbf319c8d0 <col:35> 'size_type':'unsigned long' <IntegralCast>
+  |     |       `-ImplicitCastExpr 0xbf319c8b8 <col:35> 'int' <LValueToRValue>
+  |     |         `-DeclRefExpr 0xbf319c898 <col:35> 'int' lvalue Var 0xbf3164fa8 'i1' 'int'
+  |     `-IfStmt 0xbf319cf90 <line:486:10, line:491:5>
+  |       |-BinaryOperator 0xbf319ca90 <line:486:14, col:20> 'bool' '=='
+  |       | |-ImplicitCastExpr 0xbf319ca78 <col:14> 'int' <LValueToRValue>
+  |       | | `-DeclRefExpr 0xbf319ca38 <col:14> 'int' lvalue Var 0xbf3165360 'i2' 'int'
+  |       | `-IntegerLiteral 0xbf319ca58 <col:20> 'int' 0
+  |       `-CompoundStmt 0xbf319cf68 <line:487:5, line:491:5>
+  |         |-CXXMemberCallExpr 0xbf319cc40 <line:488:7, col:32> 'void'
+  |         | |-MemberExpr 0xbf319cc10 <col:7, col:15> '<bound member function type>' .push_back 0xbfa84f0a0
+  |         | | `-DeclRefExpr 0xbf319cab0 <col:7> 'std::vector<double>' lvalue Var 0xbf3164638 'tag_mzs' 'std::vector<double>'
+  |         | `-CXXOperatorCallExpr 0xbf319cbd8 <col:25, col:31> 'const value_type':'const double' lvalue '[]'
+  |         |   |-ImplicitCastExpr 0xbf319cbc0 <col:28, col:31> 'const_reference (*)(size_type) const noexcept' <FunctionToPointerDecay>
+  |         |   | `-DeclRefExpr 0xbf319cba0 <col:28, col:31> 'const_reference (size_type) const noexcept' lvalue CXXMethod 0xbfa84deb8 'operator[]' 'const_reference (size_type) const noexcept'
+  |         |   |-DeclRefExpr 0xbf319cb30 <col:25> 'const std::vector<double>' lvalue ParmVar 0xbf31636e8 'mzs' 'const std::vector<double> &'
+  |         |   `-ImplicitCastExpr 0xbf319cb88 <col:29> 'size_type':'unsigned long' <IntegralCast>
+  |         |     `-ImplicitCastExpr 0xbf319cb70 <col:29> 'int' <LValueToRValue>
+  |         |       `-DeclRefExpr 0xbf319cb50 <col:29> 'int' lvalue Var 0xbf3164fa8 'i1' 'int'
+  |         |-CXXMemberCallExpr 0xbf319ce00 <line:489:7, col:38> 'void'
+  |         | |-MemberExpr 0xbf319cdd0 <col:7, col:18> '<bound member function type>' .push_back 0xbfa808b50
+  |         | | `-DeclRefExpr 0xbf319cc70 <col:7> 'std::vector<int>' lvalue Var 0xbf3164948 'tag_scores' 'std::vector<int>'
+  |         | `-CXXOperatorCallExpr 0xbf319cd98 <col:28, col:37> 'const value_type':'const int' lvalue '[]'
+  |         |   |-ImplicitCastExpr 0xbf319cd80 <col:34, col:37> 'const_reference (*)(size_type) const noexcept' <FunctionToPointerDecay>
+  |         |   | `-DeclRefExpr 0xbf319cd60 <col:34, col:37> 'const_reference (size_type) const noexcept' lvalue CXXMethod 0xbfa807828 'operator[]' 'const_reference (size_type) const noexcept'
+  |         |   |-DeclRefExpr 0xbf319ccf0 <col:28> 'const std::vector<int>' lvalue ParmVar 0xbf3163948 'scores' 'const std::vector<int> &'
+  |         |   `-ImplicitCastExpr 0xbf319cd48 <col:35> 'size_type':'unsigned long' <IntegralCast>
+  |         |     `-ImplicitCastExpr 0xbf319cd30 <col:35> 'int' <LValueToRValue>
+  |         |       `-DeclRefExpr 0xbf319cd10 <col:35> 'int' lvalue Var 0xbf3164fa8 'i1' 'int'
+  |         `-BinaryOperator 0xbf319cf48 <line:490:7, col:29> 'double' lvalue '='
+  |           |-DeclRefExpr 0xbf319ce30 <col:7> 'double' lvalue Var 0xbf3163d58 'flanking_mass' 'double'
+  |           `-ImplicitCastExpr 0xbf319cf30 <col:23, col:29> 'value_type':'double' <LValueToRValue>
+  |             `-CXXOperatorCallExpr 0xbf319cef8 <col:23, col:29> 'const value_type':'const double' lvalue '[]'
+  |               |-ImplicitCastExpr 0xbf319cee0 <col:26, col:29> 'const_reference (*)(size_type) const noexcept' <FunctionToPointerDecay>
+  |               | `-DeclRefExpr 0xbf319cec0 <col:26, col:29> 'const_reference (size_type) const noexcept' lvalue CXXMethod 0xbfa84deb8 'operator[]' 'const_reference (size_type) const noexcept'
+  |               |-DeclRefExpr 0xbf319ce50 <col:23> 'const std::vector<double>' lvalue ParmVar 0xbf31636e8 'mzs' 'const std::vector<double> &'
+  |               `-ImplicitCastExpr 0xbf319cea8 <col:27> 'size_type':'unsigned long' <IntegralCast>
+  |                 `-ImplicitCastExpr 0xbf319ce90 <col:27> 'int' <LValueToRValue>
+  |                   `-DeclRefExpr 0xbf319ce70 <col:27> 'int' lvalue Var 0xbf3164fa8 'i1' 'int'
+  |-DeclStmt 0xbf319d340 <line:494:3, col:34>
+  | `-VarDecl 0xbf319d1f8 <col:3, col:23> col:23 used rev_tag_mzs 'std::vector<double>' callinit destroyed
+  |   `-CXXConstructExpr 0xbf319d290 <col:23> 'std::vector<double>' 'void () noexcept(is_nothrow_default_constructible<allocator_type>::value)'
+  |-CXXMemberCallExpr 0xbf319d438 <line:495:3, col:37> 'void'
+  | |-MemberExpr 0xbf319d378 <col:3, col:15> '<bound member function type>' .reserve 0xbfa84d8e0
+  | | `-DeclRefExpr 0xbf319d358 <col:3> 'std::vector<double>' lvalue Var 0xbf319d1f8 'rev_tag_mzs' 'std::vector<double>'
+  | `-CXXMemberCallExpr 0xbf319d410 <col:23, col:36> 'size_type':'unsigned long'
+  |   `-MemberExpr 0xbf319d3c8 <col:23, col:31> '<bound member function type>' .size 0xbfa84d218
+  |     `-ImplicitCastExpr 0xbf319d3f8 <col:23> 'const std::vector<double>' lvalue <NoOp>
+  |       `-DeclRefExpr 0xbf319d3a8 <col:23> 'std::vector<double>' lvalue Var 0xbf3164638 'tag_mzs' 'std::vector<double>'
+  |-DeclStmt 0xbf319d760 <line:496:3, col:34>
+  | `-VarDecl 0xbf319d618 <col:3, col:20> col:20 used rev_tag_scores 'std::vector<int>' callinit destroyed
+  |   `-CXXConstructExpr 0xbf319d6b0 <col:20> 'std::vector<int>' 'void () noexcept(is_nothrow_default_constructible<allocator_type>::value)'
+  |-CXXMemberCallExpr 0xbf319d858 <line:497:3, col:43> 'void'
+  | |-MemberExpr 0xbf319d798 <col:3, col:18> '<bound member function type>' .reserve 0xbfa8071d0
+  | | `-DeclRefExpr 0xbf319d778 <col:3> 'std::vector<int>' lvalue Var 0xbf319d618 'rev_tag_scores' 'std::vector<int>'
+  | `-CXXMemberCallExpr 0xbf319d830 <col:26, col:42> 'size_type':'unsigned long'
+  |   `-MemberExpr 0xbf319d7e8 <col:26, col:37> '<bound member function type>' .size 0xbfa806b08
+  |     `-ImplicitCastExpr 0xbf319d818 <col:26> 'const std::vector<int>' lvalue <NoOp>
+  |       `-DeclRefExpr 0xbf319d7c8 <col:26> 'std::vector<int>' lvalue Var 0xbf3164948 'tag_scores' 'std::vector<int>'
+  |-ForStmt 0xbf319e008 <line:499:3, line:503:3>
+  | |-DeclStmt 0xbf319da30 <line:499:8, col:39>
+  | | `-VarDecl 0xbf319d8a0 <col:8, col:38> col:12 used i 'int' cinit
+  | |   `-BinaryOperator 0xbf319da10 <col:16, col:38> 'int' '-'
+  | |     |-CStyleCastExpr 0xbf319d9c8 <col:16, col:34> 'int' <NoOp>
+  | |     | `-ImplicitCastExpr 0xbf319d9b0 <col:21, col:34> 'int' <IntegralCast> part_of_explicit_cast
+  | |     |   `-CXXMemberCallExpr 0xbf319d970 <col:21, col:34> 'size_type':'unsigned long'
+  | |     |     `-MemberExpr 0xbf319d928 <col:21, col:29> '<bound member function type>' .size 0xbfa84d218
+  | |     |       `-ImplicitCastExpr 0xbf319d958 <col:21> 'const std::vector<double>' lvalue <NoOp>
+  | |     |         `-DeclRefExpr 0xbf319d908 <col:21> 'std::vector<double>' lvalue Var 0xbf3164638 'tag_mzs' 'std::vector<double>'
+  | |     `-IntegerLiteral 0xbf319d9f0 <col:38> 'int' 1
+  | |-<<<NULL>>>
+  | |-BinaryOperator 0xbf319daa0 <col:41, col:46> 'bool' '>='
+  | | |-ImplicitCastExpr 0xbf319da88 <col:41> 'int' <LValueToRValue>
+  | | | `-DeclRefExpr 0xbf319da48 <col:41> 'int' lvalue Var 0xbf319d8a0 'i' 'int'
+  | | `-IntegerLiteral 0xbf319da68 <col:46> 'int' 0
+  | |-UnaryOperator 0xbf319dae0 <col:49, col:50> 'int' postfix '--'
+  | | `-DeclRefExpr 0xbf319dac0 <col:49> 'int' lvalue Var 0xbf319d8a0 'i' 'int'
+  | `-CompoundStmt 0xbf319dfe8 <line:500:3, line:503:3>
+  |   |-CXXMemberCallExpr 0xbf319dc88 <line:501:5, col:37> 'void'
+  |   | |-MemberExpr 0xbf319dc58 <col:5, col:17> '<bound member function type>' .push_back 0xbfa84f0a0
+  |   | | `-DeclRefExpr 0xbf319daf8 <col:5> 'std::vector<double>' lvalue Var 0xbf319d1f8 'rev_tag_mzs' 'std::vector<double>'
+  |   | `-ImplicitCastExpr 0xbf319dcb8 <col:27, col:36> 'const value_type':'const double' lvalue <NoOp>
+  |   |   `-CXXOperatorCallExpr 0xbf319dc20 <col:27, col:36> 'value_type':'double' lvalue '[]'
+  |   |     |-ImplicitCastExpr 0xbf319dc08 <col:34, col:36> 'reference (*)(size_type) noexcept' <FunctionToPointerDecay>
+  |   |     | `-DeclRefExpr 0xbf319dbe8 <col:34, col:36> 'reference (size_type) noexcept' lvalue CXXMethod 0xbfa84dc58 'operator[]' 'reference (size_type) noexcept'
+  |   |     |-DeclRefExpr 0xbf319db78 <col:27> 'std::vector<double>' lvalue Var 0xbf3164638 'tag_mzs' 'std::vector<double>'
+  |   |     `-ImplicitCastExpr 0xbf319dbd0 <col:35> 'size_type':'unsigned long' <IntegralCast>
+  |   |       `-ImplicitCastExpr 0xbf319dbb8 <col:35> 'int' <LValueToRValue>
+  |   |         `-DeclRefExpr 0xbf319db98 <col:35> 'int' lvalue Var 0xbf319d8a0 'i' 'int'
+  |   `-CXXMemberCallExpr 0xbf319dfa0 <line:502:5, col:43> 'void'
+  |     |-MemberExpr 0xbf319df70 <col:5, col:20> '<bound member function type>' .push_back 0xbfa808b50
+  |     | `-DeclRefExpr 0xbf319dcd0 <col:5> 'std::vector<int>' lvalue Var 0xbf319d618 'rev_tag_scores' 'std::vector<int>'
+  |     `-ImplicitCastExpr 0xbf319dfd0 <col:30, col:42> 'const value_type':'const int' lvalue <NoOp>
+  |       `-CXXOperatorCallExpr 0xbf319df38 <col:30, col:42> 'value_type':'int' lvalue '[]'
+  |         |-ImplicitCastExpr 0xbf319df20 <col:40, col:42> 'reference (*)(size_type) noexcept' <FunctionToPointerDecay>
+  |         | `-DeclRefExpr 0xbf319ddc0 <col:40, col:42> 'reference (size_type) noexcept' lvalue CXXMethod 0xbfa807588 'operator[]' 'reference (size_type) noexcept'
+  |         |-DeclRefExpr 0xbf319dd50 <col:30> 'std::vector<int>' lvalue Var 0xbf3164948 'tag_scores' 'std::vector<int>'
+  |         `-ImplicitCastExpr 0xbf319dda8 <col:41> 'size_type':'unsigned long' <IntegralCast>
+  |           `-ImplicitCastExpr 0xbf319dd90 <col:41> 'int' <LValueToRValue>
+  |             `-DeclRefExpr 0xbf319dd70 <col:41> 'int' lvalue Var 0xbf319d8a0 'i' 'int'
+  `-CXXForRangeStmt 0xbf31a0df8 <line:505:3, line:547:3>
+    |-<<<NULL>>>
+    |-DeclStmt 0xbf319e2c0 <line:505:26>
+    | `-VarDecl 0xbf319e120 <col:26> col:26 implicit used __range1 'std::vector<std::string> &' cinit
+    |   `-DeclRefExpr 0xbf319e040 <col:26> 'std::vector<std::string>' lvalue Var 0xbf3164008 'seqs' 'std::vector<std::string>'
+    |-DeclStmt 0xbf319e700 <col:24>
+    | `-VarDecl 0xbf319e330 <col:24> col:24 implicit used __begin1 'iterator':'std::__wrap_iter<std::string *>' cinit
+    |   `-CXXMemberCallExpr 0xbf319e4a8 <col:24> 'iterator':'std::__wrap_iter<std::string *>'
+    |     `-MemberExpr 0xbf319e478 <col:24> '<bound member function type>' .begin 0xbfb982778
+    |       `-DeclRefExpr 0xbf319e2d8 <col:24> 'std::vector<std::string>' lvalue Var 0xbf319e120 '__range1' 'std::vector<std::string> &'
+    |-DeclStmt 0xbf319e718 <col:24>
+    | `-VarDecl 0xbf319e3b0 <col:24> col:24 implicit used __end1 'iterator':'std::__wrap_iter<std::string *>' cinit
+    |   `-CXXMemberCallExpr 0xbf319e620 <col:24> 'iterator':'std::__wrap_iter<std::string *>'
+    |     `-MemberExpr 0xbf319e5f0 <col:24> '<bound member function type>' .end 0xbfb982b08
+    |       `-DeclRefExpr 0xbf319e2f8 <col:24> 'std::vector<std::string>' lvalue Var 0xbf319e120 '__range1' 'std::vector<std::string> &'
+    |-CXXRewrittenBinaryOperator 0xbf31a0b60 <col:24> 'bool'
+    | `-UnaryOperator 0xbf31a0b48 <col:24> 'bool' prefix '!' cannot overflow
+    |   `-CXXOperatorCallExpr 0xbf31a0b10 <col:24> 'bool' '==' adl
+    |     |-ImplicitCastExpr 0xbf31a0af8 <col:24> 'bool (*)(const __wrap_iter<std::string *> &, const __wrap_iter<std::string *> &) noexcept' <FunctionToPointerDecay>
+    |     | `-DeclRefExpr 0xbf31a0ad8 <col:24> 'bool (const __wrap_iter<std::string *> &, const __wrap_iter<std::string *> &) noexcept' lvalue Function 0xbfa870628 'operator==' 'bool (const __wrap_iter<std::string *> &, const __wrap_iter<std::string *> &) noexcept'
+    |     |-ImplicitCastExpr 0xbf31a0aa8 <col:24> 'const __wrap_iter<std::string *>':'const std::__wrap_iter<std::string *>' lvalue <NoOp>
+    |     | `-DeclRefExpr 0xbf319e730 <col:24> 'iterator':'std::__wrap_iter<std::string *>' lvalue Var 0xbf319e330 '__begin1' 'iterator':'std::__wrap_iter<std::string *>'
+    |     `-ImplicitCastExpr 0xbf31a0ac0 <col:24> 'const __wrap_iter<std::string *>':'const std::__wrap_iter<std::string *>' lvalue <NoOp>
+    |       `-DeclRefExpr 0xbf319e750 <col:24> 'iterator':'std::__wrap_iter<std::string *>' lvalue Var 0xbf319e3b0 '__end1' 'iterator':'std::__wrap_iter<std::string *>'
+    |-CXXOperatorCallExpr 0xbf31a0bd0 <col:24> '__wrap_iter<std::string *>':'std::__wrap_iter<std::string *>' lvalue '++'
+    | |-ImplicitCastExpr 0xbf31a0bb8 <col:24> '__wrap_iter<std::string *> &(*)() noexcept' <FunctionToPointerDecay>
+    | | `-DeclRefExpr 0xbf31a0b98 <col:24> '__wrap_iter<std::string *> &() noexcept' lvalue CXXMethod 0xbfa869930 'operator++' '__wrap_iter<std::string *> &() noexcept'
+    | `-DeclRefExpr 0xbf31a0b78 <col:24> 'iterator':'std::__wrap_iter<std::string *>' lvalue Var 0xbf319e330 '__begin1' 'iterator':'std::__wrap_iter<std::string *>'
+    |-DeclStmt 0xbf319e0e8 <col:8, col:30>
+    | `-VarDecl 0xbf319e080 <col:8, col:24> col:20 used seq 'std::string const &' cinit
+    |   `-ImplicitCastExpr 0xbf31a0d90 <col:24> 'std::string const':'const std::string' lvalue <NoOp>
+    |     `-CXXOperatorCallExpr 0xbf31a0c70 <col:24> 'std::string' lvalue '*'
+    |       |-ImplicitCastExpr 0xbf31a0c58 <col:24> 'reference (*)() const noexcept' <FunctionToPointerDecay>
+    |       | `-DeclRefExpr 0xbf31a0c38 <col:24> 'reference () const noexcept' lvalue CXXMethod 0xbfa869458 'operator*' 'reference () const noexcept'
+    |       `-ImplicitCastExpr 0xbf31a0c20 <col:24> 'const std::__wrap_iter<std::string *>' lvalue <NoOp>
+    |         `-DeclRefExpr 0xbf31a0c00 <col:24> 'iterator':'std::__wrap_iter<std::string *>' lvalue Var 0xbf319e330 '__begin1' 'iterator':'std::__wrap_iter<std::string *>'
+    `-CompoundStmt 0xbf3325528 <line:506:3, line:547:3>
+      |-DeclStmt 0xbf31d8940 <line:507:5, col:64>
+      | `-VarDecl 0xbf31a0e98 <col:5, col:63> col:17 used rev_seq 'std::string' cinit destroyed
+      |   `-ExprWithCleanups 0xbf31d88a8 <col:27, col:63> 'std::string'
+      |     `-CXXBindTemporaryExpr 0xbf31d8888 <col:27, col:63> 'std::string' (CXXTemporary 0xbf31d8888)
+      |       `-CXXTemporaryObjectExpr 0xbf31d8840 <col:27, col:63> 'std::string' 'void (std::reverse_iterator<std::__wrap_iter<const char *>>, std::reverse_iterator<std::__wrap_iter<const char *>>)'
+      |         |-CXXMemberCallExpr 0xbf31b4db8 <col:39, col:50> 'const_reverse_iterator':'std::reverse_iterator<std::__wrap_iter<const char *>>'
+      |         | `-MemberExpr 0xbf31a0fc8 <col:39, col:43> '<bound member function type>' .rbegin 0xbfda73198
+      |         |   `-DeclRefExpr 0xbf31a0f48 <col:39> 'std::string const':'const std::string' lvalue Var 0xbf319e080 'seq' 'std::string const &'
+      |         `-CXXMemberCallExpr 0xbf31b5098 <col:53, col:62> 'const_reverse_iterator':'std::reverse_iterator<std::__wrap_iter<const char *>>'
+      |           `-MemberExpr 0xbf31b4e90 <col:53, col:57> '<bound member function type>' .rend 0xbfda734c8
+      |             `-DeclRefExpr 0xbf31b4e10 <col:53> 'std::string const':'const std::string' lvalue Var 0xbf319e080 'seq' 'std::string const &'
+      |-IfStmt 0xbf31da2f8 <line:508:5, col:25>
+      | |-CXXOperatorCallExpr 0xbf31da2b8 <col:9, col:20> 'bool' '==' adl
+      | | |-ImplicitCastExpr 0xbf31da2a0 <col:17> 'bool (*)(const basic_string<char, std::char_traits<char>, std::allocator<char>> &, const basic_string<char, std::char_traits<char>, std::allocator<char>> &) noexcept' <FunctionToPointerDecay>
+      | | | `-DeclRefExpr 0xbf31da280 <col:17> 'bool (const basic_string<char, std::char_traits<char>, std::allocator<char>> &, const basic_string<char, std::char_traits<char>, std::allocator<char>> &) noexcept' lvalue Function 0xbf9be1c88 'operator==' 'bool (const basic_string<char, std::char_traits<char>, std::allocator<char>> &, const basic_string<char, std::char_traits<char>, std::allocator<char>> &) noexcept'
+      | | |-ImplicitCastExpr 0xbf31da268 <col:9> 'const basic_string<char, std::char_traits<char>, std::allocator<char>>':'const std::string' lvalue <NoOp>
+      | | | `-DeclRefExpr 0xbf31d8958 <col:9> 'std::string' lvalue Var 0xbf31a0e98 'rev_seq' 'std::string'
+      | | `-DeclRefExpr 0xbf31d8978 <col:20> 'std::string const':'const std::string' lvalue Var 0xbf319e080 'seq' 'std::string const &'
+      | `-ContinueStmt 0xbf31da2f0 <col:25>
+      |-DeclStmt 0xbf3257fb0 <line:509:5, col:34>
+      | `-VarDecl 0xbf31da330 <col:5, col:33> col:10 used iter 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' cinit
+      |   `-CXXMemberCallExpr 0xbf324fa80 <col:17, col:33> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>'
+      |     |-MemberExpr 0xbf324fa50 <col:17, col:25> '<bound member function type>' .find 0xbf3248660
+      |     | `-DeclRefExpr 0xbf31da398 <col:17> 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>>':'std::map<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>' lvalue ParmVar 0xbf3163230 'seq_tag' 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>> &'
+      |     `-DeclRefExpr 0xbf324fa30 <col:30> 'std::string const':'const std::string' lvalue Var 0xbf319e080 'seq' 'std::string const &'
+      |-DeclStmt 0xbf32580d8 <line:510:5, col:28>
+      | `-VarDecl 0xbf3257fd8 <col:5, col:27> col:10 used pass 'bool' cinit
+      |   `-ParenExpr 0xbf32580b8 <col:17, col:27> 'bool'
+      |     `-BinaryOperator 0xbf3258098 <col:18, col:26> 'bool' '!='
+      |       |-ImplicitCastExpr 0xbf3258080 <col:18> 'int' <LValueToRValue>
+      |       | `-DeclRefExpr 0xbf3258040 <col:18> 'int' lvalue ParmVar 0xbf3163ac8 'mode' 'int'
+      |       `-IntegerLiteral 0xbf3258060 <col:26> 'int' 2
+      |-IfStmt 0xbf32722c8 <line:511:5, line:520:5>
+      | |-ExprWithCleanups 0xbf326eb58 <line:511:9, col:37> 'bool'
+      | | `-BinaryOperator 0xbf326eb38 <col:9, col:37> 'bool' '&&'
+      | |   |-ImplicitCastExpr 0xbf326eb20 <col:9> 'bool' <LValueToRValue>
+      | |   | `-DeclRefExpr 0xbf32580f0 <col:9> 'bool' lvalue Var 0xbf3257fd8 'pass' 'bool'
+      | |   `-CXXOperatorCallExpr 0xbf326e958 <col:17, col:37> 'bool' '!=' adl
+      | |     |-ImplicitCastExpr 0xbf326e940 <col:22> 'bool (*)(const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &, const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &)' <FunctionToPointerDecay>
+      | |     | `-DeclRefExpr 0xbf326e8b8 <col:22> 'bool (const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &, const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &)' lvalue Function 0xbf3256ca8 'operator!=' 'bool (const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &, const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &)'
+      | |     |-ImplicitCastExpr 0xbf326e870 <col:17> 'const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>':'const std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue <NoOp>
+      | |     | `-DeclRefExpr 0xbf3258110 <col:17> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue Var 0xbf31da330 'iter' 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>'
+      | |     `-MaterializeTemporaryExpr 0xbf326e8a0 <col:25, col:37> 'const iterator':'const std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue
+      | |       `-ImplicitCastExpr 0xbf326e888 <col:25, col:37> 'const iterator':'const std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' <NoOp>
+      | |         `-CXXMemberCallExpr 0xbf32581e0 <col:25, col:37> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>'
+      | |           `-MemberExpr 0xbf32581b0 <col:25, col:33> '<bound member function type>' .end 0xbf323c988
+      | |             `-DeclRefExpr 0xbf3258130 <col:25> 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>>':'std::map<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>' lvalue ParmVar 0xbf3163230 'seq_tag' 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>> &'
+      | `-CompoundStmt 0xbf32722b0 <line:512:5, line:520:5>
+      |   `-CXXForRangeStmt 0xbf3271b68 <line:513:7, line:519:7>
+      |     |-<<<NULL>>>
+      |     |-DeclStmt 0xbf326efd0 <line:513:29>
+      |     | `-VarDecl 0xbf326eda0 <col:29, col:35> col:29 implicit used __range3 'std::vector<OpenMS::FLASHTnTHelpers::Tag> &' cinit
+      |     |   `-MemberExpr 0xbf326ecb0 <col:29, col:35> 'std::vector<OpenMS::FLASHTnTHelpers::Tag>' lvalue ->second 0xbf3258af0
+      |     |     `-CXXOperatorCallExpr 0xbf326ec48 <col:29, col:33> 'pointer':'value_type *' '->'
+      |     |       |-ImplicitCastExpr 0xbf326ec30 <col:33> 'pointer (*)() const' <FunctionToPointerDecay>
+      |     |       | `-DeclRefExpr 0xbf326eba8 <col:33> 'pointer () const' lvalue CXXMethod 0xbf3255d50 'operator->' 'pointer () const'
+      |     |       `-ImplicitCastExpr 0xbf326eb90 <col:29> 'const std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue <NoOp>
+      |     |         `-DeclRefExpr 0xbf326eb70 <col:29> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue Var 0xbf31da330 'iter' 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>'
+      |     |-DeclStmt 0xbf326f440 <col:27>
+      |     | `-VarDecl 0xbf326f040 <col:27> col:27 implicit used __begin3 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' cinit
+      |     |   `-CXXMemberCallExpr 0xbf326f1b8 <col:27> 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>'
+      |     |     `-MemberExpr 0xbf326f188 <col:27> '<bound member function type>' .begin 0xbf5cf2788
+      |     |       `-DeclRefExpr 0xbf326efe8 <col:27> 'std::vector<OpenMS::FLASHTnTHelpers::Tag>' lvalue Var 0xbf326eda0 '__range3' 'std::vector<OpenMS::FLASHTnTHelpers::Tag> &'
+      |     |-DeclStmt 0xbf326f458 <col:27>
+      |     | `-VarDecl 0xbf326f0c0 <col:27> col:27 implicit used __end3 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' cinit
+      |     |   `-CXXMemberCallExpr 0xbf326f360 <col:27> 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>'
+      |     |     `-MemberExpr 0xbf326f330 <col:27> '<bound member function type>' .end 0xbf5cf2b18
+      |     |       `-DeclRefExpr 0xbf326f008 <col:27> 'std::vector<OpenMS::FLASHTnTHelpers::Tag>' lvalue Var 0xbf326eda0 '__range3' 'std::vector<OpenMS::FLASHTnTHelpers::Tag> &'
+      |     |-CXXRewrittenBinaryOperator 0xbf32718a0 <col:27> 'bool'
+      |     | `-UnaryOperator 0xbf3271888 <col:27> 'bool' prefix '!' cannot overflow
+      |     |   `-CXXOperatorCallExpr 0xbf3271850 <col:27> 'bool' '==' adl
+      |     |     |-ImplicitCastExpr 0xbf3271838 <col:27> 'bool (*)(const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &, const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &) noexcept' <FunctionToPointerDecay>
+      |     |     | `-DeclRefExpr 0xbf3271818 <col:27> 'bool (const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &, const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &) noexcept' lvalue Function 0xbf305d8c8 'operator==' 'bool (const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &, const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &) noexcept'
+      |     |     |-ImplicitCastExpr 0xbf32717e8 <col:27> 'const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>':'const std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue <NoOp>
+      |     |     | `-DeclRefExpr 0xbf326f470 <col:27> 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue Var 0xbf326f040 '__begin3' 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>'
+      |     |     `-ImplicitCastExpr 0xbf3271800 <col:27> 'const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>':'const std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue <NoOp>
+      |     |       `-DeclRefExpr 0xbf326f490 <col:27> 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue Var 0xbf326f0c0 '__end3' 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>'
+      |     |-CXXOperatorCallExpr 0xbf3271910 <col:27> '__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue '++'
+      |     | |-ImplicitCastExpr 0xbf32718f8 <col:27> '__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &(*)() noexcept' <FunctionToPointerDecay>
+      |     | | `-DeclRefExpr 0xbf32718d8 <col:27> '__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &() noexcept' lvalue CXXMethod 0xbf37f93b0 'operator++' '__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &() noexcept'
+      |     | `-DeclRefExpr 0xbf32718b8 <col:27> 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue Var 0xbf326f040 '__begin3' 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>'
+      |     |-DeclStmt 0xbf326ed68 <col:12, col:41>
+      |     | `-VarDecl 0xbf326ed00 <col:12, col:27> col:24 used pt 'OpenMS::FLASHTnTHelpers::Tag const &' cinit
+      |     |   `-ImplicitCastExpr 0xbf3271b00 <col:27> 'OpenMS::FLASHTnTHelpers::Tag const':'const OpenMS::FLASHTnTHelpers::Tag' lvalue <NoOp>
+      |     |     `-CXXOperatorCallExpr 0xbf32719b0 <col:27> 'OpenMS::FLASHTnTHelpers::Tag' lvalue '*'
+      |     |       |-ImplicitCastExpr 0xbf3271998 <col:27> 'reference (*)() const noexcept' <FunctionToPointerDecay>
+      |     |       | `-DeclRefExpr 0xbf3271978 <col:27> 'reference () const noexcept' lvalue CXXMethod 0xbf37f8ed8 'operator*' 'reference () const noexcept'
+      |     |       `-ImplicitCastExpr 0xbf3271960 <col:27> 'const std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue <NoOp>
+      |     |         `-DeclRefExpr 0xbf3271940 <col:27> 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue Var 0xbf326f040 '__begin3' 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>'
+      |     `-CompoundStmt 0xbf3272280 <line:514:7, line:519:7>
+      |       |-IfStmt 0xbf3271cd0 <line:515:9, col:36>
+      |       | |-BinaryOperator 0xbf3271ca8 <col:13, col:33> 'bool' '<'
+      |       | | |-CXXMemberCallExpr 0xbf3271c10 <col:13, col:29> 'double'
+      |       | | | `-MemberExpr 0xbf3271be0 <col:13, col:16> '<bound member function type>' .getNtermMass 0xbf6ceb9f8
+      |       | | |   `-DeclRefExpr 0xbf3271bc0 <col:13> 'OpenMS::FLASHTnTHelpers::Tag const':'const OpenMS::FLASHTnTHelpers::Tag' lvalue Var 0xbf326ed00 'pt' 'OpenMS::FLASHTnTHelpers::Tag const &'
+      |       | | `-ImplicitCastExpr 0xbf3271c90 <col:33> 'double' <IntegralToFloating>
+      |       | |   `-IntegerLiteral 0xbf3271c70 <col:33> 'int' 0
+      |       | `-ContinueStmt 0xbf3271cc8 <col:36>
+      |       |-IfStmt 0xbf3272208 <line:516:9, col:110>
+      |       | |-ExprWithCleanups 0xbf32721e8 <col:13, col:105> 'bool'
+      |       | | `-BinaryOperator 0xbf32721c8 <col:13, col:105> 'bool' '>'
+      |       | |   |-BinaryOperator 0xbf3272170 <col:13, col:99> 'double' '*'
+      |       | |   | |-BinaryOperator 0xbf3272130 <col:13, col:95> 'double' '/'
+      |       | |   | | |-CallExpr 0xbf3271e78 <col:13, col:50> 'double'
+      |       | |   | | | |-ImplicitCastExpr 0xbf3271e60 <col:13> 'double (*)(double) noexcept' <FunctionToPointerDecay>
+      |       | |   | | | | `-DeclRefExpr 0xbf3271e38 <col:13> 'double (double) noexcept' lvalue Function 0xbff7c5988 'abs' 'double (double) noexcept' (UsingShadow 0xbfcca4e08 'abs')
+      |       | |   | | | `-BinaryOperator 0xbf3271e18 <col:17, col:37> 'double' '-'
+      |       | |   | | |   |-CXXMemberCallExpr 0xbf3271db8 <col:17, col:33> 'double'
+      |       | |   | | |   | `-MemberExpr 0xbf3271d88 <col:17, col:20> '<bound member function type>' .getNtermMass 0xbf6ceb9f8
+      |       | |   | | |   |   `-DeclRefExpr 0xbf3271d68 <col:17> 'OpenMS::FLASHTnTHelpers::Tag const':'const OpenMS::FLASHTnTHelpers::Tag' lvalue Var 0xbf326ed00 'pt' 'OpenMS::FLASHTnTHelpers::Tag const &'
+      |       | |   | | |   `-ImplicitCastExpr 0xbf3271e00 <col:37> 'double' <LValueToRValue>
+      |       | |   | | |     `-DeclRefExpr 0xbf3271de0 <col:37> 'double' lvalue Var 0xbf3163d58 'flanking_mass' 'double'
+      |       | |   | | `-ImplicitCastExpr 0xbf3272118 <col:54, col:95> 'double' <LValueToRValue>
+      |       | |   | |   `-CallExpr 0xbf3272098 <col:54, col:95> 'const double' lvalue
+      |       | |   | |     |-ImplicitCastExpr 0xbf3272080 <col:54, col:59> 'const double &(*)(const double &, const double &)' <FunctionToPointerDecay>
+      |       | |   | |     | `-DeclRefExpr 0xbf3272048 <col:54, col:59> 'const double &(const double &, const double &)' lvalue Function 0xbfa7905e0 'max' 'const double &(const double &, const double &)' (FunctionTemplate 0xbfe0b3f08 'max')
+      |       | |   | |     |   `-NestedNameSpecifier Namespace 0xbf3f47e20 'std'
+      |       | |   | |     |-MaterializeTemporaryExpr 0xbf32720e8 <col:63, col:79> 'const double' lvalue
+      |       | |   | |     | `-ImplicitCastExpr 0xbf32720d0 <col:63, col:79> 'const double' <NoOp>
+      |       | |   | |     |   `-CXXMemberCallExpr 0xbf3271f78 <col:63, col:79> 'double'
+      |       | |   | |     |     `-MemberExpr 0xbf3271f48 <col:63, col:66> '<bound member function type>' .getNtermMass 0xbf6ceb9f8
+      |       | |   | |     |       `-DeclRefExpr 0xbf3271f28 <col:63> 'OpenMS::FLASHTnTHelpers::Tag const':'const OpenMS::FLASHTnTHelpers::Tag' lvalue Var 0xbf326ed00 'pt' 'OpenMS::FLASHTnTHelpers::Tag const &'
+      |       | |   | |     `-ImplicitCastExpr 0xbf3272100 <col:82> 'const double' lvalue <NoOp>
+      |       | |   | |       `-DeclRefExpr 0xbf3271fa0 <col:82> 'double' lvalue Var 0xbf3163d58 'flanking_mass' 'double'
+      |       | |   | `-FloatingLiteral 0xbf3272150 <col:99> 'double' 1.000000e+06
+      |       | |   `-ImplicitCastExpr 0xbf32721b0 <col:105> 'double' <LValueToRValue>
+      |       | |     `-DeclRefExpr 0xbf3272190 <col:105> 'double' lvalue ParmVar 0xbf3163a48 'ppm' 'double'
+      |       | `-ContinueStmt 0xbf3272200 <col:110>
+      |       |-BinaryOperator 0xbf3272258 <line:517:9, col:16> 'bool' lvalue '='
+      |       | |-DeclRefExpr 0xbf3272228 <col:9> 'bool' lvalue Var 0xbf3257fd8 'pass' 'bool'
+      |       | `-CXXBoolLiteralExpr 0xbf3272248 <col:16> 'bool' false
+      |       `-BreakStmt 0xbf3272278 <line:518:9>
+      |-IfStmt 0xbf331e368 <line:521:5, line:526:5>
+      | |-ImplicitCastExpr 0xbf3272308 <line:521:9> 'bool' <LValueToRValue>
+      | | `-DeclRefExpr 0xbf32722e8 <col:9> 'bool' lvalue Var 0xbf3257fd8 'pass' 'bool'
+      | `-CompoundStmt 0xbf331e340 <line:522:5, line:526:5>
+      |   |-DeclStmt 0xbf32727c0 <line:523:7, col:102>
+      |   | `-VarDecl 0xbf3272338 <col:7, col:101> col:18 used direct_tag 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag' cinit destroyed
+      |   |   `-ExprWithCleanups 0xbf3272728 <col:31, col:101> 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag'
+      |   |     `-ImplicitCastExpr 0xbf3272710 <col:31, col:101> 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag' <NoOp>
+      |   |       `-CXXBindTemporaryExpr 0xbf3272608 <col:31, col:101> 'FLASHTnTHelpers::Tag':'OpenMS::FLASHTnTHelpers::Tag' (CXXTemporary 0xbf3272608)
+      |   |         `-CXXTemporaryObjectExpr 0xbf32725a0 <col:31, col:101> 'FLASHTnTHelpers::Tag':'OpenMS::FLASHTnTHelpers::Tag' 'void (std::string, double, double, std::vector<double> &, std::vector<int> &, int)'
+      |   |           |-CXXBindTemporaryExpr 0xbf3272508 <col:52> 'std::string' (CXXTemporary 0xbf3272508)
+      |   |           | `-CXXConstructExpr 0xbf32724d0 <col:52> 'std::string' 'void (const string &)'
+      |   |           |   `-DeclRefExpr 0xbf32723f8 <col:52> 'std::string const':'const std::string' lvalue Var 0xbf319e080 'seq' 'std::string const &'
+      |   |           |-ImplicitCastExpr 0xbf3272528 <col:57> 'double' <LValueToRValue>
+      |   |           | `-DeclRefExpr 0xbf3272418 <col:57> 'double' lvalue Var 0xbf3163d58 'flanking_mass' 'double'
+      |   |           |-ImplicitCastExpr 0xbf3272540 <col:72, col:73> 'double' <IntegralToFloating>
+      |   |           | `-UnaryOperator 0xbf3272458 <col:72, col:73> 'int' prefix '-'
+      |   |           |   `-IntegerLiteral 0xbf3272438 <col:73> 'int' 1
+      |   |           |-DeclRefExpr 0xbf3272470 <col:76> 'std::vector<double>' lvalue Var 0xbf3164638 'tag_mzs' 'std::vector<double>'
+      |   |           |-DeclRefExpr 0xbf3272490 <col:85> 'std::vector<int>' lvalue Var 0xbf3164948 'tag_scores' 'std::vector<int>'
+      |   |           `-ImplicitCastExpr 0xbf3272558 <col:97> 'int' <LValueToRValue>
+      |   |             `-DeclRefExpr 0xbf32724b0 <col:97> 'int' lvalue ParmVar 0xbf31639c8 'scan' 'int'
+      |   |-CXXMemberCallExpr 0xbf32fd058 <line:524:7, col:32> 'pair<iterator, bool>':'std::pair<std::__tree_const_iterator<OpenMS::FLASHTnTHelpers::Tag, std::__tree_node<OpenMS::FLASHTnTHelpers::Tag, void *> *, long>, bool>'
+      |   | |-MemberExpr 0xbf32fd028 <col:7, col:15> '<bound member function type>' .insert 0xbf32badc8
+      |   | | `-DeclRefExpr 0xbf32727d8 <col:7> 'std::set<FLASHTnTHelpers::Tag>':'std::set<OpenMS::FLASHTnTHelpers::Tag>' lvalue ParmVar 0xbf3162b88 'tag_set' 'std::set<FLASHTnTHelpers::Tag> &'
+      |   | `-DeclRefExpr 0xbf32c6320 <col:22> 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag' lvalue Var 0xbf3272338 'direct_tag' 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag'
+      |   `-CXXMemberCallExpr 0xbf331e2d8 <line:525:7, col:40> 'void'
+      |     |-MemberExpr 0xbf3314920 <col:7, col:20> '<bound member function type>' .push_back 0xbf5cf5ce0
+      |     | `-CXXOperatorCallExpr 0xbf3314868 <col:7, col:18> 'mapped_type':'std::vector<OpenMS::FLASHTnTHelpers::Tag>' lvalue '[]'
+      |     |   |-ImplicitCastExpr 0xbf3314850 <col:14, col:18> 'mapped_type &(*)(const key_type &)' <FunctionToPointerDecay>
+      |     |   | `-DeclRefExpr 0xbf33147c8 <col:14, col:18> 'mapped_type &(const key_type &)' lvalue CXXMethod 0xbf323e188 'operator[]' 'mapped_type &(const key_type &)'
+      |     |   |-DeclRefExpr 0xbf3314788 <col:7> 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>>':'std::map<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>' lvalue ParmVar 0xbf3163230 'seq_tag' 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>> &'
+      |     |   `-DeclRefExpr 0xbf33147a8 <col:15> 'std::string const':'const std::string' lvalue Var 0xbf319e080 'seq' 'std::string const &'
+      |     `-DeclRefExpr 0xbf3314900 <col:30> 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag' lvalue Var 0xbf3272338 'direct_tag' 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag'
+      |-BinaryOperator 0xbf331e440 <line:528:5, col:22> 'bool' lvalue '='
+      | |-DeclRefExpr 0xbf331e388 <col:5> 'bool' lvalue Var 0xbf3257fd8 'pass' 'bool'
+      | `-ParenExpr 0xbf331e420 <col:12, col:22> 'bool'
+      |   `-BinaryOperator 0xbf331e400 <col:13, col:21> 'bool' '!='
+      |     |-ImplicitCastExpr 0xbf331e3e8 <col:13> 'int' <LValueToRValue>
+      |     | `-DeclRefExpr 0xbf331e3a8 <col:13> 'int' lvalue ParmVar 0xbf3163ac8 'mode' 'int'
+      |     `-IntegerLiteral 0xbf331e3c8 <col:21> 'int' 1
+      |-ExprWithCleanups 0xbf331fcc0 <line:530:5, col:32> '__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue
+      | `-CXXOperatorCallExpr 0xbf331fc58 <col:5, col:32> '__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue '='
+      |   |-ImplicitCastExpr 0xbf331fc40 <col:10> '__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &(*)(__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &&) noexcept' <FunctionToPointerDecay>
+      |   | `-DeclRefExpr 0xbf331f6e8 <col:10> '__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &(__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &&) noexcept' lvalue CXXMethod 0xbf331f520 'operator=' '__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &(__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &&) noexcept'
+      |   |-DeclRefExpr 0xbf331e460 <col:5> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue Var 0xbf31da330 'iter' 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>'
+      |   `-MaterializeTemporaryExpr 0xbf331f6d0 <col:12, col:32> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' xvalue
+      |     `-CXXMemberCallExpr 0xbf331ef90 <col:12, col:32> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>'
+      |       |-MemberExpr 0xbf331ef60 <col:12, col:20> '<bound member function type>' .find 0xbf3248660
+      |       | `-DeclRefExpr 0xbf331e480 <col:12> 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>>':'std::map<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>' lvalue ParmVar 0xbf3163230 'seq_tag' 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>> &'
+      |       `-ImplicitCastExpr 0xbf331efc0 <col:25> 'const key_type':'const std::string' lvalue <NoOp>
+      |         `-DeclRefExpr 0xbf331e510 <col:25> 'std::string' lvalue Var 0xbf31a0e98 'rev_seq' 'std::string'
+      |-IfStmt 0xbf3324d10 <line:531:5, line:540:5>
+      | |-ExprWithCleanups 0xbf3321760 <line:531:9, col:37> 'bool'
+      | | `-BinaryOperator 0xbf3321740 <col:9, col:37> 'bool' '&&'
+      | |   |-ImplicitCastExpr 0xbf3321728 <col:9> 'bool' <LValueToRValue>
+      | |   | `-DeclRefExpr 0xbf331fcd8 <col:9> 'bool' lvalue Var 0xbf3257fd8 'pass' 'bool'
+      | |   `-CXXOperatorCallExpr 0xbf33216f0 <col:17, col:37> 'bool' '!=' adl
+      | |     |-ImplicitCastExpr 0xbf33216d8 <col:22> 'bool (*)(const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &, const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &)' <FunctionToPointerDecay>
+      | |     | `-DeclRefExpr 0xbf33216b8 <col:22> 'bool (const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &, const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &)' lvalue Function 0xbf3256ca8 'operator!=' 'bool (const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &, const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>> &)'
+      | |     |-ImplicitCastExpr 0xbf3321670 <col:17> 'const __map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>':'const std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue <NoOp>
+      | |     | `-DeclRefExpr 0xbf331fcf8 <col:17> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue Var 0xbf31da330 'iter' 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>'
+      | |     `-MaterializeTemporaryExpr 0xbf33216a0 <col:25, col:37> 'const iterator':'const std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue
+      | |       `-ImplicitCastExpr 0xbf3321688 <col:25, col:37> 'const iterator':'const std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' <NoOp>
+      | |         `-CXXMemberCallExpr 0xbf331fdc8 <col:25, col:37> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>'
+      | |           `-MemberExpr 0xbf331fd98 <col:25, col:33> '<bound member function type>' .end 0xbf323c988
+      | |             `-DeclRefExpr 0xbf331fd18 <col:25> 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>>':'std::map<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>' lvalue ParmVar 0xbf3163230 'seq_tag' 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>> &'
+      | `-CompoundStmt 0xbf3324cf8 <line:532:5, line:540:5>
+      |   `-CXXForRangeStmt 0xbf33245e8 <line:533:7, line:539:7>
+      |     |-<<<NULL>>>
+      |     |-DeclStmt 0xbf3321ab0 <line:533:29>
+      |     | `-VarDecl 0xbf3321908 <col:29, col:35> col:29 implicit used __range3 'std::vector<OpenMS::FLASHTnTHelpers::Tag> &' cinit
+      |     |   `-MemberExpr 0xbf3321818 <col:29, col:35> 'std::vector<OpenMS::FLASHTnTHelpers::Tag>' lvalue ->second 0xbf3258af0
+      |     |     `-CXXOperatorCallExpr 0xbf33217e8 <col:29, col:33> 'pointer':'value_type *' '->'
+      |     |       |-ImplicitCastExpr 0xbf33217d0 <col:33> 'pointer (*)() const' <FunctionToPointerDecay>
+      |     |       | `-DeclRefExpr 0xbf33217b0 <col:33> 'pointer () const' lvalue CXXMethod 0xbf3255d50 'operator->' 'pointer () const'
+      |     |       `-ImplicitCastExpr 0xbf3321798 <col:29> 'const std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue <NoOp>
+      |     |         `-DeclRefExpr 0xbf3321778 <col:29> 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>' lvalue Var 0xbf31da330 'iter' 'iterator':'std::__map_iterator<std::__tree_iterator<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, std::__tree_node<std::__value_type<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>, void *> *, long>>'
+      |     |-DeclStmt 0xbf3321ef0 <col:27>
+      |     | `-VarDecl 0xbf3321b20 <col:27> col:27 implicit used __begin3 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' cinit
+      |     |   `-CXXMemberCallExpr 0xbf3321c98 <col:27> 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>'
+      |     |     `-MemberExpr 0xbf3321c68 <col:27> '<bound member function type>' .begin 0xbf5cf2788
+      |     |       `-DeclRefExpr 0xbf3321ac8 <col:27> 'std::vector<OpenMS::FLASHTnTHelpers::Tag>' lvalue Var 0xbf3321908 '__range3' 'std::vector<OpenMS::FLASHTnTHelpers::Tag> &'
+      |     |-DeclStmt 0xbf3321f08 <col:27>
+      |     | `-VarDecl 0xbf3321ba0 <col:27> col:27 implicit used __end3 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' cinit
+      |     |   `-CXXMemberCallExpr 0xbf3321e10 <col:27> 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>'
+      |     |     `-MemberExpr 0xbf3321de0 <col:27> '<bound member function type>' .end 0xbf5cf2b18
+      |     |       `-DeclRefExpr 0xbf3321ae8 <col:27> 'std::vector<OpenMS::FLASHTnTHelpers::Tag>' lvalue Var 0xbf3321908 '__range3' 'std::vector<OpenMS::FLASHTnTHelpers::Tag> &'
+      |     |-CXXRewrittenBinaryOperator 0xbf3324350 <col:27> 'bool'
+      |     | `-UnaryOperator 0xbf3324338 <col:27> 'bool' prefix '!' cannot overflow
+      |     |   `-CXXOperatorCallExpr 0xbf3324300 <col:27> 'bool' '==' adl
+      |     |     |-ImplicitCastExpr 0xbf33242e8 <col:27> 'bool (*)(const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &, const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &) noexcept' <FunctionToPointerDecay>
+      |     |     | `-DeclRefExpr 0xbf33242c8 <col:27> 'bool (const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &, const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &) noexcept' lvalue Function 0xbf305d8c8 'operator==' 'bool (const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &, const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &) noexcept'
+      |     |     |-ImplicitCastExpr 0xbf3324298 <col:27> 'const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>':'const std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue <NoOp>
+      |     |     | `-DeclRefExpr 0xbf3321f20 <col:27> 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue Var 0xbf3321b20 '__begin3' 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>'
+      |     |     `-ImplicitCastExpr 0xbf33242b0 <col:27> 'const __wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>':'const std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue <NoOp>
+      |     |       `-DeclRefExpr 0xbf3321f40 <col:27> 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue Var 0xbf3321ba0 '__end3' 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>'
+      |     |-CXXOperatorCallExpr 0xbf33243c0 <col:27> '__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue '++'
+      |     | |-ImplicitCastExpr 0xbf33243a8 <col:27> '__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &(*)() noexcept' <FunctionToPointerDecay>
+      |     | | `-DeclRefExpr 0xbf3324388 <col:27> '__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &() noexcept' lvalue CXXMethod 0xbf37f93b0 'operator++' '__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *> &() noexcept'
+      |     | `-DeclRefExpr 0xbf3324368 <col:27> 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue Var 0xbf3321b20 '__begin3' 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>'
+      |     |-DeclStmt 0xbf33218d0 <col:12, col:41>
+      |     | `-VarDecl 0xbf3321868 <col:12, col:27> col:24 used pt 'OpenMS::FLASHTnTHelpers::Tag const &' cinit
+      |     |   `-ImplicitCastExpr 0xbf3324580 <col:27> 'OpenMS::FLASHTnTHelpers::Tag const':'const OpenMS::FLASHTnTHelpers::Tag' lvalue <NoOp>
+      |     |     `-CXXOperatorCallExpr 0xbf3324460 <col:27> 'OpenMS::FLASHTnTHelpers::Tag' lvalue '*'
+      |     |       |-ImplicitCastExpr 0xbf3324448 <col:27> 'reference (*)() const noexcept' <FunctionToPointerDecay>
+      |     |       | `-DeclRefExpr 0xbf3324428 <col:27> 'reference () const noexcept' lvalue CXXMethod 0xbf37f8ed8 'operator*' 'reference () const noexcept'
+      |     |       `-ImplicitCastExpr 0xbf3324410 <col:27> 'const std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue <NoOp>
+      |     |         `-DeclRefExpr 0xbf33243f0 <col:27> 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>' lvalue Var 0xbf3321b20 '__begin3' 'iterator':'std::__wrap_iter<OpenMS::FLASHTnTHelpers::Tag *>'
+      |     `-CompoundStmt 0xbf3324cc8 <line:534:7, line:539:7>
+      |       |-IfStmt 0xbf3324718 <line:535:9, col:36>
+      |       | |-BinaryOperator 0xbf33246f0 <col:13, col:33> 'bool' '<'
+      |       | | |-CXXMemberCallExpr 0xbf3324690 <col:13, col:29> 'double'
+      |       | | | `-MemberExpr 0xbf3324660 <col:13, col:16> '<bound member function type>' .getCtermMass 0xbf6cebb30
+      |       | | |   `-DeclRefExpr 0xbf3324640 <col:13> 'OpenMS::FLASHTnTHelpers::Tag const':'const OpenMS::FLASHTnTHelpers::Tag' lvalue Var 0xbf3321868 'pt' 'OpenMS::FLASHTnTHelpers::Tag const &'
+      |       | | `-ImplicitCastExpr 0xbf33246d8 <col:33> 'double' <IntegralToFloating>
+      |       | |   `-IntegerLiteral 0xbf33246b8 <col:33> 'int' 0
+      |       | `-ContinueStmt 0xbf3324710 <col:36>
+      |       |-IfStmt 0xbf3324c50 <line:536:9, col:110>
+      |       | |-ExprWithCleanups 0xbf3324c30 <col:13, col:105> 'bool'
+      |       | | `-BinaryOperator 0xbf3324c10 <col:13, col:105> 'bool' '>'
+      |       | |   |-BinaryOperator 0xbf3324bb8 <col:13, col:99> 'double' '*'
+      |       | |   | |-BinaryOperator 0xbf3324b78 <col:13, col:95> 'double' '/'
+      |       | |   | | |-CallExpr 0xbf33248c0 <col:13, col:50> 'double'
+      |       | |   | | | |-ImplicitCastExpr 0xbf33248a8 <col:13> 'double (*)(double) noexcept' <FunctionToPointerDecay>
+      |       | |   | | | | `-DeclRefExpr 0xbf3324880 <col:13> 'double (double) noexcept' lvalue Function 0xbff7c5988 'abs' 'double (double) noexcept' (UsingShadow 0xbfcca4e08 'abs')
+      |       | |   | | | `-BinaryOperator 0xbf3324860 <col:17, col:37> 'double' '-'
+      |       | |   | | |   |-CXXMemberCallExpr 0xbf3324800 <col:17, col:33> 'double'
+      |       | |   | | |   | `-MemberExpr 0xbf33247d0 <col:17, col:20> '<bound member function type>' .getCtermMass 0xbf6cebb30
+      |       | |   | | |   |   `-DeclRefExpr 0xbf33247b0 <col:17> 'OpenMS::FLASHTnTHelpers::Tag const':'const OpenMS::FLASHTnTHelpers::Tag' lvalue Var 0xbf3321868 'pt' 'OpenMS::FLASHTnTHelpers::Tag const &'
+      |       | |   | | |   `-ImplicitCastExpr 0xbf3324848 <col:37> 'double' <LValueToRValue>
+      |       | |   | | |     `-DeclRefExpr 0xbf3324828 <col:37> 'double' lvalue Var 0xbf3163d58 'flanking_mass' 'double'
+      |       | |   | | `-ImplicitCastExpr 0xbf3324b60 <col:54, col:95> 'double' <LValueToRValue>
+      |       | |   | |   `-CallExpr 0xbf3324ae0 <col:54, col:95> 'const double' lvalue
+      |       | |   | |     |-ImplicitCastExpr 0xbf3324ac8 <col:54, col:59> 'const double &(*)(const double &, const double &)' <FunctionToPointerDecay>
+      |       | |   | |     | `-DeclRefExpr 0xbf3324a90 <col:54, col:59> 'const double &(const double &, const double &)' lvalue Function 0xbfa7905e0 'max' 'const double &(const double &, const double &)' (FunctionTemplate 0xbfe0b3f08 'max')
+      |       | |   | |     |   `-NestedNameSpecifier Namespace 0xbf3f47e20 'std'
+      |       | |   | |     |-MaterializeTemporaryExpr 0xbf3324b30 <col:63, col:79> 'const double' lvalue
+      |       | |   | |     | `-ImplicitCastExpr 0xbf3324b18 <col:63, col:79> 'const double' <NoOp>
+      |       | |   | |     |   `-CXXMemberCallExpr 0xbf33249c0 <col:63, col:79> 'double'
+      |       | |   | |     |     `-MemberExpr 0xbf3324990 <col:63, col:66> '<bound member function type>' .getCtermMass 0xbf6cebb30
+      |       | |   | |     |       `-DeclRefExpr 0xbf3324970 <col:63> 'OpenMS::FLASHTnTHelpers::Tag const':'const OpenMS::FLASHTnTHelpers::Tag' lvalue Var 0xbf3321868 'pt' 'OpenMS::FLASHTnTHelpers::Tag const &'
+      |       | |   | |     `-ImplicitCastExpr 0xbf3324b48 <col:82> 'const double' lvalue <NoOp>
+      |       | |   | |       `-DeclRefExpr 0xbf33249e8 <col:82> 'double' lvalue Var 0xbf3163d58 'flanking_mass' 'double'
+      |       | |   | `-FloatingLiteral 0xbf3324b98 <col:99> 'double' 1.000000e+06
+      |       | |   `-ImplicitCastExpr 0xbf3324bf8 <col:105> 'double' <LValueToRValue>
+      |       | |     `-DeclRefExpr 0xbf3324bd8 <col:105> 'double' lvalue ParmVar 0xbf3163a48 'ppm' 'double'
+      |       | `-ContinueStmt 0xbf3324c48 <col:110>
+      |       |-BinaryOperator 0xbf3324ca0 <line:537:9, col:16> 'bool' lvalue '='
+      |       | |-DeclRefExpr 0xbf3324c70 <col:9> 'bool' lvalue Var 0xbf3257fd8 'pass' 'bool'
+      |       | `-CXXBoolLiteralExpr 0xbf3324c90 <col:16> 'bool' false
+      |       `-BreakStmt 0xbf3324cc0 <line:538:9>
+      `-IfStmt 0xbf3325508 <line:541:5, line:546:5>
+        |-ImplicitCastExpr 0xbf3324d50 <line:541:9> 'bool' <LValueToRValue>
+        | `-DeclRefExpr 0xbf3324d30 <col:9> 'bool' lvalue Var 0xbf3257fd8 'pass' 'bool'
+        `-CompoundStmt 0xbf33254e0 <line:542:5, line:546:5>
+          |-DeclStmt 0xbf33251f0 <line:543:7, col:115>
+          | `-VarDecl 0xbf3324d80 <col:7, col:114> col:18 used reverse_tag 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag' cinit destroyed
+          |   `-ExprWithCleanups 0xbf3325188 <col:32, col:114> 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag'
+          |     `-ImplicitCastExpr 0xbf3325170 <col:32, col:114> 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag' <NoOp>
+          |       `-CXXBindTemporaryExpr 0xbf3325098 <col:32, col:114> 'FLASHTnTHelpers::Tag':'OpenMS::FLASHTnTHelpers::Tag' (CXXTemporary 0xbf3325098)
+          |         `-CXXTemporaryObjectExpr 0xbf3325030 <col:32, col:114> 'FLASHTnTHelpers::Tag':'OpenMS::FLASHTnTHelpers::Tag' 'void (std::string, double, double, std::vector<double> &, std::vector<int> &, int)'
+          |           |-CXXBindTemporaryExpr 0xbf3324fc8 <col:53> 'std::string' (CXXTemporary 0xbf3324fc8)
+          |           | `-CXXConstructExpr 0xbf3324f90 <col:53> 'std::string' 'void (const string &)'
+          |           |   `-ImplicitCastExpr 0xbf3324f78 <col:53> 'const string':'const std::string' lvalue <NoOp>
+          |           |     `-DeclRefExpr 0xbf3324e40 <col:53> 'std::string' lvalue Var 0xbf31a0e98 'rev_seq' 'std::string'
+          |           |-ImplicitCastExpr 0xbf3324fe8 <col:62, col:63> 'double' <IntegralToFloating>
+          |           | `-UnaryOperator 0xbf3324e80 <col:62, col:63> 'int' prefix '-'
+          |           |   `-IntegerLiteral 0xbf3324e60 <col:63> 'int' 1
+          |           |-ImplicitCastExpr 0xbf3325000 <col:66> 'double' <LValueToRValue>
+          |           | `-DeclRefExpr 0xbf3324e98 <col:66> 'double' lvalue Var 0xbf3163d58 'flanking_mass' 'double'
+          |           |-DeclRefExpr 0xbf3324eb8 <col:81> 'std::vector<double>' lvalue Var 0xbf319d1f8 'rev_tag_mzs' 'std::vector<double>'
+          |           |-DeclRefExpr 0xbf3324ed8 <col:94> 'std::vector<int>' lvalue Var 0xbf319d618 'rev_tag_scores' 'std::vector<int>'
+          |           `-ImplicitCastExpr 0xbf3325018 <col:110> 'int' <LValueToRValue>
+          |             `-DeclRefExpr 0xbf3324ef8 <col:110> 'int' lvalue ParmVar 0xbf31639c8 'scan' 'int'
+          |-CXXMemberCallExpr 0xbf3325308 <line:544:7, col:33> 'pair<iterator, bool>':'std::pair<std::__tree_const_iterator<OpenMS::FLASHTnTHelpers::Tag, std::__tree_node<OpenMS::FLASHTnTHelpers::Tag, void *> *, long>, bool>'
+          | |-MemberExpr 0xbf33252d8 <col:7, col:15> '<bound member function type>' .insert 0xbf32badc8
+          | | `-DeclRefExpr 0xbf3325208 <col:7> 'std::set<FLASHTnTHelpers::Tag>':'std::set<OpenMS::FLASHTnTHelpers::Tag>' lvalue ParmVar 0xbf3162b88 'tag_set' 'std::set<FLASHTnTHelpers::Tag> &'
+          | `-DeclRefExpr 0xbf33252b8 <col:22> 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag' lvalue Var 0xbf3324d80 'reverse_tag' 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag'
+          `-CXXMemberCallExpr 0xbf33254b0 <line:545:7, col:45> 'void'
+            |-MemberExpr 0xbf3325480 <col:7, col:24> '<bound member function type>' .push_back 0xbf5cf5ce0
+            | `-CXXOperatorCallExpr 0xbf33253c8 <col:7, col:22> 'mapped_type':'std::vector<OpenMS::FLASHTnTHelpers::Tag>' lvalue '[]'
+            |   |-ImplicitCastExpr 0xbf33253b0 <col:14, col:22> 'mapped_type &(*)(const key_type &)' <FunctionToPointerDecay>
+            |   | `-DeclRefExpr 0xbf3325390 <col:14, col:22> 'mapped_type &(const key_type &)' lvalue CXXMethod 0xbf323e188 'operator[]' 'mapped_type &(const key_type &)'
+            |   |-DeclRefExpr 0xbf3325338 <col:7> 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>>':'std::map<std::string, std::vector<OpenMS::FLASHTnTHelpers::Tag>>' lvalue ParmVar 0xbf3163230 'seq_tag' 'std::map<std::string, std::vector<FLASHTnTHelpers::Tag>> &'
+            |   `-ImplicitCastExpr 0xbf3325378 <col:15> 'const key_type':'const std::string' lvalue <NoOp>
+            |     `-DeclRefExpr 0xbf3325358 <col:15> 'std::string' lvalue Var 0xbf31a0e98 'rev_seq' 'std::string'
+            `-DeclRefExpr 0xbf3325460 <col:34> 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag' lvalue Var 0xbf3324d80 'reverse_tag' 'const FLASHTnTHelpers::Tag':'const OpenMS::FLASHTnTHelpers::Tag'
+

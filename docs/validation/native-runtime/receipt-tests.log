@@ -1,0 +1,18 @@
+test_command_line_requires_receipt_before_any_work (test_runtime_receipt.InstallReceiptTests.test_command_line_requires_receipt_before_any_work) ... ok
+test_dirty_source_and_version (test_runtime_receipt.InstallReceiptTests.test_dirty_source_and_version) ... ok
+test_duplicate_file_ownership (test_runtime_receipt.InstallReceiptTests.test_duplicate_file_ownership) ... ok
+test_exact_installed_bytes_and_source_match (test_runtime_receipt.InstallReceiptTests.test_exact_installed_bytes_and_source_match) ... ok
+test_link_cannot_escape_sdk (test_runtime_receipt.InstallReceiptTests.test_link_cannot_escape_sdk) ... ok
+test_missing_receipt (test_runtime_receipt.InstallReceiptTests.test_missing_receipt) ... ok
+test_missing_runtime_file (test_runtime_receipt.InstallReceiptTests.test_missing_runtime_file) ... ok
+test_path_traversal (test_runtime_receipt.InstallReceiptTests.test_path_traversal) ... ok
+test_replaced_installed_binary (test_runtime_receipt.InstallReceiptTests.test_replaced_installed_binary) ... ok
+test_stale_binary_cannot_receive_new_clean_source_pin (test_runtime_receipt.InstallReceiptTests.test_stale_binary_cannot_receive_new_clean_source_pin) ... ok
+test_symlink_target_is_part_of_receipt (test_runtime_receipt.InstallReceiptTests.test_symlink_target_is_part_of_receipt) ... ok
+test_wrong_hash (test_runtime_receipt.InstallReceiptTests.test_wrong_hash) ... ok
+test_wrong_schema_prefix_or_package (test_runtime_receipt.InstallReceiptTests.test_wrong_schema_prefix_or_package) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.079s
+
+OK

@@ -1,0 +1,38 @@
+stty: stdin isn't a terminal
+
+ParquetDiff -- Compares two Parquet tables by primary key, tolerating numeric differences.
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_ParquetDiff.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  ParquetDiff <options>
+
+Options (mandatory options marked with '*'):
+                     
+  -in1 <file>*       First input file (valid formats: 'parquet')
+  -in2 <file>        Second input file (omit when 'schema' is given) (valid formats: 'parquet')
+                     
+  -pk <string list>  Primary-key columns used to match rows. If empty, derived from the QPX 'file_type' metadata of the first file.
+  -schema <view>     Instead of comparing two files, check 'in1' against the built-in QPX schema of this view (valid: 'psm', 'feature', 'pg')
+  -out_tsv <file>    Instead of comparing, write 'in1' out as TSV sorted by primary key. A Parquet reference can only be regenerated wholesale, which hides unrelated drift; a text dump can be reviewed in a diff and patched line by line, and compared with FuzzyDiff like every other reference. (valid formats: 'tsv')
+                     
+  -ratio <double>    Acceptable relative error. Only one of 'ratio' or 'absdiff' has to be satisfied.  Use "absdiff" to deal with cases like "zero vs. epsilon". (default: '1.0') (min: '1.0')
+  -absdiff <double>  Acceptable absolute difference. Only one of 'ratio' or 'absdiff' has to be satisfied.  (default: '0.0') (min: '0.0')
+                     
+  -min_rows <int>    Require every input to hold at least this many rows ('-1' does not check). A schema check alone is satisfied by an empty table, so this is what distinguishes 'the tool wrote a correct table' from 'the tool wrote a correctly shaped nothing'. '0' is accepted and always passes: use it to record that a table is expected to be empty. (default: '-1') (min: '-1')
+                     
+  -verbose <int>     Set verbose level:
+                     0 = very quiet mode (absolutely no output)
+                     1 = quiet mode (no output unless differences detected)
+                     2 = default (include summary at end)
+                      (default: '2') (min: '0' max: '2')
+                     
+Common TOPP options:
+  -ini <file>        Use the given TOPP INI file
+  -threads <n>       Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>  Writes the default configuration file
+  --help             Shows options
+  --helphelp         Shows all options (including advanced)
+

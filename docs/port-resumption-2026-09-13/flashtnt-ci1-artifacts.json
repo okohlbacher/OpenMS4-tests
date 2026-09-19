@@ -1,0 +1,135 @@
+{
+  "source_revision": "b0cf76d19340c824d51d3c403c609e11eda7a72e",
+  "release_url": "https://github.com/okohlbacher/OpenMS4-flashtnt/releases/tag/flashtnt-v1.0.0-ci.1",
+  "source_ci_url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34743012215",
+  "release_ci_url": "https://github.com/okohlbacher/OpenMS4-flashtnt/actions/runs/34757106299",
+  "published_at": "2026-09-13T12:39:01Z",
+  "platforms": [
+    {
+      "platform": "linux-arm64",
+      "archive": "OpenMS4-flashtnt-linux-arm64-Release-b0cf76d19340.tar.gz",
+      "sha256": "7b59e3a4bc29e977d0f27340dd9ba0c187329c7cbe5179e746867df594cade79",
+      "size": 282128,
+      "source_revision_verified": true,
+      "architecture_verified": true,
+      "dependencies": {
+        "OpenMS": {
+          "version": "4.0.0",
+          "source_revision": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+          "repository": "https://github.com/okohlbacher/OpenMS4-core"
+        },
+        "OpenMSCLI": {
+          "version": "1.0.0",
+          "source_revision": "d5213ff3551a8608e4e3f930fd4a6f85a8c82f97",
+          "repository": "https://github.com/okohlbacher/OpenMS4-cli"
+        },
+        "OpenMSFLASH": {
+          "version": "1.0.0",
+          "source_revision": "b2c6771de7746c43ad55558d17429a15087083fb",
+          "repository": "https://github.com/okohlbacher/OpenMS4-flash"
+        }
+      }
+    },
+    {
+      "platform": "linux-x64",
+      "archive": "OpenMS4-flashtnt-linux-x64-Release-b0cf76d19340.tar.gz",
+      "sha256": "44fc1240d5b3f94b057b8358f0219ed473b29f4aa3424a1fe158ccd9ac073207",
+      "size": 296878,
+      "source_revision_verified": true,
+      "architecture_verified": true,
+      "dependencies": {
+        "OpenMS": {
+          "version": "4.0.0",
+          "source_revision": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+          "repository": "https://github.com/okohlbacher/OpenMS4-core"
+        },
+        "OpenMSCLI": {
+          "version": "1.0.0",
+          "source_revision": "d5213ff3551a8608e4e3f930fd4a6f85a8c82f97",
+          "repository": "https://github.com/okohlbacher/OpenMS4-cli"
+        },
+        "OpenMSFLASH": {
+          "version": "1.0.0",
+          "source_revision": "b2c6771de7746c43ad55558d17429a15087083fb",
+          "repository": "https://github.com/okohlbacher/OpenMS4-flash"
+        }
+      }
+    },
+    {
+      "platform": "macos-arm64",
+      "archive": "OpenMS4-flashtnt-macos-arm64-Release-b0cf76d19340.tar.gz",
+      "sha256": "2b545d1b11d82e57905220cf0ff65bbcbbcf79c714a7dcee153f91f593b48223",
+      "size": 220514,
+      "source_revision_verified": true,
+      "architecture_verified": true,
+      "dependencies": {
+        "OpenMS": {
+          "version": "4.0.0",
+          "source_revision": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+          "repository": "https://github.com/okohlbacher/OpenMS4-core"
+        },
+        "OpenMSCLI": {
+          "version": "1.0.0",
+          "source_revision": "d5213ff3551a8608e4e3f930fd4a6f85a8c82f97",
+          "repository": "https://github.com/okohlbacher/OpenMS4-cli"
+        },
+        "OpenMSFLASH": {
+          "version": "1.0.0",
+          "source_revision": "b2c6771de7746c43ad55558d17429a15087083fb",
+          "repository": "https://github.com/okohlbacher/OpenMS4-flash"
+        }
+      }
+    },
+    {
+      "platform": "macos-x64",
+      "archive": "OpenMS4-flashtnt-macos-x64-Release-b0cf76d19340.tar.gz",
+      "sha256": "e31a97dc021535bd2ba55fd72c9087855e756a533dd51ecdf20b407d9b541318",
+      "size": 237371,
+      "source_revision_verified": true,
+      "architecture_verified": true,
+      "dependencies": {
+        "OpenMS": {
+          "version": "4.0.0",
+          "source_revision": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+          "repository": "https://github.com/okohlbacher/OpenMS4-core"
+        },
+        "OpenMSCLI": {
+          "version": "1.0.0",
+          "source_revision": "d5213ff3551a8608e4e3f930fd4a6f85a8c82f97",
+          "repository": "https://github.com/okohlbacher/OpenMS4-cli"
+        },
+        "OpenMSFLASH": {
+          "version": "1.0.0",
+          "source_revision": "b2c6771de7746c43ad55558d17429a15087083fb",
+          "repository": "https://github.com/okohlbacher/OpenMS4-flash"
+        }
+      }
+    },
+    {
+      "platform": "windows-x64",
+      "archive": "OpenMS4-flashtnt-windows-x64-Release-b0cf76d19340.tar.gz",
+      "sha256": "355b051cb2a574fcc1c468d522354aa0b84089140b56046a9be4f2b695a66788",
+      "size": 180676,
+      "source_revision_verified": true,
+      "architecture_verified": true,
+      "dependencies": {
+        "OpenMS": {
+          "version": "4.0.0",
+          "source_revision": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+          "repository": "https://github.com/okohlbacher/OpenMS4-core"
+        },
+        "OpenMSCLI": {
+          "version": "1.0.0",
+          "source_revision": "d5213ff3551a8608e4e3f930fd4a6f85a8c82f97",
+          "repository": "https://github.com/okohlbacher/OpenMS4-cli"
+        },
+        "OpenMSFLASH": {
+          "version": "1.0.0",
+          "source_revision": "b2c6771de7746c43ad55558d17429a15087083fb",
+          "repository": "https://github.com/okohlbacher/OpenMS4-flash"
+        }
+      }
+    }
+  ],
+  "complete": true
+}

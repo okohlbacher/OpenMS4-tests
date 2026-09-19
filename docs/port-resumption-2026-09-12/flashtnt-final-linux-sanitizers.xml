@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Linux-x86_64-conda-linux-gnu-g++"
+	tests="4"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname="dax"
+	time="37"
+	timestamp="2026-09-13T00:29:12"
+	>
+	<testcase name="FLASHTnT_write_ini" classname="FLASHTnT_write_ini" time="0.238804" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FLASHTnT_write_ctd" classname="FLASHTnT_write_ctd" time="0.286215" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="FLASHTnT_port_contract" classname="FLASHTnT_port_contract" time="0.27334" status="run">
+		<properties/>
+		<system-out>Progress of 'Finding sequence tags ...':
+  Progress of 'Finding sequence tags ...':
+</system-out>
+	</testcase>
+	<testcase name="FLASHTnT_AQPZ_identity" classname="FLASHTnT_AQPZ_identity" time="37.3092" status="run">
+		<properties/>
+		<system-out>{
+  "positive_identity_checks_passed": true,
+  "aqpz_tags": 114,
+  "legacy_reference_matches": false,
+  "legacy_reference_comparison": {
+    "tags.tsv_rows": {
+      "actual": 698,
+      "reference": 2968,
+      "match": false
+    },
+    "protein.tsv_rows": {
+      "actual": 10,
+      "reference": 17,
+      "match": false
+    },
+    "prsms.tsv_rows": {
+      "actual": 10,
+      "reference": 17,
+      "match": false
+    },
+    "tag_sequence_counts": {
+      "match": false,
+      "extra_count": 0,
+      "missing_count": 2270
+    },
+    "Score": {
+      "actual": 559.0,
+      "reference": 505.0,
+      "match": false
+    },
+    "PrecursorMass": {
+      "actual": -1.0,
+      "reference": -1.0,
+      "match": true
+    },
+    "ProteoformMass": {
+      "actual": 24633.174543367222,
+      "reference": 24724.11885683967,
+      "match": false
+    },
+    "MatchingFragments": {
+      "actual": 79.0,
+      "reference": 69.0,
+      "match": false
+    },
+    "Coverage(%)": {
+      "actual": 32.9167,
+      "reference": 28.75,...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+</testsuite>

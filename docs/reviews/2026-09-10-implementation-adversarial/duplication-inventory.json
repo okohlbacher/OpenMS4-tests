@@ -1,0 +1,16 @@
+[
+  {
+    "sha256": "8ee0b34e7e12a9e1b1fb844874f738cedf871aedbc27a66f692bf6b7793267e1",
+    "bytes": 4270,
+    "copies": 7,
+    "paths": [
+      "packages/openswath/cmake/OpenMS4Dependencies.cmake",
+      "packages/pyopenms/cmake/OpenMS4Dependencies.cmake",
+      "packages/topp/cmake/OpenMS4Dependencies.cmake",
+      "packages/flash/cmake/OpenMS4Dependencies.cmake",
+      "packages/cli/cmake/OpenMS4Dependencies.cmake",
+      "packages/desktop/cmake/OpenMS4Dependencies.cmake",
+      "packages/test-data/cmake/OpenMS4Dependencies.cmake"
+    ]
+  }
+]

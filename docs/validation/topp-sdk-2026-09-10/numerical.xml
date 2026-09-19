@@ -1,0 +1,2689 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Darwin-unknown"
+	tests="285"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname="MBP-OK-2.local"
+	time="69"
+	timestamp="2026-09-10T15:40:54"
+	>
+	<testcase name="TOPP_IDMerger_1" classname="TOPP_IDMerger_1" time="0.809989" status="run">
+		<properties/>
+		<system-out>IDMerger took 0.53 s (wall), 0.36 s (CPU), 0.01 s (system), 0.35 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_1_out1" classname="TOPP_IDMerger_1_out1" time="1.00636" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_2" classname="TOPP_IDMerger_2" time="0.806072" status="run">
+		<properties/>
+		<system-out>IDMerger took 0.53 s (wall), 0.35 s (CPU), 0.00 s (system), 0.35 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_2_out1" classname="TOPP_IDMerger_2_out1" time="1.03481" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_3" classname="TOPP_IDMerger_3" time="0.796245" status="run">
+		<properties/>
+		<system-out>IDMerger took 0.48 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_3_out1" classname="TOPP_IDMerger_3_out1" time="1.00917" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_4" classname="TOPP_IDMerger_4" time="0.772835" status="run">
+		<properties/>
+		<system-out>IDMerger took 0.48 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_4_out1" classname="TOPP_IDMerger_4_out1" time="0.519429" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_5" classname="TOPP_IDMerger_5" time="0.677249" status="run">
+		<properties/>
+		<system-out>IDMerger took 0.39 s (wall), 0.34 s (CPU), 0.00 s (system), 0.34 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_5_out1" classname="TOPP_IDMerger_5_out1" time="0.603729" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_6" classname="TOPP_IDMerger_6" time="1.11625" status="run">
+		<properties/>
+		<system-out>IDMerger took 0.49 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_6_out1" classname="TOPP_IDMerger_6_out1" time="1.23264" status="run">
+		<properties/>
+		<system-out>Progress of 'Loading...':
+-- done [took 0.36 s (CPU), 0.51 s (Wall)] -- 
+Progress of 'Storing...':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+IDFileConverter took 0.51 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_6_out2" classname="TOPP_IDMerger_6_out2" time="0.597183" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_idparquet" classname="TOPP_IDMerger_idparquet" time="1.13209" status="run">
+		<properties/>
+		<system-out>Setting an empty value for primary MS runs paths.
+QPXFile: could not build a complete MS-run mapping: the value '' was used but is not valid; Multiple protein identifications with the same ms-run-path. Check input!. Per-PSM run_file_name resolution may be incomplete.
+IDMerger took 0.49 s (wall), 0.39 s (CPU), 0.03 s (system), 0.36 s (user); Peak Memory Usage: 66 MB.
+&lt;Setting an empty value for primary MS runs paths.&gt; occurred 2 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_idparquet_convert" classname="TOPP_IDMerger_idparquet_convert" time="0.912056" status="run">
+		<properties/>
+		<system-out>Progress of 'Loading...':
+Setting an empty value for primary MS runs paths.
+-- done [took 0.00 s (CPU), 0.01 s (Wall)] -- 
+Progress of 'Storing...':
+-- done [took 0.35 s (CPU), 0.59 s (Wall)] -- 
+IDFileConverter took 0.60 s (wall), 0.35 s (CPU), 0.00 s (system), 0.35 s (user); Peak Memory Usage: 65 MB.
+&lt;Setting an empty value for primary MS runs paths.&gt; occurred 2 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDMerger_idparquet_diff" classname="TOPP_IDMerger_idparquet_diff" time="0.69812" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_ConsensusMapNormalizer_1" classname="TOPP_ConsensusMapNormalizer_1" time="1.12915" status="run">
+		<properties/>
+		<system-out>Progress of 'loading consensusXML file':
+-- done [took 0.01 s (CPU), 0.03 s (Wall)] -- 
+
+Using 90/90 consensus features for computing normalization coefficients
+
+Progress of 'normalizing maps':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+ConsensusMapNormalizer took 0.47 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_ConsensusMapNormalizer_1_out1" classname="TOPP_ConsensusMapNormalizer_1_out1" time="2.00369" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.27 s (wall), 0.04 s (CPU), 0.00 s (system), 0.04 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapNormalizer_1" classname="TOPP_MapNormalizer_1" time="1.41304" status="run">
+		<properties/>
+		<system-out>Update ranges was called but ranges were already up-to-date
+MapNormalizer took 0.74 s (wall), 0.55 s (CPU), 0.01 s (system), 0.54 s (user); Peak Memory Usage: 62 MB.
+&lt;Update ranges was called but ranges were already up-to-date&gt; occurred 21 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapNormalizer_1_out1" classname="TOPP_MapNormalizer_1_out1" time="1.38866" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.01 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_1" classname="TOPP_FileConverter_1" time="0.948647" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzData file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'storing mzML file':
+-- done [took 0.02 s (CPU), 0.03 s (Wall) @ 2.066 MiB/s] -- 
+FileConverter took 0.72 s (wall), 0.52 s (CPU), 0.01 s (system), 0.51 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_1_out1" classname="TOPP_FileConverter_1_out1" time="1.53356" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_2" classname="TOPP_FileConverter_2" time="0.937498" status="run">
+		<properties/>
+		<system-out>Progress of 'loading DTA2D file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+No source file annotated.
+Progress of 'storing mzML file':
+-- done [took 0.02 s (CPU), 0.03 s (Wall) @ 499.7 KiB/s] -- 
+FileConverter took 0.72 s (wall), 0.52 s (CPU), 0.01 s (system), 0.51 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_2_out1" classname="TOPP_FileConverter_2_out1" time="1.6814" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_3" classname="TOPP_FileConverter_3" time="1.03694" status="run">
+		<properties/>
+		<system-out>While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileConverter_3_input.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!
+Warning: Converting features to peaks. You will lose information! Mass traces are added, if present as 'num_of_masstraces' and 'masstrace_intensity' (X&gt;=0) meta values.
+Progress of 'storing mzML file':
+&lt;While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileConverter_3_input.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!&gt; occurred 10 times
+While storing '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/tmp_path/FileConverter_3.tmp.mzML': Invalid native IDs detected. Using spectrum identifier nativeID format (spectrum...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_3_out1" classname="TOPP_FileConverter_3_out1" time="0.634748" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_4" classname="TOPP_FileConverter_4" time="1.12953" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzXML file':
+-- done [took 0.01 s (CPU), 0.01 s (Wall)] -- 
+Progress of 'storing mzML file':
+  0.00 %               -- done [took 0.03 s (CPU), 0.13 s (Wall) @ 1.112 MiB/s] -- 
+FileConverter took 0.87 s (wall), 0.54 s (CPU), 0.01 s (system), 0.53 s (user); Peak Memory Usage: 63 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_4_out1" classname="TOPP_FileConverter_4_out1" time="0.706246" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_5" classname="TOPP_FileConverter_5" time="1.03715" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.01 s (CPU), 0.01 s (Wall)] -- 
+-- done [took 0.02 s (CPU), 0.03 s (Wall) @ 4.589 MiB/s] -- 
+Progress of 'storing mzXML file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+FileConverter took 0.76 s (wall), 0.52 s (CPU), 0.01 s (system), 0.51 s (user); Peak Memory Usage: 63 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_5_out1" classname="TOPP_FileConverter_5_out1" time="0.55124" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_6" classname="TOPP_FileConverter_6" time="1.04492" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  Progress of 'loading chromatogram list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.01 s (Wall) @ 6.787 MiB/s] -- 
+Update ranges was called but ranges were already up-to-date
+Expecting a single source file in mzML. Found 5 will take only first one for rewriting.
+Progress of 'storing mzXML file':
+While storing '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/tmp_path/FileConverter_6.tmp.mzXML': Not all spectrum native IDs are numbers or correctly prefixed with 'scan='. The spectra are renumbered and the native IDs are lost!
+While storing '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/tmp_path/FileConverter_6.tmp.mzXML': The MzXML format can store only one scan window for each scan. Only the first one is stored!
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+FileConverter took 0...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_6_out1" classname="TOPP_FileConverter_6_out1" time="1.04578" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_7" classname="TOPP_FileConverter_7" time="0.814981" status="run">
+		<properties/>
+		<system-out>Progress of 'loading consensusXML file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+FeatureXMLHandler::store():  found 1 invalid unique ids
+Progress of 'Storing featureXML file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+FileConverter took 0.62 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_7_out1" classname="TOPP_FileConverter_7_out1" time="0.930589" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_8" classname="TOPP_FileConverter_8" time="0.80915" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  Progress of 'loading chromatogram list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.01 s (Wall) @ 5.799 MiB/s] -- 
+Update ranges was called but ranges were already up-to-date
+Expecting a single source file in mzML. Found 5 will take only first one for rewriting.
+Progress of 'storing mzData file':
+While storing '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/tmp_path/FileConverter_8.tmp.mzData': The MzData format can store only one ion source. Only the first one is stored!
+While storing '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/tmp_path/FileConverter_8.tmp.mzData': Cannot find value '14' needed to write CV term 'AnalyzerType' with accession '1000010'.
+While storing '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/tmp_path/FileConverte...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_8_out1" classname="TOPP_FileConverter_8_out1" time="1.27229" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_9" classname="TOPP_FileConverter_9" time="0.685006" status="run">
+		<properties/>
+		<system-out>Progress of 'loading consensusXML file':
+-- done [took 0.03 s (CPU), 0.02 s (Wall)] -- 
+Progress of 'Storing featureXML file':
+-- done [took 0.01 s (CPU), 0.00 s (Wall)] -- 
+FileConverter took 0.44 s (wall), 0.38 s (CPU), 0.01 s (system), 0.37 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_9_out1" classname="TOPP_FileConverter_9_out1" time="1.24457" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_10" classname="TOPP_FileConverter_10" time="0.616428" status="run">
+		<properties/>
+		<system-out>Detected a header line.
+FileConverter took 0.41 s (wall), 0.35 s (CPU), 0.01 s (system), 0.34 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_10_out1" classname="TOPP_FileConverter_10_out1" time="0.635457" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_11" classname="TOPP_FileConverter_11" time="0.652684" status="run">
+		<properties/>
+		<system-out>FileConverter took 0.45 s (wall), 0.35 s (CPU), 0.01 s (system), 0.34 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_11_out1" classname="TOPP_FileConverter_11_out1" time="0.692408" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_12" classname="TOPP_FileConverter_12" time="0.726498" status="run">
+		<properties/>
+		<system-out>FileConverter took 0.47 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_12_out1" classname="TOPP_FileConverter_12_out1" time="0.646305" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.15 s (wall), 0.08 s (CPU), 0.01 s (system), 0.07 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_13" classname="TOPP_FileConverter_13" time="0.694866" status="run">
+		<properties/>
+		<system-out>Hint: The convex hulls are approximated in m/z dimension (Kroenik lacks this information)!
+FileConverter took 0.45 s (wall), 0.35 s (CPU), 0.01 s (system), 0.34 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_13_out1" classname="TOPP_FileConverter_13_out1" time="0.362094" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_14" classname="TOPP_FileConverter_14" time="0.698032" status="run">
+		<properties/>
+		<system-out>FileConverter took 0.47 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_14_out1" classname="TOPP_FileConverter_14_out1" time="0.443627" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_15" classname="TOPP_FileConverter_15" time="0.685238" status="run">
+		<properties/>
+		<system-out>Detected a header line.
+FileConverter took 0.49 s (wall), 0.35 s (CPU), 0.01 s (system), 0.34 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_15_out1" classname="TOPP_FileConverter_15_out1" time="0.496671" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_16" classname="TOPP_FileConverter_16" time="0.829557" status="run">
+		<properties/>
+		<system-out>Detected a header line.
+FileConverter took 0.52 s (wall), 0.35 s (CPU), 0.01 s (system), 0.34 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_16_out1" classname="TOPP_FileConverter_16_out1" time="0.497345" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_17" classname="TOPP_FileConverter_17" time="0.836468" status="run">
+		<properties/>
+		<system-out>Warning: Converting consensus features to peaks. You will lose information!
+FileConverter took 0.56 s (wall), 0.36 s (CPU), 0.01 s (system), 0.35 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_17_out1" classname="TOPP_FileConverter_17_out1" time="0.477008" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_18" classname="TOPP_FileConverter_18" time="0.829707" status="run">
+		<properties/>
+		<system-out>Warning: Converting consensus features to peaks. You will lose information!
+FileConverter took 0.56 s (wall), 0.36 s (CPU), 0.01 s (system), 0.35 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_18_out1" classname="TOPP_FileConverter_18_out1" time="0.504846" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_19" classname="TOPP_FileConverter_19" time="1.09411" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 57.14 MiB/s] -- 
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.03 s (CPU), 0.06 s (Wall) @ 1.088 MiB/s] -- 
+FileConverter took 0.85 s (wall), 0.54 s (CPU), 0.01 s (system), 0.53 s (user); Peak Memory Usage: 63 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_19_out" classname="TOPP_FileConverter_19_out" time="0.599921" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_20" classname="TOPP_FileConverter_20" time="0.925084" status="run">
+		<properties/>
+		<system-out>Progress of 'Storing featureXML file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+FileConverter took 0.62 s (wall), 0.36 s (CPU), 0.01 s (system), 0.35 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_20_out" classname="TOPP_FileConverter_20_out" time="0.515979" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_21" classname="TOPP_FileConverter_21" time="1.35827" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzXML file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'loading mzXML file':
+-- done [took 0.04 s (CPU), 0.13 s (Wall)] -- 
+FileConverter took 1.07 s (wall), 0.56 s (CPU), 0.02 s (system), 0.54 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_21_out" classname="TOPP_FileConverter_21_out" time="0.465271" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_22" classname="TOPP_FileConverter_22" time="0.310706" status="run">
+		<properties/>
+		<system-out>Error: Unexpected internal error (Process_lowmemory option can only be used with mzML / mzXML input and mzML output data types.)
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_23" classname="TOPP_FileConverter_23" time="1.38124" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  Progress of 'loading chromatogram list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+While loading '': Float binary data array 'm/z array' has length 0, but should have length 15.
+While loading '': Float binary data array 'intensity array' has length 0, but should have length 15.
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileConverter_23_input.mzML': The m/z array of spectrum 'index=0' has the size 0, but it should have size 15 (defaultArrayLength).
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileConverter_23_input.mzML': The intensity array of spectrum 'index=0' has the size 0, but it should have size 15 (defaultArrayLength).
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileConverter_23_i...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_23_out" classname="TOPP_FileConverter_23_out" time="0.300325" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_24" classname="TOPP_FileConverter_24" time="1.40362" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 62.06 MiB/s] -- 
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.01 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.03 s (CPU), 0.05 s (Wall) @ 1.428 MiB/s] -- 
+FileConverter took 1.02 s (wall), 0.56 s (CPU), 0.02 s (system), 0.54 s (user); Peak Memory Usage: 63 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_24_out" classname="TOPP_FileConverter_24_out" time="0.311672" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_25" classname="TOPP_FileConverter_25" time="1.60628" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 61.37 MiB/s] -- 
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.03 s (CPU), 0.09 s (Wall) @ 737.3 KiB/s] -- 
+FileConverter took 0.97 s (wall), 0.56 s (CPU), 0.02 s (system), 0.54 s (user); Peak Memory Usage: 63 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_25_out" classname="TOPP_FileConverter_25_out" time="0.37018" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_26" classname="TOPP_FileConverter_26" time="1.51049" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.01 s (Wall) @ 6.654 MiB/s] -- 
+No source file annotated.
+Progress of 'storing mzXML file':
+Detected software ''. Setting &lt;msManufacturer&gt; as 'Thermo Scientific'.
+While storing '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/tmp_path/FileConverter_26.tmp.mzXML': Not all spectrum native IDs are numbers or correctly prefixed with 'scan='. The spectra are renumbered and the native IDs are lost!
+-- done [took 0.01 s (CPU), 0.00 s (Wall)] -- 
+FileConverter took 0.99 s (wall), 0.54 s (CPU), 0.02 s (system), 0.52 s (user); Peak Memory Usage: 63 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_26_out" classname="TOPP_FileConverter_26_out" time="0.322218" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_26-2" classname="TOPP_FileConverter_26-2" time="0.674963" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzXML file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'storing mzXML file':
+Detected software ''. Setting &lt;msManufacturer&gt; as 'Thermo Scientific'.
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+FileConverter took 0.03 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_26-2_out" classname="TOPP_FileConverter_26-2_out" time="0.321111" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_27" classname="TOPP_FileConverter_27" time="1.99815" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileConverter_27_input.mzML': Ill formed absolute or relative sourceFile path: file://SCION2/DATA/Flux_intracellular/20170616_flux_testsamples
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileConverter_27_input.mzML': Unknown cvParam '??:0000000' in tag 'sourceFile'.
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/core/src/openms/source/FORMAT/HANDLERS/XMLHandler.cpp(67): While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileConverter_27_input.mzML': Required attribute 'softwareRef' not present!
+Warning: Parsing error, "processingMethod" is missing the required attribute "softwareRef".
+The software tool which generated this mzML should be fixed. Please notify the maintainers.
+  Progress of 'loading spectra list':
+  -- done...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_27_out" classname="TOPP_FileConverter_27_out" time="0.503423" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_28" classname="TOPP_FileConverter_28" time="2.09991" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading chromatogram list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 7.953 MiB/s] -- 
+Expecting a single source file in mzML. Found 5 will take only first one for rewriting.
+Progress of 'storing mzML file':
+-- done [took 0.01 s (CPU), 0.03 s (Wall) @ 408.6 KiB/s] -- 
+FileConverter took 1.43 s (wall), 0.56 s (CPU), 0.02 s (system), 0.54 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_28_out" classname="TOPP_FileConverter_28_out" time="0.649462" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_29" classname="TOPP_FileConverter_29" time="2.00602" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.01 s (Wall)] -- 
+-- done [took 0.01 s (CPU), 0.02 s (Wall) @ 14.17 MiB/s] -- 
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.09 s (CPU), 0.15 s (Wall)] -- 
+-- done [took 0.10 s (CPU), 0.16 s (Wall) @ 1.978 MiB/s] -- 
+FileConverter took 1.41 s (wall), 0.64 s (CPU), 0.03 s (system), 0.61 s (user); Peak Memory Usage: 64 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_29_out" classname="TOPP_FileConverter_29_out" time="0.632378" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.03 s (wall), 0.02 s (CPU), 0.00 s (system), 0.02 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_29_back" classname="TOPP_FileConverter_29_back" time="2.35257" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.04 s (CPU), 0.06 s (Wall)] -- 
+-- done [took 0.04 s (CPU), 0.06 s (Wall) @ 5.23 MiB/s] -- 
+No source file annotated.
+Progress of 'storing mzML file':
+-- done [took 0.06 s (CPU), 0.10 s (Wall) @ 5.65 MiB/s] -- 
+FileConverter took 1.64 s (wall), 0.64 s (CPU), 0.03 s (system), 0.61 s (user); Peak Memory Usage: 64 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_30" classname="TOPP_FileConverter_30" time="2.46389" status="run">
+		<properties/>
+		<system-out>
+Loading spectra from .msp file. Please wait.
+DUPLICATE: name1 of second
+Loading spectra from .msp file completed.
+No source file annotated.
+Progress of 'storing mzML file':
+While storing '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/tmp_path/FileConverter_30.tmp.mzML': Invalid native IDs detected. Using spectrum identifier nativeID format (spectrum=xsd:nonNegativeInteger) for all spectra.
+-- done [took 0.02 s (CPU), 0.05 s (Wall) @ 220.8 KiB/s] -- 
+FileConverter took 1.25 s (wall), 0.56 s (CPU), 0.03 s (system), 0.53 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_30_out" classname="TOPP_FileConverter_30_out" time="0.528269" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_31" classname="TOPP_FileConverter_31" time="0.804803" status="run">
+		<properties/>
+		<system-out>
+Loading spectra from .msp file. Please wait.
+DUPLICATE: name1 of second
+Loading spectra from .msp file completed.
+No source file annotated.
+FileConverter took 0.00 s (wall), 0.01 s (CPU), 0.01 s (system), 0.00 s (user); Peak Memory Usage: 53 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_31_out" classname="TOPP_FileConverter_31_out" time="0.706806" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_32" classname="TOPP_FileConverter_32" time="1.50587" status="run">
+		<properties/>
+		<system-out>Setting an empty value for primary MS runs paths.
+FileConverter took 0.85 s (wall), 0.39 s (CPU), 0.02 s (system), 0.37 s (user); Peak Memory Usage: 67 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_32_out1" classname="TOPP_FileConverter_32_out1" time="0.526753" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_33" classname="TOPP_FileConverter_33" time="1.38283" status="run">
+		<properties/>
+		<system-out>Setting an empty value for primary MS runs paths.
+FileConverter took 0.89 s (wall), 0.39 s (CPU), 0.02 s (system), 0.37 s (user); Peak Memory Usage: 67 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_33_out1" classname="TOPP_FileConverter_33_out1" time="0.563635" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_34" classname="TOPP_FileConverter_34" time="1.55921" status="run">
+		<properties/>
+		<system-out>Setting an empty value for primary MS runs paths.
+FileConverter took 0.53 s (wall), 0.39 s (CPU), 0.02 s (system), 0.37 s (user); Peak Memory Usage: 69 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_34_back" classname="TOPP_FileConverter_34_back" time="1.45454" status="run">
+		<properties/>
+		<system-out>Setting an empty value for primary MS runs paths.
+Progress of 'storing consensusXML file':
+.-- done [took 0.36 s (CPU), 0.64 s (Wall)] -- 
+FileConverter took 0.75 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 67 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_34_out1" classname="TOPP_FileConverter_34_out1" time="0.680015" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_35" classname="TOPP_FileConverter_35" time="1.60682" status="run">
+		<properties/>
+		<system-out>FileConverter took 0.56 s (wall), 0.40 s (CPU), 0.02 s (system), 0.38 s (user); Peak Memory Usage: 67 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_35_back" classname="TOPP_FileConverter_35_back" time="1.10187" status="run">
+		<properties/>
+		<system-out>Setting an empty value for primary MS runs paths.
+Progress of 'storing consensusXML file':
+-- done [took 0.36 s (CPU), 0.50 s (Wall)] -- 
+FileConverter took 0.54 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 66 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_35_out1" classname="TOPP_FileConverter_35_out1" time="0.507539" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_36" classname="TOPP_FileConverter_36" time="0.92877" status="run">
+		<properties/>
+		<system-out>Setting an empty value for primary MS runs paths.
+FileConverter took 0.58 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 67 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_36_out1" classname="TOPP_FileConverter_36_out1" time="0.500683" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_nonascii_prepare" classname="TOPP_FileConverter_nonascii_prepare" time="0.013573" status="run">
+		<properties/>
+		<system-out></system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_nonascii" classname="TOPP_FileConverter_nonascii" time="1.24597" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzData file':
+-- done [took 0.01 s (CPU), 0.01 s (Wall)] -- 
+Progress of 'storing mzML file':
+-- done [took 0.03 s (CPU), 0.06 s (Wall) @ 1.206 MiB/s] -- 
+FileConverter took 0.93 s (wall), 0.54 s (CPU), 0.01 s (system), 0.53 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileConverter_nonascii_out1" classname="TOPP_FileConverter_nonascii_out1" time="0.410255" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_1" classname="TOPP_FileMerger_1" time="1.65933" status="run">
+		<properties/>
+		<system-out>Progress of 'loading DTA2D file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+No source file annotated.
+Progress of 'loading DTA2D file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'storing mzML file':
+-- done [took 0.01 s (CPU), 0.02 s (Wall) @ 481.4 KiB/s] -- 
+FileMerger took 0.84 s (wall), 0.52 s (CPU), 0.02 s (system), 0.50 s (user); Peak Memory Usage: 62 MB.
+&lt;No source file annotated.&gt; occurred 3 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_1_out1" classname="TOPP_FileMerger_1_out1" time="0.407559" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_2" classname="TOPP_FileMerger_2" time="1.19564" status="run">
+		<properties/>
+		<system-out>No source file annotated.
+Progress of 'storing mzML file':
+  0.00 %               -- done [took 0.02 s (CPU), 0.02 s (Wall) @ 478.9 KiB/s] -- 
+FileMerger took 0.78 s (wall), 0.52 s (CPU), 0.01 s (system), 0.51 s (user); Peak Memory Usage: 61 MB.
+&lt;No source file annotated.&gt; occurred 2 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_2_out1" classname="TOPP_FileMerger_2_out1" time="0.418582" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.02 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_3" classname="TOPP_FileMerger_3" time="1.17668" status="run">
+		<properties/>
+		<system-out>No source file annotated.
+Progress of 'storing mzML file':
+-- done [took 0.01 s (CPU), 0.02 s (Wall) @ 388.8 KiB/s] -- 
+FileMerger took 0.84 s (wall), 0.51 s (CPU), 0.01 s (system), 0.50 s (user); Peak Memory Usage: 61 MB.
+&lt;No source file annotated.&gt; occurred 2 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_3_out1" classname="TOPP_FileMerger_3_out1" time="0.561228" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_4" classname="TOPP_FileMerger_4" time="1.04757" status="run">
+		<properties/>
+		<system-out>Progress of 'loading DTA2D file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+No source file annotated.
+Progress of 'loading DTA2D file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'storing mzML file':
+-- done [took 0.01 s (CPU), 0.02 s (Wall) @ 531.8 KiB/s] -- 
+FileMerger took 0.75 s (wall), 0.51 s (CPU), 0.01 s (system), 0.50 s (user); Peak Memory Usage: 62 MB.
+&lt;No source file annotated.&gt; occurred 2 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_4_out1" classname="TOPP_FileMerger_4_out1" time="0.811923" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_5" classname="TOPP_FileMerger_5" time="1.20711" status="run">
+		<properties/>
+		<system-out>No source file annotated.
+Progress of 'storing mzML file':
+-- done [took 0.01 s (CPU), 0.05 s (Wall) @ 254 KiB/s] -- 
+FileMerger took 0.89 s (wall), 0.52 s (CPU), 0.01 s (system), 0.51 s (user); Peak Memory Usage: 62 MB.
+&lt;No source file annotated.&gt; occurred 3 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_5_out1" classname="TOPP_FileMerger_5_out1" time="0.626865" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_6" classname="TOPP_FileMerger_6" time="1.16911" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.01 s (CPU), 0.00 s (Wall) @ 7.581 MiB/s] -- 
+Expecting a single source file in mzML. Found 3 will take only first one for rewriting.
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 8.229 MiB/s] -- 
+Update ranges was called but ranges were already up-to-date
+Progress of 'storing mzML file':
+-- done [took 0.01 s (CPU), 0.02 s (Wall) @ 829.6 KiB/s] -- 
+FileMerger took 0.88 s (wall), 0.51 s (CPU), 0.01 s (system), 0.50 s (user); Peak Memory Usage: 62 MB.
+&lt;Expecting a single source file in mzML. Found 3 will take only first one for rewriting.&gt; occurred 2 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_6_out1" classname="TOPP_FileMerger_6_out1" time="0.834632" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_7" classname="TOPP_FileMerger_7" time="0.944126" status="run">
+		<properties/>
+		<system-out>While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileMerger_7_input1.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!
+Replaced 2 invalid uniqueID's
+FeatureXMLHandler::store():  found 7 invalid unique ids
+FileMerger took 0.66 s (wall), 0.36 s (CPU), 0.01 s (system), 0.35 s (user); Peak Memory Usage: 60 MB.
+&lt;While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileMerger_7_input1.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!&gt; occurred 6 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_7_out1" classname="TOPP_FileMerger_7_out1" time="0.633269" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_8" classname="TOPP_FileMerger_8" time="1.06565" status="run">
+		<properties/>
+		<system-out>ConsensusXMLFile::store():  found 1 invalid unique ids
+FileMerger took 0.69 s (wall), 0.36 s (CPU), 0.01 s (system), 0.35 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_8_out1" classname="TOPP_FileMerger_8_out1" time="0.648443" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_9" classname="TOPP_FileMerger_9" time="1.51781" status="run">
+		<properties/>
+		<system-out>While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileMerger_9_input1.traML': Name of CV term not correct: 'MS:1000914 - tab delimited text file' should be 'tab delimited text format'
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileMerger_9_input1.traML': Name of CV term not correct: 'MS:1000590 - contact organization' should be 'contact affiliation'
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileMerger_9_input1.traML': Obsolete CV term 'MS:1000870 - 4000 QTRAP' used in tag 'Instrument'.
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/FileMerger_9_input1.traML': Name of CV term not correct: 'MS:1000891 - heavy labeled peptide' should be 'heavy labeled peptidoform'
+&lt;While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regres...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_9_out1" classname="TOPP_FileMerger_9_out1" time="0.736416" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.05 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_10" classname="TOPP_FileMerger_10" time="0.98975" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.01 s (CPU), 0.00 s (Wall) @ 7.077 MiB/s] -- 
+Update ranges was called but ranges were already up-to-date
+Expecting a single source file in mzML. Found 3 will take only first one for rewriting.
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 8.447 MiB/s] -- 
+Progress of 'storing mzML file':
+-- done [took 0.01 s (CPU), 0.01 s (Wall) @ 1.309 MiB/s] -- 
+FileMerger took 0.66 s (wall), 0.52 s (CPU), 0.01 s (system), 0.51 s (user); Peak Memory Usage: 62 MB.
+&lt;Expecting a single source file in mzML. Found 3 will take only first one for rewriting.&gt; occurred 2 times
+&lt;Update ranges was called but ranges were already up-to-date&gt; occurred 8 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_10_out1" classname="TOPP_FileMerger_10_out1" time="0.552345" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_10_out2" classname="TOPP_FileMerger_10_out2" time="0.577004" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_10_out3" classname="TOPP_FileMerger_10_out3" time="0.543003" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_11" classname="TOPP_FileMerger_11" time="0.740411" status="run">
+		<properties/>
+		<system-out>ConsensusXMLFile::store():  found 1 invalid unique ids
+FileMerger took 0.46 s (wall), 0.36 s (CPU), 0.01 s (system), 0.35 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_FileMerger_11_out1" classname="TOPP_FileMerger_11_out1" time="0.403796" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_1" classname="TOPP_IDFilter_1" time="1.60441" status="run">
+		<properties/>
+		<system-out>Filtering by protein whitelisting (FASTA input)...
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 50 proteins,
+1 spectra identified with 10 spectrum matches.
+After filtering:
+1 identification runs with 1 proteins,
+1 spectra identified with 1 spectrum matches.
+IDFilter took 0.02 s (wall), 0.02 s (CPU), 0.01 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_1_out1" classname="TOPP_IDFilter_1_out1" time="0.533757" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_3" classname="TOPP_IDFilter_3" time="1.25932" status="run">
+		<properties/>
+		<system-out>Filtering by exclusion peptide blacklisting...
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 50 proteins,
+1 spectra identified with 8 spectrum matches.
+After filtering:
+1 identification runs with 2 proteins,
+1 spectra identified with 2 spectrum matches.
+IDFilter took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_3_out1" classname="TOPP_IDFilter_3_out1" time="0.477323" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_4" classname="TOPP_IDFilter_4" time="1.28845" status="run">
+		<properties/>
+		<system-out>Filtering by RT prediction p-value...
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 1 proteins,
+6 spectra identified with 6 spectrum matches.
+After filtering:
+1 identification runs with 1 proteins,
+4 spectra identified with 4 spectrum matches.
+IDFilter took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_4_out1" classname="TOPP_IDFilter_4_out1" time="0.452373" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_5" classname="TOPP_IDFilter_5" time="1.46434" status="run">
+		<properties/>
+		<system-out>Filtering by PSM score (better than 32)...
+No 'score:peptide' threshold set. Not filtering by peptide score.
+Filtering by protein score  (better than 25) ...
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 50 proteins,
+1 spectra identified with 11 spectrum matches.
+After filtering:
+1 identification runs with 2 proteins,
+1 spectra identified with 2 spectrum matches.
+IDFilter took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_5_out1" classname="TOPP_IDFilter_5_out1" time="0.437269" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_5a" classname="TOPP_IDFilter_5a" time="1.22998" status="run">
+		<properties/>
+		<system-out>Filtering by PSM score (better than 32)...
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 50 proteins,
+1 spectra identified with 11 spectrum matches.
+After filtering:
+1 identification runs with 2 proteins,
+1 spectra identified with 2 spectrum matches.
+IDFilter took 0.02 s (wall), 0.02 s (CPU), 0.01 s (system), 0.01 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_5a_out1" classname="TOPP_IDFilter_5a_out1" time="0.482688" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_5b" classname="TOPP_IDFilter_5b" time="1.3539" status="run">
+		<properties/>
+		<system-out>No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+Filtering by protein score  (better than 25) ...
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 50 proteins,
+1 spectra identified with 11 spectrum matches.
+After filtering:
+1 identification runs with 2 proteins,
+1 spectra identified with 11 spectrum matches.
+IDFilter took 0.03 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_5b_out1" classname="TOPP_IDFilter_5b_out1" time="0.689798" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.02 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_5c" classname="TOPP_IDFilter_5c" time="1.34188" status="run">
+		<properties/>
+		<system-out>No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+Filtering by protein score  (better than 25) ...
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Removing peptide hits without protein references...
+Before filtering:
+1 identification runs with 50 proteins,
+1 spectra identified with 11 spectrum matches.
+After filtering:
+1 identification runs with 2 proteins,
+1 spectra identified with 3 spectrum matches.
+IDFilter took 0.02 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_5c_out1" classname="TOPP_IDFilter_5c_out1" time="0.815713" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_6" classname="TOPP_IDFilter_6" time="1.15276" status="run">
+		<properties/>
+		<system-out>No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+Filtering by best n peptide hits...
+No 'score:protein' threshold set. Not filtering by protein score.
+Filtering by best n protein hits (10) ... 
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 50 proteins,
+1 spectra identified with 11 spectrum matches.
+After filtering:
+1 identification runs with 2 proteins,
+1 spectra identified with 2 spectrum matches.
+IDFilter took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_6_out1" classname="TOPP_IDFilter_6_out1" time="0.809143" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_7" classname="TOPP_IDFilter_7" time="1.05926" status="run">
+		<properties/>
+		<system-out>Removing duplicated psms...
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 50 proteins,
+1 spectra identified with 14 spectrum matches.
+After filtering:
+1 identification runs with 2 proteins,
+1 spectra identified with 11 spectrum matches.
+IDFilter took 0.03 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_7_out1" classname="TOPP_IDFilter_7_out1" time="0.765165" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_8" classname="TOPP_IDFilter_8" time="1.07804" status="run">
+		<properties/>
+		<system-out>Filtering peptide IDs by precursor RT...
+Filtering peptide IDs by precursor m/z...No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 1 proteins,
+6 spectra identified with 6 spectrum matches.
+After filtering:
+1 identification runs with 1 proteins,
+2 spectra identified with 2 spectrum matches.
+IDFilter took 0.07 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_8_out1" classname="TOPP_IDFilter_8_out1" time="0.873437" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_9" classname="TOPP_IDFilter_9" time="1.12541" status="run">
+		<properties/>
+		<system-out>Filtering by PSM score (better than 0.05)...
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+2 identification runs with 2 proteins,
+2 spectra identified with 2 spectrum matches.
+After filtering:
+2 identification runs with 2 proteins,
+2 spectra identified with 2 spectrum matches.
+IDFilter took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_9_out1" classname="TOPP_IDFilter_9_out1" time="0.72862" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_10" classname="TOPP_IDFilter_10" time="1.12497" status="run">
+		<properties/>
+		<system-out>No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+Filtering by protein score  (better than 0.3) ...
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Removing peptide hits without protein references...
+Before filtering:
+1 identification runs with 9 proteins,
+1 spectra identified with 16 spectrum matches.
+After filtering:
+1 identification runs with 5 proteins,
+1 spectra identified with 13 spectrum matches.
+IDFilter took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_10_out1" classname="TOPP_IDFilter_10_out1" time="0.952237" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_11" classname="TOPP_IDFilter_11" time="1.24905" status="run">
+		<properties/>
+		<system-out>No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+Removing decoy hits...
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Warning: While updating indistinguishable proteins, some proteins were removed from groups that are still present. The new grouping (especially the group probabilities) may not be completely valid any more.
+&lt;Removing decoy hits...&gt; occurred 2 times
+Removing peptide hits without protein references...
+Before filtering:
+1 identification runs with 9 proteins,
+7 spectra identified with 7 spectrum matches.
+After filtering:
+1 identification runs with 6 proteins,
+6 spectra identified with 6 spectrum matches.
+IDFilter took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_11_out1" classname="TOPP_IDFilter_11_out1" time="0.962398" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_12" classname="TOPP_IDFilter_12" time="1.13645" status="run">
+		<properties/>
+		<system-out>Filtering peptides by digested protein (FASTA input)...
+Peptide accession not available! Skipping Evidence.
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 3 proteins,
+3 spectra identified with 3 spectrum matches.
+After filtering:
+1 identification runs with 0 proteins,
+3 spectra identified with 3 spectrum matches.
+IDFilter took 0.02 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_12_out1" classname="TOPP_IDFilter_12_out1" time="0.712975" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_13" classname="TOPP_IDFilter_13" time="1.30449" status="run">
+		<properties/>
+		<system-out>Filtering peptides by digested protein (FASTA input)...
+Specificity not full, missed_cleavages option is redundant
+Peptide accession not available! Skipping Evidence.
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 3 proteins,
+3 spectra identified with 3 spectrum matches.
+After filtering:
+1 identification runs with 0 proteins,
+3 spectra identified with 3 spectrum matches.
+IDFilter took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_13_out1" classname="TOPP_IDFilter_13_out1" time="0.785388" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_14" classname="TOPP_IDFilter_14" time="1.18041" status="run">
+		<properties/>
+		<system-out>Filtering peptides by digested protein (FASTA input)...
+Specificity not full, missed_cleavages option is redundant
+Peptide accession not available! Skipping Evidence.
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 3 proteins,
+3 spectra identified with 3 spectrum matches.
+After filtering:
+1 identification runs with 1 proteins,
+3 spectra identified with 3 spectrum matches.
+IDFilter took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_14_out1" classname="TOPP_IDFilter_14_out1" time="0.426255" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_15" classname="TOPP_IDFilter_15" time="1.01281" status="run">
+		<properties/>
+		<system-out>Filtering peptides by digested protein (FASTA input)...
+Peptide accession not available! Skipping Evidence.
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 3 proteins,
+3 spectra identified with 3 spectrum matches.
+After filtering:
+1 identification runs with 2 proteins,
+3 spectra identified with 3 spectrum matches.
+IDFilter took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_15_out1" classname="TOPP_IDFilter_15_out1" time="0.943607" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_16" classname="TOPP_IDFilter_16" time="1.08638" status="run">
+		<properties/>
+		<system-out>Filtering peptides by digested protein (FASTA input)...
+Specificity not full, missed_cleavages option is redundant
+Peptide accession not available! Skipping Evidence.
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 3 proteins,
+3 spectra identified with 3 spectrum matches.
+After filtering:
+1 identification runs with 1 proteins,
+3 spectra identified with 3 spectrum matches.
+IDFilter took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_16_out1" classname="TOPP_IDFilter_16_out1" time="0.917879" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_17" classname="TOPP_IDFilter_17" time="1.60091" status="run">
+		<properties/>
+		<system-out>Filtering peptide hits by their missed cleavages count with enzyme Lys-N...
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 476 proteins,
+614 spectra identified with 614 spectrum matches.
+After filtering:
+1 identification runs with 468 proteins,
+606 spectra identified with 606 spectrum matches.
+IDFilter took 0.51 s (wall), 0.29 s (CPU), 0.02 s (system), 0.27 s (user); Peak Memory Usage: 65 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_17_out1" classname="TOPP_IDFilter_17_out1" time="2.35944" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 1.31 s (wall), 0.43 s (CPU), 0.02 s (system), 0.41 s (user); Peak Memory Usage: 53 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_18" classname="TOPP_IDFilter_18" time="1.30698" status="run">
+		<properties/>
+		<system-out>Filtering peptide hits by their missed cleavages count with enzyme Lys-N...
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 476 proteins,
+614 spectra identified with 614 spectrum matches.
+After filtering:
+1 identification runs with 58 proteins,
+64 spectra identified with 64 spectrum matches.
+IDFilter took 0.32 s (wall), 0.23 s (CPU), 0.01 s (system), 0.22 s (user); Peak Memory Usage: 64 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_18_out1" classname="TOPP_IDFilter_18_out1" time="1.46337" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.22 s (wall), 0.05 s (CPU), 0.00 s (system), 0.05 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_19" classname="TOPP_IDFilter_19" time="1.39673" status="run">
+		<properties/>
+		<system-out>Filtering peptide hits by their missed cleavages count with enzyme Lys-N...
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 476 proteins,
+614 spectra identified with 614 spectrum matches.
+After filtering:
+1 identification runs with 280 proteins,
+329 spectra identified with 329 spectrum matches.
+IDFilter took 0.39 s (wall), 0.25 s (CPU), 0.01 s (system), 0.24 s (user); Peak Memory Usage: 64 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_19_out1" classname="TOPP_IDFilter_19_out1" time="1.33248" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.51 s (wall), 0.26 s (CPU), 0.01 s (system), 0.25 s (user); Peak Memory Usage: 53 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_20" classname="TOPP_IDFilter_20" time="1.29818" status="run">
+		<properties/>
+		<system-out>Filtering peptide hits by their missed cleavages count with enzyme Trypsin...
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 476 proteins,
+614 spectra identified with 614 spectrum matches.
+After filtering:
+1 identification runs with 0 proteins,
+0 spectra identified with 0 spectrum matches.
+IDFilter took 0.35 s (wall), 0.22 s (CPU), 0.01 s (system), 0.21 s (user); Peak Memory Usage: 64 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_20_out1" classname="TOPP_IDFilter_20_out1" time="0.649319" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_21" classname="TOPP_IDFilter_21" time="0.977144" status="run">
+		<properties/>
+		<system-out>No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 3 proteins,
+3 spectra identified with 3 spectrum matches.
+After filtering:
+1 identification runs with 2 proteins,
+2 spectra identified with 2 spectrum matches.
+IDFilter took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_21_out1" classname="TOPP_IDFilter_21_out1" time="0.495172" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_22" classname="TOPP_IDFilter_22" time="1.4989" status="run">
+		<properties/>
+		<system-out>No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 3 proteins,
+3 spectra identified with 3 spectrum matches.
+After filtering:
+1 identification runs with 1 proteins,
+2 spectra identified with 2 spectrum matches.
+IDFilter took 0.02 s (wall), 0.02 s (CPU), 0.01 s (system), 0.01 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_22_out1" classname="TOPP_IDFilter_22_out1" time="0.546022" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_23" classname="TOPP_IDFilter_23" time="2.219" status="run">
+		<properties/>
+		<system-out>Filtering by protein whitelisting (accessions input)...
+No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+No 'score:proteingroup' threshold set. Not filtering by protein group score.
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 183 proteins,
+26 spectra identified with 196 spectrum matches.
+After filtering:
+1 identification runs with 1 proteins,
+1 spectra identified with 1 spectrum matches.
+ConsensusXMLFile::store():  found 2 invalid unique ids
+IDFilter took 0.07 s (wall), 0.03 s (CPU), 0.01 s (system), 0.02 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_23_out1" classname="TOPP_IDFilter_23_out1" time="0.400235" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_24" classname="TOPP_IDFilter_24" time="2.0417" status="run">
+		<properties/>
+		<system-out>No 'score:psm' threshold set. Not filtering by peptide score.
+No 'score:peptide' threshold set. Not filtering by peptide score.
+No 'score:protein' threshold set. Not filtering by protein score.
+Filtering by protein group score...
+Removing unreferenced protein hits...
+Before filtering:
+1 identification runs with 12 proteins,
+31 spectra identified with 31 spectrum matches.
+After filtering:
+1 identification runs with 5 proteins,
+31 spectra identified with 31 spectrum matches.
+IDFilter took 0.11 s (wall), 0.02 s (CPU), 0.00 s (system), 0.02 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_IDFilter_24_out1" classname="TOPP_IDFilter_24_out1" time="0.372267" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_1" classname="TOPP_MapAlignerPoseClustering_1" time="3.70839" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Picking a reference (by size) ... done
+Progress of 'Loading featureXML file':
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/MapAlignerPoseClustering_1_input1.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!
+-- done [took 0.03 s (CPU), 0.06 s (Wall)] -- 
+Progress of 'Aligning input maps':
+  Progress of 'Storing featureXML file':
+  -- done [took 0.00 s (CPU), 0.01 s (Wall)] -- 
+  33.33 %                 Progress of 'Storing featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+WARNING: your map likely has a scaling around 0.499999 but your parameters only allow for a maximal scaling of 2
+&lt;While loadin...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_1_out1" classname="TOPP_MapAlignerPoseClustering_1_out1" time="0.714871" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.09 s (wall), 0.03 s (CPU), 0.00 s (system), 0.03 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_1_out2" classname="TOPP_MapAlignerPoseClustering_1_out2" time="0.952822" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.25 s (wall), 0.02 s (CPU), 0.00 s (system), 0.02 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_1_out3" classname="TOPP_MapAlignerPoseClustering_1_out3" time="0.646524" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.08 s (wall), 0.04 s (CPU), 0.00 s (system), 0.04 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_1_out4" classname="TOPP_MapAlignerPoseClustering_1_out4" time="0.895817" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_1_out5" classname="TOPP_MapAlignerPoseClustering_1_out5" time="0.703007" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_1_out6" classname="TOPP_MapAlignerPoseClustering_1_out6" time="0.652991" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_2" classname="TOPP_MapAlignerPoseClustering_2" time="4.63099" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+    50.35 %                 -- done [took 0.03 s (CPU), 0.28 s (Wall)] -- 
+-- done [took 0.03 s (CPU), 0.29 s (Wall) @ 709.2 KiB/s] -- 
+Update ranges was called but ranges were already up-to-date
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.02 s (CPU), 0.03 s (Wall)] -- 
+-- done [took 0.03 s (CPU), 0.03 s (Wall) @ 6.164 MiB/s] -- 
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.02 s (CPU), 0.03 s (Wall)] -- 
+-- done [took 0.02 s (CPU), 0.03 s (Wall) @ 6.394 MiB/s] -- 
+Picking a reference (by size) ... done
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.02 s (CPU), 0.03 s (Wall)] -- 
+-- done [took 0.02 s ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_2_out1" classname="TOPP_MapAlignerPoseClustering_2_out1" time="0.324243" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_2_out2" classname="TOPP_MapAlignerPoseClustering_2_out2" time="0.582307" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.05 s (wall), 0.02 s (CPU), 0.00 s (system), 0.02 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_2_out3" classname="TOPP_MapAlignerPoseClustering_2_out3" time="0.470077" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_3" classname="TOPP_MapAlignerPoseClustering_3" time="2.44653" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'Loading featureXML file':
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/MapAlignerPoseClustering_1_input1.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!
+-- done [took 0.03 s (CPU), 0.23 s (Wall)] -- 
+Progress of 'Aligning input maps':
+  Progress of 'Storing featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  50.00 %               WARNING: your map likely has a scaling around 0.499999 but your parameters only allow for a maximal scaling of 2
+&lt;While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/MapAlignerPoseClustering_1_inpu...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_3_out1" classname="TOPP_MapAlignerPoseClustering_3_out1" time="0.531967" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.04 s (wall), 0.02 s (CPU), 0.00 s (system), 0.02 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_3_out2" classname="TOPP_MapAlignerPoseClustering_3_out2" time="0.671827" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.18 s (wall), 0.04 s (CPU), 0.00 s (system), 0.04 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_4" classname="TOPP_MapAlignerPoseClustering_4" time="1.34775" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'Loading featureXML file':
+-- done [took 0.00 s (CPU), 0.18 s (Wall)] -- 
+Progress of 'Aligning input maps':
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/MapAlignerPoseClustering_1_input1.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!
+-- done [took 0.06 s (CPU), 0.38 s (Wall)] -- 
+MapAlignerPoseClustering took 0.56 s (wall), 0.07 s (CPU), 0.00 s (system), 0.07 s (user); Peak Memory Usage: 55 MB.
+WARNING: your map likely has a scaling around 2 but your parameters only allow for a maximal scaling of 2
+&lt;While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/top...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_4_out1" classname="TOPP_MapAlignerPoseClustering_4_out1" time="0.673416" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_4_out2" classname="TOPP_MapAlignerPoseClustering_4_out2" time="0.650426" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_5" classname="TOPP_MapAlignerPoseClustering_5" time="2.40228" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.03 s (CPU), 0.03 s (Wall)] -- 
+-- done [took 0.03 s (CPU), 0.03 s (Wall) @ 6.038 MiB/s] -- 
+Update ranges was called but ranges were already up-to-date
+Progress of 'Aligning input maps':
+  Progress of 'loading mzML':
+    Progress of 'loading spectra list':
+      49.65 %                   -- done [took 0.03 s (CPU), 0.16 s (Wall)] -- 
+  -- done [took 0.03 s (CPU), 0.16 s (Wall) @ 1.24 MiB/s] -- 
+  Progress of 'storing mzML file':
+  -- done [took 0.03 s (CPU), 0.05 s (Wall) @ 4.126 MiB/s] -- 
+  50.00 %                 Progress of 'loading mzML':
+    Progress of 'loading spectra list':
+    -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  -- done [took 0.00 s (CPU), 0.00 s (Wall) @ 4.87 MiB/s] -- 
+Al...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_5_out1" classname="TOPP_MapAlignerPoseClustering_5_out1" time="0.459944" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_6" classname="TOPP_MapAlignerPoseClustering_6" time="2.04403" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 6.461 MiB/s] -- 
+Update ranges was called but ranges were already up-to-date
+Progress of 'Aligning input maps':
+  Progress of 'loading mzML':
+    Progress of 'loading spectra list':
+    -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  -- done [took 0.00 s (CPU), 0.00 s (Wall) @ 3.181 MiB/s] -- 
+  Progress of 'storing mzML file':
+  -- done [took 0.03 s (CPU), 0.03 s (Wall) @ 157.8 KiB/s] -- 
+  Progress of 'loading mzML':
+    Progress of 'loading spectra list':
+    -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  -- done [took 0.00 s (CPU), 0.00 s (Wall) @ 6.562 MiB/s] -- 
+Aligning /Users/kohlbach/Claude/OpenMS/OpenMS4-Explora...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerPoseClustering_6_out1" classname="TOPP_MapAlignerPoseClustering_6_out1" time="0.568209" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_1" classname="TOPP_MapAlignerIdentification_1" time="1.86969" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'loading input files':
+  Progress of 'Loading featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  Progress of 'Loading featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.01 s (CPU), 0.01 s (Wall)] -- 
+Progress of 'aligning maps':
+
+Alignment based on:
+- 7 data points for sample 1
+- 7 data points for sample 2
+
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'writing output files':
+  Progress of 'Storing featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  50.00 %                 Progress of 'Storing featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.38 s (CPU), 1.02 s (Wall)] -- 
+MapAlignerIdentification took 1.06 s (wall), 0.39 s (CPU), 0.02 s (system), 0.37 s (u...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_1_out1" classname="TOPP_MapAlignerIdentification_1_out1" time="0.52007" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_1_out2" classname="TOPP_MapAlignerIdentification_1_out2" time="0.557321" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_2" classname="TOPP_MapAlignerIdentification_2" time="1.39924" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'Loading featureXML file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Only one file provided as input to MapAlignerIdentification.
+Progress of 'loading input files':
+  Progress of 'Loading featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'aligning maps':
+
+Alignment based on:
+- 7 data points for sample 1
+
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'writing output files':
+  Progress of 'Storing featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.38 s (CPU), 0.96 s (Wall)] -- 
+MapAlignerIdentification took 1.03 s (wall), 0.39 s (CPU), 0.02 s (system), 0.37 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_2_out1" classname="TOPP_MapAlignerIdentification_2_out1" time="0.64322" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_3" classname="TOPP_MapAlignerIdentification_3" time="1.29698" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'loading input files':
+  Progress of 'Loading featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  Progress of 'Loading featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.01 s (CPU), 0.05 s (Wall)] -- 
+Progress of 'aligning maps':
+
+Alignment based on:
+- 7 data points for sample 1 (reference)
+- 7 data points for sample 2
+
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'writing output files':
+  Progress of 'Storing featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  50.00 %                 Progress of 'Storing featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.38 s (CPU), 0.94 s (Wall)] -- 
+MapAlignerIdentification took 0.99 s (wall), 0.39 s (CPU), 0.02 s (system...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_3_out1" classname="TOPP_MapAlignerIdentification_3_out1" time="0.59477" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_3_out2" classname="TOPP_MapAlignerIdentification_3_out2" time="0.373294" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_4" classname="TOPP_MapAlignerIdentification_4" time="1.25673" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'loading input files':
+  Progress of 'Loading featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  Progress of 'Loading featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.01 s (CPU), 0.01 s (Wall)] -- 
+Progress of 'aligning maps':
+
+Alignment based on:
+- 7 data points for sample 1
+- 7 data points for sample 2 (reference)
+
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'writing output files':
+  Progress of 'Storing featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+  Progress of 'Storing featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.36 s (CPU), 0.74 s (Wall)] -- 
+MapAlignerIdentification took 0.76 s (wall), 0.38 s (CPU), 0.02 s (system), 0.36 s (user); Peak Me...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_4_out1" classname="TOPP_MapAlignerIdentification_4_out1" time="0.443255" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_4_out2" classname="TOPP_MapAlignerIdentification_4_out2" time="0.629286" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_5" classname="TOPP_MapAlignerIdentification_5" time="1.48488" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'loading input files':
+  Progress of 'loading consensusXML file':
+  -- done [took 0.00 s (CPU), 0.01 s (Wall)] -- 
+  Progress of 'loading consensusXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.01 s (Wall)] -- 
+Progress of 'aligning maps':
+
+Alignment based on:
+- 7 data points for sample 1
+- 7 data points for sample 2
+
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'writing output files':
+  Progress of 'storing consensusXML file':
+.  -- done [took 0.39 s (CPU), 0.90 s (Wall)] -- 
+  50.00 %                 Progress of 'storing consensusXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.39 s (CPU), 0.90 s (Wall)] -- 
+MapAlignerIdentification took 0.92 s (wall), 0.39 s (CPU), 0.02 s (system), ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_5_out1" classname="TOPP_MapAlignerIdentification_5_out1" time="0.458146" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_5_out2" classname="TOPP_MapAlignerIdentification_5_out2" time="0.472625" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_6" classname="TOPP_MapAlignerIdentification_6" time="0.598717" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'Loading featureXML file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Only one file provided as input to MapAlignerIdentification.
+Progress of 'loading input files':
+  Progress of 'Loading featureXML file':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'aligning maps':
+
+Alignment based on:
+- 7 data points for sample 1
+
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'writing transformation files':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Writing 1 transformations  to 1 files.MapAlignerIdentification took 0.02 s (wall), 0.02 s (CPU), 0.01 s (system), 0.01 s (user); Peak Memory Usage: 55 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_6_out1" classname="TOPP_MapAlignerIdentification_6_out1" time="0.419099" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_7" classname="TOPP_MapAlignerIdentification_7" time="1.17303" status="run">
+		<properties/>
+		<system-out>Progress of 'Loading idXML':
+-- done [took 0.39 s (CPU), 0.78 s (Wall)] -- 
+Only one file provided as input to MapAlignerIdentification.
+Progress of 'loading input files':
+  Progress of 'Loading idXML':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.01 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'aligning maps':
+No reference RT information left after filtering!
+
+Alignment based on:
+
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'writing output files':
+  Progress of 'Storing idXML':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'writing transformation files':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Writing 1 transformations  to 1 files.MapAlignerIdentification took 0.79 s (wall), 0.40 s (CPU), 0.02 s (system), 0.38 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_7_out1" classname="TOPP_MapAlignerIdentification_7_out1" time="0.316994" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_7_out2" classname="TOPP_MapAlignerIdentification_7_out2" time="0.343936" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_8" classname="TOPP_MapAlignerIdentification_8" time="1.14347" status="run">
+		<properties/>
+		<system-out>Using score type: q-value
+Only one file provided as input to MapAlignerIdentification.
+Progress of 'loading input files':
+-- done [took 0.00 s (CPU), 0.03 s (Wall)] -- 
+Progress of 'aligning maps':
+
+Alignment based on:
+- 14 data points for sample 1
+
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'writing output files':
+-- done [took 0.01 s (CPU), 0.01 s (Wall)] -- 
+Progress of 'writing transformation files':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Writing 1 transformations  to 1 files.MapAlignerIdentification took 0.67 s (wall), 0.40 s (CPU), 0.02 s (system), 0.38 s (user); Peak Memory Usage: 63 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapAlignerIdentification_8_out1" classname="TOPP_MapAlignerIdentification_8_out1" time="0.453918" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapRTTransformer_1" classname="TOPP_MapRTTransformer_1" time="1.39461" status="run">
+		<properties/>
+		<system-out>Progress of 'Loading featureXML file':
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/MapRTTransformer_1_input.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+FeatureXMLHandler::store():  found 8 invalid unique ids
+Progress of 'Storing featureXML file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+MapRTTransformer took 0.77 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 60 MB.
+&lt;While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/MapRTTransformer_1_input.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!&gt; occurred 6 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapRTTransformer_1_out1" classname="TOPP_MapRTTransformer_1_out1" time="0.594162" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapRTTransformer_2" classname="TOPP_MapRTTransformer_2" time="2.07617" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.01 s (Wall) @ 8.045 MiB/s] -- 
+Update ranges was called but ranges were already up-to-date
+Progress of 'storing mzML file':
+-- done [took 0.03 s (CPU), 0.15 s (Wall) @ 456.9 KiB/s] -- 
+MapRTTransformer took 1.46 s (wall), 0.56 s (CPU), 0.02 s (system), 0.54 s (user); Peak Memory Usage: 62 MB.
+&lt;Update ranges was called but ranges were already up-to-date&gt; occurred 10 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapRTTransformer_2_out1" classname="TOPP_MapRTTransformer_2_out1" time="0.631907" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapRTTransformer_3" classname="TOPP_MapRTTransformer_3" time="0.407918" status="run">
+		<properties/>
+		<system-out>MapRTTransformer took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 53 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapRTTransformer_3_out1" classname="TOPP_MapRTTransformer_3_out1" time="0.655437" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapRTTransformer_4" classname="TOPP_MapRTTransformer_4" time="1.92426" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading chromatogram list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 8.102 MiB/s] -- 
+Progress of 'storing mzML file':
+-- done [took 0.03 s (CPU), 0.05 s (Wall) @ 322.4 KiB/s] -- 
+MapRTTransformer took 1.39 s (wall), 0.54 s (CPU), 0.01 s (system), 0.53 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapRTTransformer_4_out1" classname="TOPP_MapRTTransformer_4_out1" time="0.539498" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapRTTransformer_5" classname="TOPP_MapRTTransformer_5" time="1.47529" status="run">
+		<properties/>
+		<system-out>Progress of 'Loading featureXML file':
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/MapRTTransformer_1_input.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+FeatureXMLHandler::store():  found 8 invalid unique ids
+Progress of 'Storing featureXML file':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+MapRTTransformer took 1.01 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 60 MB.
+&lt;While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/MapRTTransformer_1_input.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!&gt; occurred 6 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapRTTransformer_5_out1" classname="TOPP_MapRTTransformer_5_out1" time="0.490044" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapRTTransformer_6" classname="TOPP_MapRTTransformer_6" time="1.40759" status="run">
+		<properties/>
+		<system-out>Progress of 'Loading featureXML file':
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/MapRTTransformer_1_input.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!
+-- done [took 0.00 s (CPU), 0.01 s (Wall)] -- 
+FeatureXMLHandler::store():  found 8 invalid unique ids
+Progress of 'Storing featureXML file':
+-- done [took 0.01 s (CPU), 0.00 s (Wall)] -- 
+MapRTTransformer took 1.00 s (wall), 0.37 s (CPU), 0.01 s (system), 0.36 s (user); Peak Memory Usage: 60 MB.
+&lt;While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/MapRTTransformer_1_input.featureXML': The featureXML file contains a 'model' description, but the internal datastructure has no model support since OpenMS 1.12. Model will be ignored!&gt; occurred 6 times
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MapRTTransformer_6_out1" classname="TOPP_MapRTTransformer_6_out1" time="0.372275" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterGaussian_1" classname="TOPP_NoiseFilterGaussian_1" time="3.60587" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 3.779 MiB/s] -- 
+Progress of 'smoothing data':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'storing mzML file':
+-- done [took 0.03 s (CPU), 0.05 s (Wall) @ 208.2 KiB/s] -- 
+NoiseFilterGaussian took 2.70 s (wall), 0.55 s (CPU), 0.02 s (system), 0.53 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterGaussian_1_out1" classname="TOPP_NoiseFilterGaussian_1_out1" time="0.590931" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterGaussian_2" classname="TOPP_NoiseFilterGaussian_2" time="3.21527" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'loading mzML':
+  Progress of 'loading chromatogram list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.01 s (Wall) @ 4.258 MiB/s] -- 
+Progress of 'smoothing data':
+-- done [took 0.00 s (CPU), 0.01 s (Wall)] -- 
+Progress of 'storing mzML file':
+-- done [took 0.03 s (CPU), 0.05 s (Wall) @ 341.7 KiB/s] -- 
+NoiseFilterGaussian took 2.63 s (wall), 0.55 s (CPU), 0.02 s (system), 0.53 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterGaussian_2_out1" classname="TOPP_NoiseFilterGaussian_2_out1" time="0.530117" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterGaussian_3" classname="TOPP_NoiseFilterGaussian_3" time="3.38312" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 12.99 MiB/s] -- 
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.01 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.03 s (CPU), 0.32 s (Wall) @ 28.48 KiB/s] -- 
+NoiseFilterGaussian took 2.76 s (wall), 0.55 s (CPU), 0.02 s (system), 0.53 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterGaussian_3_out1" classname="TOPP_NoiseFilterGaussian_3_out1" time="0.518992" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterGaussian_4" classname="TOPP_NoiseFilterGaussian_4" time="3.76213" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'loading mzML':
+  Progress of 'loading chromatogram list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 22.37 MiB/s] -- 
+Progress of 'loading mzML':
+  Progress of 'loading chromatogram list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.03 s (CPU), 0.26 s (Wall) @ 86.61 KiB/s] -- 
+NoiseFilterGaussian took 3.13 s (wall), 0.56 s (CPU), 0.02 s (system), 0.54 s (user); Peak Memory Usage: 62 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterGaussian_4_out1" classname="TOPP_NoiseFilterGaussian_4_out1" time="0.426124" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterSGolay_1" classname="TOPP_NoiseFilterSGolay_1" time="2.80461" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.01 s (Wall) @ 1.584 MiB/s] -- 
+Progress of 'smoothing data':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'storing mzML file':
+-- done [took 0.04 s (CPU), 0.05 s (Wall) @ 201.8 KiB/s] -- 
+NoiseFilterSGolay took 1.67 s (wall), 0.57 s (CPU), 0.03 s (system), 0.54 s (user); Peak Memory Usage: 63 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterSGolay_1_out1" classname="TOPP_NoiseFilterSGolay_1_out1" time="0.455706" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterSGolay_2" classname="TOPP_NoiseFilterSGolay_2" time="2.78318" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'loading mzML':
+  Progress of 'loading chromatogram list':
+  -- done [took 0.01 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.01 s (CPU), 0.00 s (Wall) @ 10.5 MiB/s] -- 
+Progress of 'smoothing data':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Progress of 'storing mzML file':
+-- done [took 0.03 s (CPU), 0.05 s (Wall) @ 369.2 KiB/s] -- 
+NoiseFilterSGolay took 1.64 s (wall), 0.56 s (CPU), 0.03 s (system), 0.53 s (user); Peak Memory Usage: 63 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterSGolay_2_out1" classname="TOPP_NoiseFilterSGolay_2_out1" time="0.407781" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterSGolay_3" classname="TOPP_NoiseFilterSGolay_3" time="2.48182" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 8.522 MiB/s] -- 
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.03 s (CPU), 0.04 s (Wall) @ 248 KiB/s] -- 
+NoiseFilterSGolay took 1.71 s (wall), 0.56 s (CPU), 0.02 s (system), 0.54 s (user); Peak Memory Usage: 63 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterSGolay_3_out1" classname="TOPP_NoiseFilterSGolay_3_out1" time="0.383521" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterSGolay_4" classname="TOPP_NoiseFilterSGolay_4" time="2.01001" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+Progress of 'loading mzML':
+  Progress of 'loading chromatogram list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 14.55 MiB/s] -- 
+Progress of 'loading mzML':
+  Progress of 'loading chromatogram list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.04 s (CPU), 0.04 s (Wall) @ 534 KiB/s] -- 
+NoiseFilterSGolay took 1.40 s (wall), 0.57 s (CPU), 0.03 s (system), 0.54 s (user); Peak Memory Usage: 63 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_NoiseFilterSGolay_4_out1" classname="TOPP_NoiseFilterSGolay_4_out1" time="0.373223" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_1" classname="TOPP_TextExporter_1" time="1.10383" status="run">
+		<properties/>
+		<system-out>TextExporter took 0.02 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_1_out1" classname="TOPP_TextExporter_1_out1" time="0.429724" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_2" classname="TOPP_TextExporter_2" time="1.0498" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+TextExporter took 0.05 s (wall), 0.03 s (CPU), 0.01 s (system), 0.02 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_2_out1" classname="TOPP_TextExporter_2_out1" time="0.392487" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_2_out2" classname="TOPP_TextExporter_2_out2" time="0.348312" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.03 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_2_out3" classname="TOPP_TextExporter_2_out3" time="0.760196" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_2_out4" classname="TOPP_TextExporter_2_out4" time="0.791723" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_3" classname="TOPP_TextExporter_3" time="0.909474" status="run">
+		<properties/>
+		<system-out>TextExporter took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_3_out1" classname="TOPP_TextExporter_3_out1" time="0.716694" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_4" classname="TOPP_TextExporter_4" time="0.808615" status="run">
+		<properties/>
+		<system-out>TextExporter took 0.01 s (wall), 0.01 s (CPU), 0.01 s (system), 0.00 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_4_out1" classname="TOPP_TextExporter_4_out1" time="0.710628" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_5" classname="TOPP_TextExporter_5" time="1.83646" status="run">
+		<properties/>
+		<system-out>TextExporter took 1.41 s (wall), 0.40 s (CPU), 0.02 s (system), 0.38 s (user); Peak Memory Usage: 60 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_5_out1" classname="TOPP_TextExporter_5_out1" time="0.495121" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_6" classname="TOPP_TextExporter_6" time="0.356594" status="run">
+		<properties/>
+		<system-out>TextExporter took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_6_out1" classname="TOPP_TextExporter_6_out1" time="0.319024" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_7" classname="TOPP_TextExporter_7" time="0.580531" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+TextExporter took 0.04 s (wall), 0.03 s (CPU), 0.01 s (system), 0.02 s (user); Peak Memory Usage: 55 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_7_out1" classname="TOPP_TextExporter_7_out1" time="0.315748" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_8" classname="TOPP_TextExporter_8" time="0.468169" status="run">
+		<properties/>
+		<system-out>TextExporter took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_8_out1" classname="TOPP_TextExporter_8_out1" time="0.56091" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_9" classname="TOPP_TextExporter_9" time="0.678909" status="run">
+		<properties/>
+		<system-out>TextExporter took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_9_out1" classname="TOPP_TextExporter_9_out1" time="0.658495" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_10" classname="TOPP_TextExporter_10" time="2.05962" status="run">
+		<properties/>
+		<system-out>TextExporter took 1.21 s (wall), 0.39 s (CPU), 0.02 s (system), 0.37 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_TextExporter_10_out1" classname="TOPP_TextExporter_10_out1" time="0.579551" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_1" classname="TOPP_DecoyDatabase_1" time="1.24705" status="run">
+		<properties/>
+		<system-out>Warning: Only one FASTA input file was provided, which might not contain contaminants. You probably want to have them! Just add the contaminant file to the input file list 'in'.
+DecoyDatabase took 0.02 s (wall), 0.01 s (CPU), 0.00 s (system), 0.01 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_1_out" classname="TOPP_DecoyDatabase_1_out" time="0.570431" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_2" classname="TOPP_DecoyDatabase_2" time="0.810595" status="run">
+		<properties/>
+		<system-out>Warning: Only one FASTA input file was provided, which might not contain contaminants. You probably want to have them! Just add the contaminant file to the input file list 'in'.
+DecoyDatabase took 0.05 s (wall), 0.02 s (CPU), 0.00 s (system), 0.02 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_2_out" classname="TOPP_DecoyDatabase_2_out" time="0.397975" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_3" classname="TOPP_DecoyDatabase_3" time="0.790692" status="run">
+		<properties/>
+		<system-out>Warning: Only one FASTA input file was provided, which might not contain contaminants. You probably want to have them! Just add the contaminant file to the input file list 'in'.
+DecoyDatabase took 0.12 s (wall), 0.03 s (CPU), 0.00 s (system), 0.03 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_3_out" classname="TOPP_DecoyDatabase_3_out" time="0.533212" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_4" classname="TOPP_DecoyDatabase_4" time="0.737676" status="run">
+		<properties/>
+		<system-out>Warning: Only one FASTA input file was provided, which might not contain contaminants. You probably want to have them! Just add the contaminant file to the input file list 'in'.
+DecoyDatabase took 0.02 s (wall), 0.02 s (CPU), 0.01 s (system), 0.01 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_4_out" classname="TOPP_DecoyDatabase_4_out" time="0.608066" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_5" classname="TOPP_DecoyDatabase_5" time="0.573236" status="run">
+		<properties/>
+		<system-out>Warning: Only one FASTA input file was provided, which might not contain contaminants. You probably want to have them! Just add the contaminant file to the input file list 'in'.
+DecoyDatabase took 0.01 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 53 MB.
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/source/src/DecoyDatabase.cpp(247): Invalid input in /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/DecoyDatabase_5.fasta: Input file already contains decoys.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_6" classname="TOPP_DecoyDatabase_6" time="0.730693" status="run">
+		<properties/>
+		<system-out>Warning: Only one FASTA input file was provided, which might not contain contaminants. You probably want to have them! Just add the contaminant file to the input file list 'in'.
+DecoyDatabase took 0.03 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 53 MB.
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/source/src/DecoyDatabase.cpp(247): Invalid input in /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/DecoyDatabase_6.fasta: Input file already contains decoys.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_7" classname="TOPP_DecoyDatabase_7" time="0.743764" status="run">
+		<properties/>
+		<system-out>Warning: Only one FASTA input file was provided, which might not contain contaminants. You probably want to have them! Just add the contaminant file to the input file list 'in'.
+Skipped 0/45 peptides with unknown('X') amino acids.
+Progress of 'Finding Neighbors in '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions/topp/fixtures/DecoyDatabase_7.fasta'':
+-- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+Neighbor peptide statistics for 45 reference peptides :
+ - 0 (0%) peptides contained an 'X' (unknown amino acid) and thus could not be searched for neighbors
+ - 34 (75%) peptides had 0 neighbors
+ - 11 (24%) peptides had 1 neighbor
+ - 0 (0%) peptides had &gt;=1 neighbors.
+DecoyDatabase took 0.03 s (wall), 0.03 s (CPU), 0.01 s (system), 0.02 s (user); Peak Memory Usage: 55 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_7_out1" classname="TOPP_DecoyDatabase_7_out1" time="0.480462" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_7_out2" classname="TOPP_DecoyDatabase_7_out2" time="0.756508" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_7_out3" classname="TOPP_DecoyDatabase_7_out3" time="0.802593" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_8" classname="TOPP_DecoyDatabase_8" time="0.799202" status="run">
+		<properties/>
+		<system-out>Warning: Only one FASTA input file was provided, which might not contain contaminants. You probably want to have them! Just add the contaminant file to the input file list 'in'.
+DecoyDatabase took 0.04 s (wall), 0.03 s (CPU), 0.00 s (system), 0.03 s (user); Peak Memory Usage: 54 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_8_out" classname="TOPP_DecoyDatabase_8_out" time="0.703815" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DecoyDatabase_9" classname="TOPP_DecoyDatabase_9" time="0.631449" status="run">
+		<properties/>
+		<system-out>Invalid parameter: Parameter 'shuffle_decoy_ratio' can only be used with method 'shuffle', not with method 'reverse'.
+</system-out>
+	</testcase>
+</testsuite>
