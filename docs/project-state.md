@@ -68,6 +68,19 @@ pyOpenMS ci.6 and FLASHTnT ci.4 are published for all five platforms. FLASHApp p
 FLASHTnT `f493178b2946` and runs its app tests against the published pyOpenMS ci.6 Linux
 wheel, whose SHA-256 its lock records.
 
+Warnings are errors in every package since 2026-09-19. The option
+`OPENMS4_WARNINGS_AS_ERRORS`, which twelve packages' CI scripts had always passed, is now
+defined in the parent-owned dependency module that every package copies, so the compiler's
+default warnings fail the build. Enabling it exposed defects in five packages, all fixed at
+the source: the deprecated `std::filesystem::u8path` in CLI, NuXL and two
+database-suitability tests (now Core's `to_path`, which keeps UTF-8 paths correct on
+Windows), Arrow's `ReadTable(Table**)`, deprecated in 24.0.0, in ParquetDiff, 26 desktop
+visualizer headers overriding `undo_` without saying so, and ten unqualified `move()` calls
+in NuXL and database-suitability. FLASH carries one MSVC suppression for a conversion inside
+an imported Core header; the backlog names the Core fix that retires it. Consumers compile
+the CLI sources they check out, so a deprecation in CLI fails their builds too until they
+re-pin.
+
 ## Building and testing
 
 The parent's contract tests need nothing but Python:
@@ -177,13 +190,14 @@ sibling is retained; the corrected hooks were applied to all sixteen existing ru
 
 ## Backlog
 
-- **Warnings as errors.** The CI scripts of twelve packages (CLI, Comet,
-  DatabaseSuitability, desktop, FLASH, Mascot, NASE, NuXL, OpenSWATH, ParquetDiff,
-  ProSE, ProteomicsLFQ) pass `-DOPENMS4_WARNINGS_AS_ERRORS=ON`, but only TOPP and
-  FLASHTnT define that option, so the others' CMake reports it as unused and their
-  warnings stay warnings. At ci.4, OpenSWATH's macOS x64 cask build showed the same
-  `OSWFile.h` warning that failed TOPP's. Defining the option may surface new failures,
-  so it waits for a cycle of its own.
+- **Core defects found by warnings as errors** (2026-09-19, not fixed: they need a Core cycle):
+  - `ClusterHierarchical::cluster` takes the bin size as `double` and passes it to
+    `BinnedSpectrum`'s `float` parameter, which MSVC reports as C4244 from inside
+    `<xutility>` in every consumer that instantiates it. A `static_cast<float>` at that
+    call site is behaviour-identical and lets FLASH drop the `/wd4244` it now carries.
+  - Three unqualified `move()` calls that reach `std::move` only through ADL:
+    `IDMergerAlgorithm.cpp`, `PIPECHO/Impl.cpp` and `SpectraMerger.h`. Core's own CI does
+    not enable the warning, so they are invisible there.
 - **CPP-043 re-land.** The precursor isotope companions of the cross-link generator stay
   reverted (they were reverted with CPP-042 in ci.4, a scoping call). Like CPP-042 in ci.7,
   they need their own cycle with a reviewed reference update. CPP-026 (processingMethod order)
