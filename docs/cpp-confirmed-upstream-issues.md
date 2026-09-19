@@ -8,10 +8,14 @@ Defects in the core library (and two TOPP tools) of the OpenMS monorepo that wer
 
 ## Summary
 
-- **Confirmed and present upstream:** 229 (P0 19, P1 85, P2 39, P3 86).
+- **Confirmed and present upstream:** 224 (P0 16, P1 74, P2 48, P3 86). A second check of 75 of them on 2026-09-19 moved 9 from P1 to P2 and found 5 no longer present upstream; see [cpp-high-priority-unverified.md](cpp-high-priority-unverified.md).
 - **Evidence:** code-reading 151, test-backed 41, reproduced 37.
-- **OpenMS4 Core state:** fixed 195, documented 19, open 12, reverted 3.
-- **Not confirmed:** 13; **fixed upstream since:** 0; **code removed upstream:** 0; **unresolved disagreement:** 0.
+- **OpenMS4 Core state:** fixed 192, documented 19, open 12, reverted 1. CPP-042 returned in core-v4.0.0-ci.7 and CPP-043 in ci.8; only CPP-026 is still reverted. Seven of the re-checked fixes are partial, listed in the backlog of [project-state.md](project-state.md).
+- **Not confirmed:** 13; **fixed upstream since:** 5 (CPP-089, CPP-090, CPP-091, CPP-166, CPP-168, all landed upstream in September 2026); **code removed upstream:** 0; **unresolved disagreement:** 0.
+
+The entries below still carry the severity and state of their original check. The 2026-09-19 re-check of 75 of
+them moved nine from P1 to P2 and found five fixed upstream; those deltas are listed in
+[cpp-high-priority-unverified.md](cpp-high-priority-unverified.md) and in the summary above, not in the entries.
 
 ## Confirmed defects
 
