@@ -4,7 +4,7 @@ These are the findings from the Rust port's C++ defect list that the ranking of 
 
 - **Result:** 70 of 75 confirmed. The other 5 fell only because upstream fixed them in the days before the check: `CPP-089`, `CPP-090`, `CPP-091`, `CPP-166`, `CPP-168`.
 - **Severity:** 9 findings move from P1 to P2 (`CPP-001` P1 to P2, `CPP-004` P1 to P2, `CPP-006` P1 to P2, `CPP-016` P1 to P2, `CPP-072` P1 to P2, `CPP-077` P1 to P2, `CPP-096` P1 to P2, `CPP-157` P1 to P2, `CPP-227` P1 to P2). The 14 P0 entries keep their priority.
-- **OpenMS4 Core:** the fix holds for 63 of the 70 confirmed. Seven are only partly fixed and are in the backlog of [project-state.md](project-state.md): `CPP-006`, `CPP-007`, `CPP-010`, `CPP-096`, `CPP-161`, `CPP-214`, `CPP-220`.
+- **OpenMS4 Core:** the fix holds for 63 of the 70 confirmed. The other seven, `CPP-006`, `CPP-007`, `CPP-010`, `CPP-096`, `CPP-161`, `CPP-214` and `CPP-220`, were fixed in part at the check; they are completed in core-v4.0.0-ci.9 (`CPP-096` by documentation), each code fix with a class test that fails on ci.8 and passes on the fix.
 - **Upstream OpenMS:** the maintainer took the forwarded list in parts. Eight findings have landed on `origin/develop`, citing the ids: CPP-042 (#10150), CPP-166 (#10151), CPP-059 (#10152), CPP-113 (#10153), CPP-168 (#10154), CPP-111 (#10155), CPP-089 (#10156) and CPP-043 (#10194). Upstream's CPP-059 fix rejects rows of the wrong width, the opposite of the padding this project chose.
 - **Proof:** 30 have a Core regression test that fails on the pre-fix code, 3 an executed reproduction, and 42 rest on code reading alone; the entries below still carry the classifier's original text and its file and line references, which the check verified rather than replaced.
 
