@@ -6,7 +6,7 @@ Six branches carry the remaining P0 fixes of the first offer onto current upstre
 - **Branches:** `p0v2/<area>` in the clone `/scratch/kohlbach/openms-upstream-p0` on dax. Worktrees are in `/scratch/kohlbach/openms-upstream-p0-wt/v2/<area>`, and build dirs and logs in `/scratch/kohlbach/openms-upstream-p0-wt/v2/<area>-build/`.
 - **Patch series:** `/scratch/kohlbach/openms-upstream-p0-wt/v2/patches/<area>/` (`git format-patch` output). Apply them with `git am --keep-non-patch` (or `-k`). Plain `git am` strips "[FIX]" or "[TEST]" from the subject.
 - **Base:** develop a2bfec75a1, "[FIX] FileConverter: read Thermo .raw in-process by default on Linux and macOS (#10274)" (2026-09-27 08:34 +0200). All branches were built and tested on it.
-- **Newest develop checked:** develop was fetched again at 12:10 UTC and was still a2bfec75a1, so it is 0 commits past the base. Every commit of every branch applies in order, and no touched file has drifted. The record is `/scratch/kohlbach/openms-upstream-p0-wt/v2/final-recheck.txt`. develop moves daily, so re-run `v2/bin/applycheck.sh origin/develop <commits>` after a fetch before you send anything.
+- **Newest develop checked:** develop was fetched again at 12:10 UTC and was still a2bfec75a1, so it is 0 commits past the base. Every commit of every branch applies in order, and no touched file has drifted. The record is `/scratch/kohlbach/openms-upstream-p0-wt/v2/final-recheck.txt`. After the code-review fix to p0v2/mgf-mztab (12:42 UTC), GitHub's develop was still a2bfec75a1 (`ls-remote`), and both mgf-mztab commits and both re-exported patches apply to it in order; that check is appended to the same file. develop moves daily, so re-run `v2/bin/applycheck.sh origin/develop <commits>` after a fetch before you send anything.
 - **First offer:** `p0/<area>` on 3befd8ed77, described in `docs/reviews/2026-09-14-p0-upstream-patch-sets.md`. Tracking issue #10148 lists these branches as "prepared in the fork". The `p0/*` branches and their worktrees are unchanged.
 
 ## Overview
@@ -17,7 +17,7 @@ Six branches carry the remaining P0 fixes of the first offer onto current upstre
 | p0v2/mzml-sqmass | ed70cdc834 | 4 | CPP-120 (2 commits), CPP-191, CPP-199 | 11/11 | yes | yes | none |
 | p0v2/algorithms | f48678e573 | 2 | CPP-005, CPP-011 | 6/6 | yes (CPP-005 only through ctest's glibc malloc check) | yes | none |
 | p0v2/mascot-mzidentml | 69a3e7fe05 | 3 | CPP-164, CPP-169, plus a test fix | 2/2 | yes for both fixes (they crash); the ABORT_IF commit is test-only, so there is no control | yes | CPP-168 (landed as #10154) |
-| p0v2/mgf-mztab | 92456efd86 | 2 | CPP-148 | 7/7 | yes | yes | CPP-166 (landed as #10151) |
+| p0v2/mgf-mztab | cf2676228e | 2 | CPP-148 | 7/7 | yes | yes | CPP-166 (landed as #10151) |
 | p0v2/base64-design | 6a8141d089 | 2 | CPP-055, plus the missing-sample error | 12/12 | yes | yes | CPP-059 (#10152 took the opposite policy) |
 
 "Tests" counts the area's class tests. They ran twice at each head on dax, and all passed both times. Evidence columns below use these terms:
@@ -128,7 +128,7 @@ The capped MzMLFile_test passes at the head (rc 0).
 - **Behaviour changes:**
   - CPP-164: a query number of 0 or above `<NumQueries>`, or a peptide in an export without `<NumQueries>`, now raises a ParseError. Before, the reader indexed past the identification list.
   - CPP-164: stray pep_*, StringTitle and RTINSECONDS elements, and a repeated NumQueries, are now ignored with a warning. Before, they silently changed an identification.
-  - CPP-169: a substitution location outside 1..length, or a missing replacementResidue, is now logged, and the Peptide is stored with an empty sequence. Before, this was an out-of-bounds write.
+  - CPP-169: a substitution location outside 1..length, or a missing replacementResidue, is now logged, and the Peptide is stored with an empty sequence. Before, this was an out-of-bounds write. The log line is only develop's generic "No amino acid sequence readable from 'Peptide'" (see the open points).
 - **Independence:** each commit applies alone. Commit 3's test uses `std::all_of`, and the explicit `<algorithm>` include is in commit 2. Commit 3 compiles alone only through a transitive include, so send commits 2 and 3 together, or add the include to commit 3.
 - **Notes for sending:** use each commit subject as the PR title, and end the body with "Tracked in #10148." (not for the test commit). Draft CHANGELOG lines:
   - `MascotXMLFile: query numbers are checked against NumQueries before they are used as indices; a number of 0 or above NumQueries, or a peptide in an export without header, raises a ParseError instead of reading or writing past the identification list, and pep_*, StringTitle and RTINSECONDS elements outside their element are ignored with a warning (#10148).`
@@ -136,6 +136,10 @@ The capped MzMLFile_test passes at the head (rc 0).
 - **Open points:**
   - The negative controls crash, so they have no failing line numbers. Cite the section names and backtraces instead (`v2/mascot-mzidentml-build/logs/negbt/NOTE.txt`).
   - IDFileConverter TOPP tests were not run.
+  - The reason in CPP-169's new ParseError never reaches the user.
+    - The throws in MzIdentMLDOMHandler.cpp carry "Missing 'replacementResidue' attribute." (line 2540) and "SubstitutionModification 'location' is outside of PeptideSequence '…'." (lines 2551-2552).
+    - `parsePeptideElements_` catches them with develop's `catch (...)` at lines 793-796 and logs only "No amino acid sequence readable from 'Peptide'", without the reason or the Peptide id.
+    - The throws are unchanged from the first offer. Optional fix before sending: a `catch (const Exception::BaseException& e)` before that `catch (...)`, logging the Peptide id and `e.what()`.
   - Issues outside the findings, not fixed:
     - the missing-replacementResidue test does not tell old and new code apart
     - no test combines a padded sequence with a substitution
@@ -143,12 +147,12 @@ The capped MzMLFile_test passes at the head (rc 0).
     - the writer emits an empty `<PeptideSequence>`
     - Xerces truncates huge query numbers
 
-## p0v2/mgf-mztab (head 92456efd86)
+## p0v2/mgf-mztab (head cf2676228e)
 
 | Commit | Subject | Finding | Severity | Upstream | Evidence |
 |---|---|---|---|---|---|
 | 2916a1e06c | [FIX] Read mzTab column-unit metadata, and write it with a tab (CPP-148) | CPP-148 | P0 | not upstream | NEG: the section aborts with ConversionError "Could not convert string 'colunit' to an integer value". POS 7/7 |
-| 92456efd86 | [FIX] Check mzTab metadata keys before reading them (CPP-148) | CPP-148 | P0 | not upstream | NEG: SegFault on the empty key, where develop reads past an empty vector. POS 7/7. The first-offer reader fails the new warning section (lines 317, 318, 323 ×10 and 332) |
+| cf2676228e | [FIX] Check mzTab metadata keys before reading them (CPP-148) | CPP-148 | P0 | not upstream | NEG: SegFault on the empty key, where develop reads past an empty vector. POS 7/7. The first-offer reader fails the new warning section (lines 317, 318, 323 ×10 and 332) |
 
 - **Dropped:** 925833510a (CPP-166) landed as #10151 (975b6509fb) with the same code statements, and upstream added more tests. Evidence: `/scratch/kohlbach/openms-upstream-p0-wt/v2/mgf-mztab-build/dropped-925833510a.txt`.
 - **Folded in:** the mzTab hunks of Core's own correction of this patch (add998c, db05058 and 8484713).
@@ -159,22 +163,30 @@ The capped MzMLFile_test passes at the head (rc 0).
   - Rebased with no conflict.
   - Comment overclaims fixed: `ms_run[n]-hash` is "accepted but not stored", and the whitespace grouping comment and its section title were corrected.
   - Message 2 was rewritten to match the final code. The first-offer message was wrong about `contact-name`.
+- **Test fix after the code review:** the warning section of MzTabFile_test now catches every exception from the load (`catch (...)`), not only ParseError, and counts it as a failed load.
+  - Before, any other exception type would have left the section's local `std::ostringstream` registered with the warning log after it was destroyed, so the next warning in a later section would have written to freed memory. A regression that makes these loads fail with a ConversionError, as develop did on similar keys, would have crashed instead of failing one line.
+  - It is a one-line change in commit 2, amended with its message, author and trailer unchanged: 92456efd86 became cf2676228e. Commit 1 (2916a1e06c) is unchanged.
+  - Rerun at the new head: area tests 7/7 twice; per-commit controls as in the table (both NEG fail, as before); the first-offer-reader regression control fails the same lines; the two patches were re-exported (PATCHID-OK) and apply in order to develop.
 - **Behaviour changes** (compared with develop; a per-key probe was run against both libraries):
   - Files with column units now load. Develop threw a ConversionError.
   - An empty key is a ParseError. Develop crashed on it.
   - A malformed index is a ParseError that names the key.
-  - Newly rejected: a whitespace-only key, `instrument[1-name`, and a malformed `ms_run[n]-hash` index.
+  - Newly rejected: a whitespace-only key, `instrument[1-name`, and a malformed `ms_run[n]-hash` index (see decision 9).
   - Keys with extra fields are ignored. Develop read them as the shorter key.
   - Keys with a missing index or an empty field are ignored with a warning. Develop ignored them silently, except `contact-name`, `-affiliation` and `-email`, which failed and now load.
   - None of the 46 mzTab test files in develop has a newly rejected key.
 - **Independence:** commit 2 needs commit 1, so send them together.
-- **Notes for sending:** use each commit subject as the PR title, and end the body with "Tracked in #10148.". Draft CHANGELOG lines:
+- **Notes for sending:** use each commit subject as the PR title, and end the body with "Tracked in #10148.". Under decision 9's default, the PR body also names the one newly rejected key that the reader does not store: a malformed index on `ms_run[n]-hash` or `ms_run[n]-hash_method`. Draft CHANGELOG lines:
   - `The mzTab reader (MzTabFile) loads files with column-unit metadata (colunit-protein, colunit-peptide, colunit-PSM, colunit-small_molecule), which failed with a ConversionError, and the writer puts a tab between a colunit key and its value (#10148).`
-  - `The mzTab reader (MzTabFile) checks the form of every metadata key before reading it: an empty key or a malformed index is a ParseError naming the key, a key that lacks an index or has an empty field is ignored with a warning, and a key with extra fields is no longer read as the shorter mzTab 1.0 key (#10148).`
+  - `The mzTab reader (MzTabFile) checks the form of every metadata key before reading it: an empty key or a malformed index is a ParseError naming the key, a key that lacks an index or has an empty field is ignored with a warning, and a key with extra fields is no longer read as the shorter mzTab 1.0 key. This includes ms_run[n]-hash and ms_run[n]-hash_method, which are not stored: a malformed index on them, ignored before, now fails the load (#10148).`
 - **Open points:**
   - Message 1 keeps the first-offer body verbatim. Three of its lines are wider than 72 columns (80, 73 and 74; one is a quoted MTD example).
   - The writer still spells `colunit-PSM` in upper case. That was fixed later in Core and is deferred.
   - The mzTab-M colunit keys were not covered, and neither were TOPP tests.
+  - No test pins two behaviours that message 2 states. Only the per-key probe (`/scratch/kohlbach/openms-upstream-p0-wt/v2/mgf-mztab-build/probe/`) shows them:
+    - `contact-name`, `contact-affiliation` and `contact-email` now load with a warning. Of the keys now ignored with a warning, they are the only ones on which develop failed, and the key check is their only guard, because the reader's contact branch matches any key starting with "contact". None of the three is in the test's warning list.
+    - `ms_run[1]-hash` is accepted and `ms_run[x]-hash` is rejected. "hash" occurs neither in the test file nor in its SILAC input file.
+    - Closing this takes three test lines: `contact-name` in the warning list, `ms_run[1]-hash` in a case that must load unchanged, and `ms_run[x]-hash` in the rejected list (or in the warning list, if decision 9 goes the other way). With the test fix above, a regression to develop's ConversionError on an added `contact-*` key fails one line instead of crashing the test.
 
 ## p0v2/base64-design (head 6a8141d089)
 
@@ -195,14 +207,15 @@ The capped MzMLFile_test passes at the head (rc 0).
 - **Behaviour changes:**
   - Corrupt numeric Base64 now throws ConversionError from all four decoders. This covers a byte outside the alphabet, data after '=', more than two '=', and a bare length that is not a multiple of 4. Before, such input gave wrong values, or the integer decoder read outside its table.
   - Wrapped Base64 is accepted, because whitespace is skipped.
-  - A two-table design whose file section names a missing Sample throws a ParseError that names it. Before, it threw std::out_of_range.
+  - A two-table design whose file section names a missing Sample throws a ParseError that names it. Before, it threw std::out_of_range. So in pyOpenMS, `ExperimentalDesignFile.load` no longer raises the IndexError that nanobind makes from std::out_of_range in this case.
   - Cost: about 0.09 s of a 5.86 s median MzMLFile::load (1.6%, 1.77 GB mzML, GCC 14 -O3). MSVC was not measured.
 - **Independence:** each commit applies alone.
-- **Notes for sending:** use each commit subject as the PR title. Only c1 ends with "Tracked in #10148.", because c2 has no CPP id. Draft CHANGELOG lines:
+- **Notes for sending:** use each commit subject as the PR title. Only c1 ends with "Tracked in #10148.", because c2 has no CPP id. c2's draft CHANGELOG line therefore cites no issue; add the PR number when you send it. In c2's PR body, add one sentence on the changed Python exception (no IndexError any more). Draft CHANGELOG lines:
   - `Base64::decode()/decodeIntegers() check their input: a byte outside the Base64 alphabet, data after '=', more than two '=' or a length that is not a multiple of 4 throw ConversionError instead of decoding to wrong values or reading outside the lookup table; ASCII whitespace (line-wrapped xs:base64Binary) is skipped (#10148).`
-  - `ExperimentalDesignFile throws a ParseError naming the sample when the file section of a two-table design uses a Sample that the sample section does not define, instead of a bare std::out_of_range ("map::at") (#10148).`
+  - `ExperimentalDesignFile throws a ParseError naming the sample when the file section of a two-table design uses a Sample that the sample section does not define, instead of a bare std::out_of_range ("map::at"); in pyOpenMS this is no longer an IndexError.`
 - **Open points:**
   - c2's test designs keep their rows at header width, so that #10152's check does not fire first. You may want to mention the CPP-059 policy difference when sending c2.
+  - c2 is not tracked in #10148: its message has no "Tracked in #10148." line, and its draft CHANGELOG line (corrected after the code review, which found it citing #10148) now agrees. If you want c2 tracked there, add the line to the message and the reference to the CHANGELOG line together. c2's message does not mention the pyOpenMS IndexError change.
   - Eight unchanged first-offer message lines are 73 columns wide.
 
 ## Decisions to confirm (provisional defaults; you can overturn them)
@@ -214,6 +227,7 @@ The capped MzMLFile_test passes at the head (rc 0).
 5. **Message conventions.**
    - Titles end in "(CPP-xxx)", and CPP commits end with "Tracked in #10148.", as in the maintainer's own merges.
    - The first offer's minor review points are fixed in comments and messages only. No test logic changed; one mzTab test section title was reworded.
+   - The only test-logic change since then is the mzTab warning-capture fix made after the code review (see p0v2/mgf-mztab).
 6. **No CHANGELOG commits.** Draft lines are given per branch instead, and you or the maintainer add them with the PR number.
 7. **The Claude co-author trailer is kept.**
    - The policy is KEEP: every ported commit keeps its one existing line `Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>`. That is 15 of 15 patches, with no second trailer and no Claude-Session line.
@@ -232,6 +246,14 @@ The capped MzMLFile_test passes at the head (rc 0).
    | base64-design | 290 |
 
    Trimming before sending is your call.
+9. **A malformed `ms_run[n]-hash` index fails the mzTab load (p0v2/mgf-mztab commit 2).**
+   - A malformed index on `ms_run[n]-hash` or `ms_run[n]-hash_method` (e.g. `ms_run[x]-hash`, `ms_run[1 2]-hash_method`) is now a ParseError that fails the whole load. The reader does not store these keys, and develop ignored them, because it has no branch for them.
+   - This is the one newly rejected case that goes against the fold-in's reason ("do not fail loads that develop completes"): a malformed index on a key that is never stored cannot misplace data.
+   - It matches OpenMS4 Core's deliberate ci.6 behaviour. Real files are unlikely to hit it: none of the 46 mzTab test files has such a key, the OpenMS writer never emits one, and jmzTab and PRIDE write numeric indices only.
+   - Options:
+     - **keep it** and name it explicitly in the PR body and the CHANGELOG line (the draft line under p0v2/mgf-mztab already does);
+     - or, before sending, **downgrade it to a warning** for the two hash forms: in the reject loop of `isMzTab10MetaDataKey` in MzTabFile.cpp, take the "ignored with a warning" path instead of throwing when the key form is `ms_run[]-hash` or `ms_run[]-hash_method`, and add test lines for `ms_run[x]-hash` (ignored with a warning) and `ms_run[1]-hash` (loads). That changes commit 2 and needs its controls rerun.
+   - **Default: keep it, and name it explicitly.**
 
 ## Not in this offer
 
@@ -253,7 +275,7 @@ The capped MzMLFile_test passes at the head (rc 0).
 - **Per-commit controls.** Each commit's tests were run against its parent's library sources (NEG, must fail) and at the commit (POS, all area tests). The results are in `v2/<area>-build/logs/percommit/summary.txt`.
 - **Capped runs.** MzMLFile_test (CPP-120) and MzXMLFile_test (CPP-173) also ran with `ulimit -v 12000000` and `OMP_NUM_THREADS=4`, as on hosted runners. Both pass at every commit and at each head.
 - **Warnings.** Each branch adds 0 new compiler warnings compared with develop's baseline build.
-- **Exports.** The patch-ids of the 15 exported patches equal those of the branch commits. A scan of the exports for internal paths, Core release names and token patterns gives 0 hits.
+- **Exports.** The patch-ids of the 15 exported patches equal those of the branch commits. A scan of the exports for internal paths, Core release names and token patterns gives 0 hits. Both mgf-mztab patches were re-exported after the code-review fix; the new 0001 is byte-identical to the old one, and all checks were repeated.
 - clang-format: not run (no clang-format on dax; not copied to the Mac)
 - **doxygen: not run.** It is optional, and dax has none. Since the first offer, the headers changed only in comments and `@param` direction tags.
 - **Core evidence, not upstream evidence.** The Core counterparts of these fixes shipped in core-v4.0.0-ci.6, and its installed console suite passed 2047/2047.
