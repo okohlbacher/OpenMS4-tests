@@ -30,10 +30,14 @@ SPECIAL = {"cli", "desktop", "pyopenms"}
 # 2026-09-17 with jobs queued for half a day, and it rejects conda packages whose paths pass 260 characters
 # (Qt for the desktop, libopentelemetry-cpp-headers for database-suitability) because long paths are not
 # enabled there. Put "flashbox-windows-x64" back once both are fixed.
+# macOS arm64 is hosted too (macos-15, as Core's own CI uses): the Mac Studio (pool studio-macos-arm64)
+# was offline from 2026-09-27 to 2026-09-29, and the ci.9 consumer jobs queued for it until GitHub
+# cancelled them at its 24-hour limit. Put "studio-macos-arm64" back once it is reliably online; TOPP's
+# hand-written workflow names its pools itself, and patch_topp keeps them in step with this table.
 PLATFORMS = [
     ("linux-x64", "ubuntu-24.04", "dax-linux-x64", "gcc_linux-64=14 gxx_linux-64=14 coin-or-cbc=2.10.*", 4),
     ("linux-arm64", "ubuntu-24.04-arm", "", "gcc_linux-aarch64=14 gxx_linux-aarch64=14 coin-or-cbc=2.10.*", 4),
-    ("macos-arm64", "macos-15", "studio-macos-arm64", "llvm-openmp coin-or-cbc=2.10.*", 2),
+    ("macos-arm64", "macos-15", "", "llvm-openmp coin-or-cbc=2.10.*", 2),
     ("macos-x64", "macos-15-intel", "", "llvm-openmp coin-or-cbc=2.10.*", 4),
     ("windows-x64", "windows-2022", "", "glpk=5.*", 4),
 ]
@@ -375,11 +379,14 @@ jobs:
 
 
 def patch_topp(source: Path, refs: dict) -> None:
-    """TOPP keeps its hand-written workflows; only the pinned refs move."""
+    """TOPP keeps its hand-written workflows; only the pinned refs and the self-hosted pools move."""
     for name in ("topp.yml",):
         p = source / ".github/workflows" / name
         s = p.read_text()
         s = re.sub(r"(repository: okohlbacher/OpenMS4-cli\n\s+ref: )[0-9a-f]{40}", r"\g<1>" + refs["cli"], s)
+        # The runs-on expression keeps its pull-request guard; an empty pool falls through to matrix.runner.
+        for platform, _, pool, _, _ in PLATFORMS:
+            s = re.sub(rf"(matrix\.platform == '{platform}' && ')[^']*'", lambda m: f"{m.group(1)}{pool}'", s)
         s = re.sub(r"core-v[0-9][^ ]* --repo okohlbacher/OpenMS4-core", f"{refs['core_tag']} --repo okohlbacher/OpenMS4-core", s)
         s = re.sub(r"Release-[0-9a-f]{12}\.tar\.gz", f"Release-{refs['core'][:12]}.tar.gz", s)
         p.write_text(s)
