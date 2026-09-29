@@ -1,4 +1,4 @@
-# OpenMS 4 package split — state of the project, 2026-09-19
+# OpenMS 4 package split — state of the project, 2026-09-29
 
 *Part of the [OpenMS 4 package split](../README.md). [Package architecture](package-architecture.svg) · [Build instructions](build-split-packages.md)*
 
@@ -27,30 +27,56 @@ against one Core (TOPP ci.1 to ci.3 all shipped against the same one) or sit out
 
 | Package | Visibility | Pinned revision | Release | Contents |
 | --- | --- | --- | --- | --- |
-| core | public | `7d90cec8718d` | `core-v4.0.0-ci.8` | scientific library, OpenSwathAlgo, readers/writers, runtime data, optional TestSupport |
-| cli | public | `53c5d97277c3` | – (consumed by revision; `cli-v1.0.0-ci.2` is the last release) | TOPPBase, tool registration and discovery |
-| test-data | public | `c4fd33576dec` | – | versioned fixtures and the installed numerical suite |
-| topp | public | `9f69baae3295` | `topp-v1.0.0-ci.8` | 123 console tools |
-| openswath | public | `3e1b81cb7f58` | `openswath-v1.0.0-ci.6` | 19 executables and OpenSwathBase |
-| flash | public | `639bb9da46e2` | `flash-v1.0.0-ci.6` | FLASHDeconv and the `OpenMS::FLASH` backend |
-| prose | public | `bc6eebce6a19` | `prose-v1.0.0-ci.6` | ProSE and the `OpenMS::ProSE` backend |
-| nuxl | public | `3f8c36ebd88f` | `nuxl-v1.0.0-ci.6` | OpenNuXL |
-| nase | public | `affbd50eb0a2` | `nase-v1.0.0-ci.6` | NucleicAcidSearchEngine |
-| comet | public | `82fd4b262ba0` | `comet-v1.0.0-ci.6` | CometAdapter |
-| mascot | public | `de421c0216d5` | `mascot-v1.0.0-ci.6` | MascotAdapterOnline |
-| database-suitability | public | `51cc65fd9ac7` | `database-suitability-v1.0.0-ci.6` | DatabaseSuitability |
-| proteomics-lfq | public | `7cdd81d601f4` | `proteomics-lfq-v1.0.0-ci.6` | ProteomicsLFQ |
-| parquet-diff | public | `6eff01573a1a` | `parquet-diff-v1.0.0-ci.6` | ParquetDiff |
-| desktop | public | `6eb3caf59261` | `desktop-v1.0.0-ci.6` | GUI SDK, TOPPView, ImageCreator, INIFileEditor, TOPPAS, ExecutePipeline |
-| pyopenms | public | `ca7518265b66` | `pyopenms-v4.0.0.dev0-ci.8` | nanobind bindings, installed module tree and repaired wheels |
-| flashtnt | public | `a5125f7e27d3` | `flashtnt-v1.0.0-ci.5` | FLASHTnT tagging executable |
-| flashapp | private | `f3e858388adf` | – (no release; the app consumes the pyOpenMS wheel) | Streamlit application and Vue component |
+| core | public | `83ce20da7833` | `core-v4.0.0-ci.9` | scientific library, OpenSwathAlgo, readers/writers, runtime data, optional TestSupport |
+| cli | public | `475065671c17` | – (consumed by revision; `cli-v1.0.0-ci.2` is the last release) | TOPPBase, tool registration and discovery |
+| test-data | public | `bad3c3cbf296` | – | versioned fixtures and the installed numerical suite |
+| topp | public | `d9969f959983` | `topp-v1.0.0-ci.9` | 123 console tools |
+| openswath | public | `5a3c9e37711d` | `openswath-v1.0.0-ci.7` | 19 executables and OpenSwathBase |
+| flash | public | `9a80d16fda93` | `flash-v1.0.0-ci.7` | FLASHDeconv and the `OpenMS::FLASH` backend |
+| prose | public | `67ff6ca40390` | `prose-v1.0.0-ci.7` | ProSE and the `OpenMS::ProSE` backend |
+| nuxl | public | `3331cea8243c` | `nuxl-v1.0.0-ci.7` | OpenNuXL |
+| nase | public | `3d9fc2bdc1ed` | `nase-v1.0.0-ci.7` | NucleicAcidSearchEngine |
+| comet | public | `6c53e752092d` | `comet-v1.0.0-ci.7` | CometAdapter |
+| mascot | public | `f2e3db39e7fd` | `mascot-v1.0.0-ci.7` | MascotAdapterOnline |
+| database-suitability | public | `25ef679d91a2` | `database-suitability-v1.0.0-ci.7` | DatabaseSuitability |
+| proteomics-lfq | public | `ba76073b658b` | `proteomics-lfq-v1.0.0-ci.7` | ProteomicsLFQ |
+| parquet-diff | public | `c75b94e4156b` | `parquet-diff-v1.0.0-ci.7` | ParquetDiff |
+| desktop | public | `958a49840cc3` | `desktop-v1.0.0-ci.7` | GUI SDK, TOPPView, ImageCreator, INIFileEditor, TOPPAS, ExecutePipeline |
+| pyopenms | public | `5b356205fdf2` | `pyopenms-v4.0.0.dev0-ci.9` | nanobind bindings, installed module tree and repaired wheels |
+| flashtnt | public | `6f6a8dff7741` | `flashtnt-v1.0.0-ci.6` | FLASHTnT tagging executable |
+| flashapp | private | `38ca48ee598a` | – (no release; the app consumes the pyOpenMS wheel) | Streamlit application and Vue component |
 
 Every revision above has a green push run on all of its platforms (test-data has no
 CI of its own; each consumer checks it out at that revision), and every release was
-published from that run. This is the Core ci.8 cycle, closed on 2026-09-19.
+published from that run. This is the Core ci.9 cycle, closed on 2026-09-29.
 
-Core ci.8 re-lands CPP-043, the second of the pair reverted in ci.4: the isotope companions of the
+Core ci.9 completes the seven fixes that the 2026-09-19 re-check of the high-priority findings found
+only partly done. CPP-006: the global-linear extrapolation of TransformationModelInterpolated's
+pair-taking constructor is fitted to the input points only, no longer to one (0, 0) anchor per input
+point as well. CPP-007: the gradient of the EMG fit (EmgGradientDescent) stays finite far from the
+apex. CPP-010: IntegerMassDecomposer::getDecomposition returns a decomposition that adds up to the
+mass. CPP-096: Feature::getConvexHull is documented, not locked; the note says why a lock would not
+make the call thread-safe and to warm both caches before a parallel region. CPP-161:
+PercolatorInfile::load reads a .pin without a retentiontime column and leaves the RT unset instead of
+throwing. CPP-214: MSDataSqlConsumer with full_meta and addRun keeps the experimental settings and the
+meta-data of its records; ci.8 wrote an empty meta-data snapshot, so a reader silently fell back to
+the SQL columns. CPP-220: .xic chromatograms store an RT array whose first or second value is negative
+as zlib-compressed raw doubles instead of linear Numpress, which read an RT of -100 back as about
+4.29e8. No reference output of the console-tool suite changes. A tool's output changes only for such
+.xic chromatograms and for EMG fits, which run only with PeakIntegrator:fit_EMG=true (default false):
+results change where the old gradient overflowed, and other fits can differ at rounding level.
+XIPMParquetConsumer's RT column uses the same unchecked linear Numpress codec; it was out of scope for
+CPP-220 and is still open (see the backlog).
+
+Each ci.9 code fix has a class test that fails on ci.8 and passes on the fix, checked on dax (CPP-096
+is a documentation change). Before the tag, an adversarial review and two rounds of independent
+judging went over the change. They found two defects in the CPP-214 fix, both fixed with a test that
+fails without the fix, and errors in the release notes, which were corrected. The package graph was
+built on dax against the candidate's Linux SDK: every consumer passed its own tests, the installed
+console suite passed 2047 of 2047 (5 skipped, the same tests as ci.8), and OpenSwathWorkflow's
+sqMass output is byte-identical to ci.8's.
+
+Core ci.8 re-landed CPP-043, the second of the pair reverted in ci.4: the isotope companions of the
 cross-link generator's precursor peaks were placed at the charged mass plus the spacing divided by the
 charge, so at charge 2 and above they landed far from their precursor. It also casts the cluster bin
 size to float, which retired the MSVC suppression FLASH had carried for one cycle. Only the OpenPepXL
@@ -71,9 +97,11 @@ errors, which were corrected. The package graph was built on dax against the
 candidate's Linux SDK: every consumer passed its own tests, and the installed
 console suite passed 2047 of 2047 (5 skipped). CPP-042 is still not re-landed.
 
-pyOpenMS ci.8 and FLASHTnT ci.5 are published for all five platforms. FLASHApp pins
-FLASHTnT `a5125f7e27d3` and runs its app tests against the published pyOpenMS ci.8 Linux
-wheel, whose SHA-256 its lock records.
+pyOpenMS ci.9 and FLASHTnT ci.6 are published for all five platforms. FLASHApp pins
+FLASHTnT `6f6a8dff7741` and runs its app tests against the published pyOpenMS ci.9 Linux
+wheel, whose SHA-256 its lock records. The macOS arm64 wheel is now built on hosted macos-15
+and targets macOS 15 (`macosx_15_0_arm64`); ci.8's was built on the Mac Studio and required
+macOS 26.
 
 Warnings are errors in every package since 2026-09-19. The option
 `OPENMS4_WARNINGS_AS_ERRORS`, which twelve packages' CI scripts had always passed, is now
@@ -83,8 +111,8 @@ the source: the deprecated `std::filesystem::u8path` in CLI, NuXL and two
 database-suitability tests (now Core's `to_path`, which keeps UTF-8 paths correct on
 Windows), Arrow's `ReadTable(Table**)`, deprecated in 24.0.0, in ParquetDiff, 26 desktop
 visualizer headers overriding `undo_` without saying so, and ten unqualified `move()` calls
-in NuXL and database-suitability. FLASH carries one MSVC suppression for a conversion inside
-an imported Core header; the backlog names the Core fix that retires it. Consumers compile
+in NuXL and database-suitability. FLASH carried one MSVC suppression for a conversion inside
+an imported Core header until Core ci.8 fixed the conversion. Consumers compile
 the CLI sources they check out, so a deprecation in CLI fails their builds too until they
 re-pin.
 
@@ -115,7 +143,7 @@ workflow that republishes exactly the artifacts of that green run.
 
 ## Current verification
 
-Rebuilt from a fresh clone on IBMI dax on 2026-09-13 at the pins above, against the
+Rebuilt from a fresh clone on IBMI dax on 2026-09-13 at the pins of that date, against the
 published `core-v4.0.0-ci.2` Linux archive:
 
 | Suite | Result |
@@ -128,10 +156,9 @@ published `core-v4.0.0-ci.2` Linux archive:
 | Parent contracts at the earlier snapshot | 64, all pass |
 
 The real QRhi frame was checked separately on macOS; the Linux headless run does
-not establish Cocoa or interactive Windows acceptance. The current working tree
-has 64/65 parent contracts passing: the pin gate rejects the review Core checkout
-while the integration lock retains released Core. Generated child documentation
-also awaits the coordinated commit/pin cycle.
+not establish Cocoa or interactive Windows acceptance. The graph check of the ci.9
+candidate on dax is described above. With the submodules at the pins in the table
+above, all 65 parent contracts pass.
 
 151 console tools were installed with no duplicate registration. Receipts are under
 `/scratch/kohlbach/openms4-verify-20260913/work/results` on dax; the
@@ -141,7 +168,7 @@ and the FLASHTnT sanitizer, repeatability and cross-platform evidence.
 ## Delivery
 
 - **Core** — Homebrew formula `okohlbacher/openms4-core` with bottles for arm64 Sequoia,
-  Intel Sequoia and x86_64 Linux, published as assets of the ci.8 release.
+  Intel Sequoia and x86_64 Linux, published as assets of the ci.9 release.
 - **Console products** — eleven Homebrew casks (`openms4-topp`, `openms4-openswath`,
   `openms4-flash`, `openms4-prose`, `openms4-nuxl`, `openms4-nase`, `openms4-comet`,
   `openms4-mascot`, `openms4-database-suitability`, `openms4-proteomics-lfq`,
@@ -160,10 +187,14 @@ and the FLASHTnT sanitizer, repeatability and cross-platform evidence.
 ## Build infrastructure
 
 Package CI routes the `linux-x64` row of push and dispatch events to self-hosted
-runners on the IBMI node dax and the `macos-arm64` row to a Mac Studio; pull requests
-always stay on hosted runners, because the repositories are public and a fork must
-never execute on either machine. Windows x64 push/dispatch jobs also use the dedicated workstation runners. macOS
-x64 and Linux arm64 remain hosted. Core currently retains its own hosted matrix.
+runners on the IBMI node dax; pull requests always stay on hosted runners, because the
+repositories are public and a fork must never execute on a self-hosted machine. The
+consumers' `macos-arm64` jobs have run on hosted `macos-15` since 2026-09-29: the Mac
+Studio (pool `studio-macos-arm64`) was offline from 2026-09-27 to 2026-09-29, and the
+ci.9 jobs queued for it until GitHub cancelled them at its 24-hour limit. The Studio
+pool comes back once the machine is reliably online. Windows x64 has been hosted since
+2026-09-17, and macOS x64 and Linux arm64 remain hosted; the backlog says what brings
+the Windows and Studio pools back. Core currently retains its own hosted matrix.
 `tools/hpc/` holds the runner install and registration scripts, one runner per
 repository, each with its own `HOME` and a job-start hook that clears the previous
 job's micromamba.
@@ -190,17 +221,29 @@ sibling is retained; the corrected hooks were applied to all sixteen existing ru
   has been published or deployed, and historical numerical equivalence remains unqualified. `packages/flashapp/experimental/validation/current-status.md`
   is the live checklist.
 - **Desktop beyond macOS rendering.** Interactive behaviour on Windows and Linux, Qt
-  plugin deployment, signing, notarization and installers have no acceptance.
+  plugin deployment, signing, notarization and installers have no acceptance. Desktop ci.7
+  is not render-tested on macOS arm64 either: its macOS arm64 job ran on a hosted runner,
+  where the real-frame QRhi render test does not run.
 - **Wheels** are built for CPython 3.12 only; **bottles** cover three platform tags.
 - Source pins establish provenance, not binary compatibility: consumers must use the
   same compiler, runtime and dependency profile as the installed Core.
 
 ## Backlog
 
-- **Partly fixed findings** (found by the 2026-09-19 re-check of the 75 high-priority findings; each
-  needs a Core cycle): CPP-006 and CPP-007 fix the named expression but not the neighbouring
-  derivatives the finding also flags; CPP-010, CPP-096, CPP-161 and CPP-214 fix one half and document
-  the other; CPP-220 is fixed for sqMass but not for the Parquet `.xic` writer.
+- **XIPM RT column.** `XIPMParquetConsumer` encodes its RT column with unchecked linear Numpress,
+  so a negative first or second RT is not stored exactly there, as it was not in `.xic` files before
+  CPP-220. Found by the review of the CPP-220 fix, outside that fix's scope, and open; planned for
+  ci.11.
+- **CPP-214 follow-ups** (non-blocking findings of the ci.9 pre-release review):
+  - A failed `MSDataSqlConsumer::addRun()` switches the handler's run id before its RUN insert
+    throws, so the records consumed until the next successful `addRun()` are written under the
+    failed id and described by no snapshot. This is not documented and has been there since ci.8.
+  - With full_meta, records consumed after an explicit `finalize()` are not in the run's
+    snapshot. The full read fails on them, as the CHANGELOG says, but a meta-only
+    `readExperiment(exp, true)` leaves them out silently.
+- **Unversioned CPP-205 citations.** The CPP-205 entry in `cpp-confirmed-upstream-issues.md` and its
+  row in `cpp-issues-review.md` cite `finalize()` as h:82-91 and cpp:57-69 without naming a Core
+  version. They hold at ci.5, where the fix landed; ci.9's CPP-214 notes moved the header lines.
 - **CPP-026 re-land.** The last reverted fix (processingMethod order), and the largest: 211 of 267
   TOPP mzML references would change, so it needs its own cycle with a reviewed reference update, as
   CPP-042 had in ci.7 and CPP-043 in ci.8.
@@ -242,7 +285,7 @@ sibling is retained; the corrected hooks were applied to all sixteen existing ru
   depend on the unversioned tap formula, so a payload built against one Core can run
   against another and corrupt memory (shown for ci.2-built TOPP tools on ci.4). The 11
   ci.2-built casks were disabled (2026-09-14) and republished for ci.5
-  (2026-09-15/16), ci.6 (2026-09-17), ci.7 (2026-09-18) and ci.8 (2026-09-19). Between merging a Core release into the tap and
+  (2026-09-15/16), ci.6 (2026-09-17), ci.7 (2026-09-18), ci.8 (2026-09-19) and ci.9 (2026-09-29). Between merging a Core release into the tap and
   republishing a cask, installing that cask fails with the Core-mismatch error. Casks generated by `tools/ci-templates/update_cask.py` refuse to install
   unless the installed Core has the payload's source revision, which the cask workflow
   now exercises by installing from the tap on both macOS architectures. Upgrading
@@ -259,6 +302,15 @@ sibling is retained; the corrected hooks were applied to all sixteen existing ru
   cache (`C:\actions-runners\OpenMS4-{desktop,database-suitability}\home\micromamba\pkgs`)
   that micromamba reports as invalid instead of re-extracting. Put the pool back once the box
   is online, the setting is on and the two caches are cleared.
+- **The Mac Studio pool.** The consumers' `macos-arm64` rows run on hosted `macos-15` since
+  2026-09-29 (`PLATFORMS` in `tools/scaffold_package_ci.py`, which also sets the pools of TOPP's
+  hand-written workflow). The Studio (pool `studio-macos-arm64`) was offline from 2026-09-27 to
+  2026-09-29, and the ci.9 jobs queued for it until GitHub cancelled them at its 24-hour limit.
+  While the pool is away, the desktop's real-frame QRhi render test does not run, because it runs
+  only on the Studio, so desktop ci.7 is not render-tested on macOS arm64. pyOpenMS builds its
+  macOS arm64 wheel on `macos-15`, so the ci.9 wheel targets macOS 15 (`macosx_15_0_arm64`), where
+  ci.8's required macOS 26. Put the pool back in `PLATFORMS` once the Studio is reliably online,
+  then run a repin cycle.
 - **Heap-overflow regression tests outside glibc.** The CPP-005 test fails on the old code
   only under glibc malloc checking on Linux; Core CI has no AddressSanitizer job.
 - **Rust port follow-up.** `OpenMS4-R` `tests/map_operations.rs` (`cm_split_error_paths`)
