@@ -27,11 +27,11 @@ were wrong, intentional or already fixed. Each was read against the current sour
 
 | State | Findings |
 | --- | ---: |
-| fixed | 202 |
+| fixed | 203 |
 | documented | 20 |
 | not a defect | 1 |
 | not reachable | 1 |
-| open | 4 |
+| open | 3 |
 | no finding | 1 |
 
 *Documented* means the behaviour is intended or cannot change without breaking callers, and the
@@ -89,7 +89,8 @@ five-platform run for `4f5c86f` passed all seven jobs. Rebuilding the package gr
 that run's own Linux SDK, every package test passed and the installed regression suite failed only
 the 14 tests whose references carried the old counts; with those references updated (test-data
 `43b02b1`), it passes 2047 of 2047. `4f5c86f` is tagged `core-v4.0.0-ci.4`. Desktop and FLASHTnT
-are rebuilt once this cycle's TOPP and FLASH releases exist.
+are rebuilt once this cycle's TOPP and FLASH releases exist. CPP-026 returned in core-v4.0.0-ci.10,
+together with an update of the references it changes.
 
 ## Every finding
 
@@ -120,7 +121,7 @@ are rebuilt once this cycle's TOPP and FLASH releases exist.
 | CPP-023 | Vocabulary printing splits output between two streams | **fixed** | the vocabulary stream operator writes is_a lines to its own stream |
 | CPP-024 | CV parameter rendering does not escape every XML attribute | **fixed** | accession, cvRef and unit accession are XML-escaped |
 | CPP-025 | A later processing method can omit its required action term | **fixed** | the fallback data-transformation term is decided per processing method |
-| CPP-026 | Processing step order is always written as zero | **open** | Real: the mzML schema orders consecutive steps by it. Fixed in core-v4.0.0-ci.3 and reverted for ci.4: 252 of the 267 TOPP reference mzML files record 0 for every step (211 would change if the index were written), and the change failed 89 installed regression tests. It needs a coordinated reference update |
+| CPP-026 | Processing step order is always written as zero | **fixed** | Real: the mzML schema orders consecutive steps by it. Fixed in core-v4.0.0-ci.3 and reverted for ci.4, because the change failed 89 installed regression tests; fixed again in core-v4.0.0-ci.10, where the writer numbers the steps of each dataProcessing element 0, 1, 2, .... The 90 TOPP references it changes, read by 102 comparisons, are updated in place in test-data `e7a16c00da13` (249 processingMethod lines, order attributes only). A new MzMLFile_test section fails on the ci.9 writer and passes on the fix, and against the ci.10 candidate the old references failed exactly those 102 comparisons of the installed suite. The ci.4 estimate of 211 changed files also counted tool inputs and fixtures that no comparison reads. The reader still keeps document order, so five references number their steps in document order where their inputs declared another order; that is left for a follow-up. Upstream still writes order="0", so these are the first references that deliberately differ from upstream's |
 | CPP-027 | mzML writing discards processing completion seconds | **documented** | mzML records the completion time to the minute; |
 | CPP-028 | Recognized software metadata can throw during mzML writing | **fixed** | software metadata is validated against the mapping's own path, and locateTerm reports an unmapped path instead of throwing std::out_of_range |
 | CPP-029 | Annotation-only brackets pass conversion checks but fail conversion | **fixed** | The attachment throw now uses the same predicate: policy == FAIL_ON_LOSS && carriesChemistry_(mod) (2399). |
