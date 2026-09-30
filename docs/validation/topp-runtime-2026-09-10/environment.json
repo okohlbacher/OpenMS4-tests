@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-09-10T16:06:58.549888+02:00",
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "hardware": {
+    "machdep.cpu.brand_string": "Apple M4 Max",
+    "hw.physicalcpu": "16",
+    "hw.logicalcpu": "16",
+    "hw.memsize": "137438953472"
+  },
+  "os": "ProductName:\t\tmacOS\nProductVersion:\t\t26.5.1\nBuildVersion:\t\t25F80\n",
+  "sdk_build_info": {
+    "build_type": "Debug",
+    "class_testing_enabled": true,
+    "cxx_compiler_id": "AppleClang",
+    "cxx_compiler_version": "21.0.0.21000101",
+    "cxx_standard": 23,
+    "dependencies": {
+      "arrow": {
+        "target": "Arrow::arrow_shared",
+        "version": "25.0.0"
+      },
+      "boost": {
+        "linkage": "shared",
+        "version": "1.90.0"
+      },
+      "curl": {
+        "version": "8.21.0"
+      },
+      "eigen": {
+        "version": "5.0.1"
+      },
+      "openmp": {
+        "version": "5.1"
+      },
+      "parquet": {
+        "target": "Parquet::parquet_shared",
+        "version": "25.0.0"
+      }
+    },
+    "features": {
+      "hdf5": false,
+      "onnx": false,
+      "openmp": true,
+      "openswath": true,
+      "opentims": false,
+      "tdl": false,
+      "thermo_raw": false,
+      "wnetalign": false
+    },
+    "libstdcxx_cxx11_abi": null,
+    "msvc_runtime_library": null,
+    "schema_version": 1,
+    "shared_libs": true,
+    "source_dirty": false,
+    "source_revision": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85",
+    "standard_library": "libc++",
+    "stl_debug": false,
+    "system_name": "Darwin",
+    "system_processor": "arm64",
+    "version": "4.0.0"
+  },
+  "package_revisions": {
+    "core": {
+      "path": "packages/core",
+      "repository": "https://github.com/okohlbacher/OpenMS4-core",
+      "source_revision": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85"
+    },
+    "cli": {
+      "path": "packages/cli",
+      "repository": "https://github.com/okohlbacher/OpenMS4-cli",
+      "source_revision": "51db6bbbdeba53abc57d23c664de37f9c285372e"
+    },
+    "test-data": {
+      "path": "packages/test-data",
+      "repository": "https://github.com/okohlbacher/OpenMS4-test-data",
+      "source_revision": "c3e52c917bc2a04e27720f5c7d8189c0f4f522da"
+    },
+    "topp": {
+      "path": "packages/topp",
+      "repository": "https://github.com/okohlbacher/OpenMS4-topp",
+      "source_revision": "582535805581f2bdf4f3871d6802a0b45a3abe36"
+    },
+    "openswath": {
+      "path": "packages/openswath",
+      "repository": "https://github.com/okohlbacher/OpenMS4-openswath",
+      "source_revision": "c7901a79cc27463968ec335b6d04894b05b98339"
+    },
+    "flash": {
+      "path": "packages/flash",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flash",
+      "source_revision": "a6ee68f8589e3dd7eb8cb10b0ea7f3b790e72a4c"
+    },
+    "desktop": {
+      "path": "packages/desktop",
+      "repository": "https://github.com/okohlbacher/OpenMS4-desktop",
+      "source_revision": "b39230036c53f74b537c3683520f3ba2ef1ba963"
+    },
+    "pyopenms": {
+      "path": "packages/pyopenms",
+      "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms",
+      "source_revision": "14d950a460636b9a8fa255b7ac657926fec403de"
+    },
+    "flashapp": {
+      "path": "packages/flashapp",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
+      "source_revision": "b845126dc6ff17675cccd5cafea6870c4b3db805"
+    }
+  },
+  "test_parallelism": 4,
+  "tool_omp_threads": 2,
+  "abseil_fallback": "/opt/homebrew/Cellar/abseil/20260107.1/lib",
+  "notes": [
+    "Existing Debug binaries; no rebuild.",
+    "Benchmarks execute after tests, not concurrently."
+  ]
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Darwin-unknown"
+	tests="10"
+	failures="0"
+	disabled="0"
+	skipped="0"
+	hostname="MBP-OK-2.local"
+	time="1"
+	timestamp="2026-09-10T16:12:59"
+	>
+	<testcase name="TOPP_DTAExtractor_1" classname="TOPP_DTAExtractor_1" time="0.315894" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 22.12 MiB/s] -- 
+DTAExtractor took 0.23 s (wall), 0.24 s (CPU), 0.01 s (system), 0.23 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DTAExtractor_1_out1" classname="TOPP_DTAExtractor_1_out1" time="0.0795435" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DTAExtractor_2" classname="TOPP_DTAExtractor_2" time="0.301951" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 17 MiB/s] -- 
+DTAExtractor took 0.22 s (wall), 0.23 s (CPU), 0.01 s (system), 0.22 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DTAExtractor_2_out1" classname="TOPP_DTAExtractor_2_out1" time="0.0790745" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DTAExtractor_3" classname="TOPP_DTAExtractor_3" time="0.306725" status="run">
+		<properties/>
+		<system-out>Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+  -- done [took 0.00 s (CPU), 0.00 s (Wall)] -- 
+-- done [took 0.00 s (CPU), 0.00 s (Wall) @ 16.87 MiB/s] -- 
+DTAExtractor took 0.23 s (wall), 0.23 s (CPU), 0.00 s (system), 0.23 s (user); Peak Memory Usage: 61 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_DTAExtractor_3_out1" classname="TOPP_DTAExtractor_3_out1" time="0.0755574" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MassTraceExtractor_3_flat_json" classname="TOPP_MassTraceExtractor_3_flat_json" time="0.0797056" status="run">
+		<properties/>
+		<system-out>Default-Parameter 'MassTraceExtractor:1:in' overridden: '' --&gt; '/some/path/for/in'!
+Default-Parameter 'MassTraceExtractor:1:out' overridden: '' --&gt; '/some/path/for/out'!
+Default-Parameter 'MassTraceExtractor:1:log' overridden: '' --&gt; '/some/path/to/log'!
+Default-Parameter 'MassTraceExtractor:1:threads' overridden: '1' --&gt; '2'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:common:noise_threshold_int' overridden: '10' --&gt; '9.9'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:common:chrom_peak_snr' overridden: '3' --&gt; '3.1'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:common:chrom_fwhm' overridden: '5' --&gt; '4.9'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:mtd:min_sample_rate' overridden: '0.5' --&gt; '0.4'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:mtd:min_trace_length' overridden: '5' --&gt; '5.5'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:mtd:max_trace_length' overridden: '-1' --&gt; '12'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:epd:width_filtering' overridden: 'fixed' --&gt; ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MassTraceExtractor_3_flat_json_out" classname="TOPP_MassTraceExtractor_3_flat_json_out" time="0.0779823" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MassTraceExtractor_3_json" classname="TOPP_MassTraceExtractor_3_json" time="0.0781273" status="run">
+		<properties/>
+		<system-out>Default-Parameter 'MassTraceExtractor:1:in' overridden: '' --&gt; '/some/path/for/in'!
+Default-Parameter 'MassTraceExtractor:1:out' overridden: '' --&gt; '/some/path/for/out'!
+Default-Parameter 'MassTraceExtractor:1:log' overridden: '' --&gt; '/some/path/to/log'!
+Default-Parameter 'MassTraceExtractor:1:threads' overridden: '1' --&gt; '2'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:common:noise_threshold_int' overridden: '10' --&gt; '9.9'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:common:chrom_peak_snr' overridden: '3' --&gt; '3.1'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:common:chrom_fwhm' overridden: '5' --&gt; '4.9'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:mtd:min_sample_rate' overridden: '0.5' --&gt; '0.4'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:mtd:min_trace_length' overridden: '5' --&gt; '5.5'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:mtd:max_trace_length' overridden: '-1' --&gt; '12'!
+Default-Parameter 'MassTraceExtractor:1:algorithm:epd:width_filtering' overridden: 'fixed' --&gt; ...
+[This part of the test output was removed since it exceeds the threshold of 1024 bytes.]
+</system-out>
+	</testcase>
+	<testcase name="TOPP_MassTraceExtractor_3_json_out" classname="TOPP_MassTraceExtractor_3_json_out" time="0.0763745" status="run">
+		<properties/>
+		<system-out>Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.
+</system-out>
+	</testcase>
+</testsuite>

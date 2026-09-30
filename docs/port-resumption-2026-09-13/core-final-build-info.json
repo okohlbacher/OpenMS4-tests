@@ -1,0 +1,59 @@
+{
+  "build_type" : "Release",
+  "class_testing_enabled" : true,
+  "cxx_compiler_id" : "GNU",
+  "cxx_compiler_version" : "14.4.0",
+  "cxx_standard" : 23,
+  "dependencies" : 
+  {
+    "arrow" : 
+    {
+      "target" : "Arrow::arrow_shared",
+      "version" : "23.0.1"
+    },
+    "boost" : 
+    {
+      "linkage" : "shared",
+      "version" : "1.92.0"
+    },
+    "curl" : 
+    {
+      "version" : "8.21.0"
+    },
+    "eigen" : 
+    {
+      "version" : "5.0.1"
+    },
+    "openmp" : 
+    {
+      "version" : "4.5"
+    },
+    "parquet" : 
+    {
+      "target" : "Parquet::parquet_shared",
+      "version" : "23.0.1"
+    }
+  },
+  "features" : 
+  {
+    "hdf5" : false,
+    "onnx" : false,
+    "openmp" : true,
+    "openswath" : true,
+    "opentims" : false,
+    "tdl" : false,
+    "thermo_raw" : false,
+    "wnetalign" : false
+  },
+  "libstdcxx_cxx11_abi" : 1,
+  "msvc_runtime_library" : null,
+  "schema_version" : 1,
+  "shared_libs" : true,
+  "source_dirty" : false,
+  "source_revision" : "63e332c8dbc653769de3cf291c2fd54c86ddacd1",
+  "standard_library" : "libstdc++",
+  "stl_debug" : false,
+  "system_name" : "Linux",
+  "system_processor" : "x86_64",
+  "version" : "4.0.0"
+}

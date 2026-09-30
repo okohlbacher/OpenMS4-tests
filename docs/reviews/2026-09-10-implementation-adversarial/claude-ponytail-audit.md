@@ -1,0 +1,15 @@
+delete: Remove 1,593 lines of unreachable product packaging, KNIME, CWL and documentation-registration CMake from active Core: eight `package*.cmake` files, `knime_package_support.cmake`, nine `knime/*.cmake` helpers, `cwl_generation.cmake`, and `doc_macros.cmake`. Replace with nothing in Core; every file already has an identical historical copy under parent `legacy/cmake`, and none has a caller in the active Core CMake graph. [Core CMake](../../../packages/core/cmake)
+
+delete: Remove the 589-line obsolete Python dependency-copy and macOS repair implementation (`pyopenms_copy_deps.cmake`, `mac_fix_dependencies.rb`). Use the already configured auditwheel/delocate/delvewheel repair commands; retain import provenance rather than a second unused repair implementation. [Python repair contract](../../../packages/pyopenms/pyproject.toml#L192)
+
+shrink: Replace seven identical 99-line dependency helpers with one installed Core metadata helper and short consumer includes, an estimated 500-line net cut after bootstrap code. Keep exact version/revision validation and independent repository builds; use Core's existing compiler-free metadata package to expose the helper rather than create another repository or package dependency. [Dependency helper](../../../packages/cli/cmake/OpenMS4Dependencies.cmake#L1)
+
+shrink: Remove the three parallel `executables.cmake` name lists and the nested metadata lookup in TOPP, OpenSWATH and FLASH, an estimated 150-line net cut. Iterate each existing `tools.json` once to create targets and manifests, preserving the WNet feature condition and package-specific support linkage. [TOPP tool registration](../../../packages/topp/CMakeLists.txt#L9)
+
+delete: Remove 104 lines of monorepo release editing from active Core: `update_version_numbers.sh` targets moved TOPP fixtures and obsolete hardcoded version-test expectations, while `update_ini_files_OpenMS_version.sh` explicitly declares itself deprecated. Keep historical copies in `legacy/tools` and make Core version/changelog edits directly until an actual release workflow is needed. [Monorepo version updater](../../../packages/core/tools/update_version_numbers.sh#L49)
+
+shrink: Replace the parent's duplicate 75-line artifact verifier with a short command/import adapter to the pinned FLASHApp verifier, an estimated 65-line net cut. Keep the standalone app's implementation inside its own Docker context and run the parent tests against that same implementation; no new shared package is needed. [Duplicate parent verifier](../../../tools/verify_artifacts.py#L1)
+
+native: Replace custom unity-source generation and its dispatch branch with developer-selected `CMAKE_UNITY_BUILD`, an estimated 30-line net cut. [CMake's native unity feature](https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html) is available below this project's minimum version and exposes per-source exclusions; keep the default disabled and validate opt-in behavior before retiring the legacy switch. [Custom unity generator](../../../packages/core/cmake/add_library_macros.cmake#L29)
+
+net: -3031 lines, -0 deps possible.

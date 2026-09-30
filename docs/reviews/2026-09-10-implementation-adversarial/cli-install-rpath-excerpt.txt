@@ -1,0 +1,24 @@
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/reviews/2026-09-10-implementation-adversarial/cli-configure/libOpenMS_CLI.1.0.0.dylib"
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/reviews/2026-09-10-implementation-adversarial/cli-configure/libOpenMS_CLI.1.dylib"
+    )
+  foreach(file
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libOpenMS_CLI.1.0.0.dylib"
+      "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libOpenMS_CLI.1.dylib"
+      )
+    if(EXISTS "${file}" AND
+       NOT IS_SYMLINK "${file}")
+      execute_process(COMMAND /usr/bin/install_name_tool
+        -delete_rpath "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk/lib"
+        "${file}")
+      if(CMAKE_INSTALL_DO_STRIP)
+        execute_process(COMMAND "/usr/bin/strip" -x "${file}")
+      endif()
+    endif()
+  endforeach()
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+
+  LINK_LIBRARIES = -Wl,-rpath,/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk/lib  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk/lib/libOpenMS.dylib  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk/lib/libOpenSwathAlgo.dylib  /opt/homebrew/opt/curl/lib/libcurl.dylib  /opt/homebrew/opt/curl/lib/libcurl.dylib  /opt/homebrew/lib/libboost_regex.dylib  /opt/homebrew/lib/libparquet.2500.0.0.dylib  /opt/homebrew/lib/libarrow.2500.0.0.dylib  /opt/homebrew/opt/libomp/lib/libomp.dylib

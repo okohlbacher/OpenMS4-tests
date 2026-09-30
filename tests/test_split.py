@@ -1,0 +1,87 @@
+import hashlib
+import importlib.util
+import json
+from pathlib import Path
+import re
+import unittest
+
+ROOT = Path(__file__).resolve().parents[1]
+PACKAGES = ROOT / 'packages'
+SPEC = importlib.util.spec_from_file_location('artifacts', ROOT / 'tools/verify_artifacts.py')
+artifacts = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(artifacts)
+
+
+class SourceOwnership(unittest.TestCase):
+    def test_all_tool_sources_owned_once(self):
+        inventory = json.loads((ROOT/'docs/baseline-inventory.json').read_text())
+        names = []
+        for package in sorted(p.name for p in PACKAGES.iterdir() if (p/'tools.json').is_file()):
+            entries = json.loads((PACKAGES/package/'tools.json').read_text())['tools']
+            for entry in entries:
+                name = entry['name']; names.append(name)
+                self.assertTrue((PACKAGES/package/'src'/f'{name}.cpp').is_file(), name)
+        self.assertEqual(len(names), len(set(names)))
+        # FLASHTnT is an additional external port, absent from the original
+        # monorepo inventory. Preserve the baseline rather than rewriting it.
+        self.assertEqual(sorted(names), sorted([*inventory['cli_tools'], 'FLASHTnT']))
+        provenance = json.loads((PACKAGES/'flashtnt/source-provenance.json').read_text())
+        self.assertEqual(provenance['source_revision'], '3f508829ad81c91354d397966f28d428e29e5329')
+        self.assertIn('src/FLASHTnT.cpp', [entry['path'] for entry in provenance['files']])
+
+    def test_textually_included_tool_helpers_are_present(self):
+        for source in (PACKAGES/'topp/src').glob('*.cpp'):
+            for helper in re.findall(r'#include\s+"([^"]+\.cpp)"', source.read_text()):
+                self.assertTrue((source.parent/helper).is_file(), (source, helper))
+
+    def test_science_has_no_cli_headers(self):
+        paths = [PACKAGES/'core/src/openms/source', PACKAGES/'core/src/openms/include']
+        for root in paths:
+            for source in root.rglob('*'):
+                if source.suffix not in {'.h', '.cpp'}:continue
+                for dependency in re.findall(r'#include\s*[<"]OpenMS/APPLICATIONS/([^>"]+)', source.read_text(errors='replace')):
+                    self.assertEqual(dependency, 'ConsoleUtils.h', source)
+
+    def test_vendored_bytes_unchanged(self):
+        inventory = json.loads((ROOT/'docs/baseline-inventory.json').read_text())
+        for entry in inventory['tracked_files']:
+            path = entry['path']
+            if not path.startswith(('src/openms/extern/', 'src/openms/thirdparty/')) or entry['type'] != 'blob':continue
+            data = (PACKAGES/'core'/path).read_bytes()
+            digest = hashlib.sha1(f'blob {len(data)}\0'.encode()+data).hexdigest()
+            self.assertEqual(digest, entry['git_object'], path)
+
+    def test_file_format_support_stays_in_core(self):
+        inventory = json.loads((ROOT/'docs/baseline-inventory.json').read_text())
+        moved_non_codecs = {'MascotRemoteQuery', 'ParquetTableComparator'}
+        for entry in inventory['tracked_files']:
+            path = Path(entry['path'])
+            if str(path).startswith(('src/openms/include/OpenMS/FORMAT/', 'src/openms/source/FORMAT/')) and path.suffix in {'.h', '.cpp'} and path.stem not in moved_non_codecs:
+                self.assertTrue((PACKAGES/'core'/path).is_file(), path)
+        for header in ('QC/MQEvidenceExporter.h', 'QC/MQMsmsExporter.h',
+                       'QC/MQExporterHelper.h', 'ANALYSIS/NUXL/NuXLReport.h',
+                       'ANALYSIS/ID/CometModification.h', 'CHEMISTRY/ModifiedNASequenceGenerator.h'):
+            self.assertTrue((PACKAGES/'core/src/openms/include/OpenMS'/header).is_file(), header)
+
+    def test_core_fixtures_do_not_escape_to_tools(self):
+        for source in (PACKAGES/'core/src/tests/class_tests/openms/source').glob('*.cpp'):
+            self.assertNotIn('../../../topp/', source.read_text(), source)
+
+    def test_no_unpinned_core_source_fallbacks(self):
+        for package in sorted(p.name for p in PACKAGES.iterdir() if (p/'cmake/OpenMS4Dependencies.cmake').is_file() and p.name not in {'test-data', 'desktop'}):
+            cmake = (PACKAGES/package/'CMakeLists.txt').read_text()
+            self.assertIn('openms4_find_core(', cmake)
+            self.assertNotRegex(cmake,r'add_subdirectory\([^\n]*openms(?:\)|/)')
+
+
+def load_tests(loader, suite, pattern):
+    # Exercise the implementation actually copied into the app image.
+    path = PACKAGES / 'flashapp/tests/test_artifacts.py'
+    spec = importlib.util.spec_from_file_location('app_artifact_tests', path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    suite.addTests(loader.loadTestsFromModule(module))
+    return suite
+
+
+if __name__ == '__main__':unittest.main()

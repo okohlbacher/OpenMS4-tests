@@ -1,0 +1,131 @@
+[
+  {
+    "command": [
+      "cmake",
+      "-S",
+      "/scratch/kohlbach/openms4-core-181dadf/source/tests/installed_sdk_acceptance",
+      "-B",
+      "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/original-consumer",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-core-181dadf/sdk;/scratch/kohlbach/mamba-core-fixes/envs/core-ci",
+      "-DOpenMS_DIR=/scratch/kohlbach/openms4-core-181dadf/sdk/lib/cmake/OpenMS",
+      "-DOPENMS_EXPECTED_PREFIX=/scratch/kohlbach/openms4-core-181dadf/sdk",
+      "-DOPENMS_EXPECTED_SOURCE_REVISION=df774c1f88bef0cf314047fb33f75bce6994f86d"
+    ],
+    "returncode": 0,
+    "expected_failure": false,
+    "passed": true,
+    "elapsed_seconds": 1.957,
+    "log": "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/01.log"
+  },
+  {
+    "command": [
+      "cmake",
+      "--build",
+      "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/original-consumer",
+      "--config",
+      "Release",
+      "--parallel",
+      "64"
+    ],
+    "returncode": 0,
+    "expected_failure": false,
+    "passed": true,
+    "elapsed_seconds": 4.414,
+    "log": "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/02.log"
+  },
+  {
+    "command": [
+      "ctest",
+      "--test-dir",
+      "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/original-consumer",
+      "-C",
+      "Release",
+      "--output-on-failure",
+      "--parallel",
+      "64"
+    ],
+    "returncode": 0,
+    "expected_failure": false,
+    "passed": true,
+    "elapsed_seconds": 0.191,
+    "log": "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/03.log"
+  },
+  {
+    "command": [
+      "cmake",
+      "-S",
+      "/scratch/kohlbach/openms4-core-181dadf/source/tests/installed_sdk_acceptance",
+      "-B",
+      "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/relocated-consumer",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/relocated-sdk;/scratch/kohlbach/mamba-core-fixes/envs/core-ci",
+      "-DOpenMS_DIR=/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/relocated-sdk/lib/cmake/OpenMS",
+      "-DOPENMS_EXPECTED_PREFIX=/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/relocated-sdk",
+      "-DOPENMS_EXPECTED_SOURCE_REVISION=df774c1f88bef0cf314047fb33f75bce6994f86d"
+    ],
+    "returncode": 0,
+    "expected_failure": false,
+    "passed": true,
+    "elapsed_seconds": 1.938,
+    "log": "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/04.log"
+  },
+  {
+    "command": [
+      "cmake",
+      "--build",
+      "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/relocated-consumer",
+      "--config",
+      "Release",
+      "--parallel",
+      "64"
+    ],
+    "returncode": 0,
+    "expected_failure": false,
+    "passed": true,
+    "elapsed_seconds": 4.429,
+    "log": "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/05.log"
+  },
+  {
+    "command": [
+      "ctest",
+      "--test-dir",
+      "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/relocated-consumer",
+      "-C",
+      "Release",
+      "--output-on-failure",
+      "--parallel",
+      "64"
+    ],
+    "returncode": 0,
+    "expected_failure": false,
+    "passed": true,
+    "elapsed_seconds": 0.176,
+    "log": "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/06.log"
+  },
+  {
+    "command": [
+      "cmake",
+      "-S",
+      "/scratch/kohlbach/openms4-core-181dadf/source/tests/installed_sdk_acceptance",
+      "-B",
+      "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/wrong-revision-consumer",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-core-181dadf/sdk;/scratch/kohlbach/mamba-core-fixes/envs/core-ci",
+      "-DOpenMS_DIR=/scratch/kohlbach/openms4-core-181dadf/sdk/lib/cmake/OpenMS",
+      "-DOPENMS_EXPECTED_PREFIX=/scratch/kohlbach/openms4-core-181dadf/sdk",
+      "-DOPENMS_EXPECTED_SOURCE_REVISION=0000000000000000000000000000000000000000"
+    ],
+    "returncode": 1,
+    "expected_failure": true,
+    "passed": true,
+    "elapsed_seconds": 1.912,
+    "log": "/scratch/kohlbach/openms4-core-181dadf/merged-df774c1f88bef0cf314047fb33f75bce6994f86d/acceptance/07.log"
+  }
+]

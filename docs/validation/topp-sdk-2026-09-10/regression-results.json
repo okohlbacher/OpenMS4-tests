@@ -1,0 +1,71 @@
+[
+  {
+    "phase": "regression-configure",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+      "/usr/bin/env",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/opt/homebrew/bin/cmake",
+      "-S",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/test-data-sdk/share/openms4-test-data/1.0.0",
+      "-B",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions",
+      "-DCMAKE_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk",
+      "-DOPENMS4_REGRESSION_TESTS=ON",
+      "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+      "-DOPENMS4_TOOLS_BIN=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/bin"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 1.3505567500251345
+  },
+  {
+    "phase": "numerical",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+      "/usr/bin/env",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/opt/homebrew/bin/ctest",
+      "--test-dir",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions",
+      "-R",
+      "^TOPP_(IDMerger|IDFilter|NoiseFilterGaussian|NoiseFilterSGolay|MapNormalizer|ConsensusMapNormalizer|MapAlignerPoseClustering|MapAlignerIdentification|MapRTTransformer|FileMerger|DecoyDatabase|TextExporter|FileConverter)_",
+      "--parallel",
+      "4",
+      "--timeout",
+      "180",
+      "--output-on-failure",
+      "--output-junit",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/evidence/numerical.xml"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 69.75482587498846
+  },
+  {
+    "phase": "selected-negative",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+      "/usr/bin/env",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/opt/homebrew/bin/ctest",
+      "--test-dir",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/regressions",
+      "-R",
+      "^TOPP_((INI|CLI)_INVALID|PeakPickerHiRes_|FileInfo_)",
+      "--parallel",
+      "4",
+      "--timeout",
+      "180",
+      "--output-on-failure",
+      "--output-junit",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/evidence/selected-negative.xml"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 10.029865458025597
+  }
+]

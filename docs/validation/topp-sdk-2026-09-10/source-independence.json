@@ -1,0 +1,7 @@
+{
+  "translation_units": 130,
+  "only_topp_sources": true,
+  "headers_from_installed_sdk": true,
+  "no_original_repository_or_sdk_paths_in_compile_commands": true,
+  "source_archive_sha256": "30fdcd3e9f2bfd93180baa03be58ada319e0200f3d5d79f3bf86486f46832e0c"
+}

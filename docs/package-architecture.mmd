@@ -1,0 +1,30 @@
+flowchart BT
+  Core["Core SDK: scientific library, OpenSwathAlgo, readers/writers, data and optional TestSupport"]
+  CLI["CLI framework and tool registration"] --> Core
+  TOPP["TOPP: 123 registered tools"] --> CLI
+  SWATH["OpenSWATH: 19 executables"] --> CLI
+  Tools["Seven repos: NuXL, NASE, Comet, Mascot, DatabaseSuitability, ProteomicsLFQ, ParquetDiff"] --> CLI
+  FLASH["FLASH: backend and FLASHDeconv"] --> Core
+  FLASH -->|executable only| CLI
+  ProSE["ProSE: backend and executable"] --> Core
+  ProSE -->|executable only| CLI
+  Python["pyOpenMS"] --> Core
+  Python -->|backend| FLASH
+  Python -->|backend| ProSE
+  subgraph Desktop["Desktop: one repository"]
+    Viewers["TOPPView, ImageCreator, INIFileEditor"] --> GUI["GUI SDK"]
+    Workflows["TOPPAS, ExecutePipeline"] --> GUI
+  end
+  GUI --> Core
+  GUI --> CLI
+  GUI --> Qt
+  Fixtures["Test-data repository"] -. fixture metadata .-> Core
+  TOPP -. tests .-> Fixtures
+  Python -. tests .-> Fixtures
+  App["FLASHApp"] --> Python
+  App -. tools .-> TOPP
+  App -. tool .-> FLASH
+  TNT["FLASHTnT: tagging executable"] --> CLI
+  TNT -->|backend| FLASH
+  App -. tool .-> TNT
+  Core --> Native["Matching native dependency environment"]

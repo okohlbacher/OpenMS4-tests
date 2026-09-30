@@ -1,0 +1,24 @@
+{
+  "test_source_revision": "93eb47cb0575426dccba1067f51c1c9d8fb4163d",
+  "source_sha256": "e275351632e9dfd2ab89cb36bd0bc851f3f43dfabb7b5bbda021cdbb4b7872d5",
+  "note": "Extract exact committed two-PET-ladder setup and evaluation; print retained masses and return0/1 instead of generic throw, so unrelated prior caught exceptions cannot obscure diagnostics.",
+  "runs": [
+    {
+      "name": "old709",
+      "backend_sha256": "62b1309a8ec8420f913dd6ab1f45d0c0b4749ff248af1f66c9f552052c73b031",
+      "returncode": 1,
+      "retained_masses": [
+        "100"
+      ]
+    },
+    {
+      "name": "fixed93",
+      "backend_sha256": "32c4897cc7c00a14537e46a04b0cb28da98402663d4e89df57ac957668156dcd",
+      "returncode": 0,
+      "retained_masses": [
+        "100",
+        "100.5"
+      ]
+    }
+  ]
+}

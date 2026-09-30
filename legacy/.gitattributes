@@ -1,0 +1,2 @@
+# Preserve archived upstream bytes, including historical CRLF files.
+* -text

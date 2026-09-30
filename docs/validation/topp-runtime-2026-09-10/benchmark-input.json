@@ -1,0 +1,56 @@
+{
+  "input_path": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/test-data-sdk/share/openms4-test-data/1.0.0/topp/THIRDPARTY/MaRaClusterAdapter_1_in_1.mzML",
+  "input_bytes": 13607928,
+  "input_sha256": "733d655721611b584e2fef550ae3ee282dd2c1d4a4ec9b290ae0d5f4c32ca48f",
+  "indexed_mzml": true,
+  "spectra": 1684,
+  "peaks": 479455,
+  "independent_total_ion_current": 4294999079.090091,
+  "tic_calculator_expected_printed_tic": "4.295e+09",
+  "verification_method": "Python standard-library ElementTree parsed every spectrum; base64 intensity arrays were decoded as little-endian IEEE 754 float32 (all uncompressed) and accumulated with math.fsum. Counts sum spectrum defaultArrayLength and decoded intensity lengths. Source SHA256 was computed from the input bytes.",
+  "cache_creation_command": [
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/bin/FileConverter",
+    "-in",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/test-data-sdk/share/openms4-test-data/1.0.0/topp/THIRDPARTY/MaRaClusterAdapter_1_in_1.mzML",
+    "-out",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-runtime-report/input.cachedMzML",
+    "-test"
+  ],
+  "cache_expected_files": [
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-runtime-report/input.cachedMzML",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-runtime-report/input.mzML"
+  ],
+  "cache_creation_notes": "Installed TOPP FileConverter supports mzML to cachedMzML directly; no OpenSWATH package or other tool is required. It writes both the cached binary and the corresponding metadata mzML. Cache creation is preprocessing and must be timed/reported separately and excluded from TIC read timings. No cache has been created by this review.",
+  "recommended_run_arguments": [
+    "-in",
+    "<mzML, or matching cachedMzML for cached methods>",
+    "-read_method",
+    "<method>",
+    "-loadData",
+    "true",
+    "-threads",
+    "<1 or 2>"
+  ],
+  "methods": [
+    "regular",
+    "streaming",
+    "indexed",
+    "indexed_parallel",
+    "cached",
+    "cached_parallel"
+  ],
+  "warmups_per_cell": 1,
+  "measured_repetitions_per_cell": 5,
+  "method_caveats": [
+    "Run benchmark processes serially after test execution ends to avoid test/benchmark contention. Report warm-cache Debug measurements, median/min/max external wall time including process startup, and exact build identity.",
+    "Set -threads explicitly to 1 and 2: TOPPBase sets its own OpenMP thread count, with a default of 1.",
+    "TICCalculator main ignores the return value of tool.main() and returns 0; require valid spectrum count, peak count and TIC output and reject error diagnostics in addition to checking process status.",
+    "TICCalculator prints TIC using default stream precision (six significant digits); compare the printed value against the corresponding precision of the independently decoded TIC rather than claiming full precision numeric equality.",
+    "indexed_parallel skips metadata loading and XML checks unlike indexed, so differences between these methods are not exclusively parallel speedup.",
+    "cached and cached_parallel always decode the cached data and ignore loadData=false; keep loadData=true in all modes.",
+    "Tool-reported memory is sampled resident size in KiB, not process peak RSS. Use external per-process peak RSS measurement for peak-memory comparisons.",
+    "Only spectra contribute to TICCalculator counts and ion current; chromatograms are ignored.",
+    "TICCalculator automatically appends -test, which suppresses usage reporting.",
+    "The 13 MB input is a bounded regression-data workload, not a full-scale proteomics acquisition or Release performance qualification."
+  ]
+}

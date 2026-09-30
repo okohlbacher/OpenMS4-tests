@@ -1,0 +1,311 @@
+{
+  "created_at_utc": "2026-09-10T07:45:53.143785+00:00",
+  "method": "read-only file counts, SHA-256 comparison, retained upstream Git object comparison; no builds/tests/configuration",
+  "skill": "/Users/kohlbach/.codex/skills/ponytail-audit/SKILL.md",
+  "skill_repository_pin": "356918eba965ee1eac64bd3a7f0dd02108350de5",
+  "findings": [
+    {
+      "name": "unreachable_core_cmake",
+      "net_lines": 1593,
+      "measured_gross_lines": 1593,
+      "files": [
+        {
+          "path": "packages/core/cmake/package_components.cmake",
+          "physical_lines": 47,
+          "sha256": "a276338786d1e146db2da26d47ee351e99af37ee9ab52a1d625dd75a0579c49a",
+          "legacy_path": "legacy/cmake/package_components.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/package_deb.cmake",
+          "physical_lines": 77,
+          "sha256": "1ad7da6cd3871be18252088ba0ba10e5f77c667441e1ec54b2d318df6dbacacc",
+          "legacy_path": "legacy/cmake/package_deb.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/package_definitions.cmake",
+          "physical_lines": 24,
+          "sha256": "da5851e988e6139ef3c62b5d6f910414350003cb6cdc9fce0e292a90e420fa76",
+          "legacy_path": "legacy/cmake/package_definitions.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/package_dragndrop_dmg.cmake",
+          "physical_lines": 152,
+          "sha256": "786d87888a5e860632b2f922eedd7f68cf696be7cfd44ee18719709655733bbe",
+          "legacy_path": "legacy/cmake/package_dragndrop_dmg.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/package_general.cmake",
+          "physical_lines": 143,
+          "sha256": "30a767b50e0c8bffa1b18b735239ebe8d123a0575589a23f55fbce1a944e3efd",
+          "legacy_path": "legacy/cmake/package_general.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/package_mac_productbuild.cmake",
+          "physical_lines": 166,
+          "sha256": "d94e414d60932f9256795ef9df30eaa47efc21ab1d44adfccae73d98de111d1d",
+          "legacy_path": "legacy/cmake/package_mac_productbuild.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/package_nsis.cmake",
+          "physical_lines": 128,
+          "sha256": "b30ebfb4d4c0ba0b65e32835aa70083e4b2272581f998f1566f6537aced5bd55",
+          "legacy_path": "legacy/cmake/package_nsis.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/package_rpm.cmake",
+          "physical_lines": 48,
+          "sha256": "0858b81c6e600923d60201d8298b821f340630a4c3684e6637476a267899c342",
+          "legacy_path": "legacy/cmake/package_rpm.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/knime_package_support.cmake",
+          "physical_lines": 454,
+          "sha256": "667ed9a24dc3c3a625583447fa93e19c31430c16566d8a064c4e64c381dff78c",
+          "legacy_path": "legacy/cmake/knime_package_support.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/knime/change_exec_name_in_ctd.cmake",
+          "physical_lines": 39,
+          "sha256": "795f5d392f3624a8544a9044b9676e878c586e83c29bdaf4c6845021cac3377a",
+          "legacy_path": "legacy/cmake/knime/change_exec_name_in_ctd.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/knime/common.cmake",
+          "physical_lines": 15,
+          "sha256": "65219e50fa11fd22630f7cd8c9149bc5af8eb6fbf9dcf5cbab69687e72aad116",
+          "legacy_path": "legacy/cmake/knime/common.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/knime/compress_payload.cmake",
+          "physical_lines": 28,
+          "sha256": "dd2de4e29dbd8677c28637a6c4580f098a0b22342af7c562b81ec940b59fa14a",
+          "legacy_path": "legacy/cmake/knime/compress_payload.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/knime/configure_plugin_properties.cmake",
+          "physical_lines": 47,
+          "sha256": "33bd79ec0fb6f44554307aa597fc9d030622c9269882fcaac9594103515422eb",
+          "legacy_path": "legacy/cmake/knime/configure_plugin_properties.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/knime/copy_binaries_ini.cmake",
+          "physical_lines": 17,
+          "sha256": "30e9a7c67f347785824161528e636f400e455ed56fe6ffcc677f374d145c5f40",
+          "legacy_path": "legacy/cmake/knime/copy_binaries_ini.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/knime/copy_searchengines.cmake",
+          "physical_lines": 34,
+          "sha256": "d3cc25ed3288380a6f8203de1170e0d555b50079412d69fd2d2dea009074f88c",
+          "legacy_path": "legacy/cmake/knime/copy_searchengines.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/knime/copy_share.cmake",
+          "physical_lines": 33,
+          "sha256": "b77e66b1efe5e48d9fb056810fbf8c7d41dc58d7ab006d2a48c46c63a1ed5c38",
+          "legacy_path": "legacy/cmake/knime/copy_share.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/knime/knime_copy_deps.cmake",
+          "physical_lines": 27,
+          "sha256": "f04e6f3912b417331e234f22821c49a4c082e19320116081c07f6b026d6211bb",
+          "legacy_path": "legacy/cmake/knime/knime_copy_deps.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/knime/remove_parameter_from_ctd.cmake",
+          "physical_lines": 46,
+          "sha256": "2bd5375df1a59972e16021a27ef0cafb092bd908bd5dc1f9460c50ea71b61ec9",
+          "legacy_path": "legacy/cmake/knime/remove_parameter_from_ctd.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/cwl_generation.cmake",
+          "physical_lines": 41,
+          "sha256": "47f6b4a2b64939d9396e086337e233b8877fc309dbaec2387204852a481dbf2f",
+          "legacy_path": "legacy/cmake/cwl_generation.cmake",
+          "legacy_identical": true
+        },
+        {
+          "path": "packages/core/cmake/doc_macros.cmake",
+          "physical_lines": 27,
+          "sha256": "a39fb87d047530631db9ca076b9c324ad0dc99b5b0bc47fc1320c9800c94fbce",
+          "legacy_path": "legacy/cmake/doc_macros.cmake",
+          "legacy_identical": true
+        }
+      ]
+    },
+    {
+      "name": "obsolete_python_repair",
+      "net_lines": 589,
+      "files": [
+        {
+          "path": "packages/pyopenms/pyopenms_copy_deps.cmake",
+          "physical_lines": 13,
+          "sha256": "1e68da175523a99ecd036dde11f9937236a8032cb00baf7dbe2e9241fe756d99"
+        },
+        {
+          "path": "packages/pyopenms/mac_fix_dependencies.rb",
+          "physical_lines": 576,
+          "sha256": "554b1c7830c678cb038bbcf895483f06d1f0d5149ef82940178b87482c7dd13a"
+        }
+      ]
+    },
+    {
+      "name": "single_installed_dependency_helper",
+      "net_lines": 500,
+      "estimated": true,
+      "files": [
+        {
+          "path": "packages/cli/cmake/OpenMS4Dependencies.cmake",
+          "physical_lines": 99,
+          "sha256": "8ee0b34e7e12a9e1b1fb844874f738cedf871aedbc27a66f692bf6b7793267e1"
+        },
+        {
+          "path": "packages/desktop/cmake/OpenMS4Dependencies.cmake",
+          "physical_lines": 99,
+          "sha256": "8ee0b34e7e12a9e1b1fb844874f738cedf871aedbc27a66f692bf6b7793267e1"
+        },
+        {
+          "path": "packages/flash/cmake/OpenMS4Dependencies.cmake",
+          "physical_lines": 99,
+          "sha256": "8ee0b34e7e12a9e1b1fb844874f738cedf871aedbc27a66f692bf6b7793267e1"
+        },
+        {
+          "path": "packages/openswath/cmake/OpenMS4Dependencies.cmake",
+          "physical_lines": 99,
+          "sha256": "8ee0b34e7e12a9e1b1fb844874f738cedf871aedbc27a66f692bf6b7793267e1"
+        },
+        {
+          "path": "packages/pyopenms/cmake/OpenMS4Dependencies.cmake",
+          "physical_lines": 99,
+          "sha256": "8ee0b34e7e12a9e1b1fb844874f738cedf871aedbc27a66f692bf6b7793267e1"
+        },
+        {
+          "path": "packages/test-data/cmake/OpenMS4Dependencies.cmake",
+          "physical_lines": 99,
+          "sha256": "8ee0b34e7e12a9e1b1fb844874f738cedf871aedbc27a66f692bf6b7793267e1"
+        },
+        {
+          "path": "packages/topp/cmake/OpenMS4Dependencies.cmake",
+          "physical_lines": 99,
+          "sha256": "8ee0b34e7e12a9e1b1fb844874f738cedf871aedbc27a66f692bf6b7793267e1"
+        }
+      ],
+      "note": "7 x 99 currently; preserve one installed helper and allow 94 lines of total bootstrap/integration overhead."
+    },
+    {
+      "name": "one_json_tool_inventory",
+      "net_lines": 150,
+      "estimated": true,
+      "files": [
+        {
+          "path": "packages/topp/executables.cmake",
+          "physical_lines": 133,
+          "sha256": "a9d95c406bfec991a5b17cdd8399145c485776b43747e204fa83c09604bfc4ce"
+        },
+        {
+          "path": "packages/openswath/executables.cmake",
+          "physical_lines": 21,
+          "sha256": "be37771de95bad56c3b0b66279ddfa0795ff5b5933d80eacf247de2692c9d970"
+        },
+        {
+          "path": "packages/flash/executables.cmake",
+          "physical_lines": 3,
+          "sha256": "ef6d4b07f5b21fb0c0ce0bf691b28ed2f4cf5a29d686f4504bd929ab866ff75d"
+        }
+      ],
+      "note": "157 measured name-list lines; estimate allows integration overhead and ignores additional nested-loop reductions."
+    },
+    {
+      "name": "obsolete_core_release_scripts",
+      "net_lines": 104,
+      "files": [
+        {
+          "path": "packages/core/tools/update_version_numbers.sh",
+          "physical_lines": 101,
+          "sha256": "5d446550e7a0267ed8311c7f462821f2474c24a757bff00a8498fa2a1f1fb417"
+        },
+        {
+          "path": "packages/core/tools/update_ini_files_OpenMS_version.sh",
+          "physical_lines": 3,
+          "sha256": "4716555b56e2240bbd01c1f8d0d11ebb275196369b18ba3a5e8efa8e90b81345"
+        }
+      ]
+    },
+    {
+      "name": "one_artifact_verifier",
+      "net_lines": 65,
+      "estimated": true,
+      "files": [
+        {
+          "path": "tools/verify_artifacts.py",
+          "physical_lines": 75,
+          "sha256": "4e8862cfbcc8ec5d10283d0aac5058aadea51aeb99a7eb0de2d0ca3cb47f2b44"
+        },
+        {
+          "path": "packages/flashapp/experimental/verify_artifacts.py",
+          "physical_lines": 75,
+          "sha256": "4e8862cfbcc8ec5d10283d0aac5058aadea51aeb99a7eb0de2d0ca3cb47f2b44"
+        }
+      ],
+      "note": "75-line parent copy replaced by <=10-line adapter, preserving independent app Docker context."
+    },
+    {
+      "name": "native_unity_build",
+      "net_lines": 30,
+      "estimated": true,
+      "files": [
+        {
+          "path": "packages/core/cmake/add_library_macros.cmake",
+          "physical_lines": 259,
+          "sha256": "b5d4b3dbfbff7bcda46c8f59d9c5f6e6f8144b90309ec4d8d6c2a122a53202a0"
+        }
+      ],
+      "source_ranges": [
+        "17",
+        "19-50",
+        "110-115"
+      ],
+      "note": "Conservative reduction after optional backward-compatible flag handling."
+    }
+  ],
+  "estimated_net_line_reduction": 3031,
+  "dependency_reduction": 0,
+  "VersionInfo_baseline_identical": true,
+  "VersionInfo_sha256": "01bb880e49af5df0e8a61774e1fecc611fb2931db51093c7e6158666d6e2c8d4",
+  "VersionInfo_baseline_sha256": "01bb880e49af5df0e8a61774e1fecc611fb2931db51093c7e6158666d6e2c8d4",
+  "git_status_after_verification": {
+    ".": "",
+    "packages/cli": "",
+    "packages/core": "",
+    "packages/desktop": "",
+    "packages/flash": "",
+    "packages/flashapp": "",
+    "packages/openswath": "",
+    "packages/pyopenms": "",
+    "packages/test-data": "",
+    "packages/topp": ""
+  },
+  "excluded": "vendored/contrib/thirdparty sources, binary assets, historical copies under legacy, and scientific implementation cuts",
+  "external_primary_references": [
+    "https://doc.qt.io/qt-6/qcoreapplication.html#processEvents",
+    "https://cmake.org/cmake/help/latest/prop_tgt/UNITY_BUILD.html"
+  ]
+}

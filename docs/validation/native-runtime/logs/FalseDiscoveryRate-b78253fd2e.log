@@ -1,0 +1,44 @@
+stty: stdin isn't a terminal
+
+FalseDiscoveryRate -- Estimates the false discovery rate on peptide and protein level using decoy searches.
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_FalseDiscoveryRate.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  FalseDiscoveryRate <options>
+
+This tool has algorithm parameters that are not shown here! Please check the ini file for a detailed description or use the --helphelp option
+
+Options (mandatory options marked with '*'):
+  -in <file>*                                   Identifications from searching a target-decoy database. (valid formats: 'idXML')
+  -out <file>*                                  Identifications with annotated FDR (valid formats: 'idXML')
+  -PSM <FDR level>                              Perform FDR calculation on PSM level (default: 'true') (valid: 'true', 'false')
+  -peptide <FDR level>                          Perform FDR calculation on peptide level and annotates it as meta value
+                                                (Note: if set, also calculates FDR/q-value on PSM level.) (default: 'false') (valid: 'true', 'false')
+  -PSM_peptide_base_score <score name or type>  Set if you want to choose a different score than the last calculated main score for PSM or peptide level.
+  -protein <FDR level>                          Perform FDR calculation on protein level (default: 'true') (valid: 'true', 'false')
+  -proteingroup <FDR level>                     Perform FDR calculation on (indist.) protein group level, too. Currently, this will enable protein FDR automatically (since internals need to be in-sync) but will affect the level at which it filters (if enabled). (default: 'false') (valid: 'true', 'false')
+  -protein_base_score <score name or type>      Set if you want to choose a different score than the last calculated main score for protein (group) level.
+
+FDR control:
+  -FDR:PSM <fraction>                           Filter PSMs based on q-value (e.g., 0.05 = 5% FDR, disabled for 1) (default: '1.0') (min: '0.0' max: '1.0')
+  -FDR:protein <fraction>                       Filter proteins based on q-value (e.g., 0.05 = 5% FDR, disabled for 1) (default: '1.0') (min: '0.0' max: '1.0')
+
+                                                
+Common TOPP options:
+  -ini <file>                                   Use the given TOPP INI file
+  -threads <n>                                  Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>                             Writes the default configuration file
+  --help                                        Shows options
+  --helphelp                                    Shows all options (including advanced)
+
+The following configuration subsections are valid:
+ - algorithm   Parameter section for the FDR calculation algorithm
+
+You can write an example INI file using the '-write_ini' option.
+Documentation of subsection parameters can be found in the doxygen documentation or the INIFileEditor.
+For more information, please consult the online documentation for this tool:
+  - http://www.openms.de/doxygen/release/4.0.0/html/TOPP_FalseDiscoveryRate.html
+

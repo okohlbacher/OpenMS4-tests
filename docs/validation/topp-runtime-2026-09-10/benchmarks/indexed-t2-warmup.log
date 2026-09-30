@@ -1,0 +1,10 @@
+ Memory consumption before 52080
+Read method: indexed
+While loading '/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/test-data-sdk/share/openms4-test-data/1.0.0/topp/THIRDPARTY/MaRaClusterAdapter_1_in_1.mzML': Obsolete CV term 'MS:1000763 - PeakPicker' used in tag 'software'.
+Update ranges was called but ranges were already up-to-date
+There are 1684 spectra and 479455 peaks in the input file.
+The total ion current is 4.295e+09
+ Memory consumption after 69248
+TICCalculator took 1.66 s (wall), 1.63 s (CPU), 0.02 s (system), 1.61 s (user); Peak Memory Usage: 67 MB.
+ Memory consumption final 69264
+<Update ranges was called but ranges were already up-to-date> occurred 1684 times

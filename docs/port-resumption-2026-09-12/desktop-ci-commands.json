@@ -1,0 +1,211 @@
+[
+  {
+    "name": "driver-tests",
+    "command": [
+      "/Users/oliver/gh-runners/OpenMS4-desktop/home/micromamba/envs/package-ci/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tools/ci",
+      "-v"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.98
+  },
+  {
+    "name": "source-boundaries",
+    "command": [
+      "/Users/oliver/gh-runners/OpenMS4-desktop/home/micromamba/envs/package-ci/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_source_boundaries.py",
+      "-v"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.746
+  },
+  {
+    "name": "configure-cli",
+    "command": [
+      "cmake",
+      "-S",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/OpenMS4-desktop/OpenMS4-desktop/dependencies/cli",
+      "-B",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/cli-build",
+      "-DCMAKE_INSTALL_PREFIX=/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/cli",
+      "-DCMAKE_PREFIX_PATH=/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/core/OpenMS4-core-macos-arm64-Release-bc9cc12514c7;/Users/oliver/gh-runners/OpenMS4-desktop/home/micromamba/envs/package-ci",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+      "-DOpenMP_ROOT=/Users/oliver/gh-runners/OpenMS4-desktop/home/micromamba/envs/package-ci",
+      "-DCURL_ROOT=/Users/oliver/gh-runners/OpenMS4-desktop/home/micromamba/envs/package-ci",
+      "-DCMAKE_FIND_FRAMEWORK=LAST"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.729
+  },
+  {
+    "name": "build-cli",
+    "command": [
+      "cmake",
+      "--build",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/cli-build",
+      "--config",
+      "Release",
+      "--parallel",
+      "8"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.68
+  },
+  {
+    "name": "install-cli",
+    "command": [
+      "cmake",
+      "--install",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/cli-build",
+      "--config",
+      "Release"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.026
+  },
+  {
+    "name": "configure-test-data",
+    "command": [
+      "cmake",
+      "-S",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/OpenMS4-desktop/OpenMS4-desktop/dependencies/test-data",
+      "-B",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/test-data-build",
+      "-DCMAKE_INSTALL_PREFIX=/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/test-data",
+      "-DCMAKE_PREFIX_PATH=/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/core/OpenMS4-core-macos-arm64-Release-bc9cc12514c7;/Users/oliver/gh-runners/OpenMS4-desktop/home/micromamba/envs/package-ci",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+      "-DOpenMP_ROOT=/Users/oliver/gh-runners/OpenMS4-desktop/home/micromamba/envs/package-ci",
+      "-DCURL_ROOT=/Users/oliver/gh-runners/OpenMS4-desktop/home/micromamba/envs/package-ci",
+      "-DCMAKE_FIND_FRAMEWORK=LAST"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.908
+  },
+  {
+    "name": "install-test-data",
+    "command": [
+      "cmake",
+      "--install",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/test-data-build",
+      "--config",
+      "Release"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.448
+  },
+  {
+    "name": "configure-package",
+    "command": [
+      "cmake",
+      "-S",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/OpenMS4-desktop/OpenMS4-desktop",
+      "-B",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build",
+      "-DCMAKE_INSTALL_PREFIX=/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package",
+      "-DCMAKE_PREFIX_PATH=/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/core/OpenMS4-core-macos-arm64-Release-bc9cc12514c7;/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/cli;/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/test-data;/Users/oliver/gh-runners/OpenMS4-desktop/home/micromamba/envs/package-ci",
+      "-DOPENMS4_WARNINGS_AS_ERRORS=ON",
+      "-DOPENMS4_REGRESSION_TESTS=ON",
+      "-DOPENMS_DESKTOP_INTERACTIVE_TESTS=OFF",
+      "-DOPENMS_DESKTOP_PIPELINE_TESTS=ON",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+      "-DOpenMP_ROOT=/Users/oliver/gh-runners/OpenMS4-desktop/home/micromamba/envs/package-ci",
+      "-DCURL_ROOT=/Users/oliver/gh-runners/OpenMS4-desktop/home/micromamba/envs/package-ci",
+      "-DCMAKE_FIND_FRAMEWORK=LAST"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 4.671
+  },
+  {
+    "name": "build-package",
+    "command": [
+      "cmake",
+      "--build",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build",
+      "--config",
+      "Release",
+      "--parallel",
+      "8"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 98.925
+  },
+  {
+    "name": "test-package",
+    "command": [
+      "ctest",
+      "--test-dir",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build",
+      "-C",
+      "Release",
+      "--output-on-failure",
+      "--no-tests=error",
+      "--parallel",
+      "8"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 28.751
+  },
+  {
+    "name": "test-rendered-frame",
+    "command": [
+      "cmake",
+      "-E",
+      "env",
+      "QT_QPA_PLATFORM=cocoa",
+      "OPENMS_PLOT3D_RENDER_TEST_IMAGE=/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/results/plot3d-render.png",
+      "ctest",
+      "--test-dir",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build",
+      "-C",
+      "Release",
+      "-R",
+      "^Plot3DRhiCanvas_test$",
+      "--verbose",
+      "--no-tests=error",
+      "--timeout",
+      "60"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 1.053
+  },
+  {
+    "name": "install-package",
+    "command": [
+      "cmake",
+      "--install",
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build",
+      "--config",
+      "Release"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.119
+  },
+  {
+    "name": "installed-execute-pipeline-help",
+    "command": [
+      "/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package/bin/ExecutePipeline",
+      "--help"
+    ],
+    "returncode": 0,
+    "elapsed_seconds": 0.648
+  }
+]

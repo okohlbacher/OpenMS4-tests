@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "install_receipt_sha256": "e3fc18fcb778c6852fda12d4936ba724640029323df4149ae2b92308452bdcce",
+  "file_count": 235,
+  "pre_repair_native_count": 153,
+  "packages": {
+    "OpenMS": {
+      "source_revision": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85",
+      "version": "4.0.0"
+    },
+    "OpenMSCLI": {
+      "source_revision": "51db6bbbdeba53abc57d23c664de37f9c285372e",
+      "version": "1.0.0"
+    },
+    "OpenMSTOPP": {
+      "source_revision": "94e997007b7af9adbaee95d144324276e9fa56ee",
+      "version": "1.0.0"
+    },
+    "OpenMSOpenSWATH": {
+      "source_revision": "c7901a79cc27463968ec335b6d04894b05b98339",
+      "version": "1.0.0"
+    },
+    "OpenMSFLASH": {
+      "source_revision": "a6ee68f8589e3dd7eb8cb10b0ea7f3b790e72a4c",
+      "version": "1.0.0"
+    }
+  }
+}

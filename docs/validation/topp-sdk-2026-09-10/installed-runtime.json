@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+    "/usr/bin/env",
+    "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+    "DYLD_PRINT_LIBRARIES=1",
+    "OPENMS_DISABLE_UPDATE_CHECK=ON",
+    "OMP_NUM_THREADS=2",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/bin/OpenMSInfo",
+    "-p"
+  ],
+  "exit_code": 0,
+  "loaded_core_from_installed_sdk": true,
+  "loaded_cli_from_installed_sdk": true,
+  "runtime_data_from_installed_sdk": true,
+  "sdk_libraries_match_original_installed_bytes": {
+    "lib/libOpenMS.dylib": "5a046fcaf15eb636e1f23b453481bca80fbfbe01a6a9f6a5df41c7c3dfbe2f4a",
+    "lib/libOpenMS_CLI.1.0.0.dylib": "53d9b438077965947bd743a934fd8c19a1e4ad142249ea3498820735cd3b62ad",
+    "lib/libOpenSwathAlgo.dylib": "c0e6ba728b8298a7105fb41300ada8eba67aa5326f403f018551de8887857484"
+  }
+}

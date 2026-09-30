@@ -1,0 +1,76 @@
+{
+  "cli": "vibe 2.25.0",
+  "started_at": "2026-09-10T06:03:35.044466+00:00",
+  "active_model_alias": "mistral-medium-3.5",
+  "resolved_model_config": [
+    {
+      "name": "mistral-vibe-cli-latest",
+      "alias": "mistral-medium-3.5",
+      "provider": "mistral"
+    }
+  ],
+  "argv_without_prompt": [
+    "/Users/kohlbach/.local/bin/vibe",
+    "--agent",
+    "plan",
+    "--enabled-tools",
+    "read_file",
+    "--enabled-tools",
+    "grep",
+    "--output",
+    "streaming",
+    "--max-turns",
+    "65",
+    "--workdir",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+    "--trust",
+    "-p"
+  ],
+  "prompt_file": "review-request.md",
+  "public_source_commit": "ca32296038839459d8c9b075b759e285913d6294",
+  "public_source_tree": "ebe2af7e99bea1c5b997ea12cfbd1a190624397c",
+  "public_provenance": "GitHub API OpenMS/OpenMS git/commits read confirmed exact hash; local status clean",
+  "permission_policy": "plan agent; only read_file and grep enabled; no auto-approve",
+  "earlier_attempt": "No review returned because proposal parent path lay outside source-only workdir. Current workdir is the user-authorized analysis project containing public source and proposal.",
+  "exit_code": 0,
+  "finished_at": "2026-09-10T06:06:40.297278+00:00",
+  "session_id": "9c0a3e9d-552c-603e-3c97-7d2a9d12c94c",
+  "raw_event_count": 63,
+  "tool_results": {
+    "completed": 30,
+    "failed": 2
+  },
+  "successful_tools": {
+    "read_file": 24,
+    "grep": 6
+  },
+  "inspected_paths": [
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-package-architecture.md",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-package-architecture.mmd",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/CMakeLists.txt",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/cmake/OpenMSConfig.cmake.in",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/cmake/add_library_macros.cmake",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/cmake/cmake_findExternalLibs.cmake",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/cmake/export_macros.cmake",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/cmake/package_components.cmake",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/CMakeLists.txt",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/openms/CMakeLists.txt",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/openms/include/OpenMS/DATASTRUCTURES/MatrixEigen.h",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/openms/include/OpenMS/FORMAT/ParquetFile.h",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/openms/source/APPLICATIONS",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/openms/source/APPLICATIONS/TOPPBase.cpp",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/openms/source/APPLICATIONS/ToolHandler.cpp",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/openms/source/APPLICATIONS/sources.cmake",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/openms/source/SYSTEM/File.cpp",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/openms_gui/CMakeLists.txt",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/pyOpenMS/CMakeLists.txt",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/tests/class_tests/openms/CMakeLists.txt",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/tests/class_tests/openms/source/PercolatorAdapter_parity_test.cpp",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/tests/external/CMakeLists.txt",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/topp/CMakeLists.txt",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/src/topp/executables.cmake"
+  ],
+  "review_artifact": "vibe-review.md",
+  "model_identity_note": "Recorded CLI active alias and resolved provider model request from local configuration. The streaming protocol does not report a separate server-resolved model build."
+}

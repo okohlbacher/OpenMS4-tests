@@ -1,0 +1,7 @@
+{
+  "pyarrow_version": "25.0.1",
+  "empty_table_rows": 0,
+  "batches_after_combine_chunks": 0,
+  "cpp_source_branch": "pyarrow_to_table throws when batches.size() == 0; native binding not built or executed",
+  "multi_batch_evidence": "Official Arrow Table.combine_chunks documentation permits multiple binary chunks to avoid buffer overflow; C++ helper consumes only batches[0]. No multi-GB allocation attempted."
+}

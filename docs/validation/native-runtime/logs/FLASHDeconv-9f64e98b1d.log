@@ -1,0 +1,27 @@
+Initializing ... 
+Progress of 'loading mzML':
+  Progress of 'loading spectra list':
+
+  -- done [took 0.01 s (CPU), 0.01 s (Wall)] -- 
+
+-- done [took 0.06 s (CPU), 0.03 s (Wall) @ 22.36 MiB/s] -- 
+Processing : /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/runtime-product-evidence-final/inputs/FLASHDeconv_sample_input.mzML
+Filtering low peaks in spectra ... Done
+Calculating Averagines ... Done
+Progress of 'running FLASHDeconv':
+native_id 'controllerType=0 controllerNumber=1 scan=1' is invalid. Could not extract scan number.
+native_id 'controllerType=0 controllerNumber=1 scan=2' is invalid. Could not extract scan number.
+native_id 'controllerType=0 controllerNumber=1 scan=3' is invalid. Could not extract scan number.
+native_id 'controllerType=0 controllerNumber=1 scan=4' is invalid. Could not extract scan number.
+native_id 'controllerType=0 controllerNumber=1 scan=1' is invalid. Could not extract scan number.
+native_id 'controllerType=0 controllerNumber=1 scan=2' is invalid. Could not extract scan number.
+native_id 'controllerType=0 controllerNumber=1 scan=3' is invalid. Could not extract scan number.
+native_id 'controllerType=0 controllerNumber=1 scan=4' is invalid. Could not extract scan number.
+
+  100.00 %               
+-- done [took 0.42 s (CPU), 0.42 s (Wall)] -- 
+So far, FLASHDeconv found 4 masses in 4 MS1 spectra out of 4
+Mass tracer found 1 features
+FLASHDeconv run complete. Now writing the results in output files ...
+writing feature tsv ...
+FLASHDeconv took 19.88 s (wall), 19.86 s (CPU), 0.05 s (system), 19.81 s (user); Peak Memory Usage: 119 MB.

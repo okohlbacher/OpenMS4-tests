@@ -1,0 +1,1331 @@
+{
+  "host": "IBMI dax",
+  "platform": "Linux x86_64",
+  "build_type": "Release",
+  "compiler": "GNU 14.4.0",
+  "parallel_jobs": 240,
+  "concurrent_packages": 6,
+  "core_rebuilt": false,
+  "core_input": "core-v4.0.0-ci.2, OpenMS4-core-linux-x64-Release-bc9cc12514c7.tar.gz",
+  "date": "2026-09-13",
+  "parent_source_revision": "39ff564483bf3cbc466b96e49ae779a987dff829",
+  "work_directory": "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work",
+  "package_revisions": {
+    "core": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+    "cli": "d5213ff3551a8608e4e3f930fd4a6f85a8c82f97",
+    "test-data": "a14ecf5d5f5de878dbaf5ddb9feafe154b02303a",
+    "topp": "c6e98a7782cc50083d555b6424b2c84f879195f6",
+    "openswath": "851e8f0e0ec4312081974b1b04966e92c38a2c48",
+    "flash": "b2c6771de7746c43ad55558d17429a15087083fb",
+    "desktop": "15c7a63095610c26a23785403e028ae9a9260bf4",
+    "pyopenms": "b7edae7a89d902727e0cd50ff488fefc60e011e0",
+    "flashapp": "42cd062405fcd7f3a69a85cdd6c5c15b254cc74d",
+    "nuxl": "dc6f61c5ed8a0d570c57a9ff92f2d6ef18dfc8c4",
+    "prose": "828d72595677f6cd22e8c02eca24956855dfcf1c",
+    "nase": "a9b317b889ccf2820d95d4f81b08126fb0b70059",
+    "comet": "c3c4d1b99a159ef00dd0b4741f28393a450643b7",
+    "mascot": "fcbcc61346c3af73f599ced7fcd9ea9e5a177561",
+    "database-suitability": "c46998ff10013ba110a5a2c37a972a590dada361",
+    "proteomics-lfq": "cf12fe9163e3b244cd8dd977bc4f18a86dcf087c",
+    "flashtnt": "4ca4e73a975152f863084ddb8576d40f1241133a",
+    "parquet-diff": "682f7086ebe95a6a18f496ae328e60fc9a92e4f6"
+  },
+  "commands": {
+    "cli-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/cli",
+        "--config",
+        "Release",
+        "--parallel",
+        "120"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 9.169
+    },
+    "cli-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/cli",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/cli",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.863
+    },
+    "cli-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/cli",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.01
+    },
+    "cli-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/cli",
+        "-C",
+        "Release",
+        "--parallel",
+        "120",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/cli-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.129
+    },
+    "comet-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/comet",
+        "--config",
+        "Release",
+        "--parallel",
+        "40"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 7.859
+    },
+    "comet-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/comet",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/comet",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.916
+    },
+    "comet-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/comet",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.009
+    },
+    "comet-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/comet",
+        "-C",
+        "Release",
+        "--parallel",
+        "40",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/comet-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.164
+    },
+    "database-suitability-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/database-suitability",
+        "--config",
+        "Release",
+        "--parallel",
+        "40"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 10.773
+    },
+    "database-suitability-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/database-suitability",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/database-suitability",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.848
+    },
+    "database-suitability-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/database-suitability",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.009
+    },
+    "database-suitability-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/database-suitability",
+        "-C",
+        "Release",
+        "--parallel",
+        "40",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/database-suitability-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.395
+    },
+    "desktop-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/desktop",
+        "--config",
+        "Release",
+        "--parallel",
+        "40"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 43.458
+    },
+    "desktop-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/desktop",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/desktop",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON",
+        "-DOPENMS_DESKTOP_INTERACTIVE_TESTS=OFF",
+        "-DOPENMS_DESKTOP_PIPELINE_TESTS=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 4.92
+    },
+    "desktop-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/desktop",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.034
+    },
+    "desktop-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/desktop",
+        "-C",
+        "Release",
+        "--parallel",
+        "40",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/desktop-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.718
+    },
+    "flash-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/flash",
+        "--config",
+        "Release",
+        "--parallel",
+        "40"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 10.979
+    },
+    "flash-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/flash",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/flash",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON",
+        "-DOPENMS4_REGRESSION_TESTS=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.326
+    },
+    "flash-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/flash",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.011
+    },
+    "flash-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/flash",
+        "-C",
+        "Release",
+        "--parallel",
+        "40",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/flash-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 62.507
+    },
+    "flashtnt-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/flashtnt",
+        "--config",
+        "Release",
+        "--parallel",
+        "120"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 7.208
+    },
+    "flashtnt-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/flashtnt",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/flashtnt",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.882
+    },
+    "flashtnt-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/flashtnt",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.009
+    },
+    "flashtnt-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/flashtnt",
+        "-C",
+        "Release",
+        "--parallel",
+        "120",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/flashtnt-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 10.098
+    },
+    "mascot-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/mascot",
+        "--config",
+        "Release",
+        "--parallel",
+        "40"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 4.88
+    },
+    "mascot-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/mascot",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/mascot",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.817
+    },
+    "mascot-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/mascot",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.009
+    },
+    "mascot-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/mascot",
+        "-C",
+        "Release",
+        "--parallel",
+        "40",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/mascot-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 1.748
+    },
+    "nase-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/nase",
+        "--config",
+        "Release",
+        "--parallel",
+        "40"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 13.698
+    },
+    "nase-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/nase",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/nase",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON",
+        "-DOPENMS4_REGRESSION_TESTS=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.031
+    },
+    "nase-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/nase",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.009
+    },
+    "nase-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/nase",
+        "-C",
+        "Release",
+        "--parallel",
+        "40",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/nase-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.103
+    },
+    "nuxl-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/nuxl",
+        "--config",
+        "Release",
+        "--parallel",
+        "40"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 20.691
+    },
+    "nuxl-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/nuxl",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/nuxl",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON",
+        "-DOPENMS4_REGRESSION_TESTS=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.991
+    },
+    "nuxl-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/nuxl",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.011
+    },
+    "nuxl-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/nuxl",
+        "-C",
+        "Release",
+        "--parallel",
+        "40",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/nuxl-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.257
+    },
+    "openswath-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/openswath",
+        "--config",
+        "Release",
+        "--parallel",
+        "40"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 11.635
+    },
+    "openswath-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/openswath",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/openswath",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON",
+        "-DOPENMS4_REGRESSION_TESTS=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.921
+    },
+    "openswath-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/openswath",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.017
+    },
+    "openswath-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/openswath",
+        "-C",
+        "Release",
+        "--parallel",
+        "40",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/openswath-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.187
+    },
+    "parquet-diff-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/parquet-diff",
+        "--config",
+        "Release",
+        "--parallel",
+        "40"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 6.464
+    },
+    "parquet-diff-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/parquet-diff",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/parquet-diff",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.893
+    },
+    "parquet-diff-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/parquet-diff",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.007
+    },
+    "parquet-diff-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/parquet-diff",
+        "-C",
+        "Release",
+        "--parallel",
+        "40",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/parquet-diff-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.113
+    },
+    "prose-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/prose",
+        "--config",
+        "Release",
+        "--parallel",
+        "40"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 19.123
+    },
+    "prose-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/prose",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/prose",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.051
+    },
+    "prose-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/prose",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.01
+    },
+    "prose-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/prose",
+        "-C",
+        "Release",
+        "--parallel",
+        "40",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/prose-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 6.255
+    },
+    "proteomics-lfq-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/proteomics-lfq",
+        "--config",
+        "Release",
+        "--parallel",
+        "40"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 13.021
+    },
+    "proteomics-lfq-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/proteomics-lfq",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/proteomics-lfq",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.827
+    },
+    "proteomics-lfq-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/proteomics-lfq",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.008
+    },
+    "proteomics-lfq-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/proteomics-lfq",
+        "-C",
+        "Release",
+        "--parallel",
+        "40",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/proteomics-lfq-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.119
+    },
+    "pyopenms-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/pyopenms",
+        "--config",
+        "Release",
+        "--parallel",
+        "120"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 67.27
+    },
+    "pyopenms-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/pyopenms",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/pyopenms",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON",
+        "-DPYOPENMS_BUILD_TESTING=ON",
+        "-DPYOPENMS_GENERATE_STUBS=ON",
+        "-DPython_EXECUTABLE=/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/python",
+        "-DCMAKE_INSTALL_RPATH=$ORIGIN/../lib"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.278
+    },
+    "pyopenms-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/pyopenms",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.101
+    },
+    "pyopenms-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/pyopenms",
+        "-C",
+        "Release",
+        "--parallel",
+        "120",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/pyopenms-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 10.816
+    },
+    "regressions-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk/share/openms4-test-data/1.0.0",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/regressions",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DOPENMS4_REGRESSION_TESTS=ON",
+        "-DOPENMS4_TOOLS_BIN=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk/bin",
+        "-DOPENMS4_TOOL_NAMES=AccurateMassSearch;AssayGeneratorMetabo;AssayGeneratorMetaboSirius;BaselineFilter;CVInspector;ClusterMassTraces;ClusterMassTracesByPrecursor;CometAdapter;ConsensusID;ConsensusMapNormalizer;DTAExtractor;DatabaseFilter;DatabaseSuitability;DeMeanderize;Decharger;DecoyDatabase;Digestor;DigestorMotif;EICExtractor;Epifany;ExternalCalibration;FLASHDeconv;FLASHTnT;FalseDiscoveryRate;FeatureFinderCentroided;FeatureFinderIdentification;FeatureFinderLFQ;FeatureFinderMetabo;FeatureFinderMetaboIdent;FeatureFinderMultiplex;FeatureLinkerLabeled;FeatureLinkerUnlabeled;FeatureLinkerUnlabeledKD;FeatureLinkerUnlabeledQT;FileConverter;FileFilter;FileInfo;FileMerger;FuzzyDiff;GNPSExport;HighResPrecursorMassCorrector;IDConflictResolver;IDDecoyProbability;IDExtractor;IDFileConverter;IDFilter;IDMapper;IDMerger;IDPosteriorErrorProbability;IDRTCalibration;IDRipper;IDScoreSwitcher;IDSplitter;INIUpdater;InternalCalibration;IonMobilityBinning;IsobaricAnalyzer;IsobaricWorkflow;JSONExporter;LuciphorAdapter;MRMMapper;MRMPairFinder;MRMTransitionGroupPicker;MSFraggerAdapter;MSGFPlusAdapter;MSstatsConverter;MaRaClusterAdapter;MapAlignerIdentification;MapAlignerPoseClustering;MapAlignerTreeGuided;MapNormalizer;MapRTTransformer;MapStatistics;MascotAdapterOnline;MassCalculator;MassTraceExtractor;MetaProSIP;MetaboliteAdductDecharger;MetaboliteSpectralMatcher;MultiplexResolver;MzMLSplitter;MzTabExporter;NoiseFilterGaussian;NoiseFilterSGolay;NovorAdapter;NucleicAcidSearchEngine;OpenMSDatabasesInfo;OpenMSInfo;OpenNuXL;OpenPepXL;OpenSwathAnalyzer;OpenSwathAssayGenerator;OpenSwathChromatogramExtractor;OpenSwathConfidenceScoring;OpenSwathDIAPreScoring;OpenSwathDecoyGenerator;OpenSwathExport;OpenSwathFeatureXMLToTSV;OpenSwathFileSplitter;OpenSwathInfer;OpenSwathMzMLFileCacher;OpenSwathPeakMapExtractor;OpenSwathPercolatorScoring;OpenSwathRTNormalizer;OpenSwathRewriteToFeatureXML;OpenSwathWorkflow;PSMFeatureExtractor;ParquetConverter;ParquetDiff;PeakPickerHiRes;PeakPickerIM;PeakPickerIterative;PeptideIndexer;PercolatorAdapter;PhosphoScoring;ProSE;ProteinInference;ProteinQuantifier;ProteomicsLFQ;QCCalculator;QCEmbedder;QCExporter;QCExtractor;QCImporter;QCMerger;QCShrinker;QualityControl;RNADigestor;RNAMassCalculator;RNPxlXICFilter;Resampler;SageAdapter;SeedListGenerator;SemanticValidator;SequenceCoverageCalculator;SimpleSearchEngine;SiriusExport;SpectraFilterNLargest;SpectraFilterNormalizer;SpectraFilterThresholdMower;SpectraFilterWindowMower;SpectraMerger;SpectraSTSearchAdapter;StaticModification;TICCalculator;TargetedFileConverter;TextExporter;TransitionListEvidenceFilter;UniPEFF;XFDR;XMLValidator",
+        "-DWITH_GUI=OFF",
+        "-DHAS_XSERVER=OFF"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 2.279
+    },
+    "regressions-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/regressions",
+        "-C",
+        "Release",
+        "--parallel",
+        "240",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/regressions-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 10.679
+    },
+    "test-data-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/test-data",
+        "--config",
+        "Release",
+        "--parallel",
+        "120"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.03
+    },
+    "test-data-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/test-data",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/test-data",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.872
+    },
+    "test-data-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/test-data",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.602
+    },
+    "topp-build": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--build",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/topp",
+        "--config",
+        "Release",
+        "--parallel",
+        "40"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 22.073
+    },
+    "topp-configure": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "-S",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/topp",
+        "-B",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/topp",
+        "-DCMAKE_BUILD_TYPE=Release",
+        "-DCMAKE_INSTALL_PREFIX=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk",
+        "-DCMAKE_PREFIX_PATH=/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/sdk;/scratch/kohlbach/openms4-5d1e239-20260910/deps",
+        "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+        "-G",
+        "Ninja",
+        "-DBUILD_TESTING=ON",
+        "-DOPENMS4_REGRESSION_TESTS=ON"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 3.109
+    },
+    "topp-install": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/cmake",
+        "--install",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/topp",
+        "--config",
+        "Release"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.06
+    },
+    "topp-tests": {
+      "command": [
+        "/scratch/kohlbach/openms4-5d1e239-20260910/deps/bin/ctest",
+        "--test-dir",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/build/topp",
+        "-C",
+        "Release",
+        "--parallel",
+        "40",
+        "--output-on-failure",
+        "--no-tests=error",
+        "--output-junit",
+        "/scratch/kohlbach/openms4-resume-final-39ff564483bf/work/results/topp-tests.xml"
+      ],
+      "returncode": 0,
+      "elapsed_seconds": 0.749
+    }
+  },
+  "native_packages_built": 16,
+  "installed_console_tools": 151,
+  "test_suites": {
+    "cli-tests": {
+      "registered": 9,
+      "passed": 9,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 0.129
+    },
+    "comet-tests": {
+      "registered": 3,
+      "passed": 3,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 0.164
+    },
+    "database-suitability-tests": {
+      "registered": 4,
+      "passed": 4,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 0.395
+    },
+    "desktop-tests": {
+      "registered": 11,
+      "passed": 11,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 0.718
+    },
+    "flash-tests": {
+      "registered": 9,
+      "passed": 9,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 62.507
+    },
+    "flashtnt-tests": {
+      "registered": 4,
+      "passed": 4,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 10.098
+    },
+    "mascot-tests": {
+      "registered": 4,
+      "passed": 4,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 1.748
+    },
+    "nase-tests": {
+      "registered": 2,
+      "passed": 2,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 0.103
+    },
+    "nuxl-tests": {
+      "registered": 14,
+      "passed": 14,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 0.257
+    },
+    "openswath-tests": {
+      "registered": 38,
+      "passed": 38,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 0.187
+    },
+    "parquet-diff-tests": {
+      "registered": 3,
+      "passed": 3,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 0.113
+    },
+    "prose-tests": {
+      "registered": 3,
+      "passed": 3,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 6.255
+    },
+    "proteomics-lfq-tests": {
+      "registered": 3,
+      "passed": 3,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 0.119
+    },
+    "pyopenms-tests": {
+      "registered": 4,
+      "passed": 4,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 10.816
+    },
+    "regressions-tests": {
+      "registered": 2044,
+      "passed": 2039,
+      "skipped": [
+        "TOPP_MSGFPlusAdapter_missing",
+        "TOPP_SageAdapter_missing",
+        "TOPP_CometAdapter_missing",
+        "TOPP_CometAdapter_failing",
+        "TOPP_MSFraggerAdapter_missing"
+      ],
+      "failed": [],
+      "wall_seconds": 10.679
+    },
+    "topp-tests": {
+      "registered": 242,
+      "passed": 242,
+      "skipped": [],
+      "failed": [],
+      "wall_seconds": 0.749
+    }
+  },
+  "build_warnings": {
+    "cli-build": [
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/cli/source/APPLICATIONS/ToolHandler.cpp:54:51: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]"
+    ],
+    "comet-build": [],
+    "database-suitability-build": [
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/database-suitability/tests/source/DBSuitabilityFakeAdapter.cpp:36:48: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]",
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/database-suitability/tests/source/DBSuitabilityFakeAdapter.cpp:56:50: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]",
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/database-suitability/tests/source/DBSuitabilityProcess_test.cpp:52:48: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]",
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/database-suitability/tests/source/DBSuitabilityProcess_test.cpp:60:45: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = char [113]; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]",
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/database-suitability/tests/source/DBSuitabilityProcess_test.cpp:61:60: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]",
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/database-suitability/tests/source/DBSuitabilityProcess_test.cpp:91:49: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]",
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/database-suitability/tests/source/DBSuitabilityProcess_test.cpp:98:50: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]",
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/database-suitability/tests/source/DBSuitabilityProcess_test.cpp:117:49: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]"
+    ],
+    "desktop-build": [],
+    "flash-build": [],
+    "flashtnt-build": [],
+    "mascot-build": [],
+    "nase-build": [],
+    "nuxl-build": [
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/nuxl/source/NuXLPresets.cpp:31:61: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]",
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/nuxl/source/NuXLPresets.cpp:44:36: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]",
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/nuxl/source/NuXLPresets.cpp:71:53: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]",
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/nuxl/source/NuXLPresets.cpp:122:53: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]",
+      "/scratch/kohlbach/openms4-resume-final-39ff564483bf/source/packages/nuxl/source/NuXLPresets.cpp:136:65: warning: 'std::filesystem::__cxx11::path std::filesystem::__cxx11::u8path(const _Source&) [with _Source = std::__cxx11::basic_string<char>; _Require = path; _CharT = char]' is deprecated: use 'path((const char8_t*)&*source)' instead [-Wdeprecated-declarations]"
+    ],
+    "openswath-build": [],
+    "parquet-diff-build": [],
+    "prose-build": [],
+    "proteomics-lfq-build": [],
+    "pyopenms-build": [
+      "  - warning: rule 'pyopenms\\\\.ElementDB$' did not match any elements.",
+      "  - warning: rule 'pyopenms\\\\.ModificationsDB$' did not match any elements.",
+      "  - warning: rule 'pyopenms\\\\.ResidueDB$' did not match any elements.",
+      "  - warning: rule 'pyopenms\\\\.ProteaseDB$' did not match any elements.",
+      "  - warning: rule 'pyopenms\\\\.RNaseDB$' did not match any elements.",
+      "  - warning: rule 'pyopenms\\\\.RibonucleotideDB$' did not match any elements."
+    ],
+    "test-data-build": [],
+    "topp-build": []
+  },
+  "receipt_sha256": {
+    "cli-build.json": "4a833f65b6fa97e30a8e5add13a9b2270058c3a4b8e6262895e9a67e2ce58c64",
+    "cli-build.log": "12f83b90020dba3220bbd1e3451c1869636c9607047515ae7d4a9271200aade8",
+    "cli-configure.json": "ad713f6fb6d5d68d9b2cf95ada2155611742dfce08d028b72305a24d9759254d",
+    "cli-configure.log": "8c1cba04c5a656dd1573a1449fb2334af23e7028a9cd608e682605959c887ef7",
+    "cli-install.json": "10b8a0d56020316f485744b94f4e0e67cb553c6bbb31db574684c65eb18f2e5b",
+    "cli-install.log": "56750e15b3578322e251383d3c56d1c9a1092b2a0a3f5b0452fcc32cb91b36d5",
+    "cli-tests.json": "e93f77de270166fbffc7b425a6c46ba3974ca1343187cb1a70a21b5caed7acdc",
+    "cli-tests.log": "9e2ff3d53730f331f5a574a50ee3db5e1c44e2cb4d59c1ade10ccf8ba1be404c",
+    "cli-tests.xml": "47eead0015469106317f927598ea217ed7b567e6e5d7cc53582e963e7e09173c",
+    "comet-build.json": "506dca6cf60cc5d9881721366ccdfda8f442977d3fdadee97d693816437f0511",
+    "comet-build.log": "e06156adab5475602e6172ab57ea56b477a2019fcb497e1e2e63a38ac1d3c026",
+    "comet-configure.json": "2ab08bf6d7dfbc811a92917d7d64cc76dde77c42407c6a85adb090c38a3c70da",
+    "comet-configure.log": "7877be6d0cc3e6edfe1ae48a01461078e82a2b58670b42c243fcde085c93e416",
+    "comet-install.json": "04583d070a3beec92a639f21c391c40befdc978bd018d269a3e72faca355731c",
+    "comet-install.log": "d50b4f8da9a1c7925670a564b1c6b273fee8e1034220ce2dbf9d576e01681ae3",
+    "comet-tests.json": "5dd8ee1d40226a1d3e6b580b2a40feb14a0c5d6f3429e5ddbcabfdb8cb676405",
+    "comet-tests.log": "41eeca28e46d3fdee59d16fa2bb2a2d77038248fd44106725cee9736b21dfdd1",
+    "comet-tests.xml": "30dfae963d69efcfb3b9c32fa71bd9d67ce32d4e806643eea335e6b31ce06679",
+    "database-suitability-build.json": "9c241ce0670713449e10d8d412159621df67f137ecf35351949a021049febd56",
+    "database-suitability-build.log": "ea5d7f31228fd6283f5eaf04f3b004fd80ae55af8b8ac22c31d6567066eab6a2",
+    "database-suitability-configure.json": "2964c53273c8364faf57dd96e3c0340ae9e2e091b61d254c5e3559ae60ccda1a",
+    "database-suitability-configure.log": "f607ab9df955f31957a3ab016a8429c3bbb4be274202365f26dc5eec6111ecb5",
+    "database-suitability-install.json": "3c8177249d31781cd604f5d917961ecee59715c96ff80449c944b0901bbb25f1",
+    "database-suitability-install.log": "3e7b334a0722a347cf954c351f218099cda58d0aa0778e1081fa38bcb9673f46",
+    "database-suitability-tests.json": "db915ac3c3ee8a675f25401e103695edb2d20918fb33906fabc8059b5890f991",
+    "database-suitability-tests.log": "d34529fd0189c0aaf1733526ddc7233a42cb409c889e0cc6a61fb78203b9c980",
+    "database-suitability-tests.xml": "c9acb6e1bc8400d7ccda43fe8ab0125b70e4c34fb2cebfc9f10e4b6e76dbee89",
+    "desktop-build.json": "781d4ade8722ce810d5381b08f0b6b62e85474446f7a80674cb119804f3c9680",
+    "desktop-build.log": "5f03724cd4017461ecdff1253bb25596650d3bd3b3288b3d888a50c481e53844",
+    "desktop-configure.json": "f6125d0c7d6b81282fe1a27d555d096bcd96c872741943a4325a275ef4508a3d",
+    "desktop-configure.log": "d0350b63f50b5810343ab252747be83fd2f8c384df618f3c9fd2e2f37bf49924",
+    "desktop-install.json": "6a592f7c69f8d8022b4ff3284ab958971a6bce0f8e1da72d3550c938286acd4b",
+    "desktop-install.log": "dc3884e21b9594b5c25daea3030fb229417f2401bc75e105be2f35833261f813",
+    "desktop-tests.json": "73428ef5baf9b998342eb7326ee04f6fdd7270f789c22a28d833231978bfb58b",
+    "desktop-tests.log": "d7ce8d32d43b3caf0581532ec47ae8c8474a29ef7cb99beb55b113043a0b4a27",
+    "desktop-tests.xml": "1de2245289396ca6b5a683dc95281dd89c11889cec193539c3683250af6d01d8",
+    "flash-build.json": "14e55f31a2ae60d6fff669c8ab8bc3d5de4d816f5e044bb45dddd26148449d73",
+    "flash-build.log": "8b60e206dae337cd68f37827aaf381a04a3bc0644e427a9d71c1f4f39ab4bdec",
+    "flash-configure.json": "56027f9ae52dc764a1e385768332d929a77d337f347b06b36efe71bf04a9abb9",
+    "flash-configure.log": "098ddcdc7fa9654c2be5fe40911ea57b15e636b5f05a2056a048450a3b7dc94a",
+    "flash-install.json": "2b2f094df0a7be91edf392d40f45bd305380bf0fe889d1734421ee2e302a7b95",
+    "flash-install.log": "9ee3c700f3625edf23237fa02aceb15e0f4d6fd6b138a03cf919873cc46c4a1e",
+    "flash-tests.json": "71d2168565690213a10b56259ac86f11f5b11fb3d842ff765664e4364a50c402",
+    "flash-tests.log": "97d13bdeae53a21b80ea4ccc877e9c794d0c52ceceffef1823e4476ebca608ec",
+    "flash-tests.xml": "e21697cc22c759e77e3a54ad8ba36f12d93afb48691c80c975d2ccd15b8ae72a",
+    "flashtnt-build.json": "e1661dbb1a0d34e8ebca2823cf6b52e54276bb76a8fd9d219fe78c35ed47aaf0",
+    "flashtnt-build.log": "2a73fa2a30ea9a1223a92db2d89471059aa9903e972235b89a9aaa04ee18d397",
+    "flashtnt-configure.json": "e918f2b27b4a2d48b7ddf814c48b85ba4d6a6c8e90bcd8f92bc263d267e652d8",
+    "flashtnt-configure.log": "af2d30a601f1c0f25fa6ad1b383a2e36ed43c45a9e580d6fde912babf04fb344",
+    "flashtnt-install.json": "b615f5b588f0ed35f4ce4a5a8b482a7dc77448618507f3d3694c3cbfcd98c664",
+    "flashtnt-install.log": "191c602a89fe47ed64e1326287fc785f0df15f4c0162e2e7013f1ec679ea91dc",
+    "flashtnt-tests.json": "41b378de378a1baef7d3c4db7e80f1f0cb9400ad4bd8cf356fbbe1b9611f1177",
+    "flashtnt-tests.log": "4425bb2c3875dc6f8e0566bc1b441b4f646f73b701cc6ea35a6a97fd5bc0861c",
+    "flashtnt-tests.xml": "49c94891d1cf41027cd211e34bb43affb0db4841fd5593179e64a281c5d46b15",
+    "mascot-build.json": "d8824d146b4aaf6e8e3cc4b88ec3840489dfa4bdf47c049b56aec4e20902c420",
+    "mascot-build.log": "ba6aa5ee8e8fccf15d56136fcb942ab7ca5bf4fdb98cfeb18d4d7816c891d1c0",
+    "mascot-configure.json": "a622f59e330d564134ecbfdecf416cefbc3af33430e8a21a829e7a26bcc7a7dd",
+    "mascot-configure.log": "36f16a5a074521868acf670d0823e1ccf5477dd56fcd28fb2bac23916357bd21",
+    "mascot-install.json": "11cd4f9a49c24026ad924e46b09e21c8b5cf0d9cecef13a7a1dcd1b011a5bcb1",
+    "mascot-install.log": "aa418263df918839ffa6857d3c56e70b7193def81aeb4b1e211c9b39188477c5",
+    "mascot-tests.json": "4c5f1c4d2537c923149c4f4c6a84a090a0fdc289a24c0c71a16b89264f63a2cb",
+    "mascot-tests.log": "611e546f758ea24ebefa3b46ecba7c815a5c1560d3ed59bb9467ff5f0fde5dfb",
+    "mascot-tests.xml": "d53d30aa70129ad61cb1f95aa5e5e62b375546b7306e6196fb86e4ea3a187dd6",
+    "nase-build.json": "10852415321615b7fb5ffc84f61242f6e4dc11e2dbff0867fb19d7e7953fef96",
+    "nase-build.log": "053d56975cb484cfb1fc676f9cf6cda3d05da4b3af484236e61d4ca843a7ba6e",
+    "nase-configure.json": "039043fb3d1daad4b9b081ea15590b6ea5e52aec3df8708a453385ced4c41c1e",
+    "nase-configure.log": "368d1868ce28d28c93bc18855afff09181be9b2934125e24906dfc672bb69e3c",
+    "nase-install.json": "b148349e93789780ed927b15b9725582d9d543bcc6ec0998f01dc537940ff357",
+    "nase-install.log": "e12f158efff4eceb22b4ea4ba9942d3c33fc632d4365af3ff61c104ea7ace356",
+    "nase-tests.json": "784f00b8f21bb6c08ba3ee18208fbcb1c8a018bd84a4a7f553f301327ed0ef05",
+    "nase-tests.log": "4d050c00073a73b128d68d1b5c622fe548ab0b56545a50aa7b9acfdd43832b41",
+    "nase-tests.xml": "989a3dca2075ca127f5f2f15127a76d2da1590038f18b2b690630b63fc87bb75",
+    "nuxl-build.json": "1f2bc7f181c6906aa2a1be36854731339a36949bc4d7afc76a400a8d3b89b84a",
+    "nuxl-build.log": "68361b18cf789eb81b111601cb172535fb50ee2314375f4cde2fbb33b3ce9e20",
+    "nuxl-configure.json": "67582df562ddb419914241b7295ef4bd8a227b9ff5b692ae770b7c95b2625b37",
+    "nuxl-configure.log": "3f8cc3ace3c2e433548a1c8a49270ddfb3eb4d2d37c1d0ab9801e8654d0bbec6",
+    "nuxl-install.json": "4e20856365bf5c44c60e91c41e1724b1313dcfa631d7c77838f667f467eaeacf",
+    "nuxl-install.log": "c6469cbd327bb88cba17499000b6bf4191944807eba3f7d0c813067230389708",
+    "nuxl-tests.json": "7523e138b9187ad7cb369baf144fce36ee1caa65fb11f0969b76a2eadfe3672c",
+    "nuxl-tests.log": "e4e296adf265a215068cc295f45482d94d1d4b898c540adf004b29f6e1e48e3a",
+    "nuxl-tests.xml": "61529cf2805dc344ed1f94e770c76c223a3927cda75c172fe711d7173e19dec3",
+    "openswath-build.json": "5c913d45c1f32bfb5ab29fbe79594f3b8dc6b9acf41206ad5f7615e5987c6439",
+    "openswath-build.log": "d42ab28a8df3b0a01d2370ecd519ffb8ac68963447f49fb7a92c6f258a11bbd3",
+    "openswath-configure.json": "98ba1594cf097110232b84eb7bcdaefe8486b14fba4c6df94d0006ca804b0bab",
+    "openswath-configure.log": "e6fdc18f7d0d85435b4c65ddc652ce4d24576ae045549ef96d6ea78ffda25c06",
+    "openswath-install.json": "eb51959698eff217ab2314e5efafe6fac77cc4ae3c800ba7befab33e7f9e1b11",
+    "openswath-install.log": "fe9612fabbd94d0040614371a60b0d03d7b1eb386636f8d7c721bce29e84fb20",
+    "openswath-tests.json": "b3dd4f66d3863b9841a487e3fc11e7dad7a641cf2ae91fa0f6091cb93f25a834",
+    "openswath-tests.log": "30b941cfe0df4ede3737aa978c6fcc76126fad826dadcea4fc932720d6646ef7",
+    "openswath-tests.xml": "4a77640caaed1249d286909de62d184d6a13b06d04e6f23d1e2906f6963eb68d",
+    "packages.json": "1df4ee76633ca398f031a6963be98a2545103567513c784065e6a43323af9a1f",
+    "parquet-diff-build.json": "ad9caafa8e57c6597987da73131a5a746c386b713c4356a7fb5d152f0970fa0b",
+    "parquet-diff-build.log": "bbb7f3678eb0f60397cadbbe2087a6be326a66b3ca9ca361eeeccc46d98d1cdd",
+    "parquet-diff-configure.json": "17135529d9250b5645789f9821dcec1e508b3179cb0c04adcdfc5a82fe8a1034",
+    "parquet-diff-configure.log": "4ff418896ed7f2e3612974823db3ccdf42f8b0305ada1c8c64771c2acaf74bdb",
+    "parquet-diff-install.json": "b72eef530448ccfc4bc0af5bc5e368d3e1f660f8c0ba0d96baf5fa3b505da158",
+    "parquet-diff-install.log": "ccec52151049ca1b3dc91c3cb6aef39b0cfb704db38bc8acc5ebc1b725345c9b",
+    "parquet-diff-tests.json": "7e0c49708a36efdf40a9537a318c8c77e17928a073de57d3001d56951fda7a98",
+    "parquet-diff-tests.log": "806095baa56f9696f8b61aba477eadda93553975f87176368a543b05bcfab92b",
+    "parquet-diff-tests.xml": "797724646ad3d31bd9b87a9bfde2da5e3eb2e1487cc642013b52fa0eb6628c0a",
+    "prose-build.json": "fca3d4533d2d42fd46a2206398d7b046644d13cd76a3233476c0b8d9ef413de8",
+    "prose-build.log": "041295939cb82c35fb3bcd164a61e16932a2a10ae59679412477e5b10c820bd3",
+    "prose-configure.json": "012dfaeaee52b8c5e74e1629b9353f7f7eb34d117eb3120974ceffee12243eeb",
+    "prose-configure.log": "db03c5560d30352d12c74a3fb06e25d69db801bee86d745940b4b28a4b55dada",
+    "prose-install.json": "e3c70f91c3f420798d000a5b283bd4b01db610338797202a4f5d34d483513134",
+    "prose-install.log": "dcba54903e8e9e6e939d374e6711455f3326c26783bee66204c763b82a4dd505",
+    "prose-tests.json": "a6f6de333cce8ea1df536e8cded96b916efb3e6e8bb0fdeae84746f21cc14f57",
+    "prose-tests.log": "b3a3392acbe9a4db6b67d13f42b1a66515ac2fefbf8167d2a9d218a8c389846f",
+    "prose-tests.xml": "5a4006df1d5a6bb23ad76ff345a97dcc7934cf77bd591af75fed5f4f413e207a",
+    "proteomics-lfq-build.json": "7b74de7db8507b0124fdb5d5522796eb379d65ce2071ef0878785882bbed8f4e",
+    "proteomics-lfq-build.log": "db4f93809ac42a362d18c55ced37ea8d7fa2e74bc8f353b79a15a9053a05f80b",
+    "proteomics-lfq-configure.json": "570dd9c13c92a0b245dd8da0eee938d757a60fa3343a15fadcc17389d0a4bebc",
+    "proteomics-lfq-configure.log": "04b2e39e7fb03f1fa756586dc54d6871c7debc3e96dab88b73156d11e97ca6a1",
+    "proteomics-lfq-install.json": "1ddd54c1e7e68c3c130e5eebd5af4ec9e41b500e6f2efbae48a58c6f997e8fe7",
+    "proteomics-lfq-install.log": "1e80c080849b4cbac845251970af9e4b370b511802d0b7327c86f8016adea652",
+    "proteomics-lfq-tests.json": "77ebb96ff5b39410d35d62804c24c6bf426ea6d0faed028ce8f9e5f42ebaebf8",
+    "proteomics-lfq-tests.log": "6b6c9b841e0afdd152ac71bbb3daeeb9166b76f41849b5da836ad5dd7dcdb8bf",
+    "proteomics-lfq-tests.xml": "ca0221d36a8dd767f918969c51cd227eae3c2f225ace9abfb6d9ba2ccecfe993",
+    "pyopenms-build.json": "c53c6d11a67e08c68f9c844f0357798c3a93680557aee51c047ec75666edffb4",
+    "pyopenms-build.log": "53be11a6b71342d7dc759da3f3dbee0e29579f132b10cd75b927fb3b3f4ea4c6",
+    "pyopenms-configure.json": "96bad1080338f9dadd3acb0a00bc7ebeb04b849c0e6bf54210069692470f02c3",
+    "pyopenms-configure.log": "a1abd7c8dbd34a1139ab2f69b4008102e60b4505079dc01f3216c2ff495f332b",
+    "pyopenms-install.json": "da77fde465826c196d218c2cc4631ef6215fb87e8f094b001e2e9b6628c634f2",
+    "pyopenms-install.log": "6ca484c071e93ff056b5b5ed11bdbce9986db09aa95199197339c043545d36ff",
+    "pyopenms-tests.json": "c61e63583e0530ed361e63f9957f8c27bc6b6afb973721c6e685d7a7ed607fcd",
+    "pyopenms-tests.log": "5494844387c5de1881bdc46dab5411437f491fc36244987b54f15e56f25ea6ac",
+    "pyopenms-tests.xml": "7c43093ae7cc89e59e49425499b46143c2af35fc4346ced951e5241d17f9a218",
+    "regressions-configure.json": "ed9937aaefcd862da02415331a6afeaa9bbc9fbf54d7b8850c0a98a5e9ed9212",
+    "regressions-configure.log": "968943d0fa989e0e216dad11b8cf1dd7c4c521d8b1aae0e63afd28530f5ab114",
+    "regressions-tests.json": "2d8502362fe45dfa87b81a1e281767d12ecaaf8836126f486efa9270a06e94aa",
+    "regressions-tests.log": "9b35038d94a07de50e82327661749c840ae1179e61c109a3a5eda3d67f6cb7a9",
+    "regressions-tests.xml": "4381fc8186d9f1942858b5467fedb257fd362c79d78752ec78ca1de882d14786",
+    "test-data-build.json": "74db68b61775391c253fb1383e2ae1220dcb7202ce016d23cca79affdb46672d",
+    "test-data-build.log": "488bbf55e79ea53112837bf9a056351fd6f2821af4c97af8e7e128c598b8de7a",
+    "test-data-configure.json": "2de603be39bb97581955cb3d21e2af0483a90142fd30b878574addb48f9cd5ff",
+    "test-data-configure.log": "ca9cfa995739fb5bcd511d0789f67b645fbb7ab4348085ca1b8a82308290fa0b",
+    "test-data-install.json": "95243c47f12de9c5b27ccf08c4d4364363968fde606405f7350e853f9c08a12a",
+    "test-data-install.log": "b5cf833ebf13c271b0ae7aaab0aecbbe95f2f9b8414d3fe50161751ef33c0742",
+    "topp-build.json": "6c77a13ed42add4897f2e0d919cfcbe5e96e9acc4e46f3d8eba0e919487a6b14",
+    "topp-build.log": "5b9176f559cfe37c97598a24b19b22c8dcae5e132f10d50d200015c1c20d3956",
+    "topp-configure.json": "0600eea5022a918b360c6d7940d4dd741e3623111e2ce9a3074b3609ccc8f11a",
+    "topp-configure.log": "78d5bf65b1b6c2d29803b09f8872fb2874ab333ff7db99649e6765009aa79b3f",
+    "topp-install.json": "78d72d1e8d1cfd9a6936c9e80b5f0835b7bd15aaeddec625caeb618670cc3b53",
+    "topp-install.log": "a0dc94ee7569a47add31fc93698905f07fe70a83599dca31bf1054c492d1a236",
+    "topp-tests.json": "1cff205562eb5958c91fe61ecb5dcce9a027e00ba9e7e91ce489041d7aa74f03",
+    "topp-tests.log": "7b84966e391e8f3e79aef23fd90744fc05961e8add2f301aad73b4319aeba4f4",
+    "topp-tests.xml": "0a52d40d92a40f05ddde281b752dd6b8aff197527c524fc9cec929dd60687c19"
+  },
+  "limits": [
+    "Core SDK reused, not rebuilt or retested.",
+    "Package CTests overlap installed regressions; counts are not unique totals.",
+    "Optional external search engines, interactive desktop, and full app container are outside this native graph run.",
+    "Only selected released Core/CLI/TOPP pins were qualified; newer branch-tip changes require a new release cycle."
+  ]
+}

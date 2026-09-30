@@ -1,3 +1,12 @@
+OpenMS 4 package experiment (2026-09-10)
+======================================
+
+- Extract nine private source packages coordinated by pinned Git submodules.
+- Separate the scientific core SDK, CLI framework, tool products, desktop entry points and Python package.
+- Export exact SDK/source identities and compiler-free fixture metadata; add tool manifests and versioned runtime discovery.
+- Preserve the full numerical suite and record three independent CLI reviews, the synthesized plan and source/configuration validation.
+- Native compilation, numerical acceptance and release packaging remain pending.
+
 
 Glossary:
 OpenMS - Name of the project and our C++ library

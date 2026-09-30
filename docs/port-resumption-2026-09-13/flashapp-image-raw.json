@@ -1,0 +1,147 @@
+{
+  "tags": 698,
+  "proteins": 10,
+  "prsms": 10,
+  "aqpz_tags": 114,
+  "top_accession": "AQPZ",
+  "top_score": 559.0,
+  "reference_comparison": {
+    "tags.tsv_rows": {
+      "actual": 698,
+      "reference": 2968,
+      "match": false
+    },
+    "protein.tsv_rows": {
+      "actual": 10,
+      "reference": 17,
+      "match": false
+    },
+    "prsms.tsv_rows": {
+      "actual": 10,
+      "reference": 17,
+      "match": false
+    },
+    "tag_sequence_counts": {
+      "match": false,
+      "extra_count": 0,
+      "missing_count": 2270
+    },
+    "best_Score": {
+      "actual": 559.0,
+      "reference": 505.0,
+      "match": false
+    },
+    "best_PrecursorMass": {
+      "actual": -1.0,
+      "reference": -1.0,
+      "match": true
+    },
+    "best_ProteoformMass": {
+      "actual": 24633.174543367222,
+      "reference": 24724.11885683967,
+      "match": false
+    },
+    "best_MatchingFragments": {
+      "actual": 79.0,
+      "reference": 69.0,
+      "match": false
+    },
+    "best_Coverage(%)": {
+      "actual": 32.9167,
+      "reference": 28.75,
+      "match": false
+    },
+    "best_StartPosition": {
+      "actual": 1.0,
+      "reference": 1.0,
+      "match": true
+    },
+    "best_EndPosition": {
+      "actual": 240.0,
+      "reference": 240.0,
+      "match": true
+    },
+    "best_matched_sequence": {
+      "actual": "MFRKLAAECFGTFWLVFGGCGSAVLAAGFPELGIGFAGVALAFGLTVLTMAFAVGHISGGHFNPAVTIGLWAGGRFPAKEVVGYVIAQVVGGIVAAALLYLIASGKTGFDAAASGFASNGYGEHSPGGYSMLSALVVELVLSAGFLLVIHGATDKFAPAGFAPIAIGLALTLIHLISIPVTNTSVNPARSTAVAIFQGGWALEQLWFFWVVPIVGGIIGGLIYRTLLEKRDASGENLYFQ",
+      "reference": "MFRKLAAECFGTFWLVFGGCGSAVLAAGFPELGIGFAGVALAFGLTVLTMAFAVGHISGGHFNPAVTIGLWAGGRFPAKEVVGYVIAQVVGGIVAAALLYLIASGKTGFDAAASGFASNGYGEHSPGGYSMLSALVVELVLSAGFLLVIHGATDKFAPAGFAPIAIGLALTLIHLISIPVTNTSVNPARSTAVAIFQGGWALEQLWFFWVVPIVGGIIGGLIYRTLLEKRDASGENLYFQ",
+      "match": true
+    }
+  },
+  "schema_changes": {
+    "tags.tsv": {
+      "renamed": {},
+      "added": []
+    },
+    "protein.tsv": {
+      "renamed": {},
+      "added": [
+        "PrSMIndices"
+      ]
+    },
+    "prsms.tsv": {
+      "renamed": {
+        "ProteoformIndex": "PrSMIndex"
+      },
+      "added": []
+    }
+  },
+  "positive_scientific_checks_passed": true,
+  "reference_fields_match": false,
+  "mode": "raw-workflow",
+  "wall_seconds": 12.957431754999561,
+  "executables": {
+    "FLASHTnT": "/opt/openms4/bin/FLASHTnT",
+    "FLASHDeconv": "/opt/openms4/bin/FLASHDeconv"
+  },
+  "binary_sha256": {
+    "FLASHTnT": "63af7d65edcef864cf627059aa537ccc33230f1830984028df796ad00d9c5c5a",
+    "FLASHDeconv": "acae63df8d7a2ca5ba188c00cff05ed83a0244fd87717c953ae8072218a6daf0"
+  },
+  "dependency_pins": {
+    "OpenMS": {
+      "version": "4.0.0",
+      "source_revision": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+      "repository": "https://github.com/okohlbacher/OpenMS4-core"
+    },
+    "OpenMSCLI": {
+      "version": "1.0.0",
+      "source_revision": "d5213ff3551a8608e4e3f930fd4a6f85a8c82f97",
+      "repository": "https://github.com/okohlbacher/OpenMS4-cli"
+    },
+    "OpenMSTOPP": {
+      "version": "1.0.0",
+      "source_revision": "c6e98a7782cc50083d555b6424b2c84f879195f6",
+      "repository": "https://github.com/okohlbacher/OpenMS4-topp"
+    },
+    "OpenMSFLASH": {
+      "version": "1.0.0",
+      "source_revision": "b2c6771de7746c43ad55558d17429a15087083fb",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flash"
+    },
+    "pyopenms": {
+      "version": "4.0.0.dev0",
+      "source_revision": "b7edae7a89d902727e0cd50ff488fefc60e011e0",
+      "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms"
+    },
+    "FLASHTnT": {
+      "version": "1.0.0",
+      "source_revision": "4ca4e73a975152f863084ddb8576d40f1241133a",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flashtnt"
+    }
+  },
+  "scientific_parameters": {
+    "FLASHDeconv": {
+      "SD:tol": "5\n5",
+      "SD:max_charge": 30
+    },
+    "FLASHTnT": {
+      "ion_type": "b\nc\ny\nz",
+      "tag:min_length": 4
+    }
+  },
+  "fixture_sha256": {
+    "database.fasta": "85fe7404e3d59da76d46d4a8611a0814f05df451a0d21e8bfdb96fcbd440bd2d",
+    "out_deconv.mzML": "5b0c0381ef5070ddab4eae39591cadca35895f069d6a8fe395cd6c7b245a8825",
+    "example_spectrum_aqpz.mzML": "548aad45408972f6e887382c8eb9592a4d4630366155b90400d4adddf8fc63e6"
+  }
+}

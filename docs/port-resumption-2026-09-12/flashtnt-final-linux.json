@@ -1,0 +1,65 @@
+{
+  "source_revision": "4ca4e73a975152f863084ddb8576d40f1241133a",
+  "source_clean": true,
+  "platform": "linux-x64",
+  "host": "IBMI dax",
+  "compiler": "GNU 14.4.0",
+  "driver_sha256": "6ec67fe41a3368d6194aac1bc19cad9bca1b684335a8e36912b6c082365cdf29",
+  "artifact": "OpenMS4-flashtnt-linux-x64-Release-4ca4e73a9751.tar.gz",
+  "artifact_sha256": "3ff887dbb0ff843e9964df2493027080575dc099141b37d462dd9c442601c008",
+  "driver": "tools/ci/run.py --platform linux-x64 --jobs 12",
+  "all_commands_succeeded": true,
+  "ordinary_ctest": {
+    "passed": 4,
+    "total": 4,
+    "elapsed_seconds": 10.146
+  },
+  "sanitizer_ctest": {
+    "passed": 4,
+    "total": 4,
+    "elapsed_seconds": 37.323,
+    "ASAN_OPTIONS": "detect_leaks=1:halt_on_error=1",
+    "UBSAN_OPTIONS": "halt_on_error=1:print_stacktrace=1"
+  },
+  "limits": [
+    "Only FLASHTnT and inline code were instrumented; released Core/CLI/FLASH providers were not rebuilt with sanitizers.",
+    "The small fixture and contract suite do not establish absence of all memory defects or scientific equivalence to the 2025 cache."
+  ],
+  "tables_sha256": {
+    "protein.tsv": "9af96028a2583e70a5a8c3e5b9500382a725860b2469e6a337412f2b0c3b6d26",
+    "prsms.tsv": "280640f6624d4d6631fd86317ad7b313485e3e1070b5fb2bc91c638d1506d923",
+    "tags.tsv": "6b49a1ae3405d30d88913c5123af1da75dec3f4f40bfb21f09bc78d3c315c62b"
+  },
+  "sanitizer_tables_sha256": {
+    "protein.tsv": "9af96028a2583e70a5a8c3e5b9500382a725860b2469e6a337412f2b0c3b6d26",
+    "prsms.tsv": "280640f6624d4d6631fd86317ad7b313485e3e1070b5fb2bc91c638d1506d923",
+    "tags.tsv": "6b49a1ae3405d30d88913c5123af1da75dec3f4f40bfb21f09bc78d3c315c62b"
+  },
+  "original_receipt_sha256": {
+    "aqpz/acceptance.json": "a16af0d86870114a803634a3bc75fcb6c6bd1c9169b8711bfa4cb4c81d486ace",
+    "aqpz/protein.tsv": "9af96028a2583e70a5a8c3e5b9500382a725860b2469e6a337412f2b0c3b6d26",
+    "aqpz/prsms.tsv": "280640f6624d4d6631fd86317ad7b313485e3e1070b5fb2bc91c638d1506d923",
+    "aqpz/run.log": "fd22f6336139f4576569358af890e80d14a9c710b5757480225d63e05197383f",
+    "aqpz/tags.tsv": "6b49a1ae3405d30d88913c5123af1da75dec3f4f40bfb21f09bc78d3c315c62b",
+    "aqpz-sanitizers/acceptance.json": "c88bdfc367bbbc3da714f657e232336aa1e43e9c834d8c2f7b3702c21d190fb4",
+    "aqpz-sanitizers/protein.tsv": "9af96028a2583e70a5a8c3e5b9500382a725860b2469e6a337412f2b0c3b6d26",
+    "aqpz-sanitizers/prsms.tsv": "280640f6624d4d6631fd86317ad7b313485e3e1070b5fb2bc91c638d1506d923",
+    "aqpz-sanitizers/run.log": "1481324f95d7e5edac79e0d0f33f32f2d262dace9cb191529e77e6d28d7e645e",
+    "aqpz-sanitizers/tags.tsv": "6b49a1ae3405d30d88913c5123af1da75dec3f4f40bfb21f09bc78d3c315c62b",
+    "build-cli.log": "37f5627432ccafb8a9d118e58dbdca86a819b2da689902a93edeceb12b1101e1",
+    "build-package.log": "fa428dce10461638e67101eb28df5d3edf26775eea75ca925848f2b682e81a3a",
+    "build-sanitizers.log": "c748b7a8573848ff6567f7a45ea6162f374429b051bb60187f048bb34169f919",
+    "commands.json": "32a51e9494d377faf718ce1764f415487976f62bb61920965a4b814ae6b5a633",
+    "configure-cli.log": "a1a29f2fde74cbd018ed5ab1a597efb8dcafcaa259c5cead2fb716d50ab4e7e9",
+    "configure-package.log": "64ba4f16d84f1318a27862e5381afe7bd23e0e0b19fbdcf0334c7ced72537c32",
+    "configure-sanitizers.log": "f547372bba8ebb6d5e3b985a682bdc1df760e42ad8581059a5c916dc5286acbf",
+    "driver-tests.log": "213316395fe4f1f57cc909ca316cfc04e487e17cf74755b924af40510f239ba9",
+    "install-cli.log": "79ef99f9273b4a6087fa7efd8cad5296ae1c5b366ab1b3ab8e032805bdf18da0",
+    "install-package.log": "519a4944a3f6daec9effa106326b307a6f8c76c0b19d262f2d5b77c46de0ae7c",
+    "installed-write-ini.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sanitizers.xml": "211f393fecf75637ce642bcf680e85ccf24d656f99d5cca11ecf3c21195d0e7b",
+    "test-package.log": "58001a9862cb043b6db586aa47ed63093fa6b904d9b8ef1460d36a025d5207f0",
+    "test-sanitizers.log": "edaf520e04bf5dc9918acf1561866dc5707c49c7af4db145d2e8dd79d23d7d5d"
+  },
+  "tables_equal_final_macos": true
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "import",
+    "seconds": 28.272344417000568,
+    "returncode": 0,
+    "command": [
+      "/tmp/pyopenms-ci2-isolated-venv/bin/python",
+      "-I",
+      "-c",
+      "import pathlib, sys, pyopenms; origin = pathlib.Path(pyopenms.__file__).resolve(); assert origin.is_relative_to(pathlib.Path(sys.prefix).resolve()), origin; assert pyopenms.__source_revision__ == \"52f8726850cc90b52fa21892de82963ae6b5ad72\"; assert pyopenms.__openms_core_revision__ == \"bc9cc12514c768385ce121d6ca4bb710fe1983c4\"; print(origin); print(pyopenms.__source_revision__); print(pyopenms.File.getOpenMSDataPath())"
+    ]
+  },
+  {
+    "name": "pytest",
+    "seconds": 41.97518449999916,
+    "returncode": 0,
+    "command": [
+      "/tmp/pyopenms-ci2-isolated-venv/bin/python",
+      "-I",
+      "-m",
+      "pytest",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/pyopenms/tests",
+      "--import-mode=importlib",
+      "-p",
+      "no:cacheprovider",
+      "-ra",
+      "--junitxml=/tmp/pyopenms-ci2-isolated-results/pytest.xml"
+    ]
+  }
+]

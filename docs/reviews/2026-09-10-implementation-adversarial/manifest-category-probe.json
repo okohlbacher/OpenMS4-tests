@@ -1,0 +1,7 @@
+{
+  "configure_exit": 0,
+  "omitted_metadata": "AssayGeneratorMetabo",
+  "previous_tool_row": "AccurateMassSearch\tMetabolite Identification\t1.0.0\tbin/AccurateMassSearch",
+  "emitted_row": "AssayGeneratorMetabo\tMetabolite Identification\t1.0.0\tbin/AssayGeneratorMetabo",
+  "scope": "Actual TOPP CMake with controlled mock SDK; no OpenMS build; CMake compiler probes may run"
+}

@@ -1,0 +1,42 @@
+{
+  "cli_version": "vibe 2.25.1",
+  "started_at": "2026-09-10T07:25:52.236812+00:00",
+  "active_model_alias": "mistral-4-large",
+  "resolved_model_config": [
+    {
+      "name": "mistral-large-4",
+      "alias": "mistral-4-large",
+      "provider": "mistral"
+    }
+  ],
+  "model_identity_note": "Configured provider request identity; the streaming protocol may not expose a separate server-resolved model build.",
+  "argv_without_prompt": [
+    "/Users/kohlbach/.local/bin/vibe",
+    "--agent",
+    "plan",
+    "--enabled-tools",
+    "read_file",
+    "--enabled-tools",
+    "grep",
+    "--output",
+    "streaming",
+    "--max-turns",
+    "150",
+    "--workdir",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+    "--trust",
+    "-p"
+  ],
+  "prompt_file": "vibe-effective-prompt.md",
+  "prompt_sha256": "a1e692aca643aef94a15426b4b6c8ed8d0e7b3f9140a08013062d70e9c95e133",
+  "common_prompt_sha256": "d8bc3011c1eec02ef6e5d9dad0b16ddb4bccf4a7f19956527e98e5f1b7f39eb3",
+  "parent_commit": "7fb0147c341912b36f13f2ce05ef53a192b8dfff",
+  "parent_status_before": "",
+  "package_gitlinks": "-306efdbd08266e70769a9221eccb94538cbd9954 THIRDPARTY\n a93fa142c0e51eec616e16cb91d41fa743a42ed3 packages/cli (heads/codex/package-split)\n 21b295c9ad889b402db1e3a20f13e8d08330b61b packages/core (heads/codex/package-split)\n af65c9cd393fb548323fbbb45f6a4bc14433b3a4 packages/desktop (heads/codex/package-split)\n 8125964c7c4559519c418d0fe077bbeed98c418f packages/flash (heads/codex/package-split)\n f367bd3b57d5eb0f18c3161e8bb0a1b7ed396c18 packages/flashapp (heads/codex/package-split)\n d10d9d13b8749eedcdf7765a2d7f73841f696267 packages/openswath (heads/codex/package-split)\n b4de01e1477ddea99121230bfe619c160ec47ff4 packages/pyopenms (heads/codex/package-split)\n a030e39ab7ef4ee8df73ea9aa83c550169919f6f packages/test-data (heads/codex/package-split)\n 3e1af1e14c80f0d98cef18b50519d3badb3cf96e packages/topp (heads/codex/package-split)",
+  "package_lock_sha256": "8b71be229ffb671c31b339fb78a9bf5c9f2b5e215af5577ef2b85c55d44f1d19",
+  "permission_policy": "plan; only read_file and grep enabled; no auto-approve/smart-approve; current authorized repository only",
+  "exit_code": 1,
+  "finished_at": "2026-09-10T07:25:55.220397+00:00",
+  "parent_status_after": "",
+  "raw_sha256": "4286f79b2d6e3c8f8223a86c265a4b0ebddf10f5626a578d661f561abebcf66f"
+}

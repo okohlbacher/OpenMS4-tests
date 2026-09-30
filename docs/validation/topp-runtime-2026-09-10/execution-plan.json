@@ -1,0 +1,38 @@
+{
+  "registered_inventory_count": 1962,
+  "registered_runnable_count": 1695,
+  "registered_excluded_count": 267,
+  "batches": [
+    {
+      "file": "regression-parallel-tests.txt",
+      "count": 1296,
+      "kind": "numerical/negative/helpers",
+      "parallel_workers": 4
+    },
+    {
+      "file": "regression-serial-tests.txt",
+      "count": 10,
+      "kind": "numerical shared-output serialization",
+      "parallel_workers": 1
+    },
+    {
+      "file": "regression-metadata-tests.txt",
+      "count": 389,
+      "kind": "legacy registered INI/CTD/overwrite checks"
+    }
+  ],
+  "supplemental_strict_metadata_count": 258,
+  "all_executed_checks_planned": 1953,
+  "dependency_closure_verified": true,
+  "metadata_exclusion_change": "The 389 legacy metadata cases originally separated from numerical selection are now a third execution batch. Original regression-selection.json is preserved. Only missing executables, related product families, and one dependent comparison remain excluded.",
+  "remaining_exclusion_counts": {
+    "executable_not_installed": 137,
+    "other_package_test_family": 129,
+    "depends_on_excluded": 1
+  },
+  "notes": [
+    "Metadata batch includes 387 per-tool INI/section-name/CTD tests and the 2-case TOPPWRITEINI_OVERWRITE pair.",
+    "Every legacy metadata command exists, every declared dependency remains within this batch, and referenced fresh-harness fixture files exist.",
+    "No tests executed or CMake/source files modified to create this plan."
+  ]
+}

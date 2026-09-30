@@ -1,0 +1,82 @@
+checking exportFeaturesToArrow - empty FeatureMap ... 
+: passed
+
+checking exportFeaturesToArrow - single feature with convex hulls and metavalues ... 
+: passed
+
+checking exportFeaturesToArrow - subordinate features ... 
+: passed
+
+checking importFeaturesFromArrow - round - trip with subordinates and hulls and metavalues ... 
+: passed
+
+checking [EXTRA] importFeaturesFromArrow - large integer metavalue (> INT32_MAX) survives round-trip ... 
+: passed
+
+checking exportPSMsToArrow - empty FeatureMap ... 
+: passed
+
+checking exportPSMsToArrow - feature and unassigned PSMs ... 
+: passed
+
+checking importPSMsFromArrow - PSM round - trip ... 
+: passed
+
+checking [EXTRA] importPSMsFromArrow - interleaved P_ID rows group by value not adjacency ... 
+: passed
+
+checking exportToParquet / importFromParquet - full round - trip ... 
+    creating new temporary filename 'FeatureMapArrowIO_test_883.tmp' (line 304)
+Setting an empty value for primary MS runs paths.
+: passed
+
+checking [EXTRA] exportToParquet / importFromParquet - parquet->parquet content idempotency ... 
+    creating new temporary filename 'FeatureMapArrowIO_test_1006.tmp' (line 304)
+    creating new temporary filename 'FeatureMapArrowIO_test_1013.tmp' (line 304)
+: passed
+
+checking exportToParquet / importFromParquet - FeatureMap metadata round - trip(DocumentIdentifier + DataProcessing) ... 
+    creating new temporary filename 'FeatureMapArrowIO_test_1126.tmp' (line 304)
+: passed
+
+checking exportToParquet / importFromParquet - PSM completeness round - trip(metavalues, additional_scores, is_decoy, protein_accessions, higher_score_better) ... 
+    creating new temporary filename 'FeatureMapArrowIO_test_1274.tmp' (line 304)
+: passed
+
+checking exportToParquet / importFromParquet - per - PSM higher_score_better independent from ProteinIdentification ... 
+    creating new temporary filename 'FeatureMapArrowIO_test_1403.tmp' (line 304)
+: passed
+
+checking exportToParquet / importFromParquet - FeatureMap - level MetaValue round - trip ... 
+    creating new temporary filename 'FeatureMapArrowIO_test_1466.tmp' (line 304)
+: passed
+
+checking exportToParquet - duplicate ProteinIdentification identifiers throw Exception::InvalidValue ... 
+    creating new temporary filename 'FeatureMapArrowIO_test_1522.tmp' (line 304)
+: passed
+
+checking ([EXTRA] a failed write leaves no partial .parquet behind) ... 
+FeatureMapArrowIO: Failed to write Parquet: Invalid: chunk size per row_group must be greater than 0
+: passed
+
+checking ([EXTRA] exportToParquet / importFromParquet - the map level unique id survives) ... 
+: passed
+
+checking ([EXTRA] importPSMsFromArrow - a PSM naming an unknown feature is rejected) ... 
+FeatureMapArrowIO: PSM references feature unique id 5001, which is not in features.parquet. The file is inconsistent.
+: passed
+
+checking ([EXTRA] exportToParquet / importFromParquet - a ProteomicsLFQ-shaped map round-trips) ... 
+: passed
+
+checking [EXTRA] exportToParquet / importFromParquet - tool-defined modifications travel with their definitions ... 
+    creating new temporary filename 'FeatureMapArrowIO_test_1844.tmp' (line 304)
+: passed
+
+checking [EXTRA] importFromParquet - definitions are registered from search_params.parquet ... 
+    creating new temporary filename 'FeatureMapArrowIO_test_1888.tmp' (line 304)
+: passed
+
+Output of successful tests were suppressed. Set the environment variable 'OPENMS_TEST_VERBOSE=True' to enable them.
+PASSED
+<Setting an empty value for primary MS runs paths.> occurred 9 times

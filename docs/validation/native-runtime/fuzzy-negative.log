@@ -1,0 +1,36 @@
+FAILED: 'different letters'
+
+  input:	in1	in2
+  line:	1	1
+  pos/col:	0/1	0/1
+ --------------------------------
+  is_number:	false	false
+  numbers:	0	0
+  is_space:	false	false
+  is_letter:	true	true
+  letters:	">"	"m"
+  char_codes:	62	109
+ --------------------------------
+  relative_max:        1
+  relative_acceptable: 1
+ --------------------------------
+  absolute_max:        0
+  absolute_acceptable: 0
+
+Offending lines:			(tab_width = 8, first_column = 1)
+
+in1:  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/runtime-product-evidence-final/processing/decoy.fasta   (line: 1, position/column: 0/1)
+!
+>DECOY_P01008|ANT3_HUMAN Antithrombin-III precursor - Homo sapiens (Human)
+
+in2:  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/runtime-product-evidence-final/processing/different.txt   (line: 1, position/column: 0/1)
+!
+meaningfully different
+
+
+Easy Access:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/runtime-product-evidence-final/processing/decoy.fasta:1:1:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/runtime-product-evidence-final/processing/different.txt:1:1:
+
+diff /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/runtime-product-evidence-final/processing/decoy.fasta /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/runtime-product-evidence-final/processing/different.txt
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.

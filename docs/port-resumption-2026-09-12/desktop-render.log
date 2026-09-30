@@ -1,0 +1,42 @@
+Internal ctest changing into directory: /Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build
+UpdateCTestConfiguration  from :/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build/DartConfiguration.tcl
+Parse Config file:/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build/DartConfiguration.tcl
+Parse Config file:/Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build/DartConfiguration.tcl
+Test project /Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 6
+    Start 6: Plot3DRhiCanvas_test
+
+6: Test command: /Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build/gui/tests/Plot3DRhiCanvas_test
+6: Working Directory: /Users/oliver/gh-runners/OpenMS4-desktop/_work/_temp/desktop/package-build/gui/tests
+6: Test timeout computed to be: 60
+6: checking (shader resources are compiled into the GUI library) ...
+6: : passed
+6:
+6: checking (geometry is built from the layer data without any GPU) ...
+6: : passed
+6:
+6: checking (rendering either produces a frame or fails gracefully on a headless platform) ...
+6:     line 128: status:  rendered through the platform backend
+6: : passed
+6:
+6: checking ([EXTRA] the platform backend draws the peak map when a GPU is available) ... qt.qpa.fonts: Populating font family aliases took 148 ms. Replace uses of missing font family "Typewriter" with one that exists to avoid this cost.
+6:
+6: : passed
+6:
+6: Output of successful tests were suppressed. Set the environment variable 'OPENMS_TEST_VERBOSE=True' to enable them.
+6: PASSED
+1/1 Test #6: Plot3DRhiCanvas_test .............   Passed    1.03 sec
+
+The following tests passed:
+	Plot3DRhiCanvas_test
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   1.03 sec

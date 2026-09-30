@@ -1,0 +1,15 @@
+{
+  "pre_refactor_core": "21b295c9ad889b402db1e3a20f13e8d08330b61b",
+  "refactored_core": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85",
+  "comparison": "18 numerical columns agree within unchanged comparator tolerances; filenames and row IDs ignored",
+  "sha256": {
+    "core-sdk/lib/libOpenMS.dylib": "1398d1937d0bc502681788d622fcb8fc3a6a2d29fb3f9f0b08e043cf89b66561",
+    "product-sdk/lib/libOpenMS.dylib": "5a046fcaf15eb636e1f23b453481bca80fbfbe01a6a9f6a5df41c7c3dfbe2f4a",
+    "OpenMS4-tests/packages/test-data/topp/FLASHDeconv_sample_input.mzML": "bd01aab06a6a4e0caefa65fc73326fc3a376811ac78988ceed0fc55f8d14037a",
+    "implementation-build-evidence/FLASHDeconv-pre-refactor.tsv": "ce1496399a28d9f290532a8eb03f13376871953447e630bda673adcaa4d1a6f8",
+    "flash-build/FLASHDeconv_1.tsv": "3743ee0d09fc9ed8aec540f3d005f58660e0dbbcf89501db7b641d6e0075d2c2",
+    "OpenMS4-tests/packages/flash/src/FLASHDeconv.cpp": "63a79e286c89a0d0a31d604ef36ca92210770509fd1e65d40abb7435b278101c",
+    "OpenMS4-tests/packages/core/src/openms/source/ANALYSIS/TOPDOWN/FLASHDeconvAlgorithm.cpp": "54e124c24c5c1791d62f6363272a636fb49eb3f730b5901ca7503959e051d739",
+    "OpenMS4-tests/packages/core/src/openms/source/FORMAT/FLASHDeconvFeatureFile.cpp": "2a276753e08c5f1300adae99a601cd7daa1bb459b0e58496c59c46128685931c"
+  }
+}

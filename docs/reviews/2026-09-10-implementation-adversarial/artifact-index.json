@@ -1,0 +1,181 @@
+{
+  "audited_parent_revision": "7fb0147c341912b36f13f2ce05ef53a192b8dfff",
+  "files": {
+    "README.md": {
+      "sha256": "d4370f47a47e2fe6e5cffdd2fcee5a2a9353b4e1f01f88cc5cf87c0996eca782",
+      "bytes": 2738
+    },
+    "arrow-boundary-probe.json": {
+      "sha256": "edef65675fccad6b31fe640aa233cf00b046e744d108a1efb82db9606f72a6b3",
+      "bytes": 416
+    },
+    "claude-metadata.json": {
+      "sha256": "e2b16bc1589ae24e2869866dd660bc6691b6949b90a6c5aa0ec2d596cf33a2c1",
+      "bytes": 3623
+    },
+    "claude-ponytail-audit.md": {
+      "sha256": "6d1d2e537b5442accf2d5309af91555034e112833a86248f8a2328a2e0541e96",
+      "bytes": 3099
+    },
+    "claude-ponytail-inventory.json": {
+      "sha256": "b3faa4735812d6c0e30b13b5b9da1b6d27b6d08cee5f1ec925120315d034ddf1",
+      "bytes": 12364
+    },
+    "claude-review.md": {
+      "sha256": "462a1650ba1562680382ecc6fe349285ba22f6993c46be4a0653b1e622338af5",
+      "bytes": 24163
+    },
+    "claude-verification.md": {
+      "sha256": "4ccc5b065992a1e51ecb6084d54ac43c87b8b032d5c61b5271991eb49e8e6a13",
+      "bytes": 15949
+    },
+    "cli-configure.log": {
+      "sha256": "ac67d037a66af2c1b490c58267c9bdcd756716a01ccd0c3595b1b87c7c215e6e",
+      "bytes": 7768
+    },
+    "cli-install-rpath-excerpt.txt": {
+      "sha256": "f78d9f999abf516f9c5ca142eae1da440aabdf72301ea36c3fce656860ffb68e",
+      "bytes": 1588
+    },
+    "cli-install-rpath-probe.json": {
+      "sha256": "f1139e1dca8c6d498edda7b3cca4c3677e2d2da2961722ad4b4b8740217e0a6d",
+      "bytes": 931
+    },
+    "data-size-inventory.json": {
+      "sha256": "6dcd821be33a6afca3e69f7ec3c7cae009e7d2c015b8b0df8e316f934515e342",
+      "bytes": 193
+    },
+    "duplication-inventory.json": {
+      "sha256": "969a686682874b79c7613109c85df08b1f91f9bd68fc9534783c4535cfd0ca5e",
+      "bytes": 552
+    },
+    "eigen-configure-probe.json": {
+      "sha256": "94bec3cba36eda5e2e7bb9c9963f6d7cec3977f85b76e1f6ec5e09c11515993b",
+      "bytes": 650
+    },
+    "inherited-source-checks.json": {
+      "sha256": "e1d5ef38ab977a2a2b2636b04cfec59671a148d9597c4afd76f9c432c4b53716",
+      "bytes": 1171
+    },
+    "kimi-ar13-crosscheck.md": {
+      "sha256": "5e680eecdb641ea275cb740fa9e50fdafe816dd81afc20ad891cac55c8eedcd6",
+      "bytes": 14411
+    },
+    "kimi-contract-crosscheck.md": {
+      "sha256": "2b61b89371c024687124b513c3f8416f75f671c13039137ec1c319bafd605844",
+      "bytes": 8982
+    },
+    "kimi-invocation.json": {
+      "sha256": "5fc2232d9c241d5e2228ebb1307eea2f6a33f422bdd6790546c1e4de15d48e1c",
+      "bytes": 13342
+    },
+    "kimi-readonly-agent.md": {
+      "sha256": "6af4a6451bd8d484c24f6d4612c6b6e795e385b4cb6f8dc9aa18c37e7cf37e42",
+      "bytes": 1207
+    },
+    "kimi-review.md": {
+      "sha256": "3284245096e2f898f59ac0e164502d9a134b1b45fdcd867c907d0df9b53ec19a",
+      "bytes": 40726
+    },
+    "kimi-triage.md": {
+      "sha256": "69032a692cbbaec61ad8a9393465154d594199e62ec2f9e232b5485e8987cc86",
+      "bytes": 24999
+    },
+    "leak_probe_launcher.py": {
+      "sha256": "b6005a63b8ea1ccc43cefc1208deee133a267fdeb67427e22d8fd64102d85572",
+      "bytes": 386
+    },
+    "leaks-featuremap-arrow-escalated.log": {
+      "sha256": "8a537cfd88d9e702477d39b0352551d3162f1dd623f30b720c2787d38c87e54a",
+      "bytes": 907
+    },
+    "leaks-featuremap-arrow-final.log": {
+      "sha256": "c0371f491cd48bfb0c12eab8f9f6a733e5145e718062eca89a1c56043d9ee03d",
+      "bytes": 3499
+    },
+    "leaks-featuremap-arrow.log": {
+      "sha256": "0bd3b46101b32265beffc01427a935341a6304e289a18676fa495739f4e22e27",
+      "bytes": 84
+    },
+    "manifest-category-probe.json": {
+      "sha256": "d60668e584b63310d54eb9617bb619264f75200b37ce89f18490a36c27ce3c0f",
+      "bytes": 381
+    },
+    "memory-check-attempt.json": {
+      "sha256": "af7a3787bb947a6057e176d0915904b8d82ec4e9759612e9fea02338a9bead36",
+      "bytes": 1213
+    },
+    "ponytail-audit.md": {
+      "sha256": "de291d49d457ed3819e8fe66f6b58e45c3960c67f8f9eae54d5faf1691f362d9",
+      "bytes": 3741
+    },
+    "ponytail-installation.json": {
+      "sha256": "f95a798988e3f6aa89090d34c9df07852d71a9afd244865328c8729d8194b16c",
+      "bytes": 1387
+    },
+    "publication-verification.json": {
+      "sha256": "e77f2d36aa9dcc6c82b420dab0722ebab83e294da01785002f1248f6a0746361",
+      "bytes": 1088
+    },
+    "raw-evidence.json": {
+      "sha256": "bf29cb0d9c236727045eae7388f0ab47bbb35ec94556dec1b98e30d07822c711",
+      "bytes": 888
+    },
+    "refactoring-plan.md": {
+      "sha256": "5a7ea7b60885a0a3f4c6cce7662af3ef153168e44fd3ff9fe1ea7c19500fa458",
+      "bytes": 14272
+    },
+    "reproduce_findings.py": {
+      "sha256": "90206f5eede5e84cfaba9205d71a3c180b5b29e8d40a930b000973cb86fe4426",
+      "bytes": 5093
+    },
+    "reproduce_manifest_category.py": {
+      "sha256": "f2c48178acd1b91798fed3374ee0c9c6fa45eac5f749e63314dda13edd4b602a",
+      "bytes": 1854
+    },
+    "reproduced-findings.json": {
+      "sha256": "53161e3b1d56c76b42a63d35e6bfee16f9e1337232681bc39038ab0759592d1a",
+      "bytes": 906
+    },
+    "review-request.md": {
+      "sha256": "d8bc3011c1eec02ef6e5d9dad0b16ddb4bccf4a7f19956527e98e5f1b7f39eb3",
+      "bytes": 5449
+    },
+    "review.md": {
+      "sha256": "43aeef68459b35c958e5d9d7560ffc086a882cf870775c66928655454c66caa8",
+      "bytes": 31455
+    },
+    "reviewed-revisions.json": {
+      "sha256": "932e75f30d8d7002e6ee11747f9873b925e57bb1cb122976ab6d1e5bef777548",
+      "bytes": 1672
+    },
+    "root-crosscheck.md": {
+      "sha256": "0f9d20fb8c06789a2ea2b936545bfb2c7534de8c6559f6222495e17215b18b30",
+      "bytes": 13306
+    },
+    "vibe-effective-prompt.md": {
+      "sha256": "a1e692aca643aef94a15426b4b6c8ed8d0e7b3f9140a08013062d70e9c95e133",
+      "bytes": 5864
+    },
+    "vibe-invocation.json": {
+      "sha256": "d45117a6e9ca7cc5593019866109484aed6f377042b6c96c6615cce641ff8a8b",
+      "bytes": 6542
+    },
+    "vibe-review.md": {
+      "sha256": "7c1fce2cbe9fd4e9246a13dcdd270c1ee8585caa2f0dd4c5e6f59d967663cfda",
+      "bytes": 33779
+    },
+    "vibe-triage-evidence.json": {
+      "sha256": "9afc798a582fc9130f9a85b5249f0930c518dcb31eac8efa6a35b1844ee842d8",
+      "bytes": 4660
+    },
+    "vibe-triage.md": {
+      "sha256": "5dcfcc731e12445b0bf6abf0a2f49a2f8c4b391132d61870d9fbbf463c28e6ea",
+      "bytes": 15460
+    },
+    "vibe-unavailable-mistral-large-4-invocation.json": {
+      "sha256": "8c78e6acee5479dfafae2fd7189bec329298cf21a071b342581562893665bdf6",
+      "bytes": 2340
+    }
+  }
+}

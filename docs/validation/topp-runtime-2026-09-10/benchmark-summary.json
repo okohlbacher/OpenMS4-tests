@@ -1,0 +1,117 @@
+{
+  "finished_at": "2026-09-10T16:16:15.305654+02:00",
+  "clock": "time.perf_counter",
+  "includes_process_startup": true,
+  "warmups_per_cell": 1,
+  "cache_creation_seconds": 1.5275848329765722,
+  "results": [
+    {
+      "method": "regular",
+      "threads": 1,
+      "repetitions": 5,
+      "median_seconds": 0.7988306669867598,
+      "min_seconds": 0.7815550409723073,
+      "max_seconds": 0.8107837079442106,
+      "stdev_seconds": 0.010886347941337925
+    },
+    {
+      "method": "regular",
+      "threads": 2,
+      "repetitions": 5,
+      "median_seconds": 0.7219336249982007,
+      "min_seconds": 0.7115125419804826,
+      "max_seconds": 0.9429805839899927,
+      "stdev_seconds": 0.09963283671372679
+    },
+    {
+      "method": "streaming",
+      "threads": 1,
+      "repetitions": 5,
+      "median_seconds": 0.7757439590059221,
+      "min_seconds": 0.766155416960828,
+      "max_seconds": 0.9708170419908129,
+      "stdev_seconds": 0.08703933564186486
+    },
+    {
+      "method": "streaming",
+      "threads": 2,
+      "repetitions": 5,
+      "median_seconds": 0.7232487500295974,
+      "min_seconds": 0.7147788750007749,
+      "max_seconds": 0.8515949579887092,
+      "stdev_seconds": 0.057909884317508535
+    },
+    {
+      "method": "indexed",
+      "threads": 1,
+      "repetitions": 5,
+      "median_seconds": 1.1300453750300221,
+      "min_seconds": 1.1221126249874942,
+      "max_seconds": 1.2147096670232713,
+      "stdev_seconds": 0.039350641985917124
+    },
+    {
+      "method": "indexed",
+      "threads": 2,
+      "repetitions": 5,
+      "median_seconds": 1.1393842920078896,
+      "min_seconds": 1.1244937080191448,
+      "max_seconds": 1.1682794579537585,
+      "stdev_seconds": 0.017420583165398
+    },
+    {
+      "method": "indexed_parallel",
+      "threads": 1,
+      "repetitions": 5,
+      "median_seconds": 0.5188272079685703,
+      "min_seconds": 0.5081009169807658,
+      "max_seconds": 0.541602875047829,
+      "stdev_seconds": 0.014343366751190701
+    },
+    {
+      "method": "indexed_parallel",
+      "threads": 2,
+      "repetitions": 5,
+      "median_seconds": 0.3561311250086874,
+      "min_seconds": 0.34929212502902374,
+      "max_seconds": 0.3645535000250675,
+      "stdev_seconds": 0.005538919616678901
+    },
+    {
+      "method": "cached",
+      "threads": 1,
+      "repetitions": 5,
+      "median_seconds": 0.08599666703958064,
+      "min_seconds": 0.0848211669945158,
+      "max_seconds": 0.09106275002704933,
+      "stdev_seconds": 0.00247282697464181
+    },
+    {
+      "method": "cached",
+      "threads": 2,
+      "repetitions": 5,
+      "median_seconds": 0.08697354199830443,
+      "min_seconds": 0.08436879102373496,
+      "max_seconds": 0.09080100001301616,
+      "stdev_seconds": 0.00235959390812214
+    },
+    {
+      "method": "cached_parallel",
+      "threads": 1,
+      "repetitions": 5,
+      "median_seconds": 0.08813816704787314,
+      "min_seconds": 0.08389633300248533,
+      "max_seconds": 0.09039754199329764,
+      "stdev_seconds": 0.002372425470910819
+    },
+    {
+      "method": "cached_parallel",
+      "threads": 2,
+      "repetitions": 5,
+      "median_seconds": 0.088282541022636,
+      "min_seconds": 0.08622445800574496,
+      "max_seconds": 0.0888035410316661,
+      "stdev_seconds": 0.0010752132886283257
+    }
+  ]
+}

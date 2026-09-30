@@ -1,0 +1,297 @@
+[
+  {
+    "name": "isolation-rejects-source",
+    "command": [
+      "sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-viewers-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-workflows-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk\"))",
+      "/usr/bin/env",
+      "QT_QPA_PLATFORM=offscreen",
+      "OPENMS_DISABLE_UPDATE_CHECK=ON",
+      "DYLD_PRINT_LIBRARIES=1",
+      "OMP_NUM_THREADS=2",
+      "OPENMS_TOOL_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/bin/cat",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/core/CMakeLists.txt"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1,
+    "elapsed_seconds": 0.023,
+    "passed": true
+  },
+  {
+    "name": "TOPPView-help",
+    "command": [
+      "sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-viewers-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-workflows-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk\"))",
+      "/usr/bin/env",
+      "QT_QPA_PLATFORM=offscreen",
+      "OPENMS_DISABLE_UPDATE_CHECK=ON",
+      "DYLD_PRINT_LIBRARIES=1",
+      "OMP_NUM_THREADS=2",
+      "OPENMS_TOOL_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/bin/TOPPView.app/Contents/MacOS/TOPPView",
+      "--help"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "elapsed_seconds": 0.236,
+    "passed": true,
+    "loaded_openms_libraries": [
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_CLI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_GUI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenSwathAlgo.dylib"
+    ]
+  },
+  {
+    "name": "TOPPAS-help",
+    "command": [
+      "sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-viewers-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-workflows-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk\"))",
+      "/usr/bin/env",
+      "QT_QPA_PLATFORM=offscreen",
+      "OPENMS_DISABLE_UPDATE_CHECK=ON",
+      "DYLD_PRINT_LIBRARIES=1",
+      "OMP_NUM_THREADS=2",
+      "OPENMS_TOOL_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/bin/TOPPAS.app/Contents/MacOS/TOPPAS",
+      "--help"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "elapsed_seconds": 0.246,
+    "passed": true,
+    "loaded_openms_libraries": [
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_CLI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_GUI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenSwathAlgo.dylib"
+    ]
+  },
+  {
+    "name": "INIFileEditor-help",
+    "command": [
+      "sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-viewers-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-workflows-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk\"))",
+      "/usr/bin/env",
+      "QT_QPA_PLATFORM=offscreen",
+      "OPENMS_DISABLE_UPDATE_CHECK=ON",
+      "DYLD_PRINT_LIBRARIES=1",
+      "OMP_NUM_THREADS=2",
+      "OPENMS_TOOL_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/bin/INIFileEditor.app/Contents/MacOS/INIFileEditor",
+      "--help"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "elapsed_seconds": 0.261,
+    "passed": true,
+    "loaded_openms_libraries": [
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_CLI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_GUI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenSwathAlgo.dylib"
+    ]
+  },
+  {
+    "name": "ImageCreator-help",
+    "command": [
+      "sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-viewers-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-workflows-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk\"))",
+      "/usr/bin/env",
+      "QT_QPA_PLATFORM=offscreen",
+      "OPENMS_DISABLE_UPDATE_CHECK=ON",
+      "DYLD_PRINT_LIBRARIES=1",
+      "OMP_NUM_THREADS=2",
+      "OPENMS_TOOL_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/bin/ImageCreator",
+      "--help"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "elapsed_seconds": 0.3,
+    "passed": true,
+    "loaded_openms_libraries": [
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_CLI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_GUI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenSwathAlgo.dylib"
+    ]
+  },
+  {
+    "name": "ExecutePipeline-help",
+    "command": [
+      "sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-viewers-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-workflows-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk\"))",
+      "/usr/bin/env",
+      "QT_QPA_PLATFORM=offscreen",
+      "OPENMS_DISABLE_UPDATE_CHECK=ON",
+      "DYLD_PRINT_LIBRARIES=1",
+      "OMP_NUM_THREADS=2",
+      "OPENMS_TOOL_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/bin/ExecutePipeline",
+      "--help"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "elapsed_seconds": 0.563,
+    "passed": true,
+    "loaded_openms_libraries": [
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_CLI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_GUI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenSwathAlgo.dylib"
+    ]
+  },
+  {
+    "name": "embedded-style-startup",
+    "command": [
+      "sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-viewers-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-workflows-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk\"))",
+      "/usr/bin/env",
+      "QT_QPA_PLATFORM=offscreen",
+      "OPENMS_DISABLE_UPDATE_CHECK=ON",
+      "DYLD_PRINT_LIBRARIES=1",
+      "OMP_NUM_THREADS=2",
+      "OPENMS_TOOL_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "OPENMS_DATA_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/desktop-relocated-output/invalid-core-data",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/bin/TOPPView.app/Contents/MacOS/TOPPView",
+      "--acceptance-invalid-option"
+    ],
+    "exit_code": 1,
+    "expected_exit_code": 1,
+    "elapsed_seconds": 0.239,
+    "passed": true,
+    "loaded_openms_libraries": [
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_CLI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_GUI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenSwathAlgo.dylib"
+    ]
+  },
+  {
+    "name": "ImageCreator-1",
+    "command": [
+      "sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-viewers-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-workflows-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk\"))",
+      "/usr/bin/env",
+      "QT_QPA_PLATFORM=offscreen",
+      "OPENMS_DISABLE_UPDATE_CHECK=ON",
+      "DYLD_PRINT_LIBRARIES=1",
+      "OMP_NUM_THREADS=2",
+      "OPENMS_TOOL_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/bin/ImageCreator",
+      "-test",
+      "-in",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/desktop-fixtures/imagecreator/ImageCreator_1_input.mzML",
+      "-out",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/desktop-relocated-output/ImageCreator_1.bmp",
+      "-width",
+      "20",
+      "-height",
+      "15"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "elapsed_seconds": 0.826,
+    "passed": true,
+    "loaded_openms_libraries": [
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_CLI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_GUI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenSwathAlgo.dylib"
+    ]
+  },
+  {
+    "name": "ImageCreator-2",
+    "command": [
+      "sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-viewers-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-workflows-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk\"))",
+      "/usr/bin/env",
+      "QT_QPA_PLATFORM=offscreen",
+      "OPENMS_DISABLE_UPDATE_CHECK=ON",
+      "DYLD_PRINT_LIBRARIES=1",
+      "OMP_NUM_THREADS=2",
+      "OPENMS_TOOL_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/bin/ImageCreator",
+      "-test",
+      "-in",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/desktop-fixtures/imagecreator/ImageCreator_2_input.mzML",
+      "-out",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/desktop-relocated-output/ImageCreator_2.bmp",
+      "-width",
+      "20",
+      "-height",
+      "15",
+      "-out_type",
+      "bmp",
+      "-precursors",
+      "-precursor_size",
+      "3",
+      "-precursor_color",
+      "green",
+      "-log_intensity"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "elapsed_seconds": 0.825,
+    "passed": true,
+    "loaded_openms_libraries": [
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_CLI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_GUI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenSwathAlgo.dylib"
+    ]
+  },
+  {
+    "name": "pipeline",
+    "command": [
+      "sandbox-exec",
+      "-p",
+      "(version 1)(allow default)(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-viewers-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-workflows-build\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk\"))(deny file-read* (subpath \"/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk\"))",
+      "/usr/bin/env",
+      "QT_QPA_PLATFORM=offscreen",
+      "OPENMS_DISABLE_UPDATE_CHECK=ON",
+      "DYLD_PRINT_LIBRARIES=1",
+      "OMP_NUM_THREADS=2",
+      "OPENMS_TOOL_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300",
+      "DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/Cellar/abseil/20260107.1/lib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/bin/ExecutePipeline",
+      "-test",
+      "-in",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/desktop-fixtures/pipelines/ExecutePipeline_1.toppas",
+      "-resource_file",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/desktop-fixtures/pipelines/ExecutePipeline_1.trf",
+      "-out_dir",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/desktop-relocated-output"
+    ],
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "elapsed_seconds": 4.707,
+    "passed": true,
+    "loaded_openms_libraries": [
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_CLI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenMS_GUI.1.0.0.dylib",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-relocated-sdk-b392300/lib/libOpenSwathAlgo.dylib"
+    ]
+  }
+]

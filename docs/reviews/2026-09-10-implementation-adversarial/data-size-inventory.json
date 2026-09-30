@@ -1,0 +1,7 @@
+{
+  "sdk_data_files": 660,
+  "sdk_data_bytes": 298366290,
+  "test_fixture_files": 579,
+  "test_fixture_bytes": 237335914,
+  "limitation": "Uncompressed file bytes, not an actual wheel size."
+}

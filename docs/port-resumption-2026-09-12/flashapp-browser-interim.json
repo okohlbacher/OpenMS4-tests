@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-13",
+  "url": "http://127.0.0.1:18501",
+  "scope": "Patched interim image: current Python UI/worker fixes on earlier runtime; FLASHDeconv only. Final immutable image acceptance is recorded separately.",
+  "source_fix": "25f422e69b221ba9c513f7c7e2033a3f000e3ae5",
+  "container": "openms4-flashapp-ui-770f6f1",
+  "observed_steps": [
+    "Quickstart and workflow upload controls rendered.",
+    "Before fixes: str/bytes parameter API mismatch left Run empty; fixed renderer exposes Configure and Run.",
+    "Before worker fix: start left SemLock deserialization error, zombie worker and running display; verified controlled ownership record reconciled.",
+    "After worker fix: no selected mzML input reports explicit error and returns to Start; no indefinitely running state.",
+    "Select example_fd.mzML under Configure, then Start Workflow: page reports Workflow completed successfully and WORKFLOW FINISHED.",
+    "Select example_fd_20260912-223614 in Viewer: populated MS1 heatmap visually inspected, Scan Table and Mass Table populated, annotated and deconvolved spectrum components rendered."
+  ],
+  "limits": [
+    "This visible flow does not qualify every UI control, concurrent session, browser or dataset.",
+    "FLASHTnT was not executed from the older interim runtime.",
+    "No external image publication or deployment was performed."
+  ]
+}

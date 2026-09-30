@@ -1,0 +1,23 @@
+{
+  "source": "packages/cli/CMakeLists.txt",
+  "configuration": "Actual installed Core SDK21b295c9, macOS arm64 Debug, BUILD_TESTING=OFF, Ninja",
+  "configure_exit": 0,
+  "install_script_sha256": "a956fb0e78eb1fc70d31f06844be2937f36ea7bff1509674ee5c11a7aa55f4c4",
+  "observed": "Installer deletes build SDK rpath; no replacement in generated script",
+  "scope": "Configuration/install recipe inspection only; no CLI compilation or installation performed",
+  "command": [
+    "cmake",
+    "-S",
+    "OpenMS4-tests/packages/cli",
+    "-B",
+    "reviews/2026-09-10-implementation-adversarial/cli-configure",
+    "-G",
+    "Ninja",
+    "-DOpenMS_DIR=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-sdk/lib/cmake/OpenMS",
+    "-DCMAKE_PREFIX_PATH=/opt/homebrew;/opt/homebrew/opt/libomp",
+    "-DCMAKE_FIND_FRAMEWORK=LAST",
+    "-DCURL_ROOT=/opt/homebrew/opt/curl",
+    "-DBUILD_TESTING=OFF",
+    "-DCMAKE_BUILD_TYPE=Debug"
+  ]
+}

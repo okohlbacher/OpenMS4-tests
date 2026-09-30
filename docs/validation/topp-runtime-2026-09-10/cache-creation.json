@@ -1,0 +1,23 @@
+{
+  "command": [
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk/bin/FileConverter",
+    "-in",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/test-data-sdk/share/openms4-test-data/1.0.0/topp/THIRDPARTY/MaRaClusterAdapter_1_in_1.mzML",
+    "-out",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-runtime-report/input.cachedMzML",
+    "-test"
+  ],
+  "wall_seconds": 1.5275848329765722,
+  "exit_code": 0,
+  "log": "benchmarks/cache-create.log",
+  "files": {
+    "input.cachedMzML": {
+      "bytes": 7718452,
+      "sha256": "5df696c090e23ba1065a6f48ec12770e91512d2b029acd89aa620572692dc8c0"
+    },
+    "input.mzML": {
+      "bytes": 4579695,
+      "sha256": "4fd25d0aa0f1423b8fe5ef61c25dd53548804d32519ccb81e0139f3bdb847212"
+    }
+  }
+}

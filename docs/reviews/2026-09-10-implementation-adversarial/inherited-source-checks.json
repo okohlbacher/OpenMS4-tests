@@ -1,0 +1,23 @@
+{
+  "arrow": {
+    "unchanged_from_OpenMS_baseline": true,
+    "baseline_path": "src/pyOpenMS/bindings/arrow_zerocopy.cpp",
+    "current_path": "packages/pyopenms/bindings/arrow_zerocopy.cpp",
+    "baseline_sha256": "8413180789d57a302123df412c6adab4e9462e098190a756f91a700aaa4d071e",
+    "current_sha256": "8413180789d57a302123df412c6adab4e9462e098190a756f91a700aaa4d071e"
+  },
+  "flash_modes": {
+    "unchanged_from_OpenMS_baseline": true,
+    "baseline_path": "src/tests/class_tests/openms/source/FLASHDeconvAlgorithm_test.cpp",
+    "current_path": "packages/core/src/tests/class_tests/openms/source/FLASHDeconvAlgorithm_test.cpp",
+    "baseline_sha256": "b1bc0a4477f389c9f19e9ae5853d88860e9a25468ff38c99b969c0737c9b15a5",
+    "current_sha256": "b1bc0a4477f389c9f19e9ae5853d88860e9a25468ff38c99b969c0737c9b15a5"
+  },
+  "stl_debug": {
+    "unchanged_from_OpenMS_baseline": true,
+    "baseline_path": "cmake/stl_debug.cmake",
+    "current_path": "packages/core/cmake/stl_debug.cmake",
+    "baseline_sha256": "c6f30d53f3595bb5628b6311d91244c115629d552dc8649f8fcba8b789549b44",
+    "current_sha256": "c6f30d53f3595bb5628b6311d91244c115629d552dc8649f8fcba8b789549b44"
+  }
+}

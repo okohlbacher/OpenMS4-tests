@@ -1,0 +1,154 @@
+{
+  "revision": "93eb47cb0575426dccba1067f51c1c9d8fb4163d",
+  "tables": {
+    "tags.tsv": {
+      "linux_rows": 698,
+      "mac_rows": 698,
+      "byte_identical": true,
+      "linux_sha256": "6b49a1ae3405d30d88913c5123af1da75dec3f4f40bfb21f09bc78d3c315c62b",
+      "mac_sha256": "6b49a1ae3405d30d88913c5123af1da75dec3f4f40bfb21f09bc78d3c315c62b",
+      "differing_fields": 0,
+      "first_differences": []
+    },
+    "protein.tsv": {
+      "linux_rows": 10,
+      "mac_rows": 10,
+      "byte_identical": true,
+      "linux_sha256": "9af96028a2583e70a5a8c3e5b9500382a725860b2469e6a337412f2b0c3b6d26",
+      "mac_sha256": "9af96028a2583e70a5a8c3e5b9500382a725860b2469e6a337412f2b0c3b6d26",
+      "differing_fields": 0,
+      "first_differences": []
+    },
+    "prsms.tsv": {
+      "linux_rows": 10,
+      "mac_rows": 10,
+      "byte_identical": true,
+      "linux_sha256": "280640f6624d4d6631fd86317ad7b313485e3e1070b5fb2bc91c638d1506d923",
+      "mac_sha256": "280640f6624d4d6631fd86317ad7b313485e3e1070b5fb2bc91c638d1506d923",
+      "differing_fields": 0,
+      "first_differences": []
+    }
+  },
+  "linux": {
+    "aqpz_tags": 114,
+    "positive_identity_checks_passed": true,
+    "historical_comparison": {
+      "tags.tsv_rows": {
+        "actual": 698,
+        "reference": 2968,
+        "match": false
+      },
+      "protein.tsv_rows": {
+        "actual": 10,
+        "reference": 17,
+        "match": false
+      },
+      "prsms.tsv_rows": {
+        "actual": 10,
+        "reference": 17,
+        "match": false
+      },
+      "tag_sequence_counts": {
+        "match": false,
+        "extra_count": 0,
+        "missing_count": 2270
+      },
+      "Score": {
+        "actual": 559.0,
+        "reference": 505.0,
+        "match": false
+      },
+      "PrecursorMass": {
+        "actual": -1.0,
+        "reference": -1.0,
+        "match": true
+      },
+      "ProteoformMass": {
+        "actual": 24633.174543367222,
+        "reference": 24724.11885683967,
+        "match": false
+      },
+      "MatchingFragments": {
+        "actual": 79.0,
+        "reference": 69.0,
+        "match": false
+      },
+      "Coverage(%)": {
+        "actual": 32.9167,
+        "reference": 28.75,
+        "match": false
+      },
+      "StartPosition": {
+        "actual": 1.0,
+        "reference": 1.0,
+        "match": true
+      },
+      "EndPosition": {
+        "actual": 240.0,
+        "reference": 240.0,
+        "match": true
+      }
+    }
+  },
+  "mac": {
+    "aqpz_tags": 114,
+    "positive_identity_checks_passed": true,
+    "historical_comparison": {
+      "tags.tsv_rows": {
+        "actual": 698,
+        "reference": 2968,
+        "match": false
+      },
+      "protein.tsv_rows": {
+        "actual": 10,
+        "reference": 17,
+        "match": false
+      },
+      "prsms.tsv_rows": {
+        "actual": 10,
+        "reference": 17,
+        "match": false
+      },
+      "tag_sequence_counts": {
+        "match": false,
+        "extra_count": 0,
+        "missing_count": 2270
+      },
+      "Score": {
+        "actual": 559.0,
+        "reference": 505.0,
+        "match": false
+      },
+      "PrecursorMass": {
+        "actual": -1.0,
+        "reference": -1.0,
+        "match": true
+      },
+      "ProteoformMass": {
+        "actual": 24633.174543367222,
+        "reference": 24724.11885683967,
+        "match": false
+      },
+      "MatchingFragments": {
+        "actual": 79.0,
+        "reference": 69.0,
+        "match": false
+      },
+      "Coverage(%)": {
+        "actual": 32.9167,
+        "reference": 28.75,
+        "match": false
+      },
+      "StartPosition": {
+        "actual": 1.0,
+        "reference": 1.0,
+        "match": true
+      },
+      "EndPosition": {
+        "actual": 240.0,
+        "reference": 240.0,
+        "match": true
+      }
+    }
+  }
+}

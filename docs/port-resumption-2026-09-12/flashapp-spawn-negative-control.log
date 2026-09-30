@@ -1,0 +1,40 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_ ExecutionLifecycle.test_spawn_ack_survives_manager_disposal_and_reaps_child __
+
+self = <test_execution_lifecycle.ExecutionLifecycle testMethod=test_spawn_ack_survives_manager_disposal_and_reaps_child>
+
+    def test_spawn_ack_survives_manager_disposal_and_reaps_child(self):
+        manager = SpawnWorkflow(self.root)
+        context = multiprocessing.get_context('spawn')
+        children = []
+        def process(*args, **kwargs):
+            child = context.Process(*args, **kwargs); children.append(child); return child
+        with patch.object(multiprocessing, 'Process', process):
+            manager._start_workflow_local()
+        del manager
+        gc.collect()  # Model a Streamlit rerun dropping the workflow instance.
+        pid = children[0].pid
+        deadline = time.monotonic() + 10
+        # Do not call join/is_alive/exitcode here: the production reaper must do it.
+        while psutil.pid_exists(pid) and time.monotonic() < deadline: time.sleep(.01)
+>       self.assertFalse(psutil.pid_exists(pid), 'workflow process was not reaped')
+E       AssertionError: True is not false : workflow process was not reaped
+
+tests/test_execution_lifecycle.py:287: AssertionError
+----------------------------- Captured stderr call -----------------------------
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/spawn.py", line 122, in spawn_main
+    exitcode = _main(fd, parent_sentinel)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/spawn.py", line 132, in _main
+    self = reduction.pickle.load(from_parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.12/3.12.14/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/synchronize.py", line 115, in __setstate__
+    self._semlock = _multiprocessing.SemLock._rebuild(*state)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory
+=========================== short test summary info ============================
+FAILED tests/test_execution_lifecycle.py::ExecutionLifecycle::test_spawn_ack_survives_manager_disposal_and_reaps_child
+1 failed in 10.06s

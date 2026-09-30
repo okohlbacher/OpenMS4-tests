@@ -1,0 +1,92 @@
+{
+  "cli_version": "vibe 2.25.1",
+  "started_at": "2026-09-10T07:26:53.702890+00:00",
+  "active_model_alias": "mistral-medium-3.5",
+  "configured_active_model_alias": "mistral-4-large",
+  "environment_overrides": {
+    "VIBE_ACTIVE_MODEL": "mistral-medium-3.5"
+  },
+  "resolved_model_config": [
+    {
+      "name": "mistral-vibe-cli-latest",
+      "alias": "mistral-medium-3.5",
+      "provider": "mistral"
+    }
+  ],
+  "model_identity_note": "Configured provider request identity; the streaming protocol may not expose a separate server-resolved model build.",
+  "argv_without_prompt": [
+    "/Users/kohlbach/.local/bin/vibe",
+    "--agent",
+    "plan",
+    "--enabled-tools",
+    "read_file",
+    "--enabled-tools",
+    "grep",
+    "--output",
+    "streaming",
+    "--max-turns",
+    "150",
+    "--workdir",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+    "--trust",
+    "-p"
+  ],
+  "prompt_file": "vibe-effective-prompt.md",
+  "prompt_sha256": "a1e692aca643aef94a15426b4b6c8ed8d0e7b3f9140a08013062d70e9c95e133",
+  "common_prompt_sha256": "d8bc3011c1eec02ef6e5d9dad0b16ddb4bccf4a7f19956527e98e5f1b7f39eb3",
+  "parent_commit": "7fb0147c341912b36f13f2ce05ef53a192b8dfff",
+  "parent_status_before": "",
+  "package_gitlinks": "-306efdbd08266e70769a9221eccb94538cbd9954 THIRDPARTY\n a93fa142c0e51eec616e16cb91d41fa743a42ed3 packages/cli (heads/codex/package-split)\n 21b295c9ad889b402db1e3a20f13e8d08330b61b packages/core (heads/codex/package-split)\n af65c9cd393fb548323fbbb45f6a4bc14433b3a4 packages/desktop (heads/codex/package-split)\n 8125964c7c4559519c418d0fe077bbeed98c418f packages/flash (heads/codex/package-split)\n f367bd3b57d5eb0f18c3161e8bb0a1b7ed396c18 packages/flashapp (heads/codex/package-split)\n d10d9d13b8749eedcdf7765a2d7f73841f696267 packages/openswath (heads/codex/package-split)\n b4de01e1477ddea99121230bfe619c160ec47ff4 packages/pyopenms (heads/codex/package-split)\n a030e39ab7ef4ee8df73ea9aa83c550169919f6f packages/test-data (heads/codex/package-split)\n 3e1af1e14c80f0d98cef18b50519d3badb3cf96e packages/topp (heads/codex/package-split)",
+  "package_lock_sha256": "8b71be229ffb671c31b339fb78a9bf5c9f2b5e215af5577ef2b85c55d44f1d19",
+  "permission_policy": "plan; only read_file and grep enabled; no auto-approve/smart-approve; current authorized repository only",
+  "exit_code": 0,
+  "finished_at": "2026-09-10T07:29:35.683724+00:00",
+  "parent_status_after": "",
+  "raw_sha256": "c63f224a9e5c573888f05bfa9a37e92e7e9b8f6841d64614beee92856f42a8ae",
+  "session_id": "788f62ed-1074-568a-f055-dce2aebd0ed9",
+  "review_sha256": "7c1fce2cbe9fd4e9246a13dcdd270c1ee8585caa2f0dd4c5e6f59d967663cfda",
+  "tool_results": {
+    "completed": 42,
+    "failed": 9
+  },
+  "successful_tools": {
+    "read_file": 33,
+    "grep": 9
+  },
+  "inspected_file_sha256": {
+    "packages.lock.json": "8b71be229ffb671c31b339fb78a9bf5c9f2b5e215af5577ef2b85c55d44f1d19",
+    "docs/refactoring-plan.md": "1ecb38fe7af777029fc04350312549c3dafa647110a6d6012a9ab5844b6c8659",
+    "tools/validate_source.py": "dfc5caff960d5df0f8acc36d45c3c853d5857c4341db1ca892f9b6533a3f25e9",
+    "docs/core-native-validation.md": "4fe70b2af19492d2dd2946d75df7f9a8dde996aedbffbf6b1f05fa51101c5e55",
+    "tests/test_split.py": "4f1fa64796d5b98270f4b718fbe8e41a18f4e6123d7f71e3eab1fa99fd6c98ed",
+    "tests/test_package_pins.py": "9c64c890857adc93655d9c6819a82a3bbb26b06682c8c1c6cb0b5e8b895dd8d0",
+    "tests/test_consumer_configure.py": "4b7a64d0bcd025c697fdb71b83a5d925f44b8f0035f286f789a452220ce1e0a0",
+    "packages/core/CMakeLists.txt": "bb9014476c98620e618a8a320d18d953aff5cd857cf88eab90167d8cfbe17077",
+    "packages/core/cmake/export_macros.cmake": "3fbb1b02df41e7ce8efeb4b640d1e868119315090273c68619a38b12adb32f45",
+    "packages/core/cmake/install_macros.cmake": "b04940db1dafc6f8c4f41906e3bfad9e851b92a4bd3eff025c3cb5a9c8c76b85",
+    "packages/core/cmake/OpenMSConfig.cmake.in": "15bf26062e8eb7add69f2212f42c5c7cd4d52e9f5880181799718cad8c17a0f8",
+    "packages/core/tests/installed_sdk_acceptance/run_acceptance.py": "9b8a907f76141c7040bc10c9bbaffdebf5ee06622c73f25230548c1bda5d2c0c",
+    "packages/cli/CMakeLists.txt": "e914419c40cdff4d0f11bbee2a1d5fddf409e0d9c23871e9518590fc58d5b80e",
+    "packages/cli/dependencies.lock.json": "d07d95a9c1e96c5c9062e159558930f4b9e1adf3ef573fd0198d18eca3fd3d86",
+    "packages/cli/cmake/OpenMS4Dependencies.cmake": "8ee0b34e7e12a9e1b1fb844874f738cedf871aedbc27a66f692bf6b7793267e1",
+    "packages/topp/CMakeLists.txt": "3c2e84abc3ad3352a7118e32c8036a2bf0ab1d0e9aad7c214e322afacb6edead",
+    "packages/topp/tools.json": "de5ac5f733ecfe44c772c13e72d7bc009cdc59db54db581402bde82a3c6f8ce1",
+    "packages/pyopenms/CMakeLists.txt": "94cc7664650f2fd7f1779588b231d39f156b51da2061ce1c8cc2f5e980c371b7",
+    "packages/desktop/CMakeLists.txt": "3ab295965982195e9d434c4a9edf4c185fa2a8ee5724c45164cec6236d08e1e1",
+    "packages/flashapp/dependencies.lock.json": "1f03df304774a775343f2616247ab447467964181c71c2746a2f42877b2eec9e",
+    "packages/core/src/openms/source/SYSTEM/File.cpp": "fc503239a283d9f95f2948ba3684e1ade850ef45ba98485d8c55533a612d94dc",
+    "packages/cli/source/APPLICATIONS/TOPPBase.cpp": "1fb72af129ae12d41d9c2e4352695859da7b82d3a9137ffb87fe85cc9e4261f0",
+    "packages/cli/source/APPLICATIONS/ToolHandler.cpp": "bce05eaafa1b740a168b5f18de7bdb1ea8134369bcab0b747c6e26cd35f95951",
+    "packages/core/tests/sdk_contract/test_sdk_contract.py": "eb4a321f3487647d1335370502c96776ee7405a768ed8c5d5d3ec1c473db4a40",
+    "packages/core/src/openms/include/OpenMS/SYSTEM/File.h": "73ce60394b438590fe171eddf50df06cc6335896437b7215a42f1eebc66defc0",
+    "docs/baseline-inventory.json": "de6ff274508d07648ee12d0d8871736d31d88d8de2558575a4ca418892f04e22",
+    "packages/desktop/gui/CMakeLists.txt": "040bf260c0924e738843391f645fcd04b7a2aba3db5e6beb9f403a94af4970ee",
+    "packages/flash/CMakeLists.txt": "687bcc275a1eff720f5aa1b31b46af33fd52b14ce4b07bdd4c82445597365af4",
+    "packages/flash/tools.json": "6309f5114f1ad133daad2157ba898db6cc26464a579a2e1de4b96860661d7423",
+    "packages/openswath/tools.json": "222a149bc7ea890251c66f2df4bb6a1cc6914920043f8255dabb585854848bf7",
+    "packages/openswath/CMakeLists.txt": "a0e80f85de771a4250e82cf07e34582f8330372e8912fe92bef9f18349c33f76"
+  },
+  "review_artifact": "vibe-review.md",
+  "unavailable_model_attempt": "vibe-unavailable-mistral-large-4-invocation.json",
+  "fallback_reason": "Current configured mistral-large-4 was rejected by provider as invalid/unavailable; used per-invocation override to earlier-working configured alias specified in review assignment."
+}

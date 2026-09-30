@@ -1,0 +1,9 @@
+.............                                                            [100%]
+=============================== warnings summary ===============================
+OpenMS4-tests/packages/flashapp/tests/test_render_compression.py::test_nonempty_input_passes_through_binning
+  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/flashapp/src/render/compression.py:63: DeprecationWarning: `pl.count()` is deprecated. Please use `pl.len()` instead.
+  (Deprecated in version 0.20.5)
+    total_count = sorted_data.select(pl.count()).item()
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+13 passed, 1 warning in 1.46s

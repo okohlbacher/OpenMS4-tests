@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/usr/bin/sandbox-exec",
+    "-f",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+    "/opt/homebrew/bin/cmake",
+    "-S",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/source",
+    "-B",
+    "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/wrong-core-build",
+    "-G",
+    "Ninja",
+    "-DCMAKE_BUILD_TYPE=Debug",
+    "-DCMAKE_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk;/opt/homebrew;/opt/homebrew/opt/libomp",
+    "-DCMAKE_FIND_FRAMEWORK=LAST",
+    "-DCURL_ROOT=/opt/homebrew/opt/curl",
+    "-DOPENMS4_DEPENDENCY_LOCK_FILE=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/evidence/wrong-core.lock.json",
+    "-DOPENMS4_SOURCE_REVISION=582535805581f2bdf4f3871d6802a0b45a3abe36",
+    "-DOPENMS4_SOURCE_DIRTY=OFF"
+  ],
+  "exit_code": 1,
+  "intended_diagnostic": "OpenMS SDK revision mismatch: expected",
+  "passed": true
+}

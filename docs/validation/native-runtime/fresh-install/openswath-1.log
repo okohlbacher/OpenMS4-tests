@@ -1,0 +1,21 @@
+-- Install configuration: "Debug"
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/MRMTransitionGroupPicker
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathAnalyzer
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathAssayGenerator
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathChromatogramExtractor
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathConfidenceScoring
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathDIAPreScoring
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathDecoyGenerator
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathExport
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathFeatureXMLToTSV
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathFileSplitter
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathInfer
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathMzMLFileCacher
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathPeakMapExtractor
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathPercolatorScoring
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathRTNormalizer
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathRewriteToFeatureXML
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/OpenSwathWorkflow
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/TargetedFileConverter
+-- Installing: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/bin/TransitionListEvidenceFilter
+-- Up-to-date: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/share/openms4/tools/openswath.tools.tsv

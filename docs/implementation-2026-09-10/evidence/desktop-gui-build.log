@@ -1,0 +1,782 @@
+[1/173] cd /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build && /opt/homebrew/bin/cmake -DOPENMS4_CHECK_SOURCE_DIR=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/cmake/.. -DOPENMS4_SOURCE_REVISION=b39230036c53f74b537c3683520f3ba2ef1ba963 -DOPENMS4_SOURCE_DIRTY=OFF -DOPENMS4_EXPECTED_REVISION=b39230036c53f74b537c3683520f3ba2ef1ba963 -DOPENMS4_EXPECTED_DIRTY=OFF -DOPENMS4_REQUIRE_CLEAN_SOURCE=ON -P /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/cmake/OpenMS4Dependencies.cmake
+-- Found Git: /usr/bin/git (found version "2.50.1 (Apple Git-155)")
+[2/173] Automatic MOC and UIC for target OpenMS_GUI
+AutoMoc: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/SequenceVisualizer.h:0:1: note: No relevant classes found. No output generated.
+[3/173] Generating qrc_resources.cpp
+[4/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/ANNOTATION/Annotation1DItem.cpp.o
+[5/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/ANNOTATION/Annotation1DDistanceItem.cpp.o
+[6/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/ANNOTATION/Annotation1DPeakItem.cpp.o
+[7/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/OpenMS_GUI_autogen/mocs_compilation.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:82:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_AcquisitionInfoVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/AcquisitionInfoVisualizer.h:47:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   47 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:83:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_AcquisitionVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/AcquisitionVisualizer.h:46:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   46 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:85:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_ContactPersonVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ContactPersonVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:86:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_DataProcessingVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/DataProcessingVisualizer.h:47:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   47 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:87:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_DocumentIdentifierVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/DocumentIdentifierVisualizer.h:47:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   47 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:88:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_ExperimentalSettingsVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ExperimentalSettingsVisualizer.h:48:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   48 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:89:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_GradientVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/GradientVisualizer.h:59:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   59 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:90:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_HPLCVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/HPLCVisualizer.h:46:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   46 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:91:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_InstrumentSettingsVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/InstrumentSettingsVisualizer.h:46:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   46 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:92:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_InstrumentVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/InstrumentVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:93:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_IonDetectorVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/IonDetectorVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:94:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_IonSourceVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/IonSourceVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:95:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_MassAnalyzerVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/MassAnalyzerVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:96:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_MetaInfoDescriptionVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/MetaInfoDescriptionVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:97:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_MetaInfoVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/MetaInfoVisualizer.h:60:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   60 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:98:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_PeptideHitVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/PeptideHitVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:99:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_PeptideIdentificationVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/PeptideIdentificationVisualizer.h:49:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   49 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:100:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_PrecursorVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/PrecursorVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:101:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_ProductVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ProductVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:102:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_ProteinHitVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ProteinHitVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:103:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_ProteinIdentificationVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ProteinIdentificationVisualizer.h:58:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   58 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:104:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_SampleVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/SampleVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:105:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_ScanWindowVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ScanWindowVisualizer.h:48:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   48 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:106:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_SoftwareVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/SoftwareVisualizer.h:48:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   48 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:107:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_SourceFileVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/SourceFileVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/mocs_compilation.cpp:108:
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/moc_SpectrumSettingsVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/desktop-gui-build/OpenMS_GUI_autogen/2MKSNPN25C/../../../OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/SpectrumSettingsVisualizer.h:47:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   47 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+26 warnings generated.
+[8/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/ANNOTATION/Annotation1DCaret.cpp.o
+[9/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/ANNOTATION/Annotations1DContainer.cpp.o
+[10/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/ANNOTATION/Annotation1DTextItem.cpp.o
+[11/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/APPLICATIONS/INIFileEditorWindow.cpp.o
+[12/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/ANNOTATION/Annotation1DVerticalLineItem.cpp.o
+[13/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/APPLICATIONS/MISC/QApplicationTOPP.cpp.o
+[14/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/APPLICATIONS/TOPPASBase.cpp.o
+[15/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/DataFilterDialog.cpp.o
+[16/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/APPLICATIONS/TOPPViewBase.cpp.o
+[17/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/FeatureEditDialog.cpp.o
+[18/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/ListFilterDialog.cpp.o
+[19/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/HistogramDialog.cpp.o
+[20/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/Plot1DGoToDialog.cpp.o
+[21/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/SaveImageDialog.cpp.o
+[22/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/Plot1DPrefDialog.cpp.o
+[23/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/LayerStatisticsDialog.cpp.o
+[24/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/Plot2DPrefDialog.cpp.o
+[25/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/Plot3DPrefDialog.cpp.o
+[26/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/Plot2DGoToDialog.cpp.o
+[27/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/TOPPASIOMappingDialog.cpp.o
+[28/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/TOPPASInputFileDialog.cpp.o
+[29/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/TOPPASInputFilesDialog.cpp.o
+[30/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/TOPPASOutputFilesDialog.cpp.o
+[31/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/SpectrumAlignmentDialog.cpp.o
+[32/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/TOPPASToolConfigDialog.cpp.o
+[33/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/TOPPASVertexNameDialog.cpp.o
+[34/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/TOPPViewOpenDialog.cpp.o
+[35/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/TheoreticalSpectrumGenerationDialog.cpp.o
+[36/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/INTERFACES/IPeptideIds.cpp.o
+[37/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/TOPPViewPrefDialog.cpp.o
+[38/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/MISC/CommonDefs.cpp.o
+[39/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIALOGS/ToolsDialog.cpp.o
+[40/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/MISC/ExternalProcessMBox.cpp.o
+[41/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/MISC/FilterableList.cpp.o
+[42/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/MISC/GUIHelpers.cpp.o
+[43/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/MISC/InteractiveSplashScreen.cpp.o
+[44/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/BaseVisualizer.cpp.o
+[45/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/AcquisitionInfoVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/AcquisitionInfoVisualizer.cpp:10:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/AcquisitionInfoVisualizer.h:47:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   47 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[46/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/BaseVisualizerGUI.cpp.o
+[47/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/AcquisitionVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/AcquisitionVisualizer.cpp:10:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/AcquisitionVisualizer.h:46:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   46 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[48/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/ContactPersonVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/ContactPersonVisualizer.cpp:10:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ContactPersonVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[49/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/DocumentIdentifierVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/DocumentIdentifierVisualizer.cpp:10:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/DocumentIdentifierVisualizer.h:47:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   47 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[50/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/DataProcessingVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/DataProcessingVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/DataProcessingVisualizer.h:47:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   47 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[51/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/GradientVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/GradientVisualizer.cpp:10:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/GradientVisualizer.h:59:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   59 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[52/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/HPLCVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/HPLCVisualizer.cpp:10:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/HPLCVisualizer.h:46:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   46 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[53/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/ExperimentalSettingsVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/ExperimentalSettingsVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ExperimentalSettingsVisualizer.h:48:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   48 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[54/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/InstrumentSettingsVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/InstrumentSettingsVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/InstrumentSettingsVisualizer.h:46:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   46 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[55/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/InstrumentVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/InstrumentVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/InstrumentVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[56/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/IonDetectorVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/IonDetectorVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/IonDetectorVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[57/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/IonSourceVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/IonSourceVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/IonSourceVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[58/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/MassAnalyzerVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/MassAnalyzerVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/MassAnalyzerVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[59/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/MetaInfoDescriptionVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/MetaInfoDescriptionVisualizer.cpp:10:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/MetaInfoDescriptionVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[60/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/MetaInfoVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/MetaInfoVisualizer.cpp:10:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/MetaInfoVisualizer.h:60:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   60 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[61/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/PeptideHitVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/PeptideHitVisualizer.cpp:10:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/PeptideHitVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[62/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/PeptideIdentificationVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/PeptideIdentificationVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/PeptideIdentificationVisualizer.h:49:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   49 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[63/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/PrecursorVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/PrecursorVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/PrecursorVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[64/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/ProteinHitVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/ProteinHitVisualizer.cpp:10:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ProteinHitVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[65/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/SampleVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/SampleVisualizer.cpp:10:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/SampleVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[66/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/ScanWindowVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/ScanWindowVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ScanWindowVisualizer.h:48:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   48 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[67/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/ProteinIdentificationVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/ProteinIdentificationVisualizer.cpp:10:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ProteinIdentificationVisualizer.h:58:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   58 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[68/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/SoftwareVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/SoftwareVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/SoftwareVisualizer.h:48:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   48 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[69/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/SourceFileVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/SourceFileVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/SourceFileVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[70/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/SpectrumSettingsVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/SpectrumSettingsVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/SpectrumSettingsVisualizer.h:47:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   47 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[71/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISITORS/LayerStatistics.cpp.o
+[72/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISUALIZER/ProductVisualizer.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/VISUALIZER/ProductVisualizer.cpp:9:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ProductVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+1 warning generated.
+[73/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/AxisTickCalculator.cpp.o
+[74/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/VISITORS/LayerStoreData.cpp.o
+[75/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/AxisPainter.cpp.o
+[76/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/ColorSelector.cpp.o
+[77/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/AxisWidget.cpp.o
+[78/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/EnhancedTabBar.cpp.o
+[79/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DataSelectionTabs.cpp.o
+[80/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/EnhancedTabBarWidgetInterface.cpp.o
+[81/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/DIATreeTab.cpp.o
+[82/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/EnhancedWorkspace.cpp.o
+[83/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/FileWatcher.cpp.o
+[84/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/GUIProgressLoggerImpl.cpp.o
+[85/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/FilterList.cpp.o
+[86/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/InputFile.cpp.o
+[87/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/InputFileList.cpp.o
+[88/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/HistogramWidget.cpp.o
+[89/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LayerListView.cpp.o
+[90/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LayerData1DBase.cpp.o
+[91/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LayerData1DChrom.cpp.o
+[92/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LayerData1DIonMobility.cpp.o
+[93/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LayerData1DPeak.cpp.o
+[94/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LayerDataBase.cpp.o
+[95/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LayerDataChrom.cpp.o
+[96/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LayerDataConsensus.cpp.o
+[97/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LayerDataFeature.cpp.o
+[98/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LayerDataIdent.cpp.o
+[99/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LayerDataIonMobility.cpp.o
+[100/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LogWindow.cpp.o
+[101/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/ListEditor.cpp.o
+[102/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/LayerDataPeak.cpp.o
+[103/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/MultiGradient.cpp.o
+[104/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/OutputDirectory.cpp.o
+[105/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/MultiGradientSelector.cpp.o
+[106/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/MetaDataBrowser.cpp.o
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:12:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/SampleVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:14:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/HPLCVisualizer.h:46:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   46 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:15:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/GradientVisualizer.h:59:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   59 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:16:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/MetaInfoVisualizer.h:60:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   60 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:17:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/SoftwareVisualizer.h:48:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   48 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:18:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/SourceFileVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:19:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ContactPersonVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:20:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/InstrumentVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:21:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/IonSourceVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:22:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/IonDetectorVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:23:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/MassAnalyzerVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:24:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/DataProcessingVisualizer.h:47:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   47 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:25:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ProteinIdentificationVisualizer.h:58:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   58 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:26:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ProteinHitVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:27:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/PeptideHitVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:28:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ExperimentalSettingsVisualizer.h:48:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   48 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:29:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/AcquisitionVisualizer.h:46:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   46 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:30:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/AcquisitionInfoVisualizer.h:47:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   47 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:31:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/MetaInfoDescriptionVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:32:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/PrecursorVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:33:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ProductVisualizer.h:45:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   45 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:34:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/InstrumentSettingsVisualizer.h:46:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   46 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:35:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/PeptideIdentificationVisualizer.h:49:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   49 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:36:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/SpectrumSettingsVisualizer.h:47:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   47 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:37:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/DocumentIdentifierVisualizer.h:47:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   47 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+In file included from /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/MetaDataBrowser.cpp:38:
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/ScanWindowVisualizer.h:48:10: warning: 'undo_' overrides a member function but is not marked 'override' [-Winconsistent-missing-override]
+   48 |     void undo_();
+      |          ^
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/include/OpenMS/VISUAL/VISUALIZER/BaseVisualizerGUI.h:64:18: note: overridden virtual function is here
+   64 |     virtual void undo_() = 0;
+      |                  ^
+26 warnings generated.
+[107/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/PainterBase.cpp.o
+[108/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/Painter1DBase.cpp.o
+[109/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/ParamEditor.cpp.o
+[110/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/Painter2DBase.cpp.o
+[111/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/Plot1DWidget.cpp.o
+[112/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/Plot1DCanvas.cpp.o
+[113/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/Plot2DCanvas.cpp.o
+[114/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/Plot3DCanvas.cpp.o
+[115/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/Plot2DWidget.cpp.o
+[116/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/Plot3DOpenGLCanvas.cpp.o
+[117/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/Plot3DWidget.cpp.o
+[118/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/PlotWidget.cpp.o
+[119/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/SequenceVisualizer.cpp.o
+[120/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/PlotCanvas.cpp.o
+[121/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/RecentFilesMenu.cpp.o
+[122/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TableView.cpp.o
+[123/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASEdge.cpp.o
+[124/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/SpectraTreeTab.cpp.o
+/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/desktop/gui/source/VISUAL/SpectraTreeTab.cpp:93:33: warning: comparison of different enumeration types ('OpenMS::ClmnPeak::HeaderNames' and 'OpenMS::ClmnChrom::HeaderNames') is deprecated [-Wdeprecated-enum-compare]
+   93 |     assert(ClmnPeak::SPEC_INDEX == ClmnChrom::CHROM_INDEX);
+      |            ~~~~~~~~~~~~~~~~~~~~ ^  ~~~~~~~~~~~~~~~~~~~~~~
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/assert.h:72:25: note: expanded from macro 'assert'
+   72 |     (__builtin_expect(!(e), 0) ? __assert_rtn(__func__, __ASSERT_FILE_NAME, __LINE__, #e) : (void)0)
+      |                         ^
+1 warning generated.
+[125/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/SpectraIDViewTab.cpp.o
+[126/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASInputFileListVertex.cpp.o
+[127/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASMergerVertex.cpp.o
+[128/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASOutputVertex.cpp.o
+[129/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASOutputFileListVertex.cpp.o
+[130/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASResource.cpp.o
+[131/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASOutputFolderVertex.cpp.o
+[132/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASResources.cpp.o
+[133/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASScene.cpp.o
+[134/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASSplitterVertex.cpp.o
+[135/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASToolVertex.cpp.o
+[136/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASTreeView.cpp.o
+[137/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASVertex.cpp.o
+[138/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPASWidget.cpp.o
+[139/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TreeView.cpp.o
+[140/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TOPPViewMenu.cpp.o
+[141/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TVDIATreeTabController.cpp.o
+[142/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TVIdentificationViewController.cpp.o
+[143/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TVToolDiscovery.cpp.o
+[144/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/qrc_resources.cpp.o
+[145/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TVSpectraViewController.cpp.o
+[146/173] Building CXX object CMakeFiles/OpenMS_GUI.dir/source/VISUAL/TVControllerBase.cpp.o
+[147/173] Linking CXX shared library lib/libOpenMS_GUI.1.0.0.dylib
+[148/173] Creating library symlink lib/libOpenMS_GUI.1.dylib lib/libOpenMS_GUI.dylib
+[149/173] Automatic MOC and UIC for target AxisTickCalculator_test
+[150/173] Automatic MOC and UIC for target Annotation1DPeakItem_test
+[151/173] Automatic MOC and UIC for target FileWatcher_test
+[152/173] Building CXX object tests/CMakeFiles/Annotation1DPeakItem_test.dir/Annotation1DPeakItem_test_autogen/mocs_compilation.cpp.o
+[153/173] Automatic MOC and UIC for target MultiGradient_test
+[154/173] Automatic MOC and UIC for target GUIHelpers_test
+[155/173] Building CXX object tests/CMakeFiles/AxisTickCalculator_test.dir/AxisTickCalculator_test_autogen/mocs_compilation.cpp.o
+[156/173] Building CXX object tests/CMakeFiles/Annotation1DPeakItem_test.dir/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMS/TestSupport/OpenMSTestSupport.cpp.o
+[157/173] Building CXX object tests/CMakeFiles/AxisTickCalculator_test.dir/source/AxisTickCalculator_test.cpp.o
+[158/173] Building CXX object tests/CMakeFiles/FileWatcher_test.dir/FileWatcher_test_autogen/mocs_compilation.cpp.o
+[159/173] Building CXX object tests/CMakeFiles/AxisTickCalculator_test.dir/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMS/TestSupport/OpenMSTestSupport.cpp.o
+[160/173] Building CXX object tests/CMakeFiles/FileWatcher_test.dir/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMS/TestSupport/OpenMSTestSupport.cpp.o
+[161/173] Building CXX object tests/CMakeFiles/GUIHelpers_test.dir/GUIHelpers_test_autogen/mocs_compilation.cpp.o
+[162/173] Building CXX object tests/CMakeFiles/FileWatcher_test.dir/source/FileWatcher_test.cpp.o
+[163/173] Building CXX object tests/CMakeFiles/GUIHelpers_test.dir/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMS/TestSupport/OpenMSTestSupport.cpp.o
+[164/173] Building CXX object tests/CMakeFiles/MultiGradient_test.dir/MultiGradient_test_autogen/mocs_compilation.cpp.o
+[165/173] Building CXX object tests/CMakeFiles/GUIHelpers_test.dir/source/GUIHelpers_test.cpp.o
+[166/173] Building CXX object tests/CMakeFiles/MultiGradient_test.dir/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMS/TestSupport/OpenMSTestSupport.cpp.o
+[167/173] Linking CXX executable tests/AxisTickCalculator_test
+[168/173] Building CXX object tests/CMakeFiles/MultiGradient_test.dir/source/MultiGradient_test.cpp.o
+[169/173] Linking CXX executable tests/FileWatcher_test
+[170/173] Linking CXX executable tests/GUIHelpers_test
+[171/173] Linking CXX executable tests/MultiGradient_test
+[172/173] Building CXX object tests/CMakeFiles/Annotation1DPeakItem_test.dir/source/Annotation1DPeakItem_test.cpp.o
+[173/173] Linking CXX executable tests/Annotation1DPeakItem_test

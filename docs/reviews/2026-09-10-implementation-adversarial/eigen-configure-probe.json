@@ -1,0 +1,7 @@
+{
+  "request": "Exact TOPP standalone Eigen3 3.4 minimum request with Homebrew Eigen5.0.1",
+  "exit_code": 1,
+  "stdout": "-- Configuring incomplete, errors occurred!\n",
+  "stderr": "CMake Error at CMakeLists.txt:3 (find_package):\n  Could not find a configuration file for package \"Eigen3\" that is compatible\n  with requested version \"3.4\".\n\n  The following configuration files were considered but not accepted:\n\n    /opt/homebrew/share/eigen3/cmake/Eigen3Config.cmake, version: 5.0.1\n      The version found is not compatible with the version requested.\n\n\n\n",
+  "scope": "Configure-only dependency request, no native compilation."
+}

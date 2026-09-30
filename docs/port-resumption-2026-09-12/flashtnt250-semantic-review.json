@@ -1,0 +1,125 @@
+{
+  "upstream_repository": "https://github.com/t0mdavid-m/OpenMS",
+  "upstream_revision": "3f508829ad81c91354d397966f28d428e29e5329",
+  "port_revision": "250debbc26565b51ef861ccaa8132b9e11b4f8d9",
+  "blob_checks": [
+    {
+      "path": "License.txt",
+      "expected_git_object": "722acba66f6c997f78dd5dd2bf8054a85ce2887c",
+      "actual_git_object": "722acba66f6c997f78dd5dd2bf8054a85ce2887c",
+      "match": true
+    },
+    {
+      "path": "src/topp/FLASHTnT.cpp",
+      "expected_git_object": "80628a74e452c5110a98358f78becabbddaa53d1",
+      "actual_git_object": "80628a74e452c5110a98358f78becabbddaa53d1",
+      "match": true
+    },
+    {
+      "path": "src/openms/source/FORMAT/FLASHTnTFile.cpp",
+      "expected_git_object": "6f51b9dfff5457e9c70854b1b5e459311789c7db",
+      "actual_git_object": "6f51b9dfff5457e9c70854b1b5e459311789c7db",
+      "match": true
+    },
+    {
+      "path": "src/openms/source/ANALYSIS/TOPDOWN/FLASHTnTAlgorithm.cpp",
+      "expected_git_object": "afc1a650f195aa0428b2985d4b9be305b734f7cc",
+      "actual_git_object": "afc1a650f195aa0428b2985d4b9be305b734f7cc",
+      "match": true
+    },
+    {
+      "path": "src/openms/source/ANALYSIS/TOPDOWN/FLASHTaggerAlgorithm.cpp",
+      "expected_git_object": "18ce082ffaf0fbd92afd7ba32b816fbbdf68ce00",
+      "actual_git_object": "18ce082ffaf0fbd92afd7ba32b816fbbdf68ce00",
+      "match": true
+    },
+    {
+      "path": "src/openms/source/ANALYSIS/TOPDOWN/FLASHExtenderAlgorithm.cpp",
+      "expected_git_object": "6ae6f925fb90a0b84bdb1fbab34b781a90902ed6",
+      "actual_git_object": "6ae6f925fb90a0b84bdb1fbab34b781a90902ed6",
+      "match": true
+    },
+    {
+      "path": "src/openms/include/OpenMS/FORMAT/FLASHTnTFile.h",
+      "expected_git_object": "dbb88cac1e34f915fdfeede2ddb3b0e04c4ec6a8",
+      "actual_git_object": "dbb88cac1e34f915fdfeede2ddb3b0e04c4ec6a8",
+      "match": true
+    },
+    {
+      "path": "src/openms/include/OpenMS/ANALYSIS/TOPDOWN/FLASHTnTAlgorithm.h",
+      "expected_git_object": "1bc84ef88c947fe563b1cfec3771f0ba8d874d85",
+      "actual_git_object": "1bc84ef88c947fe563b1cfec3771f0ba8d874d85",
+      "match": true
+    },
+    {
+      "path": "src/openms/include/OpenMS/ANALYSIS/TOPDOWN/FLASHExtenderAlgorithm.h",
+      "expected_git_object": "0f61c5a406398d865256e2b803a07e4bc6f30c16",
+      "actual_git_object": "0f61c5a406398d865256e2b803a07e4bc6f30c16",
+      "match": true
+    },
+    {
+      "path": "src/openms/include/OpenMS/ANALYSIS/TOPDOWN/FLASHTaggerAlgorithm.h",
+      "expected_git_object": "6dfaba5385a11cc82227ac5103ff17cc3b972f5a",
+      "actual_git_object": "6dfaba5385a11cc82227ac5103ff17cc3b972f5a",
+      "match": true
+    },
+    {
+      "path": "src/openms/include/OpenMS/ANALYSIS/TOPDOWN/FLASHHelperClasses.h",
+      "expected_git_object": "266492bd17c696377770d277b127d03bf51fb41a",
+      "actual_git_object": "266492bd17c696377770d277b127d03bf51fb41a",
+      "match": true
+    },
+    {
+      "path": "src/openms/source/ANALYSIS/TOPDOWN/FLASHHelperClasses.cpp",
+      "expected_git_object": "89ae5da3d00dc5bcac5a9793623056c7126a09bc",
+      "actual_git_object": "89ae5da3d00dc5bcac5a9793623056c7126a09bc",
+      "match": true
+    }
+  ],
+  "aqpz_numeric_checks": [
+    {
+      "native_id": "controllerType=0 controllerNumber=1 scan=1",
+      "peak_count": 215,
+      "tolerance": "5.000000",
+      "precursor_scan": "0",
+      "snr_count": 215,
+      "qscore_count": 215,
+      "strtof_vs_double_then_float_bit_differences": []
+    }
+  ],
+  "confirmed_remaining_port_bug_explaining_legacy_counts": false,
+  "same_source_upstream_native_comparison_performed": false,
+  "limitations": [
+    "Numeric conversion check compares libc strtof with decimal-to-double then IEEE float on local macOS; it is not full upstream/Core binary equivalence.",
+    "Existing inspected Dax old SDKs lack legacy OpenMS String.h, so unmodified upstream cannot link against those SDKs.",
+    "Historical May2025 FLASHApp cache does not record its producer binary revision.",
+    "No numeric golden values were replaced; current source is not claimed scientifically equivalent to historical output."
+  ],
+  "followup_confirmed_defects": [
+    {
+      "revision_fixed": "709de5e2e79cbdef0cbf563b75b605795b401b4b",
+      "path": "source/ANALYSIS/TOPDOWN/FLASHExtenderAlgorithm.cpp",
+      "finding": "Inherited open-ended endpoint -1 read before its guard, reproduced by AQPZ under ASan. Move mass reads inside existing nonnegative endpoint guard."
+    },
+    {
+      "revision_fixed": "93eb47cb0575426dccba1067f51c1c9d8fb4163d",
+      "path": "source/ANALYSIS/TOPDOWN/FLASHExtenderAlgorithm.cpp",
+      "finding": "Inherited dereference of exhausted reverse iterator in calculatePrecursorMass_, reproduced by AQPZ after the first ASan fix. Skip absent complementary prefix."
+    },
+    {
+      "revision_fixed": "93eb47cb0575426dccba1067f51c1c9d8fb4163d",
+      "path": "source/ANALYSIS/TOPDOWN/FLASHTaggerAlgorithm.cpp",
+      "finding": "Unqualified abs inherited text resolves to integer overload in port GCC14.4 but double overload in AppleClang21. Exact compiler dumps show integer truncation vs floating result. Use std::abs; synthetic PET ladders0.5Da apart regress overlap behavior. Original upstream includes/runtime resolution not measured.",
+      "evidence": [
+        "/tmp/flashtnt-abs-gcc-updateTagSet.txt",
+        "/tmp/flashtnt-abs-macos-ast.txt"
+      ]
+    }
+  ],
+  "followup_crossplatform_receipt": "/tmp/flashtnt93-crossplatform-comparison.json",
+  "followup_negative_control_receipts": [
+    "/tmp/flashtnt-pet-negative-control.json",
+    "/tmp/flashtnt-pet-only-negative-control.json"
+  ],
+  "followup_result": "Corrected93eb47c outputs byte-identical across Linux x64 and Mac ARM; 698 tags,114 AQPZ tags,10proteins,10PrSMs. Legacy2025 reference remains numerically different."
+}

@@ -1,0 +1,45 @@
+[
+  {
+    "phase": "configure",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+      "/opt/homebrew/bin/cmake",
+      "-S",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/source",
+      "-B",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/build",
+      "-G",
+      "Ninja",
+      "-DCMAKE_BUILD_TYPE=Debug",
+      "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON",
+      "-DCMAKE_PREFIX_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk;/opt/homebrew;/opt/homebrew/opt/libomp",
+      "-DCMAKE_INSTALL_PREFIX=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/sdk",
+      "-DCMAKE_FIND_FRAMEWORK=LAST",
+      "-DCURL_ROOT=/opt/homebrew/opt/curl",
+      "-DLP_SOLVER=COIN",
+      "-DBUILD_TESTING=ON",
+      "-DOPENMS4_REQUIRE_CLEAN_SOURCE=ON",
+      "-DOPENMS4_SOURCE_REVISION=582535805581f2bdf4f3871d6802a0b45a3abe36",
+      "-DOPENMS4_SOURCE_DIRTY=OFF"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 3.665963332983665
+  },
+  {
+    "phase": "build",
+    "command": [
+      "/usr/bin/sandbox-exec",
+      "-f",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/isolated-sdk.sb",
+      "/opt/homebrew/bin/cmake",
+      "--build",
+      "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-sdk-validation/build",
+      "--parallel",
+      "2"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 168.63920670899097
+  }
+]

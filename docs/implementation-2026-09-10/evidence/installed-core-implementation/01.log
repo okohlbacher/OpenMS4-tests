@@ -1,0 +1,126 @@
+-- The CXX compiler identification is AppleClang 21.0.0.21000101
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found CURL: /opt/homebrew/opt/curl/lib/libcurl.dylib (found version "8.21.0")
+CMake Warning (policy) at /opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+Call Stack (most recent call first):
+  /opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMS/OpenMSConfig.cmake:35 (find_dependency)
+  CMakeLists.txt:15 (find_package)
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Found Boost: /opt/homebrew/lib/cmake/Boost-1.90.0/BoostConfig.cmake (found suitable exact version "1.90.0") found components: regex
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Checking for modules 'libbrotlicommon;libbrotlienc;libbrotlidec'
+--   Found libbrotlicommon, version 1.2.0
+--   Found libbrotlienc, version 1.2.0
+--   Found libbrotlidec, version 1.2.0
+-- Found BrotliAlt: /opt/homebrew/Cellar/brotli/1.2.0/lib/libbrotlicommon.dylib
+-- Found OpenSSL: /opt/homebrew/opt/openssl@3/lib/libcrypto.dylib (found version "3.6.3")
+-- Found ZLIB: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libz.tbd (found version "1.2.12")
+CMake Warning at /opt/homebrew/lib/cmake/Arrow/Findlz4Alt.cmake:29 (find_package):
+  By not providing "Findlz4.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "lz4", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "lz4" with any of
+  the following names:
+
+    lz4.cps
+    lz4Config.cmake
+    lz4-config.cmake
+
+  Add the installation prefix of "lz4" to CMAKE_PREFIX_PATH or set "lz4_DIR"
+  to a directory containing one of the above files.  If "lz4" provides a
+  separate development package or SDK, be sure it has been installed.
+Call Stack (most recent call first):
+  /opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /opt/homebrew/lib/cmake/Arrow/ArrowConfig.cmake:101 (find_dependency)
+  /opt/homebrew/lib/cmake/Arrow/ArrowConfig.cmake:124 (arrow_find_dependencies)
+  /opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMS/OpenMSConfig.cmake:40 (find_dependency)
+  CMakeLists.txt:15 (find_package)
+
+
+-- Checking for module 'liblz4'
+--   Found liblz4, version 1.10.0
+-- Found lz4Alt: /opt/homebrew/opt/lz4/lib/liblz4.dylib
+-- Found BZip2: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/libbz2.tbd (found version "1.0.8")
+-- Looking for BZ2_bzCompressInit
+-- Looking for BZ2_bzCompressInit - found
+-- Found utf8proc: /opt/homebrew/lib/libutf8proc.dylib (found version "2.11.3")
+-- Found AWS SDK for C++, Version: 1.11.840, Install Root:/opt/homebrew, Platform Prefix:, Platform Dependent Libraries: pthread;curl
+-- Components specified for AWSSDK: config;s3;transfer;identity-management;sts, application will be depending on libs: aws-cpp-sdk-config;aws-cpp-sdk-transfer;aws-cpp-sdk-identity-management;aws-cpp-sdk-cognito-identity;aws-cpp-sdk-sts;aws-cpp-sdk-s3;aws-cpp-sdk-core
+-- Try finding aws-cpp-sdk-core
+-- Found crypto: /opt/homebrew/lib/libcrypto.dylib
+-- LibCrypto Include Dir: /opt/homebrew/include
+-- LibCrypto Shared Lib:  /opt/homebrew/lib/libcrypto.dylib
+-- LibCrypto Static Lib:  /opt/homebrew/lib/libcrypto.a
+-- Found aws-cpp-sdk-core
+-- Try finding aws-cpp-sdk-s3
+-- Found aws-cpp-sdk-s3
+-- Try finding aws-cpp-sdk-sts
+-- Found aws-cpp-sdk-sts
+-- Try finding aws-cpp-sdk-cognito-identity
+-- Found aws-cpp-sdk-cognito-identity
+-- Try finding aws-cpp-sdk-identity-management
+-- Found aws-cpp-sdk-identity-management
+-- Try finding aws-cpp-sdk-transfer
+-- Found aws-cpp-sdk-transfer
+-- Try finding aws-cpp-sdk-config
+-- Found aws-cpp-sdk-config
+-- Arrow version: 25.0.0
+-- Found the Arrow shared library: /opt/homebrew/lib/libarrow.2500.0.0.dylib
+-- Found the Arrow import library: ARROW_IMPORT_LIB-NOTFOUND
+-- Found the Arrow static library: /opt/homebrew/lib/libarrow.a
+CMake Warning at /opt/homebrew/lib/cmake/Parquet/FindThriftAlt.cmake:42 (find_package):
+  By not providing "FindThrift.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "Thrift", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "Thrift" with any
+  of the following names:
+
+    Thrift.cps
+    thrift.cps
+    ThriftConfig.cmake
+    thrift-config.cmake
+
+  Add the installation prefix of "Thrift" to CMAKE_PREFIX_PATH or set
+  "Thrift_DIR" to a directory containing one of the above files.  If "Thrift"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+Call Stack (most recent call first):
+  /opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /opt/homebrew/lib/cmake/Arrow/ArrowConfig.cmake:101 (find_dependency)
+  /opt/homebrew/lib/cmake/Parquet/ParquetConfig.cmake:62 (arrow_find_dependencies)
+  /opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:93 (find_package)
+  /opt/homebrew/share/cmake/Modules/CMakeFindDependencyMacro.cmake:125 (__find_dependency_common)
+  /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk/lib/cmake/OpenMS/OpenMSConfig.cmake:41 (find_dependency)
+  CMakeLists.txt:15 (find_package)
+
+
+-- Checking for module 'thrift'
+--   Found thrift, version 0.24.0
+-- Found ThriftAlt: /opt/homebrew/Cellar/thrift/0.24.0/lib/libthrift.dylib (found version "0.24.0")
+-- Parquet version: 25.0.0
+-- Found the Parquet shared library: /opt/homebrew/lib/libparquet.2500.0.0.dylib
+-- Found the Parquet import library: PARQUET_IMPORT_LIB-NOTFOUND
+-- Found the Parquet static library: /opt/homebrew/lib/libparquet.a
+-- Found OpenMP_CXX: -Xclang -fopenmp (found version "5.1")
+-- Found OpenMP: TRUE (found version "5.1") found components: CXX
+-- Configuring done (15.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-implementation/original-consumer

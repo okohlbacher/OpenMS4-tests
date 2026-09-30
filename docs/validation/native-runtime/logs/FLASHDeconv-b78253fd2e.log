@@ -1,0 +1,45 @@
+stty: stdin isn't a terminal
+
+FLASHDeconv -- Ultra-fast high-quality deconvolution enables online processing of top-down MS data
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_FLASHDeconv.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+To cite FLASHDeconv:
+ + Jeong K, Kim J, Gaikwad M et al.. FLASHDeconv: Ultrafast, High-Quality Feature Deconvolution for Top-Down Proteomics. Cell Syst 2020 Feb 26;10(2):213-218.e6. doi:10.1016/j.cels.2020.01.003.
+
+Usage:
+  FLASHDeconv <options>
+
+This tool has algorithm parameters that are not shown here! Please check the ini file for a detailed description or use the --helphelp option
+
+Options (mandatory options marked with '*'):
+  -in <file>*                 Input file in mzML format.  (valid formats: 'mzML')
+  -out <file>*                Default output tsv file containing deconvolved features (valid formats: 'tsv')
+  -out_spec1 <file>           Output tsv file for deconvolved MS1 spectra. Use -out_spec2, ..., -out_spec4 for MS2, ..., MS4 spectra. (valid formats: 'tsv')
+  -out_mzml <file>            Output mzML file containing deconvolved spectra (for all MS levels). (valid formats: 'mzML')
+  -out_quant <file>           Output tsv file with isobaric quantification results for MS2 spectra. (valid formats: 'tsv')
+  -out_annotated_mzml <file>  Output annotated mzML file with monoisotopic mass, charge, and isotope index metadata for peaks. Unannotated peaks are also retained without metadata. (valid formats: 'mzML')
+  -out_msalign1 <file>        Output msalign (TopFD and ProMex compatible) file for MS1 deconvolved spectra. Ensure filename ends with ms1.msalign for TopPIC GUI compatibility (e.g., result_ms1.msalign; refer to TopPIC input formats). (valid formats: 'msalign')
+  -out_feature1 <file>        Output feature file (TopFD compatible) for MS1 spectra. It is needed for TopPIC feature intensity output (refer to TopPIC input formats). (valid formats: 'feature')
+  -keep_empty_out             Retain empty output files (e.g., *.tsv files with no features).
+  -write_detail               Include detailed peak information (m/z, intensity, charge, isotope index) for each deconvolved mass in the output spectrum tsv files specified by out_spec* options.
+                              
+Common TOPP options:
+  -ini <file>                 Use the given TOPP INI file
+  -threads <n>                Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>           Writes the default configuration file
+  --help                      Shows options
+  --helphelp                  Shows all options (including advanced)
+
+The following configuration subsections are valid:
+ - FD   FLASHDeconv algorithm parameters
+ - SD   Spectral deconvolution parameters
+ - ft   Feature tracing parameters
+ - iq   Isobaric quantification parameters
+
+You can write an example INI file using the '-write_ini' option.
+Documentation of subsection parameters can be found in the doxygen documentation or the INIFileEditor.
+For more information, please consult the online documentation for this tool:
+  - http://www.openms.de/doxygen/release/4.0.0/html/TOPP_FLASHDeconv.html
+

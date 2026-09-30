@@ -1,0 +1,103 @@
+IMPORT_PYOPENMS
+Determination of memory status is not supported on this 
+ platform, measuring for memoryleaks will never fail
+IMPORT_STREAMLIT
+IMPORT_WORKFLOW
+IMPORTS_COMPLETE
+2026-09-10 11:59:43.463 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.464 WARNING streamlit.runtime.state.session_state_proxy: Session state does not function when running a script without `streamlit run`
+2026-09-10 11:59:43.464 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.464 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.464 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.464 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.467 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.609 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.610 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.610 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.611 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.611 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.611 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.611 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.611 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.611 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.612 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.612 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.612 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.612 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.613 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.613 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.613 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.613 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.613 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.613 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.614 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.614 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.614 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.614 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.614 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.615 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.615 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.615 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.615 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.616 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.616 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.616 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.616 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.616 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.616 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.618 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.618 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.618 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.619 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.619 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.619 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+2026-09-10 11:59:43.619 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.
+WORKFLOW_EXECUTION_BEGIN
+native_id 'controllerType=0 controllerNumber=1 scan=1' is invalid. Could not extract scan number.
+native_id 'controllerType=0 controllerNumber=1 scan=2' is invalid. Could not extract scan number.
+native_id 'controllerType=0 controllerNumber=1 scan=3' is invalid. Could not extract scan number.
+native_id 'controllerType=0 controllerNumber=1 scan=4' is invalid. Could not extract scan number.
+Determination of memory status is not supported on this 
+ platform, measuring for memoryleaks will never fail
+  + Exception Group Traceback (most recent call last):
+  |   File "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/qualify_flashapp_deconv.py", line 92, in <module>
+  |     main()
+  |   File "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/qualify_flashapp_deconv.py", line 50, in main
+  |     assert workflow.execution() is True
+  |            ^^^^^^^^^^^^^^^^^^^^
+  |   File "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/flashapp/src/Workflow.py", line 395, in execution
+  |     raise ExceptionGroup("Errors during processing", errors)
+  | ExceptionGroup: Errors during processing (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "/private/tmp/openms4-flashapp-test-env/lib/python3.12/site-packages/scipy/stats/_kde.py", line 242, in __init__
+    |     self.set_bandwidth(bw_method=bw_method)
+    |   File "/private/tmp/openms4-flashapp-test-env/lib/python3.12/site-packages/scipy/stats/_kde.py", line 591, in set_bandwidth
+    |     self._compute_covariance()
+    |   File "/private/tmp/openms4-flashapp-test-env/lib/python3.12/site-packages/scipy/stats/_kde.py", line 603, in _compute_covariance
+    |     self._data_cho_cov = linalg.cholesky(self._data_covariance,
+    |                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/private/tmp/openms4-flashapp-test-env/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 120, in cholesky
+    |     c = _cholesky(a, lower=lower, overwrite_a=overwrite_a, clean=True,
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/private/tmp/openms4-flashapp-test-env/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 53, in _cholesky
+    |     _check_format_errors_warnings("potrf", err_lst)
+    |   File "/private/tmp/openms4-flashapp-test-env/lib/python3.12/site-packages/scipy/linalg/_decomp_cholesky.py", line 23, in _check_format_errors_warnings
+    |     raise LinAlgError(msg)
+    | numpy.linalg.LinAlgError: Internal potrf return info = [1] for slices [0].
+    | 
+    | The above exception was the direct cause of the following exception:
+    | 
+    | Traceback (most recent call last):
+    |   File "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/flashapp/src/Workflow.py", line 371, in execution
+    |     parseDeconv(
+    |   File "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/flashapp/src/parse/deconv.py", line 213, in parseDeconv
+    |     density_target, density_decoy = fdr_density_distribution(fdr_dfs)
+    |                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/flashapp/src/parse/deconv.py", line 225, in fdr_density_distribution
+    |     kde_target = gaussian_kde(target_qscores)
+    |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |   File "/private/tmp/openms4-flashapp-test-env/lib/python3.12/site-packages/scipy/stats/_kde.py", line 251, in __init__
+    |     raise linalg.LinAlgError(msg) from e
+    | numpy.linalg.LinAlgError: The data appears to lie in a lower-dimensional subspace of the space in which it is expressed. This has resulted in a singular data covariance matrix, which cannot be treated using the algorithms implemented in `gaussian_kde`. Consider performing principal component analysis / dimensionality reduction and using `gaussian_kde` with the transformed data.
+    +------------------------------------

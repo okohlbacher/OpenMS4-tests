@@ -1,0 +1,28 @@
+{
+  "test_binary": "core-build/src/tests/class_tests/bin/FeatureMapArrowIO_test",
+  "test_result": "PASSED in final launcher attempt",
+  "leak_result": "INCONCLUSIVE: no valid allocation/leak summary was produced",
+  "attempts": [
+    {
+      "log": "leaks-featuremap-arrow.log",
+      "tool_exit": 255,
+      "result": "task-port access failed; no test/leak result"
+    },
+    {
+      "log": "leaks-featuremap-arrow-escalated.log",
+      "tool_exit": 0,
+      "result": "loader failure: inherited DYLD fallback did not reach child; exit0 is not success evidence"
+    },
+    {
+      "log": "leaks-featuremap-arrow-final.log",
+      "tool_exit": 0,
+      "result": "test PASSED after launcher set documented dependency fallback; no allocation report"
+    }
+  ],
+  "scope": "Existing native Core test, no recompilation, dependencies unchanged, no leak-free conclusion",
+  "log_sha256": {
+    "leaks-featuremap-arrow.log": "0bd3b46101b32265beffc01427a935341a6304e289a18676fa495739f4e22e27",
+    "leaks-featuremap-arrow-escalated.log": "8a537cfd88d9e702477d39b0352551d3162f1dd623f30b720c2787d38c87e54a",
+    "leaks-featuremap-arrow-final.log": "c0371f491cd48bfb0c12eab8f9f6a733e5145e718062eca89a1c56043d9ee03d"
+  }
+}

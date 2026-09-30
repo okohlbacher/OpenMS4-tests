@@ -1,0 +1,168 @@
+stty: stdin isn't a terminal
+
+ProteomicsLFQ -- A standard proteomics LFQ pipeline.
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_ProteomicsLFQ.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  ProteomicsLFQ <options>
+
+Options (mandatory options marked with '*'):
+  -in <file list>                                            Input files. Optional only when '-feat_dir' supplies a checkpoint for every run of the design. (valid formats: 'mzML')
+  -ids <file list>                                           Identifications filtered at PSM level (e.g., q-value < 0.01).And annotated with PEP as main score.
+                                                             We suggest using:
+                                                             1. PSMFeatureExtractor to annotate percolator features.
+                                                             2. PercolatorAdapter tool (score_type = 'q-value', -post-processing-tdc)
+                                                             3. IDFilter (pep:score = 0.05)
+                                                             To obtain well calibrated PEPs and an initial reduction of PSMs
+                                                             ID files must be provided in same order as spectra files.
+                                                             One identification per spectrum is expected: where several identifications of one
+                                                             ...
+                                                             several search engines with ConsensusID rather than concatenating them. (valid formats: 'idXML', 'mzId', 'idparquet')
+  -design <file>                                             Design file (valid formats: 'tsv')
+  -fasta <file>                                              Fasta file (valid formats: 'fasta')
+  -out <file>                                                Optional output mzTab file. At least one output must be specified. (valid formats: 'mzTab')
+  -out_msstats <file>                                        Optional output MSstats input file. At least one output must be specified. (valid formats: 'csv')
+  -out_cxml <file>                                           Optional output consensusXML file. At least one output must be specified. (valid formats: 'consensusXML')
+  -out_qpx <directory>                                       Optional output directory for QPX Parquet files (quantms.feature.parquet, quantms.psm.parquet, quantms.pg.parquet). At least one output must be specified.
+  -feat_dir <directory>                                      Directory of per-run feature checkpoints. For every run of the experimental design, a valid checkpoint here is reused instead of detecting features again; a run without one is detected from '-in'/'-ids' and its checkpoint written. This makes a run resumable, and lets the per-run work be distributed: run with '-detect_only' on each machine, then once over the design with neither '-in' nor '-ids'. Requires '-design' and '-fasta'.
+  -detect_only                                               Stop after the per-run feature checkpoints have been written. No alignment, linking, inference or quantification is performed, and no result file is required. Requires '-feat_dir'.
+  -proteinFDR <threshold>                                    Protein FDR threshold (0.05=5%). (default: '0.05') (min: '0.0' max: '1.0')
+  -picked_proteinFDR <choice>                                Use a picked protein FDR? (default: 'false') (valid: 'true', 'false')
+  -psmFDR <threshold>                                        FDR threshold for sub-protein level (e.g. 0.05=5%). Use -FDR_type to choose the level. Cutoff is applied at the highest level. If Bayesian inference was chosen, it is equivalent with a peptide FDR (default: '1.0') (min: '0.0' max: '1.0')
+  -FDR_type <threshold>                                      Sub-protein FDR level. PSM, PSM+peptide (best PSM q-value). (default: 'PSM') (valid: 'PSM', 'PSM+peptide')
+  -quantification_method <option>                            Feature_intensity: MS1 signal.
+                                                             spectral_counting: PSM counts. (default: 'feature_intensity') (valid: 'feature_intensity', 'spectral_counting')
+  -targeted_only <option>                                    True: Only ID based quantification.
+                                                             false: include unidentified features so they can be linked to identified ones (=match between runs). (default: 'false') (valid: 'true', 'false')
+  -pip_echo <option>                                         Perform match between runs (MBR) via PIP-ECHO (default: 'false') (valid: 'true', 'false')
+
+Parameters for seeding of untargeted features:
+  -Seeding:algorithm <choice>                                Algorithm for untargeted seed feature detection.
+                                                             multiplex: FeatureFinderMultiplexAlgorithm (default, current behavior).
+                                                             biosaur2: Biosaur2Algorithm (handles IM_PEAK/PASEF data natively). (default: 'multiplex') (valid: 'multiplex', 'biosaur2')
+
+Centroiding:
+  -Centroiding:signal_to_noise <value>                       Minimal signal-to-noise ratio for a peak to be picked (0.0 disables SNT estimation!) (default: '0.0') (min: '0.0')
+  -Centroiding:ms_levels <numbers>                           List of MS levels for which the peak picking is applied. If empty, auto mode is enabled, all peaks which aren't picked yet will get picked. Other scans are copied to the output without changes. (min: '1')
+
+PeptideQuantification:
+  -PeptideQuantification:quantify_decoys                     Whether decoy peptides should be quantified (true) or skipped (false).
+  -PeptideQuantification:min_psm_cutoff <text>               Minimum score for the best PSM of a spectrum to be used as seed. Use 'none' for no cutoff. (default: 'none')
+  -PeptideQuantification:add_mass_offset_peptides <value>    If for every peptide (or seed) also an offset peptide is extracted (true). Can be used to downstream to determine MBR false transfer rates. (0.0 = disabled) (default: '0.0') (min: '0.0')
+
+Parameters for ion chromatogram extraction:
+  -PeptideQuantification:extract:batch_size <number>         Nr of peptides used in each batch of chromatogram extraction. Smaller values decrease memory usage but increase runtime. (default: '5000') (min: '1')
+  -PeptideQuantification:extract:mz_window <value>           M/z window size for chromatogram extraction (unit: ppm if 1 or greater, else Da/Th) (default: '10.0') (min: '0.0')
+  -PeptideQuantification:extract:IM_window <value>           Ion mobility (IM) window for chromatogram extraction in the IM dimension. Set to 0.0 to disable IM filtering (even if data contains IM information). The window is applied as +/- IM_window/2 around the median IM value of identified peptides. This parameter is automatically ignored if the input data does not contain IM information (determined via IMTypes::determineIMFormat). Currently only concatenated IM format is supported. Typical values: 0.05-0.10 for TIMS data (1/K0 units), 10-50 for CCS data (square angstroms), 3-5 for FAIMS data (compensation voltage).Note: IM values are calculated per peptide/charge/RT-region, using the median of all identifications in that region for robustness. The median, min, and max IM values are propagated to output features as meta-values (IM_median, IM_min, IM_max) for quality control. (default: '0.06') (min: '0.0')
+
+Parameters for detecting features in extracted ion chromatograms:
+  -PeptideQuantification:detect:mapping_tolerance <value>    RT tolerance (plus/minus) for mapping peptide IDs to features. Absolute value in seconds if 1 or greater, else relative to the RT span of the feature. (default: '0.0') (min: '0.0')
+
+Parameters for fitting exp. mod. Gaussians to mass traces.:
+  -PeptideQuantification:EMGScoring:max_iteration <number>   Maximum number of iterations for EMG fitting. (default: '100') (min: '1')
+  -PeptideQuantification:EMGScoring:init_mom <choice>        Alternative initial parameters for fitting through method of moments. (default: 'true') (valid: 'true', 'false')
+
+Parameters for FAIMS data processing:
+  -PeptideQuantification:faims:merge_features <choice>       For FAIMS data with multiple compensation voltages: Merge features that represent the same analyte detected at different CVs. Features are merged if they have the same charge and are within 5 seconds RT and 0.05 Da m/z. Intensities are summed. (default: 'true') (valid: 'true', 'false')
+
+Alignment:
+  -Alignment:model_type <choice>                             Options to control the modeling of retention time transformations from data (default: 'b_spline') (valid: 'linear', 'b_spline', 'lowess', 'interpolated')
+
+Alignment:model:
+  -Alignment:model:type <choice>                             Type of model (default: 'b_spline') (valid: 'linear', 'b_spline', 'lowess', 'interpolated')
+
+Parameters for 'linear' model:
+  -Alignment:model:linear:symmetric_regression               Perform linear regression on 'y - x' vs. 'y + x', instead of on 'y' vs. 'x'.
+  -Alignment:model:linear:x_weight <choice>                  Weight x values (default: 'x') (valid: '1/x', '1/x2', 'ln(x)', 'x')
+  -Alignment:model:linear:y_weight <choice>                  Weight y values (default: 'y') (valid: '1/y', '1/y2', 'ln(y)', 'y')
+  -Alignment:model:linear:x_datum_min <value>                Minimum x value (default: '1.0e-15')
+  -Alignment:model:linear:x_datum_max <value>                Maximum x value (default: '1.0e15')
+  -Alignment:model:linear:y_datum_min <value>                Minimum y value (default: '1.0e-15')
+  -Alignment:model:linear:y_datum_max <value>                Maximum y value (default: '1.0e15')
+
+Parameters for 'b_spline' model:
+  -Alignment:model:b_spline:wavelength <value>               Determines the amount of smoothing by setting the number of nodes for the B-spline. The number is chosen so that the spline approximates a low-pass filter with this cutoff wavelength. The wavelength is given in the same units as the data; a higher value means more smoothing. '0' sets the number of nodes to twice the number of input points. (default: '0.0') (min: '0.0')
+  -Alignment:model:b_spline:num_nodes <number>               Number of nodes for B-spline fitting. Overrides 'wavelength' if set (to two or greater). A lower value means more smoothing. (default: '5') (min: '0')
+  -Alignment:model:b_spline:extrapolate <choice>             Method to use for extrapolation beyond the original data range. 'linear': Linear extrapolation using the slope of the B-spline at the corresponding endpoint. 'b_spline': Use the B-spline (as for interpolation). 'constant': Use the constant value of the B-spline at the corresponding endpoint. 'global_linear': Use a linear fit through the data (which will most probably introduce discontinuities at the ends of the data range). (default: 'linear') (valid: 'linear', 'b_spline', 'constant', 'global_linear')
+  -Alignment:model:b_spline:boundary_condition <number>      Boundary condition at B-spline endpoints: 0 (value zero), 1 (first derivative zero) or 2 (second derivative zero) (default: '2') (min: '0' max: '2')
+
+Parameters for 'lowess' model:
+  -Alignment:model:lowess:span <value>                       Fraction of datapoints (f) to use for each local regression (determines the amount of smoothing). Choosing this parameter in the range .2 to .8 usually results in a good fit. (default: '0.666666666666667') (min: '0.0' max: '1.0')
+  -Alignment:model:lowess:auto_span                          If true, or if 'span' is 0, automatically select LOWESS span by cross-validation.
+  -Alignment:model:lowess:auto_span_min <value>              Lower bound for auto-selected span. (default: '0.15') (min: '1.0e-03')
+  -Alignment:model:lowess:auto_span_max <value>              Upper bound for auto-selected span. (default: '0.8') (max: '0.99')
+  -Alignment:model:lowess:auto_min_neighbors <number>        Minimum number of neighbors (span*n) enforced in auto mode. (default: '5') (min: '3')
+  -Alignment:model:lowess:auto_k_folds <number>              K-folds for CV when n>50 (else LOO is used). (default: '5') (min: '2')
+  -Alignment:model:lowess:auto_metric <choice>               Metric for CV selection: one of {'p90','p95','p99','rmse','mae'}. (default: 'mae') (valid: 'p90', 'p95', 'p99', 'rmse', 'mae')
+  -Alignment:model:lowess:auto_span_grid <text>              Optional explicit grid of span candidates in (0,1]. Comma-separated list, e.g. '0.2,0.3,0.5'.  If empty, a default grid is used.
+  -Alignment:model:lowess:num_iterations <number>            Number of robustifying iterations for lowess fitting. (default: '3') (min: '0')
+  -Alignment:model:lowess:delta <value>                      Nonnegative parameter which may be used to save computations (recommended value is 0.01 of the range of the input, e.g. for data ranging from 1000 seconds to 2000 seconds, it could be set to 10). Setting a negative value will automatically do this. (default: '-1.0')
+  -Alignment:model:lowess:interpolation_type <choice>        Method to use for interpolation between datapoints computed by lowess. 'linear': Linear interpolation. 'cspline': Use the cubic spline for interpolation. 'akima': Use an akima spline for interpolation (default: 'cspline') (valid: 'linear', 'cspline', 'akima')
+  -Alignment:model:lowess:extrapolation_type <choice>        Method to use for extrapolation outside the data range. 'two-point-linear': Uses a line through the first and last point to extrapolate. 'four-point-linear': Uses a line through the first and second point to extrapolate in front and and a line through the last and second-to-last point in the end. 'global-linear': Uses a linear regression to fit a line through all data points and use it for interpolation. (default: 'four-point-linear') (valid: 'two-point-linear', 'four-point-linear', 'global-linear')
+
+Parameters for 'interpolated' model:
+  -Alignment:model:interpolated:interpolation_type <choice>  Type of interpolation to apply. (default: 'cspline') (valid: 'linear', 'cspline', 'akima')
+  -Alignment:model:interpolated:extrapolation_type <choice>  Type of extrapolation to apply: two-point-linear: use the first and last data point to build a single linear model, four-point-linear: build two linear models on both ends using the first two / last two points, global-linear: use all points to build a single linear model. Note that global-linear may not be continuous at the border. (default: 'two-point-linear') (valid: 'two-point-linear', 'four-point-linear', 'global-linear')
+
+Alignment:align_algorithm:
+  -Alignment:align_algorithm:score_type <text>               Name of the score type to use for ranking and filtering (.oms input only). If left empty, a score type is picked automatically.
+  -Alignment:align_algorithm:min_run_occur <number>          Minimum number of runs (incl. reference, if any) in which a peptide must occur to be used for the alignment.
+                                                             Unless you have very few runs or identifications, increase this value to focus on more informative peptides. (default: '2') (min: '2')
+  -Alignment:align_algorithm:max_rt_shift <value>            Maximum realistic RT difference for a peptide (median per run vs. reference). Peptides with higher shifts (outliers) are not used to compute the alignment.
+                                                             If 0, no limit (disable filter); if > 1, the final value in seconds; if <= 1, taken as a fraction of the range of the reference RT scale. (default: '0.1') (min: '0.0')
+  -Alignment:align_algorithm:use_adducts <choice>            If IDs contain adducts, treat differently adducted variants of the same molecule as different. (default: 'true') (valid: 'true', 'false')
+
+Linking:
+  -Linking:nr_partitions <number>                            How many partitions in m/z space should be used for the algorithm (more partitions means faster runtime and more memory efficient execution). (default: '100') (min: '1')
+  -Linking:min_nr_diffs_per_bin <number>                     If IDs are used: How many differences from matching IDs should be used to calculate a linking tolerance for unIDed features in an RT region. RT regions will be extended until that number is reached. (default: '50') (min: '5')
+  -Linking:min_IDscore_forTolCalc <value>                    If IDs are used: What is the minimum score of an ID to assume a reliable match for tolerance calculation. Check your current score type! (default: '1.0')
+  -Linking:noID_penalty <value>                              If IDs are used: For the normalized distances, how high should the penalty for missing IDs be? 0 = no bias, 1 = IDs inside the max tolerances always preferred (even if much further away). (default: '0.0') (min: '0.0' max: '1.0')
+
+Distance component based on m/z differences:
+  -Linking:distance_MZ:max_difference <value>                Never pair features with larger m/z distance (unit defined by 'unit') (default: '10.0') (min: '0.0')
+  -Linking:distance_MZ:unit <choice>                         Unit of the 'max_difference' parameter (default: 'ppm') (valid: 'Da', 'ppm')
+
+ProteinQuantification:
+  -ProteinQuantification:method <choice>                     - top - quantify based on three most abundant peptides (number can be changed in 'top').
+                                                             - iBAQ (intensity based absolute quantification), calculate the sum of all peptide peak intensities divided by the number of theoretically observable tryptic peptides (https://rdcu.be/cND1J). Warning: only consensusXML or featureXML input is allowed! (default: 'top') (valid: 'top', 'iBAQ')
+  -ProteinQuantification:best_charge                         Distinguish between fraction and charge states in detailed peptide output. For protein quantification, select one charge per modified peptide globally: maximize the number of (fraction group, label) assays with a positive abundance, then break ties by total abundance; retain that charge's values in every assay.
+                                                             By default, protein abundances are summed over all charge states. How the retained values of several fractions are combined is governed by 'fractions:aggregate', not by this flag.
+
+Additional options for custom quantification using top N peptides.:
+  -ProteinQuantification:top:N <number>                      Calculate protein abundance from this number of proteotypic peptides (most abundant first; '0' for all) (default: '3') (min: '0')
+  -ProteinQuantification:top:aggregate <choice>              Aggregation method used to compute protein abundances from peptide abundances (default: 'median') (valid: 'median', 'mean', 'weighted_mean', 'sum')
+
+Options for combining the fractions of a fraction group.:
+  -ProteinQuantification:fractions:aggregate <choice>        How the fractions of one fraction group are combined into that group's (fraction group, label) assay values.
+                                                             - sum - add up every fraction, i.e. treat them as the parts of one separated sample that they are.
+                                                             - best - keep a single fraction per peptide and fraction group and discard the others. The fraction is chosen ONCE per peptide, ranked by the number of labels in which it has a positive abundance and then by the total of those abundances (an exact tie keeps the lowest fraction number), and ALL of its labels are then taken from it. The choice is deliberately not made per label: taking one channel from one fraction and another channel from a different fraction would mix physical aliquots and destroy the reporter-ion ratios that isobaric quantification consists of.
+                                                             Only the assay values are affected. Per-(file, channel) quantities are per fraction by definition and always report every file. (default: 'sum') (valid: 'sum', 'best')
+
+Additional options for consensus maps (and identification results comprising multiple runs):
+  -ProteinQuantification:consensus:normalize                 Scale peptide abundances so that the median of each (fraction group, label) assay matches the overall median.
+                                                             Abundances of zero count as 'not detected' and are left out of the medians; an assay without any positive abundance takes no part in the normalization.
+  -ProteinQuantification:consensus:fix_peptides              Use the same peptides for protein quantification across all (fraction group, label) assays.
+                                                             With 'N 0',all peptides that occur in every assay are considered.
+                                                             Otherwise ('N'), the N peptides that occur in the most assays (independently of each other) are selected,
+                                                             breaking ties by total abundance (there is no guarantee that the best co-ocurring peptides are chosen!).
+                                                             A peptide counts as occurring in an assay only where its abundance is positive: an abundance stored as zero means 'not detected' (e.g. an isobaric reporter below 'min_reporter_intensity'), not a measurement of absence.
+
+PipEcho:
+  -PipEcho:fdr <value>                                       MBR FDR threshold (0.05=5%). (default: '0.05') (min: '0.0' max: '1.0')
+  -PipEcho:random_seed <number>                              Seed for the random number generator used to select decoy donors. A fixed seed makes results reproducible. (default: '0')
+
+PipEcho:distance_MZ:
+  -PipEcho:distance_MZ:max_difference <value>                Never pair features with larger m/z distance (unit defined by 'unit') (default: '10.0') (min: '0.0')
+  -PipEcho:distance_MZ:unit <choice>                         Unit of the 'max_difference' parameter (default: 'ppm') (valid: 'Da', 'ppm')
+
+                                                             
+Common TOPP options:
+  -ini <file>                                                Use the given TOPP INI file
+  -threads <n>                                               Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>                                          Writes the default configuration file
+  --help                                                     Shows options
+  --helphelp                                                 Shows all options (including advanced)
+

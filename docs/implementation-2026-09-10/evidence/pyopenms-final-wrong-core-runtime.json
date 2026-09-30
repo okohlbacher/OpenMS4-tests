@@ -1,0 +1,7 @@
+{
+  "python_source_revision": "14d950a460636b9a8fa255b7ac657926fec403de",
+  "test": "actual compatible Core binary with wrong SHA rejected before domain imports",
+  "returncode": 0,
+  "stdout": "REJECTED_WRONG_CORE_BEFORE_DOMAINS OpenMS runtime identity mismatch for source_revision: wheel expects '4fdec46b205459b92e7d3b9e56df5d8e912d5c85', loaded '0000000000000000000000000000000000000000'\n",
+  "stderr": "Determination of memory status is not supported on this \n platform, measuring for memoryleaks will never fail\n"
+}

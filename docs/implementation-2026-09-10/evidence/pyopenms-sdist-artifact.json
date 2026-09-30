@@ -1,0 +1,8 @@
+{
+  "path": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/pyopenms-sdist/pyopenms-4.0.0.dev0.tar.gz",
+  "sha256": "ca5fd4706e8b08d1268a80d9c3ffb9fa738bb61bc47081a71a8aea31d5bde9dc",
+  "size_bytes": 5408382,
+  "source_revision": "14d950a460636b9a8fa255b7ac657926fec403de",
+  "source_dirty": false,
+  "validation": "source inventory and real installed-SDK configure only; native archive rebuild not performed"
+}

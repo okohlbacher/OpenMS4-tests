@@ -1,0 +1,52 @@
+stty: stdin isn't a terminal
+
+FeatureFinderIdentification -- Detects features in MS1 data based on peptide identifications.
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_FeatureFinderIdentification.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+To cite FeatureFinderIdentification:
+ + Weisser H, Choudhary JS. Targeted Feature Detection for Data-Dependent Shotgun Proteomics. J. Proteome Res. 2017; 16, 8:2964-2974. doi:10.1021/acs.jproteome.7b00248.
+
+Usage:
+  FeatureFinderIdentification <options>
+
+Options (mandatory options marked with '*'):
+  -in <file>*                         Input file: LC-MS raw data (valid formats: 'mzML')
+  -id <file>*                         Input file: Peptide identifications derived directly from 'in' (valid formats: 'idXML', 'idparquet')
+  -out <file>*                        Output file: Features (valid formats: 'featureXML', 'featureparquet')
+  -lib_out <file>                     Output file: Assay library (valid formats: 'traML')
+  -chrom_out <file>                   Output file: Chromatograms (valid formats: 'mzML')
+  -candidates_out <file>              Output file: Feature candidates (before filtering and model fitting) (valid formats: 'featureXML', 'featureparquet')
+  -quantify_decoys                    Whether decoy peptides should be quantified (true) or skipped (false).
+  -min_psm_cutoff <text>              Minimum score for the best PSM of a spectrum to be used as seed. Use 'none' for no cutoff. (default: 'none')
+  -add_mass_offset_peptides <value>   If for every peptide (or seed) also an offset peptide is extracted (true). Can be used to downstream to determine MBR false transfer rates. (0.0 = disabled) (default: '0.0') (min: '0.0')
+
+Parameters for ion chromatogram extraction:
+  -extract:batch_size <number>        Nr of peptides used in each batch of chromatogram extraction. Smaller values decrease memory usage but increase runtime. (default: '5000') (min: '1')
+  -extract:mz_window <value>          M/z window size for chromatogram extraction (unit: ppm if 1 or greater, else Da/Th) (default: '10.0') (min: '0.0')
+  -extract:IM_window <value>          Ion mobility (IM) window for chromatogram extraction in the IM dimension. Set to 0.0 to disable IM filtering (even if data contains IM information). The window is applied as +/- IM_window/2 around the median IM value of identified peptides. This parameter is automatically ignored if the input data does not contain IM information (determined via IMTypes::determineIMFormat). Currently only concatenated IM format is supported. Typical values: 0.05-0.10 for TIMS data (1/K0 units), 10-50 for CCS data (square angstroms), 3-5 for FAIMS data (compensation voltage).Note: IM values are calculated per peptide/charge/RT-region, using the median of all identifications in that region for robustness. The median, min, and max IM values are propagated to output features as meta-values (IM_median, IM_min, IM_max) for quality control. (default: '0.06') (min: '0.0')
+  -extract:n_isotopes <number>        Number of isotopes to include in each peptide assay. (default: '2') (min: '2')
+
+Parameters for detecting features in extracted ion chromatograms:
+  -detect:peak_width <value>          Expected elution peak width in seconds, for smoothing (Gauss filter). Also determines the RT extration window, unless set explicitly via 'extract:rt_window'. (default: '60.0') (min: '0.0')
+  -detect:mapping_tolerance <value>   RT tolerance (plus/minus) for mapping peptide IDs to features. Absolute value in seconds if 1 or greater, else relative to the RT span of the feature. (default: '0.0') (min: '0.0')
+
+Parameters for fitting elution models to features:
+  -model:type <choice>                Type of elution model to fit to features (default: 'symmetric') (valid: 'symmetric', 'asymmetric', 'none')
+
+Parameters for fitting exp. mod. Gaussians to mass traces.:
+  -EMGScoring:max_iteration <number>  Maximum number of iterations for EMG fitting. (default: '100') (min: '1')
+  -EMGScoring:init_mom <choice>       Alternative initial parameters for fitting through method of moments. (default: 'true') (valid: 'true', 'false')
+
+Parameters for FAIMS data processing:
+  -faims:merge_features <choice>      For FAIMS data with multiple compensation voltages: Merge features that represent the same analyte detected at different CVs. Features are merged if they have the same charge and are within 5 seconds RT and 0.05 Da m/z. Intensities are summed. (default: 'true') (valid: 'true', 'false')
+
+                                      
+Common TOPP options:
+  -ini <file>                         Use the given TOPP INI file
+  -threads <n>                        Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>                   Writes the default configuration file
+  --help                              Shows options
+  --helphelp                          Shows all options (including advanced)
+

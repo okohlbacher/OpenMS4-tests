@@ -1,0 +1,53 @@
+stty: stdin isn't a terminal
+
+OpenSwathPeakMapExtractor -- Extract targeted mz/RT/IM peak maps from DIA or diaPASEF data
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_OpenSwathPeakMapExtractor.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  OpenSwathPeakMapExtractor <options>
+
+This tool has algorithm parameters that are not shown here! Please check the ini file for a detailed description or use the --helphelp option
+
+Options (mandatory options marked with '*'):
+  -in <files>*                        Input files separated by blank (valid formats: 'mzML', 'mzXML', 'sqMass')
+  -tr <file>*                         Transition file ('TraML','tsv','pqp','oswpq') (valid formats: 'traML', 'tsv', 'pqp', 'oswpq')
+  -tr_type <type>                     Input transition file type -- default: determined from file extension (valid: 'traML', 'tsv', 'pqp', 'oswpq')
+  -swath_windows_file <file>          Optional, tab-separated file containing the SWATH windows for extraction: lower_offset upper_offset. The first line is treated as a header.
+  -out <file>                         Output .xipm parquet file containing all runs. Required unless -separate_runs is set. (valid formats: 'xipm')
+  -out_dir <dir>                      Output directory for per-run .xipm files when -separate_runs is set.
+  -separate_runs                      Write one .xipm file per input run instead of aggregating all runs into -out
+  -pasef                              Data is PASEF data
+  -rt_extraction_window <double>      Only extract RT around this value. This is the full window size. Non-positive values disable RT filtering during peak-map extraction. (default: '600.0')
+  -ion_mobility_window <double>       Extraction window in ion mobility dimension. This is the full window size. Non-positive values extract the full IM range. (default: '-1.0')
+  -mz_extraction_window <double>      Extraction window in Thomson or ppm (see mz_extraction_window_unit) (default: '50.0') (min: '0.0')
+  -mz_extraction_window_ms1 <double>  Extraction window used in MS1 in Thomson or ppm (see mz_extraction_window_ms1_unit) (default: '50.0') (min: '0.0')
+  -im_extraction_window_ms1 <double>  Extraction window in ion mobility dimension for MS1. -1 extracts the full IM range. (default: '-1.0')
+  -keep_cached_files                  Do not remove cached files created in tempDirectory
+
+Debugging:
+  -Debugging:irt_mzml <file>          Chromatogram mzML containing the iRT peptides (valid formats: 'mzML')
+  -Debugging:irt_trafo <file>         Transformation file for RT transform (valid formats: 'trafoXML')
+
+                                      
+Common TOPP options:
+  -ini <file>                         Use the given TOPP INI file
+  -threads <n>                        Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>                   Writes the default configuration file
+  --help                              Shows options
+  --helphelp                          Shows all options (including advanced)
+
+The following configuration subsections are valid:
+ - Calibration                    Parameters for calibrant iRT peptides for RT normalization and mass / ion mobility correction, including configurable estimated RT-window floor/ceiling clamps.
+ - Calibration:MassIMCorrection   Parameters for the m/z and ion mobility calibration.
+ - Calibration:RTNormalization    Parameters for the RTNormalization for iRT peptides.
+ - Library                        Library parameters section
+ - MRMMapping                     Parameters for mapping chromatograms to transitions during iRT calibration.
+
+You can write an example INI file using the '-write_ini' option.
+Documentation of subsection parameters can be found in the doxygen documentation or the INIFileEditor.
+For more information, please consult the online documentation for this tool:
+  - http://www.openms.de/doxygen/release/4.0.0/html/TOPP_OpenSwathPeakMapExtractor.html
+

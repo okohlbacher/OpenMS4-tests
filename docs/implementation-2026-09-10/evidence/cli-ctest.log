@@ -1,0 +1,23 @@
+Test project /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build
+    Start 8: ToolHandler_test
+    Start 9: ToolManifest_test
+    Start 1: INIUpdater_test
+    Start 2: MapAlignerBase_test
+1/9 Test #2: MapAlignerBase_test ..............   Passed    4.74 sec
+    Start 3: MapAlignerDefaults_test
+2/9 Test #1: INIUpdater_test ..................   Passed    4.74 sec
+    Start 4: ParameterInformation_test
+3/9 Test #8: ToolHandler_test .................   Passed    4.74 sec
+    Start 5: SearchEngineBase_test
+4/9 Test #9: ToolManifest_test ................   Passed    4.75 sec
+    Start 6: TOPPBase_test
+5/9 Test #3: MapAlignerDefaults_test ..........   Passed    2.33 sec
+    Start 7: TOPPExternalToolBase_test
+6/9 Test #4: ParameterInformation_test ........   Passed    2.65 sec
+7/9 Test #6: TOPPBase_test ....................   Passed    3.41 sec
+8/9 Test #5: SearchEngineBase_test ............   Passed    3.53 sec
+9/9 Test #7: TOPPExternalToolBase_test ........   Passed    3.91 sec
+
+100% tests passed out of 9
+
+Total Test time (real) =  10.98 sec

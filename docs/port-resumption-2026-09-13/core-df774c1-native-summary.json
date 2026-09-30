@@ -1,0 +1,46 @@
+{
+  "source_revision": "df774c1f88bef0cf314047fb33f75bce6994f86d",
+  "run": 34757972524,
+  "native": [
+    {
+      "platform": "linux-arm64",
+      "tests": 702,
+      "failures": 0,
+      "skipped": 0,
+      "junit_wall_seconds": 31.0,
+      "acceptance_commands_passed": true
+    },
+    {
+      "platform": "linux-x64",
+      "tests": 702,
+      "failures": 0,
+      "skipped": 0,
+      "junit_wall_seconds": 50.0,
+      "acceptance_commands_passed": true
+    },
+    {
+      "platform": "macos-arm64",
+      "tests": 702,
+      "failures": 0,
+      "skipped": 0,
+      "junit_wall_seconds": 77.0,
+      "acceptance_commands_passed": true
+    },
+    {
+      "platform": "macos-x64",
+      "tests": 702,
+      "failures": 0,
+      "skipped": 0,
+      "junit_wall_seconds": 226.0,
+      "acceptance_commands_passed": true
+    },
+    {
+      "platform": "windows-x64",
+      "tests": 702,
+      "failures": 0,
+      "skipped": 0,
+      "junit_wall_seconds": 54.0,
+      "acceptance_commands_passed": true
+    }
+  ]
+}

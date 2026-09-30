@@ -1,0 +1,1026 @@
+{
+  "schema_version": 1,
+  "profile": {
+    "core": {
+      "build_type": "Debug",
+      "class_testing_enabled": true,
+      "cxx_compiler_id": "AppleClang",
+      "cxx_compiler_version": "21.0.0.21000101",
+      "cxx_standard": 23,
+      "dependencies": {
+        "arrow": {
+          "target": "Arrow::arrow_shared",
+          "version": "25.0.0"
+        },
+        "boost": {
+          "linkage": "shared",
+          "version": "1.90.0"
+        },
+        "curl": {
+          "version": "8.21.0"
+        },
+        "eigen": {
+          "version": "5.0.1"
+        },
+        "openmp": {
+          "version": "5.1"
+        },
+        "parquet": {
+          "target": "Parquet::parquet_shared",
+          "version": "25.0.0"
+        }
+      },
+      "features": {
+        "hdf5": false,
+        "onnx": false,
+        "openmp": true,
+        "openswath": true,
+        "opentims": false,
+        "tdl": false,
+        "thermo_raw": false,
+        "wnetalign": false
+      },
+      "libstdcxx_cxx11_abi": null,
+      "msvc_runtime_library": null,
+      "schema_version": 1,
+      "shared_libs": true,
+      "source_dirty": false,
+      "source_revision": "ea35651d2fa4700a59beae1f3d1b733fb7bdaa9c",
+      "standard_library": "libc++",
+      "stl_debug": false,
+      "system_name": "Darwin",
+      "system_processor": "arm64",
+      "version": "4.0.0"
+    },
+    "schema_version": 1,
+    "source_dirty": false,
+    "source_revision": "c90b6dfb4f3bcf8c6f3ca7806e34997705a52957",
+    "tool_backends": {
+      "FLASH": {
+        "source_revision": "46b55161f8b1a2e6f08c6d77039bebbcbc22c2ac",
+        "version": "1.0.0"
+      },
+      "ProSE": {
+        "source_revision": "7e31b55f91dc93c081fc52c1b2c77d294b1dc3e2",
+        "version": "1.0.0"
+      }
+    },
+    "version": "4.0.0.dev0"
+  },
+  "package_pins": {
+    "core": {
+      "path": "packages/core",
+      "repository": "https://github.com/okohlbacher/OpenMS4-core",
+      "source_revision": "ea35651d2fa4700a59beae1f3d1b733fb7bdaa9c"
+    },
+    "cli": {
+      "path": "packages/cli",
+      "repository": "https://github.com/okohlbacher/OpenMS4-cli",
+      "source_revision": "72749eadb3b5b169630374816890902ec4e4551c"
+    },
+    "test-data": {
+      "path": "packages/test-data",
+      "repository": "https://github.com/okohlbacher/OpenMS4-test-data",
+      "source_revision": "ea8679468c0373eebca8e5b449b6557d6e0771dc"
+    },
+    "topp": {
+      "path": "packages/topp",
+      "repository": "https://github.com/okohlbacher/OpenMS4-topp",
+      "source_revision": "6cc523ff2858a179ff99cad5e9fdbc5bc7941c95"
+    },
+    "openswath": {
+      "path": "packages/openswath",
+      "repository": "https://github.com/okohlbacher/OpenMS4-openswath",
+      "source_revision": "847d5ca1e11a0b5ec9c44af962b4fac39dd4b6ed"
+    },
+    "flash": {
+      "path": "packages/flash",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flash",
+      "source_revision": "46b55161f8b1a2e6f08c6d77039bebbcbc22c2ac"
+    },
+    "desktop": {
+      "path": "packages/desktop",
+      "repository": "https://github.com/okohlbacher/OpenMS4-desktop",
+      "source_revision": "47879d1145df57c24725799ccb344e5c8131d4f9"
+    },
+    "pyopenms": {
+      "path": "packages/pyopenms",
+      "repository": "https://github.com/okohlbacher/OpenMS4-pyopenms",
+      "source_revision": "c90b6dfb4f3bcf8c6f3ca7806e34997705a52957"
+    },
+    "flashapp": {
+      "path": "packages/flashapp",
+      "repository": "https://github.com/okohlbacher/OpenMS4-flashapp",
+      "source_revision": "b845126dc6ff17675cccd5cafea6870c4b3db805",
+      "frozen_dependencies": true
+    },
+    "nuxl": {
+      "path": "packages/nuxl",
+      "repository": "https://github.com/okohlbacher/OpenMS4-nuxl",
+      "source_revision": "49f61ea201519317d0b7d6e438a0ee4a4340c1f3"
+    },
+    "prose": {
+      "path": "packages/prose",
+      "repository": "https://github.com/okohlbacher/OpenMS4-prose",
+      "source_revision": "7e31b55f91dc93c081fc52c1b2c77d294b1dc3e2"
+    },
+    "nase": {
+      "path": "packages/nase",
+      "repository": "https://github.com/okohlbacher/OpenMS4-nase",
+      "source_revision": "3bc6d9c578b4a58960c8e9b142749ea45e6a220b"
+    },
+    "comet": {
+      "path": "packages/comet",
+      "repository": "https://github.com/okohlbacher/OpenMS4-comet",
+      "source_revision": "5dddeb4011254a1201b701e200cdc904fe1311d6"
+    },
+    "mascot": {
+      "path": "packages/mascot",
+      "repository": "https://github.com/okohlbacher/OpenMS4-mascot",
+      "source_revision": "4a0aeb76ccc3b41714b8cd8f64e13c4b243c73c6"
+    },
+    "database-suitability": {
+      "path": "packages/database-suitability",
+      "repository": "https://github.com/okohlbacher/OpenMS4-database-suitability",
+      "source_revision": "36e961fcc54b49ee4d303f22f6fe4ab9e73a951c"
+    },
+    "proteomics-lfq": {
+      "path": "packages/proteomics-lfq",
+      "repository": "https://github.com/okohlbacher/OpenMS4-proteomics-lfq",
+      "source_revision": "3babb170d0a22a264bd0e365c890727d90a6e4c7"
+    },
+    "parquet-diff": {
+      "path": "packages/parquet-diff",
+      "repository": "https://github.com/okohlbacher/OpenMS4-parquet-diff",
+      "source_revision": "c46936d5c94fabf1d6345ad2285b9d103cd97937"
+    }
+  },
+  "max_parallel_compilation_jobs": 16,
+  "installed_regressions": {
+    "registered": 2022,
+    "passed": 2017,
+    "skipped": 5,
+    "failed": 0,
+    "groups": [
+      {
+        "file": "regressions-stable-products.xml",
+        "seconds": 151.673
+      },
+      {
+        "file": "regressions-final-products.xml",
+        "seconds": 3.046
+      }
+    ],
+    "skipped_names": [
+      "TOPP_MSGFPlusAdapter_missing",
+      "TOPP_SageAdapter_missing",
+      "TOPP_CometAdapter_missing",
+      "TOPP_CometAdapter_failing",
+      "TOPP_MSFraggerAdapter_missing"
+    ]
+  },
+  "flash_mascot": {
+    "core_revision": "ea35651d2fa4700a59beae1f3d1b733fb7bdaa9c",
+    "flash_revision": "46b55161f8b1a2e6f08c6d77039bebbcbc22c2ac",
+    "mascot_revision": "4a0aeb76ccc3b41714b8cd8f64e13c4b243c73c6",
+    "sdk_prefix": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-sdk",
+    "runtime_environment": {
+      "DYLD_LIBRARY_PATH": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-native-runtime",
+      "OMP_NUM_THREADS": "1"
+    },
+    "flash": {
+      "unique_passing_tests": [
+        {
+          "name": "FLASHDeconvAlgorithm_test",
+          "seconds": 1235.13,
+          "passed": true
+        },
+        {
+          "name": "SpectralDeconvolution_test",
+          "seconds": 51.9288,
+          "passed": true
+        },
+        {
+          "name": "MassFeatureTrace_test",
+          "seconds": 44.7756,
+          "passed": true
+        },
+        {
+          "name": "DeconvolvedSpectrum_integration_test",
+          "seconds": 32.7237,
+          "passed": true
+        },
+        {
+          "name": "FLASHDeconv_write_ini",
+          "seconds": 2.02134,
+          "passed": true
+        },
+        {
+          "name": "FLASHDeconv_write_ctd",
+          "seconds": 1.36368,
+          "passed": true
+        },
+        {
+          "name": "TOPP_FLASHDeconv_1",
+          "seconds": 89.2582,
+          "passed": true
+        },
+        {
+          "name": "TOPP_FLASHDeconv_1_science",
+          "seconds": 0.194451,
+          "passed": true
+        }
+      ],
+      "initial_run": "flash-ctest.xml",
+      "corrected_test_rerun": "flash-corrected-integration-ctest.xml",
+      "note": "Seven unchanged tests passed in the first run. The sole integration failure reproduced against preserved pre-extraction Core4fdec46. Its two test-only corrections then passed in a separate harness; the heavy algorithm was not rerun.",
+      "baseline": "flash-old-core-baseline/baseline.json",
+      "install": "flash-install.json"
+    },
+    "mascot": {
+      "unique_passing_tests": [
+        {
+          "name": "MascotAdapterOnline_write_ini",
+          "seconds": 2.16762,
+          "passed": true
+        },
+        {
+          "name": "MascotAdapterOnline_write_ctd",
+          "seconds": 2.16747,
+          "passed": true
+        },
+        {
+          "name": "MascotRemoteQuery_test",
+          "seconds": 0.604656,
+          "passed": true
+        },
+        {
+          "name": "MascotRemoteQuery_transport",
+          "seconds": 2.25646,
+          "passed": true
+        }
+      ],
+      "initial_run": "mascot-ctest.xml",
+      "local_http_rerun": "mascot-transport-ctest.xml",
+      "http_scenarios": [
+        "POST503",
+        "GET503 after successful upload",
+        "successful upload and target/decoy exports"
+      ],
+      "note": "Initial localhost-bind denial was a sandbox restriction. The authorized unsandboxed local transport rerun passed. No source change.",
+      "install": "mascot-install.json"
+    },
+    "installed_flash_consumer": {
+      "tests": [
+        {
+          "name": "FLASH_installed_backend_without_CLI",
+          "seconds": 0.54986,
+          "passed": true
+        }
+      ],
+      "source": "flash-installed-consumer",
+      "configure": "flash-consumer-configure.json",
+      "build": "flash-consumer-build.json",
+      "runtime": "flash-consumer-ctest.log",
+      "cli_discovery_disabled": true,
+      "cli_target_loaded": false,
+      "cli_library_loaded": false,
+      "loaded_sdk_libraries": [
+        "1: dyld[11359]: <5CCC24BC-DC73-3A99-937E-2968A9924F33> /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-sdk/lib/libOpenMS_FLASH.1.0.0.dylib",
+        "1: dyld[11359]: <99A1F987-97C7-30DC-AFB7-B3AD602DA404> /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-sdk/lib/libOpenMS.dylib",
+        "1: dyld[11359]: <05D2499F-0B32-34BD-9BDC-F473E3ADFA3F> /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-sdk/lib/libOpenSwathAlgo.dylib"
+      ]
+    },
+    "native_symbol_boundary": "flash-symbol-boundary.json",
+    "excluded_baseline_attempt": "flash-baseline-ctest.* failed before test execution because SIP stripped the runtime environment; corrected flash-baseline-ctest-runtime.* contains the scientific baseline replay",
+    "pushed_at_agent_handoff": false
+  },
+  "measured_steps": {
+    "core-configure": {
+      "label": "core-configure",
+      "command": [
+        "cmake",
+        "-S",
+        "OpenMS4-tests/packages/core",
+        "-B",
+        "core-build",
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-DCMAKE_INSTALL_PREFIX=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-sdk",
+        "-DCMAKE_PREFIX_PATH=/opt/homebrew;/opt/homebrew/opt/libomp",
+        "-DCURL_ROOT=/opt/homebrew/opt/curl",
+        "-DCMAKE_FIND_FRAMEWORK=LAST",
+        "-DOPENMS_REQUIRE_CLEAN_SOURCE=ON"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789052642.671251,
+      "elapsed_seconds": 3.26,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/core-configure.log"
+    },
+    "core-build": {
+      "label": "core-build",
+      "command": [
+        "cmake",
+        "--build",
+        "core-build",
+        "--parallel",
+        "16"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789052645.961778,
+      "elapsed_seconds": 11.902,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/core-build.log"
+    },
+    "core-tests-compatible-runtime": {
+      "label": "core-tests-compatible-runtime",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "core-build",
+        "--parallel",
+        "16",
+        "--output-on-failure",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/core-tests-final.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789052852.525994,
+      "elapsed_seconds": 225.592,
+      "exit_code": 8,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/core-tests-compatible-runtime.log"
+    },
+    "core-stopwatch-isolated": {
+      "label": "core-stopwatch-isolated",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "core-build",
+        "-R",
+        "^StopWatch_test$",
+        "--parallel",
+        "1",
+        "--output-on-failure",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/core-stopwatch-isolated.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053186.207902,
+      "elapsed_seconds": 0.851,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/core-stopwatch-isolated.log"
+    },
+    "cli-build": {
+      "label": "cli-build",
+      "command": [
+        "cmake",
+        "--build",
+        "cli-build",
+        "--parallel",
+        "16"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789052859.2290099,
+      "elapsed_seconds": 33.691,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/cli-build.log"
+    },
+    "cli-tests": {
+      "label": "cli-tests",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "cli-build",
+        "--parallel",
+        "4",
+        "--output-on-failure",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/cli-tests.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053187.599653,
+      "elapsed_seconds": 15.142,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/cli-tests.log"
+    },
+    "topp-build": {
+      "label": "topp-build",
+      "command": [
+        "cmake",
+        "--build",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/topp",
+        "--parallel",
+        "4"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053353.92573,
+      "elapsed_seconds": 151.267,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/topp-build.log"
+    },
+    "topp-tests": {
+      "label": "topp-tests",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/topp",
+        "--parallel",
+        "4",
+        "--output-on-failure",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/topp-tests.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053505.2547631,
+      "elapsed_seconds": 114.649,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/topp-tests.log"
+    },
+    "openswath-build": {
+      "label": "openswath-build",
+      "command": [
+        "cmake",
+        "--build",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/openswath",
+        "--parallel",
+        "4"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053629.190933,
+      "elapsed_seconds": 19.565,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/openswath-build.log"
+    },
+    "openswath-tests": {
+      "label": "openswath-tests",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/openswath",
+        "--parallel",
+        "4",
+        "--output-on-failure",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/openswath-tests.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053648.795011,
+      "elapsed_seconds": 34.132,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/openswath-tests.log"
+    },
+    "prose-build": {
+      "label": "prose-build",
+      "command": [
+        "cmake",
+        "--build",
+        "tool-split-build/prose",
+        "--parallel",
+        "4"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053149.028885,
+      "elapsed_seconds": 23.26,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/prose-build.log"
+    },
+    "prose-ctest": {
+      "label": "prose-ctest",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "tool-split-build/prose",
+        "--output-on-failure",
+        "--parallel",
+        "4",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/prose-junit.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053184.485439,
+      "elapsed_seconds": 106.274,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/prose-ctest.log"
+    },
+    "nase-build": {
+      "label": "nase-build",
+      "command": [
+        "/usr/bin/env",
+        "DYLD_LIBRARY_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-native-runtime",
+        "OMP_NUM_THREADS=1",
+        "cmake",
+        "--build",
+        "tool-split-build/nase",
+        "--parallel",
+        "4"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053182.4637089,
+      "elapsed_seconds": 17.962,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/nase-build.log"
+    },
+    "nase-ctest": {
+      "label": "nase-ctest",
+      "command": [
+        "/usr/bin/env",
+        "DYLD_LIBRARY_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-native-runtime",
+        "OMP_NUM_THREADS=1",
+        "ctest",
+        "--test-dir",
+        "tool-split-build/nase",
+        "--parallel",
+        "4",
+        "--output-on-failure",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/nase-junit.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053219.8028731,
+      "elapsed_seconds": 3.427,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/nase-ctest.log"
+    },
+    "nuxl-marker-build-validated": {
+      "label": "nuxl-marker-build-validated",
+      "command": [
+        "/usr/bin/env",
+        "DYLD_LIBRARY_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-native-runtime",
+        "OMP_NUM_THREADS=1",
+        "cmake",
+        "--build",
+        "tool-split-build/nuxl",
+        "--parallel",
+        "4"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789055204.031539,
+      "elapsed_seconds": 1.588,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/nuxl-marker-build-validated.log"
+    },
+    "nuxl-marker-tests-validated": {
+      "label": "nuxl-marker-tests-validated",
+      "command": [
+        "/usr/bin/env",
+        "DYLD_LIBRARY_PATH=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-native-runtime",
+        "OMP_NUM_THREADS=1",
+        "ctest",
+        "--test-dir",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/nuxl",
+        "--parallel",
+        "2",
+        "--output-on-failure",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/nuxl-marker-tests-validated.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789055232.912797,
+      "elapsed_seconds": 3.779,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/nuxl-marker-tests-validated.log"
+    },
+    "comet-build": {
+      "label": "comet-build",
+      "command": [
+        "cmake",
+        "--build",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/comet",
+        "--parallel",
+        "4"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053053.502955,
+      "elapsed_seconds": 2.712,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/comet-build.log"
+    },
+    "comet-tests": {
+      "label": "comet-tests",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/comet",
+        "--parallel",
+        "4",
+        "--output-on-failure",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/comet-tests.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053056.2530382,
+      "elapsed_seconds": 14.459,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/comet-tests.log"
+    },
+    "dbsuitability-build-v2": {
+      "label": "dbsuitability-build-v2",
+      "command": [
+        "cmake",
+        "--build",
+        "tool-split-build/database-suitability",
+        "--parallel",
+        "4"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053470.307012,
+      "elapsed_seconds": 2.692,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/dbsuitability-build-v2.log"
+    },
+    "dbsuitability-ctest": {
+      "label": "dbsuitability-ctest",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "tool-split-build/database-suitability",
+        "--output-on-failure",
+        "--parallel",
+        "4",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/dbsuitability-junit.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053487.362619,
+      "elapsed_seconds": 9.4,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/dbsuitability-ctest.log"
+    },
+    "proteomics-lfq-build": {
+      "label": "proteomics-lfq-build",
+      "command": [
+        "cmake",
+        "--build",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/proteomics-lfq",
+        "--parallel",
+        "4"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053084.368875,
+      "elapsed_seconds": 30.329,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/proteomics-lfq-build.log"
+    },
+    "proteomics-lfq-tests": {
+      "label": "proteomics-lfq-tests",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/proteomics-lfq",
+        "--parallel",
+        "4",
+        "--output-on-failure",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/proteomics-lfq-tests.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053115.152079,
+      "elapsed_seconds": 2.136,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/proteomics-lfq-tests.log"
+    },
+    "parquet-diff-build": {
+      "label": "parquet-diff-build",
+      "command": [
+        "cmake",
+        "--build",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/parquet-diff",
+        "--parallel",
+        "4"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053143.097974,
+      "elapsed_seconds": 9.176,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/parquet-diff-build.log"
+    },
+    "parquet-diff-tests": {
+      "label": "parquet-diff-tests",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/parquet-diff",
+        "--parallel",
+        "4",
+        "--output-on-failure",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/parquet-diff-tests.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053152.3800771,
+      "elapsed_seconds": 5.023,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/parquet-diff-tests.log"
+    },
+    "flash-build": {
+      "label": "flash-build",
+      "command": [
+        "cmake",
+        "--build",
+        "tool-split-build/flash",
+        "--parallel",
+        "4"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053034.934378,
+      "elapsed_seconds": 15.422,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/flash-build.log"
+    },
+    "flash-ctest": {
+      "label": "flash-ctest",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "tool-split-build/flash",
+        "--output-on-failure",
+        "--parallel",
+        "4",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/flash-ctest.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053062.217911,
+      "elapsed_seconds": 1235.157,
+      "exit_code": 8,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/flash-ctest.log"
+    },
+    "mascot-build": {
+      "label": "mascot-build",
+      "command": [
+        "cmake",
+        "--build",
+        "tool-split-build/mascot",
+        "--parallel",
+        "3"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053844.11568,
+      "elapsed_seconds": 5.374,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/mascot-build.log"
+    },
+    "desktop-build-v2": {
+      "label": "desktop-build-v2",
+      "command": [
+        "cmake",
+        "--build",
+        "tool-split-build/desktop",
+        "--parallel",
+        "4"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053712.182956,
+      "elapsed_seconds": 203.223,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/desktop-build-v2.log"
+    },
+    "pyopenms-initial-build": {
+      "label": "pyopenms-initial-build",
+      "command": [
+        "cmake",
+        "--build",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/pyopenms",
+        "--parallel",
+        "8"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789053855.691221,
+      "elapsed_seconds": 114.37,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/pyopenms-initial-build.log"
+    },
+    "pyopenms-build": {
+      "label": "pyopenms-build",
+      "command": [
+        "cmake",
+        "--build",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/pyopenms",
+        "--parallel",
+        "8"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789055457.98332,
+      "elapsed_seconds": 2.432,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/pyopenms-build.log"
+    },
+    "pyopenms-tests": {
+      "label": "pyopenms-tests",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-build/pyopenms",
+        "--parallel",
+        "4",
+        "--output-on-failure",
+        "--output-junit",
+        "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/pyopenms-tests.xml"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration",
+      "started_unix": 1789055460.4455822,
+      "elapsed_seconds": 24.23,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/pyopenms-tests.log"
+    },
+    "parent-final-source-validation": {
+      "label": "parent-final-source-validation",
+      "command": [
+        "python3",
+        "tools/validate_source.py"
+      ],
+      "cwd": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests",
+      "started_unix": 1789055458.642333,
+      "elapsed_seconds": 19.419,
+      "exit_code": 0,
+      "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-execution/parent-final-source-validation.log"
+    }
+  },
+  "notes": [
+    "Core parallel test result includes one unchanged StopWatch failure, followed by an isolated pass.",
+    "FLASH full run includes the inherited integration assertion failure; the corrected integration separately passed.",
+    "Source and reference validation is not line/branch coverage.",
+    "Raw evidence paths refer to the local exploration workspace."
+  ],
+  "installed_python": {
+    "package": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/tool-split-sdk/pyopenms",
+    "provenance": {
+      "core": {
+        "build_type": "Debug",
+        "class_testing_enabled": true,
+        "cxx_compiler_id": "AppleClang",
+        "cxx_compiler_version": "21.0.0.21000101",
+        "cxx_standard": 23,
+        "dependencies": {
+          "arrow": {
+            "target": "Arrow::arrow_shared",
+            "version": "25.0.0"
+          },
+          "boost": {
+            "linkage": "shared",
+            "version": "1.90.0"
+          },
+          "curl": {
+            "version": "8.21.0"
+          },
+          "eigen": {
+            "version": "5.0.1"
+          },
+          "openmp": {
+            "version": "5.1"
+          },
+          "parquet": {
+            "target": "Parquet::parquet_shared",
+            "version": "25.0.0"
+          }
+        },
+        "features": {
+          "hdf5": false,
+          "onnx": false,
+          "openmp": true,
+          "openswath": true,
+          "opentims": false,
+          "tdl": false,
+          "thermo_raw": false,
+          "wnetalign": false
+        },
+        "libstdcxx_cxx11_abi": null,
+        "msvc_runtime_library": null,
+        "schema_version": 1,
+        "shared_libs": true,
+        "source_dirty": false,
+        "source_revision": "ea35651d2fa4700a59beae1f3d1b733fb7bdaa9c",
+        "standard_library": "libc++",
+        "stl_debug": false,
+        "system_name": "Darwin",
+        "system_processor": "arm64",
+        "version": "4.0.0"
+      },
+      "schema_version": 1,
+      "source_dirty": false,
+      "source_revision": "c90b6dfb4f3bcf8c6f3ca7806e34997705a52957",
+      "tool_backends": {
+        "FLASH": {
+          "source_revision": "46b55161f8b1a2e6f08c6d77039bebbcbc22c2ac",
+          "version": "1.0.0"
+        },
+        "ProSE": {
+          "source_revision": "7e31b55f91dc93c081fc52c1b2c77d294b1dc3e2",
+          "version": "1.0.0"
+        }
+      },
+      "version": "4.0.0.dev0"
+    },
+    "result": "passed"
+  },
+  "repository_verification": [
+    {
+      "repository": "okohlbacher/OpenMS4-tests",
+      "private": true,
+      "default_branch": "develop",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-core",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-cli",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-test-data",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-topp",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-openswath",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-flash",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-desktop",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-pyopenms",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-flashapp",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-nuxl",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-prose",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-nase",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-comet",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-mascot",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-database-suitability",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-proteomics-lfq",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    },
+    {
+      "repository": "okohlbacher/OpenMS4-parquet-diff",
+      "private": true,
+      "default_branch": "codex/package-split",
+      "actions_enabled": false
+    }
+  ]
+}

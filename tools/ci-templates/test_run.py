@@ -1,0 +1,63 @@
+import tempfile
+import unittest
+from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).parent))
+from run import archive_install, check_install, core_prefix, package_tools
+
+
+class PackagingTest(unittest.TestCase):
+    def test_archive_and_core_discovery(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            core = root / "extracted" / "core"
+            core.mkdir(parents=True)
+            (core / "source-revision.txt").write_text("a" * 40 + "\n", encoding="utf-8")
+            self.assertEqual(core_prefix(root / "extracted"), core)
+            payload = root / "payload"
+            payload.mkdir()
+            (payload / "value").write_text("ok", encoding="utf-8")
+            archive = archive_install(payload, root / "dist", "package")
+            self.assertTrue(archive.is_file())
+            self.assertEqual(len(archive.with_suffix(".gz.sha256").read_text().split()[0]), 64)
+
+    def test_core_discovery_rejects_ambiguous_trees(self):
+        with tempfile.TemporaryDirectory() as directory:
+            extracted = Path(directory) / "extracted"
+            for name in ("one", "two"):
+                (extracted / name).mkdir(parents=True)
+                (extracted / name / "source-revision.txt").write_text("b" * 40, encoding="utf-8")
+            with self.assertRaises(ValueError):
+                core_prefix(extracted)
+
+    def test_this_package_declares_its_tools(self):
+        self.assertTrue(package_tools(Path(__file__).resolve().parents[2]))
+
+    def test_check_install_rejects_an_unregistered_tool(self):
+        with tempfile.TemporaryDirectory() as directory:
+            prefix = Path(directory)
+            (prefix / "bin").mkdir()
+            (prefix / "bin" / "Widget").write_text("", encoding="utf-8")
+            manifests = prefix / "share/openms4/tools"
+            manifests.mkdir(parents=True)
+            (manifests / "package.tools.tsv").write_text(
+                "# name\tcategory\tversion\texecutable\n", encoding="utf-8")
+            with self.assertRaises(ValueError):
+                check_install(prefix, ["Widget"], False)
+
+    def test_cask_refuses_a_different_core(self):
+        from update_cask import render
+        text = render("openms4-x", "o/OpenMS4-x", "OpenMS4-x", "x-v", "T", "D", "1.0.0", "b" * 12,
+                      {"arm": "0" * 64, "intel": "1" * 64}, ["Tool"], "c" * 40)
+        self.assertIn(f'next if core == "{"c" * 40}"', text)
+        self.assertIn("raise Cask::CaskError", text)
+
+    def test_cask_links_only_shipped_tools(self):
+        from update_cask import shipped
+        members = ["p", "p/bin", "p/bin/FileInfo", "p/share/openms4/tools/x.tools.tsv", "p/lib/bin/Stray"]
+        self.assertEqual(shipped(["FileInfo", "FeatureLinkerWNet", "Stray"], members), ["FileInfo"])
+
+
+if __name__ == "__main__":
+    unittest.main()

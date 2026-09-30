@@ -1,0 +1,29 @@
+stty: stdin isn't a terminal
+
+OpenSwathDecoyGenerator -- Generates decoys according to different models for a specific TraML
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_OpenSwathDecoyGenerator.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  OpenSwathDecoyGenerator <options>
+
+Options (mandatory options marked with '*'):
+  -in <file>*             Input file (valid formats: 'tsv', 'mrm', 'pqp', 'TraML', 'oswpq')
+  -in_type <type>         Input file type -- default: determined from file extension or content
+                           (valid: 'tsv', 'mrm', 'pqp', 'TraML', 'oswpq')
+  -out <file>*            Output file (valid formats: 'tsv', 'pqp', 'TraML', 'oswpq')
+  -out_type <type>        Output file type -- default: determined from file extension or content
+                           (valid: 'tsv', 'pqp', 'TraML', 'oswpq')
+  -method <type>          Decoy generation method (default: 'shuffle') (valid: 'shuffle', 'pseudo-reverse', 'reverse', 'shift')
+  -decoy_tag <type>       Decoy tag (default: 'DECOY_')
+  -switchKR <true/false>  Whether to switch terminal K and R (to achieve different precursor mass) (default: 'true') (valid: 'true', 'false')
+                          
+Common TOPP options:
+  -ini <file>             Use the given TOPP INI file
+  -threads <n>            Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>       Writes the default configuration file
+  --help                  Shows options
+  --helphelp              Shows all options (including advanced)
+

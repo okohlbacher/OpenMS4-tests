@@ -1,0 +1,20 @@
+{
+  "python_source_revision": "14d950a460636b9a8fa255b7ac657926fec403de",
+  "core_source_revision": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85",
+  "source_dirty": false,
+  "returncode": 0,
+  "collected": 5854,
+  "passed": 5745,
+  "skipped": 92,
+  "xfailed": 10,
+  "xpassed": 7,
+  "warnings": 757,
+  "duration_seconds": 65.57,
+  "development_reads_denied": true,
+  "initial_dyld_variables_present": false,
+  "initial_openms_data_path_present": false,
+  "runtime_data": "installed wheel pyopenms/share/OpenMS",
+  "log": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/pyopenms-final-wheel-tests.log",
+  "junit": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/implementation-build-evidence/pyopenms-final-wheel-tests.xml",
+  "note": "Counts from pytest summary; existing skip/xfail markers preserved. These are executed case counts, not coverage."
+}

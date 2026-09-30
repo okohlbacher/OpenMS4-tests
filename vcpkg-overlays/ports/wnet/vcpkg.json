@@ -1,7 +1,0 @@
-{
-  "name": "wnet",
-  "version": "0.9.11",
-  "description": "wnet headers",
-  "homepage": "https://github.com/michalsta/wnet",
-  "dependencies": ["pylmcf"]
-}

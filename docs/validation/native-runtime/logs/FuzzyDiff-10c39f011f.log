@@ -1,0 +1,3 @@
+Warning: Parameters file version (3.6.0) does not match the version of this tool (1.0.0).
+Your current parameters are still valid, but there might be new valid values or even new parameters. Upgrading the INI might be useful.
+FuzzyDiff took 0.00 s (wall), 0.00 s (CPU), 0.00 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.

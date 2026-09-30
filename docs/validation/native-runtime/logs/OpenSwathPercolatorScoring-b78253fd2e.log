@@ -1,0 +1,49 @@
+stty: stdin isn't a terminal
+
+OpenSwathPercolatorScoring -- Rescore OpenSWATH OSW / OSWPQ results with in-process Percolator.
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_OpenSwathPercolatorScoring.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  OpenSwathPercolatorScoring <options>
+
+Options (mandatory options marked with '*'):
+  -in <file>*                                Input OpenSWATH result file (.osw) or OSWPQ parquet archive/directory (.oswpq). (valid formats: 'osw', 'oswpq')
+  -out <file>                                Optional output path. If empty, the input is updated in place. (valid formats: 'osw', 'oswpq')
+  -level <levels>                            One or more scoring levels to run sequentially. Use 'ms2 transition' or 'ms1ms2 transition' to derive peak-group and transition scores from an unscored input. (default: '[ms1ms2]') (valid: 'ms1', 'ms2', 'ms1ms2', 'transition')
+
+transition:
+  -transition:peakgroup_max_rank <number>    Transition scoring: maximum MS2 peak-group rank retained for transition rescoring. (default: '1') (min: '1')
+  -transition:peakgroup_max_pep <value>      Transition scoring: maximum MS2 peak-group PEP retained for transition rescoring. (default: '0.7') (min: '0.0' max: '1.0')
+  -transition:max_isotope_overlap <value>    Transition scoring: maximum transition isotope-overlap score retained for rescoring. (default: '0.5') (min: '0.0')
+  -transition:min_log_sn <value>             Transition scoring: minimum log signal-to-noise score retained for rescoring. (default: '0.0')
+
+percolator:
+  -percolator:c_pos <value>                  Positive regularization constant (C+). (default: '0.1') (min: '0.0')
+  -percolator:c_neg <value>                  Negative regularization constant (C-). 0 = auto-select. (default: '0.0') (min: '0.0')
+  -percolator:test_fdr <value>               Test FDR threshold for SVM direction selection. (default: '0.01') (min: '0.0' max: '1.0')
+  -percolator:train_fdr <value>              Training FDR for SVM iterations. (default: '0.01') (min: '0.0' max: '1.0')
+  -percolator:num_iterations <number>        Number of SVM training iterations. (default: '10') (min: '1')
+  -percolator:initial_direction <text>       Feature name to use as the initial scoring direction. Prefix with '-' if LOWER values are more target-like (e.g. 'COMET:lnExpect' means higher is better; '-COMET:lnExpect' means lower is better). Leave empty (default) to let Percolator auto-select by testing every feature in both directions and picking the one that separates the most targets at train_fdr.
+  -percolator:pep_method <choice>            Posterior error probability estimator: 'logistic_regression' (target-decoy competition + isotonic fit; legacy name, not actually logistic regression), 'isotonic' (target-q → pep monotone regression), or 'nonparametric' (kernel smoothing). (default: 'logistic_regression') (valid: 'logistic_regression', 'isotonic', 'nonparametric')
+  -percolator:seed <number>                  Random seed for CV splitting. (default: '1')
+  -percolator:target_decoy_metavalue <text>  Meta-value on PeptideHit indicating target/decoy ('target'/'decoy'). (default: 'target_decoy')
+  -percolator:normalizer <choice>            Feature normalizer: 'stdv' (zero-mean, unit-stdv, default), 'uni' (min/max), or 'none' (no normalization). (default: 'stdv') (valid: 'stdv', 'uni', 'none')
+  -percolator:train_best_positive <choice>   During TRAINING, use only the best PSM per spectrum as a positive example. Affects the SVM (weights change). Orthogonal to post_processing_tdc. Default is 'true' because typical OpenMS inputs are multi-hit-per-spectrum (Comet/MSGF+/Sage top-N, OSW peak groups). Inert on one-hit-per-spectrum inputs. Note: the upstream percolator binary defaults this to off — PercolatorAdapter preserves the CLI contract by mirroring its flag state when writing this param. (default: 'true') (valid: 'true', 'false')
+  -percolator:post_processing_tdc <choice>   AFTER training, before PEP/q-value calculation, apply Target-Decoy Competition: keep only the highest-scoring PSM per (scan, mass, charge) and drop the rest from the score set. Does NOT touch the SVM — only the score distribution used for FDR. Default is 'true' because without TDC on multi-hit input, q-values count every candidate as an independent 'chance' and drift optimistic. Inert on one-hit-per-spectrum inputs. Note: the upstream percolator binary defaults this to off — PercolatorAdapter preserves the CLI contract by mirroring its flag state when writing this param. (default: 'true') (valid: 'true', 'false')
+  -percolator:nested_xval_bins <number>      Number of nested CV bins for grid search of Cpos/Cneg. Upstream default for cross validation is 3; 1 disables nested search. (default: '1') (min: '1')
+  -percolator:subset_max_train <number>      Cap on the training set size (0 = use all). Default 100000 bounds training time on very large inputs (>1M PSMs) at negligible quality loss. Sampling is reservoir-based, keyed by (scan, exp_mass) so all PSMs sharing a spectrum travel together; the trained model is then applied to ALL input rows via a second scoring pass (matches upstream Caller.cpp behavior). Inert when the input size is at or below the cap. Note: upstream percolator binary defaults this to 0 — PercolatorAdapter preserves the CLI contract by passing its own int option (CLI default 0) through to this param. (default: '100000') (min: '0')
+  -percolator:report_as_main_score <choice>  Which Percolator output to stamp as the main PeptideHit score after rescoring. 'none' (default) leaves hit.getScore() and the PeptideIdentification score_type untouched — callers who want the original search score preserved (or who run their own post-processing like PercolatorAdapter) rely on this. 'q-value' sets main score to the PSM-level q-value and marks higher_score_better=false. 'pep' sets main score to the PEP and marks higher_score_better=false. 'svm' sets main score to the SVM discriminant and marks higher_score_better=true. All three Percolator outputs remain accessible as percolator_{score,q_value,pep} meta values regardless of this setting. (default: 'none') (valid: 'none', 'q-value', 'pep', 'svm')
+  -percolator:num_threads <number>           Number of OpenMP threads for cross-validation (one per CV fold; max useful = 3). Matches upstream's default. (default: '3') (min: '1' max: '3')
+  -percolator:use_pi0 <choice>               Enable pi0 correction when computing q-values and PEPs (default). When true, pi0 is estimated per CV fold via bootstrap spline fit on the target score distribution using decoys as the null. When false, pi0 is fixed at 1.0 (pure target-decoy FDR, no bootstrap estimation). Affects both Scores::calcQvals and Scores::calcPep. Upstream percolator has no CLI flag for this; the in-library Scores(bool usePi0) constructor is the only toggle, matched here. (default: 'true') (valid: 'true', 'false')
+
+                                             
+Common TOPP options:
+  -ini <file>                                Use the given TOPP INI file
+  -threads <n>                               Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>                          Writes the default configuration file
+  --help                                     Shows options
+  --helphelp                                 Shows all options (including advanced)
+

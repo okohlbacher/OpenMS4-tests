@@ -1,0 +1,1083 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-09-10T09:51:24.790321+00:00",
+  "sdk": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/product-sdk",
+  "trust": "Local guarded incremental build and install; trusted compiler/build tree",
+  "packages": {
+    "OpenMS": {
+      "source_revision": "4fdec46b205459b92e7d3b9e56df5d8e912d5c85",
+      "source_dirty": false,
+      "version": "4.0.0",
+      "source": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/core",
+      "build": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build",
+      "configure_cache_sha256": "04020aed4e7ceae68b2edc426e428a2352ad8dbd05b5af26a727c2c306baa00c",
+      "ninja_sha256": "7506e59f560add4ef0f6e398d25d0d46890b03447d77da9e4f847183f5ab843b",
+      "guard_command": "COMMAND = cd /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build && /opt/homebrew/bin/cmake -DOPENMS_CHECK_SOURCE_DIR=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/core -DOPENMS_EXPECTED_REVISION=4fdec46b205459b92e7d3b9e56df5d8e912d5c85 -DOPENMS_EXPECTED_DIRTY=OFF -DOPENMS_SOURCE_REVISION=4fdec46b205459b92e7d3b9e56df5d8e912d5c85 -DOPENMS_SOURCE_DIRTY=OFF -DOPENMS_REQUIRE_CLEAN_SOURCE=ON -P /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/core/cmake/OpenMSSourceIdentity.cmake",
+      "commands": [
+        [
+          "cmake",
+          "--build",
+          "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build",
+          "--parallel",
+          "2"
+        ],
+        [
+          "cmake",
+          "--install",
+          "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/core-build"
+        ]
+      ],
+      "install_manifest_sha256": "0d9700ac4b516bc58ba676046b0fff9983a8195d941e7cc41ae3830dc167a152",
+      "files": {
+        "lib/libOpenMS.dylib": {
+          "sha256": "5a046fcaf15eb636e1f23b453481bca80fbfbe01a6a9f6a5df41c7c3dfbe2f4a",
+          "symlink": null
+        },
+        "lib/libOpenSwathAlgo.dylib": {
+          "sha256": "c0e6ba728b8298a7105fb41300ada8eba67aa5326f403f018551de8887857484",
+          "symlink": null
+        },
+        "lib/cmake/OpenMS/OpenMSBuildInfo.json": {
+          "sha256": "22f7ae60f0ef2edc9908459c9593cada1772b4e97bcd6739ea423438de299a9b",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/MAPPING/ms-mapping.xml": {
+          "sha256": "8e755d187038cce202d272c60ee2a5e897d503cb36d3757c9092860f3f4d3fbf",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/MAPPING/mzIdentML-mapping.xml": {
+          "sha256": "569bddab31cbe2bb0cef0a216bca3e4a0c9ad2a2b54051ca9b5b47162d3ed0cb",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/MAPPING/TraML-mapping.xml": {
+          "sha256": "aef850e1e7ad756759f240ca8f99036912e0741b9f55090da063f606bce6407e",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/MAPPING/mzdata-mapping.xml": {
+          "sha256": "2613831cc48e961d1e7e0a06a116885441501c8d11306e28cf42b53e139acfef",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/NUXL/README.md": {
+          "sha256": "2b16c27367628fa4ac40e6cdb9aaecac88d03a7fec749da76deb751bd8b69f0f",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/NUXL/nuxl_presets.json": {
+          "sha256": "740965b7f3dca96dedd27a91ff504648e006c42f5243e4c54cc7f862c58b4b45",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/LICENSES/OpenMS-BSD-3-Clause.txt": {
+          "sha256": "bbf1af23e6e5206c88ab345afcea2657103b6ef64d8206985e81e49f1dda0b74",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/HMDB2StructMapping.tsv": {
+          "sha256": "125ad09799da5f911c434a96e30d1592bbe16a04fd342a7929c056a226a9d299",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/MetaboliteIsoModelNoised5.scale": {
+          "sha256": "d829d9d60055b8904e41315071f18daf184d639ce23906ace0c39f8bdd37e005",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/PositiveAdducts.tsv": {
+          "sha256": "cf6d682f9d1505e107cce0ccf0821b49c2835d5dca5382736814e6aba6aaf698",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/UniProt_ptmlist.txt": {
+          "sha256": "0b891460dc929a0a0c0ccc4b9ab7571ed930d7b36d1ebe3f5e9af7c1fc6c2be5",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/NegativeAdducts.tsv": {
+          "sha256": "dd07e068183392deebeecdf9040ab50ba135129cad771ce1285fd9a474d6a469",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/XLMOD.obo": {
+          "sha256": "9792d18d47654ae1f3f31044f539c23967d347efee265781242062096ba7b540",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/XTandem_residue_mass.bioml.xml": {
+          "sha256": "6275437ee3d752782b76e6f158362f75571c99bcf8dc16ac082ff36af5c81dc5",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/MetaboliteIsoModelNoised5.svm": {
+          "sha256": "89b2c4b69b1986c804f588bd05fff29b67ed801ae503b241e101365d9ee27f64",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/HMDBMappingFile.tsv": {
+          "sha256": "d2e321613b32db1802af4599ef1535b99d767d313aaaa5ccfd1dec8e371fe381",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/MetaboliteIsoModelNoised2.scale": {
+          "sha256": "86aeb1c8c13fafa074a2950598cf36c49695e11d4367d8a3bc82bad5f4c9217c",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/MetaboliteIsoModelNoised2.svm": {
+          "sha256": "763c2dfcf5e2b848dd30db30974b5fd72d3ff5a2a0d2a2c8d6d5b6dadf654dd6",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/Enzymes.xml": {
+          "sha256": "2f160f3ec32db6257cb4eee43fd594b48cb36398a17b7af21bbba76bc8b16995",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/Modomics.tsv": {
+          "sha256": "ed458688c4cfdf1ea6eb4c618613befee411019f3b7665838685ae3dea411e76",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/Custom_RNA_modifications.tsv": {
+          "sha256": "155d7ff5c70c9c01ffd0d5a32fe7c4e200adc10ae5ed6d516b07ec8242faa23d",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/OMSSA_modification_mapping": {
+          "sha256": "e7b8d09146a656f944a8f119ab147c5b0a2bef8968d8ec00e7f261f0d51cc5fb",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/PSI-MOD.obo": {
+          "sha256": "860f5861ba3c72e7ca14bd80f7da6e4386737dcb7db3f28895699ef2390d1121",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/Enzymes_RNA.xml": {
+          "sha256": "4c90a3630a1553ef7c75bae00f2731e2f5bb690f3ee9434d54cc3315a95fe899",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/monosaccharides.json": {
+          "sha256": "59e8e5558d10581f148964b54297474044beefd04510069cfecb4109e8f9173f",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/cirtkit.tsv": {
+          "sha256": "9cf4bff17b470624f6c6c899b295b3912f775503730e4543801d83c8ea77b33b",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/Modomics.json": {
+          "sha256": "2c98d258f2b88c126e88a06e080a0652053b77bc9d434ab8727c984dfa8436fc",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/MetaboliteIsoModel.svm": {
+          "sha256": "c20868f3bd961db2aab8702385d21e89447ce5a6d7da2f8a83745c0a97ea3113",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/MetaboliteIsoModel.scale": {
+          "sha256": "5cee5bf21d4cdec6a6d6054bfd94d971e5120794c5181a4a9a4f53f241d14b6f",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/irtkit.tsv": {
+          "sha256": "3c4d868f182992172b5ed67432d6e1de18e3688ab4bc84e89aa23c4611cab01b",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/unimod.xml": {
+          "sha256": "22231d3289f2330895cee8bc119c1f9bc52b0006447b3f28a196e778e4591091",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/XTandem_default_config.xml": {
+          "sha256": "3c84d819f49b48aa9cff14293bfc5918e1f2b0d5489efd52879784065961518a",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CHEMISTRY/custom_mods.xml": {
+          "sha256": "2078bf44aae64075cceb6a90549f20d203684df84ea11c7065293707ec8ba8b3",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/general_types_1.0.xsd": {
+          "sha256": "b15bde2bb52edf84970c90f20a0cc324911d2b02e68c3b252d7fd6624e3ecc02",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/mzData_1_05.xsd": {
+          "sha256": "c5c6ad6343d8f87cfd6a81017b30ca30defbed3f6b9a2e14eadc3ab15c084b7f",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/mzIdentML1.0.0.xsd": {
+          "sha256": "a012b06a7b7d0ca92e5115870c59e603f17d7308c68941776f3959bd2a556810",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/mzIdentML1.2.0.xsd": {
+          "sha256": "beca6afe670394bc5edb810632712ea4fd434d08f62491dacc7da83c32ff7f7f",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/IdXML_1_5.xsd": {
+          "sha256": "51f27832be39a2f500ee51c1453b9032259b152fc49c0eb7d3a79b5efa02c8cc",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/FuGElightv1.0.0.xsd": {
+          "sha256": "8939c3a239533d84c31bbff4a4910102fa16ceef47db61ad49a2d30caf370c15",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/mzML_idx_1_10.xsd": {
+          "sha256": "b99b668f2d9faabbf62ab8cde1f778d126bf0213d083472590670ee64318f5b0",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/protXML_v6.xsd": {
+          "sha256": "52a3af6b47d6e650e6d5ef2be4210a07e4fa06b21fbf52e8883bd386834fb62d",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/mzIdentML1.3.0.xsd": {
+          "sha256": "abac61f57e5dcd2eed76a547a3bbd71a47e241d378ac6963fee1f0c0390a6204",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/mzIdentML1.1.0.xsd": {
+          "sha256": "8d12337d8d5abd50a30a68ee540a8180b62a177ee0d8d99d2d0ba30932f6f513",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/pepXML_v114.xsd": {
+          "sha256": "64a81531831ae268c1fc421fd788d8de2c0ac6cf300362723b01239e3579e2fb",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/xQuest_1_0.xsd": {
+          "sha256": "c93265a3374ec75d1914d37d47313e8eb751502dd6925e13e2f4e23c2b228b1a",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/Param_1_8_0.xsd": {
+          "sha256": "d672b6b90b454ce9fad11524831e9d26ab52daba3f5b4d98beaed441aec2941a",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/separation_technique_1.0.xsd": {
+          "sha256": "d061c1dc60894c268ea9634ddcb671612a93c5f33b18ed036754cb928ec74132",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/TrafoXML_1_1.xsd": {
+          "sha256": "6fc7c7f3e6215d8be11cbe5ed8d0975fcadc8aef7efdcec88eba2d048322abdd",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/README.md": {
+          "sha256": "6b3154ff8e1103afaf8e0ae04f9cb36bfeafe0fdefe4e2a77a9558d22102861b",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/mzXML_idx_3.1.xsd": {
+          "sha256": "33ff86af0216c9f572f5326ede1e9b1316cd183c81b7c4dd4e0633eecaaf0d7f",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/FeatureXML_1_9.xsd": {
+          "sha256": "9c66e9abeead72ad60296ff442a8029fd04ec76c3ab80c2c0ff46063743b99a3",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/ToolDescriptor_1_0.xsd": {
+          "sha256": "41686ae3bbb0672a147b5642195faf25d63d3fd76c4585eee0690bf94498d60c",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/Param_1_7_0.xsd": {
+          "sha256": "330ee935b4a08e449fcbdf2e0d993c6d2e5b9bb5b5707555b55b5f7914578857",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/mzXML_3.1_mod.xsd": {
+          "sha256": "9833a434145319a0285995a4b77362c0ca3fbadbd384a6dde21cbbc6a6d01359",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/TraML1.0.0.xsd": {
+          "sha256": "807e1f3d1441dbb8a0caaabfcfc0165c53178eb2e32c89c6f0afdc11a22d1c68",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/ConsensusXML_1_7.xsd": {
+          "sha256": "761de40b760054b60a3f616b0553c2df801c8d126a1655f12b6ef144c563df07",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCHEMAS/mzML_1_10.xsd": {
+          "sha256": "3fffeabe4f5909575acfe3563d664660a806fefc501b5dfc91ccb1117fc440ad",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCRIPTS/plot_trafo.R": {
+          "sha256": "653c0480663268e768b8760496bbcd69bddc3642044fadee9fd3f76d431fc9c0",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCRIPTS/InternalCalibration_Residuals.R": {
+          "sha256": "51f7c7d3247ac295015fd4bb3f71fd4419a79c46576faaaf887062b05b72b927",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/SCRIPTS/InternalCalibration_Models.R": {
+          "sha256": "76787fbf732cc5d6dbd08a7ebea5a6d2045bcbd23821c83ed7556e1f3f612914",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CV/goslim_goa.obo": {
+          "sha256": "542711370e7406b3461902b2e0214a054237e51c8d1f2dd01f07059001cb50f8",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CV/psi-mzdata.obo": {
+          "sha256": "5c7da98905d835f7141b98320267318d4dece82eb731a73adcaf0fef85159782",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CV/psi-ms.obo": {
+          "sha256": "1623792d5fd37ab305bc7228ab6b51839cfde06130f9b8727bd8ce99993a27d3",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CV/unimod.obo": {
+          "sha256": "c28d512342a97306d0982c86d2f5262943ba6880ccec03f16f032a4e8004fd03",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CV/quality.obo": {
+          "sha256": "9c759c87833b7c966dab66bfb31bf94d7196546eb2aef84776397a0e64d245e3",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CV/qc-cv-legacy.obo": {
+          "sha256": "8e8c19655f3ef72d0c5e52cdb00e71d66d71b991a819d91fd93e78766f6563a9",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CV/unit.obo": {
+          "sha256": "f87734299c881fc03e7e143d35f7ab7607ac5a1f2a8cad07603e1673ad5a15df",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CV/qc-cv.obo": {
+          "sha256": "d578feacdb6467260fb49533ccdc33594e866e7f48306b27e592760a02b01f3d",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/CV/brenda.obo": {
+          "sha256": "4466c14e537ec6ae2b79d7cb22ea16ef0e79f9317d65d1f281c0003e9dbb846a",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/XSL/index.html": {
+          "sha256": "8b64422a48a65368fbf32785fa8ac421736c044f5518166bd4dc9c8e47300072",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/XSL/QcML_report_sheet.xsl": {
+          "sha256": "5d0d6afb754675abf408733f64221e99f21122585f4f473ae11837a42d435fd6",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/XSL/IdXML.xsl": {
+          "sha256": "a8747b40e94928411ce35d39aa658c55e21f32cd4e358add356b397cd950380f",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/XSL/APML_to_CSV.xsl": {
+          "sha256": "372114330e35decf2db63de012a69a66cc9fed689255c9d94825ef52ba77c3ca",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/XSL/ConsensusXML.xsl": {
+          "sha256": "077aa71ef1a302835bb020ae965adf25b5c31352bac4f51a5236ff197f89ee69",
+          "symlink": null
+        },
+        "share/OpenMS/4.0.0/THIRDPARTY/ReadMe.txt": {
+          "sha256": "59d336b1f3d47730a8d224804687706104eef08e17e8b44201d9571c9912f1d8",
+          "symlink": null
+        }
+      }
+    },
+    "OpenMSCLI": {
+      "source_revision": "51db6bbbdeba53abc57d23c664de37f9c285372e",
+      "source_dirty": false,
+      "version": "1.0.0",
+      "source": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/cli",
+      "build": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build",
+      "configure_cache_sha256": "04882ff09cccdee1df4b6277f16226be5e13fd42a2fbdc887e48a0c831ff5079",
+      "ninja_sha256": "07fae736e083e529db229fe15d90ee43bade007b7e5efc9df33832d51c8bd39d",
+      "guard_command": "COMMAND = cd /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build && /opt/homebrew/bin/cmake -DOPENMS4_CHECK_SOURCE_DIR=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/cli -DOPENMS4_SOURCE_REVISION=51db6bbbdeba53abc57d23c664de37f9c285372e -DOPENMS4_SOURCE_DIRTY=OFF -DOPENMS4_EXPECTED_REVISION=51db6bbbdeba53abc57d23c664de37f9c285372e -DOPENMS4_EXPECTED_DIRTY=OFF -DOPENMS4_REQUIRE_CLEAN_SOURCE=ON -P /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/cli/cmake/OpenMS4Dependencies.cmake",
+      "commands": [
+        [
+          "cmake",
+          "--build",
+          "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build",
+          "--parallel",
+          "2"
+        ],
+        [
+          "cmake",
+          "--install",
+          "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/cli-build"
+        ]
+      ],
+      "install_manifest_sha256": "9ed8aa72a9af192710dc855aa6a77995303a09533606c67c6feb25f11a738815",
+      "files": {
+        "lib/libOpenMS_CLI.dylib": {
+          "sha256": "53d9b438077965947bd743a934fd8c19a1e4ad142249ea3498820735cd3b62ad",
+          "symlink": "libOpenMS_CLI.1.dylib"
+        },
+        "lib/libOpenMS_CLI.1.dylib": {
+          "sha256": "53d9b438077965947bd743a934fd8c19a1e4ad142249ea3498820735cd3b62ad",
+          "symlink": "libOpenMS_CLI.1.0.0.dylib"
+        },
+        "lib/libOpenMS_CLI.1.0.0.dylib": {
+          "sha256": "53d9b438077965947bd743a934fd8c19a1e4ad142249ea3498820735cd3b62ad",
+          "symlink": null
+        },
+        "lib/cmake/OpenMSCLI/OpenMSCLIConfig.cmake": {
+          "sha256": "06f0ca72814d8755a6421f2fe00547d5cb9cc40e51ff38b4375efa514fc3a4a5",
+          "symlink": null
+        }
+      }
+    },
+    "OpenMSTOPP": {
+      "source_revision": "94e997007b7af9adbaee95d144324276e9fa56ee",
+      "source_dirty": false,
+      "version": "1.0.0",
+      "source": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/topp",
+      "build": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build",
+      "configure_cache_sha256": "dca5f55941ad8089fbc0af0e1c64bf970240df9fa034c5d59ad8c683332e23eb",
+      "ninja_sha256": "a6fadbd35c3d839e108308114c4157c930a576a54c2bd293b3c92ee92b3acc35",
+      "guard_command": "COMMAND = cd /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build && /opt/homebrew/bin/cmake -DOPENMS4_CHECK_SOURCE_DIR=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/topp -DOPENMS4_SOURCE_REVISION=94e997007b7af9adbaee95d144324276e9fa56ee -DOPENMS4_SOURCE_DIRTY=OFF -DOPENMS4_EXPECTED_REVISION=94e997007b7af9adbaee95d144324276e9fa56ee -DOPENMS4_EXPECTED_DIRTY=OFF -DOPENMS4_REQUIRE_CLEAN_SOURCE=ON -P /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/topp/cmake/OpenMS4Dependencies.cmake",
+      "commands": [
+        [
+          "cmake",
+          "--build",
+          "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build",
+          "--parallel",
+          "2"
+        ],
+        [
+          "cmake",
+          "--install",
+          "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/topp-build"
+        ]
+      ],
+      "install_manifest_sha256": "95c3fe0a139b04aef4b6def1fb45635e860e3b63d741a5370bb5b9bd22c65d7b",
+      "files": {
+        "share/openms4/tools/topp.tools.tsv": {
+          "sha256": "80e65730fc2e607379e60dce79a9e3a87bee85f139c14c59a5e28504596d6830",
+          "symlink": null
+        },
+        "bin/AccurateMassSearch": {
+          "sha256": "c6b45e89f5e27f61ef7a8b77b8fc1f5cd1e5bc242b2be29191fa554076266e57",
+          "symlink": null
+        },
+        "bin/AssayGeneratorMetabo": {
+          "sha256": "8b8f2e9148d80549af319f2fe5f9c0082d4241c8bfe5c5634aaa34f891f2cd6f",
+          "symlink": null
+        },
+        "bin/AssayGeneratorMetaboSirius": {
+          "sha256": "be85959ca38406f65c61479b4695e9dad151fa97aaa14d4c19c0bee2ef599140",
+          "symlink": null
+        },
+        "bin/BaselineFilter": {
+          "sha256": "556ca3fbfb485893dbd7080144f25564723f683701dcdced69e7f8d3a981b22e",
+          "symlink": null
+        },
+        "bin/CVInspector": {
+          "sha256": "b558038b9ac222113495b3c2f077134545de996e45e927b09104026cfbb19729",
+          "symlink": null
+        },
+        "bin/ClusterMassTraces": {
+          "sha256": "59eb0a226ad0b64aa6bf48bd1becc2bc3a813d604bbe216e895993c32a468f34",
+          "symlink": null
+        },
+        "bin/ClusterMassTracesByPrecursor": {
+          "sha256": "0f2bcb899b495cbbd957f3c12d83b6dc5f1dbb355cd804bd19e6a8e31684eea1",
+          "symlink": null
+        },
+        "bin/CometAdapter": {
+          "sha256": "b3a63a6488a2ee395aa4fc157a08802f92bbc974249c905e3e25e27f0c9fa12d",
+          "symlink": null
+        },
+        "bin/ConsensusID": {
+          "sha256": "acd5962e02e29d1a55d788a591a81cbeef66ac953179bf06731ed8e4688ab752",
+          "symlink": null
+        },
+        "bin/ConsensusMapNormalizer": {
+          "sha256": "b1e37f08d476fd1a62354d39147eb3893b4788e40b2148e173e823c3a0d2d9fe",
+          "symlink": null
+        },
+        "bin/DTAExtractor": {
+          "sha256": "2ef65618307a7c9e27bc94c237b5421eca5d111a57c59bffb1779d387a1293cf",
+          "symlink": null
+        },
+        "bin/DatabaseFilter": {
+          "sha256": "699965b5cb61981b534a65670fd0a67ee42f7ebc757991ce74969bc80cfa8d4a",
+          "symlink": null
+        },
+        "bin/DatabaseSuitability": {
+          "sha256": "8c70707ff9c7d9f109c14564af4643ae79702c7ee4188841792bf8b086e93042",
+          "symlink": null
+        },
+        "bin/DeMeanderize": {
+          "sha256": "268af73538d780ab7e61b280f702b0d22cb6e0436bebf2aad7eb6003467176ee",
+          "symlink": null
+        },
+        "bin/Decharger": {
+          "sha256": "c47b9465366402cd7882185abd6bcb9623bab1b9e20cf8595890a526b4bd769a",
+          "symlink": null
+        },
+        "bin/DecoyDatabase": {
+          "sha256": "74b845db8a91aecbf168847ce871dcf08d89c4362b851561e30c7346ba6adc55",
+          "symlink": null
+        },
+        "bin/Digestor": {
+          "sha256": "598af5c3442dcce514b9ca74225fe5f7a2a022cae25f7c99f95f563855631b62",
+          "symlink": null
+        },
+        "bin/DigestorMotif": {
+          "sha256": "73640f1a57adf85b34207e16a776bc750d48fad1b636d7ef68df92b5ea02a6a0",
+          "symlink": null
+        },
+        "bin/EICExtractor": {
+          "sha256": "92c5d8d5adda183009c4f4aa3ecd56371961a6e64edc7645519b3c4224ac2216",
+          "symlink": null
+        },
+        "bin/Epifany": {
+          "sha256": "d93bf8faf0c5bdc3fa9fffd7d5c32586dbdf179e08547e269c0dc1acc60bc155",
+          "symlink": null
+        },
+        "bin/ExternalCalibration": {
+          "sha256": "8a1b06041713687aa39c5d0a946569891024d24c8a1ccb744029b00b6e5ad51a",
+          "symlink": null
+        },
+        "bin/FalseDiscoveryRate": {
+          "sha256": "0896b6db0c05da27ce8c71abc84fcfaa23e49b37d95a0693a6db953021b87a73",
+          "symlink": null
+        },
+        "bin/FeatureFinderCentroided": {
+          "sha256": "8560e5d22bcb30109ea268be45854b89eebfcac8af1e82c0c444534d45d4798f",
+          "symlink": null
+        },
+        "bin/FeatureFinderIdentification": {
+          "sha256": "d0abc8cba651f5a127ae4af63d26f0cd81f82e602609fc83367eb75e784c3da0",
+          "symlink": null
+        },
+        "bin/FeatureFinderLFQ": {
+          "sha256": "ccb93574e0ad6e05b03c965ff9381bab8af62550e791f0f7111eb493840024e5",
+          "symlink": null
+        },
+        "bin/FeatureFinderMetabo": {
+          "sha256": "3c2a8abcc51b0f77d3a31a06ac313321bfd81dd21d0a1d358496978118427bb2",
+          "symlink": null
+        },
+        "bin/FeatureFinderMetaboIdent": {
+          "sha256": "f28b1489f999ec5177b47ebe69ee32b5cfc58864992a86a1be9e4b9cb820c605",
+          "symlink": null
+        },
+        "bin/FeatureFinderMultiplex": {
+          "sha256": "d1d6ef31ce81b0845909edc1a73aae4c28401bcb0f1582302f3e1a49fca45d19",
+          "symlink": null
+        },
+        "bin/FeatureLinkerLabeled": {
+          "sha256": "8646cfaf285f10aa48df3a58d276477762e06f52772f8aba5797d2d02fad9e43",
+          "symlink": null
+        },
+        "bin/FeatureLinkerUnlabeled": {
+          "sha256": "ca4a49e4fd184960737058bbaad095e98cf4ca9afcec9dc8dd3a1d29a20c4eb0",
+          "symlink": null
+        },
+        "bin/FeatureLinkerUnlabeledKD": {
+          "sha256": "6bace50e01eee554e9fe90932d320160bb95951070a2b47768a8bdc45de6cf4b",
+          "symlink": null
+        },
+        "bin/FeatureLinkerUnlabeledQT": {
+          "sha256": "19f0f35dc1e3852d5f28a5bfebacb61f0eaf44e57fe8dceab9a541bc639e6120",
+          "symlink": null
+        },
+        "bin/FileConverter": {
+          "sha256": "9a2201e5b06c782ad216e9324469f66d2fc9d71eca7caf91b7efa915b8c651e6",
+          "symlink": null
+        },
+        "bin/FileFilter": {
+          "sha256": "81f0656ddcf1cedff1e1f74d8fb0f8caab8ff6d948d03b28b1d53443b6caf0e8",
+          "symlink": null
+        },
+        "bin/FileInfo": {
+          "sha256": "1a8292d704e92708c09ab63a7e85f8a103fa9b6ab7d6f5c876553df775b0cff5",
+          "symlink": null
+        },
+        "bin/FileMerger": {
+          "sha256": "400fbec8d71e7628f5a54b6b64f921911547e04f9e9c60b3a359fd4338b76175",
+          "symlink": null
+        },
+        "bin/FuzzyDiff": {
+          "sha256": "4a8bcd672324b81e9d02596a4b2821a3a4eaa0fb14f223a255c29dae93daa908",
+          "symlink": null
+        },
+        "bin/GNPSExport": {
+          "sha256": "3bbe268ab08a6e3a60638c440e89cf87527afd5d1153ed784913e4e50565e349",
+          "symlink": null
+        },
+        "bin/HighResPrecursorMassCorrector": {
+          "sha256": "f565f0aef64d76823e8eb0790acf57e2e0ecaf3378acd49913144ded542afbbb",
+          "symlink": null
+        },
+        "bin/IDConflictResolver": {
+          "sha256": "c7890be7bc980115caf34c24da5914018e13e39196a81cf1494a5012c5b77b4b",
+          "symlink": null
+        },
+        "bin/IDDecoyProbability": {
+          "sha256": "9a8ba8a75758929298aed0809de3b0d8df7a73d2346710daa016ab8c0baa13ae",
+          "symlink": null
+        },
+        "bin/IDExtractor": {
+          "sha256": "c7ed122f2292a8c3d031f5d9e0cb609805a6279120acb7e7aae7fac5e776aa1f",
+          "symlink": null
+        },
+        "bin/IDFileConverter": {
+          "sha256": "97f060b76c0d8b44d24938665bd36c33f97014bed06d29d261c5074d06899030",
+          "symlink": null
+        },
+        "bin/IDFilter": {
+          "sha256": "5e0e90e537e329ece4e412b397b95f14cd5601270e79b67b19dc790ce8014c8f",
+          "symlink": null
+        },
+        "bin/IDMapper": {
+          "sha256": "b9fc7b7545e39db3cd6b7df3bd0e74fe678eda7699ff377dc031c37fe0962d3d",
+          "symlink": null
+        },
+        "bin/IDMerger": {
+          "sha256": "85f54b3f23be8e704cd5728bf3cf7749e1c51efd5504a2e7b912783414360ce3",
+          "symlink": null
+        },
+        "bin/IDPosteriorErrorProbability": {
+          "sha256": "703489c32d1731427f16d01b45226ea0c356cd442894bb28149fb30da2fcd009",
+          "symlink": null
+        },
+        "bin/IDRTCalibration": {
+          "sha256": "0cb673cf7955d64d2bfe80fe53c228a69fb30cab2ca48c1c9d72a50dc91a06e0",
+          "symlink": null
+        },
+        "bin/IDRipper": {
+          "sha256": "069dd6b63807fe958405501ef72707031c42126e38df4f91eaf2e095d374e6b1",
+          "symlink": null
+        },
+        "bin/IDScoreSwitcher": {
+          "sha256": "33ae78a7a440f207cb6bc4d2d76a4974eda36dc33b3abcf3e71a6720d2a5b82a",
+          "symlink": null
+        },
+        "bin/IDSplitter": {
+          "sha256": "3a700d984d5ea44e74bcbc91273702cb725c8c728b146b1967cf238ede91f482",
+          "symlink": null
+        },
+        "bin/INIUpdater": {
+          "sha256": "f819a0ee1f975578c9e5cbe26559c9de413125e7099407292a9518162e017d2b",
+          "symlink": null
+        },
+        "bin/InternalCalibration": {
+          "sha256": "e395268c190d3ed8990085cf43843d099798be36b59fd3e137c9452da4d3be35",
+          "symlink": null
+        },
+        "bin/IonMobilityBinning": {
+          "sha256": "a4ee97521ddb776df66603e37bdd7bb8b383b96498825f430e2937e0a4d0f8b0",
+          "symlink": null
+        },
+        "bin/IsobaricAnalyzer": {
+          "sha256": "a3a301178fee3414dd9cd29b490b3d8ca67bb6ed0f9b70568823d98ee8468c28",
+          "symlink": null
+        },
+        "bin/IsobaricWorkflow": {
+          "sha256": "21d75cbcd557089b1b102220fabd0e82380a4c37993d7a0bf388e3936ed6f127",
+          "symlink": null
+        },
+        "bin/JSONExporter": {
+          "sha256": "fc3863277bcded52e35694ee46ab543e1700e40e8b00ad8c6ab3b55b866f74ac",
+          "symlink": null
+        },
+        "bin/LuciphorAdapter": {
+          "sha256": "259d507324ac73c233983e523a418c12c9104a5f5f180899e11ef71a01029d25",
+          "symlink": null
+        },
+        "bin/MRMMapper": {
+          "sha256": "57c1d0a500e9c7533263aee5852424dff0899863378575030286eb3b5784ae45",
+          "symlink": null
+        },
+        "bin/MRMPairFinder": {
+          "sha256": "9e35daf4b42ab446284152310790d4697ee0bbe84f3f11a7509337b3be79efe1",
+          "symlink": null
+        },
+        "bin/MSFraggerAdapter": {
+          "sha256": "bbd603de1d2328d989809289d33af3bc37b5f4e5543106a6e8c2cfffb887c441",
+          "symlink": null
+        },
+        "bin/MSGFPlusAdapter": {
+          "sha256": "26d3117857a7b59b41c7167916e67debc821027bef5ff7fb86d45ba5110f7520",
+          "symlink": null
+        },
+        "bin/MSstatsConverter": {
+          "sha256": "7c35fff6092280ab2d09a0b70ddd5691c87d30dc5fcbb98107543b19e8bf078a",
+          "symlink": null
+        },
+        "bin/MaRaClusterAdapter": {
+          "sha256": "3ec4a4527a85ecdcd69fdc4861fce48168094e3ca67ea5ed7d382400ed8beb62",
+          "symlink": null
+        },
+        "bin/MapAlignerIdentification": {
+          "sha256": "81573756bbccd1a198ff005ace5e7704840cf1d24c0780032897cba3701af004",
+          "symlink": null
+        },
+        "bin/MapAlignerPoseClustering": {
+          "sha256": "a19ccaf0c6209d90f3509829ab2ee435b68a5c74b477195bea6a3f6bba7dd7e8",
+          "symlink": null
+        },
+        "bin/MapAlignerTreeGuided": {
+          "sha256": "2c87771a92f26c99176a79abf987fb7f1a1a97c329dfc76ae2cf9d6fc368295b",
+          "symlink": null
+        },
+        "bin/MapNormalizer": {
+          "sha256": "ae8c3516bb2ecd78f205ea1d802c9063682c3de3ba97748278d98c0d712e43e7",
+          "symlink": null
+        },
+        "bin/MapRTTransformer": {
+          "sha256": "1ede815cde4a2830557f709fa8a6fdeae046290335679a40b17796f8d84e2f16",
+          "symlink": null
+        },
+        "bin/MapStatistics": {
+          "sha256": "83056658ed737a4ab0313db2f6a65e0c660eead5e291e039d89c0bb9a43748e1",
+          "symlink": null
+        },
+        "bin/MascotAdapterOnline": {
+          "sha256": "a71946b1949bc0597bf37a94cd4c053bcc9c33985f838c42585b20caff690b2a",
+          "symlink": null
+        },
+        "bin/MassCalculator": {
+          "sha256": "36d558beb26100652d5e7932a2b16596b3b3d6305b4a42dc0a2464b907756fcd",
+          "symlink": null
+        },
+        "bin/MassTraceExtractor": {
+          "sha256": "d0c3b996052eacc5ea3c30e0e95a1ae1d58bf24db110169e3cbe62b110e0ab0b",
+          "symlink": null
+        },
+        "bin/MetaProSIP": {
+          "sha256": "88ca1b3aa42d067d7740411150f558472a247aba8452b78adabb769eb7acc3bd",
+          "symlink": null
+        },
+        "bin/MetaboliteAdductDecharger": {
+          "sha256": "fb06160efa7a92a0365b7e7f6f2deec5aee626b8950fb5641f9be495a708d65c",
+          "symlink": null
+        },
+        "bin/MetaboliteSpectralMatcher": {
+          "sha256": "411923caa8ed1034610f8d384daceaac3ded95766ebe69d42091175661876490",
+          "symlink": null
+        },
+        "bin/MultiplexResolver": {
+          "sha256": "33f11d39d10390d11eee64053bcf153b58da10c2037ecf933cb7e8e17ea3577f",
+          "symlink": null
+        },
+        "bin/MzMLSplitter": {
+          "sha256": "fd91cfb4930f60c37c9e3abbe8808a0280e8c4f01d5703fa62a50ff8f3990656",
+          "symlink": null
+        },
+        "bin/MzTabExporter": {
+          "sha256": "035fda0041bae65a5011eeb43e17df1b92250bb31344369869ea4c40054bab5c",
+          "symlink": null
+        },
+        "bin/NoiseFilterGaussian": {
+          "sha256": "ad0ef399ef1b2db67080512311a43676392be0a2b0ed372fb60b0b62d99250c1",
+          "symlink": null
+        },
+        "bin/NoiseFilterSGolay": {
+          "sha256": "b341ef1cb1533bb5872375a0aafc7825a70a192a8dff8c94a482d5d4ee3acc04",
+          "symlink": null
+        },
+        "bin/NovorAdapter": {
+          "sha256": "70e15fc217dd045f102b350a883a089679452fca21bcc2063b6a57335b1852c9",
+          "symlink": null
+        },
+        "bin/NucleicAcidSearchEngine": {
+          "sha256": "5451f06f98615f56bdbebbbd9230634e09fffdae27bd948e5f7d6784ba3bbde8",
+          "symlink": null
+        },
+        "bin/OpenMSDatabasesInfo": {
+          "sha256": "efcb07515b9aa4292015237746e291cf841dba6235d4758ddaf24e4bfbaeedfc",
+          "symlink": null
+        },
+        "bin/OpenMSInfo": {
+          "sha256": "fbe6979f69e90dd1ab7381824f88af74b72deb69398c2f8dc139f635f4cdaed7",
+          "symlink": null
+        },
+        "bin/OpenNuXL": {
+          "sha256": "5b02fcc08eeb74d2cffbfbf5a2521b1b7ed34367c184f27bd56978616ea81266",
+          "symlink": null
+        },
+        "bin/OpenPepXL": {
+          "sha256": "4f24c09a5c7f182afa2885cf610e3c9cf2686c899dbeb6e605ba5d7e7a29badd",
+          "symlink": null
+        },
+        "bin/PSMFeatureExtractor": {
+          "sha256": "2298ee92d4250c3c3c065eb633c84b85e2ccf8f34a388e22afafb109e2adc230",
+          "symlink": null
+        },
+        "bin/ParquetConverter": {
+          "sha256": "9e32d13ced13dc0c62c18bca0333646364b948402c6c98b4051902048908ac24",
+          "symlink": null
+        },
+        "bin/ParquetDiff": {
+          "sha256": "9d4f59a131ca2496d2bf177a55f237bae7263c77be227aae06f22a5df18208b6",
+          "symlink": null
+        },
+        "bin/PeakPickerHiRes": {
+          "sha256": "9b719f4fd82e7cb2d3ee42183e4e2eaccac440b77f3e131fe9e4c5199dd99bae",
+          "symlink": null
+        },
+        "bin/PeakPickerIM": {
+          "sha256": "69dcaa75f8116b7888e7602dc104ef5e4486aead5d92ae2d84d111ccc9c13b0b",
+          "symlink": null
+        },
+        "bin/PeakPickerIterative": {
+          "sha256": "11a4f0e6135e26e4acf3e117c43837251e9e7f66567d8080f081e4495e2fea40",
+          "symlink": null
+        },
+        "bin/PeptideIndexer": {
+          "sha256": "18283ebba540636ef58cfc263a935661718e13e0f0838d1dd161290c6dca2934",
+          "symlink": null
+        },
+        "bin/PercolatorAdapter": {
+          "sha256": "a41439a410d589340678c034ac37488967fa27a6ea285f187cb3cb7dc19d788e",
+          "symlink": null
+        },
+        "bin/PhosphoScoring": {
+          "sha256": "e696992aa2ee045e5b010adf188a3d8b46d73710f697459ddc8f53f3b330fff3",
+          "symlink": null
+        },
+        "bin/ProSE": {
+          "sha256": "6fc26c458a7cf154dadf3f2c0ba106488fef79a09ead844702a61745fb86725d",
+          "symlink": null
+        },
+        "bin/ProteinInference": {
+          "sha256": "5039fd9d42da7f731448f643b5e9b14526ca4a5d43de6868b3bac7c5b93efa43",
+          "symlink": null
+        },
+        "bin/ProteinQuantifier": {
+          "sha256": "c4672e032cefea602752c96db4ba6f009eb74b5b737fba8a05c630679353a562",
+          "symlink": null
+        },
+        "bin/ProteomicsLFQ": {
+          "sha256": "d385215145eb5bcc8cb4d7c791443e8e3660f7874ed59d54e1c9e6c0fb99cbc1",
+          "symlink": null
+        },
+        "bin/QCCalculator": {
+          "sha256": "945e5b9ed971800afd110fc9daccc1c1d276ee5cb2250eddbcda765a7b9186bb",
+          "symlink": null
+        },
+        "bin/QCEmbedder": {
+          "sha256": "fd455f5d280fe4c69a151f725c0e6b635a364a53d09a316bc4e2219a6caf49d1",
+          "symlink": null
+        },
+        "bin/QCExporter": {
+          "sha256": "469549e56982e915d324a05c423af03132d0793480d63c69521d1361f454b725",
+          "symlink": null
+        },
+        "bin/QCExtractor": {
+          "sha256": "f1fa07b20573387541d5b49669fb5620f8db6909b2a1b4c748fd4c13eb66e238",
+          "symlink": null
+        },
+        "bin/QCImporter": {
+          "sha256": "0662470aaa1df5cfcd4d48128f62c0aaa3c4ac7ecd022f1a55e2cfc73a6ea3c0",
+          "symlink": null
+        },
+        "bin/QCMerger": {
+          "sha256": "653e9f5a9112b61887aff522d6d49cd6462044e8616e7dcfc4b7d9f98c5f4c1c",
+          "symlink": null
+        },
+        "bin/QCShrinker": {
+          "sha256": "c2c2c008408cfc8c17fbffd499229052220d14f65feb1902c4d78ee60d076782",
+          "symlink": null
+        },
+        "bin/QualityControl": {
+          "sha256": "ad0f9971d1151869aca568af1ed1a1ba3d13d8cc6de639119080989ee0a6548b",
+          "symlink": null
+        },
+        "bin/RNADigestor": {
+          "sha256": "e59e219ec79ac40fdedfe10d00b3b74e5b2d5a16785d966df2e16bc555ec0c79",
+          "symlink": null
+        },
+        "bin/RNAMassCalculator": {
+          "sha256": "9d8c92ddd1859589f0418b6bac8e28ddde5e02ca8484581b261cfd0348decbfe",
+          "symlink": null
+        },
+        "bin/RNPxlXICFilter": {
+          "sha256": "86dd47634e2a34a645429c6656306c1b0f5fb2e61e4ff198ee57edfc5d003737",
+          "symlink": null
+        },
+        "bin/Resampler": {
+          "sha256": "b81cb23a79fde2c1842c40db92372b39b6c92b5e5e43c2bac0eaa21c88b3d7fc",
+          "symlink": null
+        },
+        "bin/SageAdapter": {
+          "sha256": "ddf14031aa5a35969a17eb56c98dd0919c19ab045c8fdb49625e80ac4e3fa107",
+          "symlink": null
+        },
+        "bin/SeedListGenerator": {
+          "sha256": "6c2440d041f7d093c7faf58834966222b8204d8feb78605ee614e709cfd900d7",
+          "symlink": null
+        },
+        "bin/SemanticValidator": {
+          "sha256": "9ba7a82ae26ae8239851f695c973d8a7707fff94c7d2f879c8ac6d9d4dc04e53",
+          "symlink": null
+        },
+        "bin/SequenceCoverageCalculator": {
+          "sha256": "bf2187dab6016bafdd8e1e7e531c416fc090f9009cbaf9b61e210d1bd9d9306c",
+          "symlink": null
+        },
+        "bin/SimpleSearchEngine": {
+          "sha256": "04de0efa94372950855d82f7b111b813dd8db646b8bb9ae552f4d7eee4ec51a8",
+          "symlink": null
+        },
+        "bin/SiriusExport": {
+          "sha256": "d9e20406b852fdbabdafbcc52fdb142b1202e56bd651ba0692da537950ff25d9",
+          "symlink": null
+        },
+        "bin/SpectraFilterNLargest": {
+          "sha256": "73ea600b72dce74de33476225f20837b0c5b1f21ad9ba0fc2fb5d13f618c581f",
+          "symlink": null
+        },
+        "bin/SpectraFilterNormalizer": {
+          "sha256": "1b59ce4350b7024d08b65186509dedf4c8a249a125ab33c00162151ad6df6a4b",
+          "symlink": null
+        },
+        "bin/SpectraFilterThresholdMower": {
+          "sha256": "f412b3f4fcd953ee7e1a7e3ea628a6485d5a4b980ccd549c1ccf4a7aa549f785",
+          "symlink": null
+        },
+        "bin/SpectraFilterWindowMower": {
+          "sha256": "6a8843a154c9993af66a3e0bea556ffc620d8eff757ff84b0f9f39d74a2129e8",
+          "symlink": null
+        },
+        "bin/SpectraMerger": {
+          "sha256": "bc62691350027f689e656ec2c21b82cfd249c70fd92fc86237dd6c068756b974",
+          "symlink": null
+        },
+        "bin/SpectraSTSearchAdapter": {
+          "sha256": "dcdc3566c4e3369db29cab458664059b43066ed894d1db59f62817f2a4c58afd",
+          "symlink": null
+        },
+        "bin/StaticModification": {
+          "sha256": "eb668fd8400a8fe9ed4290a28df8efa7c9681d96f50af8dd823a61988ecc365d",
+          "symlink": null
+        },
+        "bin/TICCalculator": {
+          "sha256": "6e383199a1ff5d51d74718318a54085da0572fde8a279b5b65e292e1a55d56a0",
+          "symlink": null
+        },
+        "bin/TextExporter": {
+          "sha256": "b433221276b8681d6e7e1f2956f661415fe24a51c16b87f84b204040bdbf75cf",
+          "symlink": null
+        },
+        "bin/UniPEFF": {
+          "sha256": "da1e9977c7301299814f12bb4bd0cd528866e013af74772f190b47f3b4b8b8a1",
+          "symlink": null
+        },
+        "bin/XFDR": {
+          "sha256": "ce9b68e6528a5698ee446907b5a89a64e376e6bd95db565def6c6a2f57a6cd26",
+          "symlink": null
+        },
+        "bin/XMLValidator": {
+          "sha256": "8ef52f0ddbcb41b841358f52403865908da5edb87bb01a7e1e0acccee6f6f192",
+          "symlink": null
+        }
+      }
+    },
+    "OpenMSOpenSWATH": {
+      "source_revision": "c7901a79cc27463968ec335b6d04894b05b98339",
+      "source_dirty": false,
+      "version": "1.0.0",
+      "source": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/openswath",
+      "build": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/openswath-build",
+      "configure_cache_sha256": "631cad60abf0e9c9fec74dc4543d21c78bd32a8fce8a67734ef992922dea380b",
+      "ninja_sha256": "e412fac55fbe95bd4c18d21c3a77d589aeb3e27d4b866f53b8f78acc9fd7d66c",
+      "guard_command": "COMMAND = cd /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/openswath-build && /opt/homebrew/bin/cmake -DOPENMS4_CHECK_SOURCE_DIR=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/openswath -DOPENMS4_SOURCE_REVISION=c7901a79cc27463968ec335b6d04894b05b98339 -DOPENMS4_SOURCE_DIRTY=OFF -DOPENMS4_EXPECTED_REVISION=c7901a79cc27463968ec335b6d04894b05b98339 -DOPENMS4_EXPECTED_DIRTY=OFF -DOPENMS4_REQUIRE_CLEAN_SOURCE=ON -P /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/openswath/cmake/OpenMS4Dependencies.cmake",
+      "commands": [
+        [
+          "cmake",
+          "--build",
+          "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/openswath-build",
+          "--parallel",
+          "2"
+        ],
+        [
+          "cmake",
+          "--install",
+          "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/openswath-build"
+        ]
+      ],
+      "install_manifest_sha256": "806b6cccb092c3aa6520ef6453eb028bddf1c3e725d002384c1d46fb1301bd49",
+      "files": {
+        "share/openms4/tools/openswath.tools.tsv": {
+          "sha256": "0a90ada26e75c3ed63045ddc60dec199047f5d38a54cd5b542ad9c4796443639",
+          "symlink": null
+        },
+        "bin/MRMTransitionGroupPicker": {
+          "sha256": "92de5ba4a27d5aa240aa5bb6971f7a3edc7e6feb92707638e343bf82e8b1e8b0",
+          "symlink": null
+        },
+        "bin/OpenSwathAnalyzer": {
+          "sha256": "20507179018a3702bd72a0406bc77df3be4d38a82e906fe20a20c3851da5a091",
+          "symlink": null
+        },
+        "bin/OpenSwathAssayGenerator": {
+          "sha256": "7557e77019e5f6e410858d5b29b1881f500c3bfef4604971b84de31cb644e016",
+          "symlink": null
+        },
+        "bin/OpenSwathChromatogramExtractor": {
+          "sha256": "fd4aa6eb944b3a28755f4225f72b951ec5edd8f83649ee4521fcd779625874b9",
+          "symlink": null
+        },
+        "bin/OpenSwathConfidenceScoring": {
+          "sha256": "43e98a36a95d73da2c8edfab2e101011cbf1eaa9f0c307cf2d5c67ea803255cd",
+          "symlink": null
+        },
+        "bin/OpenSwathDIAPreScoring": {
+          "sha256": "8d9ba55d91a4dc3202aecd61df4219e1c298ecf8ce845aaca82e9c9bce851ba1",
+          "symlink": null
+        },
+        "bin/OpenSwathDecoyGenerator": {
+          "sha256": "c2ec13ddd9687e686890e5222638148f5d2fecb3a604685d24ad40d8d6da6d81",
+          "symlink": null
+        },
+        "bin/OpenSwathExport": {
+          "sha256": "52e011fcc9968d08de474bacbe81b879cacfddd8abcd9c380382b2b11b2469c2",
+          "symlink": null
+        },
+        "bin/OpenSwathFeatureXMLToTSV": {
+          "sha256": "2c8cf05dbbc1e39e5caf3cb6df7bfb651394779fd107366df1a981cff2f0a5b2",
+          "symlink": null
+        },
+        "bin/OpenSwathFileSplitter": {
+          "sha256": "fd9dde4c742231c7ccf903036bbb307606b3a3951afab5fd6d399a80991249ac",
+          "symlink": null
+        },
+        "bin/OpenSwathInfer": {
+          "sha256": "ce0373b80d361cbb017ce4273cbe544dd01e23c464bc20435a7ac4d2110fd81f",
+          "symlink": null
+        },
+        "bin/OpenSwathMzMLFileCacher": {
+          "sha256": "54ee680f600c7f8d0fc4d932af16aef1784f243323e003d26d9e4e903d9cb824",
+          "symlink": null
+        },
+        "bin/OpenSwathPeakMapExtractor": {
+          "sha256": "80c7baa443ffb55236a919c2302620327e063efcf7dd0c09e4249b96a98538f3",
+          "symlink": null
+        },
+        "bin/OpenSwathPercolatorScoring": {
+          "sha256": "628e70ff98ef436585cd771b06afb4df2e478a3bb62bfe1e1a6a6b820c3dd578",
+          "symlink": null
+        },
+        "bin/OpenSwathRTNormalizer": {
+          "sha256": "3a425ec892caa3e68264d88416c55736f961ed92ab2535c93b48a5ad6cc8be02",
+          "symlink": null
+        },
+        "bin/OpenSwathRewriteToFeatureXML": {
+          "sha256": "38493f7af56263a7a51a2dfb108235d3fceca955d333a13d5f50b3238ad16087",
+          "symlink": null
+        },
+        "bin/OpenSwathWorkflow": {
+          "sha256": "25c9cc61e49046c1c86013e20e9d26b688b8cecaabaae796b9a93b46b61155b3",
+          "symlink": null
+        },
+        "bin/TargetedFileConverter": {
+          "sha256": "6a6d858ab90676bce66e89d4a273a80624cb84fe50b765002178d9147891d626",
+          "symlink": null
+        },
+        "bin/TransitionListEvidenceFilter": {
+          "sha256": "310ac140a0d6c4207143523fb3c1e504b05ddac2f2ed1371c4ca31f229bfea85",
+          "symlink": null
+        }
+      }
+    },
+    "OpenMSFLASH": {
+      "source_revision": "a6ee68f8589e3dd7eb8cb10b0ea7f3b790e72a4c",
+      "source_dirty": false,
+      "version": "1.0.0",
+      "source": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/flash",
+      "build": "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build",
+      "configure_cache_sha256": "cd6b5d95ef504f3ec896193cf20c08a682fc39d0322b7bc7349b03ddd8adac5f",
+      "ninja_sha256": "aa09fd49526c22b7788d47c91592164917f871acf1c1a0b225a25b41e546dff0",
+      "guard_command": "COMMAND = cd /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build && /opt/homebrew/bin/cmake -DOPENMS4_CHECK_SOURCE_DIR=/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/flash -DOPENMS4_SOURCE_REVISION=a6ee68f8589e3dd7eb8cb10b0ea7f3b790e72a4c -DOPENMS4_SOURCE_DIRTY=OFF -DOPENMS4_EXPECTED_REVISION=a6ee68f8589e3dd7eb8cb10b0ea7f3b790e72a4c -DOPENMS4_EXPECTED_DIRTY=OFF -DOPENMS4_REQUIRE_CLEAN_SOURCE=ON -P /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/OpenMS4-tests/packages/flash/cmake/OpenMS4Dependencies.cmake",
+      "commands": [
+        [
+          "cmake",
+          "--build",
+          "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build",
+          "--parallel",
+          "2"
+        ],
+        [
+          "cmake",
+          "--install",
+          "/Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/flash-build"
+        ]
+      ],
+      "install_manifest_sha256": "94b2e630436edd8fdec3f5c3a288d4e533d6543d5ccdd6fc3b9cc8b02e8a8610",
+      "files": {
+        "share/openms4/tools/flash.tools.tsv": {
+          "sha256": "e7796762e31d04bdffabce0076b64b5ea9b8c018108ac8517c6f3bbb1ea10c10",
+          "symlink": null
+        },
+        "bin/FLASHDeconv": {
+          "sha256": "e9d9011986f624724daf0772cf0d0641dd4e31549c507fb6f27a4e8d0528d18b",
+          "symlink": null
+        }
+      }
+    }
+  }
+}

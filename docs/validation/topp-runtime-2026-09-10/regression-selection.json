@@ -1,0 +1,4098 @@
+{
+  "total_registered": 1962,
+  "selected_count": 1306,
+  "excluded_count": 656,
+  "exclusion_counts": {
+    "legacy_metadata_separate_strict_suite": 389,
+    "executable_not_installed": 137,
+    "other_package_test_family": 129,
+    "depends_on_excluded": 1
+  },
+  "selected_names": [
+    "TOPP_INI_INVALIDVALUE",
+    "TOPP_CLI_INVALIDVALUE",
+    "TOPP_INI_INVALIDVALUE_SECTION",
+    "TOPP_CLI_INVALIDVALUE_SECTION",
+    "TOPP_INI_INVALIDNAME",
+    "TOPP_CLI_INVALIDNAME",
+    "TOPP_FuzzyDiff_1",
+    "TOPP_FuzzyDiff_2",
+    "TOPP_FuzzyDiff_3",
+    "TOPP_FuzzyDiff_4",
+    "TOPP_IDMerger_1",
+    "TOPP_IDMerger_1_out1",
+    "TOPP_IDMerger_2",
+    "TOPP_IDMerger_2_out1",
+    "TOPP_IDMerger_3",
+    "TOPP_IDMerger_3_out1",
+    "TOPP_IDMerger_4",
+    "TOPP_IDMerger_4_out1",
+    "TOPP_IDMerger_5",
+    "TOPP_IDMerger_5_out1",
+    "TOPP_IDMerger_6",
+    "TOPP_IDMerger_6_out1",
+    "TOPP_IDMerger_6_out2",
+    "TOPP_IDMerger_idparquet",
+    "TOPP_IDMerger_idparquet_convert",
+    "TOPP_IDMerger_idparquet_diff",
+    "TOPP_ParquetDiff_1",
+    "TOPP_ParquetDiff_2",
+    "TOPP_ParquetDiff_3",
+    "TOPP_ParquetDiff_4",
+    "TOPP_ParquetDiff_5",
+    "TOPP_ParquetDiff_6",
+    "TOPP_ParquetDiff_7",
+    "TOPP_ParquetDiff_8",
+    "TOPP_IDRipper_idparquet",
+    "TOPP_IDRipper_idparquet_convert_0",
+    "TOPP_IDRipper_idparquet_diff_0",
+    "TOPP_IDRipper_idparquet_convert_1",
+    "TOPP_IDRipper_idparquet_diff_1",
+    "TOPP_IDRipper_4_split",
+    "TOPP_IDRipper_4_remerge",
+    "TOPP_IDRipper_4_convert",
+    "TOPP_IDRipper_4_assert",
+    "TOPP_BaselineFilter_1",
+    "TOPP_BaselineFilter_1_out1",
+    "TOPP_ConsensusMapNormalizer_1",
+    "TOPP_ConsensusMapNormalizer_1_out1",
+    "TOPP_MapNormalizer_1",
+    "TOPP_MapNormalizer_1_out1",
+    "TOPP_DatabaseSuitability",
+    "TOPP_DatabaseSuitability_out",
+    "TOPP_Decharger_1",
+    "TOPP_Decharger_1_out1",
+    "TOPP_Decharger_1_out2",
+    "TOPP_Decharger_1_out3",
+    "TOPP_DTAExtractor_1",
+    "TOPP_DTAExtractor_1_out1",
+    "TOPP_DTAExtractor_2",
+    "TOPP_DTAExtractor_2_out1",
+    "TOPP_DTAExtractor_3",
+    "TOPP_DTAExtractor_3_out1",
+    "TOPP_MassTraceExtractor_1",
+    "TOPP_MassTraceExtractor_1_out",
+    "TOPP_MassTraceExtractor_2",
+    "TOPP_MassTraceExtractor_2_out",
+    "TOPP_MassTraceExtractor_4",
+    "TOPP_MassTraceExtractor_4_out",
+    "TOPP_MassTraceExtractor_5",
+    "TOPP_MassTraceExtractor_5_out",
+    "TOPP_MassTraceExtractor_6",
+    "TOPP_MassTraceExtractor_6_out",
+    "TOPP_FeatureFinderMetabo_1",
+    "TOPP_FeatureFinderMetabo_1_out",
+    "TOPP_FeatureFinderMetabo_2",
+    "TOPP_FeatureFinderMetabo_2_out",
+    "TOPP_FeatureFinderMetabo_3",
+    "TOPP_FeatureFinderMetabo_3_chrom_out",
+    "TOPP_FeatureFinderMetabo_4",
+    "TOPP_FeatureFinderMetabo_4_out",
+    "TOPP_FeatureFinderMetabo_4_chrom_out",
+    "TOPP_FeatureFinderMetabo_5",
+    "TOPP_FeatureFinderMetabo_5_out",
+    "TOPP_FeatureFinderMetabo_6",
+    "TOPP_FeatureFinderMetabo_6_out",
+    "TOPP_FeatureFinderCentroided_1",
+    "TOPP_FeatureFinderCentroided_1_out1",
+    "TOPP_FeatureFinderLFQ_1",
+    "TOPP_FeatureFinderLFQ_1_out1",
+    "TOPP_FeatureFinderIdentification_1",
+    "TOPP_FeatureFinderIdentification_1_out1",
+    "TOPP_FeatureFinderIdentification_summary_count",
+    "TOPP_FeatureFinderIdentification_3",
+    "TOPP_FeatureFinderIdentification_3_out1",
+    "TOPP_FeatureFinderIdentification_5",
+    "TOPP_FeatureFinderIdentification_5_out1",
+    "TOPP_FeatureFinderIdentification_5_out2",
+    "TOPP_FeatureFinderMultiplex_1",
+    "TOPP_FeatureFinderMultiplex_1_out1",
+    "TOPP_FeatureFinderMultiplex_1_out2",
+    "TOPP_FeatureFinderMultiplex_2",
+    "TOPP_FeatureFinderMultiplex_2_out1",
+    "TOPP_FeatureFinderMultiplex_2_out2",
+    "TOPP_FeatureFinderMultiplex_3",
+    "TOPP_FeatureFinderMultiplex_3_out1",
+    "TOPP_FeatureFinderMultiplex_3_out2",
+    "TOPP_FeatureFinderMultiplex_4",
+    "TOPP_FeatureFinderMultiplex_4_out1",
+    "TOPP_FeatureFinderMultiplex_4_out2",
+    "TOPP_FeatureFinderMultiplex_5",
+    "TOPP_FeatureFinderMultiplex_5_out1",
+    "TOPP_FeatureFinderMultiplex_5_out2",
+    "TOPP_FeatureFinderMultiplex_6",
+    "TOPP_FeatureFinderMultiplex_6_out1",
+    "TOPP_FeatureFinderMultiplex_6_out2",
+    "TOPP_FeatureFinderMultiplex_7",
+    "TOPP_FeatureFinderMultiplex_7_out1",
+    "TOPP_FeatureFinderMultiplex_7_out2",
+    "TOPP_FeatureFinderMultiplex_8",
+    "TOPP_FeatureFinderMultiplex_8_out1",
+    "TOPP_FeatureFinderMultiplex_8_out2",
+    "TOPP_FeatureFinderMultiplex_9",
+    "TOPP_FeatureFinderMultiplex_9_out1",
+    "TOPP_FeatureFinderMultiplex_9_out2",
+    "TOPP_FeatureFinderMultiplex_10",
+    "TOPP_FeatureFinderMultiplex_10_out1",
+    "TOPP_FeatureFinderMultiplex_10_out2",
+    "TOPP_FeatureFinderMultiplex_11",
+    "TOPP_FeatureFinderMultiplex_11_out1",
+    "TOPP_FileConverter_1",
+    "TOPP_FileConverter_1_out1",
+    "TOPP_FileConverter_2",
+    "TOPP_FileConverter_2_out1",
+    "TOPP_FileConverter_3",
+    "TOPP_FileConverter_3_out1",
+    "TOPP_FileConverter_4",
+    "TOPP_FileConverter_4_out1",
+    "TOPP_FileConverter_5",
+    "TOPP_FileConverter_5_out1",
+    "TOPP_FileConverter_6",
+    "TOPP_FileConverter_6_out1",
+    "TOPP_FileConverter_7",
+    "TOPP_FileConverter_7_out1",
+    "TOPP_FileConverter_8",
+    "TOPP_FileConverter_8_out1",
+    "TOPP_FileConverter_9",
+    "TOPP_FileConverter_9_out1",
+    "TOPP_FileConverter_10",
+    "TOPP_FileConverter_10_out1",
+    "TOPP_FileConverter_11",
+    "TOPP_FileConverter_11_out1",
+    "TOPP_FileConverter_12",
+    "TOPP_FileConverter_12_out1",
+    "TOPP_FileConverter_13",
+    "TOPP_FileConverter_13_out1",
+    "TOPP_FileConverter_14",
+    "TOPP_FileConverter_14_out1",
+    "TOPP_FileConverter_15",
+    "TOPP_FileConverter_15_out1",
+    "TOPP_FileConverter_16",
+    "TOPP_FileConverter_16_out1",
+    "TOPP_FileConverter_17",
+    "TOPP_FileConverter_17_out1",
+    "TOPP_FileConverter_18",
+    "TOPP_FileConverter_18_out1",
+    "TOPP_FileConverter_19",
+    "TOPP_FileConverter_19_out",
+    "TOPP_FileConverter_20",
+    "TOPP_FileConverter_20_out",
+    "TOPP_FileConverter_21",
+    "TOPP_FileConverter_21_out",
+    "TOPP_FileConverter_22",
+    "TOPP_FileConverter_23",
+    "TOPP_FileConverter_23_out",
+    "TOPP_FileConverter_24",
+    "TOPP_FileConverter_24_out",
+    "TOPP_FileConverter_25",
+    "TOPP_FileConverter_25_out",
+    "TOPP_FileConverter_26",
+    "TOPP_FileConverter_26_out",
+    "TOPP_FileConverter_26-2",
+    "TOPP_FileConverter_26-2_out",
+    "TOPP_FileConverter_27",
+    "TOPP_FileConverter_27_out",
+    "TOPP_FileConverter_28",
+    "TOPP_FileConverter_28_out",
+    "TOPP_FileConverter_29",
+    "TOPP_FileConverter_29_out",
+    "TOPP_FileConverter_29_back",
+    "TOPP_FileConverter_30",
+    "TOPP_FileConverter_30_out",
+    "TOPP_FileConverter_31",
+    "TOPP_FileConverter_31_out",
+    "TOPP_FileConverter_32",
+    "TOPP_FileConverter_32_out1",
+    "TOPP_FileConverter_33",
+    "TOPP_FileConverter_33_out1",
+    "TOPP_FileConverter_34",
+    "TOPP_FileConverter_34_back",
+    "TOPP_FileConverter_34_out1",
+    "TOPP_FileConverter_35",
+    "TOPP_FileConverter_35_back",
+    "TOPP_FileConverter_35_out1",
+    "TOPP_FileConverter_36",
+    "TOPP_FileConverter_36_out1",
+    "TOPP_FileConverter_nonascii_prepare",
+    "TOPP_FileConverter_nonascii",
+    "TOPP_FileConverter_nonascii_out1",
+    "TOPP_FileFilter_1",
+    "TOPP_FileFilter_1_out1",
+    "TOPP_FileFilter_2",
+    "TOPP_FileFilter_2_out1",
+    "TOPP_FileFilter_3",
+    "TOPP_FileFilter_3_out1",
+    "TOPP_FileFilter_4",
+    "TOPP_FileFilter_4_out1",
+    "TOPP_FileFilter_5",
+    "TOPP_FileFilter_5_out1",
+    "TOPP_FileFilter_6",
+    "TOPP_FileFilter_6_out1",
+    "TOPP_FileFilter_7",
+    "TOPP_FileFilter_7_out1",
+    "TOPP_FileFilter_8",
+    "TOPP_FileFilter_8_out1",
+    "TOPP_FileFilter_9",
+    "TOPP_FileFilter_9_out1",
+    "TOPP_FileFilter_10",
+    "TOPP_FileFilter_10_out1",
+    "TOPP_FileFilter_11",
+    "TOPP_FileFilter_11_out1",
+    "TOPP_FileFilter_12",
+    "TOPP_FileFilter_12_out1",
+    "TOPP_FileFilter_13",
+    "TOPP_FileFilter_13_out1",
+    "TOPP_FileFilter_14",
+    "TOPP_FileFilter_14_out1",
+    "TOPP_FileFilter_15",
+    "TOPP_FileFilter_15_out1",
+    "TOPP_FileFilter_16",
+    "TOPP_FileFilter_16_out1",
+    "TOPP_FileFilter_17",
+    "TOPP_FileFilter_17_out1",
+    "TOPP_FileFilter_18",
+    "TOPP_FileFilter_18_out1",
+    "TOPP_FileFilter_19",
+    "TOPP_FileFilter_19_out1",
+    "TOPP_FileFilter_20",
+    "TOPP_FileFilter_20_out1",
+    "TOPP_FileFilter_21",
+    "TOPP_FileFilter_21_out1",
+    "TOPP_FileFilter_22",
+    "TOPP_FileFilter_22_out1",
+    "TOPP_FileFilter_23",
+    "TOPP_FileFilter_23_out1",
+    "TOPP_FileFilter_24",
+    "TOPP_FileFilter_24_out1",
+    "TOPP_FileFilter_25",
+    "TOPP_FileFilter_25_out1",
+    "TOPP_FileFilter_26",
+    "TOPP_FileFilter_26_out1",
+    "TOPP_FileFilter_27",
+    "TOPP_FileFilter_28",
+    "TOPP_FileFilter_28_out1",
+    "TOPP_FileFilter_29",
+    "TOPP_FileFilter_29_out1",
+    "TOPP_FileFilter_30",
+    "TOPP_FileFilter_30_out1",
+    "TOPP_FileFilter_31",
+    "TOPP_FileFilter_31_out",
+    "TOPP_FileFilter_32",
+    "TOPP_FileFilter_32_out",
+    "TOPP_FileFilter_33",
+    "TOPP_FileFilter_33_out",
+    "TOPP_FileFilter_34",
+    "TOPP_FileFilter_34_out",
+    "TOPP_FileFilter_35",
+    "TOPP_FileFilter_35_out",
+    "TOPP_FileFilter_36",
+    "TOPP_FileFilter_36_out",
+    "TOPP_FileFilter_37",
+    "TOPP_FileFilter_37_out",
+    "TOPP_FileFilter_38",
+    "TOPP_FileFilter_38_out",
+    "TOPP_FileFilter_39",
+    "TOPP_FileFilter_40",
+    "TOPP_FileFilter_40_out1",
+    "TOPP_FileFilter_41",
+    "TOPP_FileFilter_41_out1",
+    "TOPP_FileFilter_42",
+    "TOPP_FileFilter_42_out1",
+    "TOPP_FileFilter_43",
+    "TOPP_FileFilter_43_out1",
+    "TOPP_FileFilter_43_read_again",
+    "TOPP_FileFilter_44",
+    "TOPP_FileFilter_44_out",
+    "TOPP_FileFilter_45",
+    "TOPP_FileFilter_45_out",
+    "TOPP_FileFilter_46",
+    "TOPP_FileFilter_46_out",
+    "TOPP_FileFilter_47",
+    "TOPP_FileFilter_47_out",
+    "TOPP_FileFilter_48",
+    "TOPP_FileFilter_48_out",
+    "TOPP_FileFilter_49",
+    "TOPP_FileFilter_49_out",
+    "TOPP_FileFilter_50",
+    "TOPP_FileFilter_50_out1",
+    "TOPP_FileFilter_51",
+    "TOPP_FileFilter_51_out1",
+    "TOPP_FileFilter_52",
+    "TOPP_FileFilter_52_out1",
+    "TOPP_FileFilter_53",
+    "TOPP_FileFilter_53_out1",
+    "TOPP_FileInfo_1",
+    "TOPP_FileInfo_1_out1",
+    "TOPP_FileInfo_2",
+    "TOPP_FileInfo_2_out1",
+    "TOPP_FileInfo_3",
+    "TOPP_FileInfo_3_out1",
+    "TOPP_FileInfo_4",
+    "TOPP_FileInfo_4_out1",
+    "TOPP_FileInfo_5",
+    "TOPP_FileInfo_5_out1",
+    "TOPP_FileInfo_6",
+    "TOPP_FileInfo_6_out1",
+    "TOPP_FileInfo_7",
+    "TOPP_FileInfo_7_out1",
+    "TOPP_FileInfo_9",
+    "TOPP_FileInfo_9_out1",
+    "TOPP_FileInfo_10",
+    "TOPP_FileInfo_10_out1",
+    "TOPP_FileInfo_11",
+    "TOPP_FileInfo_12",
+    "TOPP_FileInfo_13",
+    "TOPP_FileInfo_14",
+    "TOPP_FileInfo_14_out1",
+    "TOPP_FileInfo_15",
+    "TOPP_FileInfo_15_out1",
+    "TOPP_FileInfo_16",
+    "TOPP_FileInfo_16_out1",
+    "TOPP_FileInfo_17",
+    "TOPP_FileInfo_17_out1",
+    "TOPP_FileInfo_18",
+    "TOPP_FileInfo_18_out1",
+    "TOPP_FileInfo_19",
+    "TOPP_FileInfo_19_out1",
+    "TOPP_FileInfo_20",
+    "TOPP_FileInfo_20_out1",
+    "TOPP_FileMerger_1",
+    "TOPP_FileMerger_1_out1",
+    "TOPP_FileMerger_2",
+    "TOPP_FileMerger_2_out1",
+    "TOPP_FileMerger_3",
+    "TOPP_FileMerger_3_out1",
+    "TOPP_FileMerger_4",
+    "TOPP_FileMerger_4_out1",
+    "TOPP_FileMerger_5",
+    "TOPP_FileMerger_5_out1",
+    "TOPP_FileMerger_6",
+    "TOPP_FileMerger_6_out1",
+    "TOPP_FileMerger_7",
+    "TOPP_FileMerger_7_out1",
+    "TOPP_FileMerger_8",
+    "TOPP_FileMerger_8_out1",
+    "TOPP_FileMerger_9",
+    "TOPP_FileMerger_9_out1",
+    "TOPP_FileMerger_10",
+    "TOPP_FileMerger_10_out1",
+    "TOPP_FileMerger_10_out2",
+    "TOPP_FileMerger_10_out3",
+    "TOPP_FileMerger_11",
+    "TOPP_FileMerger_11_out1",
+    "TOPP_GNPSExport_1",
+    "TOPP_GNPSExport_1_out",
+    "TOPP_GNPSExport_1_out_QuantificationTable",
+    "TOPP_GNPSExport_2",
+    "TOPP_GNPSExport_2_out",
+    "TOPP_GNPSExport_3",
+    "TOPP_GNPSExport_3_out",
+    "TOPP_GNPSExport_4",
+    "TOPP_GNPSExport_4_out_quant",
+    "TOPP_GNPSExport_4_out_pairs",
+    "TOPP_GNPSExport_4_out_meta_values",
+    "TOPP_HighResPrecursorMassCorrector_1",
+    "TOPP_HighResPrecursorMassCorrector_1_out1",
+    "TOPP_HighResPrecursorMassCorrector_2",
+    "TOPP_HighResPrecursorMassCorrector_2_out1",
+    "TOPP_HighResPrecursorMassCorrector_3",
+    "TOPP_HighResPrecursorMassCorrector_3_out1",
+    "TOPP_HighResPrecursorMassCorrector_4",
+    "TOPP_HighResPrecursorMassCorrector_4_out1",
+    "TOPP_HighResPrecursorMassCorrector_5",
+    "TOPP_HighResPrecursorMassCorrector_5_out1",
+    "TOPP_HighResPrecursorMassCorrector_6",
+    "TOPP_HighResPrecursorMassCorrector_6_out1",
+    "TOPP_IDRTCalibration_1",
+    "TOPP_IDRTCalibration_1_out1",
+    "TOPP_IDRTCalibration_2",
+    "TOPP_IDRTCalibration_2_out1",
+    "TOPP_IsobaricAnalyzer_1",
+    "TOPP_IsobaricAnalyzer_1_out1",
+    "TOPP_IsobaricAnalyzer_TMTTenPlexMethod_1",
+    "TOPP_IsobaricAnalyzer_TMTTenPlexMethod_1_out1",
+    "TOPP_IsobaricAnalyzer_TMTElevenPlexMethod_1",
+    "TOPP_IsobaricAnalyzer_TMTElevenPlexMethod_1_out1",
+    "TOPP_IsobaricAnalyzer_TMTThirtyTwoPlexMethod_1",
+    "TOPP_IsobaricAnalyzer_TMTThirtyTwoPlexMethod_1_out1",
+    "TOPP_IsobaricAnalyzer_TMTThirtyFivePlexMethod_1",
+    "TOPP_IsobaricAnalyzer_TMTThirtyFivePlexMethod_1_out1",
+    "TOPP_IsobaricAnalyzer_MS3TMT10Plex_1",
+    "TOPP_IsobaricAnalyzer_MS3TMT10Plex_1_out1",
+    "TOPP_IsobaricWorkflow_requires_output",
+    "TOPP_IsobaricWorkflow_strictly_unique",
+    "TOPP_IsobaricWorkflow_strictly_unique_out1",
+    "TOPP_IsobaricWorkflow_1",
+    "TOPP_IsobaricWorkflow_1_out1",
+    "TOPP_IsobaricWorkflow_duplicate_psm",
+    "TOPP_IsobaricWorkflow_duplicate_psm_out1",
+    "TOPP_IsobaricWorkflow_2_no_preceding_ms1",
+    "TOPP_IsobaricWorkflow_qpx_clean",
+    "TOPP_IsobaricWorkflow_qpx",
+    "TOPP_IsobaricWorkflow_qpx_features",
+    "TOPP_IsobaricWorkflow_qpx_psms",
+    "TOPP_IsobaricWorkflow_qpx_pg",
+    "TOPP_IDConflictResolver_1",
+    "TOPP_IDConflictResolver_1_out1",
+    "TOPP_IDConflictResolver_2",
+    "TOPP_IDConflictResolver_2_out1",
+    "TOPP_IDConflictResolver_3",
+    "TOPP_IDConflictResolver_3_out1",
+    "TOPP_IDConflictResolver_4",
+    "TOPP_IDConflictResolver_4_out",
+    "TOPP_IDConflictResolver_5",
+    "TOPP_IDConflictResolver_5_out1",
+    "TOPP_IDFileConverter_1",
+    "TOPP_IDFileConverter_1_out1",
+    "TOPP_IDFileConverter_2",
+    "TOPP_IDFileConverter_2_out1",
+    "TOPP_IDFileConverter_3",
+    "TOPP_IDFileConverter_3_out1",
+    "TOPP_IDFileConverter_5",
+    "TOPP_IDFileConverter_5_out1",
+    "TOPP_IDFileConverter_6",
+    "TOPP_IDFileConverter_6_out1",
+    "TOPP_IDFileConverter_7",
+    "TOPP_IDFileConverter_7_out1",
+    "TOPP_IDFileConverter_8",
+    "TOPP_IDFileConverter_8_out1",
+    "TOPP_IDFileConverter_9",
+    "TOPP_IDFileConverter_9_out1",
+    "TOPP_IDFileConverter_10",
+    "TOPP_IDFileConverter_10_out1",
+    "TOPP_IDFileConverter_11",
+    "TOPP_IDFileConverter_11_out1",
+    "TOPP_IDFileConverter_12",
+    "TOPP_IDFileConverter_12_out1",
+    "TOPP_IDFileConverter_13",
+    "TOPP_IDFileConverter_13_out1",
+    "TOPP_IDFileConverter_14",
+    "TOPP_IDFileConverter_14_out1",
+    "TOPP_IDFileConverter_15",
+    "TOPP_IDFileConverter_15_out1",
+    "TOPP_IDFileConverter_16",
+    "TOPP_IDFileConverter_16_out1",
+    "TOPP_IDFileConverter_17",
+    "TOPP_IDFileConverter_17_out1",
+    "TOPP_IDFileConverter_18",
+    "TOPP_IDFileConverter_18_out1",
+    "TOPP_IDFileConverter_19",
+    "TOPP_IDFileConverter_19_out1",
+    "TOPP_IDFileConverter_20",
+    "TOPP_IDFileConverter_20_out1",
+    "TOPP_IDFileConverter_21",
+    "TOPP_IDFileConverter_21_out1",
+    "TOPP_IDFileConverter_22",
+    "TOPP_IDFileConverter_22_out1",
+    "TOPP_IDFileConverter_23",
+    "TOPP_IDFileConverter_23_out1",
+    "TOPP_IDFileConverter_24",
+    "TOPP_IDFileConverter_24_out1",
+    "TOPP_IDFileConverter_25",
+    "TOPP_IDFileConverter_25_out1",
+    "TOPP_IDFileConverter_26",
+    "TOPP_IDFileConverter_26_out1",
+    "TOPP_IDFileConverter_27",
+    "TOPP_IDFileConverter_27_out1",
+    "TOPP_IDFileConverter_28",
+    "TOPP_IDFileConverter_28_out1",
+    "TOPP_IDFileConverter_29",
+    "TOPP_IDFileConverter_29_out1",
+    "TOPP_IDFileConverter_30",
+    "TOPP_IDFileConverter_30_out1",
+    "TOPP_IDFileConverter_31",
+    "TOPP_IDFileConverter_31_out1",
+    "TOPP_IDFileConverter_32",
+    "TOPP_IDFileConverter_32_File_Conversion",
+    "TOPP_IDFileConverter_32_out1",
+    "TOPP_IDFileConverter_33",
+    "TOPP_IDFileConverter_33_File_Conversion",
+    "TOPP_IDFileConverter_33_out1",
+    "TOPP_IDFileConverter_34_1",
+    "TOPP_IDFileConverter_34_2",
+    "TOPP_IDFileConverter_34_out",
+    "TOPP_IDFilter_1",
+    "TOPP_IDFilter_1_out1",
+    "TOPP_IDFilter_3",
+    "TOPP_IDFilter_3_out1",
+    "TOPP_IDFilter_4",
+    "TOPP_IDFilter_4_out1",
+    "TOPP_IDFilter_5",
+    "TOPP_IDFilter_5_out1",
+    "TOPP_IDFilter_5a",
+    "TOPP_IDFilter_5a_out1",
+    "TOPP_IDFilter_5b",
+    "TOPP_IDFilter_5b_out1",
+    "TOPP_IDFilter_5c",
+    "TOPP_IDFilter_5c_out1",
+    "TOPP_IDFilter_6",
+    "TOPP_IDFilter_6_out1",
+    "TOPP_IDFilter_7",
+    "TOPP_IDFilter_7_out1",
+    "TOPP_IDFilter_8",
+    "TOPP_IDFilter_8_out1",
+    "TOPP_IDFilter_9",
+    "TOPP_IDFilter_9_out1",
+    "TOPP_IDFilter_10",
+    "TOPP_IDFilter_10_out1",
+    "TOPP_IDFilter_11",
+    "TOPP_IDFilter_11_out1",
+    "TOPP_IDFilter_12",
+    "TOPP_IDFilter_12_out1",
+    "TOPP_IDFilter_13",
+    "TOPP_IDFilter_13_out1",
+    "TOPP_IDFilter_14",
+    "TOPP_IDFilter_14_out1",
+    "TOPP_IDFilter_15",
+    "TOPP_IDFilter_15_out1",
+    "TOPP_IDFilter_16",
+    "TOPP_IDFilter_16_out1",
+    "TOPP_IDFilter_17",
+    "TOPP_IDFilter_17_out1",
+    "TOPP_IDFilter_18",
+    "TOPP_IDFilter_18_out1",
+    "TOPP_IDFilter_19",
+    "TOPP_IDFilter_19_out1",
+    "TOPP_IDFilter_20",
+    "TOPP_IDFilter_20_out1",
+    "TOPP_IDFilter_21",
+    "TOPP_IDFilter_21_out1",
+    "TOPP_IDFilter_22",
+    "TOPP_IDFilter_22_out1",
+    "TOPP_IDFilter_23",
+    "TOPP_IDFilter_23_out1",
+    "TOPP_IDFilter_24",
+    "TOPP_IDFilter_24_out1",
+    "TOPP_MapAlignerPoseClustering_1",
+    "TOPP_MapAlignerPoseClustering_1_out1",
+    "TOPP_MapAlignerPoseClustering_1_out2",
+    "TOPP_MapAlignerPoseClustering_1_out3",
+    "TOPP_MapAlignerPoseClustering_1_out4",
+    "TOPP_MapAlignerPoseClustering_1_out5",
+    "TOPP_MapAlignerPoseClustering_1_out6",
+    "TOPP_MapAlignerPoseClustering_2",
+    "TOPP_MapAlignerPoseClustering_2_out1",
+    "TOPP_MapAlignerPoseClustering_2_out2",
+    "TOPP_MapAlignerPoseClustering_2_out3",
+    "TOPP_MapAlignerPoseClustering_3",
+    "TOPP_MapAlignerPoseClustering_3_out1",
+    "TOPP_MapAlignerPoseClustering_3_out2",
+    "TOPP_MapAlignerPoseClustering_4",
+    "TOPP_MapAlignerPoseClustering_4_out1",
+    "TOPP_MapAlignerPoseClustering_4_out2",
+    "TOPP_MapAlignerPoseClustering_5",
+    "TOPP_MapAlignerPoseClustering_5_out1",
+    "TOPP_MapAlignerPoseClustering_6",
+    "TOPP_MapAlignerPoseClustering_6_out1",
+    "TOPP_MapAlignerIdentification_1",
+    "TOPP_MapAlignerIdentification_1_out1",
+    "TOPP_MapAlignerIdentification_1_out2",
+    "TOPP_MapAlignerIdentification_2",
+    "TOPP_MapAlignerIdentification_2_out1",
+    "TOPP_MapAlignerIdentification_3",
+    "TOPP_MapAlignerIdentification_3_out1",
+    "TOPP_MapAlignerIdentification_3_out2",
+    "TOPP_MapAlignerIdentification_4",
+    "TOPP_MapAlignerIdentification_4_out1",
+    "TOPP_MapAlignerIdentification_4_out2",
+    "TOPP_MapAlignerIdentification_5",
+    "TOPP_MapAlignerIdentification_5_out1",
+    "TOPP_MapAlignerIdentification_5_out2",
+    "TOPP_MapAlignerIdentification_6",
+    "TOPP_MapAlignerIdentification_6_out1",
+    "TOPP_MapAlignerIdentification_7",
+    "TOPP_MapAlignerIdentification_7_out1",
+    "TOPP_MapAlignerIdentification_7_out2",
+    "TOPP_MapAlignerIdentification_8",
+    "TOPP_MapAlignerIdentification_8_out1",
+    "TOPP_MapAlignerTreeGuided_1",
+    "TOPP_MapAlignerTreeGuided_1_out1",
+    "TOPP_MapAlignerTreeGuided_1_out2",
+    "TOPP_MapAlignerTreeGuided_1_out3",
+    "TOPP_MapAlignerTreeGuided_2",
+    "TOPP_MapAlignerTreeGuided_2_out1",
+    "TOPP_MapAlignerTreeGuided_2_out2",
+    "TOPP_MapAlignerTreeGuided_2_out3",
+    "TOPP_MapAlignerTreeGuided_3",
+    "TOPP_MapAlignerTreeGuided_3_out1",
+    "TOPP_MapAlignerTreeGuided_3_out2",
+    "TOPP_MapAlignerTreeGuided_3_out3",
+    "TOPP_MapRTTransformer_1",
+    "TOPP_MapRTTransformer_1_out1",
+    "TOPP_MapRTTransformer_2",
+    "TOPP_MapRTTransformer_2_out1",
+    "TOPP_MapRTTransformer_3",
+    "TOPP_MapRTTransformer_3_out1",
+    "TOPP_MapRTTransformer_4",
+    "TOPP_MapRTTransformer_4_out1",
+    "TOPP_MapRTTransformer_5",
+    "TOPP_MapRTTransformer_5_out1",
+    "TOPP_MapRTTransformer_6",
+    "TOPP_MapRTTransformer_6_out1",
+    "TOPP_MetaProSIP_1",
+    "TOPP_MetaProSIP_1_out1",
+    "TOPP_MetaProSIP_1_out2",
+    "TOPP_MetaProSIP_2",
+    "TOPP_MetaProSIP_3",
+    "TOPP_MetaboliteAdductDecharger_1",
+    "TOPP_MetaboliteAdductDecharger_1_out1",
+    "TOPP_MetaboliteAdductDecharger_2",
+    "TOPP_MetaboliteAdductDecharger_2_out1",
+    "TOPP_MetaboliteAdductDecharger_2_out2",
+    "TOPP_MSstatsConverter_unknown_input_type",
+    "TOPP_MSstatsConverter_1",
+    "TOPP_MSstatsConverter_1_out1",
+    "TOPP_MSstatsConverter_2",
+    "TOPP_MSstatsConverter_2_out1",
+    "TOPP_MSstatsConverter_3",
+    "TOPP_MSstatsConverter_3_out1",
+    "TOPP_MSstatsConverter_subset",
+    "TOPP_MSstatsConverter_subset_out1",
+    "TOPP_MRMMapper_test_1",
+    "TOPP_MRMMapper_test_1_out_1",
+    "TOPP_MRMMapper_test_2",
+    "TOPP_MRMMapper_test_2_out_1",
+    "TOPP_NoiseFilterGaussian_1",
+    "TOPP_NoiseFilterGaussian_1_out1",
+    "TOPP_NoiseFilterGaussian_2",
+    "TOPP_NoiseFilterGaussian_2_out1",
+    "TOPP_NoiseFilterGaussian_3",
+    "TOPP_NoiseFilterGaussian_3_out1",
+    "TOPP_NoiseFilterGaussian_4",
+    "TOPP_NoiseFilterGaussian_4_out1",
+    "TOPP_NoiseFilterSGolay_1",
+    "TOPP_NoiseFilterSGolay_1_out1",
+    "TOPP_NoiseFilterSGolay_2",
+    "TOPP_NoiseFilterSGolay_2_out1",
+    "TOPP_NoiseFilterSGolay_3",
+    "TOPP_NoiseFilterSGolay_3_out1",
+    "TOPP_NoiseFilterSGolay_4",
+    "TOPP_NoiseFilterSGolay_4_out1",
+    "TOPP_PeakPickerHiRes_1",
+    "TOPP_PeakPickerHiRes_1_out1",
+    "TOPP_PeakPickerHiRes_2",
+    "TOPP_PeakPickerHiRes_2_out1",
+    "TOPP_PeakPickerHiRes_3",
+    "TOPP_PeakPickerHiRes_3_out1",
+    "TOPP_PeakPickerHiRes_4",
+    "TOPP_PeakPickerHiRes_4_out1",
+    "TOPP_PeakPickerHiRes_5",
+    "TOPP_PeakPickerHiRes_5_out1",
+    "TOPP_PeakPickerHiRes_6",
+    "TOPP_PeakPickerHiRes_6_out1",
+    "TOPP_PeakPickerIterative_1",
+    "TOPP_PeakPickerIterative_1_out1",
+    "TOPP_PeakPickerIterative_2",
+    "TOPP_PeakPickerIterative_2_out1",
+    "TOPP_PeakPickerIM_1",
+    "TOPP_PeakPickerIM_2",
+    "TOPP_PeakPickerIM_3",
+    "TOPP_ProteinInference_1",
+    "TOPP_ProteinInference_1_out1",
+    "TOPP_ProteinInference_2",
+    "TOPP_ProteinInference_2_out1",
+    "TOPP_ProteinInference_3",
+    "TOPP_ProteinInference_3_out1",
+    "TOPP_Resampler_1",
+    "TOPP_Resampler_1_out1",
+    "TOPP_Resampler_2",
+    "TOPP_Resampler_2_out1",
+    "TOPP_OpenNuXL_definitions_reread",
+    "TOPP_OpenNuXL_definitions_reread_sequences",
+    "TOPP_OpenNuXL_definitions_reread_check",
+    "TOPP_OpenNuXL_definitions_reread2",
+    "TOPP_OpenNuXL_definitions_idempotent",
+    "TOPP_OpenNuXL_definitions_strip",
+    "TOPP_OpenNuXL_definitions_missing",
+    "TOPP_OpenNuXL_definitions_idparquet_write",
+    "TOPP_OpenNuXL_definitions_idparquet_read",
+    "TOPP_OpenNuXL_definitions_idparquet_sequences",
+    "TOPP_OpenNuXL_definitions_idparquet_check",
+    "TOPP_OpenNuXL_definitions_idparquet_dump",
+    "TOPP_OpenNuXL_definitions_idparquet_peptidoform",
+    "TOPP_OpenNuXL_legacy_mass_delta",
+    "TOPP_OpenNuXL_legacy_mass_delta_sequences",
+    "TOPP_OpenNuXL_legacy_mass_delta_check",
+    "TOPP_SeedListGenerator_1",
+    "TOPP_SeedListGenerator_1_out1",
+    "TOPP_SeedListGenerator_2",
+    "TOPP_SeedListGenerator_2_out1",
+    "TOPP_SeedListGenerator_3",
+    "TOPP_SeedListGenerator_3_out1",
+    "TOPP_SeedListGenerator_3_out2",
+    "TOPP_SpectraFilterWindowMower_1",
+    "TOPP_SpectraFilterWindowMower_1_out1",
+    "TOPP_SpectraFilterWindowMower_2",
+    "TOPP_SpectraFilterWindowMower_2_out1",
+    "TOPP_InternalCalibration_1",
+    "TOPP_InternalCalibration_1_out1",
+    "TOPP_InternalCalibration_1_out2",
+    "TOPP_InternalCalibration_2",
+    "TOPP_InternalCalibration_2_out1",
+    "TOPP_InternalCalibration_2_out2",
+    "TOPP_InternalCalibration_2_convert",
+    "TOPP_InternalCalibration_2_out3",
+    "TOPP_ExternalCalibration_1_MS1",
+    "TOPP_ExternalCalibration_1_out1",
+    "TOPP_ExternalCalibration_2_MS2",
+    "TOPP_ExternalCalibration_2_out1",
+    "TOPP_TextExporter_1",
+    "TOPP_TextExporter_1_out1",
+    "TOPP_TextExporter_2",
+    "TOPP_TextExporter_2_out1",
+    "TOPP_TextExporter_2_out2",
+    "TOPP_TextExporter_2_out3",
+    "TOPP_TextExporter_2_out4",
+    "TOPP_TextExporter_3",
+    "TOPP_TextExporter_3_out1",
+    "TOPP_TextExporter_4",
+    "TOPP_TextExporter_4_out1",
+    "TOPP_TextExporter_5",
+    "TOPP_TextExporter_5_out1",
+    "TOPP_TextExporter_6",
+    "TOPP_TextExporter_6_out1",
+    "TOPP_TextExporter_7",
+    "TOPP_TextExporter_7_out1",
+    "TOPP_TextExporter_8",
+    "TOPP_TextExporter_8_out1",
+    "TOPP_TextExporter_9",
+    "TOPP_TextExporter_9_out1",
+    "TOPP_TextExporter_10",
+    "TOPP_TextExporter_10_out1",
+    "TOPP_FeatureLinkerLabeled_1",
+    "TOPP_FeatureLinkerLabeled_1_out1",
+    "TOPP_FeatureLinkerLabeled_2",
+    "TOPP_FeatureLinkerLabeled_2_out1",
+    "TOPP_FeatureLinkerUnlabeled_1",
+    "TOPP_FeatureLinkerUnlabeled_1_out1",
+    "TOPP_FeatureLinkerUnlabeled_2",
+    "TOPP_FeatureLinkerUnlabeled_2_out1",
+    "TOPP_FeatureLinkerUnlabeled_3",
+    "TOPP_FeatureLinkerUnlabeled_3_out1",
+    "TOPP_FeatureLinkerUnlabeled_parquet_prep1",
+    "TOPP_FeatureLinkerUnlabeled_parquet_prep2",
+    "TOPP_FeatureLinkerUnlabeled_parquet_prep3",
+    "TOPP_FeatureLinkerUnlabeled_parquet",
+    "TOPP_FeatureLinkerUnlabeled_parquet_back",
+    "TOPP_FeatureLinkerUnlabeled_parquet_out1",
+    "TOPP_FeatureLinkerUnlabeled_4",
+    "TOPP_FeatureLinkerUnlabeled_4_out1",
+    "TOPP_FeatureLinkerUnlabeledQT_1",
+    "TOPP_FeatureLinkerUnlabeledQT_1_out1",
+    "TOPP_FeatureLinkerUnlabeledQT_2",
+    "TOPP_FeatureLinkerUnlabeledQT_2_out1",
+    "TOPP_FeatureLinkerUnlabeledQT_3",
+    "TOPP_FeatureLinkerUnlabeledQT_3_out1",
+    "TOPP_FeatureLinkerUnlabeledQT_4",
+    "TOPP_FeatureLinkerUnlabeledQT_4_out1",
+    "TOPP_FeatureLinkerUnlabeledQT_5",
+    "TOPP_FeatureLinkerUnlabeledQT_5_out1",
+    "TOPP_FeatureLinkerUnlabeledQT_6",
+    "TOPP_FeatureLinkerUnlabeledQT_6_out1",
+    "TOPP_FeatureLinkerUnlabeledKD_1",
+    "TOPP_FeatureLinkerUnlabeledKD_1_out1",
+    "TOPP_FeatureLinkerUnlabeledKD_2",
+    "TOPP_FeatureLinkerUnlabeledKD_2_out1",
+    "TOPP_FeatureLinkerUnlabeledKD_3",
+    "TOPP_FeatureLinkerUnlabeledKD_3_out1",
+    "TOPP_FeatureLinkerUnlabeledKD_4",
+    "TOPP_FeatureLinkerUnlabeledKD_4_out1",
+    "TOPP_FeatureLinkerUnlabeledKD_5",
+    "TOPP_FeatureLinkerUnlabeledKD_5_out1",
+    "TOPP_FeatureLinkerUnlabeledKD_6",
+    "TOPP_FeatureLinkerUnlabeledKD_6_out1",
+    "TOPP_FeatureLinkerUnlabeledKD_7",
+    "TOPP_FeatureLinkerUnlabeledKD_7_out1",
+    "TOPP_FeatureLinkerUnlabeledKD_8",
+    "TOPP_FeatureLinkerUnlabeledKD_8_out1",
+    "TOPP_IDMapper_1",
+    "TOPP_IDMapper_1_out1",
+    "TOPP_IDMapper_2",
+    "TOPP_IDMapper_2_out1",
+    "TOPP_IDMapper_3",
+    "TOPP_IDMapper_3_out1",
+    "TOPP_IDMapper_4",
+    "TOPP_IDMapper_4_out1",
+    "TOPP_IDMapper_5",
+    "TOPP_IDMapper_5_out1",
+    "TOPP_IDMapper_6",
+    "TOPP_IDMapper_6_out1",
+    "TOPP_IDRipper_1",
+    "TOPP_IDRipper_1_out1",
+    "TOPP_IDRipper_1_out2",
+    "TOPP_IDRipper_2",
+    "TOPP_IDRipper_2_out1",
+    "TOPP_IDRipper_2_out2",
+    "TOPP_IDRipper_2_out3",
+    "TOPP_IDRipper_2a",
+    "TOPP_IDRipper_2a_out1",
+    "TOPP_IDRipper_2a_out2",
+    "TOPP_IDRipper_3_prep",
+    "TOPP_IDRipper_3_prep_out1",
+    "TOPP_IDRipper_3",
+    "TOPP_IDRipper_3_out1",
+    "TOPP_IDRipper_3_out2",
+    "TOPP_ConsensusID_1",
+    "TOPP_ConsensusID_1_out1",
+    "TOPP_ConsensusID_2",
+    "TOPP_ConsensusID_2_out1",
+    "TOPP_ConsensusID_3",
+    "TOPP_ConsensusID_3_out1",
+    "TOPP_ConsensusID_4",
+    "TOPP_ConsensusID_4_out1",
+    "TOPP_ConsensusID_5",
+    "TOPP_ConsensusID_5_out1",
+    "TOPP_ConsensusID_6",
+    "TOPP_ConsensusID_6_out1",
+    "TOPP_ConsensusID_7",
+    "TOPP_ConsensusID_7_out1",
+    "TOPP_ConsensusID_8",
+    "TOPP_ConsensusID_8_out1",
+    "TOPP_FalseDiscoveryRate_1",
+    "TOPP_FalseDiscoveryRate_1_out1",
+    "TOPP_FalseDiscoveryRate_2",
+    "TOPP_FalseDiscoveryRate_2_out1",
+    "TOPP_FalseDiscoveryRate_3",
+    "TOPP_FalseDiscoveryRate_3_out1",
+    "TOPP_FalseDiscoveryRate_4",
+    "TOPP_FalseDiscoveryRate_4_out1",
+    "TOPP_FalseDiscoveryRate_5",
+    "TOPP_FalseDiscoveryRate_5_out1",
+    "TOPP_FalseDiscoveryRate_6",
+    "TOPP_FalseDiscoveryRate_6_out1",
+    "TOPP_FalseDiscoveryRate_7",
+    "TOPP_FalseDiscoveryRate_7_out1",
+    "TOPP_IDPosteriorErrorProbability_1",
+    "TOPP_IDPosteriorErrorProbability_1_out1",
+    "TOPP_IDPosteriorErrorProbability_2",
+    "TOPP_IDPosteriorErrorProbability_2_out1",
+    "TOPP_IDPosteriorErrorProbability_3",
+    "TOPP_IDPosteriorErrorProbability_3_out1",
+    "TOPP_IDPosteriorErrorProbability_4",
+    "TOPP_IDPosteriorErrorProbability_4_out1",
+    "TOPP_IDPosteriorErrorProbability_5",
+    "TOPP_IDPosteriorErrorProbability_5_out1",
+    "TOPP_IDPosteriorErrorProbability_6",
+    "TOPP_IDPosteriorErrorProbability_6_out1",
+    "TOPP_IDPosteriorErrorProbability_7",
+    "TOPP_IDPosteriorErrorProbability_8",
+    "TOPP_IDPosteriorErrorProbability_8_out1",
+    "TOPP_ProteinQuantifier_1",
+    "TOPP_ProteinQuantifier_1_out1",
+    "TOPP_ProteinQuantifier_1_out2",
+    "TOPP_ProteinQuantifier_2",
+    "TOPP_ProteinQuantifier_2_out1",
+    "TOPP_ProteinQuantifier_2_out2",
+    "TOPP_ProteinQuantifier_3",
+    "TOPP_ProteinQuantifier_3_out1",
+    "TOPP_ProteinQuantifier_3_out2",
+    "TOPP_ProteinQuantifier_4",
+    "TOPP_ProteinQuantifier_4_out1",
+    "TOPP_ProteinQuantifier_5",
+    "TOPP_ProteinQuantifier_5_out1",
+    "TOPP_ProteinQuantifier_6",
+    "TOPP_ProteinQuantifier_6_out1",
+    "TOPP_ProteinQuantifier_7",
+    "TOPP_ProteinQuantifier_7_out1",
+    "TOPP_ProteinQuantifier_8",
+    "TOPP_ProteinQuantifier_8_out1",
+    "TOPP_ProteinQuantifier_9",
+    "TOPP_ProteinQuantifier_9_out1",
+    "TOPP_ProteinQuantifier_9_out2",
+    "TOPP_ProteinQuantifier_14",
+    "TOPP_ProteinQuantifier_14_out1",
+    "TOPP_ProteinQuantifier_14_out2",
+    "TOPP_ProteinQuantifier_15",
+    "TOPP_ProteinQuantifier_15_out1",
+    "TOPP_ProteinQuantifier_16",
+    "TOPP_ProteinQuantifier_16_out1",
+    "TOPP_ProteinQuantifier_17",
+    "TOPP_ProteinQuantifier_17_out1",
+    "TOPP_ProteinQuantifier_18_qpx_clean",
+    "TOPP_ProteinQuantifier_18_qpx",
+    "TOPP_ProteinQuantifier_18_qpx_psm_exists",
+    "TOPP_ProteinQuantifier_18_qpx_feature_exists",
+    "TOPP_ProteinQuantifier_18_qpx_pg_exists",
+    "TOPP_ProteinQuantifier_19_qpx_clean",
+    "TOPP_ProteinQuantifier_19_qpx",
+    "TOPP_ProteinQuantifier_19_qpx_psm_exists",
+    "TOPP_ProteinQuantifier_19_qpx_feature_exists",
+    "TOPP_ProteinQuantifier_19_qpx_pg_exists",
+    "TOPP_ProteinQuantifier_23",
+    "TOPP_ProteinQuantifier_23_out1",
+    "TOPP_ProteinQuantifier_24",
+    "TOPP_ProteinQuantifier_24_out1",
+    "TOPP_ProteinQuantifier_25",
+    "TOPP_ProteinQuantifier_25_out1",
+    "TOPP_ProteinQuantifier_26",
+    "TOPP_ProteinQuantifier_26_out1",
+    "TOPP_ProteinQuantifier_27",
+    "TOPP_ProteinQuantifier_27_out1",
+    "TOPP_ProteinQuantifier_28",
+    "TOPP_ProteinQuantifier_28_out1",
+    "TOPP_ProteinQuantifier_29",
+    "TOPP_ProteinQuantifier_29_out1",
+    "TOPP_ProteinQuantifier_19_qpx_pg_dump",
+    "TOPP_ProteinQuantifier_19_qpx_pg_out",
+    "TOPP_ProteinQuantifier_18_qpx_pg_dump",
+    "TOPP_ProteinQuantifier_18_qpx_pg_out",
+    "TOPP_IsobaricWorkflow_qpx_pg_dump",
+    "TOPP_IsobaricWorkflow_qpx_pg_out",
+    "TOPP_IsobaricWorkflow_qpx_psm_dump",
+    "TOPP_IsobaricWorkflow_qpx_psm_out",
+    "TOPP_PeptideIndexer_1",
+    "TOPP_PeptideIndexer_1_out",
+    "TOPP_PeptideIndexer_2",
+    "TOPP_PeptideIndexer_2_out",
+    "TOPP_PeptideIndexer_3",
+    "TOPP_PeptideIndexer_3_out",
+    "TOPP_PeptideIndexer_4",
+    "TOPP_PeptideIndexer_4_out",
+    "TOPP_PeptideIndexer_5",
+    "TOPP_PeptideIndexer_5_out",
+    "TOPP_PeptideIndexer_6",
+    "TOPP_PeptideIndexer_6_out",
+    "TOPP_PeptideIndexer_7",
+    "TOPP_PeptideIndexer_7_out",
+    "TOPP_PeptideIndexer_8",
+    "TOPP_PeptideIndexer_8_out",
+    "TOPP_PeptideIndexer_9",
+    "TOPP_PeptideIndexer_9_out",
+    "TOPP_PeptideIndexer_10",
+    "TOPP_PeptideIndexer_10_out",
+    "TOPP_PeptideIndexer_11",
+    "TOPP_PeptideIndexer_12",
+    "TOPP_PeptideIndexer_12_out",
+    "TOPP_PeptideIndexer_13",
+    "TOPP_PeptideIndexer_13_out",
+    "TOPP_PeptideIndexer_14",
+    "TOPP_PeptideIndexer_14_out",
+    "TOPP_MzTabExporter_1",
+    "TOPP_MzTabExporter_1_out",
+    "TOPP_MzTabExporter_2",
+    "TOPP_MzTabExporter_2_out",
+    "TOPP_MzTabExporter_3",
+    "TOPP_MzTabExporter_3_out",
+    "TOPP_MzTabExporter_4",
+    "TOPP_MzTabExporter_4_out",
+    "TOPP_MzTabExporter_5",
+    "TOPP_MzTabExporter_5_out",
+    "TOPP_MzTabExporter_6",
+    "TOPP_MzTabExporter_6_out",
+    "TOPP_MzTabExporter_7",
+    "TOPP_MzTabExporter_7_out",
+    "TOPP_MzTabExporter_8",
+    "TOPP_MzTabExporter_8_out",
+    "TOPP_OpenPepXL_1",
+    "TOPP_OpenPepXL_1_out_1",
+    "TOPP_OpenPepXL_1_out_3",
+    "TOPP_OpenPepXL_1_out_4",
+    "TOPP_UniPEFF_1",
+    "TOPP_UniPEFF_1_out",
+    "TOPP_UniPEFF_2",
+    "TOPP_UniPEFF_2_out",
+    "TOPP_UniPEFF_3",
+    "TOPP_UniPEFF_3_out",
+    "TOPP_UniPEFF_4",
+    "TOPP_UniPEFF_4_out",
+    "TOPP_UniPEFF_5",
+    "TOPP_UniPEFF_5_out",
+    "TOPP_UniPEFF_6",
+    "TOPP_UniPEFF_6_out",
+    "TOPP_UniPEFF_7",
+    "TOPP_UniPEFF_7_out",
+    "TOPP_UniPEFF_8_reject_gz",
+    "TOPP_UniPEFF_9",
+    "TOPP_UniPEFF_9_out",
+    "TOPP_XFDR_1",
+    "TOPP_XFDR_1_out11",
+    "TOPP_XFDR_1_out12",
+    "TOPP_XFDR_1_out13",
+    "TOPP_XFDR_2",
+    "TOPP_XFDR_2_out21",
+    "TOPP_XFDR_2_out22",
+    "TOPP_XFDR_2_out23",
+    "TOPP_XFDR_3",
+    "TOPP_XFDR_3_out31",
+    "TOPP_XFDR_3_out32",
+    "TOPP_XFDR_3_out33",
+    "TOPP_XFDR_4",
+    "TOPP_XFDR_4_out41",
+    "TOPP_XFDR_4_out42",
+    "TOPP_XFDR_4_out43",
+    "TOPP_XFDR_5",
+    "TOPP_XFDR_5_out51",
+    "TOPP_XFDR_5_out52",
+    "TOPP_XFDR_5_out53",
+    "TOPP_XFDR_6",
+    "TOPP_XFDR_6_out6",
+    "TOPP_XFDR_7",
+    "TOPP_XFDR_7_out31",
+    "TOPP_XFDR_7_out32",
+    "TOPP_XFDR_7_out33",
+    "TOPP_QualityControl_1",
+    "TOPP_QualityControl_1_out_consXML",
+    "TOPP_QualityControl_1_out_mzTab",
+    "TOPP_MSGFPlusAdapter_missing",
+    "TOPP_SageAdapter_missing",
+    "TOPP_CometAdapter_missing",
+    "TOPP_CometAdapter_failing",
+    "TOPP_PercolatorAdapter_missing",
+    "TOPP_MSFraggerAdapter_missing",
+    "TOPP_AccurateMassSearch_1",
+    "TOPP_AccurateMassSearch_1_out1",
+    "TOPP_AccurateMassSearch_2",
+    "TOPP_AccurateMassSearch_2_out1",
+    "TOPP_AccurateMassSearch_2_out2",
+    "TOPP_AccurateMassSearch_3",
+    "TOPP_AccurateMassSearch_3_out1",
+    "TOPP_AccurateMassSearch_5",
+    "TOPP_AccurateMassSearch_5_out1",
+    "TOPP_AccurateMassSearch_6",
+    "TOPP_AccurateMassSearch_6_out1",
+    "TOPP_AccurateMassSearch_6_out2",
+    "TOPP_SiriusExport_1",
+    "TOPP_SiriusExport_1_out",
+    "TOPP_SiriusExport_2",
+    "TOPP_SiriusExport_2_out1",
+    "TOPP_SiriusExport_2_out2",
+    "TOPP_SiriusExport_3",
+    "TOPP_SiriusExport_3_out1",
+    "TOPP_SiriusExport_3_out2",
+    "TOPP_AssayGeneratorMetaboSirius_1",
+    "TOPP_AssayGeneratorMetaboSirius_1_out",
+    "TOPP_AssayGeneratorMetaboSirius_2",
+    "TOPP_AssayGeneratorMetaboSirius_2_out",
+    "TOPP_AssayGeneratorMetaboSirius_3",
+    "TOPP_AssayGeneratorMetaboSirius_3_out",
+    "TOPP_AssayGeneratorMetabo_1",
+    "TOPP_AssayGeneratorMetabo_1_out1",
+    "TOPP_AssayGeneratorMetabo_2",
+    "TOPP_AssayGeneratorMetabo_2_out1",
+    "TOPP_AssayGeneratorMetabo_3",
+    "TOPP_AssayGeneratorMetabo_3_out1",
+    "TOPP_AssayGeneratorMetabo_4",
+    "TOPP_AssayGeneratorMetabo_4_out1",
+    "TOPP_AssayGeneratorMetabo_5",
+    "TOPP_AssayGeneratorMetabo_5_out1",
+    "TOPP_IDScoreSwitcher_1",
+    "TOPP_IDScoreSwitcher_1_out1",
+    "TOPP_IDScoreSwitcher_2",
+    "TOPP_IDScoreSwitcher_2_out1",
+    "TOPP_IDSplitter_1",
+    "TOPP_IDSplitter_1_out1",
+    "TOPP_IDSplitter_1_out2",
+    "TOPP_JSONExporter_1",
+    "TOPP_JSONExporter_1_out",
+    "TOPP_JSONExporter_2",
+    "TOPP_JSONExporter_2_out",
+    "TOPP_MassCalculator_1",
+    "TOPP_MassCalculator_1_out1",
+    "TOPP_MassCalculator_2",
+    "TOPP_MassCalculator_2_out1",
+    "TOPP_MultiplexResolver_1",
+    "TOPP_MultiplexResolver_1_out1",
+    "TOPP_MultiplexResolver_1_out2",
+    "TOPP_MultiplexResolver_2",
+    "TOPP_MultiplexResolver_2_out1",
+    "TOPP_MultiplexResolver_2_out2",
+    "TOPP_MultiplexResolver_3",
+    "TOPP_MultiplexResolver_3_out1",
+    "TOPP_MultiplexResolver_3_out3",
+    "TOPP_MultiplexResolver_4",
+    "TOPP_MultiplexResolver_4_out1",
+    "TOPP_MultiplexResolver_4_out3",
+    "TOPP_DatabaseFilter_1",
+    "TOPP_DatabaseFilter_1_out",
+    "TOPP_DatabaseFilter_2",
+    "TOPP_DatabaseFilter_2_out",
+    "TOPP_DatabaseFilter_3",
+    "TOPP_DatabaseFilter_3_out",
+    "TOPP_DatabaseFilter_4",
+    "TOPP_DatabaseFilter_4_out",
+    "TOPP_DecoyDatabase_1",
+    "TOPP_DecoyDatabase_1_out",
+    "TOPP_DecoyDatabase_2",
+    "TOPP_DecoyDatabase_2_out",
+    "TOPP_DecoyDatabase_3",
+    "TOPP_DecoyDatabase_3_out",
+    "TOPP_DecoyDatabase_4",
+    "TOPP_DecoyDatabase_4_out",
+    "TOPP_DecoyDatabase_5",
+    "TOPP_DecoyDatabase_6",
+    "TOPP_DecoyDatabase_7",
+    "TOPP_DecoyDatabase_7_out1",
+    "TOPP_DecoyDatabase_7_out2",
+    "TOPP_DecoyDatabase_7_out3",
+    "TOPP_DecoyDatabase_8",
+    "TOPP_DecoyDatabase_8_out",
+    "TOPP_DecoyDatabase_9",
+    "TOPP_SimpleSearchEngine_1",
+    "TOPP_SimpleSearchEngine_1_out",
+    "TOPP_SimpleSearchEngine_2",
+    "TOPP_SimpleSearchEngine_2_out",
+    "TOPP_ProSE_1",
+    "TOPP_ProSE_1_out",
+    "TOPP_ProSE_2",
+    "TOPP_ProSE_2_out",
+    "TOPP_ProSE_3_multi",
+    "TOPP_ProSE_3_multi_idXML_out",
+    "TOPP_ProSE_3_qpx_clean",
+    "TOPP_ProSE_3_qpx",
+    "TOPP_ProSE_3_qpx_psm_exists",
+    "TOPP_ProSE_3_qpx_pg_absent",
+    "TOPP_ProSE_3_qpx_merged_exists",
+    "TOPP_ProSE_3_qpx_merged_pg_absent",
+    "TOPP_ProSE_3_qpx_merged_identity",
+    "TOPP_ProSE_4",
+    "TOPP_ProSE_4_out",
+    "TOPP_ProSE_5_chunked",
+    "TOPP_ProSE_5_chunked_out",
+    "TOPP_ProSE_6_fdr",
+    "TOPP_ProSE_6_fdr_info",
+    "TOPP_ProSE_6_fdr_info_proteins",
+    "TOPP_ProSE_6_fdr_info_psms",
+    "TOPP_ProSE_6_fdr_chunked",
+    "TOPP_ProSE_6_fdr_chunked_out",
+    "TOPP_ProSE_7_merged",
+    "TOPP_ProSE_7_merged_info",
+    "TOPP_ProSE_7_merged_info_out",
+    "TOPP_ProSE_8_auto",
+    "TOPP_ProSE_8_auto_info",
+    "TOPP_ProSE_8_auto_info_proteins",
+    "TOPP_ProSE_9_summary",
+    "TOPP_ProSE_9_summary_exists",
+    "TOPP_FeatureFinderMetaboIdent_1",
+    "TOPP_FeatureFinderMetaboIdent_1_out1",
+    "TOPP_MzMLSplitter_1",
+    "TOPP_MzMLSplitter_1_out1",
+    "TOPP_MzMLSplitter_1_out2",
+    "TOPP_MzMLSplitter_2",
+    "TOPP_MzMLSplitter_2_out1",
+    "TOPP_MzMLSplitter_2_out2",
+    "TOPP_TICCalculator_1",
+    "TOPP_TICCalculator_2",
+    "TOPP_TICCalculator_3",
+    "TOPP_TICCalculator_4",
+    "TOPP_TICCalculator_5",
+    "TOPP_ProteomicsLFQ_requires_output",
+    "TOPP_PercolatorAdapter_1_inproc",
+    "TOPP_PercolatorAdapter_1_inproc_out",
+    "TOPP_PercolatorAdapter_1_inproc_no_binary",
+    "TOPP_PercolatorAdapter_1_inproc_no_binary_out",
+    "TOPP_PercolatorAdapter_CalcMass_prepare",
+    "TOPP_PercolatorAdapter_CalcMass",
+    "TOPP_PercolatorAdapter_CalcMass_check",
+    "TOPP_ProteomicsLFQ_CalcMass_prepare",
+    "TOPP_ProteomicsLFQ_CalcMass",
+    "TOPP_ProteomicsLFQ_CalcMass_check",
+    "TOPP_ProteomicsLFQ_1_subset",
+    "TOPP_ProteomicsLFQ_1_subset_out_1",
+    "TOPP_ProteomicsLFQ_1_subset_out_2",
+    "TOPP_ProteomicsLFQ_1_subset_out_3",
+    "TOPP_ProteomicsLFQ_strictly_unique",
+    "TOPP_ProteomicsLFQ_strictly_unique_out_1",
+    "TOPP_ProteomicsLFQ_fraction_fwhm",
+    "TOPP_ProteomicsLFQ_feat_dir_clean",
+    "TOPP_ProteomicsLFQ_feat_dir_ref",
+    "TOPP_ProteomicsLFQ_feat_dir_detect_a",
+    "TOPP_ProteomicsLFQ_feat_dir_detect_b",
+    "TOPP_ProteomicsLFQ_feat_dir_combine",
+    "TOPP_ProteomicsLFQ_feat_dir_eq_feature",
+    "TOPP_ProteomicsLFQ_feat_dir_eq_psm",
+    "TOPP_ProteomicsLFQ_feat_dir_eq_pg",
+    "TOPP_ProteomicsLFQ_feat_dir_resume",
+    "TOPP_ProteomicsLFQ_feat_dir_param_mismatch",
+    "TOPP_ProteomicsLFQ_feat_dir_make_partial",
+    "TOPP_ProteomicsLFQ_feat_dir_break_partial",
+    "TOPP_ProteomicsLFQ_feat_dir_partial_rejected",
+    "TOPP_ProteomicsLFQ_feat_dir_force_clean",
+    "TOPP_ProteomicsLFQ_feat_dir_force_seed",
+    "TOPP_ProteomicsLFQ_feat_dir_force_replace",
+    "TOPP_ProteomicsLFQ_feat_dir_requires_design",
+    "TOPP_ProteomicsLFQ_qpx_clean",
+    "TOPP_ProteomicsLFQ_qpx",
+    "TOPP_ProteomicsLFQ_qpx_features",
+    "TOPP_ProteomicsLFQ_qpx_psms",
+    "TOPP_ProteomicsLFQ_qpx_pg",
+    "TOPP_ProteomicsLFQ_qpx_flags_clean",
+    "TOPP_ProteomicsLFQ_qpx_flags",
+    "TOPP_ProteomicsLFQ_qpx_flags_feature",
+    "TOPP_ProteomicsLFQ_qpx_flags_pg",
+    "TOPP_ProteomicsLFQ_qpx_flags_mztab",
+    "TOPP_ProteomicsLFQ_qpx_seeds_clean",
+    "TOPP_ProteomicsLFQ_qpx_seeds",
+    "TOPP_ProteomicsLFQ_qpx_seeds_features",
+    "TOPP_ProteomicsLFQ_qpx_seeds_psms",
+    "TOPP_ProteomicsLFQ_qpx_seeds_pg",
+    "TOPP_ProteomicsLFQ_1",
+    "TOPP_ProteomicsLFQ_1_out_1",
+    "TOPP_ProteomicsLFQ_1_out_2",
+    "TOPP_ProteomicsLFQ_1_out_3",
+    "TOPP_ProteomicsLFQ_duplicate_psm",
+    "TOPP_ProteomicsLFQ_duplicate_psm_out_1",
+    "TOPP_ProteomicsLFQ_duplicate_psm_out_2",
+    "TOPP_ProteomicsLFQ_duplicate_psm_out_3",
+    "TOPP_ProteomicsLFQ_2",
+    "TOPP_ProteomicsLFQ_2_out_1",
+    "TOPP_ProteomicsLFQ_2_out_2",
+    "TOPP_ProteomicsLFQ_2_out_3",
+    "TOPP_ProteomicsLFQ_3",
+    "TOPP_ProteomicsLFQ_3_out_1",
+    "TOPP_ProteomicsLFQ_3_out_2",
+    "TOPP_ProteomicsLFQ_3_out_3",
+    "TOPP_ProteomicsLFQ_4",
+    "TOPP_ProteomicsLFQ_4_out_1",
+    "TOPP_ProteomicsLFQ_4_out_2",
+    "TOPP_ProteomicsLFQ_5",
+    "TOPP_ProteomicsLFQ_5_out_1",
+    "TOPP_ProteomicsLFQ_5_out_2",
+    "TOPP_ProteomicsLFQ_5_out_3",
+    "TOPP_ProteomicsLFQ_6",
+    "TOPP_ProteomicsLFQ_6_out_1",
+    "TOPP_ProteomicsLFQ_6_out_2",
+    "TOPP_ProteomicsLFQ_7",
+    "TOPP_ProteomicsLFQ_7_out_1",
+    "TOPP_ProteomicsLFQ_7_out_2",
+    "TOPP_ProteomicsLFQ_7_out_3",
+    "TOPP_ProteomicsLFQ_8",
+    "TOPP_ProteomicsLFQ_8_out_1",
+    "TOPP_ProteomicsLFQ_8_out_2",
+    "TOPP_ProteomicsLFQ_8_out_3",
+    "TOPP_ProteomicsLFQ_9",
+    "TOPP_ProteomicsLFQ_9_out_1",
+    "TOPP_ProteomicsLFQ_9_out_2",
+    "TOPP_ProteomicsLFQ_9_out_3",
+    "TOPP_ProteomicsLFQ_3_seedRT",
+    "TOPP_ProteomicsLFQ_3_seedRT_out_1",
+    "TOPP_ProteomicsLFQ_3_seedRT_out_2",
+    "TOPP_ProteomicsLFQ_3_seedRT_out_3",
+    "TOPP_ProteomicsLFQ_9_seedRT",
+    "TOPP_ProteomicsLFQ_9_seedRT_out_1",
+    "TOPP_ProteomicsLFQ_9_seedRT_out_2",
+    "TOPP_ProteomicsLFQ_9_seedRT_out_3",
+    "TOPP_ProteomicsLFQ_biosaur2_seeds",
+    "TOPP_NucleicAcidSearchEngine_1",
+    "TOPP_NucleicAcidSearchEngine_11_out",
+    "TOPP_NucleicAcidSearchEngine_12_out",
+    "TOPP_NucleicAcidSearchEngine_2",
+    "TOPP_NucleicAcidSearchEngine_21_out",
+    "TOPP_NucleicAcidSearchEngine_22_out",
+    "TOPP_RNAMassCalculator_1",
+    "TOPP_RNAMassCalculator_1_out",
+    "TOPP_Digestor_1",
+    "TOPP_Digestor_1_out",
+    "TOPP_Digestor_2",
+    "TOPP_Digestor_2_out",
+    "TOPP_EICExtractor_1",
+    "TOPP_Epifany_1",
+    "TOPP_Epifany_1_out",
+    "TOPP_Epifany_2",
+    "TOPP_Epifany_2_out",
+    "TOPP_Epifany_3",
+    "TOPP_Epifany_3_out",
+    "TOPP_Epifany_4",
+    "TOPP_Epifany_4_out",
+    "TOPP_Epifany_5",
+    "TOPP_Epifany_5_out",
+    "TOPP_QCCalculator_1",
+    "TOPP_QCCalculator_1_out",
+    "TOPP_QCCalculator_2",
+    "TOPP_QCCalculator_2_out",
+    "TOPP_PSMFeatureExtractor_1",
+    "TOPP_PSMFeatureExtractor_1_out",
+    "TOPP_PSMFeatureExtractor_2",
+    "TOPP_PSMFeatureExtractor_2_out",
+    "TOPP_MassTraceExtractor_1_json",
+    "TOPP_MassTraceExtractor_1_out_json",
+    "TOPP_MassTraceExtractor_2_json",
+    "TOPP_MassTraceExtractor_2_out_json",
+    "TOPP_MassTraceExtractor_1_flat_json",
+    "TOPP_MassTraceExtractor_1_out_flat_json",
+    "TOPP_MassTraceExtractor_2_flat_json",
+    "TOPP_MassTraceExtractor_2_out_flat_json",
+    "TOPP_MassTraceExtractor_3_flat_json",
+    "TOPP_MassTraceExtractor_3_flat_json_out",
+    "TOPP_MassTraceExtractor_3_json",
+    "TOPP_MassTraceExtractor_3_json_out"
+  ],
+  "exclusions": [
+    {
+      "name": "TOPPWRITEINI_AccurateMassSearch",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_AccurateMassSearch_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_AssayGeneratorMetabo",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_AssayGeneratorMetabo_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_AssayGeneratorMetaboSirius",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_AssayGeneratorMetaboSirius_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_BaselineFilter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_BaselineFilter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_CVInspector",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_CVInspector_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ClusterMassTraces",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ClusterMassTraces_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ClusterMassTracesByPrecursor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ClusterMassTracesByPrecursor_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_CometAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_CometAdapter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ConsensusID",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ConsensusID_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ConsensusMapNormalizer",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ConsensusMapNormalizer_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_DTAExtractor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_DTAExtractor_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_DatabaseFilter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_DatabaseFilter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_DatabaseSuitability",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_DatabaseSuitability_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_DeMeanderize",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_DeMeanderize_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_Decharger",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_Decharger_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_DecoyDatabase",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_DecoyDatabase_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_Digestor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_Digestor_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_DigestorMotif",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_DigestorMotif_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_EICExtractor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_EICExtractor_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_Epifany",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_Epifany_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ExternalCalibration",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ExternalCalibration_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FalseDiscoveryRate",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FalseDiscoveryRate_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureFinderCentroided",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureFinderCentroided_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureFinderIdentification",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureFinderIdentification_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureFinderLFQ",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureFinderLFQ_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureFinderMetabo",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureFinderMetabo_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureFinderMetaboIdent",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureFinderMetaboIdent_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureFinderMultiplex",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureFinderMultiplex_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureLinkerLabeled",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureLinkerLabeled_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureLinkerUnlabeled",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureLinkerUnlabeled_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureLinkerUnlabeledKD",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureLinkerUnlabeledKD_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureLinkerUnlabeledQT",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FeatureLinkerUnlabeledQT_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FileConverter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FileConverter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FileFilter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FileFilter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FileInfo",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FileInfo_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FileMerger",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FileMerger_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FuzzyDiff",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_FuzzyDiff_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_GNPSExport",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_GNPSExport_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_HighResPrecursorMassCorrector",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_HighResPrecursorMassCorrector_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDConflictResolver",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDConflictResolver_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDDecoyProbability",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDDecoyProbability_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDExtractor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDExtractor_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDFileConverter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDFileConverter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDFilter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDFilter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDMapper",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDMapper_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDMerger",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDMerger_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDPosteriorErrorProbability",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDPosteriorErrorProbability_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDRTCalibration",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDRTCalibration_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDRipper",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDRipper_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDScoreSwitcher",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDScoreSwitcher_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDSplitter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IDSplitter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_INIUpdater",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_INIUpdater_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_InternalCalibration",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_InternalCalibration_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IonMobilityBinning",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IonMobilityBinning_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IsobaricAnalyzer",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IsobaricAnalyzer_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IsobaricWorkflow",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_IsobaricWorkflow_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_JSONExporter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_JSONExporter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_LuciphorAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_LuciphorAdapter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MRMMapper",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MRMMapper_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MRMPairFinder",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MRMPairFinder_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MSFraggerAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MSFraggerAdapter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MSGFPlusAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MSGFPlusAdapter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MSstatsConverter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MSstatsConverter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MaRaClusterAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MaRaClusterAdapter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MapAlignerIdentification",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MapAlignerIdentification_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MapAlignerPoseClustering",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MapAlignerPoseClustering_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MapAlignerTreeGuided",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MapAlignerTreeGuided_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MapNormalizer",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MapNormalizer_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MapRTTransformer",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MapRTTransformer_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MapStatistics",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MapStatistics_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MascotAdapterOnline",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MascotAdapterOnline_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MassCalculator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MassCalculator_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MassTraceExtractor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MassTraceExtractor_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MetaProSIP",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MetaProSIP_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MetaboliteAdductDecharger",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MetaboliteAdductDecharger_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MetaboliteSpectralMatcher",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MetaboliteSpectralMatcher_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MultiplexResolver",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MultiplexResolver_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MzMLSplitter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MzMLSplitter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MzTabExporter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_MzTabExporter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_NoiseFilterGaussian",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_NoiseFilterGaussian_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_NoiseFilterSGolay",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_NoiseFilterSGolay_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_NovorAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_NovorAdapter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_NucleicAcidSearchEngine",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_NucleicAcidSearchEngine_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_OpenMSDatabasesInfo",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_OpenMSDatabasesInfo_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_OpenNuXL",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_OpenNuXL_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_OpenPepXL",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_OpenPepXL_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PSMFeatureExtractor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PSMFeatureExtractor_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ParquetConverter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ParquetConverter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ParquetDiff",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ParquetDiff_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PeakPickerHiRes",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PeakPickerHiRes_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PeakPickerIM",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PeakPickerIM_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PeakPickerIterative",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PeakPickerIterative_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PeptideIndexer",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PeptideIndexer_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PercolatorAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PercolatorAdapter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PhosphoScoring",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_PhosphoScoring_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ProSE",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ProSE_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ProteinInference",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ProteinInference_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ProteinQuantifier",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ProteinQuantifier_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ProteomicsLFQ",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_ProteomicsLFQ_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCCalculator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCCalculator_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCEmbedder",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCEmbedder_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCExporter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCExporter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCExtractor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCExtractor_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCImporter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCImporter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCMerger",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCMerger_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCShrinker",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QCShrinker_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QualityControl",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_QualityControl_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_RNADigestor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_RNADigestor_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_RNAMassCalculator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_RNAMassCalculator_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_RNPxlXICFilter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_RNPxlXICFilter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_Resampler",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_Resampler_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SageAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SageAdapter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SeedListGenerator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SeedListGenerator_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SemanticValidator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SemanticValidator_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SequenceCoverageCalculator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SequenceCoverageCalculator_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SimpleSearchEngine",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SimpleSearchEngine_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SiriusExport",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SiriusExport_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SpectraFilterNLargest",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SpectraFilterNLargest_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SpectraFilterNormalizer",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SpectraFilterNormalizer_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SpectraFilterThresholdMower",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SpectraFilterThresholdMower_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SpectraFilterWindowMower",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SpectraFilterWindowMower_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SpectraMerger",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SpectraMerger_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SpectraSTSearchAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_SpectraSTSearchAdapter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_StaticModification",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_StaticModification_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_TICCalculator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_TICCalculator_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_TextExporter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_TextExporter_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_UniPEFF",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_UniPEFF_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_XFDR",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_XFDR_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_XMLValidator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_XMLValidator_SectionName",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_AccurateMassSearch",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_AssayGeneratorMetabo",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_AssayGeneratorMetaboSirius",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_BaselineFilter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_CVInspector",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_ClusterMassTraces",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_ClusterMassTracesByPrecursor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_CometAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_ConsensusID",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_ConsensusMapNormalizer",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_DTAExtractor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_DatabaseFilter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_DatabaseSuitability",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_DeMeanderize",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_Decharger",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_DecoyDatabase",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_Digestor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_DigestorMotif",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_EICExtractor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_Epifany",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_ExternalCalibration",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FalseDiscoveryRate",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FeatureFinderCentroided",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FeatureFinderIdentification",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FeatureFinderLFQ",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FeatureFinderMetabo",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FeatureFinderMetaboIdent",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FeatureFinderMultiplex",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FeatureLinkerLabeled",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FeatureLinkerUnlabeled",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FeatureLinkerUnlabeledKD",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FeatureLinkerUnlabeledQT",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FileConverter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FileFilter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FileInfo",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FileMerger",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_FuzzyDiff",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_GNPSExport",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_HighResPrecursorMassCorrector",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IDConflictResolver",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IDDecoyProbability",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IDExtractor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IDFileConverter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IDFilter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IDMapper",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IDMerger",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IDPosteriorErrorProbability",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IDRTCalibration",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IDRipper",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IDScoreSwitcher",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IDSplitter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_INIUpdater",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_InternalCalibration",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IonMobilityBinning",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IsobaricAnalyzer",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_IsobaricWorkflow",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_JSONExporter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_LuciphorAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MRMMapper",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MRMPairFinder",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MSFraggerAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MSGFPlusAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MSstatsConverter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MaRaClusterAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MapAlignerIdentification",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MapAlignerPoseClustering",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MapAlignerTreeGuided",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MapNormalizer",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MapRTTransformer",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MapStatistics",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MascotAdapterOnline",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MassCalculator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MassTraceExtractor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MetaProSIP",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MetaboliteAdductDecharger",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MetaboliteSpectralMatcher",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MultiplexResolver",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MzMLSplitter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_MzTabExporter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_NoiseFilterGaussian",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_NoiseFilterSGolay",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_NovorAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_NucleicAcidSearchEngine",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_OpenMSDatabasesInfo",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_OpenNuXL",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_OpenPepXL",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_PSMFeatureExtractor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_ParquetConverter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_ParquetDiff",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_PeakPickerHiRes",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_PeakPickerIM",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_PeakPickerIterative",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_PeptideIndexer",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_PercolatorAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_PhosphoScoring",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_ProSE",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_ProteinInference",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_ProteinQuantifier",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_ProteomicsLFQ",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_QCCalculator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_QCEmbedder",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_QCExporter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_QCExtractor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_QCImporter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_QCMerger",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_QCShrinker",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_QualityControl",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_RNADigestor",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_RNAMassCalculator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_RNPxlXICFilter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_Resampler",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_SageAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_SeedListGenerator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_SemanticValidator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_SequenceCoverageCalculator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_SimpleSearchEngine",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_SiriusExport",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_SpectraFilterNLargest",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_SpectraFilterNormalizer",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_SpectraFilterThresholdMower",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_SpectraFilterWindowMower",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_SpectraMerger",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_SpectraSTSearchAdapter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_StaticModification",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_TICCalculator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_TextExporter",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_UniPEFF",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_XFDR",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITECTD_XMLValidator",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_OVERWRITE",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPPWRITEINI_OVERWRITE_out",
+      "reason": "legacy_metadata_separate_strict_suite"
+    },
+    {
+      "name": "TOPP_FLASHDeconv_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAssayGenerator_test_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAssayGenerator_test_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAssayGenerator_test_2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAssayGenerator_test_2_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAssayGenerator_test_3",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAssayGenerator_test_3_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAssayGenerator_test_4",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAssayGenerator_test_4_pqp_to_tsv",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAssayGenerator_test_4_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_2_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_3",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_3_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_4",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_4_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_5",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_5_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_6_light",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_6_light_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_7_heavy",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_7_heavy_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_8_pqp",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_8_pqp_to_tsv",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_test_8_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_2_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_3",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_3_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_4",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_4_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_5",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_5_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_6",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_6_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_7",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_ConvertTSVToTraML_test_7_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_1_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_2_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_3_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_3",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_3_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_4",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_4_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_10_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_10",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_10_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_11_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_11",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_11_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_8_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_8",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_8_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_9_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_9",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_9_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_5",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_5_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_light_path_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_light_path",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_light_path_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_parquet_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_parquet_roundtrip",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_parquet_roundtrip_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAssayGenerator_parquet",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAssayGenerator_parquet_to_tsv",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAssayGenerator_parquet_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_parquet",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_parquet_to_tsv",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathDecoyGenerator_parquet_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_12_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_12",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_12_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_13",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_13_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_6",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_6_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_6_convert_back",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TargetedFileConverter_test_6_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathFeatureXMLToTSV_test_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathFeatureXMLToTSV_test_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathFeatureXMLToTSV_test_2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathFeatureXMLToTSV_test_2_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathFeatureXMLToTSV_test_3",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathFeatureXMLToTSV_test_3_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_TransitionListEvidenceFilter_test_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TransitionListEvidenceFilter_prefixed_decoy",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TransitionListEvidenceFilter_prefixed_decoy_to_tsv",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_TransitionListEvidenceFilter_prefixed_decoy_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathChromatogramExtractor_test_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathChromatogramExtractor_test_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathChromatogramExtractor_test_2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathChromatogramExtractor_test_2_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathChromatogramExtractor_test_3",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathChromatogramExtractor_test_3_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathChromatogramExtractor_test_4",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathChromatogramExtractor_test_4_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathChromatogramExtractor_test_5",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathChromatogramExtractor_test_5_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_2_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_5_mod",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_5_mod_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_6_nomod",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_6_nomod_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_7_backgroundSubtraction",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_7_backgroundSubtraction_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_8",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_8_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_9",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_9_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_10",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_10_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_11",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_11_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathRTNormalizer_test_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathRTNormalizer_test_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathRTNormalizer_test_2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathRTNormalizer_test_3",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathRTNormalizer_test_3_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathRTNormalizer_test_4",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathRTNormalizer_test_4_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathConfidenceScoring_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathConfidenceScoring_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_1_step1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_1_step2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_1_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_2_step1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_2_step2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_2_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_2_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_3_step1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_3_step2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_3_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_4_step1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_4_step2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_4_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_5_step1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_5_step2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_5_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathMzMLFileCacher_test_5_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_3_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_3",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_3_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_4_prepare1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_4_prepare2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_4",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathAnalyzer_test_4_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_MRMTransitionGroupPicker_test_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_MRMTransitionGroupPicker_test_1_out",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_MRMTransitionGroupPicker_test_2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_MRMTransitionGroupPicker_test_2_out",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_1_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_1_out3",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_1_library_prefilter",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_1_xic",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_1_xic_text",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_1_xic_text_out",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_2_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_2_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_3",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_3_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_3_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_threads4",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_threads4_sort",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_threads4_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_5",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_5_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_5_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_6",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_6_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_6_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_7",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_7_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_7_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_8",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_9",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_10",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_13_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_13a",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_13b",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_13a_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_14_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_14",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_14_step2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_14_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_15",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_15_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_15_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_16_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_16",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_16_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_16_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_17",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_17_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_17_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_17_cache",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_17_cache_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_17_cache_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_17_b_prepare",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_17_b",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_17_b_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_17_b_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathFileSplitter_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathFileSplitter_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathFileSplitter_1_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathFileSplitter_1_out3",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_18",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_18_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_19",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_19_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_20",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_20_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_21",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_21_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_21_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_numeric_ids_featurexml_xic",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_numeric_ids_osw_xic",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_numeric_ids_featurexml_xic_text",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_numeric_ids_osw_xic_text",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_numeric_ids_osw_identity",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_22",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_22_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_22_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_23",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_23_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_23_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_24",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_24_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_25",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_25_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_26",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_26_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_27",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathWorkflow_27_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathPeakMapExtractor_1_prep",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathPeakMapExtractor_1_prep_mkdir",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathPeakMapExtractor_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathPeakMapExtractor_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathInfer_1_prepare",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathInfer_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathInfer_1_export",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathInfer_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathExport_1_prepare",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathExport_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathExport_1_out1",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathExport_1_out2",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathExport_1_out3",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathPercolatorScoring_1_prepare",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathPercolatorScoring_1",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_OpenSwathPercolatorScoring_2_prepare",
+      "reason": "other_package_test_family"
+    },
+    {
+      "name": "TOPP_OpenSwathPercolatorScoring_2",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_AssayGeneratorMetabo_6",
+      "reason": "executable_not_installed"
+    },
+    {
+      "name": "TOPP_AssayGeneratorMetabo_6_out1",
+      "reason": "depends_on_excluded:TOPP_AssayGeneratorMetabo_6"
+    }
+  ],
+  "selected_command_counts": {
+    "cmake": 36,
+    "FuzzyDiff": 638,
+    "IDMerger": 9,
+    "IDFileConverter": 44,
+    "ParquetDiff": 36,
+    "IDRipper": 6,
+    "bash": 1,
+    "BaselineFilter": 1,
+    "ConsensusMapNormalizer": 1,
+    "MapNormalizer": 1,
+    "DatabaseSuitability": 1,
+    "Decharger": 1,
+    "DTAExtractor": 3,
+    "MassTraceExtractor": 11,
+    "FeatureFinderMetabo": 6,
+    "FeatureFinderCentroided": 1,
+    "FeatureFinderLFQ": 1,
+    "FeatureFinderIdentification": 4,
+    "FeatureFinderMultiplex": 11,
+    "FileConverter": 48,
+    "FileFilter": 54,
+    "FileInfo": 22,
+    "FileMerger": 11,
+    "GNPSExport": 4,
+    "HighResPrecursorMassCorrector": 6,
+    "IDRTCalibration": 2,
+    "IsobaricAnalyzer": 6,
+    "IsobaricWorkflow": 6,
+    "IDConflictResolver": 5,
+    "IDFilter": 26,
+    "MapAlignerPoseClustering": 6,
+    "MapAlignerIdentification": 8,
+    "MapAlignerTreeGuided": 3,
+    "MapRTTransformer": 6,
+    "MetaProSIP": 3,
+    "MetaboliteAdductDecharger": 2,
+    "MSstatsConverter": 4,
+    "MRMMapper": 2,
+    "NoiseFilterGaussian": 4,
+    "NoiseFilterSGolay": 4,
+    "PeakPickerHiRes": 6,
+    "PeakPickerIterative": 2,
+    "PeakPickerIM": 3,
+    "ProteinInference": 3,
+    "Resampler": 2,
+    "SeedListGenerator": 3,
+    "SpectraFilterWindowMower": 2,
+    "InternalCalibration": 2,
+    "ExternalCalibration": 2,
+    "TextExporter": 10,
+    "FeatureLinkerLabeled": 2,
+    "FeatureLinkerUnlabeled": 5,
+    "FeatureLinkerUnlabeledQT": 6,
+    "FeatureLinkerUnlabeledKD": 8,
+    "IDMapper": 6,
+    "ConsensusID": 8,
+    "FalseDiscoveryRate": 7,
+    "IDPosteriorErrorProbability": 8,
+    "ProteinQuantifier": 22,
+    "PeptideIndexer": 14,
+    "MzTabExporter": 8,
+    "OpenPepXL": 1,
+    "UniPEFF": 9,
+    "XFDR": 7,
+    "QualityControl": 1,
+    "MSGFPlusAdapter": 1,
+    "SageAdapter": 1,
+    "CometAdapter": 2,
+    "PercolatorAdapter": 4,
+    "MSFraggerAdapter": 1,
+    "AccurateMassSearch": 5,
+    "SiriusExport": 3,
+    "AssayGeneratorMetaboSirius": 3,
+    "AssayGeneratorMetabo": 5,
+    "IDScoreSwitcher": 2,
+    "IDSplitter": 1,
+    "JSONExporter": 2,
+    "MassCalculator": 2,
+    "MultiplexResolver": 4,
+    "DatabaseFilter": 4,
+    "DecoyDatabase": 9,
+    "SimpleSearchEngine": 2,
+    "ProSE": 11,
+    "FeatureFinderMetaboIdent": 1,
+    "MzMLSplitter": 2,
+    "TICCalculator": 5,
+    "ProteomicsLFQ": 30,
+    "NucleicAcidSearchEngine": 2,
+    "RNAMassCalculator": 1,
+    "Digestor": 2,
+    "EICExtractor": 1,
+    "Epifany": 5,
+    "QCCalculator": 2,
+    "PSMFeatureExtractor": 2
+  },
+  "expected_skips": [
+    "TOPP_MSGFPlusAdapter_missing",
+    "TOPP_SageAdapter_missing",
+    "TOPP_CometAdapter_missing",
+    "TOPP_CometAdapter_failing",
+    "TOPP_PercolatorAdapter_missing",
+    "TOPP_MSFraggerAdapter_missing"
+  ],
+  "registered_timeouts": {
+    "TOPP_ProteomicsLFQ_CalcMass": 180.0
+  },
+  "selection_notes": [
+    "All selected commands exist in installed TOPP SDK or are CMake/bash fixture helpers.",
+    "Excluded metadata group contains 387 generic per-tool metadata cases plus TOPPWRITEINI_OVERWRITE and its FuzzyDiff check; root requested separate strict metadata coverage.",
+    "Missing-executable family preparations/comparisons excluded even when their own cmake/FuzzyDiff commands exist.",
+    "AssayGeneratorMetabo_6 invokes absent OpenSwathDecoyGenerator; _6_out1 excluded by declared dependency.",
+    "Eleven external engines NOTFOUND during configure; their conditional positive tests are not registered. In-process Percolator tests remain selected.",
+    "No tests executed while creating this inventory. No source/build/test CMake modifications."
+  ],
+  "parallel_selected_count": 1296,
+  "serial_selected_count": 10,
+  "serial_names": [
+    "TOPP_DTAExtractor_1",
+    "TOPP_DTAExtractor_1_out1",
+    "TOPP_DTAExtractor_2",
+    "TOPP_DTAExtractor_2_out1",
+    "TOPP_DTAExtractor_3",
+    "TOPP_DTAExtractor_3_out1",
+    "TOPP_MassTraceExtractor_3_flat_json",
+    "TOPP_MassTraceExtractor_3_flat_json_out",
+    "TOPP_MassTraceExtractor_3_json",
+    "TOPP_MassTraceExtractor_3_json_out"
+  ],
+  "output_dependency_audit": {
+    "all_selected_declared_dependencies_present": true,
+    "all_generated_FuzzyDiff_and_ParquetDiff_checks_have_dependencies": true,
+    "selected_tests_referencing_missing_SDK_shared_inputs": 0,
+    "unordered_output_collisions": [
+      {
+        "tests": [
+          "TOPP_DTAExtractor_1",
+          "TOPP_DTAExtractor_2"
+        ],
+        "path": "tmp_path/DTAExtractor_RT60.0.dta",
+        "resolution": "Run all DTAExtractor cases serially. Both expected DTA reference files have identical SHA256."
+      },
+      {
+        "tests": [
+          "TOPP_MassTraceExtractor_3_flat_json",
+          "TOPP_MassTraceExtractor_3_json"
+        ],
+        "path": "tmp_path/MassTraceExtractor_3.ini",
+        "resolution": "Run both write/check pairs serially."
+      }
+    ],
+    "shared_IDRipper_output_directory": "Four producer tests use the same directory but generate distinct output basenames."
+  }
+}

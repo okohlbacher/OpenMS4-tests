@@ -1,0 +1,317 @@
+{
+  "cycle": "core-v4.0.0-ci.2",
+  "date": "2026-09-12",
+  "core_revision": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+  "packages": {
+    "core": {
+      "source_revision": "bc9cc12514c768385ce121d6ca4bb710fe1983c4",
+      "release": "core-v4.0.0-ci.2"
+    },
+    "cli": {
+      "source_revision": "d5213ff3551a8608e4e3f930fd4a6f85a8c82f97",
+      "release": "cli-v1.0.0-ci.2"
+    },
+    "test-data": {
+      "source_revision": "a14ecf5d5f5de878dbaf5ddb9feafe154b02303a",
+      "release": null
+    },
+    "topp": {
+      "source_revision": "c6e98a7782cc50083d555b6424b2c84f879195f6",
+      "release": "topp-v1.0.0-ci.4"
+    },
+    "openswath": {
+      "source_revision": "851e8f0e0ec4312081974b1b04966e92c38a2c48",
+      "release": "openswath-v1.0.0-ci.2"
+    },
+    "flash": {
+      "source_revision": "b2c6771de7746c43ad55558d17429a15087083fb",
+      "release": "flash-v1.0.0-ci.2"
+    },
+    "desktop": {
+      "source_revision": "717d0c63da634645d189465f7c800153239d64a5",
+      "release": "desktop-v1.0.0-ci.2"
+    },
+    "pyopenms": {
+      "source_revision": "52f8726850cc90b52fa21892de82963ae6b5ad72",
+      "release": "pyopenms-v4.0.0.dev0-ci.2"
+    },
+    "flashapp": {
+      "source_revision": "38aa6a6a769234fbd74d9dcc41af8cee65f1344e",
+      "release": null
+    },
+    "nuxl": {
+      "source_revision": "dc6f61c5ed8a0d570c57a9ff92f2d6ef18dfc8c4",
+      "release": "nuxl-v1.0.0-ci.2"
+    },
+    "prose": {
+      "source_revision": "828d72595677f6cd22e8c02eca24956855dfcf1c",
+      "release": "prose-v1.0.0-ci.2"
+    },
+    "nase": {
+      "source_revision": "a9b317b889ccf2820d95d4f81b08126fb0b70059",
+      "release": "nase-v1.0.0-ci.2"
+    },
+    "comet": {
+      "source_revision": "c3c4d1b99a159ef00dd0b4741f28393a450643b7",
+      "release": "comet-v1.0.0-ci.2"
+    },
+    "mascot": {
+      "source_revision": "fcbcc61346c3af73f599ced7fcd9ea9e5a177561",
+      "release": "mascot-v1.0.0-ci.2"
+    },
+    "database-suitability": {
+      "source_revision": "c46998ff10013ba110a5a2c37a972a590dada361",
+      "release": "database-suitability-v1.0.0-ci.2"
+    },
+    "proteomics-lfq": {
+      "source_revision": "cf12fe9163e3b244cd8dd977bc4f18a86dcf087c",
+      "release": "proteomics-lfq-v1.0.0-ci.2"
+    },
+    "parquet-diff": {
+      "source_revision": "682f7086ebe95a6a18f496ae328e60fc9a92e4f6",
+      "release": "parquet-diff-v1.0.0-ci.2"
+    }
+  },
+  "validation": {
+    "host": "dax",
+    "cpus": 384,
+    "memory_gib": 2267,
+    "load_at_start": [
+      13.19,
+      19.41,
+      22.74
+    ],
+    "core_input": "OpenMS4-core-linux-x64-Release-bc9cc12514c7.tar.gz (core-v4.0.0-ci.2 release asset)",
+    "build_type": "Release",
+    "jobs": 240,
+    "workers": 6,
+    "installed_console_tools": 150,
+    "total_step_seconds": 396.2,
+    "steps_seconds": {
+      "cli-build": 9.345,
+      "cli-configure": 2.989,
+      "cli-install": 0.011,
+      "cli-tests": 0.13,
+      "comet-build": 7.901,
+      "comet-configure": 2.87,
+      "comet-install": 0.008,
+      "comet-tests": 0.161,
+      "database-suitability-build": 10.838,
+      "database-suitability-configure": 2.924,
+      "database-suitability-install": 0.009,
+      "database-suitability-tests": 0.382,
+      "desktop-build": 43.091,
+      "desktop-configure": 4.809,
+      "desktop-install": 0.035,
+      "desktop-tests": 0.751,
+      "flash-build": 11.281,
+      "flash-configure": 3.349,
+      "flash-install": 0.013,
+      "flash-tests": 59.498,
+      "mascot-build": 4.954,
+      "mascot-configure": 2.766,
+      "mascot-install": 0.009,
+      "mascot-tests": 1.765,
+      "nase-build": 13.429,
+      "nase-configure": 2.996,
+      "nase-install": 0.007,
+      "nase-tests": 0.111,
+      "nuxl-build": 21.239,
+      "nuxl-configure": 2.973,
+      "nuxl-install": 0.009,
+      "nuxl-tests": 0.243,
+      "openswath-build": 11.582,
+      "openswath-configure": 2.908,
+      "openswath-install": 0.018,
+      "openswath-tests": 0.183,
+      "parquet-diff-build": 6.525,
+      "parquet-diff-configure": 2.802,
+      "parquet-diff-install": 0.008,
+      "parquet-diff-tests": 0.114,
+      "prose-build": 19.354,
+      "prose-configure": 3.119,
+      "prose-install": 0.011,
+      "prose-tests": 6.252,
+      "proteomics-lfq-build": 13.153,
+      "proteomics-lfq-configure": 2.921,
+      "proteomics-lfq-install": 0.009,
+      "proteomics-lfq-tests": 0.118,
+      "pyopenms-build": 62.266,
+      "pyopenms-configure": 2.3,
+      "pyopenms-install": 0.112,
+      "pyopenms-tests": 10.968,
+      "regressions-configure": 2.303,
+      "regressions-tests": 10.722,
+      "test-data-build": 0.038,
+      "test-data-configure": 0.893,
+      "test-data-install": 0.631,
+      "topp-build": 22.018,
+      "topp-configure": 3.198,
+      "topp-install": 0.06,
+      "topp-tests": 0.754
+    },
+    "ctest": {
+      "comet": {
+        "tests": 3,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 0.0
+      },
+      "desktop": {
+        "tests": 11,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 0.0
+      },
+      "topp": {
+        "tests": 242,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 0.0
+      },
+      "nuxl": {
+        "tests": 14,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 0.0
+      },
+      "openswath": {
+        "tests": 38,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 0.0
+      },
+      "pyopenms": {
+        "tests": 4,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 10.0
+      },
+      "regressions": {
+        "tests": 2041,
+        "failures": 0,
+        "skipped": 5,
+        "seconds": 10.0
+      },
+      "mascot": {
+        "tests": 4,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 1.0
+      },
+      "proteomics-lfq": {
+        "tests": 3,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 0.0
+      },
+      "prose": {
+        "tests": 3,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 6.0
+      },
+      "database-suitability": {
+        "tests": 4,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 0.0
+      },
+      "cli": {
+        "tests": 9,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 0.0
+      },
+      "flash": {
+        "tests": 9,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 59.0
+      },
+      "nase": {
+        "tests": 2,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 0.0
+      },
+      "parquet-diff": {
+        "tests": 3,
+        "failures": 0,
+        "skipped": 0,
+        "seconds": 0.0
+      }
+    }
+  },
+  "delivery": {
+    "homebrew_formula": "okohlbacher/openms4-core (4.0.0-ci.2)",
+    "bottles": [
+      "arm64_sequoia",
+      "sequoia",
+      "x86_64_linux"
+    ],
+    "casks_updated": [
+      "openms4-topp",
+      "openms4-openswath",
+      "openms4-flash",
+      "openms4-prose",
+      "openms4-nuxl",
+      "openms4-nase",
+      "openms4-comet",
+      "openms4-mascot",
+      "openms4-database-suitability",
+      "openms4-proteomics-lfq",
+      "openms4-parquet-diff"
+    ],
+    "pyopenms_wheels": "cp312, five platforms, repaired and tested from a clean environment"
+  },
+  "self_hosted_runners": {
+    "dax-linux-x64": "linux-x64 on push and dispatch",
+    "studio-macos-arm64": "macos-arm64 on push and dispatch",
+    "hosted": [
+      "macos-x64",
+      "linux-arm64",
+      "windows-x64",
+      "all pull requests"
+    ]
+  },
+  "defects_found_and_fixed_on_branch": {
+    "fragment_sort_thread_budget": {
+      "package": "core",
+      "commit": "50e07ec",
+      "before": {
+        "threads_1_cpu_seconds": 2091.8,
+        "threads_32_wall_seconds": 188.1,
+        "threads_32_cpu_seconds": 54796.6
+      },
+      "after": {
+        "threads_1_cpu_seconds": 43.3,
+        "threads_32_wall_seconds": 6.2,
+        "threads_32_cpu_seconds": 107.7
+      }
+    },
+    "abort_bookkeeping_race": {
+      "package": "core",
+      "commit": "f743ccd",
+      "detail": "unsynchronised std::map writes from the OpenMP seed loop; 41692 of 44517 seeds abort on the Astral input"
+    },
+    "mztab_score_columns": {
+      "package": "core",
+      "commit": "f743ccd",
+      "detail": "535 of 1240 OSM rows lacked the q-value column after target-decoy FDR"
+    },
+    "error_classification": {
+      "packages": [
+        "cli",
+        "topp",
+        "core"
+      ],
+      "commits": [
+        "1dafcb2",
+        "b485123",
+        "f743ccd"
+      ],
+      "detail": "IllegalArgument and unknown RNA modification codes were reported as internal errors"
+    }
+  }
+}

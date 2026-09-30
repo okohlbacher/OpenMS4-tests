@@ -1,0 +1,70 @@
+stty: stdin isn't a terminal
+
+OpenSwathExport -- Export scored OpenSWATH results to TSV or Parquet tables.
+Full documentation: http://www.openms.de/doxygen/release/4.0.0/html/TOPP_OpenSwathExport.html
+Version: 1.0.0 (OpenMS core 4.0.0, revision 4fdec46)
+To cite OpenMS:
+ + Pfeuffer, J., Bielow, C., Wein, S. et al.. OpenMS 3 enables reproducible analysis of large-scale mass spectrometry data. Nat Methods (2024). doi:10.1038/s41592-024-02197-7.
+
+Usage:
+  OpenSwathExport <options>
+
+Options (mandatory options marked with '*'):
+  -in <file>*                                      Input scored OpenSWATH result file in OSW format. (valid formats: 'osw', 'oswpq')
+  -out_dir <dir>                                   Optional output directory. If omitted, files are written next to the input OSW.
+
+Options for scored feature parquet export:
+  -parquet:run <true|false>                        Whether to export scored feature parquet tables. (default: 'false') (valid: 'true', 'false')
+  -parquet:include_transition_data <true|false>    Whether to also export transition-level parquet tables. (default: 'true') (valid: 'true', 'false')
+  -parquet:exclude_decoys <true|false>             Whether to exclude decoys from parquet feature exports. (default: 'false') (valid: 'true', 'false')
+
+Options for user-facing results export:
+  -results:run <true|false>                        Whether to export the filtered results table. (default: 'true') (valid: 'true', 'false')
+  -results:format <choice>                         Output format for the filtered results table. (default: 'parquet') (valid: 'tsv', 'parquet')
+  -results:ipf <choice>                            How IPF results should be represented when SCORE_IPF is present. (default: 'peptidoform') (valid: 'peptidoform', 'augmented', 'disable')
+  -results:transition_quantification <true|false>  Whether to aggregate transition-level quantification columns. (default: 'true') (valid: 'true', 'false')
+  -results:max_transition_pep <num>                Maximum transition PEP used for aggregated transition quantification. (default: '0.7')
+  -results:ipf_max_peptidoform_pep <num>           Maximum IPF PEP used for peptidoform export filtering. (default: '0.4')
+  -results:max_rs_peakgroup_qvalue <num>           Maximum run-specific peakgroup q-value retained. (default: '0.05')
+  -results:use_peptide_scores <true|false>         Whether to append peptide-level scores if SCORE_PEPTIDE is present and to require passing the peptide-level threshold. (default: 'true') (valid: 'true', 'false')
+  -results:max_global_peptide_qvalue <num>         Maximum global peptide-level q-value retained when peptide filtering is enabled. (default: '0.01')
+  -results:use_protein_scores <true|false>         Whether to append protein-level scores if SCORE_PROTEIN is present and to require passing the protein-level threshold. (default: 'true') (valid: 'true', 'false')
+  -results:max_global_protein_qvalue <num>         Maximum global protein-level q-value retained when protein filtering is enabled. (default: '0.01')
+  -results:use_gene_scores <true|false>            Whether to append gene-level scores if SCORE_GENE is present and to require passing the gene-level threshold. (default: 'false') (valid: 'true', 'false')
+  -results:max_global_gene_qvalue <num>            Maximum global gene-level q-value retained when gene filtering is enabled. (default: '0.01')
+  -results:use_alignment <true|false>              Whether to recover aligned features when legacy alignment tables are present. (default: 'false') (valid: 'true', 'false')
+  -results:max_alignment_pep <num>                 Maximum alignment PEP retained when alignment recovery is enabled. (default: '0.7')
+  -results:exclude_decoys <true|false>             Whether to exclude decoys from the filtered results export. (default: 'true') (valid: 'true', 'false')
+
+Options for quantification matrix exports:
+  -matrix:precursor <true|false>                   Whether to export the precursor-level quantification matrix. (default: 'false') (valid: 'true', 'false')
+  -matrix:peptide <true|false>                     Whether to export the peptide-level quantification matrix. (default: 'true') (valid: 'true', 'false')
+  -matrix:protein <true|false>                     Whether to export the protein-level quantification matrix. (default: 'true') (valid: 'true', 'false')
+  -matrix:gene <true|false>                        Whether to export the gene-level quantification matrix. (default: 'false') (valid: 'true', 'false')
+  -matrix:format <choice>                          Output format for quantification matrices. (default: 'tsv') (valid: 'tsv', 'parquet')
+  -matrix:ipf <choice>                             How IPF results should be represented when SCORE_IPF is present. (default: 'peptidoform') (valid: 'peptidoform', 'augmented', 'disable')
+  -matrix:transition_quantification <true|false>   Whether to aggregate transition-level quantification columns onto the filtered feature rows. (default: 'true') (valid: 'true', 'false')
+  -matrix:max_transition_pep <num>                 Maximum transition PEP used for aggregated transition quantification. (default: '0.7')
+  -matrix:ipf_max_peptidoform_pep <num>            Maximum IPF PEP used for peptidoform export filtering. (default: '0.4')
+  -matrix:max_rs_peakgroup_qvalue <num>            Maximum run-specific peakgroup q-value retained. (default: '0.05')
+  -matrix:use_peptide_scores <true|false>          Whether peptide-level scores should be required when peptide filtering is enabled. (default: 'true') (valid: 'true', 'false')
+  -matrix:max_global_peptide_qvalue <num>          Maximum global peptide-level q-value retained when peptide filtering is enabled. (default: '0.01')
+  -matrix:use_protein_scores <true|false>          Whether protein-level scores should be required when protein filtering is enabled. (default: 'true') (valid: 'true', 'false')
+  -matrix:max_global_protein_qvalue <num>          Maximum global protein-level q-value retained when protein filtering is enabled. (default: '0.01')
+  -matrix:use_gene_scores <true|false>             Whether gene-level scores should be required when gene filtering is enabled. (default: 'false') (valid: 'true', 'false')
+  -matrix:max_global_gene_qvalue <num>             Maximum global gene-level q-value retained when gene filtering is enabled. (default: '0.01')
+  -matrix:use_alignment <true|false>               Whether to recover aligned features when legacy alignment tables are present. (default: 'false') (valid: 'true', 'false')
+  -matrix:max_alignment_pep <num>                  Maximum alignment PEP retained when alignment recovery is enabled. (default: '0.7')
+  -matrix:exclude_decoys <true|false>              Whether to exclude decoys from the filtered matrix input rows. (default: 'true') (valid: 'true', 'false')
+  -matrix:top_n <num>                              Number of top precursors / peptides retained during matrix summarization. (default: '3')
+  -matrix:consistent_top <true|false>              Whether to use the same top precursors / peptides across all runs. (default: 'true') (valid: 'true', 'false')
+  -matrix:normalization <choice>                   Normalization applied to matrix sample columns after summarization. (default: 'none') (valid: 'none', 'median', 'medianmedian')
+
+                                                   
+Common TOPP options:
+  -ini <file>                                      Use the given TOPP INI file
+  -threads <n>                                     Sets the number of threads allowed to be used by the TOPP tool (0 = all available cores) (default: '1')
+  -write_ini <file>                                Writes the default configuration file
+  --help                                           Shows options
+  --helphelp                                       Shows all options (including advanced)
+

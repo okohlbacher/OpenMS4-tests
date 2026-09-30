@@ -1,0 +1,11 @@
+PASSED.
+
+  relative_max:        1
+  relative_acceptable: 1
+
+  absolute_max:        0
+  absolute_acceptable: 0
+
+No numeric differences were found.
+
+FuzzyDiff took 0.00 s (wall), 0.01 s (CPU), 0.01 s (system), 0.00 s (user); Peak Memory Usage: 52 MB.

@@ -1,0 +1,19 @@
+Test project /Users/kohlbach/Claude/OpenMS/OpenMS4-Exploration/installed-core-release/original-consumer
+    Start 1: sdk_runtime_identity
+    Start 2: sdk_api
+1/7 Test #1: sdk_runtime_identity .............   Passed    1.67 sec
+    Start 3: sdk_eigen
+2/7 Test #2: sdk_api ..........................   Passed    1.77 sec
+    Start 4: sdk_arrow
+3/7 Test #3: sdk_eigen ........................   Passed    0.41 sec
+    Start 5: sdk_library_relative_data
+4/7 Test #4: sdk_arrow ........................   Passed    0.56 sec
+    Start 6: sdk_explicit_data_override
+5/7 Test #6: sdk_explicit_data_override .......   Passed    0.27 sec
+    Start 7: sdk_invalid_data_override
+6/7 Test #5: sdk_library_relative_data ........   Passed    0.52 sec
+7/7 Test #7: sdk_invalid_data_override ........   Passed    0.13 sec
+
+100% tests passed out of 7
+
+Total Test time (real) =   2.73 sec
